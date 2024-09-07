@@ -1,0 +1,21 @@
+[color]
+    ui = auto
+[core]
+    excludesfile = ~/.gitignore_global
+[credential]
+    helper = cache
+[alias]
+    diffw = diff --word-diff
+    diffc = diff --word-diff-regex=[^[:space:]]
+[push]
+    default = simple
+[pull]
+    rebase = true
+[log]
+    showSignature = true
+[diff]
+    tool = vimdiff
+[gpg]
+    program = /opt/local/bin/gpg
+[fetch]
+    prune = true

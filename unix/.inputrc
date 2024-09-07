@@ -1,0 +1,14 @@
+"\e[2~": quoted-insert
+"\e[3~": delete-char
+
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+
+"\ep": history-search-backward
+"\en": history-search-forward
+
+"\e[A": previous-history
+"\e[B": next-history

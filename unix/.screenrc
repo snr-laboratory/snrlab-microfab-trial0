@@ -1,0 +1,26 @@
+escape ^oo  # suggested binding for emacs users
+nethack on
+
+# kill startup message
+startup_message off
+# detach on hangup
+autodetach on
+# define a bigger scrollback, default is 100 lines
+defscrollback 1024
+
+# shell
+#shell -bash
+
+# putty bindings
+#bindkey \"^[OC\" next
+#bindkey \"^[OD\" prev
+
+# An alternative hardstatus to display a bar at the bottom listing the
+# windownames and highlighting the current windowname in blue. (This is only
+# enabled if there is no hardstatus setting for your terminal)
+hardstatus on
+hardstatus alwayslastline
+#hardstatus string "%h (%n.%t)%? users: %u%?"
+#termcapinfo xterm*|rxvt* hs:ts=\E]2;:fs=^G:ds=\E]2;Screen^G
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %h %D %Y/%m/%d %c"
+altscreen on

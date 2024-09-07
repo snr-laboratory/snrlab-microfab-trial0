@@ -1,0 +1,15 @@
+# CC=clang CXX=clang++ cmake -DCMAKE_USER_MAKE_RULES_OVERRIDE=$(readlink -m ../CMakeOverrides.txt)
+# to use the following setup for compilation.
+# add -DCMAKE_EXPORT_COMPILE_COMMANDS=ON to get compilation commands in compile_commands.json 
+
+set(CMAKE_C_FLAGS_INIT                "-Wall -std=c99")
+set(CMAKE_C_FLAGS_DEBUG_INIT          "-g -DDEBUG")
+set(CMAKE_C_FLAGS_MINSIZEREL_INIT     "-Os")
+set(CMAKE_C_FLAGS_RELEASE_INIT        "-O4")
+set(CMAKE_C_FLAGS_RELWITHDEBINFO_INIT "-O2 -g -DDEBUG")
+
+set(CMAKE_CXX_FLAGS_INIT                "-Wall -std=c++11")
+set(CMAKE_CXX_FLAGS_DEBUG_INIT          "-g")
+set(CMAKE_CXX_FLAGS_MINSIZEREL_INIT     "-Os")
+set(CMAKE_CXX_FLAGS_RELEASE_INIT        "-O4")
+set(CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT "-O2 -g -DDEBUG")

@@ -1,0 +1,28 @@
+** sch_path: /home/ymei/Work/UltrafastImaging/NanoCMOS-NIST/CntDiffAmp/Schematic/CntDiffAmp1.sch
+.subckt CntDiffAmp1 Vdd Vss Vdo Vinp Vinn Vbp1 Vc1s Vc2s Vdos
+*.PININFO Vinp:I Vdo:O Vinn:I Vdd:B Vss:B Vbp1:B Vc1s:O Vc2s:O Vdos:O
+XM5 Vt1 Vbn1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM4 Vc2 Vbn1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM1 Vc1 Vbp1 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=2 nf=1 m=1
+XM15 Vbp1 Vbp1 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=10 nf=2 m=1
+XM2 net6 Vinp Vc1 Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM3 Vt1 Vinn Vc1 Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM11 Vt2 Vbp3 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM7 Vdo Vbn2 Vt1 Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=5 nf=1 m=1
+Va2 Vdd net2 0
+.save i(va2)
+XM6 Vbp3 Vbn2 Vc2 Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM8 Vbp3 Vbp1 net1 Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM9 Vdo Vbp1 Vt2 Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM10 net1 Vbp3 net2 Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=1
+Va1 net6 Vc2 0
+.save i(va1)
+XM12 net7 Vbp1 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=5 W=2 nf=1 m=1
+Va3 net7 Vbn2 0
+.save i(va3)
+XM14 Vbn1 Vbn1 Vss Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM13 Vbn2 Vbn2 Vbn1 Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=5 nf=1 m=1
+XM16 Vdd Vdo Vdos Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=50 nf=10 m=2
+XM17 Vdd Vc1 Vc1s Vss sky130_fd_pr__nfet_01v8_lvt L=1 W=10 nf=2 m=1
+XM18 Vss Vc2 Vc2s Vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=10 nf=2 m=1
+.ends

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "projsym")(type "KiCad")(uri "${KIPRJMOD}/../PCBLib/sym.kicad_sym")(options "")(descr "Project schematic symbol library."))
+  (lib (name "projconnsym")(type "KiCad")(uri "${KIPRJMOD}/../PCBLib/w_connectors.kicad_sym")(options "")(descr "Project connectors symbol library."))
+)

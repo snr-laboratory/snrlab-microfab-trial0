@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "projfp")(type "KiCad")(uri "${KIPRJMOD}/../PCBLib/footprint.pretty")(options "")(descr "Project footprints"))
+  (lib (name "projdsubfp")(type "KiCad")(uri "${KIPRJMOD}/../PCBLib/w_conn_d-sub.pretty")(options "")(descr "Project D-Sub footprints"))
+)

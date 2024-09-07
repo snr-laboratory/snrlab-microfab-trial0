@@ -1,0 +1,143 @@
+Xft.dpi: 100.0
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+
+Emacs*Background: black
+Emacs*Foreground: white
+Emacs.ToolBar: 0
+Emacs.pointerColor: yellow
+Emacs.verticalScrollBars: off
+Emacs.FontBackend: xft
+Emacs.Geometry: 100x57+2+2
+!for emacs.unicode
+!Emacs.Fontset-0: -*-bitstream vera sans mono-medium-r-normal-*-14-*-*-*-*-*-fontset-utf8
+!	chinese-gb2312:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-gb2312*-*,\
+!	chinese-gbk:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-gbk*-*,\
+!	chinese-big5:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-gbk*-*,\
+!	koi8-r:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-koi8*-*,\
+!	japanese-shift-jis:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-jisx*-*,\
+!	utf-8:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-iso10646*-*
+!Emacs.Font: fontset-utf8
+Emacs.Font: Bitstream Vera Sans Mono:pixelsize=14
+
+! It will set black XTerm and transparent Aterm, without scrollbars
+XTerm*background: black
+XTerm*foreground: white
+XTerm*cursorColor: yellow
+XTerm*toolBar: false
+XTerm*scrollTtyOutput: false
+XTerm*scrollKey: true
+XTerm*jumpScroll: true
+XTerm*multiScroll: true
+XTerm*autoWrap: true
+XTerm*allowWindowOps: true
+!XTerm*faceName: STSong
+!XTerm*wideFont: SimSun
+XTerm*cjkWidth: true
+XTerm*font: -misc-fixed-medium-r-normal--18-*-*-*-c-*-iso10646-1
+XTerm*wideFont: -misc-simsun-medium-r-normal--18-*-*-*-c-*-iso10646-1
+!XTerm*font: -misc-fixed-medium-r-semicondensed--12-110-75-75-c-60-iso8859-1
+!XTerm*wideFont: -misc-simsun-medium-r-normal--12-120-75-75-c-120-iso10646-1
+!XTerm*font: -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso8859-1
+!XTerm*wideFont: -misc-simsun-medium-r-normal--14-*-*-*-c-*-iso10646-1
+!XTerm*Title: Terminal
+XTerm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48
+XTerm*metaSendsEscape: true
+XTerm*ptyInitialErase: true
+XTerm*deleteIsDEL: true
+XTerm*scrollBar: false
+XTerm*saveLines: 1000
+
+!this can display utf8 well: -misc-fixed-medium-r-normal--15-*-*-*-*-*-fontset-14,\
+
+!!! for mule-gbk
+!Emacs.Fontset-0: -*-courier-medium-r-normal-*-12-*-*-*-*-*-fontset-14,\
+!	chinese-gb2312:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-gb2312*-*,\
+!	mule-unicode-0100-16ff:-misc-fixed-medium-r-normal--15-*-*-*-*-*-iso10646*-*,\
+!	korean-ksc5601:-*-medium-r-normal-*-14-*-ksc5601*-*,\
+!	chinese-cns11643-5:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-gbk*-*,\
+!	chinese-cns11643-6:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-gbk*-*,\
+!	chinese-cns11643-7:-misc-simsun-medium-r-normal-*-14-*-*-*-*-*-gbk*-*,\
+!	sjis:-*-medium-r-normal--14-*-jisx0208*-*
+!Emacs.Font: fontset-14
+
+!!!Resources for Rxvt
+!Rxvt.inputMethod:fcitx
+Rxvt.background:black
+Rxvt.foreground:white
+Rxvt.inheritPixmap:True
+!Rxvt.colorBD:yellow
+!Rxvt.colorUL:green
+Rxvt.multichar_encoding:big5
+Rxvt.scrollBar:False
+Rxvt.scrollBar_right:True
+Rxvt.scrollBar_floating: False
+Rxvt.scrollstyle: next
+Rxvt.saveLines:1500
+Rxvt.font:-misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso10646-1
+Rxvt.mfont:-misc-simsun-medium-r-normal-*-14-110-*-90-c-0-gbk-0
+!rxvt -fn -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-iso8859-2 -fm -misc-simsun-medium-r-normal-*-14-110-*-90-c-0-gbk-0 -km big5
+!Rxvt.color0:black
+!Rxvt.color1:red
+!Rxvt.color2:#3a5da3
+!Rxvt.color3:#4b76cc
+!Rxvt.color4:RoyalBlue4
+!Rxvt.color4:#123f75
+!Rxvt.color5:magenta
+!Rxvt.color6:#a1b5dd
+!Rxvt.color7:#8a95aa
+!Rxvt.color8:#616668
+!Rxvt.color9:#075982
+!Rxvt.color10:#0f82bc
+!Rxvt.color11:#13a9f4
+!Rxvt.color12:SkyBlue2
+!Rxvt.color12:#3d99c6
+!Rxvt.color13:#63c2f2
+!Rxvt.color14:#6caccc
+!Rxvt.color15:#dbeff9
+
+!!!rxvt-unicode
+!!!!!!!  use negative value for inverse color
+URxvt.shading: 90
+URxvt.tintColor: red
+URxvt*background: LemonChiffon
+URxvt*foreground: LightGreen
+URxvt*cursorColor: yellow
+URxvt*cursorBlink: false
+#URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=14:autohint=true,xft:SimSun:autohint=true:antialias=false
+URxvt*font: x:-misc-fixed-medium-r-normal-*-12-*-*-*-*-*-iso8859-1,\
+    x:-*-simsun-medium-r-normal-*-12-*-*-*-*-*-iso10646-1
+URxvt*boldFont: x:-misc-fixed-bold-r-normal-*-12-*-*-*-*-*-iso8859-1,\
+    x:-*-simsun-medium-r-normal-*-12-*-*-*-*-*-iso10646-1
+URxvt*italicFont: x:-misc-fixed-medium-r-normal-*-12-*-*-*-*-*-iso8859-1,\
+    x:-*-simsun-medium-r-normal-*-12-*-*-*-*-*-iso10646-1
+URxvt*saveLines: 1000
+URxvt*scrollBar: false
+URxvt*scrollTtyOutput: false
+URxvt*scrollTtyKeypress: true
+URxvt*pointerBlank: true
+URxvt*termName: rxvt
+!URxvt.imLocale:zh_CN.GBK
+URxvt*inputMethod: fcitx
+URxvt.inheritPixmap: true
+! Colors similar to Linux console
+! ---------------------------------------------------------------------------
+URxvt.color0: rgb:0/0/0
+URxvt.color1: rgb:cc/00/00
+URxvt.color2: rgb:00/cc/00
+URxvt.color3: rgb:bd/5e/01
+URxvt.color4: rgb:00/00/cc
+URxvt.color5: rgb:cc/00/cc
+URxvt.color6: rgb:00/cc/cc
+URxvt.color7: rgb:aa/aa/aa
+URxvt.color8: rgb:33/33/33
+URxvt.color9: rgb:ff/00/00
+URxvt.color10: rgb:00/ff/00
+URxvt.color11: rgb:ff/ff/00
+URxvt.color12: rgb:00/00/ff
+URxvt.color13: rgb:ff/00/ff
+URxvt.color14: rgb:00/ff/ff
+URxvt.color15: rgb:ff/ff/ff
+

@@ -15,7 +15,8 @@
 * ### Interposer and ACF (top priority)
   * Au solder spheres - separation distance, application (ball bonder: [this is a link](https://shimadzuinstitute.org/centers/nanotechnology-research-center/nanotechnology-research-center-dicing-and-bonding-platforms/) ) and creating a level height platform between all Au spheres and interposer/gold trace metal contact (thermal sonicator press instrument)
   * Incorporating ACF (tape/press vs instrument)
-  * Sapphire or quartz interposer 
+  * Sapphire or quartz interposer
+  * The 1st chip to be considered is manufactured in sky130 process through efabless.  Chip GDS can be found [here](https://github.com/AustinMcDonald/Q-Pix-Sky130-Caravel/blob/main/gds/caravel_fullchip_transplanted.oas).
  
 * ### Individual Field Effect Transistors (not a priority)
   * Mask designs (size and separation distance of transistors)

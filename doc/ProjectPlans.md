@@ -17,7 +17,21 @@
   * Incorporating ACF (tape/press vs instrument)
   * Sapphire or quartz interposer
   * The 1st chip to be considered is manufactured in sky130 process through efabless.  Chip GDS can be found [here](https://github.com/AustinMcDonald/Q-Pix-Sky130-Caravel/blob/main/gds/caravel_fullchip_transplanted.oas).
- 
+    * Layer definition:
+```
+m1     68/20
+m1fill 36/28
+m2     69/20
+m2fill 41/28
+m3     70/20
+m3fill 34/28
+m4     71/20
+m4fill 51/28
+m5     72/20
+m5fill 59/28
+glass  76/20 pad.drawing
+hvi    75/20
+```
 * ### Individual Field Effect Transistors (not a priority)
   * Mask designs (size and separation distance of transistors)
   * Metals, insulators and doping  

@@ -27,3 +27,12 @@
 * Line spacing and design
 
 ![Interposer sketch](./assets/Interposersketch.v1.drawio.svg)
+
+## Materials
+* Quartz vs Sapphire Interposer
+    * Need for specific dielectric consideration?
+
+## Mask Provider
+* Front Range PhotoMask [this is a link](https://www.frontrangephotomask.com)
+
+      

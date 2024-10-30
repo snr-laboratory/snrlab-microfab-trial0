@@ -33,6 +33,15 @@
     * Need for specific dielectric consideration?
 
 ## Mask Provider
-* Front Range PhotoMask [this is a link](https://www.frontrangephotomask.com)
+* [Front Range PhotoMask](https://www.frontrangephotomask.com)
 
-      
+## Glass Interposers
+* [CORNING](https://www.corning.com/worldwide/en/products/advanced-optics/product-materials/semiconductor-laser-optic-components/semiconductor-glass-wafers.html)
+* [PLANOPTIK AG](https://planoptik.com/products/interposer/)
+  
+## Laser Glass Cutting
+* [WORKSHOP OF PHOTONICS](https://wophotonics.com/applications/laser-micro-cutting-dicing/)
+
+## Bumping
+* [HB16 Wire Bonder](https://www.tpt-wirebonder.com/hb16/)
+    * [AmTECH](https://amtechmicro.com/processes/wire-bonding/)      

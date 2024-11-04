@@ -29,9 +29,11 @@
 ![Interposer sketch](./assets/Interposersketch.v1.drawio.svg)
 
 ## Materials
-* Quartz vs Sapphire Interposer
-    * Need for specific dielectric consideration?
-
+* Glass Interposer
+    * Rich SiO2
+        * Electrical isolation
+        * Low dielectric loss
+          
 ## Mask Provider
 * [Front Range PhotoMask](https://www.frontrangephotomask.com)
 

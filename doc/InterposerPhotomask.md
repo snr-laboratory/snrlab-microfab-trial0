@@ -33,6 +33,16 @@
     * Rich SiO2
         * Electrical isolation
         * Low dielectric loss
+
+![Glass Interposer trace](./assets/Glass_interposer_trace.v1.oas)
+* Considerations
+    * 3mm edge exclusion zone range (pg 18 Fundamental Principles of Optical Lithography : The Science of Microfabrication, John Wiley & Sons, Incorporated, 2008) 
+        *  Outer bonding pad dimensions for interconnects? Or should they be slightly bigger?
+        *  Still searching for optimal key components for the electrical pathways
+            * Signal integrity - attenuation/distortion
+            * Bandwidth
+            * Crosstalk
+            * Impedance Control
           
 ## Mask Provider
 * [Front Range PhotoMask](https://www.frontrangephotomask.com)

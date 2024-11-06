@@ -19,23 +19,6 @@
     * [High-Speed PCB
 Design Guide](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/High-Speed%20PCB%20Design%20Guide.pdf)
 
-## Zebra Connectors
-* Pitch (150 micron)
-
-## Transmission (Trace) Lines 
-* Width
-* Length
-* Thickenss
-* Line spacing and design
-
-![Interposer sketch](./assets/Interposersketch.v1.drawio.svg)
-
-## Materials
-* Glass Interposer
-    * Rich SiO2
-        * Electrical isolation
-        * Low dielectric loss
-
 ![Glass Interposer trace](./assets/Glass_interposer_trace.v1.oas)
 * Considerations
     * 3mm edge exclusion zone range (pg 18 Fundamental Principles of Optical Lithography : The Science of Microfabrication, John Wiley & Sons, Incorporated, 2008) 
@@ -45,6 +28,25 @@ Design Guide](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/High-Speed%20PC
             * Bandwidth
             * Crosstalk
             * Impedance Control
+              
+## Transmission (Trace) Lines 
+* Width
+* Length
+* Thickenss
+* Line spacing and design
+  
+## Zebra Connectors
+* Pitch (150 micron)
+
+![Interposer sketch](./assets/Interposersketch.v1.drawio.svg)
+
+## Materials
+* Glass Interposer
+    * Rich SiO2
+        * Electrical isolation
+        * Low dielectric loss
+* Positive Resist?
+* Au: Bumbs, traces and pads
           
 ## Mask Provider
 * [Front Range PhotoMask](https://www.frontrangephotomask.com)

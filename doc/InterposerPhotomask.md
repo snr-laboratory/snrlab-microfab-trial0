@@ -59,5 +59,6 @@ Design Guide](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/High-Speed%20PC
 * [WORKSHOP OF PHOTONICS](https://wophotonics.com/applications/laser-micro-cutting-dicing/)
 
 ## Bumping
-* [HB16 Wire Bonder](https://www.tpt-wirebonder.com/hb16/)
+* (Need more information on the bonding pads(metals on pad)) 
+*  [HB16 Wire Bonder](https://www.tpt-wirebonder.com/hb16/)
     * [AmTECH](https://amtechmicro.com/processes/wire-bonding/)      

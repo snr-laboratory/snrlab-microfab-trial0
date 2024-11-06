@@ -13,7 +13,7 @@
 
 ## Interconnects
 * Pitch for interconnect pads
-* Shape and size of interconnect pads
+* Shape and size of interconnect pads: rectangular/slightly larger than bonding pad
 * The distance between interconnects and chip edge and between Au ball bumping region and interconnects
     * To close to edge introduces issues with resist uniformity or increased probablity of mishandling the device (avoid near edge).
     * [High-Speed PCB
@@ -30,10 +30,10 @@ Design Guide](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/High-Speed%20PC
             * Impedance Control
               
 ## Transmission (Trace) Lines 
-* Width
-* Length
-* Thickenss
-* Line spacing and design
+* Width: 75-200um
+* Length: under 2500um 
+* Thickenss: 
+* Line spacing and design: 200-300um 
   
 ## Zebra Connectors
 * Pitch (150 micron)

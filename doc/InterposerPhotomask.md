@@ -15,7 +15,9 @@
 * Pitch for interconnect pads
 * Shape and size of interconnect pads
 * The distance between interconnects and chip edge and between Au ball bumping region and interconnects
-    * To close to edge introduces issues with resist uniformity or increased probablity of mishandling the device (avoid near edge). 
+    * To close to edge introduces issues with resist uniformity or increased probablity of mishandling the device (avoid near edge).
+    * [High-Speed PCB
+Design Guide](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/High-Speed%20PCB%20Design%20Guide.pdf)
 
 ## Zebra Connectors
 * Pitch (150 micron)

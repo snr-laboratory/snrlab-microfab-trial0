@@ -28,7 +28,7 @@ Design Guide](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/High-Speed%20PC
             * Bandwidth
             * Crosstalk
             * Impedance Control
-            * Capacitance (zero current flowing though device)
+            * Capacitance (zero current flowing through device)
               
 ## Transmission (Trace) Lines 
 * Width: 75-200um

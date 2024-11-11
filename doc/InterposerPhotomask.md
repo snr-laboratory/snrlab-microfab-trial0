@@ -13,22 +13,20 @@
 
 ## Interconnects
 * Pitch for interconnect pads
-* Shape and size of interconnect pads: rectangular/slightly larger than bonding pad
+* Shape and size of inner interconnect pads: rectangular, slightly larger than bonding pad, same size...
 * The distance between interconnects and chip edge and between Au ball bumping region and interconnects
-    * To close to edge introduces issues with resist uniformity or increased probablity of mishandling the device (avoid near edge).
     * [High-Speed PCB
 Design Guide](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/High-Speed%20PCB%20Design%20Guide.pdf)
-
-![Glass Interposer trace](./assets/Glass_interposer_trace.v1.oas)
-* Considerations
     * 3mm edge exclusion zone range (pg 18 Fundamental Principles of Optical Lithography : The Science of Microfabrication, John Wiley & Sons, Incorporated, 2008) 
-        *  Outer bonding pad dimensions for interconnects? Or should they be slightly bigger?
+        *  Outer bonding pad dimensions for interconnects? should they be slightly bigger or same size (what size solder will be applied)?
         *  Still searching for optimal key components for the electrical pathways
             * Signal integrity - attenuation/distortion
             * Bandwidth
             * Crosstalk
             * Impedance Control
             * Capacitance (zero current flowing through device)
+
+![interposermask](./assets/interposermask.v7.ruler.png)
               
 ## Transmission (Trace) Lines 
 * Width: 75-200um

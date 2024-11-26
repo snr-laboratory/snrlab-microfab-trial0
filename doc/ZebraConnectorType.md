@@ -12,13 +12,12 @@
 ## PCB
 * 8 or 10 mil (203um vs 254um)
 * 2 layers
-* Design template?
 * FR4
 * Copper thickness: 1oz/ft^2 (~35um)
 * ENIG finish?
 
-* Template design?
-
+* Design template?
+  
 ## Zebra GOLD 8000 Connectors
 ## Specifications:
 * 100-166 pitch options

@@ -12,7 +12,7 @@
     * 10mil: pad width: 254um ; pad gap: 254um
     * 8mil: pad width: 203um ; pad gap: 203um
     * Contact pad:(Zebra determines this - Pitch)
-    * Design Considerations: [PCB Traces 101](https://www.youtube.com/watch?v=xEVntmYLARw);[How To Improve Your PCB Designs (Common Mistakes)](https://www.youtube.com/watch?v=IclJ9nbtYgI);  
+    * Design Considerations: [PCB Traces 101](https://www.youtube.com/watch?v=xEVntmYLARw); [How To Improve Your PCB Designs (Common Mistakes)](https://www.youtube.com/watch?v=IclJ9nbtYgI);  
     * Design Tool: [easyeda](https://www.youtube.com/watch?v=MsdJgEinb34&t=279s) ; KiCad
       
        

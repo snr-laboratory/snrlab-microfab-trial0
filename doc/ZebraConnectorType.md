@@ -1,4 +1,21 @@
 # Zebra Connectors for Glass Interposer and PCB (FR-4)
+## Connections
+* Chip to Interposer: Fine-pitch to larger-pitch (Zebra determines this - alignment is crucial for minimizing signal loss or crosstalk)
+* Interposer to Zebra: signal rerouting, low cost and reliable electrial contact (design conisderation: shorting,pitch,width of connector, material type, contact pad design, trace spacing (gap), compression and height, trace width and alignment tolerance); [Design Guide](http://youeal.hk/en/products/conductive-silicone-zebra-elastomeric-connectors/design-guide/)
+* Zebra to PCB: Alignment is crucial (zebra can fail if not properly aligned)
+  * [Zebra can fail](https://www.youtube.com/watch?v=c0U394GGofY) 
+  * [OSCO](https://www.osco.uk.com/products/connectors/silver)
+
+## Zebra to PCB
+* Ordered Zebra Connectors to PCB
+  * PCB
+    * 10mil: pad width: 254um ; pad gap: 254um
+    * 8mil: pad width: 203um ; pad gap: 203um
+    * Contact pad:(Zebra determines this - Pitch)
+    * Design Considerations: [PCB Traces 101](https://www.youtube.com/watch?v=xEVntmYLARw);[How To Improve Your PCB Designs (Common Mistakes)](https://www.youtube.com/watch?v=IclJ9nbtYgI);  
+    * Design Tool: [easyeda](https://www.youtube.com/watch?v=MsdJgEinb34&t=279s) ; KiCad
+      
+       
 
 ## Zebra Supplier Common Questions
 * Difficult project for Z-Axis to support based on the dimensions

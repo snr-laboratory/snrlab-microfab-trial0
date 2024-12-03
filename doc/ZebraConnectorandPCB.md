@@ -30,7 +30,6 @@
 * FR4
 * Copper thickness: 1oz/ft^2 (~35um)
 * ENIG finish?
-
 * Design template?
   
 ## Zebra GOLD 8000 C Connectors - Fujipoly

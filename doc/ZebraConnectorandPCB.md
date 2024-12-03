@@ -13,9 +13,7 @@
     * 8mil: pad width: 203um ; pad gap: 203um
     * Contact pad:(Zebra determines this - Pitch)
     * Design Considerations: [PCB Traces 101](https://www.youtube.com/watch?v=xEVntmYLARw); [How To Improve Your PCB Designs (Common Mistakes)](https://www.youtube.com/watch?v=IclJ9nbtYgI);  
-    * Design Tool: [easyeda](https://www.youtube.com/watch?v=MsdJgEinb34&t=279s) ; KiCad
-      
-       
+    * Design Tool: [easyeda](https://www.youtube.com/watch?v=MsdJgEinb34&t=279s) ; KiCad       
 
 ## Zebra Supplier Common Questions
 * Difficult project for Z-Axis to support based on the dimensions
@@ -35,7 +33,7 @@
 
 * Design template?
   
-## Zebra GOLD 8000 Connectors
+## Zebra GOLD 8000 C Connectors - Fujipoly
 ## Specifications:
 * 100-166 pitch options
 

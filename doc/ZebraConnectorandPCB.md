@@ -4,7 +4,11 @@
 * Interposer to Zebra: signal rerouting, low cost and reliable electrial contact (design conisderation: shorting, pitch, width of connector,  material type, contact pad design, trace spacing (gap), compression and height, trace width and alignment tolerance); [Design Guide](http://youeal.hk/en/products/conductive-silicone-zebra-elastomeric-connectors/design-guide/)
 * Zebra to PCB: Alignment is crucial (zebra can fail if not properly aligned)
   * [Zebra can fail](https://www.youtube.com/watch?v=c0U394GGofY) 
-  * [OSCO](https://www.osco.uk.com/products/connectors/silver)
+  * OSCO - quote submitted for the following:
+    * 8000C Gold Connector 1.524mm W x 2.54mm H x 24.99mm L
+    * 2005 Carbon Connector with Sponge Supports Both Sides 2.5 W x 5.0 H x 21.5 L mm
+    * 2004 Plain Carbon Connector 3 W 4 H x 28L mm
+      * [OSCO](https://www.osco.uk.com/shop/quote-basket?action=sent)  
 
 ## Zebra to PCB
 * Ordered Zebra Connectors to PCB

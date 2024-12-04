@@ -1,4 +1,8 @@
-# Zebra Connectors for Glass Interposer and PCB (FR-4)
+# Trace Design, Zebra Connectors and PCB (FR-4)
+
+## Trace Design
+![TraceRerouting](./assets/TraceDesign/TraceRerouting_Zebra-2.svg)
+
 ## Connections
 * Chip to Interposer: Fine-pitch to larger-pitch (Zebra determines this - alignment is crucial for minimizing signal loss or crosstalk)
 * Interposer to Zebra: signal rerouting, low cost and reliable electrial contact (design conisderation: shorting, pitch, width of connector,  material type, contact pad design, trace spacing (gap), compression and height, trace width and alignment tolerance); [Design Guide](http://youeal.hk/en/products/conductive-silicone-zebra-elastomeric-connectors/design-guide/)

@@ -10,7 +10,7 @@
 * [PCB Layout: A Comprehensive Guide](https://www.wevolver.com/article/pcb-layout-a-comprehensive-guide)
 
 ## Software
-* [EasyEDA]([https://oshwlab.com/smarthomehookup/video-blinds-pcb](https://easyeda.com))
+* [EasyEDA](https://easyeda.com)
 * [KiCad](https://www.kicad.org)
   
 ## Order PCB

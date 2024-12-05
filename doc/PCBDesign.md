@@ -1,5 +1,5 @@
 # PCB Design 
-
+![PCB&Zebra](./assets/PCB/PCB&Zebra.svg)
 ## Resources
 * [Phil's Lab](https://www.phils-lab.net/services)
 * [Dave Jones PCB Design PDF](https://www.scs.stanford.edu/~zyedidia/docs/pcb/pcb_tutorial.pdf)

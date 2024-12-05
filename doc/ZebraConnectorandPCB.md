@@ -54,6 +54,7 @@
 * Solid self-supporting connectors - better stability???
 
  ## Design Considerations
+* [Design Guidelines - Connectors](https://www.fujipoly.com/usa/resources/design-guidelines/design-guidelines-connectors.html)
 * Must be readily available to purchase and quick delivery
   
 * Pitch Matching: 150um Type C to 80um gold trace lines (glass interposer)

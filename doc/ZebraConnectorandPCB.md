@@ -50,7 +50,6 @@
     * Insulative Width: 125 um
     * Pitch (Center-to-Center): 150 um
     * High Density
-      
 * Solid self-supporting connectors - better stability???
 
  ## Design Considerations

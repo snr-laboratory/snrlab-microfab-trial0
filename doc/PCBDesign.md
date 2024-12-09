@@ -21,7 +21,9 @@
 * 2 layer
 * Board type: **single unit** vs panel
 * FR4-Standard Tg 140C - **performance at low T?**
-* Board type:
+* Board type:single unit vs panel
+    * [PCB Panelization: Everything You Need to Know](https://hilelectronic.com/pcb-panelization/)
+    * [Single PCB vs PCB array](https://www.pcbpower.us/blog/single-pcb-vs-pcb-array)
 * Board size:
 * Quantiy:
 * Thickness:
@@ -34,4 +36,11 @@
 * Analog-to-Digital Converter (ADC)
 * Ground Plane
 * Alignment Markers
+
+## Basic Components
+* Si-CMOS Sensitive Charge Sensor Chip (3x5mm)
+* Au Bumps (for chip to interposer connection)
+* Glass Interposer (1cm x 1cm)
+* Au Traces (signal routing)
+* Zebra Connectors
 

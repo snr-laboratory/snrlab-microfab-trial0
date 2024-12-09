@@ -17,15 +17,16 @@
 * [JLCPCB](https://jlcpcb.com/?from=RHS)
 * [PCBWay](https://www.pcbway.com/why.html)
 
-## PCBWay - Standard Manufacturing/Specifications 
+## PCB - Standard Manufacturing/Specifications
+![PCBboardsize](./assets/PCB/PCBBoard.svg)
 * 2 layer
 * Board type: **single unit** vs panel
 * FR4-Standard Tg 140C - **performance at low T?**
 * Board type:single unit vs panel
     * [PCB Panelization: Everything You Need to Know](https://hilelectronic.com/pcb-panelization/)
     * [Single PCB vs PCB array](https://www.pcbpower.us/blog/single-pcb-vs-pcb-array)
-* Board size:
-* Quantiy:
+* Board size:20x20mm
+* Quantiy:3
 * Thickness:
 
 

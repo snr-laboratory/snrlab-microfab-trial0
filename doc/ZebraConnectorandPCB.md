@@ -4,16 +4,24 @@
 ![TraceRerouting](./assets/TraceDesign/TraceRerouting_Zebra-2.svg)
 
 ## Connections
-* Chip to Interposer: Fine-pitch to larger-pitch (Zebra determines this - alignment is crucial for minimizing signal loss or crosstalk)
-* Interposer to Zebra: signal rerouting, low cost and reliable electrial contact (design conisderation: shorting, pitch, width of connector,  material type, contact pad design, trace spacing (gap), compression and height, trace width and alignment tolerance); [Design Guide](http://youeal.hk/en/products/conductive-silicone-zebra-elastomeric-connectors/design-guide/)
+* Chip to Interposer: Fine-pitch to larger-pitch 
+* Interposer to Zebra: signal rerouting, low cost and reliable electrial contact; [Design Guide](http://youeal.hk/en/products/conductive-silicone-zebra-elastomeric-connectors/design-guide/)
   * **For connector width > 1.3 mm, the more conductive material a connector contains, the more expensive it is.
 Standard core width = 0.6 mm**
+  * **Compression set for inter-connector is ~ 10 - 15%**
+  * Guideline for reference
+    * H < 6 mm, ~ 15% compression of connector's height
+    * 6 mm < H < 10 mm, ~ 13% compression of connector's height
+    * ≥10 mm, ~ 10% compression of connector's height
+      
+    * X = n / 1 - p Formula to determine the uncompressed height of the connector
  
-* Zebra to PCB: Alignment is crucial (zebra can fail if not properly aligned)
+* Zebra to PCB: Alignment
   * [Zebra can fail](https://www.youtube.com/watch?v=c0U394GGofY) 
   * OSCO - quote submitted for the following:
     * 8000C Gold Connector 1.524mm W x 2.54mm H x 24.99mm L
     * 2005 Carbon Connector with Sponge Supports Both Sides 2.5 W x 5.0 H x 21.5 L mm
+      
     * 2004 Plain Carbon Connector 3 W 4 H x 28L mm
       * [OSCO](https://www.osco.uk.com/shop/quote-basket?action=sent)  
 
@@ -22,7 +30,8 @@ Standard core width = 0.6 mm**
   * PCB
     * 10mil: pad width: 254um ; pad gap: 254um
     * 8mil: pad width: 203um ; pad gap: 203um
-    * Contact pad:(Zebra determines this - Pitch)
+      
+    * Contact pad:
     * Design Considerations: [PCB Traces 101](https://www.youtube.com/watch?v=xEVntmYLARw); [How To Improve Your PCB Designs (Common Mistakes)](https://www.youtube.com/watch?v=IclJ9nbtYgI);
       
     * Design Tool: [easyeda](https://www.youtube.com/watch?v=MsdJgEinb34&t=279s) ; KiCad       

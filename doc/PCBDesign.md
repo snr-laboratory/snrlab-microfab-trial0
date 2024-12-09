@@ -16,4 +16,22 @@
 ## Order PCB
 * [JLCPCB](https://jlcpcb.com/?from=RHS)
 * [PCBWay](https://www.pcbway.com/why.html)
-  
+
+## PCBWay - Standard Manufacturing/Specifications 
+* 2 layer
+* Board type: **single unit** vs panel
+* FR4-Standard Tg 140C - **performance at low T?**
+* Board type:
+* Board size:
+* Quantiy:
+* Thickness:
+
+
+## PCB Components
+* Power Supply
+* Capacitors
+* Amplifiers
+* Analog-to-Digital Converter (ADC)
+* Ground Plane
+* Alignment Markers
+

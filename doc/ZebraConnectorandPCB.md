@@ -56,10 +56,8 @@
  ## Design Considerations
 * [Design Guidelines - Connectors](https://www.fujipoly.com/usa/resources/design-guidelines/design-guidelines-connectors.html)
 * Must be readily available to purchase and quick delivery
-  
 * Pitch Matching: 150um Type C to 80um gold trace lines (glass interposer)
   * 80um gold trace lines and 25um conductive width
-    
 *  Contact Pad Width (glass interposer)
   * larger than 25um conductive width (80um - matching trace?) 
   * Pad Pitch: Center-to-center spacing of pads matches the 150 um (Center-to-Center) pitch

@@ -38,6 +38,10 @@
 * Ground Plane
 * Alignment Markers
 
+## PCB Traces 
+* [PCB Traces 101 - Phil's Lab](https://www.youtube.com/watch?v=xEVntmYLARw&t=943s)
+
+
 ## Basic Components
 * Si-CMOS Sensitive Charge Sensor Chip (3x5mm)
 * Au Bumps (for chip to interposer connection)

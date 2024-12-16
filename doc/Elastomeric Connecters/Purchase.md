@@ -17,6 +17,10 @@
 * [AliExpress](https://www.aliexpress.us/item/3256804580125752.html?gatewayAdapt=glo2usa4itemAdapt)
 * [Made-in-China.com](https://www.made-in-china.com/products-search/hot-china-products/Zebra_Connector.html)
 
+## Types of Zebra Connectors
+* [Zebra Elastomeric Connectors Making The Connection](https://www.osco.uk.com/news/zebra-elastomeric-connectors-making-the-connection)
+   
+
 
      
       

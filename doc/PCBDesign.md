@@ -41,6 +41,7 @@
 * [PCB Traces 101 - Phil's Lab](https://www.youtube.com/watch?v=xEVntmYLARw&t=943s)
 * [10 best layout tips for high speed and high current pcb traces](https://www.protoexpress.com/blog/best-layout-tips-for-high-speed-and-high-current-pcb-traces/)
 * [Crosstalk or Coupling](https://resources.altium.com/p/crosstalk-or-coupling)
+* [The Critical Role of PCB Trace Width and How to Calculate It](https://jlcpcb.com/blog/pcb-trace-widths-in-pcb-design)
 * [Trace Width Calculator](https://www.advancedpcb.com/en-us/tools/trace-width-calculator/)
 * [Trace Inductance Calculator](https://spok.ca/index.php/resources/tools/106-traceindcalc)
 

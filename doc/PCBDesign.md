@@ -31,6 +31,7 @@
   
 ## PCB Design
 * [How To Learn PCB Design (My Thoughts, Journey, and Resources) - Phil's Lab #87](https://www.youtube.com/watch?v=aODkA2mrimQ&t=799s)
+* [Design Requirement of SMT PCBs Part Two: Settings of Pad-Trace Connection, Thru-Holes, Test Point, Solder Mask and Silkscreen](https://www.pcbcart.com/article/content/design-requirement-of-SMT-PCB-2.html)
 * [The Importance Of Fiducial Markers On PCB](https://morepcb.com/fiducial-markers/)
 * [Dave Jones PCB Design PDF](https://www.scs.stanford.edu/~zyedidia/docs/pcb/pcb_tutorial.pdf)
 * [How to Achieve Proper Grounding - Rick Hartley](https://www.youtube.com/watch?v=ySuUZEjARPY&t=0s)

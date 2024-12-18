@@ -13,7 +13,7 @@
 * Avg pitch: 109.0um = 0.109mm
 
 * Sample avg: 0.107mm
-### **0.100 pitch** 
+### **0.100mm pitch** 
 
 # Width of Zebra Connector w/o Sponge Supports
 ### Sample 1

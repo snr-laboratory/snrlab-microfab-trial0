@@ -1,7 +1,12 @@
 # Trace Design, Zebra Connectors and PCB (FR-4)
 
 ## Trace Design
+
+### ipmask version 6 pad width changes
+![ipmask version 6](./assets/TraceDesign/ipmaskv6.png)
+### ipmask version 5 pad width changes
 ![ipmask version 5 pad width changes](./assets/TraceDesign/ipmaskv5pwc.png)
+### Trace Rerouting Rough Sketch
 ![TraceRerouting](./assets/TraceDesign/TraceRerouting_Zebra-2.svg)
 
 ## Connections

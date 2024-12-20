@@ -13,7 +13,7 @@
 * PCB 
 ![Chip alignment](./assets/Ipmask2/Ipmaskv9amc.png)
 
-## Questions 
+## Previous Questions 
 
 1) Last we spoke you mentioned to keep the 2500um trace lines and then to connect/extend those to the zebra connectors contact pads. Should we keep the same width regarding the trace lines going from the already existing trace lines to the zebra connectors contact pads
 

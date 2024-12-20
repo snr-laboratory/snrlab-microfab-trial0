@@ -1,4 +1,17 @@
-# Update on Glass Interposer Photomask
+# Update (241219) on Glass Interposer Photomask
+
+## Transmission Line Design 
+* 80 micron wide round traces
+* Traces have min. of 2-3 times the width of trace space between traces (160-240um)
+  * Exception: pads on the 5mm sides have ~135um spacing until rerouted to zebra contact pads
+* Gold bump pads are 100x100um
+* Zebra contact pads are 1600um (Width) x 400um (Heigth)
+![Trace Design and Spacing](./assets/TraceDesign/Ipmaskv9rt.png)
+
+## Alignment Marks
+* Chip features (diced)
+* PCB 
+![Chip alignment](./assets/Ipmask2/Ipmaskv9amc.png)
 
 ## Updates and Questions
 

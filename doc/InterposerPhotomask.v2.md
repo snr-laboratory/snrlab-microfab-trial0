@@ -1,3 +1,13 @@
+# Update (241220) on Glass Interposer Photomask
+
+## Zebra Connector Alignment Marks
+* Alignment marks for ZCs extend 500um beyond contact pads
+* Size? Needs to be visible for quick and realiable alignment
+* Interposer to PCB? - Round alignment markers? 3mm? Near to ZCs?
+* Interposer to chip - Are corners fine or do we need more (i.e in the centers? - in case of resist issues), size?
+  
+![IpmaskZCam](./assets/Ipmask2/IpmaskZCam.png)
+
 # Update (241219) on Glass Interposer Photomask
 
 ## Transmission Line Design 

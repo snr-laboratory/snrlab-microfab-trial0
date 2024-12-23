@@ -3,6 +3,7 @@
 ## Resources
 * [Phil's Lab](https://www.phils-lab.net/services)
 * [Rick Hartley Reading List](https://ninedotconnects.com/public_resources/Ricks-Reading-Recommendation.pdf)
+  
 * [PCB Creation for Beginners](https://www.youtube.com/watch?v=MsdJgEinb34&t=215s)
 
 ## Software
@@ -33,8 +34,11 @@
 * [How To Learn PCB Design (My Thoughts, Journey, and Resources) - Phil's Lab #87](https://www.youtube.com/watch?v=aODkA2mrimQ&t=799s)
 * [Design Requirement of SMT PCBs Part Two: Settings of Pad-Trace Connection, Thru-Holes, Test Point, Solder Mask and Silkscreen](https://www.pcbcart.com/article/content/design-requirement-of-SMT-PCB-2.html)
 * [The Importance Of Fiducial Markers On PCB](https://morepcb.com/fiducial-markers/)
+  * [Fiducial Mark for PCB Assembly Alignment](https://www.7pcb.com/blog/fiducial-mark-for-pcb-assembly-alignment)
+    * **The minimum diameter of a circular fiducial mark is 1 mm with 3mm dia. clearance area**
 * [Dave Jones PCB Design PDF](https://www.scs.stanford.edu/~zyedidia/docs/pcb/pcb_tutorial.pdf)
 * [How to Achieve Proper Grounding - Rick Hartley](https://www.youtube.com/watch?v=ySuUZEjARPY&t=0s)
+  
 * [PCB Layout: A Comprehensive Guide](https://www.wevolver.com/article/pcb-layout-a-comprehensive-guide)
 
 ## PCB Traces 
@@ -43,6 +47,7 @@
 * [Crosstalk or Coupling](https://resources.altium.com/p/crosstalk-or-coupling)
 * [The Critical Role of PCB Trace Width and How to Calculate It](https://jlcpcb.com/blog/pcb-trace-widths-in-pcb-design)
 * [Trace Width Calculator](https://www.advancedpcb.com/en-us/tools/trace-width-calculator/)
+  
 * [Trace Inductance Calculator](https://spok.ca/index.php/resources/tools/106-traceindcalc)
 
 ## PCB Components?

@@ -1,3 +1,21 @@
+# Update (241224) on Glass Interposer Photomask
+
+## Local Fiducial Marks and Tooling Holes
+* Tooling hole sizes are 1mm in diameter 
+  * **Ideally tool holes should be closer to the corners...**   
+* Fiducial mark size of the inner diameter is 1mm and outer diameter is 2mm
+* More than 0.25mm of clearance between traces, fids and tooling holes
+  
+* Triangular shape of fids for position identification
+![Local Fiducial Marks and Tooling Holes](./assets/Ipmask2/Ipmask10Fids&THams.png)
+
+* [The Importance Of Fiducial Markers On PCB](https://morepcb.com/fiducial-markers/)
+* [PCB Tooling Holes Design Tips](https://resources.pcb.cadence.com/blog/2021-pcb-tooling-holes-design-tips)  
+* [IMPORTANCE OF TOOL HOLES IN PCBS](https://rushpcb.com/importance-of-tool-holes-in-pcbs/)
+* [BUILD A CIRCUIT BOARD ASSEMBLY JIG](https://www.nutsvolts.com/magazine/article/september2011_Collier)
+  
+* [Ensuring Proper Alignment of Layers and Components on a Printed Circuit Board](https://resources.pcb.cadence.com/blog/jbj-ensuring-proper-alignment-of-layers-and-components-on-a-printed-circuit-board)
+  
 # Update (241220) on Glass Interposer Photomask
 
 ## Zebra Connector Alignment Marks

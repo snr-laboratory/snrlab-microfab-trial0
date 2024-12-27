@@ -1,3 +1,13 @@
+# Update (241227) on Glass Interposer Photomask
+
+## Zebra Connectors on Contact Pads
+![Zebra Connectors](./assets/Ipmask2/Ipmask11ZC.png)
+* Note: Sponge width was not accurately measured with confocal microscope (measurement was taken with ruler)
+* Sponge width is 1100um on each side 
+* ~4 conducitve strips per contact pad
+* ~400um of tolerance on each side of conductive center width
+![Conductive Stips and Contact Pads](./assets/Ipmask2/Ipmask11zcs.png)
+  
 # Update (241224) on Glass Interposer Photomask
 
 ## Local Fiducial Marks and Tooling Holes

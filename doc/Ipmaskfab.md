@@ -10,6 +10,7 @@
 * The alignment markers may need to be modified since they are very near to resolution limitations   
 * Material selection of transparencies needs to be robust (i.e adhesion, warping, etc...)
   * 3M CG3300 Transparency Film - **toner sprays may be necessary**
+    * [Project: Improved LaserJet PCB transparencies](https://forum.allaboutcircuits.com/threads/project-improved-laserjet-pcb-transparencies.12474/)   
   * Premium Transparency Film 5 Mil - **not fully transparent**
   
 * Ink selection?

@@ -31,7 +31,8 @@ Transparencies need to be robust (i.e compatibility, transparency (UV light tran
 3) [($66.00) Caseys Laser Film](https://mclogan.com/products/caseys-laser-film)
    * [($$66.00)Caseys’ Laser Film 8.5 x 11 Inches](https://caseyspm.com/product/caseys-laser-film-9/)
 
-
+## Glass Slides 
+[($14.99) AmScope Pre-Cleaned Blank Microscope Slides](https://www.amazon.com/AmScope-BS-50P-100S-22-Pre-Cleaned-Microscope-Coverslips/dp/B00T53OM5C/ref=sr_1_5?crid=3I2G1UB5XTQ8Y&dib=eyJ2IjoiMSJ9.CDLF-7Hu--kQMRutVCFjmCmyJ2HdmNhtMybRvGM8KRnparCY-B8od5dpSnFInnO7QDXMWsh2JTO2Emw9B99mMTSvM7GM_kQhLpRSYjVJx3s0T1SUzhV1Kucj_OIYUHfXuQQsnaoIdaUh2qiF2KD36nEh5a8WNb_doLv-0LRoN47MQ57UYhrLcAWd1DXuyQMOCDGaPkzmXXwSmnqBiA834udZBYKuSvduFOjnmkjCxdk.mSs9LLOgaZ96LVnvhB9J2xxRG3TolcvUOxCzBlndwJo&dib_tag=se&keywords=glass%2Bmicroscope%2Bslides&qid=1736012725&sprefix=glass%2Bmicroscope%2Bslides%2Caps%2C132&sr=8-5&th=1)
 
 ## Ink selection?
 

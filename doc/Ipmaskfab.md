@@ -1,8 +1,10 @@
 # Interposer Photomask Fabrication Plan 
 
 ## Fabricating a photomask using a laser printer and transparancies 
-* [Soft photolithography mask](https://www.elveflow.com/microfluidic-reviews/soft-lithography-microfabrication/su-8-photolithography-photomask/)
+* Using a laser printer to fabricate a transparency photomask is a low-cost and readily accessible method for fast prototyping. 
 * This is a possibility since most of the feature sizes are quite large (i.e 80um - second smallest feature size)
+* [Soft photolithography mask](https://www.elveflow.com/microfluidic-reviews/soft-lithography-microfabrication/su-8-photolithography-photomask/)
+
   * ## **Alignment markers at the corners of the window, that match chip features, have concerning dimensions**
  
 ![Alignment Marker Dimensions for Laser Printing](./assets/Ipmask2/Amarkerslaserp.png)
@@ -44,3 +46,5 @@ Transparencies need to be robust (i.e compatibility, transparency (UV light tran
          
 ### Laser Printing in General
 * [THE ROLE OF TONER IN LASER PRINTERS](https://smarttechfl.com/blog/do-laser-printers-use-ink/)
+* [What is Transparency Film?](https://posterprintshop.com/guide/printing-on-transparency-film/)
+  

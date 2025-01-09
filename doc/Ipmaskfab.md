@@ -3,7 +3,6 @@
 ## Fabricating a photomask using a laser printer and transparancies 
 * Using a laser printer to fabricate a transparency photomask is a low-cost and readily accessible method for fast prototyping. 
 * This is a possibility since most of the feature sizes do not require high resolution
-* [Soft photolithography mask](https://www.elveflow.com/microfluidic-reviews/soft-lithography-microfabrication/su-8-photolithography-photomask/)
 
 #### **Alignment markers at the corners of the window have concerning dimensions**
  
@@ -50,7 +49,9 @@ Transparencies need to be robust (i.e compatibility, transparency (UV light tran
     * Avoiding distortions or loss of detail
     * Optical setup
          
-## Laser Printing in General
+## Laser Printing and General Info.
 * [THE ROLE OF TONER IN LASER PRINTERS](https://smarttechfl.com/blog/do-laser-printers-use-ink/)
 * [What is Transparency Film?](https://posterprintshop.com/guide/printing-on-transparency-film/)
+* [Soft photolithography mask](https://www.elveflow.com/microfluidic-reviews/soft-lithography-microfabrication/su-8-photolithography-photomask/)
+
   

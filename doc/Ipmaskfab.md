@@ -10,11 +10,20 @@
 
 **The alignment markers may need to be modified since they are very near to resolution limitations**
 
-## Negative Film Photomask
+## Negative Film Photomask (recommended) 
 ![Ipmaskneg.png](./assets/Ipmask2/Ipmaskneg.png)
 
 ## Positive Film Photomask
 ![Ipmaskpos.png](./assets/Ipmask2/Ipmaskpos.png)
+
+## Negative Photoresist
+* Photoresist
+  * SU-8 negative photoresist
+  * NR9-6000PY or NR9-6000P [Photoresist](https://www.powerwaywafer.com/wafer-fabrication/nanofabrication.html)
+  * (experience with NR9-1000PY)
+* Developer
+  * (experience with RD6)
+  * AZ1500 Thinner (AZ Electronic Materials, South Korea)
 
 ## Laser Printer
 The Hybrid Atelier at UTA has the Brother HL-L8360CDW series printer with the following specs:
@@ -35,9 +44,8 @@ Transparencies need to be robust (i.e compatibility, transparency (UV light tran
 [$14.99 - AmScope Pre-Cleaned Blank Microscope Slides](https://www.amazon.com/AmScope-BS-50P-100S-22-Pre-Cleaned-Microscope-Coverslips/dp/B00T53OM5C/ref=sr_1_5?crid=3I2G1UB5XTQ8Y&dib=eyJ2IjoiMSJ9.CDLF-7Hu--kQMRutVCFjmCmyJ2HdmNhtMybRvGM8KRnparCY-B8od5dpSnFInnO7QDXMWsh2JTO2Emw9B99mMTSvM7GM_kQhLpRSYjVJx3s0T1SUzhV1Kucj_OIYUHfXuQQsnaoIdaUh2qiF2KD36nEh5a8WNb_doLv-0LRoN47MQ57UYhrLcAWd1DXuyQMOCDGaPkzmXXwSmnqBiA834udZBYKuSvduFOjnmkjCxdk.mSs9LLOgaZ96LVnvhB9J2xxRG3TolcvUOxCzBlndwJo&dib_tag=se&keywords=glass%2Bmicroscope%2Bslides&qid=1736012725&sprefix=glass%2Bmicroscope%2Bslides%2Caps%2C132&sr=8-5&th=1)
 
 ## Additonal Materials
-* Photoresist
-* Developer 
 * Nitrile Gloves
+* Safety Goggles
 * Isopropyl Alcohol
 * Kimwipes Delicate
 * Protectant Sleeves 

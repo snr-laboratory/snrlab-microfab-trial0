@@ -1,4 +1,35 @@
-# FET 
+# Field Effect Transistors 
+
+## Advanced Field-Effect Sensors
+* [Advanced Field-Effect Sensors](https://pmc.ncbi.nlm.nih.gov/articles/PMC10181658/#B1-sensors-23-04554)
+
+* [Electronic Nanodevices](https://www.mdpi.com/2079-4991/12/13/2125)
+
+## Extended Gate Field-Effect Transistor (EGFET)
+* [Comparison of the Extended Gate Field-Effect Transistor with Direct Potentiometric Sensing for Super-Nernstian InN/InGaN Quantum Dots](https://pmc.ncbi.nlm.nih.gov/articles/PMC7758944/)
+* [In this study, we demonstrate a label-free cortisol detection method with an EG-FETs, which is overcoming the Debye screening limitation for charge sensing by using by using 61-basepair aptamer-decorated single-layer graphene on platinum as a gate electrode.](https://www.nature.com/articles/s43246-020-00114-x#Fig1)
+
+
+
+
+## 
+* []()
+
+## 
+* []()
+
+
+## pH FET sensors
+* [A comprehensive review of FET-based pH sensors: materials, fabrication technologies, and modeling](https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/elsa.202100147)
+
+## FET Biosensors
+* [Functionalization of an extended-gate field-effect transistor (EGFET) for bacteria detection](https://www.nature.com/articles/s41598-022-08272-3)
+* [Emerging Field-Effect Transistor Biosensors for Life Science Applications](https://pmc.ncbi.nlm.nih.gov/articles/PMC10375956/)
+
+
+## Photo−Activated Chemical Sensors (Non-FET)
+* [Recent Advances in Photo−Activated Chemical Sensors](https://www.mdpi.com/1424-8220/22/23/9228)
+
 
 ## Sensors
 * [Silicon Field Effect Transistors (FET)](https://encyclopedia.pub/entry/14295)

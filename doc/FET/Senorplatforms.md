@@ -1,18 +1,23 @@
 # Field Effect Transistors (FET)
 
-## Advanced FET Sensors
-* [Advanced Field-Effect Sensors](https://pmc.ncbi.nlm.nih.gov/articles/PMC10181658/#B1-sensors-23-04554)
-
-* [Electronic Nanodevices](https://www.mdpi.com/2079-4991/12/13/2125)
-
-## Diamond solution-gate field-effect transistors (D-SGFETs)
-* [Diamond FET Biosensor Fabrication and Application](https://www.mdpi.com/2079-9292/13/19/3881)
-
-## Graphene Ion Sensitive Field Effect Transistors ISFETs
-* [Selective ion sensing with high resolution large area graphene field effect transistor arrays](https://www.nature.com/articles/s41467-020-16979-y)
-
 ## Open-Gate Junction Field-Effect Transistor (OG-JFET)
 * [Electronic Sensing Platform (ESP) Based on Open-Gate Junction Field-Effect Transistor (OG-JFET) for Life Science Applications: Design, Modeling and Experimental Results](https://www.mdpi.com/1424-8220/21/22/7491)
+
+## Materials
+* Silicon <100> (n-type)
+* Resist
+* Developer
+* Manual pipette or other means for applying resist (disposable pipette?)
+* Acetone, isopropyl alcohol and DI shallow beakers for cleaning
+* Isopropyl alcohol and DI (x2) shallow beakers for liftoff
+* Storage containers for devices and wafers
+* Diamond pen
+* Permanet markers
+* Carrier box
+
+## Advanced FET Sensors
+* [Advanced Field-Effect Sensors](https://pmc.ncbi.nlm.nih.gov/articles/PMC10181658/#B1-sensors-23-04554)
+* [Electronic Nanodevices](https://www.mdpi.com/2079-4991/12/13/2125)
 
 ## Extended Gate FET (EGFET)
 * [Comparison of the Extended Gate Field-Effect Transistor with Direct Potentiometric Sensing for Super-Nernstian InN/InGaN Quantum Dots](https://pmc.ncbi.nlm.nih.gov/articles/PMC7758944/)
@@ -20,6 +25,13 @@
   
 * [Fabrication of a Mesoporous Multimetallic Oxide-based Ion-Sensitive Field Effect Transistor for pH Sensing](https://pubs.acs.org/doi/full/10.1021/acsomega.1c05469)
 * [In this study, we demonstrate a label-free cortisol detection method with an EG-FETs, which is overcoming the Debye screening limitation for charge sensing by using by using 61-basepair aptamer-decorated single-layer graphene on platinum as a gate electrode.](https://www.nature.com/articles/s43246-020-00114-x#Fig1)
+
+
+## Graphene Ion Sensitive Field Effect Transistors ISFETs
+* [Selective ion sensing with high resolution large area graphene field effect transistor arrays](https://www.nature.com/articles/s41467-020-16979-y)
+
+## Diamond solution-gate field-effect transistors (D-SGFETs)
+* [Diamond FET Biosensor Fabrication and Application](https://www.mdpi.com/2079-9292/13/19/3881)
 
 ## Single-gate silicon FETs (Si-FETs) Dual-gate 2D FETs (SS-dgFETs)(IL-dgFETs)
 * [Optimal field-effect transistor operation for high-resolution biochemical measurements](https://pubs.aip.org/aip/rsi/article/92/3/030901/1061455/Optimal-field-effect-transistor-operation-for-high)

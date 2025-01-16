@@ -62,5 +62,6 @@ To meet the trial project requirements by the end of January, here is the follow
    * Transfer to IPA and sonicate for 5 minutes
    * Rinse with IPA and inspect to see that there is no remaining unwanted metals. Repeat acetone and IPA sonication until clean (make sure to replace with new acetone and IPA)
    * N2 dry and store in wafer box
-  
 
+
+**this is a modfied procedure from my previous time in Dr. Koh's group. This should save us time and should not be considered a finalized procedure, this is just to pass the trial. We may need to make further modifications later on down the road to meet the different requirements for this project**

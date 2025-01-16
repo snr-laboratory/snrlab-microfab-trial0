@@ -4,7 +4,7 @@ To meet the trial project requirements by the end of January, here is the follow
 # Procedure
 1. Laserprinting Photomask
    * Clean transparency slides well with IPA and dry off with kimwipes
-   * Play with printer settings to get the best printing results of photomask design
+   * Play with printer settings to get the best printing results of photomask design (i.e toner density should be set to max
    * Align transparencies well and if need be, print the design multiple times to get a nicely printed mask that meets inspection requirements (i.e fully opaque lines and well defined - there should not be any light passing through that could interefere with desired exposure)
    * Once this is achieved, cut out the mask (roughly 5x5cm for ease of handling)
    * Repeat this process two more times and obtain three reliable masks and store in containers
@@ -38,7 +38,7 @@ To meet the trial project requirements by the end of January, here is the follow
 4. OAI Aligner
    * I am considering simply taping the substrate to the film photomask and then exposing.
    * (I need to speak more with the staff to see how this best can be done, but they have done this before in the past so it shouldn't present an issue)
-   * Dose is set at 300W; i-line intensity: 10.0 mW/cm2
+   * Dose is set at 300W; i-line intensity 365nm wavelength light: 10.0 mW/cm2
    * Post bake at 100C for 1 minute
 
 5. Development

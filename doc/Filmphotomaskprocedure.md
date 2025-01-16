@@ -64,4 +64,4 @@ To meet the trial project requirements by the end of January, here is the follow
    * N2 dry and store in wafer box
 
 
-**this is a modfied procedure from my previous time in Dr. Koh's group. This should save us time and should not be considered a finalized procedure, this is just to pass the trial. We may need to make further modifications later on down the road to meet the different requirements for this project**
+**this is a modfied procedure from my previous time in Dr. Koh's group as well as suggestions made by the nanofab staff and other researchers in that same facility. This should save us time and should not be considered a finalized procedure, this is just to pass the trial. We may need to make further modifications later on down the road to meet the different requirements for this project**

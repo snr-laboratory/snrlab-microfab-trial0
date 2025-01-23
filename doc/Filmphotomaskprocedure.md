@@ -13,19 +13,19 @@ To meet the trial project requirements by the end of January, here is the follow
   
 **Before moving forward, the following insruments will be reserved ahead of time:**
 * OAI Model806 manual Front/Backside Contact Mask Aligner
-* AJA ATC ORION Series Evaporation System
-* AJA ATC ORION Series UHV Sputtering System
+* AJA ATC ORION Series Evaporation System (community Cr)
+* AJA ATC ORION Series UHV Sputtering System (community Al)
 
 
 2. Piranha Clean of Glass Slides
-   * Prepare H2SO4 + H2O2 3:1 concentration solution enough to submerge the glass substrate
+   * Prepare H2SO4 + H2O2 3:1 concentration solution enough to submerge the glass substrate (20minutes)
    * DI sonication for 2 minutes
    * Rinse with DI and N2 dry
    * Note: The hydroxylation process is essential for obtaining good adhesion between resist and substrate
   
 3. Spin Coating
    * Set-up hot-plates - one @ 150C and another @ 100C  
-   * Clean substrate with a 2 minute acetone sonication, 2 minute IPA sonication and N2 dry
+   * Clean substrate with a 2 minutes acetone sonication, 2 minute IPA sonication and N2 dry
    * Place substrate on hotplate to remove any residual acetone/IPA (~30s)
    * Place substrate in wafer box and allow to cool (wait ~15sec before placing in wafer box)
    * Obtain resist (NR9-1000PY) and disposable pipettes and carefully apply the resist
@@ -36,6 +36,7 @@ To meet the trial project requirements by the end of January, here is the follow
        * 0rpm, 1000rpm/s, 0.1s
    * Continue to spin coat if desire results are not achieved (i.e uniform coating with no or very little imperfections - drag marks can be on the outskirts of susbstrate but nowhere near the center. If this happens simply remove resist using acetone and repeat spin coating procedure)
    * Bake at 150C, 1 minute
+     
 4. OAI Aligner
    * I am considering simply taping the substrate to the film photomask and then exposing.
    * (I need to speak more with the staff to see how this best can be done, but they have done this before in the past so it shouldn't present an issue)
@@ -54,11 +55,12 @@ To meet the trial project requirements by the end of January, here is the follow
  
 7. Deposition - Electron Beam Evaporator
    * Deposit 100 angstrom of Cr at a rate of 0.5 A/s
-   Sputter
-   * Deposit 200 angstrom of Al at a rate of 0.5 A/s
+
+8. Sputter
+   * Deposit 200 angstrom of Al at a rate of 0.5 A/s (depostion is nonconformal so deposition needs to be thin in order to achieve proper lift off - if wings are present, sonication for long periods of time can help reduce the effects)
    * Total deposition will be 0.03 mircon
   
-8. Lift-off
+9. Lift-off
    * Place in acetone and sonicate for 2 mintues 
    * Transfer to fresh acetone and sonicate for 5 minutes
    * Transfer to IPA and sonicate for 5 minutes

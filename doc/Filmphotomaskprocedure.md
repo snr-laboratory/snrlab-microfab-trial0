@@ -24,6 +24,9 @@ To meet the trial project requirements by the end of January, here is the follow
    * Note: The hydroxylation process is essential for obtaining good adhesion between resist and substrate
   
 3. Spin Coating
+
+**NR7-1500/1000PY; nanofab will allow to use for this trial**
+
    * Set-up hot-plates - one @ 150C and another @ 100C  
    * Clean substrate with a 2 minutes acetone sonication, 2 minute IPA sonication and N2 dry
    * Place substrate on hotplate to remove any residual acetone/IPA (~30s)
@@ -44,6 +47,9 @@ To meet the trial project requirements by the end of January, here is the follow
    * Post bake at 100C for 1 minute
 
 5. Development
+
+**Nanofab will allow the use of RD8 for this trial**
+
    * RD6 (1000nm thickness requires an 8s RD6 time) 25 sec and rinse with DI water in container for 10 minutes and change DI water container every so often; slow N2 dry.
    * Check with optical microscope that development was done properly.
    * Proceed to step 6 or 7 if things look good

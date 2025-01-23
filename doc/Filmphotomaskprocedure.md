@@ -14,6 +14,7 @@ To meet the trial project requirements by the end of January, here is the follow
 **Before moving forward, the following insruments will be reserved ahead of time:**
 * OAI Model806 manual Front/Backside Contact Mask Aligner
 * AJA ATC ORION Series Evaporation System
+* AJA ATC ORION Series UHV Sputtering System
 
 
 2. Piranha Clean of Glass Slides
@@ -42,7 +43,7 @@ To meet the trial project requirements by the end of January, here is the follow
    * Post bake at 100C for 1 minute
 
 5. Development
-   * RD6 (1000nm thickness requires an 8s RD6 time) and rinse with DI water in container for 10 minutes and change DI water container every so often; slow N2 dry.
+   * RD6 (1000nm thickness requires an 8s RD6 time) 25 sec and rinse with DI water in container for 10 minutes and change DI water container every so often; slow N2 dry.
    * Check with optical microscope that development was done properly.
    * Proceed to step 6 or 7 if things look good
 
@@ -52,9 +53,10 @@ To meet the trial project requirements by the end of January, here is the follow
    * I think it would be beneficial to take the time to scan the surface profile and measure the heigth of the removed unexposed photoresist. 
  
 7. Deposition - Electron Beam Evaporator
-   * Deposit 100 angstrom of Cr at a rate of 1.0 A/s
-   * Deposit 900 angstrom of Al at a rate of 1.0 A/s
-   * Total deposition will be 0.1 mircon
+   * Deposit 100 angstrom of Cr at a rate of 0.5 A/s
+   Sputter
+   * Deposit 200 angstrom of Al at a rate of 0.5 A/s
+   * Total deposition will be 0.03 mircon
   
 8. Lift-off
    * Place in acetone and sonicate for 2 mintues 

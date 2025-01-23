@@ -25,7 +25,7 @@ To meet the trial project requirements by the end of January, here is the follow
   
 3. Spin Coating
 
-**NR7-1500/1000PY; nanofab will allow to use for this trial**
+**NR7-1500/1000PY; nanofab will lend for trial**
 
    * Set-up hot-plates - one @ 150C and another @ 100C  
    * Clean substrate with a 2 minutes acetone sonication, 2 minute IPA sonication and N2 dry

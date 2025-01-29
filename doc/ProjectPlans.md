@@ -48,17 +48,9 @@ hvi    75/20
   * Gaertner L116S300 Stokes Ellipsometer
   * KLA-Tencor P-6 Profilometer
 
-* ### Short-term goal:
-  * Resolve PhD status and re-gain access to fabrication tools and cleanroom. Determine Au solder sphere application after further reviewing physical chip. Find a reliable method for ACF application and establish gold/metal trace contact. Select and determine a method for incorporating sapphire or quartz interposer which requires a small window be cut from the material. Develop a robust fabrication procedure for the interposer for IC packaging. 
+## 4. Short-term goals:
+  1) Optical Lens Reduction System:
+     Assemble a table top optical reducer, print an enlarged verison of the photomask (e.g. 8x bigger) and use the optical projector/lens reduction system to make the image smaller to obtain completely opaque negative mask features. We will need to play around with this to determine any distortions, and if so, include them into the Klayout negative mask dimensions to produce better resolution. 
+  2) Mini Electron Gun: Using a 235nm LED light source, a thin gold film (photocathode), along with a controlled electromagnetic field to hopefully direct single electrons at a time (perhaps by pulsing the photon source we can achieve this) to create a mini photon source. The construction of this will require the possible use of machinining and 3D printing. It will be crucial that the device operate under vacuum. 
 
-# Schedule
-  * Mon. at 9am-12:50pm(lab); Open schedule after lab
-  * Tue. at 10am-10:30am(meeting); 3:30pm-4:50pm(lecture); 5:30pm-6:50pm(lecture); Open 
-schedules in between
-  * Wed. at 4pm-6:50pm(lecture); Open schedule after lecture
-  * Thu. at 3:30pm-4:50pm(lecture); 5:30pm-6:50pm(lecture); Open schedule before lecture   
-  * Fri. at 9am-1:00pm(lecture/seminar); Open schedule after seminar
-
-*Inquire about removing one or two courses to create more time for research*
-
-***
+  

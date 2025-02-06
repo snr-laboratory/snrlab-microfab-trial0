@@ -69,4 +69,59 @@ hvi    75/20
 ## 6. Producing industrial-quality prototype sensors
   1) Research into the following paper regarding characterization, cmos conversion material interface, x-ray used and efficiency:
      * [Dynamic X-ray imaging with screen-printed perovskite CMOS array](https://www.nature.com/articles/s41467-024-45871-2)
+    
+## Materials List
+
+## LEDs (DigiKey):
+* MTE2350F-UV. -  $220.00 
+* MTE2350F-UV2 - $305.17
+
+## LEDs Mounts (Thorlabs):
+* Light-Emitting Diode (LED) Mounts  
+
+
+## CRT TV (eBay): 
+* Vintage SONY Trinitron CRT Tv Retro Gaming Games KV-13M42 13" W Remote VIDEO Condition (preferred option) - ApproximatelyC $286.19 Feb 10-14
+
+    * Toshiba 13" CRT TV Retro Gaming Color Television 13A25 Front AV Jacks - $75 obo and $140 shipping  
+
+    * Toshiba 13A23 TV CRT 13" Color Retro Gaming Analog w/ Remote AV Front Works READ - $59.99 (approx C $84.33) Feb 10-14 
+
+    * TOSHIBA CRT TV / DVD Combo 9” Retro Gaming Television No Remote TESTED! MD9DL1  
+
+## Epoxy 
+* Master Bond EP4G-80Med
+* Low Viscosity, Electrically Conductive Epoxy Meets ISO 10993-5 Cytotoxicity Standards
+
+* How to Purchase Our Products
+
+    * EPO-TEK® 301-2: Nonconductive but suitable for semiconductor purposes and has good handling regarding viscosity considerations
+Requires adding a graphite filler
+
+    * MG Chemicals 9410 - Paste like (viscous)
+
+## Perovskite Paper
+* PbBr2 (lead bromide, 99%, Aladdin)
+* CsBr (cesium bromide, 99.5%, Aladdin)
+* Dimethyl formamide (DMF, AR, 99%)
+* Dimethyl sulfoxide (DMSO, AR, 99%)
+* Colloidal SnO2 aqueous dispersion (15 wt%)
+* Carbon paste
+
+* Acetone
+* IPA
+* DI
+
+## Thermal Evaporator
+* Vacuum Chamber - Refurbished options are available at Idealvac.com
+* Vacuum Pump - Storage
+
+* Thermal Evaporation Source/Tungsten Boat- Kurt J. Lesker
+* Heating System/Power Supply - Kurt J. Lesker Company 
+* Substrate Holder/Cooling Stage
+* Temperature Control System 
+* Thickness Monitoring: MBraun Thermal Evaporator at Idealvac.com 
+* Shutter
+
+
   

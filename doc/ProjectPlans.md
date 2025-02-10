@@ -69,7 +69,13 @@ hvi    75/20
 
     * [Si - Resistivity and Carrier concentration](https://www.ioffe.ru/SVA/NSM/Semicond/Si/bandstr.html)
     
-  5) Create a system that mimics the chips surface. We can mimic the chip surface using a PCB board and create small arrays like the pixel rays in chip. This way we can use the PCB and practice with the epoxy before we move on to the actual chip device itself. 
+  5) Create a system that mimics the chips surface. We can mimic the chip surface using a PCB board and create small arrays like the pixel rays in chip. This way we can use the PCB and practice with the epoxy before we move on to the actual chip device itself.
+
+    * Create an array of 150um x 150um for the contact pads
+    * Space pads at 75um
+    * Standard PCB - FR4 - (Cu thickness?)
+    * Recreating similar recessed regions with exposed metal - etching of Cu?
+    * What is the depth of recessed regions in actual chip in order to scale up correctly? 
 
 ## 5. Pushing the boundary of fundamental sensing mechanism
   1) Explore the use of Te nanowires for p-transistor use in state of the art single photon detection (lateral gate - no diaelectric)

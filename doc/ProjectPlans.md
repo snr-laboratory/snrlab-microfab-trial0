@@ -60,7 +60,8 @@ hvi    75/20
 **Using the given LEDs, measure the photocurrent generated as the LED photoionizes the air between two plates using a source measurement unit (SMU). Look into powering up an LED** 
 
     * Powering up LED [Making Current-Voltage Measurement Using SMU](https://www.farnell.com/datasheets/2618348.pdf)
-  
+    * High Output Red LED OD-624L [Datasheet](https://optodiode.com/pdf/OD624L.pdf) 
+    
 
   3) Explore Micropen Exxelia for creating trace lines. Seek info regarding the system/appartatus/tips etc - see if they can sell the entire package - They do not sell - Track down needle dispenser tip that is used or similar needles tips (32 gauge etc...). We can modify the setup ourselves. 
 

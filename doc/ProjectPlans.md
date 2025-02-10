@@ -65,7 +65,9 @@ hvi    75/20
 
   3) Explore Micropen Exxelia for creating trace lines. Seek info regarding the system/appartatus/tips etc - see if they can sell the entire package - They do not sell - Track down needle dispenser tip that is used or similar needles tips (32 gauge etc...). We can modify the setup ourselves. 
 
-  4) Conductive Epoxy: research if its possible to spin coat and achieve an epoxy thickness less than 1 micron and if we can have it tailored to have different resistances (rs << rp-p). Recall, resistiviy of epoxy needs to match the resistiviy of intrinsic Si (highly conductive epoxy can damage the device). The epoxy needs to be conductive, have very low viscosity and be able to be spin coated to achieve very low thicknesses, preferably less than a micron (we can press the epoxy to achieve lower thicknesses and use displacement to determine the thickness of final epoxy - uniformity during pressing?). 
+  4) Conductive Epoxy: research if its possible to spin coat and achieve an epoxy thickness less than 1 micron and if we can have it tailored to have different resistances (rs << rp-p). Recall, resistiviy of epoxy needs to match the resistiviy of intrinsic Si (highly conductive epoxy can damage the device). The epoxy needs to be conductive, have very low viscosity and be able to be spin coated to achieve very low thicknesses, preferably less than a micron (we can press the epoxy to achieve lower thicknesses and use displacement to determine the thickness of final epoxy - uniformity during pressing?).
+
+    * [Si - Resistivity and Carrier concentration](https://www.ioffe.ru/SVA/NSM/Semicond/Si/bandstr.html)
 
   5) Create a system that mimics the chips surface. We can mimic the chip surface using a PCB board and create small arrays like the pixel rays in chip. This way we can use the PCB and practice with the epoxy before we move on to the actual chip device itself. 
 

@@ -63,7 +63,11 @@ hvi    75/20
   * High Output Red LED OD-624L [Datasheet](https://optodiode.com/pdf/OD624L.pdf) 
     
 
-  3) Explore Micropen Exxelia for creating trace lines. Seek info regarding the system/appartatus/tips etc - see if they can sell the entire package - They do not sell - Track down needle dispenser tip that is used or similar needles tips (32 gauge etc...). We can modify the setup ourselves. 
+  3) Explore Micropen Exxelia for creating trace lines. Seek info regarding the system/appartatus/tips etc - see if they can sell the entire package - They do not sell - Track down needle dispenser tip that is used or similar needles tips (32 gauge etc...). We can modify the setup ourselves.
+  * The following sites have available tips that could fit our needs:
+    * [Precision Nozzles - Stainless Steel & Ceramic](https://gpd-global.com/dispense-pumps-precision-nozzles/) 
+    * [precision tips](https://www.nordson.com/en/search#q=precision%20tips&t=All&sort=relevancy) 
+     
 
   4) Conductive Epoxy: research if its possible to spin coat and achieve an epoxy thickness less than 1 micron and if we can have it tailored to have different resistances (rs << rp-p). Recall, resistiviy of epoxy needs to match the resistiviy of intrinsic Si (highly conductive epoxy can damage the device). The epoxy needs to be conductive, have very low viscosity and be able to be spin coated to achieve very low thicknesses, preferably less than a micron (we can press the epoxy to achieve lower thicknesses and use displacement to determine the thickness of final epoxy - uniformity during pressing?).
 
@@ -85,7 +89,14 @@ hvi    75/20
     * [Portable PCB Photosensitive Dry Film](https://www.amazon.com/30cm×5m-Portable-Photosensitive-Production-Photoresist/dp/B07MMVPY1Z/ref=sr_1_1_sspa?crid=3UMNOWYSS4YV3&dib=eyJ2IjoiMSJ9.PMuVqqYkbT92pa9HBeYBu_yI3s1_crVUw86WHJGYfttnOzedMdGrAKDKyyR5J2iQAQIg8LlnNEDtU9Phj5yNUc_JxF0L716LIaW83VqaKqUtyWOmNbKSXRHjh6NYWHtTZDfRIjfjCEFaUWCF4CEDzHect0Pl2e6GZ8LdKfAsHihzFD5A1yIAdnU_byeuIddrRhaTlSov55NYNKUuNDRPe8u1riMxfBV7eHC7VB_IigA.FTwL9FTtKMyKz8hol20sLCSwXxpfAE6ZFCuZbi-W-is&dib_tag=se&keywords=dry+film+photoresist+PCB&qid=1739234473&sprefix=dry+film+photoresist+pcb%2Caps%2C211&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
     * [Sodium carbonate](https://www.sigmaaldrich.com/US/en/substance/sodiumcarbonate10599497198)
     * [Copper Coated Scrubbing Scour Pads](https://www.amazon.com/Scotch-Brite-Copper-Coated-Scouring-pads/dp/B00KOAHGQW/ref=sr_1_5?crid=3L7DKRW9UGPG0&dib=eyJ2IjoiMSJ9.8bSfoab4gsrw8-bN1DJUlYyjtHE6-mza_hhHOIJSjs-xhnPh1n9LxITe5MWt7fXRpyefAa6-gcgFnrrQSe61BDArH8CydW7b9DneGMkEQ0qugU5g7v_H3g1oa0xdEpyIcT_HPRq1UukJU25r8DV0zf9tYonYuH718wvotd_Ct61qDlFykmTjbnmxd7jAAAoeW3B9U2yOqvuc_zP5sg97gyAuRAdMJEnPAcsDcd9_uXPrK1fRY8Sqy--RwhybXhnwq3CJIZDNlElPszrhf5FKCYnIZc0Y0CnVQNX2pYyanNecySlcbJRLqx1PrJiv6ekVxzjUapPlHfT1ZUpgZUxkXt_sahq5EzFnDtlmqp2Pqkf6QL7PRWrl-2fYqDl242sZ6ck2cBZcinCHnWLzjW63C62K3CMFv1MXTsLzCanTFVMzOMmpkWV4jpj16WVQXfGG.Yhrm1q_oFi1eH_sHjDigJVf2vZzFJAmLH4c56Uv71MM&dib_tag=se&keywords=copper%2Bpcb%2Bcleaning%2Bpads&qid=1739301275&sprefix=copper%2Bpcb%2Bcleaning%2Bpad%2Caps%2C135&sr=8-5&th=1)
-
+    * Rough Procedure:
+      * PCB Clean (if necessary)
+      * Dry film application - apply underwater or spray with water to avoid bubbles?
+      * Photomask --> Design --> print transparency
+      * Exposure (1-2 min) 
+      * Development
+      * Etching
+    
 ## 5. Pushing the boundary of fundamental sensing mechanism
   1) Explore the use of Te nanowires for p-transistor use in state of the art single photon detection (lateral gate - no diaelectric)
      * [Evaporated tellurium thin films for p-type field-effect transistors and circuits](https://nano.eecs.berkeley.edu/publications/NatureNano_2020_Te.pdf)

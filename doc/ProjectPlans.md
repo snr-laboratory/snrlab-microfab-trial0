@@ -65,6 +65,7 @@ hvi    75/20
 
   3) Explore Micropen Exxelia for creating trace lines. Seek info regarding the system/appartatus/tips etc - see if they can sell the entire package - They do not sell - Track down needle dispenser tip that is used or similar needles tips (32 gauge etc...). We can modify the setup ourselves.
   * The following sites have available tips that could fit our needs:
+    * [NANOFIL NEEDLES](https://www.wpiinc.com/var-3184-nanofil-needles.html?srsltid=AfmBOoqTsB09_NYVVPOpT261pltrAQhmPUODuy4DBQgCIP21YrCltiCD) - These needles are specifically designed for use with WPI's NanoFil™ syringes only.
     * [Precision Nozzles - Stainless Steel & Ceramic](https://gpd-global.com/dispense-pumps-precision-nozzles/) 
     * [precision tips](https://www.nordson.com/en/search#q=precision%20tips&t=All&sort=relevancy) 
      

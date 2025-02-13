@@ -76,17 +76,31 @@ hvi    75/20
     
   5) Create a system that mimics the chips surface. We can mimic the chip surface using a PCB board and create small arrays like the pixel rays in chip. This way we can use the PCB and practice with the epoxy before we move on to the actual chip device itself.
 
-  * Create an array of 150um x 150um for the pads
-  * Space pads at 75um
-  * 150um x 150um for contact pads as well
-  * Standard PCB - FR4 - (Cu thickness?)
-  * Recreating similar recessed regions with exposed metal - etching of Cu?
-  * What is the depth of recessed regions in actual chip in order to scale up correctly?
-
+## Action Plan
+1) Create KiCad design for a reference bulk resistivity test PCB and one that mimics the actual chip features
+  * Select a size that is reasonable and cost-effective for PCB fab
+  * Similar dimensions to chip, just scaled up
+    1) Bulk PCB is a reference resistivity measure
+      * Different design from chip surface mimicking PCB - simpler
+      * Regions for resistivity measurements
+      * Spacing and pad sizes? Should we consider a variety to have different things to compare?
+    2) Chip surface mimicking PCB design will be directly influenced by the actual chip surface features.
+      * Create recessed regions - site for resistivity measurements
+      * Create an array pattern of 150um x 150um for the pads and space apart at 75um that resembles actual device arrays
+      * 150um x 150um for contact pads as well
+  * Once finished send to appropriate fab for manufacturing (generating gerber file and submitting design) - depth of recessed areas? surface finish? - # of layers? (ground, core, and top layer?)
+2) Select an appropriate epoxy and test/characterize the resistivity and other relevant properties (e.g. current leakage). It's important to compare resistivity in recessed areas and examine the epoxy behavior.
+  * SMU resistivity measurement setup and testing
+  * Determine reference resistivity
+  * Leakage current?
+  * Manipulate the epoxy formulation during the testing to see how we can influence the epoxy resistivity (Carbon black) 
+3) Establish a procedure for application and testing before moving on to real device
+  * Solidify an epoxy or similar adhesive that meets the resistivity criteria
+  * Determine a consistent spin-coating method epoxy application as well as thickness recipe
+  * Move on to testing actual device
   * Materials:
     * [MG Chemicals Copper Clad Board, Single Sided, 9" x 6", 1 oz Copper, 1/32" Thick, FR4](https://www.amazon.com/MG-Chemicals-Copper-Board-Single/dp/B005T8JSDS/ref=sr_1_4?crid=JP0BY6B9H1W6&dib=eyJ2IjoiMSJ9.unSlhpBQCQlpbyc6N9vcPXPPjcKW9iCp-KyH9-NyWVP1sbtUl6ySFFsJqNGNADP681-W1VETcxZLiJ7FOzhv-UtOYnNzUTHd8Ry4glIerT9jNWkvBvZTGEbYvZUCohG7xwGsR9Wbu6sT4QW2k3rUXDZvBcGCwjG75PAe8jehCZiHZqIpwCFJpkm0m59JE0_Vg3uUYeQ7ika6lcy0aDSlfiFvkx0SVf9ZLsg8wVR9wd0.HjPQVmrHT-ad97P0lFWeUEPkgne8-6GdA4pZHxCHTeM&dib_tag=se&keywords=MG%2BChemicals%2BFR4%2BPCB&qid=1739231452&sprefix=mg%2Bchemicals%2Bfr4%2Bpcb%2Caps%2C125&sr=8-4&th=1)  
     * [MG Chemicals 415-1L Ferric Chloride, 1 Quart](https://www.amazon.com/Delphi-Glass-415-1L-Ferric-Chloride/dp/B005T8Y20W/ref=sr_1_1?crid=3EGJRSNC9NLDK&dib=eyJ2IjoiMSJ9.svnG-qBth8-3Y8N_8a4dGYkKskGQj4FjCoRVYvsP77vf2I26Tt7Fcebp_en4TmlBH9kucfKrlINOn8c239WwzAEEkv15fXG43qAcOzxuc7MzQ8VGyhZvBHbl0yPnlt_XJCysQTePG5qGsi9hWoCjzlRsf4p23LX79P2gEBKIaYNId9ar8ZHxb5HdR6iNLfHzbW9BkFh7URPoZoL_7wu8WYc9_uMhqwlUMnLL3EFnvjc.5l_05ScKbc_WZo0GZvAVo9a7arO2Hn_zpuZxULhvimY&dib_tag=se&keywords=MG%2BChemicals%2B415%2BFerric%2BChloride&qid=1739233687&sprefix=mg%2Bchemicals%2B415%2Bferric%2Bchloride%2Caps%2C262&sr=8-1&th=1)
-
     * [Portable PCB Photosensitive Dry Film](https://www.amazon.com/30cm×5m-Portable-Photosensitive-Production-Photoresist/dp/B07MMVPY1Z/ref=sr_1_1_sspa?crid=3UMNOWYSS4YV3&dib=eyJ2IjoiMSJ9.PMuVqqYkbT92pa9HBeYBu_yI3s1_crVUw86WHJGYfttnOzedMdGrAKDKyyR5J2iQAQIg8LlnNEDtU9Phj5yNUc_JxF0L716LIaW83VqaKqUtyWOmNbKSXRHjh6NYWHtTZDfRIjfjCEFaUWCF4CEDzHect0Pl2e6GZ8LdKfAsHihzFD5A1yIAdnU_byeuIddrRhaTlSov55NYNKUuNDRPe8u1riMxfBV7eHC7VB_IigA.FTwL9FTtKMyKz8hol20sLCSwXxpfAE6ZFCuZbi-W-is&dib_tag=se&keywords=dry+film+photoresist+PCB&qid=1739234473&sprefix=dry+film+photoresist+pcb%2Caps%2C211&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
     * [Sodium carbonate](https://www.sigmaaldrich.com/US/en/substance/sodiumcarbonate10599497198)
     * [Copper Coated Scrubbing Scour Pads](https://www.amazon.com/Scotch-Brite-Copper-Coated-Scouring-pads/dp/B00KOAHGQW/ref=sr_1_5?crid=3L7DKRW9UGPG0&dib=eyJ2IjoiMSJ9.8bSfoab4gsrw8-bN1DJUlYyjtHE6-mza_hhHOIJSjs-xhnPh1n9LxITe5MWt7fXRpyefAa6-gcgFnrrQSe61BDArH8CydW7b9DneGMkEQ0qugU5g7v_H3g1oa0xdEpyIcT_HPRq1UukJU25r8DV0zf9tYonYuH718wvotd_Ct61qDlFykmTjbnmxd7jAAAoeW3B9U2yOqvuc_zP5sg97gyAuRAdMJEnPAcsDcd9_uXPrK1fRY8Sqy--RwhybXhnwq3CJIZDNlElPszrhf5FKCYnIZc0Y0CnVQNX2pYyanNecySlcbJRLqx1PrJiv6ekVxzjUapPlHfT1ZUpgZUxkXt_sahq5EzFnDtlmqp2Pqkf6QL7PRWrl-2fYqDl242sZ6ck2cBZcinCHnWLzjW63C62K3CMFv1MXTsLzCanTFVMzOMmpkWV4jpj16WVQXfGG.Yhrm1q_oFi1eH_sHjDigJVf2vZzFJAmLH4c56Uv71MM&dib_tag=se&keywords=copper%2Bpcb%2Bcleaning%2Bpads&qid=1739301275&sprefix=copper%2Bpcb%2Bcleaning%2Bpad%2Caps%2C135&sr=8-5&th=1)

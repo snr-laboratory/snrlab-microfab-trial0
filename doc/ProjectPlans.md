@@ -90,7 +90,7 @@ hvi    75/20
       * 150um x 150um for contact pads as well
   * Once finished send to appropriate fab for manufacturing (generating gerber file and submitting design) - depth of recessed areas? surface finish? - # of layers? (ground, core, and top layer?)
 2) Select an appropriate epoxy and test/characterize the resistivity and other relevant properties (e.g. current leakage). It's important to compare resistivity in recessed areas and examine the epoxy behavior.
-  * SMU resistivity measurement setup and testing
+  * SMU resistivity measurement setup and testing - 4 point probe? [Resistivity Measurements Using the Model 2450 SourceMeter SMU Instrument and a Four-Point Collinear Probe](https://www.tek.com/en/documents/application-note/resistivity-measurements-using-model-2450-sourcemeter-smu-instrument-and-f)
   * Determine reference resistivity
   * Leakage current?
   * Manipulate the epoxy formulation during the testing to see how we can influence the epoxy resistivity (Carbon black) 

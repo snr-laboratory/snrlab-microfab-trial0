@@ -79,7 +79,13 @@ hvi    75/20
   5) Create a system that mimics the chips surface. We can mimic the chip surface using a PCB board and create small arrays like the pixel rays in chip. This way we can use the PCB and practice with the epoxy before we move on to the actual chip device itself.
 
 ## Action Plan
-1) Create KiCad design for a reference bulk resistivity test PCB and one that mimics the actual chip features
+1) Create KiCad design for a reference bulk resistivity test PCB and one that mimics the actual chip features [Starting from scratch - PCB Editor](https://docs.kicad.org/master/it/pcbnew/pcbnew_create_board.html)
+  * [create PCB without schematic?](https://www.reddit.com/r/KiCad/comments/fe06ck/create_pcb_without_schematic/)
+  * [Introduction to the KiCad PCB Editor](https://docs.kicad.org/8.0/en/pcbnew/pcbnew.html)
+  * [COPPER POUR](https://madpcb.com/glossary/copper-pour/)
+  * [What is Copper Pour in PCB?](https://www.globalwellpcba.com/what-is-copper-pour-in-pcb/)
+  * [Test Pads - Guidelines for PCB design](https://testfixtures.co.za/wp-content/uploads/2020/05/Design-for-Test-1.pdf)
+  * [Analysis of the types of pads and design standards](https://discuss.tindie.com/t/analysis-of-the-types-of-pads-and-design-standards-in-pcb-design/83641)
   * Select a size that is reasonable and cost-effective for PCB fab
   * Similar dimensions to chip, just scaled up
     1) Bulk PCB is a reference resistivity measure

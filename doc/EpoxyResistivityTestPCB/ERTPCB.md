@@ -21,7 +21,7 @@ Gerber layer view
     * Fourth large pad has via inside pad -  Drill: 0.3mm; Diameter: 0.6mm
     * One via for each 1.0mmx1.0mm pad (small array) connected in daisy chain pattern with Cu traces - Drill: 0.2mm; Diameter: 0.4mm
 * All soldering pad sizes on the bottom of the PCB are 10.0mmx10.0mm
-* Tool holes for every corner
+* Tool holes for every corner set a 3mm diameter 
 
 ## Objectives
 We need bulk resistivity with a very thin layer or in other words controllably thin. We also need to come up with a mechanical mechanism to control the thickness applied. We need some kind of film in between the two PCBs that sets the gap. The reason we are using large pads is to minimize the peripheral effect in order to measure correctly. That is our first objective to measure the bulk resistivity. The second objective is to make the small array and see if the structure/passivation will affect the measurement. We are also very interested in modifying the resistivity between regions (resistance of pad-pad and resistance for source pad: Rs<<Rp-p) and applying an epoxy with final layer thickness <1 micron. 

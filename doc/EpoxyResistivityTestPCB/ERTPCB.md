@@ -50,3 +50,11 @@ We need bulk resistivity with a very thin layer or in other words controllably t
 6) [Dymax OP-61-LS](https://dymax.com/content/download/4404/file_archived/OP-61%20PDS.pdf)
 * Volume Resistivity: 
 *
+
+## Epoxy Degasser
+
+1) [1.5 Gallon Vacuum Chamber 3.5CFM Single Stage Pump Degassing Chamber Kit](https://www.vevor.com/vacuum-pump-c_11109/1-5-gallon-vacuum-chamber-3-5cfm-single-stage-pump-degassing-chamber-kit-p_010838830210?adp=gmc&utm_source=google&utm_medium=cpc&utm_id=21387046045&ad_group=166590768907&ad_id=702764145994&utm_term=&gad_source=4&gbraid=0AAAAACq8bLU8abmevVKs_kiU1s7kdmr-4&gclid=CjwKCAiAw5W-BhAhEiwApv4goPb6qM5FDWeUN8u7ZiwCaWDGu_8z-f6V2HLjtyExrKeVFEfVdd0sNBoCEWAQAvD_BwE)
+
+2) [VIVOHOME 1.5 Gallon Vacuum Chamber with Pump, Stainless Steel Vacuum Degassing Chamber Kit with 3.5 CFM 1/4 HP Single Stage Vacuum Pump and Oil](https://www.amazon.com/VIVOHOME-Gallon-Chamber-Stainless-Degassing/dp/B091GQPVP9/ref=sr_1_2_sspa?crid=QPX49P0NYT9Y&dib=eyJ2IjoiMSJ9.g-VgaTX8DAMbnrIPQHHZ09Jv5DXjfytGYWYsR0zSMDjTh6Av0dN75e2fC3Rsv9MEyQy5DuMD2vG73PsvUSHYDd5u6YQZlmhuT5u--rLZkLTJpeyjcFbQIYm1CfXq8Md0lwBmXvbbHHHIPyOBTYJ5D4NkPyz_D8tlP7gvq1hMREL76yVjODMe9BztU-sbPgntkKejUcBFPBy6AXS_I7eB6MJeIU_-gq9ySbjsGuekOfE.audimm3jDjKUePJaIPsP23dUfYw3M7GF17HWC90cv9E&dib_tag=se&keywords=epoxy%2Bdegasser&qid=1741015604&sprefix=epoxy%2Bdegasser%2Caps%2C308&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
+
+3) [BACOENG 2 Gallon Vacuum Chamber with 3.5 CFM Vacuum Pump, Acrylic Degassing Chamber Kit for Resin, Silicone and Epoxies](https://www.amazon.com/BACOENG-Chamber-Acrylic-Degassing-Silicone/dp/B0DCZ2NMGQ/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.95e4d6bd-d93f-4ee1-9766-ff64f54d2f71%3Aamzn1.sym.95e4d6bd-d93f-4ee1-9766-ff64f54d2f71&crid=3F78HK6OD9ADI&cv_ct_cx=epoxy%2Bdegasser&keywords=epoxy%2Bdegasser&pd_rd_i=B0DCZ2NMGQ&pd_rd_r=5f7f43dd-9abc-482f-9b93-a63316f06263&pd_rd_w=uadZr&pd_rd_wg=RkwCm&pf_rd_p=95e4d6bd-d93f-4ee1-9766-ff64f54d2f71&pf_rd_r=JXB5T96M0GA9RX3SDMGV&qid=1741015062&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=epoxy%2Bdegasse%2Caps%2C141&sr=1-4-6024b2a3-78e4-4fed-8fed-e1613be3bcce-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1)

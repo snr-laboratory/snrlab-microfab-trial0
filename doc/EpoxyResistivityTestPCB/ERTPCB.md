@@ -42,14 +42,17 @@ We need bulk resistivity with a very thin layer or in other words controllably t
 4) [Dymax 9001-E-V3.5](https://www.ellsworth.com/products/by-manufacturer/dymax/encapsulants/uv-curing/dymax-multi-cure-9001-e-v3.5-uv-curing-encapsulant-clear-170-ml-cartridge/?srsltid=AfmBOorZjfYYmCmlOcWkSnxyRjvTr2e21JFwku0HsaL0gSIH-5wpNKFO)
 * Volume Resistivity: 10^12 ohm-cm
 * [Ellsworth](https://www.ellsworth.com/products/by-manufacturer/dymax/encapsulants/uv-curing/dymax-multi-cure-9001-e-v3.5-uv-curing-encapsulant-clear-30-ml-mr-syringe/?gad_source=1&gbraid=0AAAAAD_P3NHR8ELs3TAAU6QoGWj8NjrWA&gclid=CjwKCAiAw5W-BhAhEiwApv4goCe4mHgQJUezGabBxlys4fuh_6th7l_SkuixxjqWOsaDckQxBQdMORoCAigQAvD_BwE)
+* [ebay](https://www.ebay.com/itm/266099712844?_skw=EpoxySet+EB-315Dymax+9001-E-V3.5&itmmeta=01JNES5BXQWCQHDWK94W233K32&hash=item3df4c7634c:g:0moAAOSwOIFjz-yW&itmprp=enc%3AAQAKAAAA4FkggFvd1GGDu0w3yXCmi1fN%2BntivxzV7wXvIQiv5AbHEBmQDP9B1SVzAj%2B98Drf7Os%2F9og71t7GQCWQku8CWPQsyMfhEylBrheljGM%2BSDzrds8d2rcQTHnwfdOAb33mJZ69Ijy%2B5FKyOY9LiD3%2FQl0GZV7HpLlJutCy7PmFKBjzHfpn%2FhHKW44PEAr1%2Fojo459TOcoXszq0%2BzMcvHhMZ%2FYyqLv70zoX3KLuefcEw%2FEkJG5LDztsdjVVnNS9vibIEFumekQSgrM6VyjjGe4gxX7GQwS4XBpo%2BNPwWFDVnxqH%7Ctkp%3ABk9SR_i-ldmrZQ)
 
 5) [Epoxy Technology (EPO-TEK) 353ND](https://www.gluespec.com/Materials/adhesive/epoxy-technology/epo-tek-353nd-t-black?gad_source=1&gbraid=0AAAAADPMaixsTquGvj406EPbFsBsGVrlI&gclid=CjwKCAiAt4C-BhBcEiwA8Kp0CfBs1VBJ1iU9LKdFmu7nnigc9BzGwFvaLJmKbJNBN-zCEAwCjQwa1RoCN1sQAvD_BwE)
 * Volume Resistivity: >= 4e12 (Ohm-cm)
+* [ebay - EPOXY TECHNOLOGY EPO-TEK 353ND A&B 1LB (454g) New Free ship](https://www.ebay.com/itm/135392408681?_skw=Epoxy+Technology+%28EPO-TEK%29+353ND&itmmeta=01JNESBRHHY6AZNZHPKA56W0W5&hash=item1f86043469:g:bP8AAOSwyGlnIwtZ&itmprp=enc%3AAQAKAAABAFkggFvd1GGDu0w3yXCmi1dOVWfVPZO%2BKsq%2Fso6BC9tWeYiSl2UH1UUM6eKChPZNIv6e4BfH0TiMud7%2BDGzBbcuQH5VgU0WJeqTMTBuYKJ6EhHiUEd3ouoU0HR%2BFcMRfsBhHHx%2Bdkgo76z%2BKr3ES9bg27ujbiiBIU%2B9m486hAm7nhQfvumXsDnlvhsHcxIWZRwye6ToC%2FygjFotS9RqSreg88BAmTyHLzKqgsJJa2iSy0FYRSL%2FP%2BAh0EddZ9K7yrhRVoW8mFNxn3VINIymKWSPz%2FbEaEg3XzEucyWlFkYN9qcrErF4xTwnEID9NLd6hrYGyhHd%2FmTFPFzEfMuVCedQ%3D%7Ctkp%3ABk9SR-qIr9mrZQ)
 * [CablesPlusUSA](https://store.cablesplususa.com/epoxy-consumables/et353nd/?srsltid=AfmBOorIYfVzIgP2OUJ6UxyoQpBb1YHUImzy6usqU_77vGYhVGw6IIw8)
+* [ebay - Lot of 25 EPO-TEK 353ND 4GM BIPAK Heat-cured Epoxy 4-gram Packs EXPIRED: 1/2022](https://www.ebay.com/itm/403925331493?_skw=Epoxy+Technology+%28EPO-TEK%29+353ND&itmmeta=01JNESBRHHXTYCZS6KK3EJ30XN&hash=item5e0bd36e25:g:TO0AAOSwS5JjPx8i&itmprp=enc%3AAQAKAAABAFkggFvd1GGDu0w3yXCmi1dAK4ba3sgQOlKXSkKM8hxNpg0I%2FABAr35%2FISeLUsy64EqDlGSSbf8HQf0XcAmFPcaIdQVDnrYN5FunrmGcV8zha7iHUqhApXENodza6NRUoZ%2BJ43c%2B6KYnhDCO5aJ3vwdkeupswSBuy8C%2BdB7LPAZlbKqDV7A9rLJw0vpTSR6KMxxZmVFVQIMIiaS9IYyw4a7IHc61BYFXN8Z%2FTTFMSxDV2nas0nCLgfCHBANdFCB7IS8rfiRsA5Eioe0hqMF%2FaWK8pJ5m4PWb6FvKqSTVdAj0icWEklcgfw26wiUvdt5%2FPY%2B7IlbP1xtnE418s4tVBeQ%3D%7Ctkp%3ABFBM6oiv2atl)
 
 6) [Dymax OP-61-LS](https://dymax.com/content/download/4404/file_archived/OP-61%20PDS.pdf)
 * Volume Resistivity: 
-* [ebay OP-61-LS Dymax Optical Adhesives and Coating 30ML NEW](https://www.ebay.com/itm/156284455621)
+* [ebay](https://www.ebay.com/itm/156284455621)
 
 ## Epoxy Degasser
 

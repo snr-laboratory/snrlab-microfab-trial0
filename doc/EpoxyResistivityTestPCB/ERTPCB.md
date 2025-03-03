@@ -33,23 +33,23 @@ We need bulk resistivity with a very thin layer or in other words controllably t
 
 2) [Master Bond EP30-2](https://www.masterbond.com/tds/ep30-2)
 * Volume Resistivity: >10^15 ohm-cm
-* 
+* [MasterBond](https://www.masterbond.com)
 
 3) [EpoxySet EB-315](https://epoxysetinc.com/wp-content/uploads/2020/03/EB-315.pdf)
 * Volume Resistivity: 2x10^15 ohm-cm
-*
+* [EB-315](https://epoxysetinc.com/product/eb-315/)
 
 4) [Dymax 9001-E-V3.5](https://www.ellsworth.com/products/by-manufacturer/dymax/encapsulants/uv-curing/dymax-multi-cure-9001-e-v3.5-uv-curing-encapsulant-clear-170-ml-cartridge/?srsltid=AfmBOorZjfYYmCmlOcWkSnxyRjvTr2e21JFwku0HsaL0gSIH-5wpNKFO)
 * Volume Resistivity: 10^12 ohm-cm
-*
+* [Ellsworth](https://www.ellsworth.com/products/by-manufacturer/dymax/encapsulants/uv-curing/dymax-multi-cure-9001-e-v3.5-uv-curing-encapsulant-clear-30-ml-mr-syringe/?gad_source=1&gbraid=0AAAAAD_P3NHR8ELs3TAAU6QoGWj8NjrWA&gclid=CjwKCAiAw5W-BhAhEiwApv4goCe4mHgQJUezGabBxlys4fuh_6th7l_SkuixxjqWOsaDckQxBQdMORoCAigQAvD_BwE)
 
 5) [Epoxy Technology (EPO-TEK) 353ND](https://www.gluespec.com/Materials/adhesive/epoxy-technology/epo-tek-353nd-t-black?gad_source=1&gbraid=0AAAAADPMaixsTquGvj406EPbFsBsGVrlI&gclid=CjwKCAiAt4C-BhBcEiwA8Kp0CfBs1VBJ1iU9LKdFmu7nnigc9BzGwFvaLJmKbJNBN-zCEAwCjQwa1RoCN1sQAvD_BwE)
 * Volume Resistivity: >= 4e12 (Ohm-cm)
-*
+* [CablesPlusUSA](https://store.cablesplususa.com/epoxy-consumables/et353nd/?srsltid=AfmBOorIYfVzIgP2OUJ6UxyoQpBb1YHUImzy6usqU_77vGYhVGw6IIw8)
 
 6) [Dymax OP-61-LS](https://dymax.com/content/download/4404/file_archived/OP-61%20PDS.pdf)
 * Volume Resistivity: 
-*
+* [ebay OP-61-LS Dymax Optical Adhesives and Coating 30ML NEW](https://www.ebay.com/itm/156284455621)
 
 ## Epoxy Degasser
 

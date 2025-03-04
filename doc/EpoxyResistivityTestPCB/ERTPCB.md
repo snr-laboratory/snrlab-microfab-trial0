@@ -30,14 +30,19 @@ We need bulk resistivity with a very thin layer or in other words controllably t
 1) [EPO-TEK® 301-2](https://www.epotek.com/docs/en/Datasheet/301-2.pdf)
 * Volume Resistivity: ≥2x10^12 Ohm-cm
 * [Purchase](https://www.laddresearch.com/chemicals/epo-tek-301-2-epoxy-resin-5060)
+* [Paisley](https://www.paisleyproducts.com/en-us/epo-tek-301-2-optical-epoxy-avet3012)
+* [fiberopticcenter](https://focenter.com/epo-tekr-et301-2-general-room-temp-cure-epoxy-2-5g-2283)
+* [MuseumServicesCorp](https://museumservicescorporation.com/products/epo-tek-301)
 
 2) [Master Bond EP30-2](https://www.masterbond.com/tds/ep30-2)
 * Volume Resistivity: >10^15 ohm-cm
-* [MasterBond](https://www.masterbond.com)
+* [Contact Purchase - Master Bond EP30-2](https://www.masterbond.com/tds/ep30-2)
+* [Contact Purchase - Master Bond EP30-2 Low Outgassing, Low Viscosity Two Component Epoxy](https://www.lookpolymers.com/polymer_Master-Bond-EP30-2-Low-Outgassing-Low-Viscosity-Two-Component-Epoxy.php)
 
 3) [EpoxySet EB-315](https://epoxysetinc.com/wp-content/uploads/2020/03/EB-315.pdf)
 * Volume Resistivity: 2x10^15 ohm-cm
-* [EB-315](https://epoxysetinc.com/product/eb-315/)
+* [Contact Purchase - EB-315](https://epoxysetinc.com/product/eb-315/)
+* [Contact Purchase - Epoxyset Epoxibond EB-315 w/ EH-3 Hardener](https://www.gluespec.com/Materials/adhesive/epoxyset/epoxibond-eb-315-w-eh-3-hardener)
 
 4) [Dymax 9001-E-V3.5](https://www.ellsworth.com/products/by-manufacturer/dymax/encapsulants/uv-curing/dymax-multi-cure-9001-e-v3.5-uv-curing-encapsulant-clear-170-ml-cartridge/?srsltid=AfmBOorZjfYYmCmlOcWkSnxyRjvTr2e21JFwku0HsaL0gSIH-5wpNKFO)
 * Volume Resistivity: 10^12 ohm-cm
@@ -60,7 +65,7 @@ We need bulk resistivity with a very thin layer or in other words controllably t
 * [ebay - expired 2020](https://www.ebay.com/itm/167321149980?itmmeta=01JNGTRHQZ0511RF8BE6FFVQHM&hash=item26f51e221c)
 
 7) [MG Chemicals 832HD-25ML](https://www.mgchemicals.com/downloads/tds/tds-832hd-2parts.pdf)
-* Volume Resistivity: 1.4 x 1013 Ω·cm
+* Volume Resistivity: 1.4 x 10^13 Ω·cm
 * [Purchase - Digikey](https://www.digikey.com/en/products/detail/mg-chemicals/832HD-25ML/9658007?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20222717502_adg-_ad-__dev-c_ext-_prd-9658007_sig-CjwKCAiA5pq-BhBuEiwAvkzVZUcw2KJ-IR-dKto0MrshHS521JZ1PElweJQJ6NGseZ_YN7NelR7xAhoC2o0QAvD_BwE&gad_source=1&gbraid=0AAAAADrbLlg9R3YgIPICGNOqe2O5BFy8x&gclid=CjwKCAiA5pq-BhBuEiwAvkzVZUcw2KJ-IR-dKto0MrshHS521JZ1PElweJQJ6NGseZ_YN7NelR7xAhoC2o0QAvD_BwE)
 
 

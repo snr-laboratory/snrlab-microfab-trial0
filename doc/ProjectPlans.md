@@ -60,7 +60,19 @@ hvi    75/20
 **Using the given LEDs, measure the photocurrent generated as the LED photoionizes the air between two plates using a source measurement unit (SMU). Look into powering up an LED** 
 
   * [Making Current-Voltage Measurement Using SMU](https://www.farnell.com/datasheets/2618348.pdf)
-  * High Output Red LED OD-624L [Datasheet](https://optodiode.com/pdf/OD624L.pdf) 
+  * High Output Red LED OD-624L [Datasheet](https://optodiode.com/pdf/OD624L.pdf)
+    
+**A UVC reactive fluorescent material (UV-C Excitation) is needed in order to ensure the safety of the user by detecting the presence (not visible when powered on, outside the visible spectrum) of light emitted by the 235nm (high energy) LED - potential to cause severe eye and skin damage, primarily results in short-term redness and eye irritation, avoiding direct/reflected exposure is crucial to prevent any adverse effects (UV-C light can also cause DNA damage, ozone accumulation and severe burns and is generally hazardous if not handled properly - primarily used for disinfection due to its ability to inactivate pathogens)**
+
+  * UVC-light - sensitive detection - UVC Sensitive/Reactive Fluorescent Materials - UV-C Excitation
+    * [Fluorescent Pigments & Dyes for Document & Process Security](https://angtech.com/fluorescent-pigments-dyes/#pigment-list)
+      * SC-235 Shortwave - SC-235 fluoresces a brilliant red color when exposed to shortwave UV excitation (254 nm). It does not fluoresce when exposed to longwave UV excitation (365 nm). This characteristic makes SC-235 an excellent choice for security inks and other media. It can be used alone or combined with different longwave fluorescent compounds to create bi-fluorescent features used for document security and brand protection applications. LF Rating: Excellent (lightfastness - effectiveness over time)
+      * SC-234 Shortwave - SC-234 fluoresces a brilliant green color when exposed to shortwave UV excitation (254 nm). It does not fluoresce when exposed to longwave UV excitation (365 nm). This characteristic makes SC-234 an excellent choice for security inks and other media. It can be used alone or combined with different longwave fluorescent compounds to create bi-fluorescent features used for document security and brand protection applications. LF Rating: Excellent
+      * SC-32 Shortwave ?
+      * SC-31 Shortwave ?
+    * [Self-adhesive label indicator for UV-C disinfection](https://terragene.com/product/self-adhesive-label-indicator-for-uv-c-disinfection/)
+    * Secondary visible LED?
+    * UV Tape/Beads (Blacklight Reactive - 365nm…) [UV Tape Blacklight Reactive](https://www.amazon.com/GreyParrot-Tape-Blacklight-Reactive-Fluorescent/dp/B073W5SLYF/ref=sr_1_1_sspa?crid=YXVZVO1TBCK8&dib=eyJ2IjoiMSJ9.zEbvZNRvks-Zk80tWnD_vefVjogam1J6kB1Zf45LwTsI1EOxTMaTFE4UGS05v-NJgppRKBMQrHAenmOQ-zWuUPvnruHltQ4SVmjwGtrs5WoZh8eWvTSBPkjfN37iccIaN_763KG2I6iLq2tkeLZJL0-tP36NcvlPGm9noiOVx2ATY3KZC8WYHvTzHQ7EXyQlVMNBfhrFIgU1ND5ILkNHmynCqxnHG82F2LD4R-HyeSI.B_W_iDLDDuQXGDzPCq2DxFPQqoI2S3HeI6vd5Z84L5Q&dib_tag=se&keywords=UV-C%2Bsensitive%2Bfluorescent%2Btapes&qid=1741048373&sprefix=uv-c%2Bsensitive%2Bfluorescent%2Btapes%2B%2Caps%2C181&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
     
 
   3) Explore Micropen Exxelia for creating trace lines. Seek info regarding the system/appartatus/tips etc - see if they can sell the entire package - They do not sell - Track down needle dispenser tip that is used or similar needles tips (32 gauge etc...). We can modify the setup ourselves.

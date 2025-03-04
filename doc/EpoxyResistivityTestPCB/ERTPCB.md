@@ -55,7 +55,8 @@ We need bulk resistivity with a very thin layer or in other words controllably t
 
 6) [Dymax OP-61-LS](https://dymax.com/content/download/4404/file_archived/OP-61%20PDS.pdf)
 * Volume Resistivity: 
-* [ebay](https://www.ebay.com/itm/156284455621)
+* [ebay - expired 2020](https://www.ebay.com/itm/156284455621)
+* [ebay - expired 2020]([https://www.ebay.com/itm/156284455621](https://www.ebay.com/itm/167321149980?itmmeta=01JNGTRHQZ0511RF8BE6FFVQHM&hash=item26f51e221c))
 
 ## Epoxy Degasser
 

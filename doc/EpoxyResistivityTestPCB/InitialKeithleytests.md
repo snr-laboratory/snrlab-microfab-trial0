@@ -1,12 +1,49 @@
-# Initial Keithley Resistance Tests
+# Initial Keithley Tests
 
 ## Objective 
 To be able to collect data in the expected range of the given epoxies (i.e 10^12-15 ohm-cm range). Use the smu and configure the proper settings to best measure such high resistances. 
 
+## MG Chemicals 832HD Measurements 3/21/25
+
+![img0320_134046](https://github.com/user-attachments/assets/abc302fb-669e-4605-88ef-e86af3153403)
+
+![img0320_140802](https://github.com/user-attachments/assets/fe5fa56f-0ab4-4c7d-94f9-6af99d7c4e80)
+
+![img0320_190546](https://github.com/user-attachments/assets/0da36349-0d4d-42fb-9ff1-529a4f971968)
+
+![img0320_190611](https://github.com/user-attachments/assets/e6155d54-962e-4181-b735-976ac2916562)
+
+![img0320_192106](https://github.com/user-attachments/assets/e1c2580c-f849-462b-8b20-da2bf9399bb1)
+
+![img0320_193132](https://github.com/user-attachments/assets/697a5f33-1359-4fc4-9a20-8a60d52b1422)
+
+![img0320_193148](https://github.com/user-attachments/assets/3025bdd0-786b-4155-aaa3-d23bab47df3c)
+
+![img0320_194131](https://github.com/user-attachments/assets/ea1b2b52-1e0c-4d4d-b7c0-603b6529d3b6)
+
+![Device + noise ](https://github.com/user-attachments/assets/5fc6bde8-0b36-479d-aefd-d10e3deaf9ac)
+
+![img0320_195046](https://github.com/user-attachments/assets/d80c0feb-37a4-447f-9c73-e9a431449ed2)
 
 
+## MG Chemicals 832HD Measurements 3/20/25
+![img0320_090728](https://github.com/user-attachments/assets/c252487a-245b-47d7-93ac-bc960f21e7ba)
 
-## OP-61-LS Epoxy Measurments 
+![img0320_091000](https://github.com/user-attachments/assets/8d6fc949-f8e3-495e-b198-b9ae60561dbd)
+
+![img0320_091505](https://github.com/user-attachments/assets/a87757d9-0e82-4869-94ff-b0b726623904)
+
+![img0320_094658](https://github.com/user-attachments/assets/f6090a32-61ca-459d-a874-4044c327f540)
+
+![img0320_095521](https://github.com/user-attachments/assets/dcb8878e-a424-4fcf-b684-850ff0a9b8ba)
+
+![img0320_100037](https://github.com/user-attachments/assets/9466eb7b-6c77-4b46-9f90-bd3b91b4d167)
+
+![img0320_100451](https://github.com/user-attachments/assets/cedc6a8e-c7ec-49b1-8733-107e9597df96)
+
+![img0320_100504](https://github.com/user-attachments/assets/a9dca94d-2383-4343-8a40-af15f2c8deac)
+
+## OP-61-LS Epoxy Resistance Measurements 
 ![img0319_140803](https://github.com/user-attachments/assets/f0e99796-17c2-4a4b-ae03-0ed08232080b)
 
 ![img0319_174303](https://github.com/user-attachments/assets/75b6c708-573e-4eb9-b1e0-83731241835b)

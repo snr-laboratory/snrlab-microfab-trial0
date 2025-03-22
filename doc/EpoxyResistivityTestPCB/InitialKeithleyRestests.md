@@ -3,6 +3,21 @@
 ## Objective 
 To be able to collect data in the expected range of the given epoxies (i.e 10^12-15 ohm-cm range). Use the smu and configure the proper settings to best measure such high resistances. 
 
+
+
+
+## OP-61-LS Epoxy Measurments 
+![img0319_140803](https://github.com/user-attachments/assets/f0e99796-17c2-4a4b-ae03-0ed08232080b)
+
+![img0319_174303](https://github.com/user-attachments/assets/75b6c708-573e-4eb9-b1e0-83731241835b)
+
+![img0319_174537](https://github.com/user-attachments/assets/5732f75f-043c-48e4-b86d-311274f0993b)
+
+![img0319_174548](https://github.com/user-attachments/assets/9f0f2802-135c-4d6f-96e1-d527fb9ef0ca)
+
+![img0319_174555](https://github.com/user-attachments/assets/8f59824e-94b5-4bc2-816a-976d236cf16a)
+
+
 ## Water Resistance Measurements
 Settings on smu were set to source current and measure resistance. Key observations:
 * The compliance voltage of 5 V is insufficient for most of your source current settings when measuring a high-resistance sample like water.

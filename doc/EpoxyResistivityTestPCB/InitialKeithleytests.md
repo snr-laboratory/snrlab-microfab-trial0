@@ -3,7 +3,45 @@
 ## Objective 
 To be able to collect data in the expected range of the given epoxies (i.e 10^12-15 ohm-cm range). Use the smu and configure the proper settings to best measure such high resistances. 
 
-## MG Chemicals 832HD Measurements 3/21/25
+# MG Chemicals 832HD Measurements 3/21/25 - "Cured"
+
+![img0321_152518](https://github.com/user-attachments/assets/51c6438b-944f-4276-b166-14c12178878a)
+![img0321_152535](https://github.com/user-attachments/assets/30fdacbe-cc7b-4bb7-ae56-29ad4fe1ccf1)
+![img0321_153304](https://github.com/user-attachments/assets/ab4d0192-9710-4c15-b89a-f214b0af5eb6)
+
+![img0321_153325](https://github.com/user-attachments/assets/0ce306cc-42e0-43c0-895f-7198d530bb1a)
+![img0321_153344](https://github.com/user-attachments/assets/ebb270ce-7e78-4ced-b416-92cbf98b5010)
+![img0321_153923](https://github.com/user-attachments/assets/a85a9b0e-7b4a-4b2c-82a7-6b834d570938)
+![img0321_154122](https://github.com/user-attachments/assets/41030478-5237-408b-ab88-f6472d4b51f1)
+![img0321_154746](https://github.com/user-attachments/assets/2a6357a9-f8db-4f9b-9984-8d24bfc04803)
+![img0321_160258](https://github.com/user-attachments/assets/37447fa3-1c89-46ec-a002-4a03398e5f81)
+![img0321_161741](https://github.com/user-attachments/assets/6bfc744f-960e-432d-a03c-f047e9c327c4)
+![img0321_162057](https://github.com/user-attachments/assets/59b3cefd-38b3-44dd-96ed-e7131b5685d3)
+
+![img0321_162159](https://github.com/user-attachments/assets/1359ba4f-388b-41b3-a8e7-b81e38246024)
+![img0321_162210](https://github.com/user-attachments/assets/7d4b98b0-0634-4630-8697-48d7b4b369ca)
+![img0321_162728](https://github.com/user-attachments/assets/59d7ed6f-4ccf-491c-9a87-172753eb7498)
+![img0321_162736](https://github.com/user-attachments/assets/f2f4c0cf-c389-4327-bed5-fe9eac41305f)
+![img0321_163424](https://github.com/user-attachments/assets/f0c29643-2071-456b-b712-29c7555108e3)
+
+![img0321_163456](https://github.com/user-attachments/assets/ff701488-01ea-40f2-8c90-4d198206f215)
+![img0321_163509](https://github.com/user-attachments/assets/f221c374-5e2b-426d-b733-5e9e2fc08314)
+![img0321_164943](https://github.com/user-attachments/assets/7dcafbd3-2056-4a09-b291-00f9929418d4)
+![img0321_164957](https://github.com/user-attachments/assets/74fbca66-7782-4bc0-83e0-6c8e8681bfa8)
+![img0321_165213](https://github.com/user-attachments/assets/87f10f5c-ca1e-45cc-bef8-bdbd64a02f02)
+![img0321_165504](https://github.com/user-attachments/assets/3fe61246-d438-40f4-99ca-5fc79a7468c9)
+
+![img0321_165549](https://github.com/user-attachments/assets/f505728c-8cff-4cd5-8fd9-538dfb356cab)
+![img0321_165625](https://github.com/user-attachments/assets/4c229d07-6827-47a9-b8f7-b64e20a61dd6)
+![img0321_165641](https://github.com/user-attachments/assets/be1bbe7c-843b-4ded-9e6f-fca65da146f5)
+![img0321_165646](https://github.com/user-attachments/assets/1925bda1-807c-4130-aef3-a491dfeb2aa5)
+![img0321_165650](https://github.com/user-attachments/assets/4f0247e7-28a5-48db-84f0-d59a5e1190c1)
+
+![img0321_165908](https://github.com/user-attachments/assets/bc318d83-dd98-4bee-a481-ec809ffbd9d8)
+![img0321_170009](https://github.com/user-attachments/assets/bd41f93b-8ae0-4829-9b8f-15ffd4ea6d19)
+![img0321_170132](https://github.com/user-attachments/assets/1e8f7d5f-330e-4ff6-a44f-bc6b728cc506)
+
+# MG Chemicals 832HD Measurements 3/20/25 - Afternoon
 
 ![img0320_134046](https://github.com/user-attachments/assets/abc302fb-669e-4605-88ef-e86af3153403)
 
@@ -26,7 +64,7 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0320_195046](https://github.com/user-attachments/assets/d80c0feb-37a4-447f-9c73-e9a431449ed2)
 
 
-## MG Chemicals 832HD Measurements 3/20/25
+# MG Chemicals 832HD Measurements 3/20/25 - Morning 
 ![img0320_090728](https://github.com/user-attachments/assets/c252487a-245b-47d7-93ac-bc960f21e7ba)
 
 ![img0320_091000](https://github.com/user-attachments/assets/8d6fc949-f8e3-495e-b198-b9ae60561dbd)
@@ -55,7 +93,7 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0319_174555](https://github.com/user-attachments/assets/8f59824e-94b5-4bc2-816a-976d236cf16a)
 
 
-## Water Resistance Measurements
+# Water Resistance Measurements
 Settings on smu were set to source current and measure resistance. Key observations:
 * The compliance voltage of 5 V is insufficient for most of your source current settings when measuring a high-resistance sample like water.
 * Negative resistance and current values suggest measurement instability due to hitting its limits.
@@ -65,7 +103,7 @@ Settings on smu were set to source current and measure resistance. Key observati
 
 ![img0318_170210](https://github.com/user-attachments/assets/60b70074-e9a8-4872-8066-0bdd4cdb5a81)
 
-## IV curves 
+# IV curves 
 ![img0319_081739](https://github.com/user-attachments/assets/37866d40-e2c3-4043-81b1-a2524470ddeb)
 
 ![sweep1](https://github.com/user-attachments/assets/eb16f8c4-d021-4765-817b-9e689bd5b787)

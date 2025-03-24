@@ -8,7 +8,7 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0324_073224](https://github.com/user-attachments/assets/4bda57a0-38b4-449a-af9b-ba679aff3ae0)
 ![img0324_073233](https://github.com/user-attachments/assets/bc4d75ec-217e-459c-b09a-ce0f7ad51620)
 
-* R = 7.377V/0.0404x10^-9 A = 1.82x10^11 ohm (resistivity = 1.4x10^13*(0.2cm/12.25cm^2)= 2.2x10^11 ohm
+* R = 7.377V/0.0404x10^-9 A = 1.82x10^11 ohm (resistivity = 1.4x10^13*(0.2cm/12.25cm^2)= 2.2x10^11 ohm)
   
 ![img0324_073253](https://github.com/user-attachments/assets/588f66b6-e001-452a-8c31-a95473751977)
 ![img0324_075430](https://github.com/user-attachments/assets/37c02000-a527-4918-9421-f6cbdfde7186)

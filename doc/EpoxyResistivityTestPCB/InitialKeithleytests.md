@@ -7,10 +7,11 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 
 ![img0324_073224](https://github.com/user-attachments/assets/4bda57a0-38b4-449a-af9b-ba679aff3ae0)
 ![img0324_073233](https://github.com/user-attachments/assets/bc4d75ec-217e-459c-b09a-ce0f7ad51620)
+* R = 7.377V/0.0404x10^-9 A = 1.82x10^11 ohm (resistivity = 1.4x10^13*(0.2cm/12.25cm^2)= 2.2x10^11 ohm
 ![img0324_073253](https://github.com/user-attachments/assets/588f66b6-e001-452a-8c31-a95473751977)
 ![img0324_075430](https://github.com/user-attachments/assets/37c02000-a527-4918-9421-f6cbdfde7186)
 ![img0324_075505](https://github.com/user-attachments/assets/c63023ec-1ea9-4879-92aa-e0d986c934b8)
-
+* R = 1.15x10^13 ohm 
 ![img0324_075517](https://github.com/user-attachments/assets/97cc3abc-fc71-4f67-983f-40c0a8a48c60)
 ![img0324_075541](https://github.com/user-attachments/assets/4ea7ad14-3b75-46c0-8b8e-a10559a84591)
 
@@ -25,8 +26,7 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0324_075842](https://github.com/user-attachments/assets/6f949bcc-3442-4060-bdd1-cfc4c9aafd47)
 ![img0324_081723](https://github.com/user-attachments/assets/834c3819-f897-40f2-bf79-ddf89112e9e5)
 ![img0324_081737](https://github.com/user-attachments/assets/73c3e808-b258-4c8b-9bfa-1de509698ae4)
-
-
+* R = 1.1x10^14 ohm
 
 # MG Chemicals 832HD Measurements 3/23/25 - Cured >>24hrs
 
@@ -35,7 +35,6 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0323_110943](https://github.com/user-attachments/assets/3b7b7588-7486-47a8-896c-fd0c9770a844)
 ![img0323_111012](https://github.com/user-attachments/assets/6a02add0-3785-4b0f-aea6-907dabe0440b)
 ![img0323_113117](https://github.com/user-attachments/assets/83e86665-1a22-4587-aaa9-b2ddd3993991)
-
 ![img0323_113201](https://github.com/user-attachments/assets/0dc4b9e5-4706-4ca6-ac96-ee6d2d41e3ed)
 
 ## Disconnected HI Force
@@ -55,9 +54,10 @@ Sourcing current and measuring voltage. Our range for the source current is 10 n
 ![img0321_152518](https://github.com/user-attachments/assets/51c6438b-944f-4276-b166-14c12178878a)
 ![img0321_152535](https://github.com/user-attachments/assets/30fdacbe-cc7b-4bb7-ae56-29ad4fe1ccf1)
 ![img0321_153304](https://github.com/user-attachments/assets/ab4d0192-9710-4c15-b89a-f214b0af5eb6)
-
 ![img0321_153325](https://github.com/user-attachments/assets/0ce306cc-42e0-43c0-895f-7198d530bb1a)
 ![img0321_153344](https://github.com/user-attachments/assets/ebb270ce-7e78-4ced-b416-92cbf98b5010)
+R = 1.8x10^7 ohm
+
 ![img0321_153923](https://github.com/user-attachments/assets/a85a9b0e-7b4a-4b2c-82a7-6b834d570938)
 ![img0321_154122](https://github.com/user-attachments/assets/41030478-5237-408b-ab88-f6472d4b51f1)
 ![img0321_154746](https://github.com/user-attachments/assets/2a6357a9-f8db-4f9b-9984-8d24bfc04803)
@@ -73,6 +73,8 @@ Sourcing current and measuring voltage. Our range for the source current is 10 n
 
 ![img0321_163456](https://github.com/user-attachments/assets/ff701488-01ea-40f2-8c90-4d198206f215)
 ![img0321_163509](https://github.com/user-attachments/assets/f221c374-5e2b-426d-b733-5e9e2fc08314)
+R = 2.22x10^12 ohm 
+
 ![img0321_164943](https://github.com/user-attachments/assets/7dcafbd3-2056-4a09-b291-00f9929418d4)
 ![img0321_164957](https://github.com/user-attachments/assets/74fbca66-7782-4bc0-83e0-6c8e8681bfa8)
 ![img0321_165213](https://github.com/user-attachments/assets/87f10f5c-ca1e-45cc-bef8-bdbd64a02f02)

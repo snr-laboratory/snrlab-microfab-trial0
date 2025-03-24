@@ -14,7 +14,7 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0324_075517](https://github.com/user-attachments/assets/97cc3abc-fc71-4f67-983f-40c0a8a48c60)
 ![img0324_075541](https://github.com/user-attachments/assets/4ea7ad14-3b75-46c0-8b8e-a10559a84591)
 
-## Disconnected HI Force
+## Disconnected HI Force - isolating device-specific behavior by disconnecting Hi Force
 ![img0324_075559](https://github.com/user-attachments/assets/8e71637b-15ab-40fe-b153-5013b83bcc72)
 ![img0324_075625](https://github.com/user-attachments/assets/f37c8591-4553-4900-8ab0-6d569b36f595)
 ![img0324_075642](https://github.com/user-attachments/assets/2f7662a0-32a6-4b98-b06c-1abf95bbcd33)

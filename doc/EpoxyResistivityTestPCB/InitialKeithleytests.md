@@ -49,6 +49,8 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 
 
 # MG Chemicals 832HD Measurements 3/21/25 - "Cured"
+Sourcing current and measuring voltage. Our range for the source current is 10 nano amps. Our source is 0.04 nano amps and our limit set to 210 V. The measured voltage for two wire measurement range is 200 V.
+
 
 ![img0321_152518](https://github.com/user-attachments/assets/51c6438b-944f-4276-b166-14c12178878a)
 ![img0321_152535](https://github.com/user-attachments/assets/30fdacbe-cc7b-4bb7-ae56-29ad4fe1ccf1)
@@ -160,7 +162,9 @@ The following parameters were set for the following measurements:
 * Source Delay: auto
 * Source Limit 30-200V
 * Count: 10
+
 The source limit was changed each run to examine the change in behavior from 30V, 50V, 150V and 200V   
+
 ![img0319_081739](https://github.com/user-attachments/assets/37866d40-e2c3-4043-81b1-a2524470ddeb)
 
 ![sweep1](https://github.com/user-attachments/assets/eb16f8c4-d021-4765-817b-9e689bd5b787)

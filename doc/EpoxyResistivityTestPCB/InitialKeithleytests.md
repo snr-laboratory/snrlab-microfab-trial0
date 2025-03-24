@@ -3,6 +3,29 @@
 ## Objective 
 To be able to collect data in the expected range of the given epoxies (i.e 10^12-15 ohm-cm range). Use the smu and configure the proper settings to best measure such high resistances. 
 
+# MG Chemicals 832HD Measurements 3/24/25 - Without Shielding Box Lid
+
+![img0324_073224](https://github.com/user-attachments/assets/4bda57a0-38b4-449a-af9b-ba679aff3ae0)
+![img0324_073233](https://github.com/user-attachments/assets/bc4d75ec-217e-459c-b09a-ce0f7ad51620)
+![img0324_073253](https://github.com/user-attachments/assets/588f66b6-e001-452a-8c31-a95473751977)
+![img0324_075430](https://github.com/user-attachments/assets/37c02000-a527-4918-9421-f6cbdfde7186)
+![img0324_075505](https://github.com/user-attachments/assets/c63023ec-1ea9-4879-92aa-e0d986c934b8)
+
+![img0324_075517](https://github.com/user-attachments/assets/97cc3abc-fc71-4f67-983f-40c0a8a48c60)
+![img0324_075541](https://github.com/user-attachments/assets/4ea7ad14-3b75-46c0-8b8e-a10559a84591)
+
+## Disconnected HI Force
+![img0324_075559](https://github.com/user-attachments/assets/8e71637b-15ab-40fe-b153-5013b83bcc72)
+![img0324_075625](https://github.com/user-attachments/assets/f37c8591-4553-4900-8ab0-6d569b36f595)
+![img0324_075642](https://github.com/user-attachments/assets/2f7662a0-32a6-4b98-b06c-1abf95bbcd33)
+![img0324_075705](https://github.com/user-attachments/assets/ec8898a2-7d8f-4d98-b782-613677959eca)
+![img0324_075718](https://github.com/user-attachments/assets/6147fc31-8f86-44ec-8e5c-c10d773a0539)
+![img0324_075741](https://github.com/user-attachments/assets/5c8d7b4c-fa2e-4027-8ea2-185ca5c60b5a)
+![img0324_075823](https://github.com/user-attachments/assets/96c736e5-1fab-4180-9a90-0cf87562f6d6)
+![img0324_075842](https://github.com/user-attachments/assets/6f949bcc-3442-4060-bdd1-cfc4c9aafd47)
+
+
+
 # MG Chemicals 832HD Measurements 3/23/25 - Cured >>24hrs
 
 ![img0323_110848](https://github.com/user-attachments/assets/63bb1349-a25b-47d1-9c2b-121212b144e8)

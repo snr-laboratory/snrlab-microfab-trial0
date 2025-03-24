@@ -1,7 +1,7 @@
 # Initial Keithley Tests
 
 ## Objective 
-To be able to collect data in the expected range of the given epoxies (i.e 10^12-15 ohm-cm range). Use the smu and configure the proper settings to best measure such high resistances. 
+To be able to collect data in the expected range of the given epoxies (i.e 10^12-15 ohm-cm range). Use the smu and configure the proper settings to best measure such high resistances. Expected resistance measurements should be in the 10^10 - 10^13 ohms. At 200V the expected current should be 10^-8 - 10^-11 amps. 
 
 # MG Chemicals 832HD Measurements 3/24/25 - Without Shielding Box Lid
 

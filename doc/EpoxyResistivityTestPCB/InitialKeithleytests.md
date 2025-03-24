@@ -7,11 +7,15 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 
 ![img0324_073224](https://github.com/user-attachments/assets/4bda57a0-38b4-449a-af9b-ba679aff3ae0)
 ![img0324_073233](https://github.com/user-attachments/assets/bc4d75ec-217e-459c-b09a-ce0f7ad51620)
+
 * R = 7.377V/0.0404x10^-9 A = 1.82x10^11 ohm (resistivity = 1.4x10^13*(0.2cm/12.25cm^2)= 2.2x10^11 ohm
+  
 ![img0324_073253](https://github.com/user-attachments/assets/588f66b6-e001-452a-8c31-a95473751977)
 ![img0324_075430](https://github.com/user-attachments/assets/37c02000-a527-4918-9421-f6cbdfde7186)
 ![img0324_075505](https://github.com/user-attachments/assets/c63023ec-1ea9-4879-92aa-e0d986c934b8)
-* R = 1.15x10^13 ohm 
+
+* R = 1.15x10^13 ohm
+  
 ![img0324_075517](https://github.com/user-attachments/assets/97cc3abc-fc71-4f67-983f-40c0a8a48c60)
 ![img0324_075541](https://github.com/user-attachments/assets/4ea7ad14-3b75-46c0-8b8e-a10559a84591)
 
@@ -26,6 +30,7 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0324_075842](https://github.com/user-attachments/assets/6f949bcc-3442-4060-bdd1-cfc4c9aafd47)
 ![img0324_081723](https://github.com/user-attachments/assets/834c3819-f897-40f2-bf79-ddf89112e9e5)
 ![img0324_081737](https://github.com/user-attachments/assets/73c3e808-b258-4c8b-9bfa-1de509698ae4)
+
 * R = 1.1x10^14 ohm
 
 # MG Chemicals 832HD Measurements 3/23/25 - Cured >>24hrs
@@ -50,13 +55,13 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 # MG Chemicals 832HD Measurements 3/21/25 - "Cured"
 Sourcing current and measuring voltage. Our range for the source current is 10 nano amps. Our source is 0.04 nano amps and our limit set to 210 V. The measured voltage for two wire measurement range is 200 V.
 
-
 ![img0321_152518](https://github.com/user-attachments/assets/51c6438b-944f-4276-b166-14c12178878a)
 ![img0321_152535](https://github.com/user-attachments/assets/30fdacbe-cc7b-4bb7-ae56-29ad4fe1ccf1)
 ![img0321_153304](https://github.com/user-attachments/assets/ab4d0192-9710-4c15-b89a-f214b0af5eb6)
 ![img0321_153325](https://github.com/user-attachments/assets/0ce306cc-42e0-43c0-895f-7198d530bb1a)
 ![img0321_153344](https://github.com/user-attachments/assets/ebb270ce-7e78-4ced-b416-92cbf98b5010)
-R = 1.8x10^7 ohm
+
+* R = 1.8x10^7 ohm
 
 ![img0321_153923](https://github.com/user-attachments/assets/a85a9b0e-7b4a-4b2c-82a7-6b834d570938)
 ![img0321_154122](https://github.com/user-attachments/assets/41030478-5237-408b-ab88-f6472d4b51f1)
@@ -64,16 +69,15 @@ R = 1.8x10^7 ohm
 ![img0321_160258](https://github.com/user-attachments/assets/37447fa3-1c89-46ec-a002-4a03398e5f81)
 ![img0321_161741](https://github.com/user-attachments/assets/6bfc744f-960e-432d-a03c-f047e9c327c4)
 ![img0321_162057](https://github.com/user-attachments/assets/59b3cefd-38b3-44dd-96ed-e7131b5685d3)
-
 ![img0321_162159](https://github.com/user-attachments/assets/1359ba4f-388b-41b3-a8e7-b81e38246024)
 ![img0321_162210](https://github.com/user-attachments/assets/7d4b98b0-0634-4630-8697-48d7b4b369ca)
 ![img0321_162728](https://github.com/user-attachments/assets/59d7ed6f-4ccf-491c-9a87-172753eb7498)
 ![img0321_162736](https://github.com/user-attachments/assets/f2f4c0cf-c389-4327-bed5-fe9eac41305f)
 ![img0321_163424](https://github.com/user-attachments/assets/f0c29643-2071-456b-b712-29c7555108e3)
-
 ![img0321_163456](https://github.com/user-attachments/assets/ff701488-01ea-40f2-8c90-4d198206f215)
 ![img0321_163509](https://github.com/user-attachments/assets/f221c374-5e2b-426d-b733-5e9e2fc08314)
-R = 2.22x10^12 ohm 
+
+* R = 2.22x10^12 ohm 
 
 ![img0321_164943](https://github.com/user-attachments/assets/7dcafbd3-2056-4a09-b291-00f9929418d4)
 ![img0321_164957](https://github.com/user-attachments/assets/74fbca66-7782-4bc0-83e0-6c8e8681bfa8)

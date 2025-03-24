@@ -91,7 +91,7 @@ Sourcing current and measuring voltage. Our range for the source current is 10 n
 ![img0321_170132](https://github.com/user-attachments/assets/1e8f7d5f-330e-4ff6-a44f-bc6b728cc506)
 
 # MG Chemicals 832HD Measurements 3/20/25 - Afternoon
-
+SMU set to source current and measure resistance. 
 ![img0320_134046](https://github.com/user-attachments/assets/abc302fb-669e-4605-88ef-e86af3153403)
 
 ![img0320_140802](https://github.com/user-attachments/assets/fe5fa56f-0ab4-4c7d-94f9-6af99d7c4e80)
@@ -102,18 +102,20 @@ Sourcing current and measuring voltage. Our range for the source current is 10 n
 
 ![img0320_192106](https://github.com/user-attachments/assets/e1c2580c-f849-462b-8b20-da2bf9399bb1)
 
+SMU set to source current and measure voltage. 
 ![img0320_193132](https://github.com/user-attachments/assets/697a5f33-1359-4fc4-9a20-8a60d52b1422)
-
 ![img0320_193148](https://github.com/user-attachments/assets/3025bdd0-786b-4155-aaa3-d23bab47df3c)
-
 ![img0320_194131](https://github.com/user-attachments/assets/ea1b2b52-1e0c-4d4d-b7c0-603b6529d3b6)
 
+SMU set to source voltage and measure current. 
 ![Device + noise ](https://github.com/user-attachments/assets/5fc6bde8-0b36-479d-aefd-d10e3deaf9ac)
-
+![without Force Hi - device ](https://github.com/user-attachments/assets/84bec03b-af0c-4f93-b50c-c4c5f7c060e2)
 ![img0320_195046](https://github.com/user-attachments/assets/d80c0feb-37a4-447f-9c73-e9a431449ed2)
 
 
 # MG Chemicals 832HD Measurements 3/20/25 - Morning 
+SMU set to source current and measure resistance. 
+
 ![img0320_090728](https://github.com/user-attachments/assets/c252487a-245b-47d7-93ac-bc960f21e7ba)
 
 ![img0320_091000](https://github.com/user-attachments/assets/8d6fc949-f8e3-495e-b198-b9ae60561dbd)

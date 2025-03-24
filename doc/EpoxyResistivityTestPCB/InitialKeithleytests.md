@@ -23,6 +23,8 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0324_075741](https://github.com/user-attachments/assets/5c8d7b4c-fa2e-4027-8ea2-185ca5c60b5a)
 ![img0324_075823](https://github.com/user-attachments/assets/96c736e5-1fab-4180-9a90-0cf87562f6d6)
 ![img0324_075842](https://github.com/user-attachments/assets/6f949bcc-3442-4060-bdd1-cfc4c9aafd47)
+![img0324_081723](https://github.com/user-attachments/assets/834c3819-f897-40f2-bf79-ddf89112e9e5)
+![img0324_081737](https://github.com/user-attachments/assets/73c3e808-b258-4c8b-9bfa-1de509698ae4)
 
 
 
@@ -125,6 +127,9 @@ To be able to collect data in the expected range of the given epoxies (i.e 10^12
 ![img0320_100504](https://github.com/user-attachments/assets/a9dca94d-2383-4343-8a40-af15f2c8deac)
 
 ## OP-61-LS Epoxy Resistance Measurements 
+At higher currents (e.g. 10 mA), resistance drops significantly to 0.2 MΩ. This could be potential instability or saturation effects in the epoxy.At lower source currents (e.g. 10 nA), the measured resistance is relatively stable (~1.9 MΩ) (more consistent under smaller source currents). Issues with curing can be the reason we are observing nonlinear behavior. Also, smu hitting limits (compliance or noise). Increasing compliance voltage improves the stability of high resistance measurements.  
+
+
 ![img0319_140803](https://github.com/user-attachments/assets/f0e99796-17c2-4a4b-ae03-0ed08232080b)
 
 ![img0319_174303](https://github.com/user-attachments/assets/75b6c708-573e-4eb9-b1e0-83731241835b)
@@ -147,6 +152,15 @@ Settings on smu were set to source current and measure resistance. Key observati
 ![img0318_170210](https://github.com/user-attachments/assets/60b70074-e9a8-4872-8066-0bdd4cdb5a81)
 
 # IV curves 
+The following parameters were set for the following measurements:
+* Start Current: 10A (first IV curve had start current set to 0, everything else the same)
+* Stop Current: 100nA
+* Step Size: 10 nA
+* Range 200V
+* Source Delay: auto
+* Source Limit 30-200V
+* Count: 10
+The source limit was changed each run to examine the change in behavior from 30V, 50V, 150V and 200V   
 ![img0319_081739](https://github.com/user-attachments/assets/37866d40-e2c3-4043-81b1-a2524470ddeb)
 
 ![sweep1](https://github.com/user-attachments/assets/eb16f8c4-d021-4765-817b-9e689bd5b787)

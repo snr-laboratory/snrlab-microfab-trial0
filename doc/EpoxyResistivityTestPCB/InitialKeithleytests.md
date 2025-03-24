@@ -78,6 +78,8 @@ Sourcing current and measuring voltage. Our range for the source current is 10 n
 ![img0321_165213](https://github.com/user-attachments/assets/87f10f5c-ca1e-45cc-bef8-bdbd64a02f02)
 ![img0321_165504](https://github.com/user-attachments/assets/3fe61246-d438-40f4-99ca-5fc79a7468c9)
 
+## Disconnected HI Force 
+
 ![img0321_165549](https://github.com/user-attachments/assets/f505728c-8cff-4cd5-8fd9-538dfb356cab)
 ![img0321_165625](https://github.com/user-attachments/assets/4c229d07-6827-47a9-b8f7-b64e20a61dd6)
 ![img0321_165641](https://github.com/user-attachments/assets/be1bbe7c-843b-4ded-9e6f-fca65da146f5)

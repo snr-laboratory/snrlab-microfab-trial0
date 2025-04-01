@@ -69,6 +69,18 @@ We need bulk resistivity with a very thin layer or in other words controllably t
 * [Purchase - Digikey](https://www.digikey.com/en/products/detail/mg-chemicals/832HD-25ML/9658007?gclsrc=aw.ds&&utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_High%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20222717502_adg-_ad-__dev-c_ext-_prd-9658007_sig-CjwKCAiA5pq-BhBuEiwAvkzVZUcw2KJ-IR-dKto0MrshHS521JZ1PElweJQJ6NGseZ_YN7NelR7xAhoC2o0QAvD_BwE&gad_source=1&gbraid=0AAAAADrbLlg9R3YgIPICGNOqe2O5BFy8x&gclid=CjwKCAiA5pq-BhBuEiwAvkzVZUcw2KJ-IR-dKto0MrshHS521JZ1PElweJQJ6NGseZ_YN7NelR7xAhoC2o0QAvD_BwE)
 
 
+## Epoxy Degassing Procedure
+1) Mix the 2 part epoxy in a disposable container (preferably clear) and place inside the degasser (consider the volume being used so it does not spill over during degassing - generally 2-3 times the volume of epoxy being used should be the size of the container volume (eg. 20mL of epoxy should be placed in a container of 40-60mL size). Do this for as many epoxies that are being tested. It is fine to place multiple epoxies in the degasser at once.  
+
+2) Gradually apply vacuum to avoid bubble forming. Remove the epoxies when bubbles cease to form and then slowly restore pressure (avoid bubble forming). This process takes a few minutes, maybe even less due to the low volumes we are using.  
+
+3) Stir gently after degassing to ensure homogeneity of the epoxy mixture and inject into the respective PCB test electrode. 
+
+4) Place back into the degasser and run the tool for another short while in order to remove as many bubbles as possible.
+   
+5) Clean up any mess and store epoxies in fridge. 
+
+
 ## Epoxy Degasser
 
 1) [1.5 Gallon Vacuum Chamber 3.5CFM Single Stage Pump Degassing Chamber Kit](https://www.vevor.com/vacuum-pump-c_11109/1-5-gallon-vacuum-chamber-3-5cfm-single-stage-pump-degassing-chamber-kit-p_010838830210?adp=gmc&utm_source=google&utm_medium=cpc&utm_id=21387046045&ad_group=166590768907&ad_id=702764145994&utm_term=&gad_source=4&gbraid=0AAAAACq8bLU8abmevVKs_kiU1s7kdmr-4&gclid=CjwKCAiAw5W-BhAhEiwApv4goPb6qM5FDWeUN8u7ZiwCaWDGu_8z-f6V2HLjtyExrKeVFEfVdd0sNBoCEWAQAvD_BwE)

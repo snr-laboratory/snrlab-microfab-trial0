@@ -80,6 +80,57 @@ We need bulk resistivity with a very thin layer or in other words controllably t
    
 5) Clean up any mess and store epoxies in fridge. 
 
+## Epoxy Notes 
+
+### 4/11/2025 Friday 
+### ET - 301-2 / 2.5g (x2)
+* Recommended Cure: 80°C / 3 Hours
+* Dimensions of spacer: 
+    * Large pads: 34.2 mm x 34.2 mm
+    * Width:1.8 mm 
+    * Volume: 2105.3 mm^3  → 2.1 mL (1mL = 1cm^3)
+
+### 4/10/2025 Thursday 
+### ET - 301 / 2.5g (x2)
+* Recommended Cure: 65°C / 2 Hours
+* Dimensions of spacer: 
+    * Large pads: 34.2 mm x 34.2 mm
+    * Width:1.8 mm 
+    * Volume: 2105.3 mm^3  → 2.1 mL (1mL = 1cm^3))
+* Some issues occurred - Turned on the pump with the oil cap on and it drew in a small amount of oil into the hose. The hose was removed (paper towels were used to absord the oil and disposed in trash) and washed with water and let to dry. 
+* Good news - the ET 301 is super viscous and I am able to suction almost the entire portion used, but there are still some issues with suctioning with the syringe and adding back air into the epoxy system.
+For 3D printing: Gasket prints more robustly at 80% speed / 225C (nozzle) / 55C (bed)
+
+### 4/09/2025 Wednesday 
+Need x3 Epoxy 2.5g packs for two large pads to be filled - x2 works if the viscosity is low enough, but three would be ideal. 
+
+### 4/06/2025  Sunday
+* Dimensions of spacer: 
+  * Large pads: 32 mm x 32 mm
+  * Width:1.8 mm 
+  * Volume: 1843.3 mm^3  → 1.843 mL (1mL = 1cm^3)
+
+### 832HD (Top of PCB electrodes)
+
+* Density: Mixed ~1.0 g/mL 
+* Mixed viscosity is 4.1 Pa·s (4100 cP)
+* working time is 45 minutes
+  * Curing took place on Wednesday - Three days later after it was injected into the PCB electrodes.
+recommends vacuum degassing at 25 inHg for 2 minutes - @ roughly 10 minutes no more bubbles appear and the epoxy settles to the bottom of the container. 
+
+### 353 ND (bottom of PCB electrodes near the small pads - chip mimic region) - 4gram packs 
+
+* Specific gravity is equivalent to density in g/mL:
+  * Part A has a density of 1.2 g/mL.
+  * Part B has a density of 1.02 g/mL
+  * Viscosity: 3000–5000 cPs
+  * Pot life is ≤ 3 hours
+  * 150°C (302°F) for 1 hour: This is the optimal curing condition to achieve full mechanical and thermal properties.
+  * 120°C (248°F) for 5 minutes: A faster alternative for applications requiring quick curing.
+  * 100°C (212°F) for 10 minutes: Suitable for moderate heat applications.
+    * Curing took place on Wednesday - Three days later after it was injected into the PCB electrodes.
+  * 80°C (176°F) for 30 minutes: The minimum temperature required to initiate curing, though performance may not reach optimal levels.
+
 
 ## Epoxy Degasser
 

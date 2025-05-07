@@ -1,0 +1,21 @@
+Date,5/5/25,,,
+,,,,
+Area (cm²),11.6964,Thickness (cm),0.18,
+,,,,
+NOTE: Connect to REAR terminals with triaxial cables for best low-current accuracy,,,,
+,,,,
+TRIAL 1: POSITIVE VOLTAGES (25V-200V),,,,
+Voltage Sourced (V),Voltage obs (V),Measured Current (pA),STDEV (pA),Resistivity (ohm cm)
+25,25.004,178.9,0.3,9.08E+12
+50,50.001,196.1,0.1,1.66E+13
+100,100.003,224.4,0.2,2.90E+13
+150,150.001,218.8,0.4,4.46E+13
+200,199.999,255.9,0.3,5.08E+13
+,,,,
+TRIAL 2: NEGATIVE VOLTAGES (-25V to -200V),,,,
+Voltage Sourced (V),Voltage obs (V),Measured Current (pA),STDEV (pA),Resistivity (ohm cm)
+-25,-25,75.7,0.3,-2.15E+13
+-50,-49.999,39.5,0.3,-8.23E+13
+-100,-100,-6.5,0.3,1.00E+15
+-150,-149.997,-34.5,0.5,2.82E+14
+-200,-199.997,-17.5,0.1,7.42E+14

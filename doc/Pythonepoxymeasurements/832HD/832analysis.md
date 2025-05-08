@@ -1,6 +1,6 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-# can you tell me about the graph you see
+# 832 Results
 
 The graph displays the measured resistivity of your epoxy sample as a function of the sourced voltage, for both positive and negative voltage sweeps. Here’s a detailed interpretation:
 

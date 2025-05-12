@@ -1,6 +1,6 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-# on high-resistivity silicon substrates (10,000–12,000 Ω·cm) to enable deep depletion regions (200–300 μm) what is meant by this (deep depletion regions and why is high resistivity a requirement)
+# High-resistivity silicon substrates (10,000–12,000 Ω·cm) - enable deep depletion regions (200–300 μm) 
 
 Deep depletion regions in CCDs refer to **thick, fully depleted semiconductor layers** (200–300 μm) where an electric field exists to efficiently collect photogenerated charges. High-resistivity silicon (10,000–12,000 Ω·cm) is required to achieve this because:
 
@@ -10,9 +10,11 @@ Deep depletion regions in CCDs refer to **thick, fully depleted semiconductor la
 
 1. **Depletion Mechanism**
 When a bias voltage is applied, mobile charges (electrons/holes) are removed from the silicon, creating a charge-free zone with an electric field.
+
     - **Depletion depth** scales with $\sqrt{\rho \cdot V}$, where $\rho = \text{resistivity}$ and $V = \text{applied voltage}$[^2][^4].
     - High resistivity ($\approx 10^4\ \Omega\cdot\text{cm}$) allows deep depletion (200+ μm) at moderate voltages (≈40 V)[^4].
-2. **Role of High Resistivity**
+      
+3. **Role of High Resistivity**
     - Low doping ($\sim 10^{12}\ \text{cm}^{-3}$) reduces ionized impurities, enabling:
         - **Longer Debye length**: Electric fields penetrate deeper.
         - **Lower full-depletion voltage**: $V_{\text{dep}} \propto \rho^{-1}$[^2][^4].

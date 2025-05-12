@@ -1,14 +1,12 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-# can you find publications on the sequence for fabricating CCD as well as new and emerging fabrication sequences (but please provide the generic and novel)
-
-Here is a summary of **generic (standard) and novel (emerging) CCD fabrication sequences**, with references to key publications and recent innovations:
+# Sequence for fabricating CCD 
 
 ---
 
 ## **Standard CCD Fabrication Sequence**
 
-The conventional process for fabricating scientific CCDs involves the following core steps, consistently described in both technical literature and educational resources:
+The conventional process for fabricating scientific CCDs involves the following core steps:
 
 1. **Wafer Preparation**
     - High-resistivity silicon wafers are cleaned and polished[^2][^6][^8].
@@ -30,14 +28,6 @@ The conventional process for fabricating scientific CCDs involves the following 
     - Protective layers are added to shield the device from contamination and environmental effects[^8].
 10. **Backside Processing (for back-illuminated devices)**
     - The wafer is thinned, the back surface is passivated (often with a p+ layer), and antireflection coatings are applied for optimal quantum efficiency[^2][^6].
-
-**References:**
-
-- Burke et al., "CCD Technology" (2005) for a detailed process and cross-section diagrams[^2].
-- NASA WFC3 manufacturing summary for a concise breakdown of wafer fabrication and post-processing[^6].
-- Hamamatsu Learning Center and Florida State University for step-by-step tutorials and diagrams[^1][^8].
-
----
 
 ## **Novel and Emerging Fabrication Sequences**
 
@@ -94,7 +84,6 @@ Recent innovations in CCD fabrication focus on improving performance, yield, and
 
 ---
 
-These resources and innovations illustrate both the established and cutting-edge approaches in CCD fabrication, highlighting the field’s ongoing evolution toward higher performance, yield, and integration.
 
 <div style="text-align: center">⁂</div>
 

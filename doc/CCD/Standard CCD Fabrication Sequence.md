@@ -6,7 +6,7 @@
 
 ## **Standard CCD Fabrication Sequence**
 
-The conventional process for fabricating scientific CCDs involves the following core steps:
+The conventional process for fabricating CCDs involves the following core steps:
 
 1. **Wafer Preparation**
     - High-resistivity silicon wafers are cleaned and polished[^2][^6][^8].

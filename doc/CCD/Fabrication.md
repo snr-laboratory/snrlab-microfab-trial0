@@ -2,6 +2,8 @@
 
 Charge-coupled devices (CCDs) are fabricated using specialized semiconductor processes to optimize light detection and charge transfer. Their manufacturing involves precise control of silicon properties, doping profiles, and optical structures to achieve high quantum efficiency and low noise. Below is a detailed analysis of CCD fabrication based on current research and industrial practices:
 
+[CCD Virtual Digital Imaging Tutorial](https://micro.magnet.fsu.edu/primer/java/digitalimaging/ccd/virtual2/index.html)
+
 ---
 
 ## **Materials and Substrate Preparation**

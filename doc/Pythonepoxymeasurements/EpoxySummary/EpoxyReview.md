@@ -27,8 +27,10 @@
 
 ---
 ## Objectives
-- All tested epoxies far exceed intrinsic silicon resistivity (~2.3×10⁵ Ω·cm) 
-
+- All tested epoxies far exceed intrinsic silicon resistivity (~2.3×10⁵ Ω·cm)
+- Epoxies were for this round were all degassed.
+- Temperature conditions were not accurate for any of the cured epoxies
+  
 ---
 ## Data Interpretation
 - Positive Voltages:

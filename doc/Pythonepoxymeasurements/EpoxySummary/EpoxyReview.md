@@ -1,4 +1,5 @@
-# Key Findings and Recommendations
+# PyScript Epoxy Measurments
+
 
 ## Best Candidate 
 301 (New 301):
@@ -76,7 +77,17 @@ ___
 - Dark blue 832HD is Trial 5
 - Light blue 832HD is Trial 6 
 - 353ND is Trial 2 
-- 301 is Trial 3 
+- 301 is Trial 3
+  
+### Reversed Polarity I/Vs for 301, 353ND and 832HD
+<img width="831" alt="Screenshot 2025-05-13 at 2 30 30 PM" src="https://github.com/user-attachments/assets/10669ae4-57ab-43f0-86d0-24813798e396" />
+
+### Reversed Polarity Resistivity vs Voltage Plots for 301, 353ND and 832HD
+<img width="819" alt="Screenshot 2025-05-13 at 2 30 39 PM" src="https://github.com/user-attachments/assets/372dc6eb-5fdd-4c29-bb9a-1856a1eb28b7" />
+
+- Purple 832HD is Trial 8
+- Green 353ND is Trial 3
+- Black 301 is Trial 4
   
 ---
 ## Empty 

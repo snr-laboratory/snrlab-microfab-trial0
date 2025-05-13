@@ -1,6 +1,16 @@
 # PyScript Epoxy Measurments
 
+## I/Vs for 301-2, 301-2FL, 301, 3353ND, and 832HD
+<img width="600" alt="Screenshot 2025-05-13 at 3 25 33 PM" src="https://github.com/user-attachments/assets/19763b8b-25e2-4a15-b78c-efc1c3268c65" />
 
+<img width="770" alt="Screenshot 2025-05-13 at 2 54 12 PM" src="https://github.com/user-attachments/assets/9841376c-191b-44e9-bbc2-32d22982eef7" />
+
+## Resistivity Plots for 301-2, 301-2FL, 301, 3353ND, and 832HD
+<img width="726" alt="Screenshot 2025-05-13 at 3 26 49 PM" src="https://github.com/user-attachments/assets/68e7b5cc-00be-4038-afb3-8e95cf4942ad" />
+
+<img width="794" alt="Screenshot 2025-05-13 at 3 04 29 PM" src="https://github.com/user-attachments/assets/71a5778d-e5f0-4b00-b889-39e736f4ecde" />
+
+---
 ## Best Candidate 
 301 (New 301):
 - Highest resistivity (9.4E+15 Ω·cm) 
@@ -15,9 +25,11 @@
 - 832HD-DG: The degassed version shows much higher conductivity than non-degassed 832HD
 - 353ND: Moderate performance but shows some non-linearity at higher voltages
 
+---
 ## Objectives
 - All tested epoxies far exceed intrinsic silicon resistivity (~2.3×10⁵ Ω·cm) 
 
+---
 ## Data Interpretation
 - Positive Voltages:
   - Steeper slope → Lower resistivity 
@@ -25,10 +37,12 @@
 - Negative Voltages: Nonlinear slopes indicate non-ohmic behavior, likely due to:
   - Charge trapping at epoxy-electrode interfaces
   - Leakage currents or polarization effects in the PCB setup
-
+    
+---
 ## Trends
 All epoxies show increasing current with increasing voltage, but the rate of increase and magnitude differ significantly.The New 301 and 301-2 are suitable for applications requiring ultra-high resistivity (lowest leakage current), while 832HD is not recommended for such uses. New 301 consistently shows the lowest current at all voltages, indicating the highest resistivity and best insulating properties. 301-2 and 301-2FL also perform well, with 301-2FL having slightly higher current (lower resistivity) than 301-2.353ND has intermediate performance, with currents roughly an order of magnitude higher than 301-2.832HD displays the highest measured currents, increasing rapidly with voltage, indicating it is the least resistive and thus the least effective insulator among those tested.
 
+---
 # Epoxy Measurments before Leakage
 ___
 ## 832HD
@@ -93,6 +107,7 @@ ___
 ## Empty 
 ### Leakage testing plot
 <img width="987" alt="Screenshot 2025-05-13 at 1 35 29 PM" src="https://github.com/user-attachments/assets/5ff34958-9ff8-4aa1-b4d2-65709abfbecf" />
+
 - Trials 1-3 had leakage current through foam base 
 - Test 1 has the electrodes searated and gasket removed. Contact pads no longer in contact with the foam.
 - Test 2 foam is removed.

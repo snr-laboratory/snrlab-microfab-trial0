@@ -1,14 +1,14 @@
 # PyScript Epoxy Measurements
 
-## I/Vs for 301-2, 301-2FL, 301, 3353ND, and 832HD
-<img width="600" alt="Screenshot 2025-05-13 at 3 25 33 PM" src="https://github.com/user-attachments/assets/19763b8b-25e2-4a15-b78c-efc1c3268c65" />
+### **I/Vs for 301-2, 301-2FL, 301, 353ND, and 832HD** 
+<img width="588" alt="Screenshot 2025-05-13 at 9 57 32 PM" src="https://github.com/user-attachments/assets/0a3c51ec-cd2c-46dd-86a0-b593b07efdaf" />
 
 ___
+### **Resistivity vs Voltage for 301-2, 301-2FL, 301, 353ND, and 832HD** 
 <img width="770" alt="Screenshot 2025-05-13 at 2 54 12 PM" src="https://github.com/user-attachments/assets/9841376c-191b-44e9-bbc2-32d22982eef7" />
-
 ___
 
-## Resistivity Plots for 301-2, 301-2FL, 301, 3353ND, and 832HD
+### **Resistivity Plots for 301-2, 301-2FL, 301, 353ND, and 832HD** 
 <img width="726" alt="Screenshot 2025-05-13 at 3 26 49 PM" src="https://github.com/user-attachments/assets/68e7b5cc-00be-4038-afb3-8e95cf4942ad" />
 
 ___
@@ -59,10 +59,10 @@ ___
 # Epoxy Measurments before Leakage
 ___
 ## 832HD
-### I/Vs at 3 minute intervals with no degassing and room temperature curing.  
+### **I/Vs at 3 minute intervals (no degassing and room temperature curing)**  
 <img width="1058" alt="Screenshot 2025-05-13 at 11 42 55 AM" src="https://github.com/user-attachments/assets/36789866-770d-4298-9f06-2df89e9779c4" />
 
-### Resistivity vs voltage measurments at 3 min
+### **Resistivity vs voltage measurments at 3 min**
 <img width="922" alt="Screenshot 2025-05-13 at 11 45 40 AM" src="https://github.com/user-attachments/assets/13ed114d-234c-4f2c-aab9-4fa2c8ad1813" />
 
 - Note: Trials 1-5 were taken on Monday, March 24. Trials 6-8 were taken a day later.
@@ -70,11 +70,11 @@ ___
 
 ---
 ## 353ND
-### I/Vs at 3 minute intervals with degassing and temperature curing at 100°C (212°F) for 10 minutes - oven is not well calibrated. 
+### **I/Vs at 3 minute intervals with degassing and temperature curing at 100°C (212°F) for 10 minutes (oven is not well calibrated)** 
 <img width="812" alt="Screenshot 2025-05-13 at 11 47 16 AM" src="https://github.com/user-attachments/assets/d3f223e8-526c-4e49-8bd7-72986346ad56" />
 
 - Curing took place on Wednesday (three days later after it was injected into the PCB electrodes).
-### Resistivity vs Voltage at 3 minute intervals
+### **Resistivity vs Voltage at 3 minute intervals**
 <img width="759" alt="Screenshot 2025-05-13 at 11 51 43 AM" src="https://github.com/user-attachments/assets/c86186b9-3726-4246-ac7a-288145d7438c" />
 
 - Trials 1-5: old tips (part of the noisy wires)
@@ -82,11 +82,11 @@ ___
 
 ---
 ## 301
-### I/Vs at 3 minute intervals with degassing
+### **I/Vs at 3 minute intervals with degassing**
 <img width="829" alt="Screenshot 2025-05-13 at 11 57 53 AM" src="https://github.com/user-attachments/assets/f4816ca1-3c4f-4bde-950b-aece11f87f2b" />
 
 ___
-### Resistivity vs Voltage at 3 minute intervals
+### **Resistivity vs Voltage at 3 minute intervals**
 <img width="807" alt="Screenshot 2025-05-13 at 12 00 57 PM" src="https://github.com/user-attachments/assets/d56ca750-fe2a-46ad-83e0-53319ef3efb7" />
 
 - Trial 5: new wires
@@ -96,11 +96,11 @@ ___
 
 ---
 ## Combined
-### I/Vs for 301, 353ND and 832HD
+### **I/Vs for 301, 353ND and 832HD**
 <img width="763" alt="Screenshot 2025-05-13 at 12 09 03 PM" src="https://github.com/user-attachments/assets/3bd31dc1-f741-4b8f-92b2-30432c7f087b" />
 
 ___
-### Resistivity vs Voltage for 301, 353ND and 832HD
+### **Resistivity vs Voltage for 301, 353ND and 832HD**
 <img width="752" alt="Screenshot 2025-05-13 at 12 12 42 PM" src="https://github.com/user-attachments/assets/de58a98c-f852-45e3-b385-4fc731ee8669" />
 
 - Dark blue 832HD is Trial 5
@@ -108,11 +108,11 @@ ___
 - 353ND is Trial 2 
 - 301 is Trial 3
   
-### Reversed Polarity I/Vs for 301, 353ND and 832HD
+### **Reversed Polarity I/Vs for 301, 353ND and 832HD**
 <img width="831" alt="Screenshot 2025-05-13 at 2 30 30 PM" src="https://github.com/user-attachments/assets/10669ae4-57ab-43f0-86d0-24813798e396" />
 
 ___
-### Reversed Polarity Resistivity vs Voltage Plots for 301, 353ND and 832HD
+### **Reversed Polarity Resistivity vs Voltage Plots for 301, 353ND and 832HD**
 <img width="819" alt="Screenshot 2025-05-13 at 2 30 39 PM" src="https://github.com/user-attachments/assets/372dc6eb-5fdd-4c29-bb9a-1856a1eb28b7" />
 
 - Purple 832HD is Trial 8
@@ -121,7 +121,7 @@ ___
   
 ---
 ## Empty 
-### Leakage testing plot
+### **Leakage Testing Plot**
 <img width="987" alt="Screenshot 2025-05-13 at 1 35 29 PM" src="https://github.com/user-attachments/assets/5ff34958-9ff8-4aa1-b4d2-65709abfbecf" />
 
 - Trials 1-3: had leakage current through foam base 
@@ -135,7 +135,7 @@ ___
 
 ---
 ## Keithley 2450 SMU
-### Readings with no connections
+### **Readings with no connections**
 <img width="637" alt="Screenshot 2025-05-13 at 12 06 42 PM" src="https://github.com/user-attachments/assets/56662ab3-7b60-444a-9315-49536eac0a9d" />
 
 

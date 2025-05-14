@@ -1,4 +1,4 @@
-# PyScript Epoxy Measurments
+# PyScript Epoxy Measurements
 
 ## I/Vs for 301-2, 301-2FL, 301, 3353ND, and 832HD
 <img width="600" alt="Screenshot 2025-05-13 at 3 25 33 PM" src="https://github.com/user-attachments/assets/19763b8b-25e2-4a15-b78c-efc1c3268c65" />

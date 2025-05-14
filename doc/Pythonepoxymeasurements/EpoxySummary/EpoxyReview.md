@@ -1,3 +1,19 @@
+# Epoxy Keithley 2450 SMU Measurements
+### **Overview**
+This document summarizes the electrical characterization of several epoxy candidates for fusing a single perovskite crystal onto a Si-CMOS ASIC. Two measurement phases were conducted:
+
+- Manual/Before Leakage: Early measurements using manual current recording and initial test setup. Some measurements were affected by setup leakage, noise, or incomplete degassing.
+
+- PyScript/After Leakage Fixes: Automated measurements using a Python script
+  
+  - All measurements were sourcing voltage and measuring current
+  - Measurment range: 10nA
+  - Range (voltage): 200V
+  - Limit: 10.5nA
+  - Script Measurements are recorded after 15 minutes
+  - Manual measurements were recorded after 3 minutes
+---
+
 # PyScript Epoxy Measurements
 
 ### **I/Vs for 301-2, 301-2FL, 301, 353ND, and 832HD** 

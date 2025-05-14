@@ -39,7 +39,10 @@ ___
 
 ___
 
-<img width="794" alt="Screenshot 2025-05-13 at 3 04 29 PM" src="https://github.com/user-attachments/assets/71a5778d-e5f0-4b00-b889-39e736f4ecde" />
+<img width="677" alt="Screenshot 2025-05-14 at 12 31 15 PM" src="https://github.com/user-attachments/assets/49360a2d-ad32-484c-b588-d67869ee04eb" />
+
+- 301 is the top-performing epoxy for high-resistivity, high-insulation applications.
+- The plot also reinforces that 301-2 and 301-2FL are viable alternatives, while 353ND and 832HD-DG are not suitable for applications demanding ultra-high resistivity.
 
 ---
 ## Best Candidate 

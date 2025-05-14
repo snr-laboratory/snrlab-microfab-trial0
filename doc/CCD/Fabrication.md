@@ -18,6 +18,10 @@ Key steps include:
 - **Epitaxial growth**: A lightly doped p-type or n-type layer is grown to form the photoactive region[^1][^6].
 - **Gettering**: In-situ doped polysilicon layers on the wafer backside reduce impurities and dark current[^2][^9].
 
+### **Substrate and Passivation**
+- Material: Float-zone Si (200 mm, 10 kΩ·cm, p-type) for deep depletion (~300 μm).
+- ALD Passivation: 50 nm Al₂O₃ on backside + SiO₂/SiN frontside stack for QE >90% (UV/VIS) .
+
 ---
 
 ## **Device Structure and Key Components**
@@ -27,6 +31,13 @@ Key steps include:
 - Created via phosphorus ion implantation to form an n-doped region within the p-type epitaxial layer[^1][^6].
 - Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
 
+### **Reasoning** 
+- Sub-electron Noise: BCCDs achieve 0.068 e⁻ rms/pixel with Skipper readout, enabling single-electron resolution critical for rare-event detection.
+- Cryogenic Compatibility: BCCDs paired with ALD-grown Al₂O₃ passivation reduce dark current to <0.001 e⁻/pixel/hour at -100°C, essential for long-exposure dark matter searches.
+- Radiation-Hardened Architectures: BCCDs using epitaxial silicon (10 kΩ·cm) and hydrogen annealing tolerate displacement damage from neutron/γ-ray backgrounds in underground labs.
+
+- Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.
+- Annealing: 900°C, N₂ ambient to activate dopants without oxidizing gates.
 
 ### **Gate Architecture**
 

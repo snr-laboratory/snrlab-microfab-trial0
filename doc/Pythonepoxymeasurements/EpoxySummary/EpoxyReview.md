@@ -174,6 +174,8 @@ ___
 ### **Leakage Testing Plot**
 <img width="987" alt="Screenshot 2025-05-13 at 1 35 29 PM" src="https://github.com/user-attachments/assets/5ff34958-9ff8-4aa1-b4d2-65709abfbecf" />
 
+Trials 1-3 clearly created a group and the non-foam also created a grouping of the data. The effects of leakage can be largely attributed to the foam being removed 
+
 - Trials 1-3: had leakage current through foam base 
 - Test 1: has the electrodes searated and gasket removed. Contact pads no longer in contact with the foam.
 - Test 2: foam is removed.

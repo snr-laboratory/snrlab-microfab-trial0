@@ -83,6 +83,7 @@ ___
 - Degassing: Critical for maximizing resistivity by removing trapped air/moisture. Anomalous behavior of 832HD-DG suggests process control issues
 - Curing Conditions: Temperature control was imprecise in current testing. Future work should standardize curing protocols
 - Measurement Setup Integrity: Initial measurements showed leakage through foam base and wiring. Refined setup with new tips and proper isolation improved measurements in regards to leakage issues.
+  
 
 ---
 # Epoxy Measurments before Leakage
@@ -95,8 +96,9 @@ ___
 <img width="922" alt="Screenshot 2025-05-13 at 11 45 40 AM" src="https://github.com/user-attachments/assets/13ed114d-234c-4f2c-aab9-4fa2c8ad1813" />
 
 - Note: Trials 1-5 were taken on Monday, March 24. Trials 6-8 were taken a day later.
-- Epoxy may not have been fully cured 
-
+- This plot reveals significant time-dependent behavior in 832HD epoxy during room temperature curing. Measured currents vary dramatically between trials (at comparable voltages), indicating that electrical properties are actively changing during the curing process.
+- Distinct groupings are visible
+  
 ---
 ## 353ND
 ### **I/Vs at 3 minute intervals with degassing and temperature curing at 100°C (212°F) for 10 minutes (oven is not well calibrated)** 
@@ -109,6 +111,13 @@ ___
 - Trials 1-5: old tips (part of the noisy wires)
 - Trial 6: new tips and measurements were taken after 15 minutes
 
+All trials show a linear increase in current with voltage, but there is noticeable variation in both slope and intercept between trials:
+- Trial 3 (green): shows the highest current and steepest slope, indicating lower resistance.
+- Trials 1, 2, and 4: cluster more closely, with lower currents and similar slopes.
+- Trials 3 & 5: shows similiar slope behavior to positive bias region
+
+- Odd Behavior: Despite using new tips and waiting 15 minutes, this trial (and others - 301) shows an increase in current than earlier trials.
+  
 ---
 ## 301
 ### **I/Vs at 3 minute intervals with degassing**
@@ -123,11 +132,16 @@ ___
 - Trial 7: new tips + 15 minute stailization wait time
 - Trial 8: new tips + new 301 epoxy + 15 minute stailization wait time
 
+Trials 1-7 show a pattern the way they are clustered, with slight deviations. The trendline behavior follows into the negative region. Also, its difficult to tell the effect of leakage regarding Trials 5-7, but Trial 8 definitely had a major impact on observed slope.   
+
 ---
 ## Combined
 ### **I/Vs for 301, 353ND and 832HD**
 <img width="763" alt="Screenshot 2025-05-13 at 12 09 03 PM" src="https://github.com/user-attachments/assets/3bd31dc1-f741-4b8f-92b2-30432c7f087b" />
 
+- 353ND highest slope reflecting lower resistivity (poorer insulator)
+- 832HD has some serious deviations.
+- 301 is the best insulator 
 ___
 ### **Resistivity vs Voltage for 301, 353ND and 832HD**
 <img width="752" alt="Screenshot 2025-05-13 at 12 12 42 PM" src="https://github.com/user-attachments/assets/de58a98c-f852-45e3-b385-4fc731ee8669" />
@@ -136,9 +150,14 @@ ___
 - Light blue 832HD is Trial 6 
 - 353ND is Trial 2 
 - 301 is Trial 3
-  
+
+  - 301 Displays the highest resistivity, increasing with voltage
+
+
 ### **Reversed Polarity I/Vs for 301, 353ND and 832HD**
 <img width="831" alt="Screenshot 2025-05-13 at 2 30 30 PM" src="https://github.com/user-attachments/assets/10669ae4-57ab-43f0-86d0-24813798e396" />
+
+- 301 Continues to show the lowest current in the negative voltage region, maintaining symmetry with its positive voltage behavior.
 
 ___
 ### **Reversed Polarity Resistivity vs Voltage Plots for 301, 353ND and 832HD**
@@ -147,6 +166,8 @@ ___
 - Purple 832HD is Trial 8
 - Green 353ND is Trial 3
 - Black 301 is Trial 4
+
+- Overall the I/V behvior in the negative and positive regions had similar slope behavior. The trend was mostly observed for the resistivity plots as well but 301 and 353ND had some noticeable deviations
   
 ---
 ## Empty 

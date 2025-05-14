@@ -4,7 +4,7 @@
 <img width="588" alt="Screenshot 2025-05-13 at 9 57 32 PM" src="https://github.com/user-attachments/assets/0a3c51ec-cd2c-46dd-86a0-b593b07efdaf" />
 
 ___
-### **Resistivity vs Voltage for 301-2, 301-2FL, 301, 353ND, and 832HD** 
+### **Reverse Polarity I/Vs Included** 
 <img width="770" alt="Screenshot 2025-05-13 at 2 54 12 PM" src="https://github.com/user-attachments/assets/9841376c-191b-44e9-bbc2-32d22982eef7" />
 ___
 

@@ -71,17 +71,7 @@ ___
 - All tested epoxies far exceed intrinsic silicon resistivity (~2.3×10⁵ Ω·cm)
 - Epoxies for this round were all degassed.
 - Temperature conditions were not accurate for any of the cured epoxies
-  
----
-
-## I/V Data Interpretation
-- Positive Voltages:
-  - Steeper slope → Lower resistivity 
-  - Flatter slope → Higher resistivity 
-- Negative Voltages: Nonlinear slopes indicate non-ohmic behavior, likely due to:
-  - Charge trapping at epoxy-electrode interfaces
-  - Leakage currents or polarization effects in the PCB setup
-    
+   
 ---
 
 ## Processing and Performance

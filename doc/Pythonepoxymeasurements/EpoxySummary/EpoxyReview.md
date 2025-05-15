@@ -104,6 +104,7 @@ ___
 ### **Updated to Include Gorilla Glue**
 <img width="1152" alt="Screenshot 2025-05-15 at 10 50 27 AM" src="https://github.com/user-attachments/assets/9e7e079e-b918-4384-a285-9727c3d5dad0" />
 
+- In both manual and PyScript measurements, all epoxies exhibit increasing current with increasing voltage; however, the magnitude and rate of increase differ substantially. The general ranking of 301 and 301-2 as best performers, and 832HD as poorest is consistent across both phases
 
 ### **I/Vs for 301, 353ND and 832HD**
 <img width="763" alt="Screenshot 2025-05-13 at 12 09 03 PM" src="https://github.com/user-attachments/assets/3bd31dc1-f741-4b8f-92b2-30432c7f087b" />

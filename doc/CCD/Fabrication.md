@@ -73,13 +73,18 @@ Key steps include:
     - **Reduced fringing**: Thick (200–300 µm) depletion minimizes interference[^2][^7].
 - **Anti-reflection coatings**: Optimized for specific wavelength ranges (e.g., SiO₂/Si₃N₄ stacks)[^5][^7].
 
+
+## **Resources**
+
+- [Weak Interactions of Leptons and Quarks Commins & Bucksbaum]([https://micro.magnet.fsu.edu/primer/java/digitalimaging/ccd/virtual2/index.html](https://www.google.com/books/edition/Weak_Interactions_of_Leptons_and_Quarks/A15OvAvA7HAC?hl=en&gbpv=1&printsec=frontcover))
+
+- [Dark Matter](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-dark-matter.pdf)
+
+- [CCD Manufacturing and Operation](https://www.higp.hawaii.edu/~gillis/GG671b/Week02/Readings/Handbook%20of%20CCD%20astronomy%20Ch%202.pdf)
+
+
+
 ---
-
-## **Advanced Manufacturing Approaches**
-
-- **CMOS/CCD hybrids**: Use silicon-on-insulator (SOI) wafers to integrate CMOS readout circuits with CCD pixels[^5].
-- **Large-format sensors**: 2048×2048 pixel arrays with 15 µm pitch fabricated via step-and-repeat lithography[^6][^9].
-- **Cryogenic optimization**: Dark current <0.01 e⁻/pixel/s at −130°C for astronomical applications[^2][^7].
 
 ---
 
@@ -89,7 +94,6 @@ Key steps include:
 - **Charge diffusion**: Controlled through fully depleted operation and lateral electric fields[^7][^9].
 - **Radiation hardness**: Critical for space applications; mitigated via epitaxial design and process hardening[^1][^7].
 
-This synthesis of fabrication methods highlights the balance between silicon engineering, process innovation, and application-specific optimization in CCD technology. Recent advances in high-resistivity substrates and back-illumination have extended CCD utility in low-light fields like astronomy and spectroscopy[^2][^6][^7].
 
 <div style="text-align: center">⁂</div>
 

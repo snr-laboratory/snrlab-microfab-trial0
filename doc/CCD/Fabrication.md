@@ -82,7 +82,7 @@ Key steps include:
 
 - [CCD Manufacturing and Operation](https://www.higp.hawaii.edu/~gillis/GG671b/Week02/Readings/Handbook%20of%20CCD%20astronomy%20Ch%202.pdf)
 
-
+- [Signal-to-Noise in Optical Astronomy](https://www.ucolick.org/~bolte/AY257/s_n.pdf)
 
 ---
 

@@ -12,10 +12,15 @@ This document summarizes the electrical characterization of several epoxy candid
   - Limit: 10.5nA
   - Script Measurements are recorded after 15 minutes
   - Manual measurements were recorded after 3 minutes
-    
+
+
+# Combined PyScript Epoxy Measurements & Epoxy Measurments before Leakage
+
+<img width="1383" alt="Screenshot 2025-05-15 at 5 59 12 PM" src="https://github.com/user-attachments/assets/4bfa09fb-156e-4993-89fc-9af7ae8a0336" />
+
 ---
 
-# PyScript Epoxy Measurements
+# PyScript Epoxy Measurements 
 
 ### **Updated to Include Gorilla Glue**
 <img width="1152" alt="Screenshot 2025-05-15 at 10 47 56 AM" src="https://github.com/user-attachments/assets/c596d94b-5465-4866-9524-e0b9ccb66f8c" />

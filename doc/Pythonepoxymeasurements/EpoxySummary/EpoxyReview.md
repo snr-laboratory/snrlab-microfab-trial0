@@ -92,7 +92,8 @@ All epoxies show increasing current with increasing voltage, but the rate of inc
 ## Combined
 
 ### **Updated to Include Gorilla Glue**
-<img width="1152" alt="Screenshot 2025-05-15 at 10 50 27 AM" src="https://github.com/user-attachments/assets/9e7e079e-b918-4384-a285-9727c3d5dad0" />
+
+<img width="1269" alt="Screenshot 2025-05-15 at 5 20 44 PM" src="https://github.com/user-attachments/assets/a14424fb-d355-4dc4-b746-3bc21c4ef459" />
 
 - In both manual and PyScript measurements, all epoxies exhibit increasing current with increasing voltage; however, the magnitude and rate of increase differ. The general ranking of 301 and 301-2 as best performers, and 832HD as poorest is consistent across both phases
 

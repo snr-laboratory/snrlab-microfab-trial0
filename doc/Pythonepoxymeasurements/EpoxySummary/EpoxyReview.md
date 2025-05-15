@@ -12,6 +12,7 @@ This document summarizes the electrical characterization of several epoxy candid
   - Limit: 10.5nA
   - Script Measurements are recorded after 15 minutes
   - Manual measurements were recorded after 3 minutes
+    
 ---
 
 # PyScript Epoxy Measurements
@@ -19,6 +20,8 @@ This document summarizes the electrical characterization of several epoxy candid
 ### **Updated to Include Gorilla Glue**
 <img width="1152" alt="Screenshot 2025-05-15 at 10 47 56 AM" src="https://github.com/user-attachments/assets/c596d94b-5465-4866-9524-e0b9ccb66f8c" />
 
+- Gorilla Glue has linearlity matching in positve and negative bias for the script, but deviates slightly when measurements are carried out manually (current is higher).
+  
 
 ### **I/Vs for 301-2, 301-2FL, 301, 353ND, and 832HD** 
 <img width="588" alt="Screenshot 2025-05-13 at 9 57 32 PM" src="https://github.com/user-attachments/assets/0a3c51ec-cd2c-46dd-86a0-b593b07efdaf" />
@@ -28,6 +31,7 @@ This document summarizes the electrical characterization of several epoxy candid
 - 353ND (light blue) exhibits higher current values and a steeper trend, reflecting lower resistivity.
 832HD-DG (purple) has by far the highest measured current and the steepest slope (y = 5.2312x + 237.48), indicating it is the least resistive and least suitable for applications requiring strong electrical insulation.
 ___
+
 ### **Reverse Polarity I/Vs Included** 
 <img width="770" alt="Screenshot 2025-05-13 at 2 54 12 PM" src="https://github.com/user-attachments/assets/9841376c-191b-44e9-bbc2-32d22982eef7" />
 
@@ -50,6 +54,7 @@ ___
 - The plot also reinforces that 301-2 and 301-2FL are viable alternatives, while 353ND and 832HD-DG are not suitable for applications demanding ultra-high resistivity.
 
 ---
+
 ## Best Candidate 
 301 (New 301):
 - Highest resistivity (9.4E+15 Ω·cm) 
@@ -60,17 +65,15 @@ ___
 - 301-2: Alternative with excellent resistivity (2E+15 Ω·cm)
 - 301-2FL: Good option if lower viscosity is needed for better thickness control
 
-## Questionable Epoxy Choices
-- 832HD-DG: The degassed version shows much higher conductivity than non-degassed 832HD
-- 353ND: Moderate performance but shows some non-linearity at higher voltages
-
 ---
+
 ## Objectives
 - All tested epoxies far exceed intrinsic silicon resistivity (~2.3×10⁵ Ω·cm)
 - Epoxies for this round were all degassed.
 - Temperature conditions were not accurate for any of the cured epoxies
   
 ---
+
 ## Data Interpretation
 - Positive Voltages:
   - Steeper slope → Lower resistivity 
@@ -80,18 +83,62 @@ ___
   - Leakage currents or polarization effects in the PCB setup
     
 ---
+
 ## Trends
-All epoxies show increasing current with increasing voltage, but the rate of increase and magnitude differ significantly.The New 301 and 301-2 are suitable for applications requiring ultra-high resistivity (lowest leakage current), while 832HD is not recommended for such uses. New 301 consistently shows the lowest current at all voltages, indicating the highest resistivity and best insulating properties. 301-2 and 301-2FL also perform well, with 301-2FL having slightly higher current (lower resistivity) than 301-2.353ND has intermediate performance, with currents roughly an order of magnitude higher than 301-2. 832HD displays the highest measured currents, increasing rapidly with voltage, indicating it is the least resistive and thus the least effective insulator among those tested.
+All epoxies show increasing current with increasing voltage, but the rate of increase and magnitude differ significantly.The New 301 and 301-2 are suitable for applications requiring ultra-high resistivity (lowest leakage current), while 832HD is not recommended. New 301 consistently shows the lowest current at all voltages, indicating the highest resistivity and best insulating properties. 301-2 and 301-2FL also perform well, with 301-2FL having slightly higher current (lower resistivity) than 301-2.353ND has intermediate performance, with currents roughly an order of magnitude higher than 301-2. 832HD displays the highest measured currents, increasing rapidly with voltage, indicating it is the least resistive and thus the least effective insulator among those tested.
 
 ___
+
 ## Processing and Performance
-- Degassing: Critical for maximizing resistivity by removing trapped air/moisture. Anomalous behavior of 832HD-DG suggests process control issues
+- Degassing: Critical for maximizing resistivity by removing trapped air/moisture. Odd behavior of 832HD-DG suggests process control issues
 - Curing Conditions: Temperature control was imprecise in current testing. Future work should standardize curing protocols
 - Measurement Setup Integrity: Initial measurements showed leakage through foam base and wiring. Refined setup with new tips and proper isolation improved measurements in regards to leakage issues.
   
 
 ---
+
 # Epoxy Measurments before Leakage
+
+## Combined
+
+### **Updated to Include Gorilla Glue**
+<img width="1152" alt="Screenshot 2025-05-15 at 10 50 27 AM" src="https://github.com/user-attachments/assets/9e7e079e-b918-4384-a285-9727c3d5dad0" />
+
+
+### **I/Vs for 301, 353ND and 832HD**
+<img width="763" alt="Screenshot 2025-05-13 at 12 09 03 PM" src="https://github.com/user-attachments/assets/3bd31dc1-f741-4b8f-92b2-30432c7f087b" />
+
+- 353ND highest slope reflecting lower resistivity (poorer insulator)
+- 832HD has some serious deviations.
+- 301 is the best insulator 
+___
+### **Resistivity vs Voltage for 301, 353ND and 832HD**
+<img width="752" alt="Screenshot 2025-05-13 at 12 12 42 PM" src="https://github.com/user-attachments/assets/de58a98c-f852-45e3-b385-4fc731ee8669" />
+
+- Dark blue 832HD is Trial 5
+- Light blue 832HD is Trial 6 
+- 353ND is Trial 2 
+- 301 is Trial 3
+
+  - 301 Displays the highest resistivity, increasing with voltage
+
+
+### **Reversed Polarity I/Vs for 301, 353ND and 832HD**
+<img width="831" alt="Screenshot 2025-05-13 at 2 30 30 PM" src="https://github.com/user-attachments/assets/10669ae4-57ab-43f0-86d0-24813798e396" />
+
+- 301 Continues to show the lowest current in the negative voltage region, maintaining symmetry with its positive voltage behavior.
+
+___
+### **Reversed Polarity Resistivity vs Voltage Plots for 301, 353ND and 832HD**
+<img width="819" alt="Screenshot 2025-05-13 at 2 30 39 PM" src="https://github.com/user-attachments/assets/372dc6eb-5fdd-4c29-bb9a-1856a1eb28b7" />
+
+- Purple 832HD is Trial 8
+- Green 353ND is Trial 3
+- Black 301 is Trial 4
+
+- Overall the I/V behvior in the negative and positive regions had similar slope behavior. The trend was mostly observed for the resistivity plots as well but 301 and 353ND had some noticeable deviations
+  
+
 ___
 ## 832HD
 ### **I/Vs at 3 minute intervals (no degassing and room temperature curing)**  

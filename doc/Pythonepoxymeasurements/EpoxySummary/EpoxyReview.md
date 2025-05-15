@@ -74,7 +74,7 @@ ___
   
 ---
 
-## Data Interpretation
+## I/V Data Interpretation
 - Positive Voltages:
   - Steeper slope → Lower resistivity 
   - Flatter slope → Higher resistivity 

@@ -2,7 +2,7 @@
 ### **Overview**
 This document summarizes the electrical characterization of several epoxy candidates for fusing a single perovskite crystal onto a Si-CMOS ASIC. Two measurement phases were conducted:
 
-- Manual/Before Leakage: Early measurements using manual current recording and initial test setup. Some measurements were affected by setup leakage, noise, or incomplete degassing.
+- Manual/Before Leakage: Early measurements using manual current recording and initial test setup. Some measurements were affected by setup leakage and were not degassed.
 
 - PyScript/After Leakage Fixes: Automated measurements using a Python script
   

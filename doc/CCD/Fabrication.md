@@ -76,7 +76,7 @@ Key steps include:
 
 ## **Resources**
 
-- [Weak Interactions of Leptons and Quarks Commins & Bucksbaum]([https://micro.magnet.fsu.edu/primer/java/digitalimaging/ccd/virtual2/index.html](https://www.google.com/books/edition/Weak_Interactions_of_Leptons_and_Quarks/A15OvAvA7HAC?hl=en&gbpv=1&printsec=frontcover))
+- [Weak Interactions of Leptons and Quarks Commins & Bucksbaum](https://www.google.com/books/edition/Weak_Interactions_of_Leptons_and_Quarks/A15OvAvA7HAC?hl=en&gbpv=1&printsec=frontcover)
 
 - [Dark Matter](https://pdg.lbl.gov/2020/reviews/rpp2020-rev-dark-matter.pdf)
 

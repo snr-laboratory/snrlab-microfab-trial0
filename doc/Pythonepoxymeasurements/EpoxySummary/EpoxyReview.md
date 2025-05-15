@@ -186,45 +186,6 @@ ___
 
 Trials 1-7 show a pattern the way they are clustered, with slight deviations. The trendline behavior follows into the negative region. Also, its difficult to tell the effect of leakage regarding Trials 5-7, but Trial 8 definitely had a major impact on observed slope.   
 
----
-## Combined
-
-### **Updated to Include Gorilla Glue**
-<img width="1152" alt="Screenshot 2025-05-15 at 10 50 27 AM" src="https://github.com/user-attachments/assets/9e7e079e-b918-4384-a285-9727c3d5dad0" />
-
-
-### **I/Vs for 301, 353ND and 832HD**
-<img width="763" alt="Screenshot 2025-05-13 at 12 09 03 PM" src="https://github.com/user-attachments/assets/3bd31dc1-f741-4b8f-92b2-30432c7f087b" />
-
-- 353ND highest slope reflecting lower resistivity (poorer insulator)
-- 832HD has some serious deviations.
-- 301 is the best insulator 
-___
-### **Resistivity vs Voltage for 301, 353ND and 832HD**
-<img width="752" alt="Screenshot 2025-05-13 at 12 12 42 PM" src="https://github.com/user-attachments/assets/de58a98c-f852-45e3-b385-4fc731ee8669" />
-
-- Dark blue 832HD is Trial 5
-- Light blue 832HD is Trial 6 
-- 353ND is Trial 2 
-- 301 is Trial 3
-
-  - 301 Displays the highest resistivity, increasing with voltage
-
-
-### **Reversed Polarity I/Vs for 301, 353ND and 832HD**
-<img width="831" alt="Screenshot 2025-05-13 at 2 30 30 PM" src="https://github.com/user-attachments/assets/10669ae4-57ab-43f0-86d0-24813798e396" />
-
-- 301 Continues to show the lowest current in the negative voltage region, maintaining symmetry with its positive voltage behavior.
-
-___
-### **Reversed Polarity Resistivity vs Voltage Plots for 301, 353ND and 832HD**
-<img width="819" alt="Screenshot 2025-05-13 at 2 30 39 PM" src="https://github.com/user-attachments/assets/372dc6eb-5fdd-4c29-bb9a-1856a1eb28b7" />
-
-- Purple 832HD is Trial 8
-- Green 353ND is Trial 3
-- Black 301 is Trial 4
-
-- Overall the I/V behvior in the negative and positive regions had similar slope behavior. The trend was mostly observed for the resistivity plots as well but 301 and 353ND had some noticeable deviations
   
 ---
 ## Empty 

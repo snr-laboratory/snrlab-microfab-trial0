@@ -16,6 +16,10 @@ This document summarizes the electrical characterization of several epoxy candid
 
 # PyScript Epoxy Measurements
 
+### **Updated to Include Gorilla Glue**
+<img width="1152" alt="Screenshot 2025-05-15 at 10 47 56 AM" src="https://github.com/user-attachments/assets/c596d94b-5465-4866-9524-e0b9ccb66f8c" />
+
+
 ### **I/Vs for 301-2, 301-2FL, 301, 353ND, and 832HD** 
 <img width="588" alt="Screenshot 2025-05-13 at 9 57 32 PM" src="https://github.com/user-attachments/assets/0a3c51ec-cd2c-46dd-86a0-b593b07efdaf" />
 
@@ -32,6 +36,7 @@ Exhibit very low and nearly symmetric currents for both positive and negative vo
 Minimal deviation between forward and reverse sweeps suggests stable ohmic behavior.
 - Symmetry: The best-performing epoxies (301, 301-2, 301-2FL) maintain consistent behavior across both voltage polarities (reliable/stable).
 - Polarity: No significant asymmetry or non-linear effects are observed in the top candidates, while the poorest performer (832HD-DG) remains highly conductive in both directions.
+
 ___
 
 ### **Resistivity Plots for 301-2, 301-2FL, 301, 353ND, and 832HD** 
@@ -136,6 +141,11 @@ Trials 1-7 show a pattern the way they are clustered, with slight deviations. Th
 
 ---
 ## Combined
+
+### **Updated to Include Gorilla Glue**
+<img width="1152" alt="Screenshot 2025-05-15 at 10 50 27 AM" src="https://github.com/user-attachments/assets/9e7e079e-b918-4384-a285-9727c3d5dad0" />
+
+
 ### **I/Vs for 301, 353ND and 832HD**
 <img width="763" alt="Screenshot 2025-05-13 at 12 09 03 PM" src="https://github.com/user-attachments/assets/3bd31dc1-f741-4b8f-92b2-30432c7f087b" />
 

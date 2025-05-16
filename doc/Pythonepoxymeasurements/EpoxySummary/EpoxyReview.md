@@ -28,24 +28,20 @@ This document summarizes the electrical characterization of several epoxy candid
 - Gorilla Glue has linearlity matching in positve and negative bias for the script, but deviates slightly when measurements are carried out manually (current is higher).
   
 
-### **I/Vs for 301-2, 301-2FL, 301, 353ND, and 832HD** 
+### **Current vs Voltage for 301-2, 301-2FL, 301, 353ND, and 832HD** 
 <img width="588" alt="Screenshot 2025-05-13 at 9 57 32 PM" src="https://github.com/user-attachments/assets/0a3c51ec-cd2c-46dd-86a0-b593b07efdaf" />
 
 - 301 (green line) demonstrates the lowest measured current across all voltages, with a nearly flat trend, indicating the highest resistivity and best insulating properties among the tested epoxies.
-- 301-2 (dark blue) and 301-2FL (orange) show slightly higher currents, with 301-2FL being marginally more conductive than 301-2. Both suitable for high-resistivity applications.
+- 301-2 (dark blue) and 301-2FL (orange) show slightly higher currents, with 301-2FL being slightly more conductive than 301-2. Both suitable for high-resistivity applications.
 - 353ND (light blue) exhibits higher current values and a steeper trend, reflecting lower resistivity.
-832HD-DG (purple) has by far the highest measured current and the steepest slope (y = 5.2312x + 237.48), indicating it is the least resistive and least suitable for applications requiring strong electrical insulation.
+- 832HD-DG (purple) has by far the highest measured current and the steepest slope, indicating it is the least resistive and least suitable for applications requiring strong electrical insulation.
 ___
 
-### **Reverse Polarity I/Vs Included** 
+### **Reverse Polarity (Current vs Voltage) Included** 
 <img width="770" alt="Screenshot 2025-05-13 at 2 54 12 PM" src="https://github.com/user-attachments/assets/9841376c-191b-44e9-bbc2-32d22982eef7" />
 
 - 301 (green), 301-2 (blue), and 301-2FL (orange):
-Exhibit very low and nearly symmetric currents for both positive and negative voltages. Their trendlines are nearly flat, indicating high resistivity and excellent insulating properties regardless of polarity.
-Minimal deviation between forward and reverse sweeps suggests stable ohmic behavior.
-- Symmetry: The best-performing epoxies (301, 301-2, 301-2FL) maintain consistent behavior across both voltage polarities (reliable/stable).
-- Polarity: No significant asymmetry or non-linear effects are observed in the top candidates, while the poorest performer (832HD-DG) remains highly conductive in both directions.
-
+Exhibit very low and nearly symmetric currents for both positive and negative voltages. Their trendlines are nearly flat, indicating high resistivity and excellent insulating properties regardless of polarity. Minimal deviation between forward and reverse sweeps suggests stable ohmic behavior.
 ___
 
 ### **Resistivity Plots for 301-2, 301-2FL, 301, 353ND, and 832HD** 

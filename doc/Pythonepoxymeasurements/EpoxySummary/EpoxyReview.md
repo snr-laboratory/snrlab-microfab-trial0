@@ -1,4 +1,4 @@
-# Epoxy Keithley 2450 SMU Measurements
+# Keithley 2450 SMU Epoxy Measurements
 ### **Overview**
 This document summarizes the electrical characterization of several epoxy candidates for fusing a single perovskite crystal onto a Si-CMOS ASIC. Two measurement phases were conducted:
 

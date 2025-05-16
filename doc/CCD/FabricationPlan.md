@@ -1,10 +1,17 @@
-# CCD fabrication
+# CCD Basics
 
 Charge-coupled devices (CCDs) are fabricated using specialized semiconductor processes to optimize light detection and charge transfer. Their manufacturing involves precise control of silicon properties, doping profiles, and optical structures to achieve high quantum efficiency and low noise. Below is a detailed analysis of CCD fabrication based on current research and industrial practices:
 
 [CCD Virtual Digital Imaging Tutorial](https://micro.magnet.fsu.edu/primer/java/digitalimaging/ccd/virtual2/index.html)
 
 ---
+
+## **Fabrication Plan**
+
+## Step 1: N-Type High-Resistivity Silicon Substrates (Skipper readout? - single e- resolution))
+- Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
+- 
+
 
 ## **Materials and Substrate Preparation**
 

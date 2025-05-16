@@ -52,7 +52,7 @@ ___
 <img width="677" alt="Screenshot 2025-05-14 at 12 31 15 PM" src="https://github.com/user-attachments/assets/49360a2d-ad32-484c-b588-d67869ee04eb" />
 
 - 301 is the top-performing epoxy for high-resistivity, high-insulation applications.
-- The plot also reinforces that 301-2 and 301-2FL are viable alternatives, while 353ND and 832HD-DG are not suitable for applications demanding ultra-high resistivity.
+- The plot also reinforces that 301-2 and 301-2FL are viable alternatives, while 353ND and 832HD-DG are not as suitable.
 
 ---
 
@@ -83,7 +83,7 @@ ___
 ___
 
 ## Trends
-All epoxies show increasing current with increasing voltage, but the rate of increase and magnitude differ.The New 301 and 301-2 are suitable for applications requiring ultra-high resistivity (lowest leakage current), while 832HD is not recommended. New 301 consistently shows the lowest current at all voltages, indicating the highest resistivity and best insulating properties. 301-2 and 301-2FL also perform well, with 301-2FL having slightly higher current (lower resistivity) than 301-2. 353ND has intermediate performance, with currents roughly an order of magnitude higher than 301-2. 832HD displays the highest measured currents, increasing rapidly with voltage, indicating it is the least resistive and thus the least effective insulator among those tested.
+All epoxies show increasing current with increasing voltage, but with differing rates. The New 301 and 301-2 are suitable for applications requiring high resistivity, while 832HD is not recommended. New 301 consistently shows the lowest current at all voltages, indicating the highest resistivity and best insulating properties. 301-2 and 301-2FL also perform well, with 301-2FL having slightly higher current (lower resistivity) than 301-2. 353ND has intermediate performance, with currents roughly an order of magnitude higher than 301-2. 832HD displays the highest measured currents, increasing rapidly with voltage, indicating it is the least resistive and thus the least effective insulator among those tested.
 
 
 ---

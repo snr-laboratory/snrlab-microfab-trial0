@@ -96,9 +96,9 @@ All epoxies show increasing current with increasing voltage, but with differing 
 
 <img width="1269" alt="Screenshot 2025-05-15 at 5 20 44 PM" src="https://github.com/user-attachments/assets/a14424fb-d355-4dc4-b746-3bc21c4ef459" />
 
-- In both manual and PyScript measurements, all epoxies exhibit increasing current with increasing voltage; however, the magnitude and rate of increase differ. The general ranking of 301 and 301-2 as best performers, and 832HD as poorest is consistent across both phases
+- In both manual and PyScript measurements, all epoxies exhibit increasing current with increasing voltage; however, the rate of increase differs. The general ranking of 301 and 301-2 as best performers, and 832HD as poorest is consistent across both phases
 
-### **I/Vs for 301, 353ND and 832HD**
+### **Current vs Voltage for 301, 353ND and 832HD**
 <img width="763" alt="Screenshot 2025-05-13 at 12 09 03 PM" src="https://github.com/user-attachments/assets/3bd31dc1-f741-4b8f-92b2-30432c7f087b" />
 
 - 353ND highest slope reflecting lower resistivity (poorer insulator)
@@ -116,7 +116,7 @@ ___
   - 301 Displays the highest resistivity, increasing with voltage
 
 
-### **Reversed Polarity I/Vs for 301, 353ND and 832HD**
+### **Reversed Polarity (Current vs Voltage) for 301, 353ND and 832HD**
 <img width="831" alt="Screenshot 2025-05-13 at 2 30 30 PM" src="https://github.com/user-attachments/assets/10669ae4-57ab-43f0-86d0-24813798e396" />
 
 - 301 Continues to show the lowest current in the negative voltage region, maintaining symmetry with its positive voltage behavior.
@@ -134,7 +134,7 @@ ___
 
 ___
 ## 832HD
-### **I/Vs at 3 minute intervals (no degassing and room temperature curing)**  
+### **Current vs Voltage at 3 minute intervals (no degassing and room temperature curing)**  
 <img width="1058" alt="Screenshot 2025-05-13 at 11 42 55 AM" src="https://github.com/user-attachments/assets/36789866-770d-4298-9f06-2df89e9779c4" />
 
 ### **Resistivity vs voltage measurments at 3 min**
@@ -146,7 +146,7 @@ ___
   
 ---
 ## 353ND
-### **I/Vs at 3 minute intervals with degassing and temperature curing at 100°C (212°F) for 10 minutes (oven is not well calibrated)** 
+### **Current vs Voltage at 3 minute intervals with degassing and temperature curing at 100°C (212°F) for 10 minutes (oven is not well calibrated)** 
 <img width="812" alt="Screenshot 2025-05-13 at 11 47 16 AM" src="https://github.com/user-attachments/assets/d3f223e8-526c-4e49-8bd7-72986346ad56" />
 
 - Curing took place on Wednesday (three days later after it was injected into the PCB electrodes).
@@ -165,7 +165,7 @@ All trials show a linear increase in current with voltage, but there is noticeab
   
 ---
 ## 301
-### **I/Vs at 3 minute intervals with degassing**
+### **Current vs Voltage at 3 minute intervals with degassing**
 <img width="829" alt="Screenshot 2025-05-13 at 11 57 53 AM" src="https://github.com/user-attachments/assets/f4816ca1-3c4f-4bde-950b-aece11f87f2b" />
 
 ___

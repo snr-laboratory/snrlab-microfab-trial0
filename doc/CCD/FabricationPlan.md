@@ -8,6 +8,9 @@ Charge-coupled devices (CCDs) are fabricated using specialized semiconductor pro
 
 ## **Fabrication Plan**
 
+<img width="720" alt="Screenshot 2025-05-16 at 6 40 16 PM" src="https://github.com/user-attachments/assets/77da9de7-47e6-4ddb-b8fb-2124bd306832" />
+
+
 ## Step 1: N-Type High-Resistivity Silicon Substrates (Skipper readout? - single e- resolution))
 - Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
 - 

@@ -1,8 +1,14 @@
-# CCD Basics
+# **CCD Basics**
 
-Charge-coupled devices (CCDs) are fabricated using specialized semiconductor processes to optimize light detection and charge transfer. Their manufacturing involves precise control of silicon properties, doping profiles, and optical structures to achieve high quantum efficiency and low noise. Below is a detailed analysis of CCD fabrication based on current research and industrial practices:
-
+Charge-coupled devices (CCDs) are fabricated using semiconductor processes to optimize light detection and charge transfer. Their manufacturing involves precise control of silicon properties, doping profiles, and optical structures to achieve high quantum efficiency and low noise. Below is a detailed analysis of CCD fabrication based on current research and industrial practices:
 [CCD Virtual Digital Imaging Tutorial](https://micro.magnet.fsu.edu/primer/java/digitalimaging/ccd/virtual2/index.html)
+
+## **CCD Operation**
+
+- Charge Generation: within a pixel: the photoelectric effect. Incoming photons strike the silicon withing a pixel and are easliy absorbed if they possess the correct wavelength (energy). Photons of energy 1.1eV (Si band gap -> Absorption -> Promotion of valence e-) to ~4eV generate single electron-hole pairs. 
+- Once e- have been freed to the conduction band of the silicon, they must be collected and held in place until readout occurs. 
+-
+- - 
 
 ---
 

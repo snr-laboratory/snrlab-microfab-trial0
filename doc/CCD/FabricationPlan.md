@@ -22,10 +22,13 @@ Charge-coupled devices (CCDs) are fabricated using semiconductor processes to op
 <img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="https://github.com/user-attachments/assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb" />
 
 - CCD detector design: high-resistivity n-type silicon substrate. Metal contacts for controlling potential wells. A very thin layer of Al2O3 (optional:SiO2 or SiN) for achieving uniform and flat features at this specific interface.
+- The metal electrodes create potential wells in the silicon that extend through the dielectric.
+- Electric fields penetrate the thin dielectric, keeping electrons confined in the high-resistivity silicon or above in the LAr/LXe.
 
 <img width="1100" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="https://github.com/user-attachments/assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926" />
 
-
+- Sequential voltage changes on the metal contacts create moving potential wells that shuttle charges laterally
+- The deep depletion region in the high-resistivity n-type silicon provides efficient charge collection and transfer.
 - Skipper features to allow multiple non-destructive measurements of the same charge packet (While conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet)
 
 ---

@@ -22,9 +22,15 @@ Charge-coupled devices (CCDs) are fabricated using semiconductor processes to op
 <img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="https://github.com/user-attachments/assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb" />
 
 - CCD detector design: high-resistivity n-type silicon substrate. Metal contacts for controlling potential wells. A very thin layer of Al2O3 (optional:SiO2 or SiN) for achieving uniform and flat features at this specific interface.
-- Skipper features to allow multiple non-destructive measurements of the same charge packet.
--  
- 
+- Skipper features to allow multiple non-destructive measurements of the same charge packet (While conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet)
+
+## **"CCD Like" Operation**
+1) Charge Injection: Electrons are injected into the structure via the source node. Created by photoelectric effects.
+2) Daisy Chain Shuttling: Charge packets move between gate electrodes via controlled voltage sequences.Each transfer allows a measurement without destroying the charge.
+3) Non-Destructive Readout: At the sense node, a floating gate amplifier measures the charge. The charge is then returned to the gate array for more measurements.
+
+[Skipper-CCDs: current applications and future](https://agenda.infn.it/event/22092/contributions/166721/attachments/91165/123549/Poster%20-%20Skipper-CCDs_%20current%20applications%20and%20future.pdf)
+
 ## **n-type High-Resistivity Silicon Substrates**
 - Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
 - 

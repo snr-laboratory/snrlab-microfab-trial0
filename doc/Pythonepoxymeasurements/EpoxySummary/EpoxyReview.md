@@ -21,6 +21,14 @@ This document summarizes the electrical characterization of several epoxy candid
 
 <img width="883" alt="Screenshot 2025-05-20 at 12 49 42 AM" src="https://github.com/user-attachments/assets/cf1c03e2-81ae-4319-8814-ea0379e74ec3" />
 
+
+- EPO-TEK 301: Highest measured resistivity: 9.4E+15 Ω·cm and lowest measured current across all voltages (best insulator).
+- JB Weld: Very low resistivity: 9.2E+11 Ω·cm (poorest insulator)
+- MG Chemicals 832HD: Measured resistivity matches very well with actual resistivity
+- EPO-TEK 353ND: 2nd best measured resistivity within actual resistivity range
+- Gorilla Glue script and manual measurements match very well.
+- Range of resistivity: E+11-E+15 Ω·cm
+
 ---
 
 <img width="735" alt="Screenshot 2025-05-20 at 12 34 34 AM" src="https://github.com/user-attachments/assets/7b48441a-7646-4e31-ad8f-07910046d2eb" />
@@ -29,6 +37,12 @@ This document summarizes the electrical characterization of several epoxy candid
 
 <img width="929" alt="Screenshot 2025-05-20 at 1 00 49 AM" src="https://github.com/user-attachments/assets/92c08f50-31ca-48f8-bf1a-e05c0118b52b" />
 
+
+- EPO-TEK 301: Highest measured resistivity: 2.6E+14 Ω·cm (lower than script, but still highest in this set)
+- MG Chemicals 832HD and EPO-TEK 353ND show the best resistivity matching with TDS
+- JB Weld:Very low resistivity: 9.2E+11 Ω·cm
+- Range of resistivity: E+11-E+14 Ω·cm
+- Manual measurements show more scatter and slightly lower resistivity values than script data, but the ranking/order of materials is mostly  consistent.
 
 --- 
 

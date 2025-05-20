@@ -25,9 +25,10 @@ This document summarizes the electrical characterization of several epoxy candid
 
 <img width="735" alt="Screenshot 2025-05-20 at 12 34 34 AM" src="https://github.com/user-attachments/assets/7b48441a-7646-4e31-ad8f-07910046d2eb" />
 
-<img width="769" alt="Screenshot 2025-05-20 at 12 34 39 AM" src="https://github.com/user-attachments/assets/ed9cfac5-b8fe-4373-87be-674d86cc2094" />
+<img width="768" alt="Screenshot 2025-05-20 at 1 01 24 AM" src="https://github.com/user-attachments/assets/bbb38f59-9045-4fd8-880c-cfba2a3c97df" />
 
-<img width="929" alt="Screenshot 2025-05-20 at 12 54 37 AM" src="https://github.com/user-attachments/assets/d771dbc6-efce-4541-8d0a-8e637721eb67" />
+<img width="929" alt="Screenshot 2025-05-20 at 1 00 49 AM" src="https://github.com/user-attachments/assets/92c08f50-31ca-48f8-bf1a-e05c0118b52b" />
+
 
 --- 
 

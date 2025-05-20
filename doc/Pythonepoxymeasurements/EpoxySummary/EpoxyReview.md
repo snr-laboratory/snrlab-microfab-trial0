@@ -13,6 +13,22 @@ This document summarizes the electrical characterization of several epoxy candid
   - Script Measurements are recorded after 15 minutes
   - Manual measurements were recorded after 3 minutes
 
+# **Updated Script and Manual Epoxy Resistivity Measurments 
+<img width="736" alt="Screenshot 2025-05-19 at 11 22 17 PM" src="https://github.com/user-attachments/assets/cde5d653-8bae-404e-ab17-1f8fdc3d7f63" />
+
+<img width="768" alt="Screenshot 2025-05-19 at 11 27 08 PM" src="https://github.com/user-attachments/assets/e215a60c-ee54-4c1c-adf1-0cbb175f5db5" />
+
+<img width="930" alt="Screenshot 2025-05-19 at 11 23 12 PM" src="https://github.com/user-attachments/assets/d618df14-90dd-4cb5-90ae-5d22d2d1d109" />
+
+---
+
+<img width="632" alt="Screenshot 2025-05-19 at 11 28 29 PM" src="https://github.com/user-attachments/assets/4ec02bc4-bff2-4b20-b67f-6f76e34dd6de" />
+
+<img width="634" alt="Screenshot 2025-05-19 at 11 30 14 PM" src="https://github.com/user-attachments/assets/83b71818-7333-4ae3-8458-03ea247e37ef" />
+
+<img width="882" alt="Screenshot 2025-05-19 at 11 30 23 PM" src="https://github.com/user-attachments/assets/bc6c89f3-7d1a-4219-bf3b-79e547a50b8d" />
+
+--- 
 
 # Combined PyScript Epoxy Measurements & Epoxy Measurments before Leakage
 

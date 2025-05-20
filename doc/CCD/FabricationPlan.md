@@ -37,9 +37,10 @@ This creates an electric field that confines electrons to the bulk silicon, away
 - Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
 - Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.
 - Annealing: 900°C, N₂ ambient to activate dopants without oxidizing gates.
-
+The n-type doped layer creates a buried channel where electrons flow. This keeps electrons ~1-2 μm away from the Si-SiO₂ interface, preventing interaction with oxide traps.
   
 ### **Reasoning** 
+The n-type layer creates a potential minimum in the silicon bulk. Electrons are repelled from the surface by built-in electric fields from doping gradients and positive gate voltages that push electrons deeper into the silicon.
 - Sub-electron Noise: BCCDs achieve 0.068 e⁻ rms/pixel with Skipper readout, enabling single-electron resolution critical for rare-event detection.
 - Cryogenic Compatibility: BCCDs paired with ALD-grown Al₂O₃ passivation reduce dark current to <0.001 e⁻/pixel/hour at -100°C, essential for long-exposure dark matter searches.
 - Radiation-Hardened Architectures: BCCDs using epitaxial silicon (10 kΩ·cm) and hydrogen annealing tolerate displacement damage from neutron/γ-ray backgrounds in underground labs.

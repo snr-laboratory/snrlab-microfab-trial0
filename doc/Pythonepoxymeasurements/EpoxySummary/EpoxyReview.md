@@ -14,19 +14,20 @@ This document summarizes the electrical characterization of several epoxy candid
   - Manual measurements were recorded after 3 minutes
 
 # **Updated Script and Manual Epoxy Resistivity Measurments 
-<img width="736" alt="Screenshot 2025-05-19 at 11 22 17 PM" src="https://github.com/user-attachments/assets/cde5d653-8bae-404e-ab17-1f8fdc3d7f63" />
 
-<img width="768" alt="Screenshot 2025-05-19 at 11 27 08 PM" src="https://github.com/user-attachments/assets/e215a60c-ee54-4c1c-adf1-0cbb175f5db5" />
+<img width="634" alt="Screenshot 2025-05-20 at 12 49 51 AM" src="https://github.com/user-attachments/assets/8a21a475-ade1-4876-a8c4-bdee0eb0f6d4" />
 
-<img width="930" alt="Screenshot 2025-05-19 at 11 23 12 PM" src="https://github.com/user-attachments/assets/d618df14-90dd-4cb5-90ae-5d22d2d1d109" />
+<img width="633" alt="Screenshot 2025-05-20 at 12 50 04 AM" src="https://github.com/user-attachments/assets/5ed23f7d-af01-4904-bcd4-56e4f2a265d9" />
+
+<img width="883" alt="Screenshot 2025-05-20 at 12 49 42 AM" src="https://github.com/user-attachments/assets/cf1c03e2-81ae-4319-8814-ea0379e74ec3" />
 
 ---
 
-<img width="632" alt="Screenshot 2025-05-19 at 11 28 29 PM" src="https://github.com/user-attachments/assets/4ec02bc4-bff2-4b20-b67f-6f76e34dd6de" />
+<img width="735" alt="Screenshot 2025-05-20 at 12 34 34 AM" src="https://github.com/user-attachments/assets/7b48441a-7646-4e31-ad8f-07910046d2eb" />
 
-<img width="634" alt="Screenshot 2025-05-19 at 11 30 14 PM" src="https://github.com/user-attachments/assets/83b71818-7333-4ae3-8458-03ea247e37ef" />
+<img width="769" alt="Screenshot 2025-05-20 at 12 34 39 AM" src="https://github.com/user-attachments/assets/ed9cfac5-b8fe-4373-87be-674d86cc2094" />
 
-<img width="882" alt="Screenshot 2025-05-19 at 11 30 23 PM" src="https://github.com/user-attachments/assets/bc6c89f3-7d1a-4219-bf3b-79e547a50b8d" />
+<img width="929" alt="Screenshot 2025-05-20 at 12 54 37 AM" src="https://github.com/user-attachments/assets/d771dbc6-efce-4541-8d0a-8e637721eb67" />
 
 --- 
 

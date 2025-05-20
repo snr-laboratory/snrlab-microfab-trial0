@@ -5,13 +5,15 @@ Charge-coupled devices (CCDs) are fabricated using semiconductor processes to op
 
 ## **CCD Operation**
 
-1) Charge Generation
+1) Charge Generation/Storage
 - Within a pixel: the photoelectric effect. Incoming photons strike the silicon withing a pixel and are easliy absorbed if they possess the correct wavelength (energy). Photons of energy 1.1eV (Si band gap -> Absorption -> Promotion of valence e-) to ~4eV generate single electron-hole pairs. 
 - Once e- have been freed to the conduction band of the silicon, they must be collected and held in place until readout occurs. 
-- Each pixel acts as a potential well, storing electrons proportionally to incident light intesity
+- Each pixel acts as a MOS capacitor. An applied voltage on the gate creates a depletion region, forming a potential well, to trap electrons. 
+
 2) Charge Transer
-- 
-   
+- By sequentially clocking voltages on adjacent gates, electrons are shifted from one pixel to the next.
+
+
 
 ---
 
@@ -19,12 +21,35 @@ Charge-coupled devices (CCDs) are fabricated using semiconductor processes to op
 
 <img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="https://github.com/user-attachments/assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb" />
 
-
-## Step 1: N-Type High-Resistivity Silicon Substrates (Skipper readout? - single e- resolution))
+- CCD detector design: high-resistivity n-type silicon substrate. Metal contacts for controlling potential wells. A very thin layer of Al2O3 (optional:SiO2 or SiN) for achieving uniform and flat features at this specific interface.
+- Skipper features to allow multiple non-destructive measurements of the same charge packet.
+-  
+ 
+## **n-type High-Resistivity Silicon Substrates**
 - Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
 - 
 
+---
 
+### **Buried Channel Design**
+This creates an electric field that confines electrons to the bulk silicon, away from the surface. 
+- Created via phosphorus ion implantation to form an n-doped region within the p-type epitaxial layer[^1][^6].
+- Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
+- Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.
+- Annealing: 900°C, N₂ ambient to activate dopants without oxidizing gates.
+
+  
+### **Reasoning** 
+- Sub-electron Noise: BCCDs achieve 0.068 e⁻ rms/pixel with Skipper readout, enabling single-electron resolution critical for rare-event detection.
+- Cryogenic Compatibility: BCCDs paired with ALD-grown Al₂O₃ passivation reduce dark current to <0.001 e⁻/pixel/hour at -100°C, essential for long-exposure dark matter searches.
+- Radiation-Hardened Architectures: BCCDs using epitaxial silicon (10 kΩ·cm) and hydrogen annealing tolerate displacement damage from neutron/γ-ray backgrounds in underground labs.
+
+- Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
+
+
+
+
+---
 ## **Materials and Substrate Preparation**
 
 CCDs are typically fabricated on **high-resistivity silicon substrates** (10,000–12,000 Ω·cm) to enable deep depletion regions (200–300 μm) for improved near-infrared response[^2][^7]. Two primary approaches exist:
@@ -43,20 +68,6 @@ Key steps include:
 
 ---
 
-## **Device Structure and Key Components**
-
-### **Buried Channel Design**
-
-- Created via phosphorus ion implantation to form an n-doped region within the p-type epitaxial layer[^1][^6].
-- Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
-
-### **Reasoning** 
-- Sub-electron Noise: BCCDs achieve 0.068 e⁻ rms/pixel with Skipper readout, enabling single-electron resolution critical for rare-event detection.
-- Cryogenic Compatibility: BCCDs paired with ALD-grown Al₂O₃ passivation reduce dark current to <0.001 e⁻/pixel/hour at -100°C, essential for long-exposure dark matter searches.
-- Radiation-Hardened Architectures: BCCDs using epitaxial silicon (10 kΩ·cm) and hydrogen annealing tolerate displacement damage from neutron/γ-ray backgrounds in underground labs.
-
-- Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.
-- Annealing: 900°C, N₂ ambient to activate dopants without oxidizing gates.
 
 ### **Gate Architecture**
 

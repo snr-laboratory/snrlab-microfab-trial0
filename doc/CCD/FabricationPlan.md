@@ -5,10 +5,13 @@ Charge-coupled devices (CCDs) are fabricated using semiconductor processes to op
 
 ## **CCD Operation**
 
-- Charge Generation: within a pixel: the photoelectric effect. Incoming photons strike the silicon withing a pixel and are easliy absorbed if they possess the correct wavelength (energy). Photons of energy 1.1eV (Si band gap -> Absorption -> Promotion of valence e-) to ~4eV generate single electron-hole pairs. 
+1) Charge Generation
+- Within a pixel: the photoelectric effect. Incoming photons strike the silicon withing a pixel and are easliy absorbed if they possess the correct wavelength (energy). Photons of energy 1.1eV (Si band gap -> Absorption -> Promotion of valence e-) to ~4eV generate single electron-hole pairs. 
 - Once e- have been freed to the conduction band of the silicon, they must be collected and held in place until readout occurs. 
--
-- - 
+- Each pixel acts as a potential well, storing electrons proportionally to incident light intesity
+2) Charge Transer
+- 
+   
 
 ---
 

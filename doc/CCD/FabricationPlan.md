@@ -32,14 +32,14 @@ The charge is then amplified and converted into a voltage, which is digitized to
 ---
 
 ## **Fabrication Plan**
+Design a Skipper "CCD Like" device for weak signal detection (eg. Coherent Elastic Neutrino-Nucleus Scattering or Weakly Interacting Massive Particles (WIMPS).) The device operates on the fundamental charge-coupling principle similar to standard CCDs, but with a critical difference. While traditional CCDs convert light photons into electric signals, this device detects ionization events in liquid argon (LAr) or liquid xenon (LXe). When a particle interaction occurs in the noble liquid, it creates electron-hole pairs through ionization.
 
 <img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="https://github.com/user-attachments/assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb" />
 
 CCD detector design: 
 - High-resistivity n-type silicon substrate.
-- Metal contacts for controlling potential wells.
 - A very thin layer of Al2O3 (optional reasearch: SiO2 or SiN) for achieving uniform and flat features at this specific interface.
-- The metal electrodes create potential wells in the silicon that extend through the dielectric. Electric fields penetrate the thin dielectric, keeping electrons confined above in the LAr/LXe or in the high-resistivity silicon.
+- Metal electrodes to create/control potential wells in the silicon that extend through the dielectric. Electric fields penetrate the thin dielectric, keeping electrons confined above in the LAr/LXe (or in the high-resistivity silicon?).
 
 ## **CCD Readout Ciruit**
 <img width="1100" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="https://github.com/user-attachments/assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926" />
@@ -48,12 +48,18 @@ CCD detector design:
 - The deep depletion region in the high-resistivity n-type silicon provides efficient charge collection and transfer.
 - Skipper features to allow multiple non-destructive measurements of the same charge packet (While conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet)
 
----
-
 ## **"CCD Like" Operation**
-1) Charge Injection: Electrons are injected into the structure via the source node. 
-2) Non-Destructive Charge Transfer: Charge packets move between gate electrodes via controlled voltage sequences. Each transfer allows a measurement without destroying the charge.
-3) Non-Destructive Readout: At the sense node, a floating gate amplifier measures the charge. The charge is then returned to the gate array for more measurements.
+The unique layered structure allows these ionization electrons to be:
+1) Generated in the noble liquid (LAr/LXe)
+2) Drifted toward the Al₂O₃ interface
+3) Transported laterally via potential wells created by the metal electrodes
+4) Read out through a skipper circuit design
+
+Note: Noble liquids naturally exhibit poor wetting on oxide surfaces due to chemical dissimilarity. This is actually beneficial for this detector because:
+- Poor wetting prevents strong adhesion forces that would trap electrons at the interface
+- The electrons remain mobile in the liquid rather than "sticking" to the surface
+- Electric fields can effectively manipulate these mobile electrons
+- The non-wetting condition creates a situation where electrons remain in the noble liquid but close enough to the interface to be trapped while allowing their controlled movement through the potential wells.
 
 Advantages: 
 - Sub-electron Noise Levels: Multiple sampling reduces noise by a factor of 1/√N (where N is the number of samples), allowing the device to reach extraordinary sensitivity.
@@ -63,15 +69,22 @@ Advantages:
 
 [Skipper-CCDs: current applications and future](https://agenda.infn.it/event/22092/contributions/166721/attachments/91165/123549/Poster%20-%20Skipper-CCDs_%20current%20applications%20and%20future.pdf)
 
+This unique combination of features (ie Skipper readout, engineered interfaces, and noble liquid interaction) could enable detection sensitivity at the very low levels, levels critical for next-generation dark matter searches and neutrino physics.
+
 ---
 
 ## **n-type High-Resistivity Silicon Substrates**
-- Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
+Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
 
+- n-type substrate enables full depletion with reasonable bias voltages (50-100V) while allowing deep collection depths (200-300 μm)
+- 
 ---
 
 ### **Buried Channel Design**
-This creates an electric field that confines electrons to the bulk silicon, away from the surface. 
+This creates an electric field that confines electrons to the bulk silicon, away from the surface.The buried channel structure (n-type region in high-resistivity silicon) remains essential because:
+1) Signal Processing: It provides the pathway for processing the induced image charges with high efficiency
+2) Noise Reduction: This structure has the advantages of higher transfer efficiency and lower dark current, from reduced surface recombination
+3) Charge Confinement: The buried channel confines charge in a plane away from the interface, thus avoiding surface states
 - Created via phosphorus ion implantation to form an n-doped region within the p-type epitaxial layer[^1][^6].
 - Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
 - Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.
@@ -86,6 +99,9 @@ The n-type layer creates a potential minimum in the silicon bulk. Electrons are 
 
 - Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
 
+
+## **Metal Electrodes**
+- TiN electrodes offer better thermal matching (CTE) with silicon for cryogenic operation compared to aluminum
 
 
 

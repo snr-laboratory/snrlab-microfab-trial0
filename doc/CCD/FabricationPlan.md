@@ -194,6 +194,35 @@ Sputter deposition system, PECVD system
   - Light Sources: Calibrated LEDs and laser systems for sensitivity testing
   - Radiation Sources: Alpha, beta, and gamma sources for detection validation
 
+---
+
+## **Skipper CCD Technology for Neutrinoless Double Beta Decay Detection**
+Neutrinoless double beta decay (0νββ) is a hypothetical nuclear process where:
+
+- A nucleus simultaneously converts two neutrons into two protons
+- Two electrons are emitted
+- No neutrinos are produced (unlike standard double beta decay)
+- Total energy of the electrons equals the Q-value of the decay (typically 2-3 MeV)
+  
+This process, if observed, would prove neutrinos are Majorana particles (their own antiparticles) and demonstrate lepton number violation.
+
+Whats needed: 
+- Superior Energy Resolution
+  - The sub-electron noise levels achieved through multiple sampling could provide exceptional energy resolution (σ = σ₁/√N)
+  - Distinguishing the characteristic 0νββ peak from background requires precisely measuring the sharp energy peak of the two emitted electrons
+  - The 0.15e⁻ RMS noise levels demonstrated in existing Skipper-CCDs would enable precise energy discrimination
+- Single-Electron Sensitivity
+- Noble Liquid Medium Integration
+  - Using LXe as detection medium is particularly advantageous as ¹³⁶Xe is a prime 0νββ candidate isotope
+  - The detector becomes both the source and detection medium, improving efficiency
+  - The design's interface between noble liquids and detection electronics addresses a key challenge in LXe-based 0νββ experiments
+
+Ionization Detection Mechanism
+- 0νββ decay produces high-energy electrons that create ionization tracks in the detection medium
+- The spatial resolution of the CCD-like design may enable tracking capabilities that could distinguish 0νββ events (two electron tracks from same vertex) from background events
+- The buried channel design with n-type substrate enables deep depletion, reducing surface-related backgrounds
+
+
 
 ---
 

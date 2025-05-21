@@ -1,5 +1,7 @@
 # CCD Operation 
 
+-[Intro to CCDs](https://www.microscopyu.com/digital-imaging/introduction-to-charge-coupled-devices-ccds)
+
 - [How a Charge Coupled Device
 (CCD) Image Sensor Works](https://www.teledyneimaging.com/media/1300/2020-01-22_e2v_how-a-charge-coupled-device-works_web.pdf)
 

@@ -48,9 +48,10 @@ CCD detector design:
 - The deep depletion region in the high-resistivity n-type silicon provides efficient charge collection and transfer.
 - Skipper features to allow multiple non-destructive measurements of the same charge packet (While conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet)
 - Sensing Node Architecture: When charges reach the output stage, they encounter a specialized structure with:
-  - A summing gate (SG) that holds the charge packet
-  - A sensing node (SN) that measures the charge
-  - Transfer gates that control movement between them
+  - A summing gate/well (SG/SW) that holds the charge packet (Temporarily holds the charge packet before measurement, ensuring controlled and sequential transfer)
+  - A sensing node (SN) that measures the charge (The charge is sensed here, typically using a floating gate amplifier, which allows for non-destructive, repeated measurements of the same charge packet)
+  - A Output Gate (OG) - Acts as a gatekeeper, regulating the movement of charge from SW to SN so that the measurement can be performed accurately and repeatedly
+
 
 ## **"CCD Like" Operation**
 The unique layered structure allows these ionization electrons to be:

@@ -1,4 +1,5 @@
 # CCD Operation 
+- [Silicon-based CCDs: The basics](https://www.teledynevisionsolutions.com/learn/learning-center/imaging-fundamentals/silicon-based-ccds-the-basics/) 
 
 - [Intro to CCDs](https://www.microscopyu.com/digital-imaging/introduction-to-charge-coupled-devices-ccds)
 

@@ -47,6 +47,10 @@ CCD detector design:
 - Sequential voltage changes on the metal contacts create moving potential wells that shuttle charges laterally
 - The deep depletion region in the high-resistivity n-type silicon provides efficient charge collection and transfer.
 - Skipper features to allow multiple non-destructive measurements of the same charge packet (While conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet)
+- Sensing Node Architecture: When charges reach the output stage, they encounter a specialized structure with:
+  - A summing gate (SG) that holds the charge packet
+  - A sensing node (SN) that measures the charge
+  - Transfer gates that control movement between them
 
 ## **"CCD Like" Operation**
 The unique layered structure allows these ionization electrons to be:
@@ -105,7 +109,7 @@ p-channel CCDs on n-type substrates show superior radiation tolerance compared t
 
 - Better radiation hardness for long-term operation in particle physics environments
 - Applying negative voltage to metal electrodes above n-type silicon strengthens potential barriers, creating deeper potential wells
-- 
+  
 ## **Metal Electrodes**
 - TiN electrodes offer better thermal matching (CTE) with silicon for cryogenic operation compared to aluminum
 
@@ -123,12 +127,12 @@ RCA cleaning station and acid wet bench with HF handling capabilities
 - Thermal Oxidation:
 50 nm SiO₂ growth at 900°C in dry O₂
 - Silicon Nitride Deposition:
-50 nm Si₃N₄ via LPCVD at 780°C
+50 nm Si₃N₄ via LPCVD at 780°C (LPCVD produces more uniform Si₃N₄ films with fewer defects and higher step coverage than alternative methods). Si₃N₄ layer serves as a high-quality etch stop during subsequent processing and provides excellent electrical isolation
 - Equipment:
 Thermal oxidation furnace and Low-Pressure Chemical Vapor Deposition (LPCVD) system
 3. p-Channel Formation
 - Photolithography:
-Channel definition using stepper lithography (2.5 μm minimum feature)
+Channel definition using stepper lithography (2.5 μm minimum feature) (Enables feature sizes below 1 micron by exposing small sections of the wafer at a time)
 - Ion Implantation:
 Boron implant (50-70 keV, 1-5×10¹² cm⁻²) to form p-channel
 - Annealing:
@@ -146,7 +150,7 @@ LPCVD system, Plasma etcher and Stepper lithography system
 - Thinning:
 Mechanical grinding to target thickness (200-300 μm) and chemical-mechanical polishing for surface smoothing
 - Backside Contact:
-In-situ doped polysilicon (ISDP) layer (20-25 nm) deposited at 650°C
+In-situ doped polysilicon (ISDP) layer (20-25 nm) deposited at 650°C (Forms the critical n+ contact (20-25 nm thick) on the back side of fully-depleted CCDs and thin, uniform ISDP layer enables excellent blue/UV response while providing low-resistance electrical contact)
 - Equipment:
 Wafer grinding tool, chemical mechanical polishing (CMP) system and LPCVD system
 6. Al₂O₃ Interface Layer (Key Innovation)
@@ -168,7 +172,7 @@ Sputter deposition system and Plasma etcher
 - Metallization:
 Al-Si (1%) for interconnects and bond pads
 - Passivation:
-PECVD SiO₂/Si₃N₄ bilayer
+PECVD SiO₂/Si₃N₄ bilayer (Lower temperature deposition (350°C) than LPCVD, preserving underlying structures while providing excellent step coverage)
 - Equipment:
 Sputter deposition system, PECVD system
 

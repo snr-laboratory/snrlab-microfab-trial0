@@ -13,7 +13,7 @@ This document summarizes the electrical characterization of several epoxy candid
   - Script Measurements are recorded after 15 minutes
   - Manual measurements were recorded after 3 minutes
 
-# **Updated Script and Manual Epoxy Resistivity Measurments 
+# **Updated Script and Manual Epoxy Resistivity Measurments** 
 
 <img width="634" alt="Screenshot 2025-05-20 at 12 49 51 AM" src="https://github.com/user-attachments/assets/8a21a475-ade1-4876-a8c4-bdee0eb0f6d4" />
 

@@ -1,18 +1,32 @@
-# **CCD Basics**
+# **Charge-Coupled Devices (CCDs)**
+Charge-coupled devices (CCDs) are a highly sensitive light-detecting integrated circuit widely used in imaging applications. Its primary function is to capture light (photons), convert it into electrical charge (electrons), and then transfer this charge across the device to be read out and digitized as an image. 
 
-Charge-coupled devices (CCDs) are fabricated using semiconductor processes to optimize light detection and charge transfer. Their manufacturing involves precise control of silicon properties, doping profiles, and optical structures to achieve high quantum efficiency and low noise. Below is a detailed analysis of CCD fabrication based on current research and industrial practices:
-[CCD Virtual Digital Imaging Tutorial](https://micro.magnet.fsu.edu/primer/java/digitalimaging/ccd/virtual2/index.html)
+<img width="551" alt="Screenshot 2025-05-21 at 11 22 34 AM" src="https://github.com/user-attachments/assets/89845d29-a779-444e-9b53-c65147cb8196" />
+
+<img width="514" alt="Screenshot 2025-05-21 at 10 38 29 AM" src="https://github.com/user-attachments/assets/1dd93f92-0204-4774-816e-af5aa588f5c9" />
 
 ## **CCD Operation**
 
-1) Charge Generation/Storage
-- Within a pixel: the photoelectric effect. Incoming photons strike the silicon withing a pixel and are easliy absorbed if they possess the correct wavelength (energy). Photons of energy 1.1eV (Si band gap -> Absorption -> Promotion of valence e-) to ~4eV generate single electron-hole pairs. 
-- Once e- have been freed to the conduction band of the silicon, they must be collected and held in place until readout occurs. 
-- Each pixel acts as a MOS capacitor. An applied voltage on the gate creates a depletion region, forming a potential well, to trap electrons. 
+### 1) Charge Generation/Storage
+- The CCD consists of an array of pixels etched onto a silicon surface. When photons hit these pixels, they generate electron-hole pairs via the photoelectric effect. The number of electrons generated in each pixel is proportional to the intensity of the incoming light
 
-2) Charge Transer
+<img width="548" alt="Screenshot 2025-05-21 at 10 43 30 AM" src="https://github.com/user-attachments/assets/0ead6180-86b6-4e81-ab36-20416ed72a52" />
+
+<img width="390" alt="Screenshot 2025-05-21 at 11 18 45 AM" src="https://github.com/user-attachments/assets/6235add2-41cc-48e8-a91f-a493e41b3c14" />
+
+- Each pixel acts as a MOS capacitor. An applied voltage on the gate creates a depletion region, forming a potential well, to trap electrons.
+
+### 2) Charge Transfer
+After exposure, the accumulated charge in each pixel is systematically shifted across the array
+   
+<img width="350" alt="Screenshot 2025-05-21 at 10 59 10 AM" src="https://github.com/user-attachments/assets/fbee74f1-be8e-476d-80f7-42b00a83c429" />
+
 - By sequentially clocking voltages on adjacent gates, electrons are shifted from one pixel to the next.
+- This process, called charge coupling, moves the charge from pixel to pixel until it reaches the output node
 
+### 3) Readout
+The charge is then amplified and converted into a voltage, which is digitized to form an image.
+<img width="524" alt="Screenshot 2025-05-21 at 12 30 49 PM" src="https://github.com/user-attachments/assets/b821e755-a178-4762-9503-946d7b2714ab" />
 
 
 ---
@@ -21,10 +35,13 @@ Charge-coupled devices (CCDs) are fabricated using semiconductor processes to op
 
 <img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="https://github.com/user-attachments/assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb" />
 
-- CCD detector design: high-resistivity n-type silicon substrate. Metal contacts for controlling potential wells. A very thin layer of Al2O3 (optional:SiO2 or SiN) for achieving uniform and flat features at this specific interface.
-- The metal electrodes create potential wells in the silicon that extend through the dielectric.
-- Electric fields penetrate the thin dielectric, keeping electrons confined in the high-resistivity silicon or above in the LAr/LXe.
+CCD detector design: 
+- High-resistivity n-type silicon substrate.
+- Metal contacts for controlling potential wells.
+- A very thin layer of Al2O3 (optional reasearch: SiO2 or SiN) for achieving uniform and flat features at this specific interface.
+- The metal electrodes create potential wells in the silicon that extend through the dielectric. Electric fields penetrate the thin dielectric, keeping electrons confined above in the LAr/LXe or in the high-resistivity silicon.
 
+## **CCD Readout Ciruit**
 <img width="1100" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="https://github.com/user-attachments/assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926" />
 
 - Sequential voltage changes on the metal contacts create moving potential wells that shuttle charges laterally
@@ -34,8 +51,8 @@ Charge-coupled devices (CCDs) are fabricated using semiconductor processes to op
 ---
 
 ## **"CCD Like" Operation**
-1) Charge Injection: Electrons are injected into the structure via the source node. Created by photoelectric effects.
-2) Daisy Chain Shuttling: Charge packets move between gate electrodes via controlled voltage sequences.Each transfer allows a measurement without destroying the charge.
+1) Charge Injection: Electrons are injected into the structure via the source node. 
+2) Non-Destructive Charge Transfer: Charge packets move between gate electrodes via controlled voltage sequences. Each transfer allows a measurement without destroying the charge.
 3) Non-Destructive Readout: At the sense node, a floating gate amplifier measures the charge. The charge is then returned to the gate array for more measurements.
 
 Advantages: 
@@ -50,7 +67,6 @@ Advantages:
 
 ## **n-type High-Resistivity Silicon Substrates**
 - Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
-- 
 
 ---
 
@@ -74,7 +90,12 @@ The n-type layer creates a potential minimum in the silicon bulk. Electrons are 
 
 
 ---
+
+
 ## **Materials and Substrate Preparation**
+
+Below is a virtual tutorial of CCD fabrication:
+[CCD Virtual Digital Imaging Tutorial](https://micro.magnet.fsu.edu/primer/java/digitalimaging/ccd/virtual2/index.html)
 
 CCDs are typically fabricated on **high-resistivity silicon substrates** (10,000–12,000 Ω·cm) to enable deep depletion regions (200–300 μm) for improved near-infrared response[^2][^7]. Two primary approaches exist:
 

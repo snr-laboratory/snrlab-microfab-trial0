@@ -51,7 +51,7 @@ CCD detector design:
 ## **"CCD Like" Operation**
 The unique layered structure allows these ionization electrons to be:
 1) Generated in the noble liquid (LAr/LXe)
-2) Drifted toward the Al₂O₃ interface
+2) Drifted toward the Al₂O₃ interface, but remain in the noble liquid
 3) Transported laterally via potential wells created by the metal electrodes
 4) Read out through a skipper circuit design
 
@@ -77,11 +77,12 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
 Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
 
 - n-type substrate enables full depletion with reasonable bias voltages (50-100V) while allowing deep collection depths (200-300 μm)
-- 
+- Float-Zone Silicon Growth?: FZ silicon offers ultra-high purity necessary for low dark current and high sensitivity. Lower defect density and better resistivity uniformity.
+  
 ---
 
 ### **Buried Channel Design**
-This creates an electric field that confines electrons to the bulk silicon, away from the surface.The buried channel structure (n-type region in high-resistivity silicon) remains essential because:
+Buried Channel (BCCDs) keep charge away from the Si/SiO₂ interface (0.2-0.3 μm below surface), minimizing interaction with surface defects. This creates an electric field that confines electrons to the bulk silicon, away from the surface.The buried channel structure (n-type region in high-resistivity silicon) remains essential because:
 1) Signal Processing: It provides the pathway for processing the induced image charges with high efficiency
 2) Noise Reduction: This structure has the advantages of higher transfer efficiency and lower dark current, from reduced surface recombination
 3) Charge Confinement: The buried channel confines charge in a plane away from the interface, thus avoiding surface states
@@ -99,15 +100,103 @@ The n-type layer creates a potential minimum in the silicon bulk. Electrons are 
 
 - Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
 
+## **Channel Doping**
+p-channel CCDs on n-type substrates show superior radiation tolerance compared to conventional n-channel devices
 
+- Better radiation hardness for long-term operation in particle physics environments
+- Applying negative voltage to metal electrodes above n-type silicon strengthens potential barriers, creating deeper potential wells
+- 
 ## **Metal Electrodes**
 - TiN electrodes offer better thermal matching (CTE) with silicon for cryogenic operation compared to aluminum
 
+---
+
+## **Possible Sequence**
+1. Substrate Preparation
+- Starting Material:
+Float-zone, high-resistivity n-type silicon (10,000 Ω·cm), 200 mm diameter, (100) orientation, 300 μm thickness
+- Initial Cleaning:
+RCA clean (NH₄OH/H₂O₂ followed by HCl/H₂O₂) and HF dip to remove native oxide
+- Equipment:
+RCA cleaning station and acid wet bench with HF handling capabilities
+2. Gate Dielectric Formation
+- Thermal Oxidation:
+50 nm SiO₂ growth at 900°C in dry O₂
+- Silicon Nitride Deposition:
+50 nm Si₃N₄ via LPCVD at 780°C
+- Equipment:
+Thermal oxidation furnace and Low-Pressure Chemical Vapor Deposition (LPCVD) system
+3. p-Channel Formation
+- Photolithography:
+Channel definition using stepper lithography (2.5 μm minimum feature)
+- Ion Implantation:
+Boron implant (50-70 keV, 1-5×10¹² cm⁻²) to form p-channel
+- Annealing:
+900°C, 30 min in N₂ ambient to activate dopants
+- Equipment:
+Stepper lithography system, ion implanter and annealing furnace
+4. Gate Structure Formation
+- Polysilicon Deposition:
+Triple-level polysilicon gate structure (3-phase CCD). Each layer 0.5 μm thick, in-situ phosphorus doped
+- Etching:
+Plasma etching with Cl₂/HBr chemistry for high selectivity to Si₃N₄
+- Equipment:
+LPCVD system, Plasma etcher and Stepper lithography system
+5. Backside Processing
+- Thinning:
+Mechanical grinding to target thickness (200-300 μm) and chemical-mechanical polishing for surface smoothing
+- Backside Contact:
+In-situ doped polysilicon (ISDP) layer (20-25 nm) deposited at 650°C
+- Equipment:
+Wafer grinding tool, chemical mechanical polishing (CMP) system and LPCVD system
+6. Al₂O₃ Interface Layer (Key Innovation)
+- Atomic Layer Deposition:
+50 nm Al₂O₃ using trimethylaluminum (TMA) and H₂O precursors at 150°C
+0.97 Å/cycle growth rate for precise thickness control
+- Post-Deposition Annealing:
+400°C in N₂ ambient to optimize interface states and create controlled defect density
+- Equipment:
+ALD system and Annealing furnace
+7. Metal Electrode Fabrication
+- Metal Deposition:
+TiN via reactive sputtering at 400°C (100 μm pitch)
+- Patterning:
+Stepper lithography and plasma etching
+- Equipment:
+Sputter deposition system and Plasma etcher
+8. Device Integration
+- Metallization:
+Al-Si (1%) for interconnects and bond pads
+- Passivation:
+PECVD SiO₂/Si₃N₄ bilayer
+- Equipment:
+Sputter deposition system, PECVD system
+
+9. Characterization and Testing Tools
+- Electrical Characterization
+  - Probe Station: For I-V and C-V measurements of test structures
+  - Parameter Analyzer: Keithley 4200A-SCS for detailed electrical characterization
+  - Pulse Generator: For CCD gate timing control
+  - Oscilloscope: High-speed digital oscilloscope for timing analysis
+- Material Characterization
+  - Scanning Electron Microscope (SEM): For structural analysis and layer thickness measurements
+  - Transmission Electron Microscope (TEM): For atomic-scale interface analysis
+  - Atomic Force Microscope (AFM): For surface roughness measurement of Al₂O₃ layer (<1 nm RMS target)
+  - X-ray Photoelectron Spectroscopy (XPS): For interface chemistry analysis
+- CCD Performance Testing
+  - Cryogenic Test Chamber: For operation at LAr/LXe temperatures (87K/165K)
+  - Readout Electronics: Specialized low-noise amplifiers and ADCs
+  - Light Sources: Calibrated LEDs and laser systems for sensitivity testing
+  - Radiation Sources: Alpha, beta, and gamma sources for detection validation
 
 
 ---
 
 
+---
+
+
+---
 ## **Materials and Substrate Preparation**
 
 Below is a virtual tutorial of CCD fabrication:

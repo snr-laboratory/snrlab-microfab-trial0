@@ -36,18 +36,18 @@ Design a Skipper "CCD Like" device for detecting low energy processes (eg. Coher
 
 <img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="https://github.com/user-attachments/assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb" />
 
-CCD detector design: 
+"CCD Like" Detector: 
 - High-resistivity n-type silicon substrate.
-- A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface (optional reasearch: SiO2 or SiN).
 - Metal electrodes to create/control potential wells in the silicon that extend through the dielectric.
-
+- A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface (optional reasearch: SiO2 or SiN).
+  - When ionization electrons are created in the LAr/LXe by particle interactions, they drift toward the Al₂O₃ interface but remain physically in the noble liquid. The non-wetting property of the interface is crucial, as it creates a natural barrier that keeps electrons mobile in the liquid rather than becoming trapped at surface defects.
   
 ## **CCD Readout**
 <img width="1100" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="https://github.com/user-attachments/assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926" />
 
 - Sequential voltage changes on the metal contacts create moving potential wells that shuttle charges laterally
 - The deep depletion region in the high-resistivity n-type silicon provides efficient charge collection and transfer.
-- Skipper features to allow multiple non-destructive measurements of the same charge packet (While conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet)
+- Skipper features allow multiple non-destructive measurements of the same charge packet (ie conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet)
 - Sensing Node Architecture: When charges reach the output stage, they encounter a specialized structure with:
   - A summing gate/well (SG/SW) that holds the charge packet (Temporarily holds the charge packet before measurement, ensuring controlled and sequential transfer)
   - A sensing node (SN) that measures the charge (The charge is sensed here, typically using a floating gate amplifier, which allows for non-destructive, repeated measurements of the same charge packet)
@@ -70,12 +70,10 @@ Note: Noble liquids naturally exhibit poor wetting on oxide surfaces due to chem
 Advantages: 
 - Sub-electron Noise Levels: Multiple sampling reduces noise by a factor of 1/√N (where N is the number of samples), allowing the device to reach extraordinary sensitivity.
 - Single-electron Resolution: This technology enables "counting" individual electrons with high confidence, making it capable of detecting even the weakest signals.
-- Smart Readout: The "skipper" capability allows selective multiple sampling of regions of interest while quickly reading the rest, optimizing both precision and speed.
-- High Dynamic Range: Can accurately measure from single electrons to thousands of electrons simultaneously in different pixels.
 
 [Skipper-CCDs: current applications and future](https://agenda.infn.it/event/22092/contributions/166721/attachments/91165/123549/Poster%20-%20Skipper-CCDs_%20current%20applications%20and%20future.pdf)
 
-This unique combination of features (ie Skipper readout, engineered interfaces, and noble liquid interaction) could enable detection sensitivity at the very low levels, levels critical for next-generation dark matter searches and neutrino physics.
+This unique combination of features (ie Skipper readout, engineered interfaces, and noble liquid interaction) could enable detection sensitivity at the very low levels; critical levels for next-generation dark matter searches and neutrino physics.
 
 ---
 
@@ -84,8 +82,15 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
 
 
 - Surface Charge Trapping and Release
-  - C-V curves for MOS capacitor 
-
+  - C-V curves for MOS capacitor
+    - Procedure:
+      - Fabricate MOS capacitors (Al or TiN/Al₂O₃/n-Si).
+      - Apply a voltage sweep (-15V → +15V → -15V) at 1 kHz–1 MHz.
+      - Measure capacitance hysteresis width between forward/reverse sweeps.
+    - Interpretation: Hysteresis width is proportional to trapped charge density in dielectrics 
+    - [Characterization of Electrical Traps Formed in Al2O3 under Various ALD Conditions](https://pmc.ncbi.nlm.nih.gov/articles/PMC7767157/) - authors show how hysteresis and flatband voltage shifts in the C-V curves directly quantify trap densities and their dependence on ALD process parameters.
+    - [Charge trapping analysis of Al2O3 films deposited by atomic layer deposition
+using H2O or O3 as oxidant](https://digital.csic.es/bitstream/10261/378620/1/1_2013-jvstb_31_1_01a101-2013_digital_1_.pdf)
 
 
 
@@ -104,10 +109,12 @@ Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are su
 ---
 
 ### **Buried Channel Design**
-Buried Channel (BCCDs) keep charge away from the Si/SiO₂ interface (0.2-0.3 μm below surface), minimizing interaction with surface defects. This creates an electric field that confines electrons to the bulk silicon, away from the surface.The buried channel structure (n-type region in high-resistivity silicon) remains essential because:
+Buried Channel (BCCDs) keep charge away from the Si/SiO₂ interface (0.2-0.3 μm below surface), minimizing interaction with surface defects. This creates an electric field that confines electrons to the bulk silicon, away from the surface.The buried channel structure (p-type buried channel in high-resistivity silicon) remains essential because:
+
 1) Signal Processing: It provides the pathway for processing the induced image charges with high efficiency
 2) Noise Reduction: This structure has the advantages of higher transfer efficiency and lower dark current, from reduced surface recombination
 3) Charge Confinement: The buried channel confines charge in a plane away from the interface, thus avoiding surface states
+4) Reduces surface recombination, improving charge transfer efficiency
 - Created via phosphorus ion implantation to form an n-doped region within the p-type epitaxial layer[^1][^6].
 - Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
 - Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.

@@ -8,7 +8,7 @@ Charge-coupled devices (CCDs) are a highly sensitive light-detecting integrated 
 ## **CCD Operation**
 
 ### 1) Charge Generation/Storage
-- The CCD consists of an array of pixels etched onto a silicon surface. When photons hit these pixels, they generate electron-hole pairs via the photoelectric effect. The number of electrons generated in each pixel is proportional to the intensity of the incoming light
+- The CCD consists of an array of pixels etched onto a silicon surface. When photons hit these pixels, they generate electron-hole pairs via the photoelectric effect. 
 
 <img width="548" alt="Screenshot 2025-05-21 at 10 43 30 AM" src="https://github.com/user-attachments/assets/0ead6180-86b6-4e81-ab36-20416ed72a52" />
 

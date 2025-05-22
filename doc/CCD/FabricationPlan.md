@@ -44,8 +44,8 @@ Critical difference: A very thin layer of Al2O3 for achieving uniform and flat f
 
 - Skipper features allow multiple non-destructive measurements of the same charge packet 
 - Sensing Node Architecture: When charges reach the output stage, they encounter a specialized structure with:
-  - A summing gate/well (SG/SW) that holds the charge packet (Temporarily holds the charge packet before measurement, ensuring controlled and sequential transfer)
-  - A sensing node (SN) that measures the charge (The charge is sensed here, typically using a floating gate amplifier, which allows for non-destructive, repeated measurements of the same charge packet)
+  - A summing gate/well (SG/SW): Temporarily holds the charge packet before measurement, ensuring controlled and sequential transfer
+  - A sensing node (SN): The charge is sensed here, typically using a floating gate amplifier, which allows for non-destructive, repeated measurements of the same charge packet
   - A Output Gate (OG) - Acts as a gatekeeper, regulating the movement of charge from SW to SN so that the measurement can be performed accurately and repeatedly
 
 

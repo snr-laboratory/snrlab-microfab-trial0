@@ -73,7 +73,7 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
 ---
 
 ## Measurement Approach
-- Wetting/Non Wetting 
+1) Wetting/Non Wetting 
   - Cryogenic Transient Current Technique (Cryo-TCT)
     - Cryo-TCT is a method to see how well a surface repels or attracts a very cold liquid—like liquid argon (LAr) or liquid xenon (LXe) by watching how electricity moves near the surface. Cryo-TCT directly measures how electrons interact with the interface
     - Non-wetting interfaces (desired): Show fast rise times (nanoseconds) with symmetric decay in the current signal
@@ -91,7 +91,7 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
         - Applies a small AC bias (1 kHz, 1 V) to the interface
         - Measures the resulting capacitance between liquid and substrate 
 
-- Surface Charge Trapping and Release
+2) Surface Charge Trapping and Release
   - C-V curves for MOS capacitor
     - Procedure:
       - Fabricate MOS capacitors (Al or TiN/Al₂O₃/n-Si).

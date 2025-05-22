@@ -74,7 +74,8 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
 
 ## Measurement Approach
 - Wetting/Non Wetting 
-
+  - Cryogenic Transient Current Technique (Cryo-TCT)
+  - Capacitive Coupling Monitor
 
 - Surface Charge Trapping and Release
   - C-V curves for MOS capacitor

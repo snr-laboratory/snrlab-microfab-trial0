@@ -14,8 +14,7 @@ This document summarizes the electrical characterization of several epoxy candid
   - Manual measurements were recorded after 3 minutes
 
 # **Updated Script and Manual Epoxy Resistivity Measurments** 
-
-<img width="634" alt="Screenshot 2025-05-20 at 12 49 51 AM" src="https://github.com/user-attachments/assets/8a21a475-ade1-4876-a8c4-bdee0eb0f6d4" />
+<img width="631" alt="Screenshot 2025-05-22 at 10 15 30 AM" src="https://github.com/user-attachments/assets/dc1e2810-b024-4b34-8502-2ba65203127b" />
 
 <img width="633" alt="Screenshot 2025-05-20 at 12 50 04 AM" src="https://github.com/user-attachments/assets/5ed23f7d-af01-4904-bcd4-56e4f2a265d9" />
 

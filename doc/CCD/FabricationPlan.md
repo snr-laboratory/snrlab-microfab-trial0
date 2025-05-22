@@ -36,18 +36,13 @@ Design a Skipper "CCD Like" device for detecting low energy processes (eg. Coher
 
 <img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="https://github.com/user-attachments/assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb" />
 
-"CCD Like" Detector: 
-- High-resistivity n-type silicon substrate.
-- Metal electrodes to create/control potential wells in the silicon that extend through the dielectric.
-- A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface (optional reasearch: SiO2 or SiN).
+Critical difference: A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface (optional reasearch: SiO2 or SiN).
   - When ionization electrons are created in the LAr/LXe by particle interactions, they drift toward the Al₂O₃ interface but remain physically in the noble liquid. The non-wetting property of the interface is crucial, as it creates a natural barrier that keeps electrons mobile in the liquid rather than becoming trapped at surface defects.
   
 ## **CCD Readout**
 <img width="1100" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="https://github.com/user-attachments/assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926" />
 
-- Sequential voltage changes on the metal contacts create moving potential wells that shuttle charges laterally
-- The deep depletion region in the high-resistivity n-type silicon provides efficient charge collection and transfer.
-- Skipper features allow multiple non-destructive measurements of the same charge packet (ie conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet)
+- Skipper features allow multiple non-destructive measurements of the same charge packet 
 - Sensing Node Architecture: When charges reach the output stage, they encounter a specialized structure with:
   - A summing gate/well (SG/SW) that holds the charge packet (Temporarily holds the charge packet before measurement, ensuring controlled and sequential transfer)
   - A sensing node (SN) that measures the charge (The charge is sensed here, typically using a floating gate amplifier, which allows for non-destructive, repeated measurements of the same charge packet)
@@ -55,21 +50,21 @@ Design a Skipper "CCD Like" device for detecting low energy processes (eg. Coher
 
 
 ## **"CCD Like" Operation**
-The unique layered structure allows these ionization electrons to be:
+Conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet. The unique layered structure allows these ionization electrons to be:
+
 1) Generated in the noble liquid (LAr/LXe)
 2) Drifted toward the Al₂O₃ interface, but remain in the noble liquid
 3) Transported laterally via potential wells created by the metal electrodes
 4) Read out through a skipper circuit design
 
-Note: Noble liquids naturally exhibit poor wetting on oxide surfaces due to chemical dissimilarity. This is actually beneficial for this detector because:
+Note: Noble liquids naturally exhibit poor wetting on oxide surfaces. This is actually beneficial for this detector because:
 - Poor wetting prevents strong adhesion forces that would trap electrons at the interface
 - The electrons remain mobile in the liquid rather than "sticking" to the surface
 - Electric fields can effectively manipulate these mobile electrons
 - The non-wetting condition creates a situation where electrons remain in the noble liquid but close enough to the interface to be trapped while allowing their controlled movement through the potential wells.
 
 Advantages: 
-- Sub-electron Noise Levels: Multiple sampling reduces noise by a factor of 1/√N (where N is the number of samples), allowing the device to reach extraordinary sensitivity.
-- Single-electron Resolution: This technology enables "counting" individual electrons with high confidence, making it capable of detecting even the weakest signals.
+- Sub-electron Noise Levels: Multiple sampling reduces noise by a factor of 1/√N (where N is the number of samples)
 
 [Skipper-CCDs: current applications and future](https://agenda.infn.it/event/22092/contributions/166721/attachments/91165/123549/Poster%20-%20Skipper-CCDs_%20current%20applications%20and%20future.pdf)
 
@@ -92,42 +87,25 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
     - [Charge trapping analysis of Al2O3 films deposited by atomic layer deposition
 using H2O or O3 as oxidant](https://digital.csic.es/bitstream/10261/378620/1/1_2013-jvstb_31_1_01a101-2013_digital_1_.pdf)
 
-
-
-
-
-___
-
 ___
 
 ## **n-type High-Resistivity Silicon Substrates**
-Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
+For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.
 
 - n-type substrate enables full depletion with reasonable bias voltages (50-100V) while allowing deep collection depths (200-300 μm)
+  - Fully depleted means that the entire thickness of the silicon substrate is free of mobile charge carriers (electrons and holes), except those generated by an external event (like a photon or particle interaction).
+  - This is achieved by applying a sufficient reverse bias voltage so that the electric field extends from the front surface all the way to the back surface of the device.
+
 - Float-Zone Silicon Growth?: FZ silicon offers ultra-high purity necessary for low dark current and high sensitivity. Lower defect density and better resistivity uniformity.
   
 ---
 
 ### **Buried Channel Design**
-Buried Channel (BCCDs) keep charge away from the Si/SiO₂ interface (0.2-0.3 μm below surface), minimizing interaction with surface defects. This creates an electric field that confines electrons to the bulk silicon, away from the surface.The buried channel structure (p-type buried channel in high-resistivity silicon) remains essential because:
+Buried Channel (BCCDs) keep charge away from the Si/SiO₂ interface (0.2-0.3 μm below surface), minimizing interaction with surface defects.The buried channel structure (p-type buried channel in high-resistivity silicon) remains essential because:
 
-1) Signal Processing: It provides the pathway for processing the induced image charges with high efficiency
-2) Noise Reduction: This structure has the advantages of higher transfer efficiency and lower dark current, from reduced surface recombination
-3) Charge Confinement: The buried channel confines charge in a plane away from the interface, thus avoiding surface states
-4) Reduces surface recombination, improving charge transfer efficiency
-- Created via phosphorus ion implantation to form an n-doped region within the p-type epitaxial layer[^1][^6].
-- Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
-- Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.
-- Annealing: 900°C, N₂ ambient to activate dopants without oxidizing gates.
-The n-type doped layer creates a buried channel where electrons flow. This keeps electrons ~1-2 μm away from the Si-SiO₂ interface, preventing interaction with oxide traps.
-  
-### **Reasoning** 
-The n-type layer creates a potential minimum in the silicon bulk. Electrons are repelled from the surface by built-in electric fields from doping gradients and positive gate voltages that push electrons deeper into the silicon.
-- Sub-electron Noise: BCCDs achieve 0.068 e⁻ rms/pixel with Skipper readout, enabling single-electron resolution critical for rare-event detection.
-- Cryogenic Compatibility: BCCDs paired with ALD-grown Al₂O₃ passivation reduce dark current to <0.001 e⁻/pixel/hour at -100°C, essential for long-exposure dark matter searches.
-- Radiation-Hardened Architectures: BCCDs using epitaxial silicon (10 kΩ·cm) and hydrogen annealing tolerate displacement damage from neutron/γ-ray backgrounds in underground labs.
+1) Noise Reduction: This structure has the advantages of higher transfer efficiency and lower dark current, from reduced surface recombination
+2) Charge Confinement: The buried channel confines charge in a plane away from the interface, thus avoiding surface states
 
-- Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
 
 ## **Channel Doping**
 p-channel CCDs on n-type substrates show superior radiation tolerance compared to conventional n-channel devices
@@ -143,7 +121,7 @@ p-channel CCDs on n-type substrates show superior radiation tolerance compared t
 ## **Possible Sequence**
 1. Substrate Preparation
 - Starting Material:
-Float-zone, high-resistivity n-type silicon (10,000 Ω·cm), 200 mm diameter, (100) orientation, 300 μm thickness
+Float-zone, high-resistivity n-type silicon (10,000 Ω·cm - full depletion), **200 mm diameter**, (100) orientation, 200-300 μm thickness
 - Initial Cleaning:
 RCA clean (NH₄OH/H₂O₂ followed by HCl/H₂O₂) and HF dip to remove native oxide
 - Equipment:
@@ -253,6 +231,12 @@ Ionization Detection Mechanism
 
 ---
 
+**Buried Channel Design**- Created via phosphorus ion implantation to form an n-doped region within the p-type epitaxial layer[^1][^6].
+- Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
+- Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.
+- Annealing: 900°C, N₂ ambient to activate dopants without oxidizing gates.
+The n-type doped layer creates a buried channel where electrons flow. This keeps electrons ~1-2 μm away from the Si-SiO₂ interface, preventing interaction with oxide traps.
+  
 
 ---
 ## **Materials and Substrate Preparation**

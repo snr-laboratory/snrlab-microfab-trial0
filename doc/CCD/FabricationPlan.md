@@ -32,16 +32,17 @@ The charge is then amplified and converted into a voltage, which is digitized to
 ---
 
 ## **Fabrication Plan**
-Design a Skipper "CCD Like" device for weak signal detection (eg. Coherent Elastic Neutrino-Nucleus Scattering or Weakly Interacting Massive Particles (WIMPS).) The device operates on the fundamental charge-coupling principle similar to standard CCDs, but with a critical difference. While traditional CCDs convert light photons into electric signals, this device detects ionization events in liquid argon (LAr) or liquid xenon (LXe). When a particle interaction occurs in the noble liquid, it creates electron-hole pairs through ionization.
+Design a Skipper "CCD Like" device for detecting low energy processes (eg. Coherent Elastic Neutrino-Nucleus Scattering or Weakly Interacting Massive Particles (WIMPS)). The device operates on the fundamental charge-coupling principle similar to standard CCDs, but with a critical difference. While traditional CCDs convert light photons into electric signals, this device detects ionization events in liquid argon (LAr) or liquid xenon (LXe). When a particle interaction occurs in the noble liquid, it creates electron-hole pairs through ionization.
 
 <img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="https://github.com/user-attachments/assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb" />
 
 CCD detector design: 
 - High-resistivity n-type silicon substrate.
-- A very thin layer of Al2O3 (optional reasearch: SiO2 or SiN) for achieving uniform and flat features at this specific interface.
-- Metal electrodes to create/control potential wells in the silicon that extend through the dielectric. Electric fields penetrate the thin dielectric, keeping electrons confined above in the LAr/LXe (or in the high-resistivity silicon?).
+- A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface (optional reasearch: SiO2 or SiN).
+- Metal electrodes to create/control potential wells in the silicon that extend through the dielectric.
 
-## **CCD Readout Ciruit**
+  
+## **CCD Readout**
 <img width="1100" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="https://github.com/user-attachments/assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926" />
 
 - Sequential voltage changes on the metal contacts create moving potential wells that shuttle charges laterally
@@ -77,6 +78,22 @@ Advantages:
 This unique combination of features (ie Skipper readout, engineered interfaces, and noble liquid interaction) could enable detection sensitivity at the very low levels, levels critical for next-generation dark matter searches and neutrino physics.
 
 ---
+
+## Measurement Approach
+- Wetting/Non Wetting 
+
+
+- Surface Charge Trapping and Release
+  - C-V curves for MOS capacitor 
+
+
+
+
+
+
+___
+
+___
 
 ## **n-type High-Resistivity Silicon Substrates**
 Rationale: For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due to their deep depletion, back-illumination, and ultra-low noise. However, fabrication is more complex and can be costly.

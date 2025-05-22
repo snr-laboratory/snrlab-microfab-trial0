@@ -84,7 +84,7 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
       - A high-precision ammeter measures the resulting current signal over time
 
   - Capacitive Coupling Monitor
-    - Measures the electrical capacitance between the noble liquid and silicon substrate, which differs depending on how the liquid interacts with the Al₂O₃ surface.
+    - Measures the electrical capacitance between the noble liquid and silicon substrate, which differs depending on how the liquid interacts with the Al₂O₃ surface. Capacitance is measured using a precision LCR meter, applying a small AC signal across the metal contacts and the silicon substrate.
       - Non-wetting interfaces show low capacitance
       - Wetting interfaces show higher capacitance
         - Uses the main device structure itself as the measurement platform

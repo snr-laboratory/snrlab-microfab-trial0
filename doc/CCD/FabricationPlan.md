@@ -95,7 +95,7 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
   - C-V curves for MOS capacitor
     - Procedure:
       - Fabricate MOS capacitors (Al or TiN/Al₂O₃/n-Si).
-      - Apply a voltage sweep (-15V → +15V → -15V) at 1 kHz–1 MHz.
+      - Apply a voltage sweep 
       - Measure capacitance hysteresis width between forward/reverse sweeps.
     - Interpretation: Hysteresis width is proportional to trapped charge density in dielectrics 
     - [Characterization of Electrical Traps Formed in Al2O3 under Various ALD Conditions](https://pmc.ncbi.nlm.nih.gov/articles/PMC7767157/) - authors show how hysteresis and flatband voltage shifts in the C-V curves directly quantify trap densities and their dependence on ALD process parameters.

@@ -1,5 +1,5 @@
 # **Charge-Coupled Devices (CCDs)**
-The charge-coupled device (CCD) is part of a class of charge-transfer device structures widely used for imaging applications. CCDs are made of MOS capacitor arrays which technically have four main tasks that need to be preformed to generate an image: 1) charge generation, 2) charge collection, 3) charge transfer and 4) charge measurement. The basis of the CCD is the dynamic storage and withdrawal of charge in a series of MOS capacitors.
+The charge-coupled device (CCD) is part of a class of charge-transfer device structures widely used for imaging applications. CCDs are made of MOS capacitor arrays which technically have four main tasks that need to be preformed to generate an image: 1) charge generation, 2) charge collection, 3) charge transfer and 4) charge measurement. The basis of the CCD is the dynamic storage and withdrawal of charge in a series of MOS capacitors. 
 <img width="351" alt="Screenshot 2025-05-21 at 11 22 34 AM" src="assets/89845d29-a779-444e-9b53-c65147cb8196.png" />
 
 Figure 1. Bucket analogy used to describe CCD operation
@@ -11,15 +11,20 @@ Figure 2. Section of CCD array showing the architecture of a buried channel coup
 
 
 ## **CCD Operation**
-The basic types of CCDs are surface channel (SCCD) and buried channel (BCCD). In the SCCD, charge is stored and transferred at the semiconductor surface. 
+The  operation of a CCD is based on the storage and transfer of the minority carriers (know as the charge packet) between the potential wells created by the voltage pulses applied to the gate electrode of the MOS capacitors.  basic types of CCDs are surface channel (SCCD) and buried channel (BCCD). In the SCCD, charge is stored and transferred at the semiconductor surface. A potential loss mechanism identified in the early development of these devices, led to the buried gate channel design. Transfer efficiency can be improved by moving the charge transfer layer below the semiconductor/insulator interface.This shifts the maximum potential under each electrode into the semiconductor bulk, thus avoiding the semiconductor/insulator interface and loss of charge. This type of device is referred to as a BCCD shown below:
+
+<img width="445" alt="image" src="https://github.com/user-attachments/assets/e7460804-861d-4800-8284-e82c6b886c75" />
+Figure 3. Architecture of the BCCD designed to collet the signal charge away from the SiO2/Si interface.
+
+It would be ill advised to assume that the story is this simple. An important aspect of this device operation is understanding why the electrons do not make their way up to the Si/SiO2 surface (assuming absorption and charge generation has already occurred).
 
 ### 1) Charge Generation
 - The CCD consists of an array of pixels etched onto a silicon surface. When photons hit these pixels, they generate electron-hole pairs via the photoelectric effect. 
 
 <img width="548" alt="Screenshot 2025-05-21 at 10 43 30 AM" src="assets/0ead6180-86b6-4e81-ab36-20416ed72a52.png" />
-Figure 3. BCCD showing the ability of a CCD to intercept an incoming photon. 
+Figure 4. BCCD showing the ability of a CCD to intercept an incoming photon. 
 <img width="390" alt="Screenshot 2025-05-21 at 11 18 45 AM" src="assets/6235add2-41cc-48e8-a91f-a493e41b3c14.png" />
-Figure 4. Charge generation takes place in the silicon body of the CCD inside the potential well. 
+Figure 5. Charge generation takes place in the silicon body of the CCD inside the potential well. 
 
 - Each pixel acts as a MOS capacitor. An applied voltage on the gate creates a depletion region, forming a potential well, to trap electrons.
 - Charge generation efficiency (CGE) is described by a function called quantum efficiency (QE), which is the fraction  of incident photons that produces a useful charge in the silicon chip.
@@ -38,7 +43,7 @@ Figure 5. A positive potential is applied to the metal electrode resulting the c
 
 
 ### 2) Charge Transfer
-After exposure, the accumulated charge in each pixel is systematically shifted across the array
+After exposure, the accumulated charge in each pixel is systematically shifted across the array. There are three basic charge transfer mechanisms in a CCD: thermal diffusion, self-induced drift and the fringing field effect. 
    
 <img width="350" alt="Screenshot 2025-05-21 at 10 59 10 AM" src="assets/fbee74f1-be8e-476d-80f7-42b00a83c429.png" />
 
@@ -94,6 +99,7 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
 ---
 
 ## Measurement Approach
+So up unitl now, I can confidently state that this device in principle should work. However, the issues lies in the charge transfer efficiency. This will be determined by the wetting behavior between the LAr and Al2O3 interface. The wetting characteristics of any liquid-solid system are quantified through contact angle measurements, where angles below 90° indicate favorable wetting conditions and angles above 90° suggest poor wetting behavior. The theoretical foundation for understanding argon wetting behavior rests on Young's equation, which describes the equilibrium contact angle as a balance between solid-vapor, liquid-vapor, and solid-liquid interfacial tensions
 1) Wetting/Non Wetting 
   - Cryogenic Transient Current Technique (Cryo-TCT)
     - Cryo-TCT is a method to see how well a surface repels or attracts a very cold liquid—like liquid argon (LAr) or liquid xenon (LXe) by watching how electricity moves near the surface. Cryo-TCT directly measures how electrons interact with the interface

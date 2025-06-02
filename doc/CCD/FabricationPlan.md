@@ -1,20 +1,41 @@
 # **Charge-Coupled Devices (CCDs)**
-Charge-coupled devices (CCDs) are a highly sensitive light-detecting integrated circuit widely used in imaging applications. Its primary function is to capture light (photons), convert it into electrical charge (electrons), and then transfer this charge across the device to be read out and digitized as an image. 
+The charge-coupled device (CCD) is part of a class of charge-transfer device structures widely used for imaging applications. CCDs are made of MOS capacitor arrays which technically have four main tasks that need to be preformed to generate an image: 1) charge generation, 2) charge collection, 3) charge transfer and 4) charge measurement. The basis of the CCD is the dynamic storage and withdrawal of charge in a series of MOS capacitors.
+<img width="351" alt="Screenshot 2025-05-21 at 11 22 34 AM" src="assets/89845d29-a779-444e-9b53-c65147cb8196.png" />
 
-<img width="551" alt="Screenshot 2025-05-21 at 11 22 34 AM" src="assets/89845d29-a779-444e-9b53-c65147cb8196.png" />
+Figure 1. Bucket analogy used to describe CCD operation
+(scientific coupled devices)
 
-<img width="514" alt="Screenshot 2025-05-21 at 10 38 29 AM" src="assets/1dd93f92-0204-4774-816e-af5aa588f5c9.png" />
+<img width="414" alt="Screenshot 2025-05-21 at 10 38 29 AM" src="assets/1dd93f92-0204-4774-816e-af5aa588f5c9.png" />
+
+Figure 2. Section of CCD array showing the architecture of a buried channel coupled device
+
 
 ## **CCD Operation**
+The basic types of CCDs are surface channel (SCCD) and buried channel (BCCD). In the SCCD, charge is stored and transferred at the semiconductor surface. 
 
-### 1) Charge Generation/Storage
+### 1) Charge Generation
 - The CCD consists of an array of pixels etched onto a silicon surface. When photons hit these pixels, they generate electron-hole pairs via the photoelectric effect. 
 
 <img width="548" alt="Screenshot 2025-05-21 at 10 43 30 AM" src="assets/0ead6180-86b6-4e81-ab36-20416ed72a52.png" />
-
+Figure 3. BCCD showing the ability of a CCD to intercept an incoming photon. 
 <img width="390" alt="Screenshot 2025-05-21 at 11 18 45 AM" src="assets/6235add2-41cc-48e8-a91f-a493e41b3c14.png" />
+Figure 4. Charge generation takes place in the silicon body of the CCD inside the potential well. 
 
 - Each pixel acts as a MOS capacitor. An applied voltage on the gate creates a depletion region, forming a potential well, to trap electrons.
+- Charge generation efficiency (CGE) is described by a function called quantum efficiency (QE), which is the fraction  of incident photons that produces a useful charge in the silicon chip.
+
+### 2) Dynamic Storage
+If a large positive pulse is applied to the MOS gate electrode, a deep potential well is first created. This transient condition is sometimes called deep depletion. If we can inject electrons into this potential well, they will be stored there.
+
+**Note: a few msec after charge pairs have been generated, they will recombine if there is no electric field in the semiconductor substrate.**
+
+If there is an electric field in the semiconductor substrate, electrons and holes will be moved in opposite directions by the electrostatic force of the electric field.
+
+<img width="216" alt="image" src="https://github.com/user-attachments/assets/07e14dc5-dda9-4186-86b8-7b74ff8cb11c" />
+Figure 5. A positive potential is applied to the metal electrode resulting the creation of a potential well.
+(Streetman)
+
+
 
 ### 2) Charge Transfer
 After exposure, the accumulated charge in each pixel is systematically shifted across the array

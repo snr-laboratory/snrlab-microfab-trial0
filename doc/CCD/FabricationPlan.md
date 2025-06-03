@@ -5,18 +5,51 @@ The charge-coupled device (CCD) is part of a class of charge-transfer device str
 Figure 1. Bucket analogy used to describe CCD operation
 (scientific coupled devices)
 
-<img width="414" alt="Screenshot 2025-05-21 at 10 38 29 AM" src="assets/1dd93f92-0204-4774-816e-af5aa588f5c9.png" />
+<img width="314" alt="Screenshot 2025-05-21 at 10 38 29 AM" src="assets/1dd93f92-0204-4774-816e-af5aa588f5c9.png" />
 
-Figure 2. Section of CCD array showing the architecture of a buried channel coupled device
+Figure 2. Section of CCD array showing the architecture of a cleverly designed charge coupled device
 
 
 ## **CCD Operation**
-The  operation of a CCD is based on the storage and transfer of the minority carriers (know as the charge packet) between the potential wells created by the voltage pulses applied to the gate electrode of the MOS capacitors.  basic types of CCDs are surface channel (SCCD) and buried channel (BCCD). In the SCCD, charge is stored and transferred at the semiconductor surface. A potential loss mechanism identified in the early development of these devices, led to the buried gate channel design. Transfer efficiency can be improved by moving the charge transfer layer below the semiconductor/insulator interface.This shifts the maximum potential under each electrode into the semiconductor bulk, thus avoiding the semiconductor/insulator interface and loss of charge. This type of device is referred to as a BCCD shown below:
+The  operation of a CCD is based on the storage and transfer of the minority carriers (know as the charge packet) between the potential wells created by the voltage pulses applied to the gate electrode of the MOS capacitors.  basic types of CCDs are surface channel (SCCD) and buried channel (BCCD). In the SCCD, charge is stored and transferred at the semiconductor surface. A potential loss mechanism identified in the early development of these devices, led to the buried gate channel design. Transfer efficiency improved by moving the charge transfer layer below the semiconductor/insulator interface. This shifts the maximum potential under each electrode into the semiconductor bulk, thus avoiding the semiconductor/insulator interface and loss of charge. This type of device is referred to as a BCCD shown below:
 
-<img width="445" alt="image" src="https://github.com/user-attachments/assets/e7460804-861d-4800-8284-e82c6b886c75" />
-Figure 3. Architecture of the BCCD designed to collet the signal charge away from the SiO2/Si interface.
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/e7460804-861d-4800-8284-e82c6b886c75" />
+
+Figure 3. Architecture of the BCCD designed to collect the signal charge away from the SiO2/Si interface.
 
 It would be ill advised to assume that the story is this simple. An important aspect of this device operation is understanding why the electrons do not make their way up to the Si/SiO2 surface (assuming absorption and charge generation has already occurred).
+
+Initially, at the metallurgical junction, there is a very large density gradient in both electron and hole concentrations. Majority carrier electrons in the n region will begin diffusing into the p region, and majority carrier holes in the p region will begin diffusing into the n region. 
+
+<img src="https://github.com/user-attachments/assets/8d3caee3-b7af-46f7-bc0e-d7f6992442e6" width="300">
+
+Figure 4. The metallurgical junction with a very large density gradient showing both electron and hole diffusion directions.
+
+If we assume there are no external connections to the semiconductor, then this diffusion process cannot continue indefinitely. As electrons diffuse from the n region, positively charged donor atoms are left behind. Similarly, as holes diffuse from the p region, they uncover negatively charged acceptor atoms. The net positive and negative charges in the n and p regions induce an electric field in the region near the metallurgical junction, in the direction from the positive to the negative charge, or from the n to the p region.
+
+
+<img src="https://github.com/user-attachments/assets/8966a2dd-b63f-4d3e-bf55-584cb34c9893" width="400">
+
+Figure 5. Space charge region showing the different forces that exactly balance each other in thermal equilibrium.
+
+The net positively and negatively charged regions are referred to as the space charge region. Essentially all electrons and holes are swept out of the space charge region by the electric field. Since the space charge region is depleted of any mobile charge, this region is also referred to as the depletion region; these two terms will be used interchangeably. Density gradients still exist in the majority carrier concentrations at each edge of the space charge region. We can think of a density gradient as producing a “diffusion force” that acts on the majority carriers. The electric field in the space charge region produces another force on the electrons and holes, which is in the opposite direction to the diffusion force for each type of particle. In thermal equilibrium, the diffusion force and the E-field force exactly balance each other.
+
+Again, carrier transport of the mobile charge carriers is governed by two primary transport mechanisms:
+1) diffusion due to concentration gradients and
+2) drift caused by the electric field in the depletion region.
+**Drift current being equal to diffusion current leads to a fixed delpetion width (no longer continues to expand)**
+
+A closer look at the pn junction is helpful to fully appreciate the device operation and why the buried channel can assist with loss of charge:
+
+
+<img src="https://github.com/user-attachments/assets/bf505f64-c12e-4487-a687-064205816e5b" width="400">
+
+Figure 6. Top MOS structure: Electrons and holes diffuse across the junction due to concentration gradients (in this case a repulsive force action). The mobile charge carriers accumulate or "hover" at the respective edges of the depletion zone. Bottom MOS structure: potential well formed by applying a positive pulse to the gate electrode as well as the change in deletion region and direction of electric field at device interface of nSi/pSi. 
+
+The potential well created is dependent on the applied voltage among many other things like doping and oxide thickness.
+
+<img src="https://github.com/user-attachments/assets/bfa23129-f13e-4bf6-bd4e-47b356554109" width="400">
+
 
 ### 1) Charge Generation
 - The CCD consists of an array of pixels etched onto a silicon surface. When photons hit these pixels, they generate electron-hole pairs via the photoelectric effect. 
@@ -37,6 +70,7 @@ If a large positive pulse is applied to the MOS gate electrode, a deep potential
 If there is an electric field in the semiconductor substrate, electrons and holes will be moved in opposite directions by the electrostatic force of the electric field.
 
 <img width="216" alt="image" src="https://github.com/user-attachments/assets/07e14dc5-dda9-4186-86b8-7b74ff8cb11c" />
+
 Figure 5. A positive potential is applied to the metal electrode resulting the creation of a potential well.
 (Streetman)
 

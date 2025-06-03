@@ -1,5 +1,6 @@
 # **Charge-Coupled Devices (CCDs)**
 The charge-coupled device (CCD) is part of a class of charge-transfer device structures widely used for imaging applications. CCDs are made of MOS capacitor arrays which technically have four main tasks that need to be preformed to generate an image: 1) charge generation, 2) charge collection, 3) charge transfer and 4) charge measurement. The basis of the CCD is the dynamic storage and withdrawal of charge in a series of MOS capacitors. 
+
 <img width="351" alt="Screenshot 2025-05-21 at 11 22 34 AM" src="assets/89845d29-a779-444e-9b53-c65147cb8196.png" />
 
 Figure 1. Bucket analogy used to describe CCD operation

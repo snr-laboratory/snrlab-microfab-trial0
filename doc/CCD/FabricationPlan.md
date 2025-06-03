@@ -55,9 +55,12 @@ The potential well created is dependent on the applied voltage among many other 
 ### 1) Charge Generation
 - The CCD consists of an array of pixels etched onto a silicon surface. When photons hit these pixels, they generate electron-hole pairs via the photoelectric effect. 
 
-<img width="548" alt="Screenshot 2025-05-21 at 10 43 30 AM" src="assets/0ead6180-86b6-4e81-ab36-20416ed72a52.png" />
+<img width="400" alt="Screenshot 2025-05-21 at 10 43 30 AM" src="assets/0ead6180-86b6-4e81-ab36-20416ed72a52.png" />
+
 Figure 4. BCCD showing the ability of a CCD to intercept an incoming photon. 
-<img width="390" alt="Screenshot 2025-05-21 at 11 18 45 AM" src="assets/6235add2-41cc-48e8-a91f-a493e41b3c14.png" />
+
+<img width="400" alt="Screenshot 2025-05-21 at 11 18 45 AM" src="assets/6235add2-41cc-48e8-a91f-a493e41b3c14.png" />
+
 Figure 5. Charge generation takes place in the silicon body of the CCD inside the potential well. 
 
 - Each pixel acts as a MOS capacitor. An applied voltage on the gate creates a depletion region, forming a potential well, to trap electrons.
@@ -70,7 +73,7 @@ If a large positive pulse is applied to the MOS gate electrode, a deep potential
 
 If there is an electric field in the semiconductor substrate, electrons and holes will be moved in opposite directions by the electrostatic force of the electric field.
 
-<img width="216" alt="image" src="https://github.com/user-attachments/assets/07e14dc5-dda9-4186-86b8-7b74ff8cb11c" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/07e14dc5-dda9-4186-86b8-7b74ff8cb11c" />
 
 Figure 5. A positive potential is applied to the metal electrode resulting the creation of a potential well.
 (Streetman)
@@ -80,14 +83,14 @@ Figure 5. A positive potential is applied to the metal electrode resulting the c
 ### 2) Charge Transfer
 After exposure, the accumulated charge in each pixel is systematically shifted across the array. There are three basic charge transfer mechanisms in a CCD: thermal diffusion, self-induced drift and the fringing field effect. 
    
-<img width="350" alt="Screenshot 2025-05-21 at 10 59 10 AM" src="assets/fbee74f1-be8e-476d-80f7-42b00a83c429.png" />
+<img width="300" alt="Screenshot 2025-05-21 at 10 59 10 AM" src="assets/fbee74f1-be8e-476d-80f7-42b00a83c429.png" />
 
 - By sequentially clocking voltages on adjacent gates, electrons are shifted from one pixel to the next.
 - This process, called charge coupling, moves the charge from pixel to pixel until it reaches the output node
 
 ### 3) Readout
 The charge is then amplified and converted into a voltage, which is digitized to form an image.
-<img width="524" alt="Screenshot 2025-05-21 at 12 30 49 PM" src="assets/b821e755-a178-4762-9503-946d7b2714ab.png" />
+<img width="300" alt="Screenshot 2025-05-21 at 12 30 49 PM" src="assets/b821e755-a178-4762-9503-946d7b2714ab.png" />
 
 
 ---
@@ -95,13 +98,13 @@ The charge is then amplified and converted into a voltage, which is digitized to
 ## **Fabrication Plan**
 Design a Skipper "CCD Like" device for detecting low energy processes (eg. Coherent Elastic Neutrino-Nucleus Scattering or Weakly Interacting Massive Particles (WIMPS)). The device operates on the fundamental charge-coupling principle similar to standard CCDs, but with a critical difference. While traditional CCDs convert light photons into electric signals, this device detects ionization events in liquid argon (LAr) or liquid xenon (LXe). When a particle interaction occurs in the noble liquid, it creates electron-hole pairs through ionization.
 
-<img width="678" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb.png" />
+<img width="500" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb.png" />
 
 Critical difference: A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface (optional reasearch: SiO2 or SiN).
   - When ionization electrons are created in the LAr/LXe by particle interactions, they drift toward the Al₂O₃ interface but remain physically in the noble liquid. The non-wetting property of the interface is crucial, as it creates a natural barrier that keeps electrons mobile in the liquid rather than becoming trapped at surface defects.
   
 ## **CCD Readout**
-<img width="1100" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926.png" />
+<img width="500" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926.png" />
 
 - Skipper features allow multiple non-destructive measurements of the same charge packet 
 - Sensing Node Architecture: When charges reach the output stage, they encounter a specialized structure with:
@@ -134,16 +137,20 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
 ---
 
 ## Measurement Approach
-So up unitl now, I can confidently state that this device in principle should work. However, the issues lies in the charge transfer efficiency. This will be determined by the wetting behavior between the LAr and Al2O3 interface. The wetting characteristics of any liquid-solid system are quantified through contact angle measurements, where angles below 90° indicate favorable wetting conditions and angles above 90° suggest poor wetting behavior. The theoretical foundation for understanding argon wetting behavior rests on Young's equation, which describes the equilibrium contact angle as a balance between solid-vapor, liquid-vapor, and solid-liquid interfacial tensions
+So up unitl now, I can confidently state that this device in principle should work. However, the issues lies in the charge transfer efficiency. This will be determined by the wetting behavior between the LAr and Al2O3 interface. The wetting characteristics of any liquid-solid system are quantified through contact angle measurements, where angles below 90° indicate favorable wetting conditions and angles above 90° suggest poor wetting behavior. The theoretical foundation for understanding argon wetting behavior rests on Young's equation, which describes the equilibrium contact angle as a balance between solid-vapor, liquid-vapor, and solid-liquid interfacial tensions. 
 1) Wetting/Non Wetting 
-  - Cryogenic Transient Current Technique (Cryo-TCT)
-    - Cryo-TCT is a method to see how well a surface repels or attracts a very cold liquid—like liquid argon (LAr) or liquid xenon (LXe) by watching how electricity moves near the surface. Cryo-TCT directly measures how electrons interact with the interface
-    - Non-wetting interfaces (desired): Show fast rise times (nanoseconds) with symmetric decay in the current signal
-    - Wetting interfaces (problematic): Show slow rise times (microseconds) with extended decay tails
-      - A small test structure with the same Al₂O₃ coating is placed in the cryogenic environment
-      - UV laser pulses (266 nm) generate electrons near the Al₂O₃ interface
-      - A lateral electric field (0.1–10 V/cm) pushes these electrons along the interface
-      - A high-precision ammeter measures the resulting current signal over time
+  - Cryogenic Sessile Drop Contact Angle Measurement
+    - Method:
+      - Sample preparation: Fabricate Al₂O₃ coated silicon substrates using identical ALD conditions as the detector.
+      - Cryostat setup: Place the substrate in a temperature-controlled cryostat filled with purified liquid argon/xenon.
+      - Droplet injection: Use a piezoelectric picoliter dispenser to deposit a 50–100 pl noble liquid droplet onto the Al₂O₃ surface.
+      - Imaging: Capture droplet profile via high-speed camera with backlit illumination through a cryostat viewport.
+      - Analysis: Calculate contact angle using Young-Laplace equation fitting.
+      - Key advantages:
+Directly measures wettability under operational conditions (cryogenic temps, noble liquids).
+Sub-1° precision achievable with nanodroplets.
+Validates interfacial energy models predicting electron mobility.
+
 
   - Capacitive Coupling Monitor
     - Measures the electrical capacitance between the noble liquid and silicon substrate, which differs depending on how the liquid interacts with the Al₂O₃ surface. Capacitance is measured using a precision LCR meter, applying a small AC signal across the metal contacts and the silicon substrate.

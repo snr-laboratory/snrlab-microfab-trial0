@@ -55,11 +55,11 @@ The potential well created is dependent on the applied voltage among many other 
 ### 1) Charge Generation
 - The CCD consists of an array of pixels etched onto a silicon surface. When photons hit these pixels, they generate electron-hole pairs via the photoelectric effect. 
 
-<img width="400" alt="Screenshot 2025-05-21 at 10 43 30 AM" src="assets/0ead6180-86b6-4e81-ab36-20416ed72a52.png" />
+<img width="300" alt="Screenshot 2025-05-21 at 10 43 30 AM" src="assets/0ead6180-86b6-4e81-ab36-20416ed72a52.png" />
 
 Figure 4. BCCD showing the ability of a CCD to intercept an incoming photon. 
 
-<img width="400" alt="Screenshot 2025-05-21 at 11 18 45 AM" src="assets/6235add2-41cc-48e8-a91f-a493e41b3c14.png" />
+<img width="300" alt="Screenshot 2025-05-21 at 11 18 45 AM" src="assets/6235add2-41cc-48e8-a91f-a493e41b3c14.png" />
 
 Figure 5. Charge generation takes place in the silicon body of the CCD inside the potential well. 
 
@@ -73,7 +73,7 @@ If a large positive pulse is applied to the MOS gate electrode, a deep potential
 
 If there is an electric field in the semiconductor substrate, electrons and holes will be moved in opposite directions by the electrostatic force of the electric field.
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/07e14dc5-dda9-4186-86b8-7b74ff8cb11c" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/07e14dc5-dda9-4186-86b8-7b74ff8cb11c" />
 
 Figure 5. A positive potential is applied to the metal electrode resulting the creation of a potential well.
 (Streetman)
@@ -83,7 +83,7 @@ Figure 5. A positive potential is applied to the metal electrode resulting the c
 ### 2) Charge Transfer
 After exposure, the accumulated charge in each pixel is systematically shifted across the array. There are three basic charge transfer mechanisms in a CCD: thermal diffusion, self-induced drift and the fringing field effect. 
    
-<img width="300" alt="Screenshot 2025-05-21 at 10 59 10 AM" src="assets/fbee74f1-be8e-476d-80f7-42b00a83c429.png" />
+<img width="250" alt="Screenshot 2025-05-21 at 10 59 10 AM" src="assets/fbee74f1-be8e-476d-80f7-42b00a83c429.png" />
 
 - By sequentially clocking voltages on adjacent gates, electrons are shifted from one pixel to the next.
 - This process, called charge coupling, moves the charge from pixel to pixel until it reaches the output node
@@ -95,16 +95,30 @@ The charge is then amplified and converted into a voltage, which is digitized to
 
 ---
 
-## **Fabrication Plan**
-Design a Skipper "CCD Like" device for detecting low energy processes (eg. Coherent Elastic Neutrino-Nucleus Scattering or Weakly Interacting Massive Particles (WIMPS)). The device operates on the fundamental charge-coupling principle similar to standard CCDs, but with a critical difference. While traditional CCDs convert light photons into electric signals, this device detects ionization events in liquid argon (LAr) or liquid xenon (LXe). When a particle interaction occurs in the noble liquid, it creates electron-hole pairs through ionization.
+## **LAr-CCD Detector**
+Design a skipper "CCD Like" device for detecting low energy processes (eg. Neutrinoless double beta decay). The device operates on the fundamental charge-coupling principle similar to standard CCDs, but with a critical difference. While traditional CCDs convert light photons into electric signals, this device detects ionization events in liquid argon (LAr). When a particle interaction occurs, it creates electron-hole pairs through ionization in the noble liquid similar to Si in a standard CCD. 
 
-<img width="500" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb.png" />
+The proposed detector employs a layered architecture consisting of a silicon substrate base, metal gate electrodes, a 50 nm aluminum oxide (Al₂O₃) layer deposited via atomic layer deposition (ALD), and liquid argon as the detection medium. There is an external electric field being applied to this detector so if ionization in LAr creates free electrons they will drift towards the Al2O3 surface/interface. This configuration creates a series of controlled interfaces, with the LAr/Al₂O₃ boundary being particularly critical for charge transfer efficiency.
 
-Critical difference: A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface (optional reasearch: SiO2 or SiN).
-  - When ionization electrons are created in the LAr/LXe by particle interactions, they drift toward the Al₂O₃ interface but remain physically in the noble liquid. The non-wetting property of the interface is crucial, as it creates a natural barrier that keeps electrons mobile in the liquid rather than becoming trapped at surface defects.
+The use of ALD for the aluminum oxide layer is especially significant, as this deposition technique produces exceptionally uniform with precisely controlled thickness and surface properties. The 50 nm thickness specification suggests a careful balance between dielectric strength and field penetration requirements, while the emphasis on "extreme flatness and uniformity" indicates the importance of interface quality for device performance.
+
+
+<img width="600" alt="Screenshot 2025-05-16 at 7 00 17 PM" src="assets/d64e9c04-84df-4b1c-add3-c7d51be4ebdb.png" />
+
+Operation: A fundamental operating principle of the device involves using the gate electrodes to establish and manipulate potential wells within the liquid argon volume. When a potential is applied to one gate electrode, a capacitive effect generates a potential well in the LAr that attracts and confines negative charges. By modulating the potentials on adjacent electrodes, you create penetrating electric fringing fields that allow for controlled lateral charge transfer between wells.
+
+This charge-coupled device (CCD) approach adapted for cryogenic particle detection represents an innovative application of well-established semiconductor principles to liquid argon detector technology. The success of this approach depends critically on the quality of the LAr/Al₂O₃ interface, as this boundary mediates the coupling between the electric fields generated by the gate electrodes and the charges within the liquid argon.
+
+
+Critical difference: A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface. Resembles the CCD architecture but flipped upside down. 
+  - When ionization electrons are created in the LAr/LXe by particle interactions, they drift toward the Al₂O₃ interface but remain physically in the noble liquid. **The non-wetting property of the interface is crucial, as it creates a natural barrier that keeps electrons mobile in the liquid rather than becoming trapped at surface defects**
+
+Question: how severe is recombination in LAr and if significant how to overcome recombination losses in LAr?
+
+
   
 ## **CCD Readout**
-<img width="500" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926.png" />
+<img width="700" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926.png" />
 
 - Skipper features allow multiple non-destructive measurements of the same charge packet 
 - Sensing Node Architecture: When charges reach the output stage, they encounter a specialized structure with:
@@ -113,8 +127,31 @@ Critical difference: A very thin layer of Al2O3 for achieving uniform and flat f
   - A Output Gate (OG) - Acts as a gatekeeper, regulating the movement of charge from SW to SN so that the measurement can be performed accurately and repeatedly
 
 
-## **"CCD Like" Operation**
-Conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet. The unique layered structure allows these ionization electrons to be:
+## **Operation Concerns/Issues**
+Conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet. 
+
+
+
+**Case for non-wetting:**
+
+**Electrical Interface Considerations:**
+
+The efficiency of charge transfer in the proposed device depends critically on the quality of the electrical interface between the liquid argon and the aluminum oxide surface. Wetting conditions provide several fundamental advantages for electrical contact and charge transfer efficiency. When liquid argon completely wets the alumina surface, it forms intimate molecular-level contact across the entire interface area, eliminating air gaps or void spaces that could act as electrical barriers or field distortion sources. Non-wetting conditions, conversely, would result in the formation of contact line discontinuities, trapped gas regions, and potentially unstable interface geometries. These features introduce several mechanisms that degrade charge transfer efficiency: increased interface resistance due to reduced contact area, field distortions caused by dielectric discontinuities, and potential charge trapping sites at the three-phase contact lines
+
+**Field Uniformity and Distribution:**
+
+Uniform electric field distribution is essential for predictable and efficient charge transfer operations in your device. The electric field lines must penetrate consistently into the liquid argon to create well-defined potential wells and enable controlled charge movement between adjacent gate electrodes. Wetting conditions support uniform field distribution by maintaining a constant dielectric interface without geometric discontinuities that could distort field lines
+
+Designing the device to promote and maintain wetting conditions at the liquid argon/alumina interface. This can be achieved through several approaches: ensuring that the aluminum oxide surface is clean and properly prepared before assembly, maintaining high purity in the liquid argon to prevent contamination that could alter wetting properties, and potentially applying surface treatments to the alumina layer that enhance wetting without compromising electrical properties.
+
+**Cryogenic Liquid Wetting Characteristics:** 
+
+Research on cryogenic liquid wetting indicates that most cryogenic fluids, including liquid argon, exhibit strong wetting tendencies on solid surfaces. Experimental measurements have shown that cryogenic liquids typically produce contact angles well below 90° on most surfaces, with the highest measured contact angles being approximately 30°. This natural wetting tendency results from the low surface tension of cryogenic liquids relative to the surface energy of most solids.
+
+
+**Case for wetting:**
+
+The unique layered structure allows these ionization electrons to be:
 
 1) Generated in the noble liquid (LAr/LXe)
 2) Drifted toward the Al₂O₃ interface, but remain in the noble liquid
@@ -126,6 +163,16 @@ Note: Noble liquids naturally exhibit poor wetting on oxide surfaces. This is ac
 - The electrons remain mobile in the liquid rather than "sticking" to the surface
 - Electric fields can effectively manipulate these mobile electrons
 - The non-wetting condition creates a situation where electrons remain in the noble liquid but close enough to the interface to be trapped while allowing their controlled movement through the potential wells.
+- At cryogenic LAr temperatures (~87K), the Al/Al₂O₃ interface is strongly non-wetting. The transition to wetting behavior occurs around 1150K, far above your operating temperature.
+- This non-wetting behavior is actually advantageous for your application because:
+It maintains atomically abrupt interfaces essential for precise electric field control
+Prevents LAr from penetrating into surface defects that could trap charge
+Ensures well-defined boundary conditions for potential well formation
+
+
+
+
+
 
 Advantages: 
 - Sub-electron Noise Levels: Multiple sampling reduces noise by a factor of 1/√N (where N is the number of samples)

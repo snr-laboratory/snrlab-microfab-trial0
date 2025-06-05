@@ -66,6 +66,11 @@ Material Selection and Process Flow:
 
 In principle, this device should work. However, the issue lies in the charge transfer efficiency (CTE) which is heavily dependent on the charge trapping due to defects on the Al2O3 surface. The wetting behavior also plays a role in CTE. The wetting characteristics of any liquid-solid system are quantified through contact angle measurements, where angles below 90° indicate favorable wetting conditions and angles above 90° suggest poor wetting behavior. The theoretical foundation for understanding argon wetting behavior rests on Young's equation, which describes the equilibrium contact angle as a balance between solid-vapor, liquid-vapor, and solid-liquid interfacial tensions.
 
+Measurement Plan: 
+- Multifrequency C–V characterization to distinguish between border and interface traps.
+- Hysteresis analysis for quantifying trapped charge density.
+- Cryogenic contact angle measurements to assess wetting
+
 Instrument: Semiconductor Characterization System (ex: Keithley 4200 SRS)
 
 [Gate Dielectric Capacitance-Voltage Characterization Using the Model 4200 Semiconductor Characterization System](https://scientific-devices.com.au/wp-content/uploads/2017/10/Gate-Dielectric-Capacitance-Voltage-Characterisation.pdf)

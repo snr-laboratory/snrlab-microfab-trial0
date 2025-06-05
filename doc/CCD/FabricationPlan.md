@@ -208,18 +208,6 @@ For weak-signal searches (WIMPs, neutrinos), n-type substrates are superior due 
   
 ---
 
-### **Buried Channel Design**
-Buried Channel (BCCDs) keep charge away from the Si/SiO₂ interface (0.2-0.3 μm below surface), minimizing interaction with surface defects.The buried channel structure (p-type buried channel in high-resistivity silicon) remains essential because:
-
-1) Noise Reduction: This structure has the advantages of higher transfer efficiency and lower dark current, from reduced surface recombination
-2) Charge Confinement: The buried channel confines charge in a plane away from the interface, thus avoiding surface states
-
-
-## **Channel Doping**
-p-channel CCDs on n-type substrates show superior radiation tolerance compared to conventional n-channel devices
-
-- Better radiation hardness for long-term operation in particle physics environments
-- Applying negative voltage to metal electrodes above n-type silicon strengthens potential barriers, creating deeper potential wells
   
 ## **Metal Electrodes**
 - TiN electrodes offer better thermal matching (CTE) with silicon for cryogenic operation compared to aluminum
@@ -234,37 +222,25 @@ Float-zone, high-resistivity n-type silicon (10,000 Ω·cm - full depletion), **
 RCA clean (NH₄OH/H₂O₂ followed by HCl/H₂O₂) and HF dip to remove native oxide
 - Equipment:
 RCA cleaning station and acid wet bench with HF handling capabilities
-2. Gate Dielectric Formation
-- Thermal Oxidation:
-50 nm SiO₂ growth at 900°C in dry O₂
 - Silicon Nitride Deposition:
 50 nm Si₃N₄ via LPCVD at 780°C (LPCVD produces more uniform Si₃N₄ films with fewer defects and higher step coverage than alternative methods). Si₃N₄ layer serves as a high-quality etch stop during subsequent processing and provides excellent electrical isolation
 - Equipment:
 Thermal oxidation furnace and Low-Pressure Chemical Vapor Deposition (LPCVD) system
-3. p-Channel Formation
-- Photolithography:
-Channel definition using stepper lithography (2.5 μm minimum feature) (Enables feature sizes below 1 micron by exposing small sections of the wafer at a time)
-- Ion Implantation:
-Boron implant (50-70 keV, 1-5×10¹² cm⁻²) to form p-channel
-- Annealing:
-900°C, 30 min in N₂ ambient to activate dopants
-- Equipment:
-Stepper lithography system, ion implanter and annealing furnace
-4. Gate Structure Formation
+2. Gate Structure Formation
 - Polysilicon Deposition:
 Triple-level polysilicon gate structure (3-phase CCD). Each layer 0.5 μm thick, in-situ phosphorus doped
 - Etching:
 Plasma etching with Cl₂/HBr chemistry for high selectivity to Si₃N₄
 - Equipment:
 LPCVD system, Plasma etcher and Stepper lithography system
-5. Backside Processing
+3. Backside Processing
 - Thinning:
 Mechanical grinding to target thickness (200-300 μm) and chemical-mechanical polishing for surface smoothing
 - Backside Contact:
 In-situ doped polysilicon (ISDP) layer (20-25 nm) deposited at 650°C (Forms the critical n+ contact (20-25 nm thick) on the back side of fully-depleted CCDs and thin, uniform ISDP layer enables excellent blue/UV response while providing low-resistance electrical contact)
 - Equipment:
 Wafer grinding tool, chemical mechanical polishing (CMP) system and LPCVD system
-6. Al₂O₃ Interface Layer (Key Innovation)
+4. Al₂O₃ Interface Layer (Key Innovation)
 - Atomic Layer Deposition:
 50 nm Al₂O₃ using trimethylaluminum (TMA) and H₂O precursors at 150°C
 0.97 Å/cycle growth rate for precise thickness control
@@ -272,7 +248,7 @@ Wafer grinding tool, chemical mechanical polishing (CMP) system and LPCVD system
 400°C in N₂ ambient to optimize interface states and create controlled defect density
 - Equipment:
 ALD system and Annealing furnace
-7. Metal Electrode Fabrication
+5. Metal Electrode Fabrication
 - Metal Deposition:
 TiN via reactive sputtering at 400°C (100 μm pitch)
 - Patterning:
@@ -332,78 +308,6 @@ Ionization Detection Mechanism
 - The spatial resolution of the CCD-like design may enable tracking capabilities that could distinguish 0νββ events (two electron tracks from same vertex) from background events
 - The buried channel design with n-type substrate enables deep depletion, reducing surface-related backgrounds
 
-
-
----
-
-
----
-
-**Buried Channel Design**- Created via phosphorus ion implantation to form an n-doped region within the p-type epitaxial layer[^1][^6].
-- Advantages: Higher charge transfer efficiency (CTE > 0.99999) and reduced surface recombination compared to surface-channel designs[^1][^7].
-- Implant: Phosphorus @ 150 keV (1e16 cm⁻³) to form n-type layer 1.5 μm below surface.
-- Annealing: 900°C, N₂ ambient to activate dopants without oxidizing gates.
-The n-type doped layer creates a buried channel where electrons flow. This keeps electrons ~1-2 μm away from the Si-SiO₂ interface, preventing interaction with oxide traps.
-  
-
----
-## **Materials and Substrate Preparation**
-
-Below is a virtual tutorial of CCD fabrication:
-[CCD Virtual Digital Imaging Tutorial](https://micro.magnet.fsu.edu/primer/java/digitalimaging/ccd/virtual2/index.html)
-
-CCDs are typically fabricated on **high-resistivity silicon substrates** (10,000–12,000 Ω·cm) to enable deep depletion regions (200–300 μm) for improved near-infrared response[^2][^7]. Two primary approaches exist:
-
-- **p-type substrates**: Used for traditional front-illuminated devices with epitaxial silicon layers (≈20 µm thick)[^1][^8].
-- **n-type substrates**: Enable back-illuminated, fully depleted CCDs by applying bias voltages to deplete the entire wafer thickness[^2][^6].
-
-Key steps include:
-
-- **Epitaxial growth**: A lightly doped p-type or n-type layer is grown to form the photoactive region[^1][^6].
-- **Gettering**: In-situ doped polysilicon layers on the wafer backside reduce impurities and dark current[^2][^9].
-
-### **Substrate and Passivation**
-- Material: Float-zone Si (200 mm, 10 kΩ·cm, p-type) for deep depletion (~300 μm).
-- ALD Passivation: 50 nm Al₂O₃ on backside + SiO₂/SiN frontside stack for QE >90% (UV/VIS) .
-
----
-
-
-### **Gate Architecture**
-
-- **Triple polysilicon gates**: Patterned using plasma etching (Cl₂/HBr) to create phase-shifted electrodes for charge transfer[^2][^6].
-- **Gate insulator**: 500 Å SiO₂ + 500 Å Si₃N₄ for improved dielectric properties[^2][^7].
-
-
-### **Channel Isolation**
-
-- **LOCOS process**: Creates oxide-based channel stops to prevent cross-talk between pixels[^1][^6].
-- **p+ implants**: Underlie channel stops to further confine charge packets[^1].
-
----
-
-## **Fabrication Process Steps**
-
-1. **Wafer preparation**: High-resistivity silicon wafers are cleaned and polished[^2][^7].
-2. **Ion implantation**: Defines buried channels and transistor regions[^6][^9].
-3. **Gate oxide growth**: Thermal SiO₂ combined with LPCVD Si₃N₄[^2].
-4. **Polysilicon deposition**: Three layers deposited and etched to form transfer gates[^6][^8].
-5. **Metallization**: Aluminum-silicon contacts for interconnects[^2].
-6. **Backside processing** (for back-illuminated devices):
-    - Thin doped polysilicon layer + indium tin oxide (ITO) for ohmic contact[^2][^7].
-    - Bonding to glass support wafers followed by silicon handle removal[^5][^6].
-
----
-
-## **Back-Illumination Techniques**
-
-- **Thinning**: Traditional CCDs are thinned to ≈20 µm but suffer from fringing at near-IR wavelengths[^2][^3].
-- **Full depletion**: Achieved via backside bias (≈40 V) on high-resistivity substrates, enabling:
-    - **Broadband QE**: >80% from 400–900 nm[^2][^6].
-    - **Reduced fringing**: Thick (200–300 µm) depletion minimizes interference[^2][^7].
-- **Anti-reflection coatings**: Optimized for specific wavelength ranges (e.g., SiO₂/Si₃N₄ stacks)[^5][^7].
-
-
 ## **Resources**
 
 - [Weak Interactions of Leptons and Quarks Commins & Bucksbaum](https://www.google.com/books/edition/Weak_Interactions_of_Leptons_and_Quarks/A15OvAvA7HAC?hl=en&gbpv=1&printsec=frontcover)
@@ -414,34 +318,6 @@ Key steps include:
 
 - [Signal-to-Noise in Optical Astronomy](https://www.ucolick.org/~bolte/AY257/s_n.pdf)
 
----
-
----
-
-## **Performance Challenges and Solutions**
-
-- **Dark current**: Mitigated via gettering, substrate bias, and cooling[^2][^6].
-- **Charge diffusion**: Controlled through fully depleted operation and lateral electric fields[^7][^9].
-- **Radiation hardness**: Critical for space applications; mitigated via epitaxial design and process hardening[^1][^7].
 
 
-<div style="text-align: center">⁂</div>
-
-[^1]: https://en.wikipedia.org/wiki/Charge-coupled_device
-
-[^2]: https://www.osti.gov/servlets/purl/838066
-
-[^3]: https://www.teledynevisionsolutions.com/learn/learning-center/imaging-fundamentals/ccd-vs-cmos/
-
-[^4]: https://www.rigility.com/ccd-cameras-an-overview/
-
-[^5]: https://www.techbriefs.com/component/content/article/13450-npo-41190
-
-[^6]: https://www.sciencedirect.com/science/article/abs/pii/S0168900207011564
-
-[^7]: https://onlinelibrary.wiley.com/doi/10.1002/asna.20230072
-
-[^8]: https://www.higp.hawaii.edu/~gillis/GG671b/Week02/Readings/Handbook of CCD astronomy Ch 2.pdf
-
-[^9]: https://www.imagesensors.org/Past Workshops/2013 Workshop/2013 Papers/08-4_081_holland_paper.pdf
 

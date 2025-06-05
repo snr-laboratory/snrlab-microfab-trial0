@@ -111,13 +111,12 @@ This charge-coupled device (CCD) approach adapted for cryogenic particle detecti
 
 
 Critical difference: A very thin layer of Al2O3 for achieving uniform and flat features at this specific interface. Resembles the CCD architecture but flipped upside down. 
-  - When ionization electrons are created in the LAr/LXe by particle interactions, they drift toward the Al₂O₃ interface but remain physically in the noble liquid. **The non-wetting property of the interface is crucial, as it creates a natural barrier that keeps electrons mobile in the liquid rather than becoming trapped at surface defects**
+  - When ionization electrons are created in the LAr/LXe by particle interactions, they drift toward the Al₂O₃ interface but remain physically in the noble liquid. 
 
 Question: how severe is recombination in LAr and if significant how to overcome recombination losses in LAr?
 
-
-  
 ## **CCD Readout**
+
 <img width="700" alt="Screenshot 2025-05-20 at 4 56 27 PM" src="assets/aaf8f65d-f268-4c69-8fc8-0d9ce0fcb926.png" />
 
 - Skipper features allow multiple non-destructive measurements of the same charge packet 
@@ -130,9 +129,7 @@ Question: how severe is recombination in LAr and if significant how to overcome 
 ## **Operation Concerns/Issues**
 Conventional CCDs measure charge packets only once before discarding them, Skipper CCDs incorporate a floating gate amplifier that enables multiple non-destructive measurements of the same charge packet. 
 
-
-
-**Case for non-wetting:**
+**Case for Wetting:**
 
 **Electrical Interface Considerations:**
 
@@ -148,36 +145,15 @@ Designing the device to promote and maintain wetting conditions at the liquid ar
 
 Research on cryogenic liquid wetting indicates that most cryogenic fluids, including liquid argon, exhibit strong wetting tendencies on solid surfaces. Experimental measurements have shown that cryogenic liquids typically produce contact angles well below 90° on most surfaces, with the highest measured contact angles being approximately 30°. This natural wetting tendency results from the low surface tension of cryogenic liquids relative to the surface energy of most solids.
 
-
-**Case for wetting:**
-
 The unique layered structure allows these ionization electrons to be:
 
 1) Generated in the noble liquid (LAr/LXe)
-2) Drifted toward the Al₂O₃ interface, but remain in the noble liquid
+2) Drifted toward the Al₂O₃ interface, but remain in the noble liquid (if not lost to traps)
 3) Transported laterally via potential wells created by the metal electrodes
 4) Read out through a skipper circuit design
 
-Note: Noble liquids naturally exhibit poor wetting on oxide surfaces. This is actually beneficial for this detector because:
-- Poor wetting prevents strong adhesion forces that would trap electrons at the interface
-- The electrons remain mobile in the liquid rather than "sticking" to the surface
-- Electric fields can effectively manipulate these mobile electrons
-- The non-wetting condition creates a situation where electrons remain in the noble liquid but close enough to the interface to be trapped while allowing their controlled movement through the potential wells.
-- At cryogenic LAr temperatures (~87K), the Al/Al₂O₃ interface is strongly non-wetting. The transition to wetting behavior occurs around 1150K, far above your operating temperature.
-- This non-wetting behavior is actually advantageous for your application because:
-It maintains atomically abrupt interfaces essential for precise electric field control
-Prevents LAr from penetrating into surface defects that could trap charge
-Ensures well-defined boundary conditions for potential well formation
-
-
-
-
-
-
 Advantages: 
 - Sub-electron Noise Levels: Multiple sampling reduces noise by a factor of 1/√N (where N is the number of samples)
-
-[Skipper-CCDs: current applications and future](https://agenda.infn.it/event/22092/contributions/166721/attachments/91165/123549/Poster%20-%20Skipper-CCDs_%20current%20applications%20and%20future.pdf)
 
 This unique combination of features (ie Skipper readout, engineered interfaces, and noble liquid interaction) could enable detection sensitivity at the very low levels; critical levels for next-generation dark matter searches and neutrino physics.
 
@@ -185,6 +161,7 @@ This unique combination of features (ie Skipper readout, engineered interfaces, 
 
 ## Measurement Approach
 So up unitl now, I can confidently state that this device in principle should work. However, the issues lies in the charge transfer efficiency. This will be determined by the wetting behavior between the LAr and Al2O3 interface. The wetting characteristics of any liquid-solid system are quantified through contact angle measurements, where angles below 90° indicate favorable wetting conditions and angles above 90° suggest poor wetting behavior. The theoretical foundation for understanding argon wetting behavior rests on Young's equation, which describes the equilibrium contact angle as a balance between solid-vapor, liquid-vapor, and solid-liquid interfacial tensions. 
+
 1) Wetting/Non Wetting 
   - Cryogenic Sessile Drop Contact Angle Measurement
     - Method:

@@ -64,7 +64,7 @@ Material Selection and Process Flow:
 
 ## **Measurement Strategy**
 
-In principle, this device should work. However, the issue lies in the charge transfer efficiency (CTE) which is heavily dependent on the charge trapping due to defects on the Al2O3 surface. The wetting behavior also plays a role in CTE. The wetting characteristics of any liquid-solid system are quantified through contact angle measurements, where angles below 90° indicate favorable wetting conditions and angles above 90° suggest poor wetting behavior. The theoretical foundation for understanding argon wetting behavior rests on Young's equation, which describes the equilibrium contact angle as a balance between solid-vapor, liquid-vapor, and solid-liquid interfacial tensions.
+In principle, this device should work. However, the issue lies in the charge transfer efficiency (CTE) which is heavily dependent on the charge trapping due to defects on the Al₂O₃ surface. The wetting behavior also plays a role in CTE. The wetting characteristics of any liquid-solid system are quantified through contact angle measurements, where angles below 90° indicate favorable wetting conditions and angles above 90° suggest poor wetting behavior. The theoretical foundation for understanding argon wetting behavior rests on Young's equation, which describes the equilibrium contact angle as a balance between solid-vapor, liquid-vapor, and solid-liquid interfacial tensions.
 
 Measurement Plan: 
 - Multifrequency C–V characterization to distinguish between border and interface traps.
@@ -80,6 +80,9 @@ Techniques to detect and quantify surface charge trapping at the LAr/Al₂O₃ i
 1) Multifrequency C-V Characterization
 
 When charges get trapped, they can't follow rapid voltage changes. At high frequencies, trapped charges appear "frozen" and don't contribute to capacitance. At low frequencies, they have time to respond, creating measurable differences in capacitance values. Frequency-dependent capacitance changes indicate trap presence  and larger differences between high and low frequency measurements mean more trapping.
+
+- Interface Traps: High Dit (interface trap density) suggests poor ALD surface passivation or contamination during fabrication. Mitigation: Refine pre-ALD cleaning (e.g., UV ozone treatment) or post-deposition annealing.
+- Border Traps: Elevated Nbt (border trap density) indicates bulk oxide defects. Mitigation: Adjust ALD parameters (e.g., precursor purge time, temperature) to improve film quality.
 
 Use frequency sweeps from 10 kHz to 1 MHz at cryogenic temperatures (87K). This technique effectively separates different trap types:
 
@@ -117,7 +120,7 @@ Second Term (q²N_bt ln(1+jωτ)/τ): Represents the border trap contribution - 
 
 
 2) Hysteresis Analysis for Trap Quantification
-Sweep voltage from negative to positive, then back again, while measuring capacitance to measure charge trapping/release. If there were no trapping, the forward and reverse sweeps would perfectly overlap. The separation between these curves (hysteresis) directly indicates how many charges got trapped. Equation (2) converts the voltage shift into actual trapped charge density:
+Quantify net trapped charge density (Nit) via flat-band voltage shifts (ΔVFB) during gate voltage sweeps. Sweep voltage from negative to positive, then back again, while measuring capacitance to measure charge trapping/release. If there were no trapping, the forward and reverse sweeps would perfectly overlap. The separation between these curves (hysteresis) directly indicates how many charges got trapped. Equation (2) converts the voltage shift into actual trapped charge density:
 - Apply voltage sweeps from accumulation to depletion and reverse
 - Calculate trapped charge density from hysteresis magnitude (equation 2):
 
@@ -127,6 +130,16 @@ Sweep voltage from negative to positive, then back again, while measuring capaci
 - Cox = Oxide capacitance per unit area (F/cm2)
 - ΔVFB = Flat-band voltage shift (V)
 - q = Elementary charge (1.6×10−19 C)
+
+Voltage Sweep:
+- Forward sweep: Accumulation (-V) → Inversion (+V)
+- Reverse sweep: Inversion (+V) → Accumulation (-V)
+- Rate: 0.1–0.5 V/s (slow enough for traps to respond)
+- Temperature: 87K (cryogenic conditions mimic operational environment)
+
+Trap Type Discrimination
+- Border Traps: Cause symmetric hysteresis (similar ΔV_FB in both sweep directions)
+- Interface Traps: Lead to asymmetric hysteresis (larger ΔV_FB in forward sweeps)
 
 **Recent studies**
 On Oscura skipper-CCDs have revealed that trap characteristics are more closely linked to fabrication batch rather than specific gettering methods, suggesting that process control and equipment contamination play crucial roles in determining final device performance.
@@ -141,11 +154,20 @@ On Oscura skipper-CCDs have revealed that trap characteristics are more closely 
 
 
 3) Wetting/Non Wetting - Cryogenic Sessile Drop Contact Angle Measurement
-Fabricate Al₂O₃ coated silicon substrates using identical ALD conditions as the detector.
+Quantify the contact angle of liquid argon (LAr) on Al₂O₃ to assess interfacial wetting quality, which directly impacts electric field uniformity and charge transfer efficiency (CTE). Fabricate Al₂O₃ coated silicon substrates using identical ALD conditions as the detector.
 - Place the substrate in a temperature-controlled cryostat filled with purified liquid argon/xenon.
 - Use a piezoelectric picoliter dispenser to deposit a  noble liquid droplet onto the Al₂O₃ surface.
 - Capture droplet profile via high-speed camera with backlit illumination through a cryostat viewport.
 - Calculate contact angle using Young-Laplace equation fitting.
+
+Field Uniformity
+- θ <30° (full wetting) ensures uniform electric field penetration into LAr, critical for stable potential well formation.
+- θ >90° (non-wetting) creates field distortions, increasing charge trapping and CTE loss.
+Interface Quality
+- Low θ correlates with minimal interfacial defects (e.g., voids, contaminants)
+  
+Deviations from θ targets indicate ALD process issues (e.g., carbon contamination, non-uniform growth).
+Post-annealing (300–500°C) can improve θ by 5–10° via hydroxyl group removal.
 
 Table 1. Summary of the measurement techniques being considered
 

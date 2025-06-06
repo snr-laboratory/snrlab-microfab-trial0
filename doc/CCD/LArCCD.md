@@ -143,7 +143,7 @@ Trap Type Discrimination
 - Border Traps: Cause symmetric hysteresis (similar ΔV_FB in both sweep directions)
 - Interface Traps: Lead to asymmetric hysteresis (larger ΔV_FB in forward sweeps)
 
-**Recent studies**
+## **Recent studies**
 On Oscura skipper-CCDs have revealed that trap characteristics are more closely linked to fabrication batch rather than specific gettering methods, suggesting that process control and equipment contamination play crucial roles in determining final device performance.
   
 [An investigation of capacitance-voltage hysteresis in metal/high-k/In0.53Ga0.47As metal-oxide-semiconductor capacitors | Journal of Applied Physics | AIP Publishing](https://pubs.aip.org/aip/jap/article/114/14/144105/345009/An-investigation-of-capacitance-voltage-hysteresis)
@@ -174,6 +174,26 @@ Post-annealing (300–500°C) can improve θ by 5–10° via hydroxyl group remo
 Table 1. Summary of the measurement techniques being considered
 
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/dd462607-baf6-4932-9a51-8ec2376b3567" />
+
+Table 2. Summary of measurement relevance
+
+<img width="589" alt="image" src="https://github.com/user-attachments/assets/301bea29-9971-4585-8c53-cc14e0343c8c" />
+
+## **Intermediate Measurements**
+To ensure that the manufacture the LAr-CCD device proceeds smoothly and achieves the desired outcomes, it is essential to incorporate additional metrology and inspection steps during fabrication. These measurements will help detect process deviations early, maintain high device yield, and ensure that the final device meets performance and reliability targets.
+
+Thin-Film Thickness and Uniformity (Dielectric and Metal Layers)
+- Ellipsometry and X-ray Reflectivity (XRR): after ALD deposition of Al₂O₃ and after metal gate deposition to verify that thickness and uniformity are within specifications.
+
+Critical Dimension (CD) and Overlay Metrology
+- CD-SEM/SEM (Critical Dimension Scanning Electron Microscopy): After lithography and etching of gate electrodes, measure line widths, gate spacing, and overlay accuracy to ensure pattern fidelity and alignment between layers
+
+Surface and Interface Quality
+- Atomic Force Microscopy (AFM): Assess surface roughness of the silicon and Al₂O₃ layers after cleaning and deposition. Excessive roughness can increase trap densities and degrade device performance
+- Four-point probe or resistivity measurements: After metal deposition, check for proper conductivity and absence of breaks in gate electrodes.
+
+Probe Station for Ohmic Contact Testing
+- Use micromanipulator probes to contact the metal pad (ohmic contact) and the semiconductor substrate (or another pad). linear I–V curve (straight line through the origin) indicates ohmic behavior, meaning the contact allows current to flow equally well in both directions and has low resistance
 
 ## **Electrical Interface Considerations**
 

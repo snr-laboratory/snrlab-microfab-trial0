@@ -23,8 +23,12 @@ A fundamental operating principle of the device involves using the gate electrod
 
 ## **Basic Device Fabrication Plan**
 Material Selection and Process Flow:
-1) Float Zone Silicon: Ultra-high purity commercial Si, with extremely low concentrations of oxygen and carbon impurities. Minimizes bulk trap states that could interfere with charge transport. Low defect density ensures uniform electric field distribution. High resistivity enables greater depletion at lower voltages (very low doping concentrations). Fewer free carriers mean less dark current and lower electronic noise. [Float Zone Wafer - Characteristics and Applications](https://waferpro.com/float-zone-wafer-characteristics-and-applications/)
-- Doping: n-type Phosphorus
+1) Substrate should be Si since it is the industry standard and its function is to provide mechanical integrity.
+- Consider SiO₂ on Si wafer to isolate the metal from the bulk Si. Without SiO₂, applying voltage to a metal electrode on thick silicon risks large current flow through the substrate, limited voltage handling, and possible device breakdown.
+- The silicon’s main role is to support the gate structure and provide a back contact for the gate stack. 
+
+**Float Zone Silicon: Ultra-high purity commercial Si, with extremely low concentrations of oxygen and carbon impurities. Minimizes bulk trap states that could interfere with charge transport. Low defect density ensures uniform electric field distribution. High resistivity enables greater depletion at lower voltages (very low doping concentrations). Fewer free carriers mean less dark current and lower electronic noise. [Float Zone Wafer - Characteristics and Applications](https://waferpro.com/float-zone-wafer-characteristics-and-applications/) Doping: n-type Phosphorus** 
+
 - Wafer Diameter: 2-inch or 4-inch/50–100 mm diameter
   - Proven CCD performance: High-resistivity n-type silicon has been successfully used for fully-depleted CCDs [Fully-Depleted, Back-Illuminated Charge-Coupled Devices Fabricated on High-Resistivity Silicon](https://www.osti.gov/servlets/purl/838066) 
   - Cryogenic stability: At 87K (LAr temperature), n-type silicon maintains better electrical characteristics with reduced freeze-out effects [Simulating Impurity Freeze-Out During Low Temperature Operation - Silvaco](https://silvaco.com/simulation-standard/simulating-impurity-freeze-out-during-low-temperature-operation/)

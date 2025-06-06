@@ -196,9 +196,6 @@ Surface and Interface Quality
 - Atomic Force Microscopy (AFM): Assess surface roughness of the silicon and Al₂O₃ layers after cleaning and deposition. Excessive roughness can increase trap densities and degrade device performance
 - Four-point probe or resistivity measurements: After metal deposition, check for proper conductivity and absence of breaks in gate electrodes.
 
-Probe Station for Ohmic Contact Testing
-- Use micromanipulator probes to contact the metal pad (ohmic contact) and the semiconductor substrate (or another pad). linear I–V curve (straight line through the origin) indicates ohmic behavior, meaning the contact allows current to flow equally well in both directions and has low resistance
-
 ## **Electrical Interface Considerations**
 
 The efficiency of charge transfer depends critically on the quality of the electrical interface between the liquid argon and the aluminum oxide surface. When liquid argon completely wets the alumina surface, it forms intimate molecular-level contact across the entire interface area, eliminating air gaps or void spaces that could act as electrical barriers or field distortion sources

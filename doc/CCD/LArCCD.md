@@ -81,8 +81,10 @@ Techniques to detect and quantify surface charge trapping at the LAr/Al₂O₃ i
 
 When charges get trapped, they can't follow rapid voltage changes. At high frequencies, trapped charges appear "frozen" and don't contribute to capacitance. At low frequencies, they have time to respond, creating measurable differences in capacitance values. Frequency-dependent capacitance changes indicate trap presence  and larger differences between high and low frequency measurements mean more trapping.
 
-- Interface Traps: High Dit (interface trap density) suggests poor ALD surface passivation or contamination during fabrication. Mitigation: Refine pre-ALD cleaning (e.g., UV ozone treatment) or post-deposition annealing.
-- Border Traps: Elevated Nbt (border trap density) indicates bulk oxide defects. Mitigation: Adjust ALD parameters (e.g., precursor purge time, temperature) to improve film quality.
+- Interface Traps: High Dit (interface trap density) suggests poor ALD surface passivation or contamination during fabrication.
+  - Mitigation: Refine pre-ALD cleaning (e.g., UV ozone treatment) or post-deposition annealing.
+- Border Traps: Elevated Nbt (border trap density) indicates bulk oxide defects.
+  - Mitigation: Adjust ALD parameters (e.g., precursor purge time, temperature) to improve film quality.
 
 Use frequency sweeps from 10 kHz to 1 MHz at cryogenic temperatures (87K). This technique effectively separates different trap types:
 

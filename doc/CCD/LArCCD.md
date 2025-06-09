@@ -249,8 +249,49 @@ Research on cryogenic liquid wetting indicates that most cryogenic fluids, inclu
   - "superimposing" means that the semiconductor characterization system applies both a DC voltage and a small AC voltage signal to the gate electrode at the same time. The DC bias sets the steady-state operating point or condition for the device, while the small AC signal is added on top of this DC voltage to probe the device’s response to small, dynamic changes
   - The purpose is to measure how the device responds to small perturbations (AC signal) at different operating points (DC bias)
 
+---
+
+### Hysteresis Analysis: Quantifying Trapped Charge Dynamics
 
 
+
+---
+
+
+### Microphysics 
+
+Interface traps (Dit) 
+- Arise from defects at the LAr/Al₂O₃ interface (e.g., dangling bonds, impurities).
+- Act as recombination centers, reducing charge transfer efficiency (CTE)
+- Quantified using the Terman method
+[Comparison of methods to quantify interface trap densities at dielectric/III-
+V semiconductor interfaces](https://escholarship.org/content/qt0nf6t24x/qt0nf6t24x.pdf)
+
+Border traps
+- Located within the Al₂O₃ bulk, these traps exchange charge with LAr via tunneling.
+- Modeled by a distributed RC network (eq 1)
+
+**Hysteresis Analysis: Quantifying Trapped Charge Dynamics**
+- Reversible trapping: Symmetric hysteresis → Border traps dominate (charge release matches capture)
+- Asymmetric hysteresis: Interface traps preferentially capture carriers in one sweep direction
+- Batch-dependent variations: Observed in Oscura CCDs, linking trap densities to fabrication contamination
+
+
+
+---
+
+### C-V Measurements
+The C-V measurements are widely used to quantitatively study the MOS structures. There are three important parameters in evaluating high-k dielectrics on novel channel materials:
+- The first is the amount of C-V hysteresis when the MOS capacitor is biased well into accumulation and
+inversion region.
+- The second is the interface trap density Dit showing the
+quality of surface passivation and dielectric formation.
+- The third is the
+frequency dispersion on accumulation capacitances and the subsequent flat-
+band shifts.
+
+[Capacitance-voltage Characterization of Atomic-Layer-Deposited
+Al2O3/InGaAs and Al2O3/GaAs Metal –Oxide-Semiconductor Structures](https://engineering.purdue.edu/~yep/Papers/ECS_Transaction_Review_Cancun_Mexico_2006.pdf)
 
 
 

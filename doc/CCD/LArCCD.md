@@ -239,8 +239,15 @@ Designing the device to promote and maintain wetting conditions at the liquid ar
 
 Research on cryogenic liquid wetting indicates that most cryogenic fluids, including liquid argon, exhibit strong wetting tendencies on solid surfaces. Experimental measurements have shown that cryogenic liquids typically produce contact angles well below 90° on most surfaces, with the highest measured contact angles being approximately 30°. This natural wetting tendency results from the low surface tension of cryogenic liquids relative to the surface energy of most solids.
 
+---
 
+## Notes
 
+### Multifrequency C–V Characterization: Probing Interface and Border Traps
+
+- A semiconductor characterization system applies a DC bias to the gate electrode while superimposing a small AC signal (10 kHz–1 MHz). Capacitance is measured as a function of gate voltage at multiple frequencies under cryogenic conditions (87 K).
+  - "superimposing" means that the semiconductor characterization system applies both a DC voltage and a small AC voltage signal to the gate electrode at the same time. The DC bias sets the steady-state operating point or condition for the device, while the small AC signal is added on top of this DC voltage to probe the device’s response to small, dynamic changes
+  - The purpose is to measure how the device responds to small perturbations (AC signal) at different operating points (DC bias)
 
 
 

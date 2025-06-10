@@ -19,15 +19,20 @@
 
 ## **LAr-CCD Detector**
 
-The proposed detector layered architecture consists of a silicon substrate base, metal gate electrodes, a 50 nm aluminum oxide (Al₂O₃) layer deposited via atomic layer deposition (ALD), and liquid argon as the detection medium. There is an external electric field being applied to this detector so if ionization in LAr creates free electrons they will drift towards the Al2O3 surface/interface. This device is inspired and mimics the charge coupled device operation.
+The proposed detector layered architecture consists of a silicon substrate base, metal gate electrodes, a 50 nm aluminum oxide (Al₂O₃) layer deposited via atomic layer deposition (ALD), and liquid argon as the detection medium. There is an external electric field being applied to this detector so if ionization in LAr creates free electrons they will drift towards the Al₂O₃ surface/interface. This device is inspired and mimics the charge coupled device operation.
 
 <img width="602" alt="image" src="https://github.com/user-attachments/assets/559e536a-3301-4b74-8eb3-3c4eb8df3d1e" />
 
 Figure 1. Architecture of the proposed detector inspired by the operation and design of the charge coupled device (CCD). In this configuration, LAr is acting as the semiconductor resembling a standard CCD but with an inverted design as can be seen by the positioning of the oxide layer.
 
+
+<img width="662" alt="image" src="https://github.com/user-attachments/assets/944cf734-590c-447d-b018-f7f37cea71dc" />
+
+Figure 2. Close up of the LAr/Al₂O₃ interface with two different possible cases for interface behavior. 
+
 <img width="926" alt="image" src="https://github.com/user-attachments/assets/df1f7508-97a5-4eba-819c-c9552a318de0" />
 
-Figure 2. CCD readout parallel shift register with three phase device with parallel gate electrodes to move charge packets simultaneously along defined channels.
+Figure 3. CCD readout parallel shift register with three phase device with parallel gate electrodes to move charge packets simultaneously along defined channels.
 
 ---
 

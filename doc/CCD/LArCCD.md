@@ -21,16 +21,18 @@
 
 The proposed detector layered architecture consists of a silicon substrate base, metal gate electrodes, a 50 nm aluminum oxide (Al₂O₃) layer deposited via atomic layer deposition (ALD), and liquid argon as the detection medium. There is an external electric field being applied to this detector so if ionization in LAr creates free electrons they will drift towards the Al₂O₃ surface/interface. This device is inspired and mimics the charge coupled device operation.
 
-<img width="602" alt="image" src="https://github.com/user-attachments/assets/559e536a-3301-4b74-8eb3-3c4eb8df3d1e" />
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/559e536a-3301-4b74-8eb3-3c4eb8df3d1e" />
 
 Figure 1. Architecture of the proposed detector inspired by the operation and design of the charge coupled device (CCD). In this configuration, LAr is acting as the semiconductor resembling a standard CCD but with an inverted design as can be seen by the positioning of the oxide layer.
 
+<img width="1278" alt="image" src="https://github.com/user-attachments/assets/de43e242-bbaf-4152-b490-3ac8e8fabbd8" />
 
-<img width="662" alt="image" src="https://github.com/user-attachments/assets/944cf734-590c-447d-b018-f7f37cea71dc" />
 
-Figure 2. Close up of the LAr/Al₂O₃ interface with two different possible cases for interface behavior. 
+Figure 2. Close up of the LAr/Al₂O₃ interface with two different possible cases for interface behavior. Case 2 shows an exaggerated situation in which the LAr is extremely hydrophobic to the Al₂O₃ surface. 
 
-<img width="926" alt="image" src="https://github.com/user-attachments/assets/df1f7508-97a5-4eba-819c-c9552a318de0" />
+Although ALD is considered the gold standard for producing high quality thin films, especially in thickness control and uniformity, we can expect there to be some surface roughness resulting in void spaces. This difference in contact will have an effect on the efficiency of charge transfer. 
+
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/df1f7508-97a5-4eba-819c-c9552a318de0" />
 
 Figure 3. CCD readout parallel shift register with three phase device with parallel gate electrodes to move charge packets simultaneously along defined channels.
 

@@ -387,4 +387,12 @@ $$
 \frac{1}{C} = \frac{1}{C_{ox}} + \frac{1}{C_{dep}}
 $$
 
+___
 
+### LAr 
+Short-range order (SRO) refers to the regular, predictable arrangement of atoms over short distances (1-2 atomic spacings) without long-range crystalline periodicity. The SRO in LAr creates transient, localized potential minima where electrons can become temporarily trapped?
+
+
+
+
+[Evolution of short range order in Ar](https://pubs.aip.org/aip/adv/article/8/4/045215/1031043/Evolution-of-short-range-order-in-Ar-Liquid-to)

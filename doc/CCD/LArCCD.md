@@ -243,6 +243,20 @@ Research on cryogenic liquid wetting indicates that most cryogenic fluids, inclu
 
 ## Notes
 
+### Nanofab
+
+Can Hewlett Packard 4155C Semiconductor Parameter Analyzer be tailored for 87K C-V measurements?:
+
+Nanofab:
+We will have to draw out your liquid Ar cooling apparatus:
+  - the electrical connections for the HI and LOW voltage and current connections
+  - from Triac to your DUT connection.
+  - Then show management for approval
+    
+Lets retrain Agilent in T/F this week perhaps Wednesday or Thursday.
+Rate: 0.1–0.5 V/s (slow enough for traps to respond) = the software for CV has delay and hold time between measurements (dc sweep)
+
+
 ### Multifrequency C–V Characterization: Probing Interface and Border Traps
 
 - A semiconductor characterization system applies a DC bias to the gate electrode while superimposing a small AC signal (10 kHz–1 MHz). Capacitance is measured as a function of gate voltage at multiple frequencies under cryogenic conditions (87 K).
@@ -260,6 +274,16 @@ Research on cryogenic liquid wetting indicates that most cryogenic fluids, inclu
 
 ### Microphysics 
 
+**Traps disrupt band bending by introducing localized charges, modifying the electric field.**
+
+**Connect the CVU HI to the gate electrode and CVU LO to the LAr bulk**
+
+LAr as a "Pseudosubstrate":
+- Unlike traditional MOS capacitors (where capacitance is between gate and silicon), your LAr-CCD measures capacitance between the gate and LAr. This requires redefining "accumulation" and "depletion" in terms of LAr’s quasi-free electrons.
+
+Interface Trap Response:
+- The AC signal at CVU HI excites interface traps at the Al₂O₃/LAr boundary. The CVU LO detects their delayed response (phase shift), allowing extraction of trap density (Dit)
+
 Interface traps (Dit) 
 - Arise from defects at the LAr/Al₂O₃ interface (e.g., dangling bonds, impurities).
 - Act as recombination centers, reducing charge transfer efficiency (CTE)
@@ -276,7 +300,10 @@ Border traps
 - Asymmetric hysteresis: Interface traps preferentially capture carriers in one sweep direction
 - Batch-dependent variations: Observed in Oscura CCDs, linking trap densities to fabrication contamination
 
-
+Energy Band Diagram 
+- **Accumulation**: $V_g < 0$ (holes accumulate at interface).
+- **Depletion**: $V_g > 0$ (holes repelled, depletion region forms).
+- **Inversion**: $V_g \gg 0$ (electrons form inversion layer).
 
 ---
 
@@ -293,5 +320,37 @@ band shifts.
 [Capacitance-voltage Characterization of Atomic-Layer-Deposited
 Al2O3/InGaAs and Al2O3/GaAs Metal –Oxide-Semiconductor Structures](https://engineering.purdue.edu/~yep/Papers/ECS_Transaction_Review_Cancun_Mexico_2006.pdf)
 
+
+---
+
+### **Fundamentals of MOS C–V Measurements**
+
+#### Capacitance in MOS Structures
+
+- Capacitance ($C$) measures charge storage per unit voltage ($C = Q/V$).
+- MOS Structure:
+    - Gate Electrode (Al) → Dielectric (Al₂O₃) → Semiconductor (LAr).
+
+#### **Key Equations**
+
+- Oxide Capacitance:
+
+$$
+C_{ox} = \frac{\varepsilon_{Al_2O_3} \cdot A}{t_{ox}}
+$$
+
+($\varepsilon_{Al_2O_3}$: permittivity, $A$: gate area, $t_{ox}$: oxide thickness).
+- Depletion Capacitance:
+
+$$
+C_{dep} = \frac{\varepsilon_{LAr} \cdot A}{W_{dep}}
+$$
+
+($W_{dep}$: depletion width in LAr).
+- Total Capacitance (Depletion):
+
+$$
+\frac{1}{C} = \frac{1}{C_{ox}} + \frac{1}{C_{dep}}
+$$
 
 

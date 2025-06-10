@@ -242,19 +242,10 @@ Research on cryogenic liquid wetting indicates that most cryogenic fluids, inclu
 ---
 
 ## Notes
-
-### Nanofab
-
-Can Hewlett Packard 4155C Semiconductor Parameter Analyzer be tailored for 87K C-V measurements?:
-
-Nanofab:
-We will have to draw out your liquid Ar cooling apparatus:
-  - the electrical connections for the HI and LOW voltage and current connections
-  - from Triac to your DUT connection.
-  - Then show management for approval
-    
-Lets retrain Agilent in T/F this week perhaps Wednesday or Thursday.
-Rate: 0.1–0.5 V/s (slow enough for traps to respond) = the software for CV has delay and hold time between measurements (dc sweep)
+MOS-Capacitor C-V Measurements
+The most commonly used tool for studying gate-oxide quality in detail is the Capacitance-Voltage (C-V)
+technique. C-V test results offer a wealth of device and process information, including bulk and interface charges and many MOS-device parameters.
+[Keithley CV](https://scientific-devices.com.au/wp-content/uploads/2017/10/Gate-Dielectric-Capacitance-Voltage-Characterisation.pdf)
 
 
 ### Multifrequency C–V Characterization: Probing Interface and Border Traps
@@ -266,7 +257,9 @@ Rate: 0.1–0.5 V/s (slow enough for traps to respond) = the software for CV has
 ---
 
 ### Hysteresis Analysis: Quantifying Trapped Charge Dynamics
-
+- Reversible trapping: Symmetric hysteresis → Border traps dominate (charge release matches capture)
+- Asymmetric hysteresis: Interface traps preferentially capture carriers in one sweep direction
+- Batch-dependent variations: Observed in Oscura CCDs, linking trap densities to fabrication contamination
 
 
 ---
@@ -275,7 +268,6 @@ Rate: 0.1–0.5 V/s (slow enough for traps to respond) = the software for CV has
 ### Microphysics 
 
 **Traps disrupt band bending by introducing localized charges, modifying the electric field.**
-
 **Connect the CVU HI to the gate electrode and CVU LO to the LAr bulk**
 
 LAr as a "Pseudosubstrate":
@@ -295,15 +287,69 @@ Border traps
 - Located within the Al₂O₃ bulk, these traps exchange charge with LAr via tunneling.
 - Modeled by a distributed RC network (eq 1)
 
-**Hysteresis Analysis: Quantifying Trapped Charge Dynamics**
-- Reversible trapping: Symmetric hysteresis → Border traps dominate (charge release matches capture)
-- Asymmetric hysteresis: Interface traps preferentially capture carriers in one sweep direction
-- Batch-dependent variations: Observed in Oscura CCDs, linking trap densities to fabrication contamination
+**Energy Band Diagram**
 
-Energy Band Diagram 
+The band diagram for Vg = 0
+
+<img width="436" alt="image" src="https://github.com/user-attachments/assets/be5d30f0-9924-4f50-9b14-2e9d99e5771e" />
+
+(a) Polysilicon-gate/oxide/semiconductor capacitor and (b) its energy band
+diagram with no applied voltage.
+
+-**Flat-band condition** 
+<img width="451" alt="image" src="https://github.com/user-attachments/assets/641f6272-409b-48f8-a39d-4ed9157d5c65" />
+
+This condition is achieved by applying a negative voltage to the gate which  raises the band diagram on the left-hand side. 
+    - surface electric field in the substrate is zero.
+    - Electric field in the oxide is also zero
+
 - **Accumulation**: $V_g < 0$ (holes accumulate at interface).
-- **Depletion**: $V_g > 0$ (holes repelled, depletion region forms).
+  
+<img width="485" alt="image" src="https://github.com/user-attachments/assets/9d2c1092-3ee1-4aa3-a9cc-02a5d7c7ca8d" />
+
+This MOS capacitor is biased into surface accumulation (ps > p0= Na).
+(a) Types of charge present. ⊕ represents holes and – represents negative charge. (b) Energy
+band diagram.
+
+<img width="132" alt="image" src="https://github.com/user-attachments/assets/ad99ed58-9739-46df-a995-59c6c45a42c2" />
+
+- Observed when negative voltages are applied to the gate.
+- The negative polarity causes majority carriers (holes) to be attracted toward the gate.
+- Form an accumulation layer and these holes are called the accumulation-layer holes, and their charge the accumulation charge, Qacc. This condition is known as surface accumulation.
+- If the substrate were N type, the accumulation layer would hold electrons.
+
+- **Depletion**: $V_g > 0$ (holes repelled, depletion region forms)
+  
+<img width="486" alt="image" src="https://github.com/user-attachments/assets/f14f969b-ea8c-4dca-ae96-b28809646c31" />
+
+This MOS capacitor is biased into surface depletion. (a) Types of charge
+present; (b) energy band diagram.
+
+- There is now a depletion region at the surface because EF is far from both Ec and Ev
+- Electron and hole densities are both small
+
+<img width="375" alt="image" src="https://github.com/user-attachments/assets/bdfee0f8-7e25-4663-b6de-00d3bdf7bf47" />
+
+This equation can be solved to yield Wdep as a function of Vg. With Wdep
+determined, Vox and φ s become known.
+
 - **Inversion**: $V_g \gg 0$ (electrons form inversion layer).
+
+<img width="394" alt="image" src="https://github.com/user-attachments/assets/13b205e2-7b2f-41c3-9011-a4336cb237c8" />
+
+- At some Vg, EF will be close enough to Ec at the Si–SiO2 interface
+that the surface is no longer in depletion but at the threshold of inversion
+- Inversion means that the surface is inverted from P type to N type, or
+electron rich.
+
+Notes
+- E0,the vacuum level, is the energy state of electrons outside the material
+- The differencebetween E0 and Ec is called the electron affinity
+- φs (surface voltage)
+- Vox (oxide voltage)
+- qφs is the band bending in the substrate.
+- ps is the surface hole concentration
+[MOS Capacitor](http://sam.zeloof.xyz/wp-content/uploads/2021/01/CV-resource1.pdf)
 
 ---
 
@@ -311,10 +357,8 @@ Energy Band Diagram
 The C-V measurements are widely used to quantitatively study the MOS structures. There are three important parameters in evaluating high-k dielectrics on novel channel materials:
 - The first is the amount of C-V hysteresis when the MOS capacitor is biased well into accumulation and
 inversion region.
-- The second is the interface trap density Dit showing the
-quality of surface passivation and dielectric formation.
-- The third is the
-frequency dispersion on accumulation capacitances and the subsequent flat-
+- The second is the interface trap density Dit showing the quality of surface passivation and dielectric formation.
+- The third is the frequency dispersion on accumulation capacitances and the subsequent flat-
 band shifts.
 
 [Capacitance-voltage Characterization of Atomic-Layer-Deposited

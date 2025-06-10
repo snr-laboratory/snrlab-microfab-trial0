@@ -1,4 +1,3 @@
-
 # Fab plan (Priority List) 
 1) Fully understand the physical measurement process 
   - CV and how it’s related to the microphysics of the surface 
@@ -122,26 +121,17 @@ When charges get trapped, they can't follow rapid voltage changes. At high frequ
 
 Use frequency sweeps from 10 kHz to 1 MHz at cryogenic temperatures (87K). This technique effectively separates different trap types:
 
-- Border traps: Respond at lower frequencies, cause accumulation region dispersion
-
-- Interface traps: Respond at higher frequencies, affect inversion/depletion regions
+1) Border traps: Respond at lower frequencies, cause accumulation region dispersion
+2) Interface traps: Respond at higher frequencies, affect inversion/depletion regions
 
 - Extract the frequency-dependent capacitance values from the accumulation region
-
-- The dispersion in these values indicates border trap presence
-
-- Numerical Fitting Process - The equation is solved numerically by guessing an initial Nbt value
-
-- Calculating the theoretical capacitance using the differential equation for each measured frequency
-
-- Comparing calculated vs. measured capacitance across the frequency range
-
-- Iteratively adjusting Nbt until the best fit is achieved
+- Dispersion in these values indicates border trap presence
+- Numerical Fitting Process (equation is solved numerically by guessing an initial Nbt value)
+- Calculate the theoretical capacitance using the differential equation for each measured frequency
+- Compare calculated vs. measured capacitance across the frequency range; iteratively adjusting Nbt until the best fit is achieved
 
 Cryogenic C-V Setup
-
 - Perform measurements from room temperature down to LAr operating temperature (87K)
-
 - Use the distributive border trap model to extract border trap density (equation 1):
 
 <img width="245" alt="image" src="https://github.com/user-attachments/assets/974646af-5ed5-43df-b353-e9cf87337d73" />

@@ -132,10 +132,7 @@ Use frequency sweeps from 10 kHz to 1 MHz at cryogenic temperatures (87K). This 
 - Dispersion in these values indicates border trap presence
 - Numerical Fitting Process (equation is solved numerically by guessing an initial Nbt value)
 - Calculate the theoretical capacitance using the differential equation for each measured frequency
-- Compare calculated vs. measured capacitance across the frequency range; iteratively adjusting Nbt until the best fit is achieved
-
-Cryogenic C-V Setup
-- Perform measurements from room temperature down to LAr operating temperature (87K)
+- Compare calculated vs. measured capacitance across frequency range; iteratively adjusting Nbt until the best fit is achieved
 - Use the distributive border trap model to extract border trap density (equation 1):
 
 <img width="245" alt="image" src="https://github.com/user-attachments/assets/974646af-5ed5-43df-b353-e9cf87337d73" />

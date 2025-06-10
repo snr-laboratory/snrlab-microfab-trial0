@@ -94,6 +94,9 @@ Material Selection and Process Flow:
 5) Liquid Argon Integration
    A crucial step is first to develop a liquid Ar system for recirculation inspired by moving-part-free coffee machine.The coffee machine utilizes a thermal siphon, or bubble pump, mechanism. When the heating element is activated, it rapidly heats water at the base of a vertical tube. Once the local temperature exceeds the boiling point, phase transition occurs and steam bubbles nucleate. The lower density and higher pressure of the vapor phase cause the bubbles to rise, displacing the water column above them in a slug flow regime. The upward movement is facilitated by a one-way valve that prevents backflow. This system efficiently converts thermal energy into mechanical work (water transport) without the need for mechanical pumps, relying on the interplay of phase transitions, buoyancy, and pressure gradients.
 [Bubble Pumps and Taylor Flow](https://sites.psu.edu/mtfe/bubble-pumps-and-taylor-flow/)
+
+The LAr system would leverage the same thermal siphon or bubble-pump effect: a localized heater at the base of a vertical tube vaporizes a small amount of liquid argon, forming bubbles that rise due to buoyancy and push the LAr column upward. This upward flow is guided into the detector region, while cooled argon condenses and returns to the reservoir via gravity, completing the cycle. The process is regulated by a one-way check valve to prevent backflow, ensuring passive, continuous recirculation without mechanical pumps. The design relies on controlled phase transitions, buoyancy-driven fluid dynamics, and cryogenic-compatible materials to achieve efficient, contamination-free circulation. 
+
 ---
 
 ## **Measurement Strategy**

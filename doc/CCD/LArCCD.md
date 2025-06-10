@@ -21,12 +21,11 @@
 
 The proposed detector layered architecture consists of a silicon substrate base, metal gate electrodes, a 50 nm aluminum oxide (Al₂O₃) layer deposited via atomic layer deposition (ALD), and liquid argon as the detection medium. There is an external electric field being applied to this detector so if ionization in LAr creates free electrons they will drift towards the Al₂O₃ surface/interface. This device is inspired and mimics the charge coupled device operation.
 
-<img width="620" alt="image" src="https://github.com/user-attachments/assets/559e536a-3301-4b74-8eb3-3c4eb8df3d1e" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/ffbc0d15-5285-45fd-b841-212e463500df" />
 
 Figure 1. Architecture of the proposed detector inspired by the operation and design of the charge coupled device (CCD). In this configuration, LAr is acting as the semiconductor resembling a standard CCD but with an inverted design as can be seen by the positioning of the oxide layer.
 
-<img width="1278" alt="image" src="https://github.com/user-attachments/assets/de43e242-bbaf-4152-b490-3ac8e8fabbd8" />
-
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/3092b04a-0a29-4dab-bf99-92ff81f00a73" />
 
 Figure 2. Close up of the LAr/Al₂O₃ interface with two different possible cases for interface behavior. Case 2 shows an exaggerated situation in which the LAr is extremely hydrophobic to the Al₂O₃ surface. 
 
@@ -57,7 +56,6 @@ Material Selection and Process Flow:
 - Consider buying SiO₂ on Si wafer to isolate the metal from the bulk Si. Without SiO₂, applying voltage to a metal electrode with direct contact with silicon will result in having to driving current flow through the substrate (ie limited voltage handling and possible device breakdown). 
 
 - **The silicon’s main role is to to proivde mechanical integrity.** 
-
 
 - Wafer Diameter: 2-inch or 4-inch/50–100 mm diameter
   - Proven CCD performance: High-resistivity n-type silicon has been successfully used for fully-depleted CCDs [Fully-Depleted, Back-Illuminated Charge-Coupled Devices Fabricated on High-Resistivity Silicon](https://www.osti.gov/servlets/purl/838066) 
@@ -156,7 +154,6 @@ Second Term (q²N_bt ln(1+jωτ)/τ): Represents the border trap contribution - 
 
 [A Distributed Model for Border Traps in Al2O3 − InGaAs MOS Devices](https://web.ece.ucsb.edu/Faculty/rodwell/publications_and_presentations/publications/2011_4_april_yuan_EDL.pdf)
 
-
 2) Hysteresis Analysis for Trap Quantification
 Quantify net trapped charge density (Nit) via flat-band voltage shifts (ΔVFB) during gate voltage sweeps. Sweep voltage from negative to positive, then back again, while measuring capacitance to measure charge trapping/release. If there were no trapping, the forward and reverse sweeps would perfectly overlap. The separation between these curves (hysteresis) directly indicates how many charges got trapped. Equation (2) converts the voltage shift into actual trapped charge density:
 - Apply voltage sweeps from accumulation to depletion and reverse
@@ -189,7 +186,6 @@ On Oscura skipper-CCDs have revealed that trap characteristics are more closely 
 [Variable-temperature, wafer-level capacitance measurements](https://www.lakeshore.com/docs/default-source/product-downloads/application-notes/variable-temperature-wafer-level-capacitance-measurements.pdf?sfvrsn=4250d2d9_1)
 
 [Characterization of Electrical Traps Formed in Al2O3 under Various ALD Conditions - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7767157/)
-
 
 3) Wetting/Non Wetting - Cryogenic Sessile Drop Contact Angle Measurement
 Quantify the contact angle of liquid argon (LAr) on Al₂O₃ to assess interfacial wetting quality, which directly impacts electric field uniformity and charge transfer efficiency (CTE). Fabricate Al₂O₃ coated silicon substrates using identical ALD conditions as the detector.
@@ -254,7 +250,6 @@ The most commonly used tool for studying gate-oxide quality in detail is the Cap
 technique. C-V test results offer a wealth of device and process information, including bulk and interface charges and many MOS-device parameters.
 [Keithley CV](https://scientific-devices.com.au/wp-content/uploads/2017/10/Gate-Dielectric-Capacitance-Voltage-Characterisation.pdf)
 
-
 ### Multifrequency C–V Characterization: Probing Interface and Border Traps
 
 - A semiconductor characterization system applies a DC bias to the gate electrode while superimposing a small AC signal (10 kHz–1 MHz). Capacitance is measured as a function of gate voltage at multiple frequencies under cryogenic conditions (87 K).
@@ -268,9 +263,7 @@ technique. C-V test results offer a wealth of device and process information, in
 - Asymmetric hysteresis: Interface traps preferentially capture carriers in one sweep direction
 - Batch-dependent variations: Observed in Oscura CCDs, linking trap densities to fabrication contamination
 
-
 ---
-
 
 ### Microphysics 
 

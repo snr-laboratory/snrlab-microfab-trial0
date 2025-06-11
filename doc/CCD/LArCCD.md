@@ -16,7 +16,49 @@
   - Create a method for generating carriers needed for CV measurements 
 
 ---
+### Atomic Layer Deposition (ALD) Tool Procurement/Assembly
 
+1) [Atomic Layer Deposition of copper - setup](https://www.youtube.com/watch?v=ih_D6OLzqo4)
+2) [Cost-Effective Systems for Atomic Layer Deposition](https://pubs.acs.org/doi/full/10.1021/ed4007698)
+3) [Homebuilt Reactor Design and Atomic
+Layer Deposition of Metal Oxide Thin
+Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
+4) [Design and Construction of an ALD Reactor](https://www.ecorfan.org/taiwan/research_journals/Ingenieria_Tecnologica/vol5num16/Journal_of_Technological_Engineering_V5_N16_3.pdf)
+
+Design Approach: 
+1) Hot-wall horizontal tube reactor - simple and cost effective
+   - 21100 Tube Furnace in storage 
+2) Reaction Chamber and Boat
+   
+
+
+Assembly:
+1) Reaction chamber
+2) Precursor delivery
+- ALD chemistry (eg Ar(g) and H2(g))
+  - Flow controllers - (teensy control in video, Flare fittings)
+  - 2 for A and B gas
+  - 1 for sweeping gas
+    - Trimethyaluminum (TMA)   
+4) Plasma source (RF)
+5) Vacuum system - storage, may need to buy a simpler one
+6) Control software - Standford Research Systems Model IGC 100 - Ion Gauge Controller
+
+
+Challenges: 
+- Gas Handling - programming gas flow
+- Safety Systems - certain precursor gases (place tool if small enough in fume hood)
+- Precision gas injectors for uniformity
+
+
+New ALD System:
+- Anric Technologies AT200M: $85k–$120k (glovebox-compatible, compact R&D system)
+[Benchtop ALD](https://www.msesupplies.com/products/anric-benchtop-atomic-layer-deposition-ald-system-at200m)
+
+- FabSurplus: Oxford OpAL: $59k (200mm, laboratory-grade)
+  [Oxford Instruments OPAL ALD 65004](https://www.machinio.com/model/atomic-layer-deposition-ald)
+
+Refurbished:
 
 
 --- 
@@ -373,3 +415,7 @@ $$
 Short-range order (SRO) refers to the regular, predictable arrangement of atoms over short distances (1-2 atomic spacings) without long-range crystalline periodicity. The SRO in LAr creates transient, localized potential minima where electrons can become temporarily trapped?
 
 [Evolution of short range order in Ar](https://pubs.aip.org/aip/adv/article/8/4/045215/1031043/Evolution-of-short-range-order-in-Ar-Liquid-to)
+
+### Modified Measurement Configuration
+The measurement setup requires a specialized three-terminal configuration where the gate electrode (Al) forms the one contact, the Al₂O₃ serves as the dielectric, and liquid argon acts as the semiconductor medium . The "bulk contact" must be established through a submerged electrode in the LAr volume, creating a pseudo-substrate condition.  
+

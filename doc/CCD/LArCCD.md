@@ -16,48 +16,6 @@
   - Create a method for generating carriers needed for CV measurements 
 
 ---
-### Atomic Layer Deposition (ALD) Tool Procurement/Assembly
-
-New ALD System:
-- Anric Technologies AT200M: $85k–$120k (glovebox-compatible, compact R&D system)
-[Benchtop ALD](https://www.msesupplies.com/products/anric-benchtop-atomic-layer-deposition-ald-system-at200m)
-
-- FabSurplus: Oxford OpAL: $59k (200mm, laboratory-grade)
-  [Oxford Instruments OPAL ALD 65004](https://www.machinio.com/model/atomic-layer-deposition-ald)
-
-Refurbished:
-
-
-Assembly:
-1) Reaction chamber
-2) Precursor delivery
-3) Plasma source (RF)
-4) Vacuum system - storage, may need to buy a simpler one
-5) Control software - Standford Research Systems Model IGC 100 - Ion Gauge Controller
-
-Challenges: 
-- Gas Handling
-- Safety Systems - certain precursor gases (place tool if small enough in fume hood)
-- Precision gas injectors for uniformity
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

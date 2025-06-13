@@ -27,10 +27,18 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 
 Design Approach: 
 1) Hot-wall horizontal tube reactor - simple and cost effective
-   - 21100 Tube Furnace in storage 
+   - 21100 Tube Furnace by Barnstead Thermolyne
+2) Precursor chamber
+   - 1300 Furnace by Barnstead Thermolyne
+3) Controlling Gas Flow
+   - Ion guage controller Model IGC100 by Stanford Research Systems
+4) Programmable Flow Rate Controllers
+5) 
+  
+
+
 2) Reaction Chamber and Boat
    
-
 
 Assembly:
 1) Reaction chamber

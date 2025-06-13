@@ -33,8 +33,21 @@ Design Approach:
 3) Controlling Gas Flow
    - Ion guage controller Model IGC100 by Stanford Research Systems
 4) Programmable Flow Rate Controllers
-5) 
-  
+   -
+
+5) Precursors/Coreactants
+   - Trimethylaluminum (TMA)
+   - Water
+   - Ar vs N2 for sweeping gas
+   - 
+     
+Characterization:
+- X-ray Diffraction (XRD) - crystal structure and unit cell dimensions 
+- Energy Dispersive X-ray Spectroscopy (EDX) - elemental analysis 
+- Scanning Electron Microscopy Backscattered Electron Imaging (SEM - BEI) - sample roughness 
+- Filmetrics - sample thickness
+- Ellipsometry - sample thickness
+
 
 
 2) Reaction Chamber and Boat
@@ -55,18 +68,35 @@ Assembly:
 
 Challenges: 
 - Gas Handling - programming gas flow
-- Safety Systems - certain precursor gases (place tool if small enough in fume hood)
+- Safety Systems - certain precursor gases (exhaust hose fed into fume hood)
 - Precision gas injectors for uniformity
 
+Temperature monitor 
+- middle of furnace 
+- Entry (check inventory)
 
-New ALD System:
-- Anric Technologies AT200M: $85k–$120k (glovebox-compatible, compact R&D system)
-[Benchtop ALD](https://www.msesupplies.com/products/anric-benchtop-atomic-layer-deposition-ald-system-at200m)
+Heating tape
+Glass wool 
+Aluminum foil 
+Trimethylaluminum
 
-- FabSurplus: Oxford OpAL: $59k (200mm, laboratory-grade)
-  [Oxford Instruments OPAL ALD 65004](https://www.machinio.com/model/atomic-layer-deposition-ald)
+Tygon tubing 
+Schlenk flask 
+Control valves 
+Injection ports 
+Precursor flasks
+Heating tape 
 
-Refurbished:
+A quartz tube' with stainless steel end connectors (Ace Glass and A&N Corp., respectively; $600)
+
+Welch 1400 dual seal rotary vane pump ($3,000) was employed. 
+
+The pressure inside the chamber was monitored using a Hastings dual sensor vacuum gauge model 2002
+($1,200), which was capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
+
+In order to protect the vacuum pump, a liquid nitrogen trap from A&N Corp. ($685) was used.
+
+
 
 
 --- 

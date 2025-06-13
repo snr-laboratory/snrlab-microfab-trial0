@@ -33,12 +33,24 @@ Design Approach:
 3) Controlling Gas Flow
    - Ion guage controller Model IGC100 by Stanford Research Systems
 4) Programmable Flow Rate Controllers
-   -
+  1) TMA precursor line: 0-100 sccm range
+  2) Water precursor line: 0-100 sccm range
+  3) Nitrogen carrier/purge gas: 0-500 sccm range
+[Exploring TMA and H2O Flow Rate Effects on Al2O3](https://www.mdpi.com/2079-6412/14/5/578)
+[ALD Recipe](https://www.seas.upenn.edu/~nanosop/ALD_Recipes.htm)
+[Investigation and Optimization of Process Parameters on Growth Rate in Al2O3 ](https://pmc.ncbi.nlm.nih.gov/articles/PMC12072700/)
 
+Vendor
+1) Kurt J. Lesker Company
+  - N2	Elastomer	100 SCCM	KJLMCH4BAA1 $1,480.00 3-4 Weeks
+  - N2	Elastomer	1000 SCCM	KJLMCK4BAA1 $1,480.00 3-4 Weeks
+    - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
+    - [Alicat - Alicat Mass Flow Controller - Standard Configuration
+100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
 5) Precursors/Coreactants
    - Trimethylaluminum (TMA)
    - Water
-   - Ar vs N2 for sweeping gas
+   - N2 for sweeping gas
    - 
      
 Characterization:
@@ -66,11 +78,6 @@ Assembly:
 6) Control software - Standford Research Systems Model IGC 100 - Ion Gauge Controller
 
 
-Challenges: 
-- Gas Handling - programming gas flow
-- Safety Systems - certain precursor gases (exhaust hose fed into fume hood)
-- Precision gas injectors for uniformity
-
 Temperature monitor 
 - middle of furnace 
 - Entry (check inventory)
@@ -95,6 +102,7 @@ The pressure inside the chamber was monitored using a Hastings dual sensor vacuu
 ($1,200), which was capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
 
 In order to protect the vacuum pump, a liquid nitrogen trap from A&N Corp. ($685) was used.
+
 
 
 

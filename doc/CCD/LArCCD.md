@@ -37,6 +37,8 @@ Design Approach:
    - Ion guage controller Model IGC100 by Stanford Research Systems
       - IGC100 features four analog input/output ports (AN1–AN4)
         - voltage in the range of ±12 VDC
+       
+<img width="787" alt="image" src="https://github.com/user-attachments/assets/7ee55313-fbe1-4dc0-b457-ea285f6253c0" />
 
 Wiring
 - Connect the IGC100’s analog output to the Alicat controller’s analog input (pin 4 of the 8-pin barrel connector, or equivalent).

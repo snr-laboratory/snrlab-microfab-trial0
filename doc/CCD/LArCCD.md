@@ -1,6 +1,9 @@
 # Fab plan (Priority List) 
-1) Atomic Layer Deposition (ALD) Tool 
-2) Fully understand the physical measurement process 
+1) Atomic Layer Deposition (ALD) Tool
+  - Draw schematic for tool design
+    - Gas flow
+    - Electrical   
+3) Fully understand the physical measurement process 
   - CV and how it’s related to the microphysics of the surface 
 2) Detailed diagram of the surface of Al2O3 
   - Thickness and layer details 
@@ -32,7 +35,32 @@ Design Approach:
    - 1300 Furnace by Barnstead Thermolyne
 3) Controlling Gas Flow
    - Ion guage controller Model IGC100 by Stanford Research Systems
-4) Programmable Flow Rate Controllers
+      - IGC100 features four analog input/output ports (AN1–AN4)
+        - voltage in the range of ±12 VDC
+
+Wiring
+- Connect the IGC100’s analog output to the Alicat controller’s analog input (pin 4 of the 8-pin barrel connector, or equivalent).
+- Set the IGC100’s analog output to generate a voltage between 0–5 VDC, corresponding to your desired flow rate
+- Ensure proper grounding to avoid noise or ground loops
+- Program the IGC100 to change the output voltage as needed for your ALD pulse/purge sequences.
+- Monitor and adjust as needed using the IGC100’s touchscreen or remote interface.
+
+Configuration
+- In the IGC100 menu, configure the analog port as an output.
+- Set the output voltage to the desired value for the flow rate you want.
+- GC100 can be programmed to change the output voltage based on time, pressure, or other events, allowing for automated flow control sequences
+[IGC100](https://www.gmp.ch/htmlarea/pdf/srs/IGC100c_intl.pdf)
+
+Arduino/Python-Based Controller:
+- The IGC100 lacks native support for rapid ALD cycle timing (e.g., 0.01–1 sec pulses). A dedicated timing controller ensures repeatable, automated cycles.
+- Controls solenoid valves for millisecond-scale pulsing.
+- Low-cost (~$50–$200) requires custom programming.
+
+Pressure Controller?
+- Maintain stable reactor pressure during ALD cycles.
+- Pressure stability prevents precursor intermixing and ensures uniform film growth. The IGC100 measures pressure but does not actively control it.
+   
+5) Programmable Flow Rate Controllers
     1) TMA precursor line: 0-100 sccm range
     2) Water precursor line: 0-100 sccm range
     3) Nitrogen carrier/purge gas: 0-500 sccm range
@@ -47,11 +75,15 @@ Vendor
     - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
     - [Alicat - Alicat Mass Flow Controller - Standard Configuration
 100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
-5) Precursors/Coreactants
+
+
+
+
+5) Precursors/Co-reactants
    - Trimethylaluminum (TMA)
    - Water
    - N2 for sweeping gas
-   - 
+
      
 Characterization:
 - X-ray Diffraction (XRD) - crystal structure and unit cell dimensions 

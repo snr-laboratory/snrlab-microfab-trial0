@@ -33,9 +33,9 @@ Design Approach:
 3) Controlling Gas Flow
    - Ion guage controller Model IGC100 by Stanford Research Systems
 4) Programmable Flow Rate Controllers
-  1) TMA precursor line: 0-100 sccm range
-  2) Water precursor line: 0-100 sccm range
-  3) Nitrogen carrier/purge gas: 0-500 sccm range
+    1) TMA precursor line: 0-100 sccm range
+    2) Water precursor line: 0-100 sccm range
+    3) Nitrogen carrier/purge gas: 0-500 sccm range
 [Exploring TMA and H2O Flow Rate Effects on Al2O3](https://www.mdpi.com/2079-6412/14/5/578)
 [ALD Recipe](https://www.seas.upenn.edu/~nanosop/ALD_Recipes.htm)
 [Investigation and Optimization of Process Parameters on Growth Rate in Al2O3 ](https://pmc.ncbi.nlm.nih.gov/articles/PMC12072700/)

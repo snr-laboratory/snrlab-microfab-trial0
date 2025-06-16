@@ -52,7 +52,6 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
        
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/b58488e7-c097-4541-9982-d3a0f5b98689" />
 
-
 ### Wiring
 - Connect the IGC100’s analog output to the Alicat controller’s analog input (pin 4 of the 8-pin barrel connector, or equivalent).
 - Set the IGC100’s analog output to generate a voltage between 0–5 VDC, corresponding to your desired flow rate
@@ -75,7 +74,7 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 - Maintain stable reactor pressure during ALD cycles.
 - Pressure stability prevents precursor intermixing and ensures uniform film growth. The IGC100 measures pressure but does not actively control it.
    
-5) Programmable Flow Rate Controllers
+4) Programmable Flow Rate Controllers
     1) TMA precursor line: 0-100 sccm range
     2) Water precursor line: 0-100 sccm range
     3) Nitrogen carrier/purge gas: 0-500 sccm range
@@ -83,8 +82,7 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 [ALD Recipe](https://www.seas.upenn.edu/~nanosop/ALD_Recipes.htm)
 [Investigation and Optimization of Process Parameters on Growth Rate in Al2O3 ](https://pmc.ncbi.nlm.nih.gov/articles/PMC12072700/)
 
-Vendor
-1) Kurt J. Lesker Company
+### Vendor Kurt J. Lesker Company
   - N2	Elastomer	100 SCCM	KJLMCH4BAA1 $1,480.00 3-4 Weeks (x2)
   - N2	Elastomer	1000 SCCM	KJLMCK4BAA1 $1,480.00 3-4 Weeks (x2)
     - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
@@ -100,61 +98,37 @@ Vendor
    - N2 for sweeping gas
 [Atomic layer deposition of Al2O3 process
 emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
-     
-Characterization:
+
+--- 
+
+## Characterization
 - X-ray Diffraction (XRD) - crystal structure and unit cell dimensions 
 - Energy Dispersive X-ray Spectroscopy (EDX) - elemental analysis 
 - Scanning Electron Microscopy Backscattered Electron Imaging (SEM - BEI) - sample roughness 
 - Filmetrics - sample thickness
 - Ellipsometry - sample thickness
 
+--- 
 
-
-2) Reaction Chamber and Boat
-   
-
-Assembly:
-1) Reaction chamber
-2) Precursor delivery
-- ALD chemistry (eg Ar(g) and H2(g))
-  - Flow controllers - (teensy control in video, Flare fittings)
-  - 2 for A and B gas
-  - 1 for sweeping gas
-    - Trimethyaluminum (TMA)   
-4) Plasma source (RF)
-5) Vacuum system - storage, may need to buy a simpler one
-6) Control software - Standford Research Systems Model IGC 100 - Ion Gauge Controller
-
-
-Temperature monitor 
-- middle of furnace 
-- Entry (check inventory)
-
-Heating tape
-Glass wool 
-Aluminum foil 
-Trimethylaluminum
-
-Tygon tubing 
-Schlenk flask 
-Control valves 
-Injection ports 
-Precursor flasks
-Heating tape 
-
-A quartz tube' with stainless steel end connectors (Ace Glass and A&N Corp., respectively; $600)
-
-Welch 1400 dual seal rotary vane pump ($3,000) was employed. 
-
-The pressure inside the chamber was monitored using a Hastings dual sensor vacuum gauge model 2002
+## Items in Need of Purchase:
+- Temperature monitor 
+  - middle of furnace 
+  - Entry (check inventory)
+- Heating tape
+- Glass wool 
+- Aluminum foil 
+- Trimethylaluminum
+- Tygon tubing 
+- Schlenk flask 
+- Control valves 
+- Injection ports 
+- Precursor flasks
+- Heating tape 
+- A quartz tube' with stainless steel end connectors (Ace Glass and A&N Corp., respectively; $600)
+- Welch 1400 dual seal rotary vane pump ($3,000) was employed. 
+- The pressure inside the chamber was monitored using a Hastings dual sensor vacuum gauge model 2002
 ($1,200), which was capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
-
-In order to protect the vacuum pump, a liquid nitrogen trap from A&N Corp. ($685) was used.
-
-
-
-
-
+- To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. ($685) was used.
 --- 
 
 ## **LAr-CCD Detector**

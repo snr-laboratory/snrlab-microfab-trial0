@@ -31,6 +31,7 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 ## Design Approach
 1) Hot-wall horizontal tube reactor - simple and cost effective
 
+## Gas Flow Schematic
 <img width="1400" alt="image" src="https://github.com/user-attachments/assets/973d5e8d-d44c-42bc-9301-05afc557be06" />
 
 

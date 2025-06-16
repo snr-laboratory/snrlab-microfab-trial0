@@ -31,7 +31,7 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 ## Design Approach
 1) Hot-wall horizontal tube reactor - simple and cost effective
 
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/7ee55313-fbe1-4dc0-b457-ea285f6253c0" />
+<img width="1200" alt="image" src="https://github.com/user-attachments/assets/5faf389b-4ba0-4f35-b706-cb0c44ecdbdf" />
 
    - 21100 Tube Furnace by Barnstead Thermolyne
 

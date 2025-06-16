@@ -19,7 +19,7 @@
   - Create a method for generating carriers needed for CV measurements 
 
 ---
-### Atomic Layer Deposition (ALD) Tool Procurement/Assembly
+# Atomic Layer Deposition (ALD) Tool Procurement/Assembly
 
 1) [Atomic Layer Deposition of copper - setup](https://www.youtube.com/watch?v=ih_D6OLzqo4)
 2) [Cost-Effective Systems for Atomic Layer Deposition](https://pubs.acs.org/doi/full/10.1021/ed4007698)
@@ -28,7 +28,7 @@ Layer Deposition of Metal Oxide Thin
 Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 4) [Design and Construction of an ALD Reactor](https://www.ecorfan.org/taiwan/research_journals/Ingenieria_Tecnologica/vol5num16/Journal_of_Technological_Engineering_V5_N16_3.pdf)
 
-Design Approach: 
+## Design Approach
 1) Hot-wall horizontal tube reactor - simple and cost effective
    - 21100 Tube Furnace by Barnstead Thermolyne
 2) Precursor chamber
@@ -40,25 +40,25 @@ Design Approach:
        
 <img width="787" alt="image" src="https://github.com/user-attachments/assets/7ee55313-fbe1-4dc0-b457-ea285f6253c0" />
 
-Wiring
+### Wiring
 - Connect the IGC100’s analog output to the Alicat controller’s analog input (pin 4 of the 8-pin barrel connector, or equivalent).
 - Set the IGC100’s analog output to generate a voltage between 0–5 VDC, corresponding to your desired flow rate
 - Ensure proper grounding to avoid noise or ground loops
 - Program the IGC100 to change the output voltage as needed for your ALD pulse/purge sequences.
 - Monitor and adjust as needed using the IGC100’s touchscreen or remote interface.
 
-Configuration
+### Configuration
 - In the IGC100 menu, configure the analog port as an output.
 - Set the output voltage to the desired value for the flow rate you want.
 - GC100 can be programmed to change the output voltage based on time, pressure, or other events, allowing for automated flow control sequences
 [IGC100](https://www.gmp.ch/htmlarea/pdf/srs/IGC100c_intl.pdf)
 
-Arduino/Python-Based Controller:
+### Arduino/Python-Based Controller:
 - The IGC100 lacks native support for rapid ALD cycle timing (e.g., 0.01–1 sec pulses). A dedicated timing controller ensures repeatable, automated cycles.
 - Controls solenoid valves for millisecond-scale pulsing.
 - Low-cost (~$50–$200) requires custom programming.
 
-Pressure Controller?
+### Pressure Controller?
 - Maintain stable reactor pressure during ALD cycles.
 - Pressure stability prevents precursor intermixing and ensures uniform film growth. The IGC100 measures pressure but does not actively control it.
    
@@ -77,8 +77,6 @@ Vendor
     - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
     - [Alicat - Alicat Mass Flow Controller - Standard Configuration
 100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
-
-
 
 
 5) Precursors/Co-reactants

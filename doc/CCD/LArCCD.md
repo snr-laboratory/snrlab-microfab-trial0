@@ -98,7 +98,8 @@ Vendor
    - Trimethylaluminum (TMA)
    - Water
    - N2 for sweeping gas
-
+[Atomic layer deposition of Al2O3 process
+emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
      
 Characterization:
 - X-ray Diffraction (XRD) - crystal structure and unit cell dimensions 

@@ -30,15 +30,26 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 
 ## Design Approach
 1) Hot-wall horizontal tube reactor - simple and cost effective
+
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/7ee55313-fbe1-4dc0-b457-ea285f6253c0" />
+
    - 21100 Tube Furnace by Barnstead Thermolyne
+
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/2eed9298-3153-42d0-b4fd-aab6055ac5f0" />
+
+    
 2) Precursor chamber
    - 1300 Furnace by Barnstead Thermolyne
+     
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/3cfdc69b-89c2-40f0-955c-ded2dbba9771" />
+
 3) Controlling Gas Flow
    - Ion guage controller Model IGC100 by Stanford Research Systems
       - IGC100 features four analog input/output ports (AN1–AN4)
         - voltage in the range of ±12 VDC
        
-<img width="787" alt="image" src="https://github.com/user-attachments/assets/7ee55313-fbe1-4dc0-b457-ea285f6253c0" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/b58488e7-c097-4541-9982-d3a0f5b98689" />
+
 
 ### Wiring
 - Connect the IGC100’s analog output to the Alicat controller’s analog input (pin 4 of the 8-pin barrel connector, or equivalent).

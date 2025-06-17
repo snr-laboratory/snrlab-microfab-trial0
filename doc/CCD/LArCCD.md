@@ -108,26 +108,29 @@ emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
 
 ## Items in Need of Purchase:
 - Mass Flow Controllers (x3)
-- Solenoid valves/injection ports
+- Solenoid valves/injection ports/Control valves 
 - Nitrogen Gas
 - Trimethylaluminum
 - DI H2O
-- Quartz tube with stainless steel end connectors
+- Quartz tube (5.08cm or 2inches) with stainless steel end connectors
   - Ace Glass and A&N Corp., respectively; $600
-- Temperature monitor 
+- Temperature monitor  
   - Middle of furnace 
   - Entry 
+- 50mL Schlenk flask 
+- 10 mL two-neck round-bottom flask
+- Heating tape (precursor flasks, valves, and associated tubing)
+- Welch 1400 dual seal rotary vane pump ($3,000). 
+- Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
+- To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. $685
 - Heating tape
 - Glass wool 
 - Aluminum foil 
-- Tygon tubing 
-- Schlenk flask 
-- Control valves 
-- Precursor flasks
-- Heating tape 
-- Welch 1400 dual seal rotary vane pump ($3,000). 
-- Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, which was capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
-- To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. $685
+- Tygon tubing
+  
+<img width="784" alt="image" src="https://github.com/user-attachments/assets/d8bc2839-9378-4985-8f51-45ef8371d1f5" />
+
+ 
 --- 
 
 ## References

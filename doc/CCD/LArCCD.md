@@ -4,7 +4,7 @@
     - Gas flow
     - Electrical   
 3) Fully understand the physical measurement process 
-  - CV and how it’s related to the microphysics of the surface 
+  - CV and how it’s related to the microphysics of the surface  
 2) Detailed diagram of the surface of Al2O3 
   - Thickness and layer details 
   -  Device mask (no overlapping gates , just close)

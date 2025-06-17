@@ -154,7 +154,7 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 
 The proposed detector layered architecture consists of a silicon substrate base, metal gate electrodes, a 50 nm aluminum oxide (Al₂O₃) layer deposited via atomic layer deposition (ALD), and liquid argon as the detection medium. There is an external electric field being applied to this detector so if ionization in LAr creates free electrons they will drift towards the Al₂O₃ surface/interface. This device is inspired and mimics the charge coupled device operation.
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/ffbc0d15-5285-45fd-b841-212e463500df" />
+<img width="576" alt="image" src="https://github.com/user-attachments/assets/18399874-a637-46dd-b09c-d9c7c1116cf0" />
 
 Figure 1. Architecture of the proposed detector inspired by the operation and design of the charge coupled device (CCD). In this configuration, LAr is acting as the semiconductor resembling a standard CCD but with an inverted design as can be seen by the positioning of the oxide layer.
 

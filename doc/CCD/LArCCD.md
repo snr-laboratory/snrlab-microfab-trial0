@@ -21,25 +21,16 @@
 ---
 # Atomic Layer Deposition (ALD) Tool Procurement/Assembly
 
-1) [Atomic Layer Deposition of copper - setup](https://www.youtube.com/watch?v=ih_D6OLzqo4)
-2) [Cost-Effective Systems for Atomic Layer Deposition](https://pubs.acs.org/doi/full/10.1021/ed4007698)
-3) [Homebuilt Reactor Design and Atomic
-Layer Deposition of Metal Oxide Thin
-Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
-4) [Design and Construction of an ALD Reactor](https://www.ecorfan.org/taiwan/research_journals/Ingenieria_Tecnologica/vol5num16/Journal_of_Technological_Engineering_V5_N16_3.pdf)
-
 ## Design Approach
 1) Hot-wall horizontal tube reactor - simple and cost effective
 
 ## Gas Flow Schematic
 <img width="1400" alt="image" src="https://github.com/user-attachments/assets/973d5e8d-d44c-42bc-9301-05afc557be06" />
 
-
    - 21100 Tube Furnace by Barnstead Thermolyne
 
   <img width="200" alt="image" src="https://github.com/user-attachments/assets/2eed9298-3153-42d0-b4fd-aab6055ac5f0" />
 
-    
 2) Precursor chamber
    - 1300 Furnace by Barnstead Thermolyne
      
@@ -68,7 +59,7 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 ### Arduino/Python-Based Controller:
 - The IGC100 lacks native support for rapid ALD cycle timing (e.g., 0.01–1 sec pulses). A dedicated timing controller ensures repeatable, automated cycles.
 - Controls solenoid valves for millisecond-scale pulsing.
-- Low-cost (~$50–$200) requires custom programming.
+- Low-cost but requires custom programming.
 
 ### Pressure Controller?
 - Maintain stable reactor pressure during ALD cycles.
@@ -78,6 +69,7 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
     1) TMA precursor line: 0-100 sccm range
     2) Water precursor line: 0-100 sccm range
     3) Nitrogen carrier/purge gas: 0-500 sccm range
+       
 [Exploring TMA and H2O Flow Rate Effects on Al2O3](https://www.mdpi.com/2079-6412/14/5/578)
 [ALD Recipe](https://www.seas.upenn.edu/~nanosop/ALD_Recipes.htm)
 [Investigation and Optimization of Process Parameters on Growth Rate in Al2O3 ](https://pmc.ncbi.nlm.nih.gov/articles/PMC12072700/)
@@ -88,14 +80,18 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
     - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
     - [Alicat - Alicat Mass Flow Controller - Standard Configuration
 100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
+
   - [Mass Flow Controller 200SCCM - ebay 750.00](https://www.ebay.com/itm/224696824012?_skw=Alicat+MC-100SCCM-D%2F5M&itmmeta=01JXNAY7PYA123DKX735MXJF9Q&hash=item3450f970cc:g:IWIAAOSwTMNhlI4c&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1dv5ftEkM4DvjiGLqPDECaDN9qsfmHbuElA5t0vVd%2FhvQH2%2BGzne6xJvAW642DW%2BEKi%2BKbFY1GQzox4CIexX4QAwYjxARi8ramSmCgnUEdGKMoxUaR3VmO1OccJU06kGREOAtw%2FRMAUhuFs7IxAlz9eL9cSHqCQuxH0xSziPMLYKEvWzcovgIT3TTeaYl2Iw0ZCWlwoa0REnkAla7%2Fu90Wn4dEoRLeGXpN7B%2BxkOecL6yJzi%2FxjFVN4QqPE6dKQw4NQW0EITX2vlkATzWuFLkEHQ13XK5EB7W18zpapXzrKWA%3D%3D%7Ctkp%3ABk9SR8r7-KrtZQ)
+    
   - [CO2 HC Mass Flow Controller 699.00 - ebay - purge](https://www.ebay.com/itm/396331121681?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3De149730541c2478d8e99ba6e83e8068b%26pid%3D101429%26rk%3D10%26rkt%3D12%26sd%3D297271799704%26itm%3D396331121681%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A396331121681e149730541c2478d8e99ba6e83e8068b%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfDn%252Bw3ECNPKF2t0SHPE4%252BQO59tOZXlgaorUPO71sKfwDRh2VdQqxVNPdvUaWYxE4F3MqjykjhKOGO45N%252FYndLIOJXXUA%252BnS5eIsysqEVlw%252Bo1uBsS8VmPrulO%252F9X7CPEFd4FQHewc%252BYbwh%252FsTGFddCFrc5uh%252FPFwCaUXCY%252FWiuZh1wCTJzbnNfHCIwuJ1FUJmrSqrHw99IFpxG7vHu%252F2ELY%252FqgbvXw1AmpuHogYdQpxO4rxm0b1uLl8FjfkndBJ0EA1Veynb4bGWymtHrS402T52Vb3cGICF3ezXQKpDM--H%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNB9F4W9857W8XDQMWC3ARQ)
+    
   - [GAS O2 DS Mass Flow Controller 500SCCM - ebay (x4)](https://www.ebay.com/itm/226610185945?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3D27bf10683ee049b98980d371e7613afa%26pid%3D101429%26rk%3D7%26rkt%3D12%26sd%3D126697791403%26itm%3D226610185945%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A22661018594527bf10683ee049b98980d371e7613afa%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfAOPdl3GMvCFjhGIyqIQRgbhjJsu1leWkMUieCZPVK4ww94HP3VROkz9G%252BFB5mVdvcChj8EyqFVjA8J46v%252FkebvrfMry4UrlxoOC3PR1gE2a60eYXx4DTHbl%252BFU6P3iHyOGUCT7S%252BrlzNyXaZ%252Fhorra7HC%252FzRNpJxZuWrSgNo%252BFw6kBrskmgK2GBBkbdgh5OpFVponqdjyZDisMkXFI%252FO8vnYJaEKCLcxiFF1V09v9MPd95mRK9IcZG4%252BFRRZ6Mmj58lqbPJ--SB7ktAucJzOhxfIN63qw67kBqSJ%252BIctRrY%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNBN0EHGWZQHY81TGWAYDTA)
 
 5) Precursors/Co-reactants
    - Trimethylaluminum (TMA)
    - Water
    - N2 for sweeping gas
+  
 [Atomic layer deposition of Al2O3 process
 emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
 
@@ -111,25 +107,38 @@ emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
 --- 
 
 ## Items in Need of Purchase:
+- Mass Flow Controllers (x3)
+- Solenoid valves/injection ports
+- Nitrogen Gas
+- Trimethylaluminum
+- DI H2O
+- Quartz tube with stainless steel end connectors
+  - Ace Glass and A&N Corp., respectively; $600
 - Temperature monitor 
-  - middle of furnace 
-  - Entry (check inventory)
+  - Middle of furnace 
+  - Entry 
 - Heating tape
 - Glass wool 
 - Aluminum foil 
-- Trimethylaluminum
 - Tygon tubing 
 - Schlenk flask 
 - Control valves 
-- Injection ports 
 - Precursor flasks
 - Heating tape 
-- A quartz tube' with stainless steel end connectors (Ace Glass and A&N Corp., respectively; $600)
-- Welch 1400 dual seal rotary vane pump ($3,000) was employed. 
-- The pressure inside the chamber was monitored using a Hastings dual sensor vacuum gauge model 2002
-($1,200), which was capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
-- To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. ($685) was used.
+- Welch 1400 dual seal rotary vane pump ($3,000). 
+- Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, which was capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
+- To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. $685
 --- 
+
+## References
+1) [Atomic Layer Deposition of copper - setup](https://www.youtube.com/watch?v=ih_D6OLzqo4)
+2) [Cost-Effective Systems for Atomic Layer Deposition](https://pubs.acs.org/doi/full/10.1021/ed4007698)
+3) [Homebuilt Reactor Design and Atomic
+Layer Deposition of Metal Oxide Thin
+Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
+4) [Design and Construction of an ALD Reactor](https://www.ecorfan.org/taiwan/research_journals/Ingenieria_Tecnologica/vol5num16/Journal_of_Technological_Engineering_V5_N16_3.pdf)
+
+---
 
 ## **LAr-CCD Detector**
 

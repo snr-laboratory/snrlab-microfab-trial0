@@ -3,19 +3,19 @@
   - Draw schematic for tool design
     - Gas flow
     - Electrical   
-3) Fully understand the physical measurement process 
+2) Fully understand the physical measurement process 
   - CV and how it’s related to the microphysics of the surface  
-2) Detailed diagram of the surface of Al2O3 
+3) Detailed diagram of the surface of Al2O3 
   - Thickness and layer details 
-  -  Device mask (no overlapping gates , just close)
+4) Device mask (no overlapping gates)
   - Check later with simulation for  satisfactory electric field penetration and integrity.  
-3) Test plan for readout schematic 
+5) Test plan for readout schematic 
   - Exact device shape  with details  
   - Special test structure that is a separate from the device 
-4) Liquid argon system
+6) Liquid argon system
   - Argon recirculation 
   - LAr coffee brewer inspired recirculation device
-5) We need mobile charge carriers in the semiconductor (LAr)
+7) We need mobile charge carriers in the semiconductor (LAr)
   - Create a method for generating carriers needed for CV measurements 
 
 ---
@@ -43,17 +43,17 @@
        
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/b58488e7-c097-4541-9982-d3a0f5b98689" />
 
-### Wiring
-- Connect the IGC100’s analog output to the Alicat controller’s analog input (pin 4 of the 8-pin barrel connector, or equivalent).
-- Set the IGC100’s analog output to generate a voltage between 0–5 VDC, corresponding to your desired flow rate
-- Ensure proper grounding to avoid noise or ground loops
-- Program the IGC100 to change the output voltage as needed for your ALD pulse/purge sequences.
-- Monitor and adjust as needed using the IGC100’s touchscreen or remote interface.
+- ### Wiring
+  - Connect the IGC100’s analog output to the Alicat controller’s analog input (pin 4 of the 8-pin barrel connector, or equivalent).
+  - Set the IGC100’s analog output to generate a voltage between 0–5 VDC, corresponding to your desired flow rate
+  - Ensure proper grounding to avoid noise or ground loops
+  - Program the IGC100 to change the output voltage as needed for your ALD pulse/purge sequences.
+  - Monitor and adjust as needed using the IGC100’s touchscreen or remote interface.
 
-### Configuration
-- In the IGC100 menu, configure the analog port as an output.
-- Set the output voltage to the desired value for the flow rate you want.
-- GC100 can be programmed to change the output voltage based on time, pressure, or other events, allowing for automated flow control sequences
+- ### Configuration
+  - In the IGC100 menu, configure the analog port as an output.
+  - Set the output voltage to the desired value for the flow rate you want.
+  - GC100 can be programmed to change the output voltage based on time, pressure, or other events, allowing for automated flow control sequences
 [IGC100](https://www.gmp.ch/htmlarea/pdf/srs/IGC100c_intl.pdf)
 
 ### Arduino/Python-Based Controller:
@@ -116,7 +116,8 @@ emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
   - Ace Glass and A&N Corp., respectively; $600
 - Temperature monitor  
   - Middle of furnace 
-  - Entry 
+  - Entry
+- Ceramic boat (x2 Sample and Al2O3)
 - 50mL Schlenk flask 
 - 10 mL two-neck round-bottom flask 
   - 40 mL electro-polished stainless steel sample cylinder with top and bottom openings could be used ($200, Swagelok).  
@@ -161,7 +162,9 @@ Figure 1. Architecture of the proposed detector inspired by the operation and de
 
 Figure 2. Close up of the LAr/Al₂O₃ interface with two different possible cases for interface behavior. Case 2 shows an exaggerated situation in which the LAr is extremely hydrophobic to the Al₂O₃ surface. 
 
-Although ALD is considered the gold standard for producing high quality thin films, especially in thickness control and uniformity, we can expect there to be some surface roughness resulting in void spaces. This difference in contact will have an effect on the efficiency of charge transfer. 
+Although ALD is considered the gold standard for producing high quality thin films, especially in thickness control and uniformity, we can expect there to be some surface roughness resulting in void spaces. This difference in contact will have an effect on the efficiency of charge transfer. The 50nm thickness for the Al₂O₃ is to ensure we have sufficient capacitive coupling between the electrodes and the LAr, better charge transfer efficiency, desirable interface properties and reproducability. 
+
+Research on CCD gate oxides confirms that there exists an optimal thickness range for maintaining both electrical performance and reliability, with 50 nm falling within this optimized range for cryogenic liquid applications. The mechanical stress from thermal contraction is manageable at this thickness, avoiding cracking or delamination issues that could occur with thicker films. The 50 nm Al₂O₃ thickness thus represents a carefully optimized choice that balances electrical performance, reliability, manufacturability, and providing the necessary capacitive coupling while maintaining robust breakdown characteristics under cryogenic operating conditions.
 
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/df1f7508-97a5-4eba-819c-c9552a318de0" />
 

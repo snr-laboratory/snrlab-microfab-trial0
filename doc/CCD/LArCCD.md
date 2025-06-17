@@ -118,7 +118,8 @@ emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
   - Middle of furnace 
   - Entry 
 - 50mL Schlenk flask 
-- 10 mL two-neck round-bottom flask
+- 10 mL two-neck round-bottom flask 
+  - 40 mL electro-polished stainless steel sample cylinder with top and bottom openings could be used ($200, Swagelok).  
 - Heating tape (precursor flasks, valves, and associated tubing)
 - Welch 1400 dual seal rotary vane pump ($3,000). 
 - Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
@@ -131,6 +132,11 @@ emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
 <img width="784" alt="image" src="https://github.com/user-attachments/assets/d8bc2839-9378-4985-8f51-45ef8371d1f5" />
 
  
+--- 
+
+## Additional Considerations
+Consider the need for a load-lock or system that can transport susbtrate without the risk of contamination
+
 --- 
 
 ## References

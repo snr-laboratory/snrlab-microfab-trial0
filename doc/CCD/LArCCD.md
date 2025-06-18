@@ -26,14 +26,22 @@ In order to determine more about the feasibility of the desired LAr detector and
 1) Hot-wall horizontal tube reactor
 This design is simple and relatively cost effective. The general layout is outlined below:
 
-<img width="1400" alt="image" src="https://github.com/user-attachments/assets/973d5e8d-d44c-42bc-9301-05afc557be06" />
+<img width="1585" alt="image" src="https://github.com/user-attachments/assets/4cafbcbe-5c33-4f71-bd78-e505e3858711" />
+
 
 ## Gas Flow Schematic
-<img width="1400" alt="image" src="https://github.com/user-attachments/assets/973d5e8d-d44c-42bc-9301-05afc557be06" />
+
+<img width="1224" alt="image" src="https://github.com/user-attachments/assets/b4b43962-295b-442d-a41c-09c2af30dc2e" />
 
    - 21100 Tube Furnace by Barnstead Thermolyne
 
-N2 is used as the carrier and purging gas from the mass flow controllers to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. 
+N2 is used as the carrier and purging gas from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. (still need to weight the benefits of redirecting the purge line (eg faster purge times, avoid contamination through sharing lines, etc...). For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 Furnace and enter the injection valves which will help to control the vapor pulsing. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 Furnace, injection valves and on to the deposition chamber with controlled pulsing of vapors. 
+
+
+
+
+
+
 
 2) Precursor chamber
    - 1300 Furnace by Barnstead Thermolyne
@@ -151,6 +159,8 @@ Consider the need for a load-lock or system that can transport susbtrate without
 Layer Deposition of Metal Oxide Thin
 Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 4) [Design and Construction of an ALD Reactor](https://www.ecorfan.org/taiwan/research_journals/Ingenieria_Tecnologica/vol5num16/Journal_of_Technological_Engineering_V5_N16_3.pdf)
+5) [OPERATING MANUAL FOR MASS FLOW CONTROLLERS](https://www.lesker.com/newweb/process_instruments/pdf/kjlc-manual-alicat-mc.pdf)
+6) 
 
 ---
 

@@ -20,9 +20,13 @@
 
 ---
 # Atomic Layer Deposition (ALD) Tool Procurement/Assembly
+In order to determine more about the feasibility of the desired LAr detector and its working priniciple regarding charge transfer, we must remove the "chokepoint" which in our case is the ALD system for the growth of 50nm of Al₂O₃. 
 
 ## Design Approach
-1) Hot-wall horizontal tube reactor - simple and cost effective
+1) Hot-wall horizontal tube reactor
+This design is simple and relatively cost effective. The general layout is outlined below:
+
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/973d5e8d-d44c-42bc-9301-05afc557be06" />
 
 ## Gas Flow Schematic
 <img width="1400" alt="image" src="https://github.com/user-attachments/assets/973d5e8d-d44c-42bc-9301-05afc557be06" />

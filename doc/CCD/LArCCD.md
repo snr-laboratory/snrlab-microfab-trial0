@@ -33,7 +33,7 @@ This design is simple and relatively cost effective. The general layout is outli
 
    - 21100 Tube Furnace by Barnstead Thermolyne
 
-  <img width="200" alt="image" src="https://github.com/user-attachments/assets/2eed9298-3153-42d0-b4fd-aab6055ac5f0" />
+N2 is used as the carrier and purging gas from the mass flow controllers to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. 
 
 2) Precursor chamber
    - 1300 Furnace by Barnstead Thermolyne

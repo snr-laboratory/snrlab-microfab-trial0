@@ -19,7 +19,7 @@
   - Create a method for generating carriers needed for CV measurements 
 
 ---
-# Atomic Layer Deposition (ALD) Tool Procurement/Assembly
+# Atomic Layer Deposition (ALD) Reactor System
 In order to determine more about the feasibility of the desired LAr detector and its working priniciple regarding charge transfer, we must remove the "chokepoint" which in our case is the ALD system for the growth of 50nm of Al₂O₃. 
 
 ## Design Approach
@@ -31,16 +31,12 @@ This design is simple and relatively cost effective. The general layout is outli
 
 ## Gas Flow Schematic
 
-<img width="1224" alt="image" src="https://github.com/user-attachments/assets/b4b43962-295b-442d-a41c-09c2af30dc2e" />
+<img width="1347" alt="image" src="https://github.com/user-attachments/assets/689ad27b-54ff-4531-b1a0-065663293c69" />
+
 
    - 21100 Tube Furnace by Barnstead Thermolyne
 
 N2 is used as the carrier and purging gas from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. (still need to weight the benefits of redirecting the purge line (eg faster purge times, avoid contamination through sharing lines, etc...). For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 Furnace and enter the injection valves which will help to control the vapor pulsing. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 Furnace, injection valves and on to the deposition chamber with controlled pulsing of vapors. 
-
-
-
-
-
 
 
 2) Precursor chamber

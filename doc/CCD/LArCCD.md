@@ -20,7 +20,7 @@
 
 ---
 # Atomic Layer Deposition (ALD) Reactor System
-In order to determine more about the feasibility of the desired LAr detector and its working priniciple regarding charge transfer, we must remove the "chokepoint" which in our case is the ALD system for the growth of 50nm of Al₂O₃. 
+In order to determine more about the feasibility of the desired LAr detector and its working priniciple regarding charge transfer, we must remove the "chokepoint," which in our case is the ALD system for the growth of 50nm of Al₂O₃. 
 
 ## Design Approach
 1) Hot-wall horizontal tube reactor
@@ -28,8 +28,11 @@ This design is simple and relatively cost effective. The general layout is outli
 
 <img width="1585" alt="image" src="https://github.com/user-attachments/assets/4cafbcbe-5c33-4f71-bd78-e505e3858711" />
 
+The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz tube inside the 21100 tube furnace (still working on the diameter size of the tube in order to achieve a laminar vs a turbelent flow). The proper temperature control of the substrate and surroundings is needed in order to minimize any inconsistencies in the film growth. High uniformity is essential for testing the desired devices performance with respect to charge transfer efficiency and reproducability of high quality thin films. 
+
 
 ## Gas Flow Schematic
+The design outlined show the unidirectional flow of gases 
 
 <img width="1347" alt="image" src="https://github.com/user-attachments/assets/689ad27b-54ff-4531-b1a0-065663293c69" />
 

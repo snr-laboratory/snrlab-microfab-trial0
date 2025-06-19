@@ -20,7 +20,7 @@
 
 ---
 # Atomic Layer Deposition (ALD) Reactor System
-In order to determine more about the feasibility of the desired LAr detector and its working priniciple regarding charge transfer, we must remove the "chokepoint," which in our case is the ALD system for the growth of 50nm of Al₂O₃. 
+In order to determine more about the feasibility of the desired LAr detector and its working priniciple regarding charge transfer, we must remove the "chokepoint," which in our case is the ALD system for the growth of 50nm of Al₂O₃. This key component of growing a high quality thin film of Al₂O₃ can allow us to study the effects of the behavior of the LAr and Al₂O₃ interface and hopefully provide information on the efficiency of measuring and transporting charge. 
 
 ## Design Approach
 1) Hot-wall horizontal tube reactor
@@ -30,12 +30,10 @@ This design is simple and relatively cost effective. The general layout is outli
 
 The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz tube inside the 21100 tube furnace (still working on the diameter size of the tube in order to achieve a laminar vs a turbelent flow). The proper temperature control of the substrate and surroundings is needed in order to minimize any inconsistencies in the film growth. High uniformity is essential for testing the desired devices performance with respect to charge transfer efficiency and reproducability of high quality thin films. 
 
-
 ## Gas Flow Schematic
-The design outlined show the unidirectional flow of gases 
+The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants and most importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). The design outlined shows the unidirectional flow of gases. The gas flow shown below follows a single direction from the carrier/purging source all the way to the vacuum pump: 
 
 <img width="1347" alt="image" src="https://github.com/user-attachments/assets/689ad27b-54ff-4531-b1a0-065663293c69" />
-
 
    - 21100 Tube Furnace by Barnstead Thermolyne
 

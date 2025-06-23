@@ -50,12 +50,6 @@ The flow squence will be later determined though recipe development for critical
 
 
 
-
-
-
-
-
-
 2) Precursor chamber
    - 1300 Furnace by Barnstead Thermolyne
      

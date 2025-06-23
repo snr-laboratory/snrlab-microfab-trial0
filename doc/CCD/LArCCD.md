@@ -25,7 +25,9 @@ In order to determine more about the feasibility of the desired LAr detector and
 
 ## Design Approach
 1) Hot-wall horizontal tube reactor
-This design is simple and relatively cost effective. The general layout is outlined below:
+This design is simple and relatively cost effective. The carrier gas (N2) flows into the three controllers. To the immediate right of the mass flow controllers, solenoid valves are included to minimize dead volume between the valves and the chamber, ensuring sharp precursor pulses and efficient purging (gas carrier lines will also be as short as possible for these same reasons). 
+
+The general layout is outlined below:
 
 <img width="1700" alt="image" src="https://github.com/user-attachments/assets/454e370d-ef92-4154-9cde-30939b1bb167" />
 
@@ -34,7 +36,7 @@ The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz
 ## Gas Flow Schematic
 The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants and most importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). The design outlined shows the unidirectional flow of gases. The gas flow shown below follows a single direction from the carrier/purging source all the way to the vacuum pump: 
 
-<img width="1700" alt="image" src="https://github.com/user-attachments/assets/af238a8a-b2d4-46e4-910b-27dd67583e1f" />
+<img width="1600" alt="image" src="https://github.com/user-attachments/assets/38c9e26a-c805-41da-98e2-ddaecbf9a2c3" />
 
    - 21100 Tube Furnace by Barnstead Thermolyne
 

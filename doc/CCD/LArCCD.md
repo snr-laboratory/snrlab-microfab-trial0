@@ -40,7 +40,20 @@ The key innovation of ALD is in its ability to carefully control the introductio
 
 N2 is used as the carrier and purging gas from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. (still need to weight the benefits of redirecting the purge line (eg faster purge times, avoid contamination through sharing lines, etc...). For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
 
-As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can results in unwanted results in regards to the quality of the films grown. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. At this point, the gas flow will proceed by surface saturation by pulsing TMA, purging, self-limiting surface reaction by pulsing water, purging and then repeating each cycle for desired number for layers. At the location of the HVC and entrance into the tube furnace, a pressure gauge will read the pressure and using the needle valve, on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure.
+As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can results in unwanted results in regards to the quality of the films grown. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. At this point, the gas flow will proceed by surface saturation by pulsing TMA, purging, self-limiting surface reaction by pulsing water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will read the pressure and using the needle valve, on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
+
+The flow squence will be later determined though recipe development for critical inforamtion as follows:
+- Valve timing: How long each injection valve remains open
+- Purge duration: How long between precursor pulses to ensure complete purging
+- Flow rates: Specific carrier gas flow rates during each phase
+- Pressure setpoints: Target pressures for each phase of the cycle
+
+
+
+
+
+
+
 
 
 2) Precursor chamber

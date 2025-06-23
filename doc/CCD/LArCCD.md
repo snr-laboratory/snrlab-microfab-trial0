@@ -23,15 +23,17 @@
 # Atomic Layer Deposition (ALD) Reactor System
 In order to determine more about the feasibility of the desired LAr detector and its working priniciple regarding charge transfer, we must remove the "chokepoint," which in our case is the ALD system for the growth of 50nm of Al₂O₃. This key component of growing a high quality thin film of Al₂O₃ can allow us to study the effects of the behavior of the LAr and Al₂O₃ interface and hopefully provide information on the efficiency of measuring and transporting charge. 
 
-## Design Approach
-1) Hot-wall horizontal tube reactor
-This design is simple and relatively cost effective. The carrier gas (N2) flows into the three controllers. To the immediate right of the mass flow controllers, solenoid valves are included to minimize dead volume between the valves and the chamber, ensuring sharp precursor pulses and efficient purging (gas carrier lines will also be as short as possible for these same reasons). 
+## Design Approach - Hot-wall Horizontal Tube Reactor
+This design is simple and relatively cost effective. The carrier gas (N2) flows into the three controllers. To the immediate right of the mass flow controllers, solenoid valves are included to minimize dead volume between the valves and the chamber, ensuring sharp precursor pulses and efficient purging (gas carrier lines will also be as short as possible for these same reasons). The controllers will be connected, monitored and regulated through the ion guage controller 100. It's main function is to regulate gas flow rates by interfacing with mass flow controllers (MFCs), based on the pressure readings it receives from the system. An Arduino is in control of the solenoid and injection valves and their timing. Injection valves are placed inside the 1300 furnace where they lead directly into the entrance of a quartz tube with stainless steel custom ends. Inside and near the middle of the 21100 tube furnace is where the deposition will take place. The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz tube inside the 21100 tube furnace (still working on the diameter size of the tube in order to achieve a laminar vs a turbelent flow). The proper temperature control of the substrate and surroundings is needed in order to minimize any inconsistencies in the film growth. High uniformity is essential for testing the desired devices performance with respect to charge transfer efficiency and reproducability of high quality thin films. From there the gasses flow over the substrate and continue to the vacuum pump and expelled through the fume hood. 
 
 The general layout is outlined below:
 
 <img width="1700" alt="image" src="https://github.com/user-attachments/assets/454e370d-ef92-4154-9cde-30939b1bb167" />
 
-The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz tube inside the 21100 tube furnace (still working on the diameter size of the tube in order to achieve a laminar vs a turbelent flow). The proper temperature control of the substrate and surroundings is needed in order to minimize any inconsistencies in the film growth. High uniformity is essential for testing the desired devices performance with respect to charge transfer efficiency and reproducability of high quality thin films. 
+- Nitrogen carrier gas is distributed via three mass flow controllers (MFCs) for TMA, H₂O, and purge.
+- Solenoid valves immediately after each MFC enable sharp, programmable pulsing.
+- Precursor and purge gases are routed through a 1300°C furnace and injection valves, then into the main reactor (21100 tube furnace) via heated lines (HVC 150) to prevent condensation.
+- The system is monitored and controlled by Arduino/IGC100, with final exhaust through a vacuum line and fume hood.
 
 ## Gas Flow Schematic
 The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants and most importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). The design outlined shows the unidirectional flow of gases. The gas flow shown below follows a single direction from the carrier/purging source all the way to the vacuum pump: 
@@ -51,13 +53,12 @@ The flow squence will be later determined though recipe development for critical
 - Pressure setpoints: Target pressures for each phase of the cycle
 
 
-
-2) Precursor chamber
+Precursor chamber
    - 1300 Furnace by Barnstead Thermolyne
      
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/3cfdc69b-89c2-40f0-955c-ded2dbba9771" />
 
-3) Controlling Gas Flow
+Controlling Gas Flow
    - Ion guage controller Model IGC100 by Stanford Research Systems
       - IGC100 features four analog input/output ports (AN1–AN4)
         - voltage in the range of ±12 VDC
@@ -86,7 +87,7 @@ The flow squence will be later determined though recipe development for critical
 - Maintain stable reactor pressure during ALD cycles.
 - Pressure stability prevents precursor intermixing and ensures uniform film growth. The IGC100 measures pressure but does not actively control it.
    
-4) Programmable Flow Rate Controllers
+Programmable Flow Rate Controllers
     1) TMA precursor line: 0-100 sccm range
     2) Water precursor line: 0-100 sccm range
     3) Nitrogen carrier/purge gas: 0-500 sccm range
@@ -108,7 +109,7 @@ The flow squence will be later determined though recipe development for critical
     
   - [GAS O2 DS Mass Flow Controller 500SCCM - ebay (x4)](https://www.ebay.com/itm/226610185945?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3D27bf10683ee049b98980d371e7613afa%26pid%3D101429%26rk%3D7%26rkt%3D12%26sd%3D126697791403%26itm%3D226610185945%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A22661018594527bf10683ee049b98980d371e7613afa%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfAOPdl3GMvCFjhGIyqIQRgbhjJsu1leWkMUieCZPVK4ww94HP3VROkz9G%252BFB5mVdvcChj8EyqFVjA8J46v%252FkebvrfMry4UrlxoOC3PR1gE2a60eYXx4DTHbl%252BFU6P3iHyOGUCT7S%252BrlzNyXaZ%252Fhorra7HC%252FzRNpJxZuWrSgNo%252BFw6kBrskmgK2GBBkbdgh5OpFVponqdjyZDisMkXFI%252FO8vnYJaEKCLcxiFF1V09v9MPd95mRK9IcZG4%252BFRRZ6Mmj58lqbPJ--SB7ktAucJzOhxfIN63qw67kBqSJ%252BIctRrY%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNBN0EHGWZQHY81TGWAYDTA)
 
-5) Precursors/Co-reactants
+Precursors/Co-reactants
    - Trimethylaluminum (TMA)
    - Water
    - N2 for sweeping gas

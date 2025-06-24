@@ -7,7 +7,7 @@
       - high-quality MFCs
       - quartz tube with custom stainless steel ends for attaching the gas lines      
 
-# Fab plan (Priority List) 
+# Priority List
 1) Atomic Layer Deposition (ALD) Tool
     - Draw schematic for tool design
       - Gas flow

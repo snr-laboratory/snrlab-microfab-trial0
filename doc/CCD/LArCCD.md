@@ -49,7 +49,6 @@ The key innovation of ALD is in its ability to carefully control the introductio
 
 <img width="1600" alt="image" src="https://github.com/user-attachments/assets/38c9e26a-c805-41da-98e2-ddaecbf9a2c3" />
 
-   - 21100 Tube Furnace by Barnstead Thermolyne
 
 N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. The purge line is redirected for faster purge times and to avoid contamination through the sharing lines. For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
 
@@ -72,6 +71,10 @@ The flow sequence will be later determined though recipe development for critica
 
 
 ---
+## Reaction Chamber
+  - 21100 Tube Furnace by Barnstead Thermolyne
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/a2504053-541a-4f34-aba9-59b5884fd618" />
 
 ## Precursor Chamber
    - 1300 Furnace by Barnstead Thermolyne
@@ -156,7 +159,8 @@ Consider the need for a load-lock or system that can transport susbtrate without
 - Ceramic boat (x2 Sample and Al2O3)
 - 50mL Schlenk flask 
 - 10 mL two-neck round-bottom flask 
-  - 40 mL electro-polished stainless steel sample cylinder with top and bottom openings could be used ($200, Swagelok).  
+  - 40 mL electro-polished stainless steel sample cylinder with top and bottom openings could be used ($200, Swagelok).
+- Quartz crystal for monitoring deposition rate  
 - Heating tape (precursor flasks, valves, and associated tubing)
 - Welch 1400 dual seal rotary vane pump ($3,000). 
 - Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 

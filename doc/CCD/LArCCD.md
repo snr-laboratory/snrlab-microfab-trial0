@@ -65,6 +65,12 @@ The flow sequence will be later determined though recipe development for critica
 Components Requiring Electrical Control or Connection
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
 
+Block Diagram
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
+
+
+
 ---
 ## Reaction Chamber
   - 21100 Tube Furnace by Barnstead Thermolyne

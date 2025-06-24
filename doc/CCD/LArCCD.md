@@ -61,6 +61,16 @@ The flow sequence will be later determined though recipe development for critica
 - Flow rates: Specific carrier gas flow rates during each phase
 - Pressure setpoints: Target pressures for each phase of the cycle
 
+## Electrical Schematic
+
+
+
+
+
+
+
+
+
 ---
 
 ## Precursor Chamber

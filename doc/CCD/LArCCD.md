@@ -1,3 +1,8 @@
+# Milestone Deadlines:
+- Milestone 1: Finish gas flow design along with description by Jun 24th
+- Milestone 2: Electrial design by Jun 27
+- Milestone 3: Material list ready to submit by Jun 30
+
 # Fab plan (Priority List) 
 1) Atomic Layer Deposition (ALD) Tool
   - Draw schematic for tool design
@@ -24,7 +29,7 @@
 In order to determine more about the feasibility of the desired LAr detector and its working priniciple regarding charge transfer, we must remove the "chokepoint," which in our case is the ALD system for the growth of 50nm of Al₂O₃. This key component of growing a high quality thin film of Al₂O₃ can allow us to study the effects of the behavior of the LAr and Al₂O₃ interface and hopefully provide information on the efficiency of measuring and transporting charge. 
 
 ## Design Approach - Hot-wall Horizontal Tube Reactor
-This design is simple and relatively cost effective. The carrier gas (N2) flows into the three controllers. To the immediate right of the mass flow controllers, solenoid valves are included to minimize dead volume between the valves and the chamber, ensuring sharp precursor pulses and efficient purging (gas carrier lines will also be as short as possible for these same reasons). The controllers will be connected, monitored and regulated through the ion guage controller 100. It's main function is to regulate gas flow rates by interfacing with mass flow controllers (MFCs), based on the pressure readings it receives from the system. An Arduino is in control of the solenoid and injection valves and their timing. Injection valves are placed inside the 1300 furnace where they lead directly into the entrance of a quartz tube with stainless steel custom ends. Inside and near the middle of the 21100 tube furnace is where the deposition will take place. The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz tube inside the 21100 tube furnace (still working on the diameter size of the tube in order to achieve a laminar vs a turbelent flow). The proper temperature control of the substrate and surroundings is needed in order to minimize any inconsistencies in the film growth. High uniformity is essential for testing the desired devices performance with respect to charge transfer efficiency and reproducability of high quality thin films. From there the gasses flow over the substrate and continue to the vacuum pump and expelled through the fume hood. 
+This design is simple and relatively cost effective. The nitrogen gas flows throughout the system acting as carrier and purging gas. To the immediate right of the mass flow controllers, solenoid valves are included to minimize dead volume between the valves and the chamber, ensuring sharp precursor pulses and efficient purging (gas carrier lines will also be as short as possible for these same reasons). The controllers will be connected, monitored and regulated through the ion guage controller 100. It's main function is to regulate gas flow rates by interfacing with the mass flow controllers (MFCs), based on the pressure readings it receives from the system. An Arduino is in control of the solenoid and injection valves and their timing. Injection valves are placed inside the 1300 furnace where they lead directly into the entrance of a quartz tube with stainless steel custom ends. Inside and near the middle of the 21100 tube furnace is where the deposition will take place. The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz tube inside the 21100 tube furnace (still working on the diameter size of the tube in order to achieve a laminar vs a turbelent flow). The proper temperature control of the substrate and surroundings is needed in order to minimize any inconsistencies in the film growth. High uniformity is essential for testing the desired devices performance with respect to charge transfer efficiency and reproducability of high quality thin films. From there the gasses flow over the substrate and continue to the vacuum pump and are expelled through the fume hood. 
 
 The general layout is outlined below:
 
@@ -36,29 +41,30 @@ The general layout is outlined below:
 - The system is monitored and controlled by Arduino/IGC100, with final exhaust through a vacuum line and fume hood.
 
 ## Gas Flow Schematic
-The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants and most importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). The design outlined shows the unidirectional flow of gases. The gas flow shown below follows a single direction from the carrier/purging source all the way to the vacuum pump: 
+The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants; and more importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). The design outlined shows the unidirectional flow of gases. The gas flow shown below follows a single direction from the carrier/purging source all the way to the vacuum pump: 
 
 <img width="1600" alt="image" src="https://github.com/user-attachments/assets/38c9e26a-c805-41da-98e2-ddaecbf9a2c3" />
 
    - 21100 Tube Furnace by Barnstead Thermolyne
 
-N2 is used as the carrier and purging gas from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. (still need to weight the benefits of redirecting the purge line (eg faster purge times, avoid contamination through sharing lines, etc...). For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
+N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. (still need to weight the benefits of redirecting the purge line (eg faster purge times, avoid contamination through sharing lines, etc...). For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
 
-As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can results in unwanted results in regards to the quality of the films grown. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. At this point, the gas flow will proceed by surface saturation by pulsing TMA, purging, self-limiting surface reaction by pulsing water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will read the pressure and using the needle valve, on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
+As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can result in unwanted lower quality grown films. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. At this point, the gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
 
-The flow squence will be later determined though recipe development for critical inforamtion as follows:
+The flow sequence will be later determined though recipe development for critical information as follows:
 - Valve timing: How long each injection valve remains open
 - Purge duration: How long between precursor pulses to ensure complete purging
 - Flow rates: Specific carrier gas flow rates during each phase
 - Pressure setpoints: Target pressures for each phase of the cycle
 
+---
 
-Precursor chamber
+## Precursor Chamber
    - 1300 Furnace by Barnstead Thermolyne
      
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/3cfdc69b-89c2-40f0-955c-ded2dbba9771" />
 
-Controlling Gas Flow
+## Regulating Gas Flow Rates 
    - Ion guage controller Model IGC100 by Stanford Research Systems
       - IGC100 features four analog input/output ports (AN1–AN4)
         - voltage in the range of ±12 VDC
@@ -78,16 +84,16 @@ Controlling Gas Flow
   - GC100 can be programmed to change the output voltage based on time, pressure, or other events, allowing for automated flow control sequences
 [IGC100](https://www.gmp.ch/htmlarea/pdf/srs/IGC100c_intl.pdf)
 
-### Arduino/Python-Based Controller:
+## Arduino/Python-Based Controller
 - The IGC100 lacks native support for rapid ALD cycle timing (e.g., 0.01–1 sec pulses). A dedicated timing controller ensures repeatable, automated cycles.
 - Controls solenoid valves for millisecond-scale pulsing.
 - Low-cost but requires custom programming.
 
-### Pressure Controller?
+## Pressure Controller?
 - Maintain stable reactor pressure during ALD cycles.
 - Pressure stability prevents precursor intermixing and ensures uniform film growth. The IGC100 measures pressure but does not actively control it.
    
-Programmable Flow Rate Controllers
+## Programmable Mass Flow Rate Controllers (MC)
     1) TMA precursor line: 0-100 sccm range
     2) Water precursor line: 0-100 sccm range
     3) Nitrogen carrier/purge gas: 0-500 sccm range
@@ -96,20 +102,9 @@ Programmable Flow Rate Controllers
 [ALD Recipe](https://www.seas.upenn.edu/~nanosop/ALD_Recipes.htm)
 [Investigation and Optimization of Process Parameters on Growth Rate in Al2O3 ](https://pmc.ncbi.nlm.nih.gov/articles/PMC12072700/)
 
-### Vendor Kurt J. Lesker Company
-  - N2	Elastomer	100 SCCM	KJLMCH4BAA1 $1,480.00 3-4 Weeks (x2)
-  - N2	Elastomer	1000 SCCM	KJLMCK4BAA1 $1,480.00 3-4 Weeks (x2)
-    - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
-    - [Alicat - Alicat Mass Flow Controller - Standard Configuration
-100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
+---
 
-  - [Mass Flow Controller 200SCCM - ebay 750.00](https://www.ebay.com/itm/224696824012?_skw=Alicat+MC-100SCCM-D%2F5M&itmmeta=01JXNAY7PYA123DKX735MXJF9Q&hash=item3450f970cc:g:IWIAAOSwTMNhlI4c&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1dv5ftEkM4DvjiGLqPDECaDN9qsfmHbuElA5t0vVd%2FhvQH2%2BGzne6xJvAW642DW%2BEKi%2BKbFY1GQzox4CIexX4QAwYjxARi8ramSmCgnUEdGKMoxUaR3VmO1OccJU06kGREOAtw%2FRMAUhuFs7IxAlz9eL9cSHqCQuxH0xSziPMLYKEvWzcovgIT3TTeaYl2Iw0ZCWlwoa0REnkAla7%2Fu90Wn4dEoRLeGXpN7B%2BxkOecL6yJzi%2FxjFVN4QqPE6dKQw4NQW0EITX2vlkATzWuFLkEHQ13XK5EB7W18zpapXzrKWA%3D%3D%7Ctkp%3ABk9SR8r7-KrtZQ)
-    
-  - [CO2 HC Mass Flow Controller 699.00 - ebay - purge](https://www.ebay.com/itm/396331121681?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3De149730541c2478d8e99ba6e83e8068b%26pid%3D101429%26rk%3D10%26rkt%3D12%26sd%3D297271799704%26itm%3D396331121681%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A396331121681e149730541c2478d8e99ba6e83e8068b%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfDn%252Bw3ECNPKF2t0SHPE4%252BQO59tOZXlgaorUPO71sKfwDRh2VdQqxVNPdvUaWYxE4F3MqjykjhKOGO45N%252FYndLIOJXXUA%252BnS5eIsysqEVlw%252Bo1uBsS8VmPrulO%252F9X7CPEFd4FQHewc%252BYbwh%252FsTGFddCFrc5uh%252FPFwCaUXCY%252FWiuZh1wCTJzbnNfHCIwuJ1FUJmrSqrHw99IFpxG7vHu%252F2ELY%252FqgbvXw1AmpuHogYdQpxO4rxm0b1uLl8FjfkndBJ0EA1Veynb4bGWymtHrS402T52Vb3cGICF3ezXQKpDM--H%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNB9F4W9857W8XDQMWC3ARQ)
-    
-  - [GAS O2 DS Mass Flow Controller 500SCCM - ebay (x4)](https://www.ebay.com/itm/226610185945?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3D27bf10683ee049b98980d371e7613afa%26pid%3D101429%26rk%3D7%26rkt%3D12%26sd%3D126697791403%26itm%3D226610185945%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A22661018594527bf10683ee049b98980d371e7613afa%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfAOPdl3GMvCFjhGIyqIQRgbhjJsu1leWkMUieCZPVK4ww94HP3VROkz9G%252BFB5mVdvcChj8EyqFVjA8J46v%252FkebvrfMry4UrlxoOC3PR1gE2a60eYXx4DTHbl%252BFU6P3iHyOGUCT7S%252BrlzNyXaZ%252Fhorra7HC%252FzRNpJxZuWrSgNo%252BFw6kBrskmgK2GBBkbdgh5OpFVponqdjyZDisMkXFI%252FO8vnYJaEKCLcxiFF1V09v9MPd95mRK9IcZG4%252BFRRZ6Mmj58lqbPJ--SB7ktAucJzOhxfIN63qw67kBqSJ%252BIctRrY%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNBN0EHGWZQHY81TGWAYDTA)
-
-Precursors/Co-reactants
+## Precursors/Co-reactants
    - Trimethylaluminum (TMA)
    - Water
    - N2 for sweeping gas
@@ -125,6 +120,11 @@ emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
 - Scanning Electron Microscopy Backscattered Electron Imaging (SEM - BEI) - sample roughness 
 - Filmetrics - sample thickness
 - Ellipsometry - sample thickness
+  
+---
+
+## Additional Considerations
+Consider the need for a load-lock or system that can transport susbtrate without the risk of contamination
 
 --- 
 
@@ -154,11 +154,18 @@ emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
   
 <img width="784" alt="image" src="https://github.com/user-attachments/assets/d8bc2839-9378-4985-8f51-45ef8371d1f5" />
 
- 
---- 
+### Vendor Kurt J. Lesker Company
+  - N2	Elastomer	100 SCCM	KJLMCH4BAA1 $1,480.00 3-4 Weeks (x2)
+  - N2	Elastomer	1000 SCCM	KJLMCK4BAA1 $1,480.00 3-4 Weeks (x2)
+    - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
+    - [Alicat - Alicat Mass Flow Controller - Standard Configuration
+100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
 
-## Additional Considerations
-Consider the need for a load-lock or system that can transport susbtrate without the risk of contamination
+  - [Mass Flow Controller 200SCCM - ebay 750.00](https://www.ebay.com/itm/224696824012?_skw=Alicat+MC-100SCCM-D%2F5M&itmmeta=01JXNAY7PYA123DKX735MXJF9Q&hash=item3450f970cc:g:IWIAAOSwTMNhlI4c&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1dv5ftEkM4DvjiGLqPDECaDN9qsfmHbuElA5t0vVd%2FhvQH2%2BGzne6xJvAW642DW%2BEKi%2BKbFY1GQzox4CIexX4QAwYjxARi8ramSmCgnUEdGKMoxUaR3VmO1OccJU06kGREOAtw%2FRMAUhuFs7IxAlz9eL9cSHqCQuxH0xSziPMLYKEvWzcovgIT3TTeaYl2Iw0ZCWlwoa0REnkAla7%2Fu90Wn4dEoRLeGXpN7B%2BxkOecL6yJzi%2FxjFVN4QqPE6dKQw4NQW0EITX2vlkATzWuFLkEHQ13XK5EB7W18zpapXzrKWA%3D%3D%7Ctkp%3ABk9SR8r7-KrtZQ)
+    
+  - [CO2 HC Mass Flow Controller 699.00 - ebay - purge](https://www.ebay.com/itm/396331121681?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3De149730541c2478d8e99ba6e83e8068b%26pid%3D101429%26rk%3D10%26rkt%3D12%26sd%3D297271799704%26itm%3D396331121681%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A396331121681e149730541c2478d8e99ba6e83e8068b%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfDn%252Bw3ECNPKF2t0SHPE4%252BQO59tOZXlgaorUPO71sKfwDRh2VdQqxVNPdvUaWYxE4F3MqjykjhKOGO45N%252FYndLIOJXXUA%252BnS5eIsysqEVlw%252Bo1uBsS8VmPrulO%252F9X7CPEFd4FQHewc%252BYbwh%252FsTGFddCFrc5uh%252FPFwCaUXCY%252FWiuZh1wCTJzbnNfHCIwuJ1FUJmrSqrHw99IFpxG7vHu%252F2ELY%252FqgbvXw1AmpuHogYdQpxO4rxm0b1uLl8FjfkndBJ0EA1Veynb4bGWymtHrS402T52Vb3cGICF3ezXQKpDM--H%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNB9F4W9857W8XDQMWC3ARQ)
+    
+  - [GAS O2 DS Mass Flow Controller 500SCCM - ebay (x4)](https://www.ebay.com/itm/226610185945?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3D27bf10683ee049b98980d371e7613afa%26pid%3D101429%26rk%3D7%26rkt%3D12%26sd%3D126697791403%26itm%3D226610185945%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A22661018594527bf10683ee049b98980d371e7613afa%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfAOPdl3GMvCFjhGIyqIQRgbhjJsu1leWkMUieCZPVK4ww94HP3VROkz9G%252BFB5mVdvcChj8EyqFVjA8J46v%252FkebvrfMry4UrlxoOC3PR1gE2a60eYXx4DTHbl%252BFU6P3iHyOGUCT7S%252BrlzNyXaZ%252Fhorra7HC%252FzRNpJxZuWrSgNo%252BFw6kBrskmgK2GBBkbdgh5OpFVponqdjyZDisMkXFI%252FO8vnYJaEKCLcxiFF1V09v9MPd95mRK9IcZG4%252BFRRZ6Mmj58lqbPJ--SB7ktAucJzOhxfIN63qw67kBqSJ%252BIctRrY%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNBN0EHGWZQHY81TGWAYDTA)
 
 --- 
 

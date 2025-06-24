@@ -2,6 +2,7 @@
 - Milestone 1: Finish gas flow design along with description by Jun 24th
 - Milestone 2: Electrial design by Jun 27
 - Milestone 3: Material list ready to submit by Jun 30
+- Milestone 4: Order materials by Jul 1
 
 # Fab plan (Priority List) 
 1) Atomic Layer Deposition (ALD) Tool

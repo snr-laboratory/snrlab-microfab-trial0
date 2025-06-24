@@ -62,13 +62,8 @@ The flow sequence will be later determined though recipe development for critica
 
 ## Electrical Schematic
 
-
-
-
-
-
-
-
+Components Requiring Electrical Control or Connection
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
 
 ---
 ## Reaction Chamber

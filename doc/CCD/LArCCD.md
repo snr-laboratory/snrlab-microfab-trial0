@@ -3,26 +3,29 @@
 - Milestone 2: Electrial design by Jun 27
 - Milestone 3: Material list ready to submit by Jun 30
 - Milestone 4: Order materials by Jul 1
+    - Bottleneck items:
+      - high-quality MFCs
+      - quartz tube with custom stainless steel ends for attaching the gas lines      
 
 # Fab plan (Priority List) 
 1) Atomic Layer Deposition (ALD) Tool
-  - Draw schematic for tool design
-    - Gas flow
-    - Electrical   
+    - Draw schematic for tool design
+      - Gas flow
+      - Electrical
 2) Fully understand the physical measurement process 
-  - CV and how it’s related to the microphysics of the surface  
+    - CV and how it’s related to the microphysics of the surface  
 3) Detailed diagram of the surface of Al2O3 
-  - Thickness and layer details 
+    - Thickness and layer details 
 4) Device mask (no overlapping gates)
-  - Check later with simulation for  satisfactory electric field penetration and integrity.  
+    - Check later with simulation for  satisfactory electric field penetration and integrity. 
 5) Test plan for readout schematic 
-  - Exact device shape  with details  
-  - Special test structure that is a separate from the device 
+    - Exact device shape  with details  
+    - Special test structure that is a separate from the device 
 6) Liquid argon system
-  - Argon recirculation 
-  - LAr coffee brewer inspired recirculation device
+    - Argon recirculation 
+    - LAr coffee brewer inspired recirculation device
 7) We need mobile charge carriers in the semiconductor (LAr)
-  - Create a method for generating carriers needed for CV measurements 
+    - Create a method for generating carriers needed for CV measurements 
 
 ---
 
@@ -48,7 +51,7 @@ The key innovation of ALD is in its ability to carefully control the introductio
 
    - 21100 Tube Furnace by Barnstead Thermolyne
 
-N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. (still need to weight the benefits of redirecting the purge line (eg faster purge times, avoid contamination through sharing lines, etc...). For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
+N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. The purge line is redirected for faster purge times and to avoid contamination through the sharing lines. For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
 
 As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can result in unwanted lower quality grown films. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. At this point, the gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
 

@@ -1,5 +1,6 @@
 # Milestone Deadlines:
 - Milestone 1: Finish gas flow design along with description by Jun 24th
+  - HVC / stainless steel ends / Quartz tube still pending (moving on to electrical to get a better idea of the remaining materials) - HVC flange is 6.7cm in diameter and tube furnace diameter inlet (not quartz tube) is 4.9cm
 - Milestone 2: Electrial design by Jun 27
 - Milestone 3: Material list ready to submit by Jun 30
 - Milestone 4: Order materials by Jul 1

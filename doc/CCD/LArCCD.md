@@ -38,7 +38,7 @@ This design is simple and relatively cost effective. The nitrogen gas flows thro
 
 The general layout is outlined below:
 
-<img width="1700" alt="image" src="https://github.com/user-attachments/assets/454e370d-ef92-4154-9cde-30939b1bb167" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/a7e22b79-55c8-4691-9182-093222db085b" />
 
 - Nitrogen carrier gas is distributed via three mass flow controllers (MFCs) for TMA, H₂O, and purge.
 - Solenoid valves immediately after each MFC enable sharp, programmable pulsing.

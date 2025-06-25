@@ -6,7 +6,9 @@
 - Milestone 4: Order materials by Jul 1
     - Bottleneck items:
       - high-quality MFCs
-      - quartz tube with custom stainless steel ends for attaching the gas lines      
+      - quartz tube with custom stainless steel ends for attaching the gas lines
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/01149e02-31a5-4246-919e-bb9377a8f1b4" />
 
 # Priority List
 1) Atomic Layer Deposition (ALD) Tool
@@ -69,7 +71,6 @@ Components Requiring Electrical Control or Connection
 Block Diagram
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
-
 
 
 ---
@@ -149,28 +150,29 @@ Consider the need for a load-lock or system that can transport susbtrate without
 
 ## Items in Need of Purchase:
 - Mass Flow Controllers (x3)
-- Solenoid valves/injection ports/Control valves 
+- Solenoid valves/injection ports/Control valves (x5)
 - Nitrogen Gas
 - Trimethylaluminum
 - DI H2O
 - Quartz tube (5.08cm or 2inches) with stainless steel end connectors
-  - Ace Glass and A&N Corp., respectively; $600
+  - Ace Glass and A&N Corp. 
 - Temperature monitor  
   - Middle of furnace 
   - Entry
-- Ceramic boat (x2 Sample and Al2O3)
+- Ceramic boat for Sample 
 - 50mL Schlenk flask 
 - 10 mL two-neck round-bottom flask 
   - 40 mL electro-polished stainless steel sample cylinder with top and bottom openings could be used ($200, Swagelok).
-- Quartz crystal for monitoring deposition rate  
+- Quartz crystal 
+  - [INFICON ALD sensors](https://www.inficon.com/en/products/thin-film-technology/ald-sensor)   
 - Heating tape (precursor flasks, valves, and associated tubing)
-- Welch 1400 dual seal rotary vane pump ($3,000). 
-- Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr. 
-- To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. $685
-- Heating tape
 - Glass wool 
 - Aluminum foil 
 - Tygon tubing
+
+  - Welch 1400 dual seal rotary vane pump ($3,000). 
+  - Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr.
+  - To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. $685
   
 <img width="784" alt="image" src="https://github.com/user-attachments/assets/d8bc2839-9378-4985-8f51-45ef8371d1f5" />
 

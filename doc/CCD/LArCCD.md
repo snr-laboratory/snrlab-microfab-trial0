@@ -9,7 +9,9 @@
       - quartz tube with custom stainless steel ends for attaching the gas lines
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/01149e02-31a5-4246-919e-bb9377a8f1b4" />
-
+     
+      - mechanical fitting issue and a potential gas flow/sealing problem
+      
 # Priority List
 1) Atomic Layer Deposition (ALD) Tool
     - Draw schematic for tool design
@@ -71,6 +73,37 @@ Components Requiring Electrical Control or Connection
 Block Diagram
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---

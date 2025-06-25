@@ -91,6 +91,9 @@ This diagram organizes these components into logical power and control â€œbusesâ
 
 The diagram visually clarifies how each device connects to its respective power supply. The schematic ensures that all electrical requirements are mapped out before construction, highlighting the need for multiple, isolated power supplies to safely operate both high-power and sensitive control electronics ( helps identify potential overloads, grounding issues, or points of failure).  
 
+Essential Symbols for Electrical Schematic 
+
+<img width="597" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
 
 
 

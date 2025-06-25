@@ -66,17 +66,30 @@ The flow sequence will be later determined though recipe development for critica
 - Pressure setpoints: Target pressures for each phase of the cycle
 
 ## Electrical Schematic
+The block diagrams provide an overview of the control and power infrastructure and identifies all devices and subsystems that need electrical power, control signals, or monitoring. These include: 
+- Mass Flow Controllers (MFCs) for precise gas delivery
+- Solenoid and injection valves for sharp, programmable gas pulses
+- Two furnaces (1300°C and 21100°C tube furnaces) for precursor vaporization and deposition
+- Pressure and temperature sensors for real-time monitoring
+- Vacuum pump and heat sources
+- Microcontroller (Arduino) and Ion Gauge Controller (IGC100) for automation and feedback
+
 
 Components Requiring Electrical Control or Connection
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
+
+
 
 Block Diagram
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
 
+This diagram organizes these components into logical power and control “buses”:
+- 120V AC Bus: Supplies high-power devices (furnaces, vacuum pump, heat source)
+- 24V DC Bus: Powers solenoid valves, MFCs, and certain sensors/actuators
+- 5V DC Bus: Feeds microcontrollers and low-voltage sensors
 
-
-
+The diagram visually clarifies how each device connects to its respective power supply. The schematic ensures that all electrical requirements are mapped out before construction, highlighting the need for multiple, isolated power supplies to safely operate both high-power and sensitive control electronics ( helps identify potential overloads, grounding issues, or points of failure).  
 
 
 

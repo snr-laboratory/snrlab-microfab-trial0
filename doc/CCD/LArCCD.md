@@ -75,12 +75,12 @@ The block diagrams provide an overview of the control and power infrastructure a
 - Microcontroller (Arduino) and Ion Gauge Controller (IGC100) for automation and feedback
 
 
-Components Requiring Electrical Control or Connection
+### Components Requiring Electrical Control or Connection
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
 
 
 
-Block Diagram
+### Block Diagram
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
 
@@ -91,7 +91,7 @@ This diagram organizes these components into logical power and control â€œbusesâ
 
 The diagram visually clarifies how each device connects to its respective power supply. The schematic ensures that all electrical requirements are mapped out before construction, highlighting the need for multiple, isolated power supplies to safely operate both high-power and sensitive control electronics ( helps identify potential overloads, grounding issues, or points of failure).  
 
-Essential Symbols for Electrical Schematic 
+### Essential Symbols for Electrical Schematic 
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
 

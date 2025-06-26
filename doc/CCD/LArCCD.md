@@ -93,9 +93,10 @@ The diagram visually clarifies how each device connects to its respective power 
 
 Essential Symbols for Electrical Schematic 
 
-<img width="597" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
 
 
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/9431c27c-4ab3-45a9-ba08-8e1e4257902a" />
 
 
 

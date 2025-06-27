@@ -95,14 +95,7 @@ The diagram visually clarifies how each device connects to its respective power 
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
 
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/9431c27c-4ab3-45a9-ba08-8e1e4257902a" />
-
-
-
-
-
-
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/f162a449-5d5b-47a4-8d24-b3e98fa74d7c" />
 
 
 

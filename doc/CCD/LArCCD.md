@@ -5,7 +5,9 @@
   - **Milestone 2: Electrial design timeline was not met**
       - **Arduino Connections are taking longer than anticipated. Once this is resolved progress should move more quickly**
 - Milestone 3: Material list ready to submit by Jun 30
+  - **Deadline delayed a day or two - July 1 or 2**  
 - Milestone 4: Order materials by Jul 1
+  - **Deadline delayed - July 3**  
     - Bottleneck items:
       - high-quality MFCs
       - quartz tube with custom stainless steel ends for attaching the gas lines

@@ -201,6 +201,8 @@ Consider the need for a load-lock or system that can transport susbtrate without
 ## Items in Need of Purchase:
 - Mass Flow Controllers (x3)
 - Solenoid valves/injection ports/Control valves (x5)
+  - [U.S. Solid 1/4inches Stainless Steel Electric Solenoid Valve 24VDC](https://www.amazon.com/Stainless-Electric-Solenoid-Normally-Closed/dp/B00APD8M2U?psc=1&smid=A20QEF2LEKCK8G&gQT=0&utm_source=Perplexity&utm_medium=referral)
+  - [1/4" Solenoid Valve - 24V DC Stainless Steel Electric Solenoid Valve](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?_pos=19&_sid=23a033fbd&_ss=r)  
 - Nitrogen Gas
 - Trimethylaluminum
 - DI H2O

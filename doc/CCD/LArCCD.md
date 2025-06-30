@@ -99,7 +99,7 @@ The diagram visually clarifies how each device connects to its respective power 
 
 ### Electrical Schematic 
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c0076143-3f02-4445-bd78-73b4fdf50d8c" />
+<img width="892" alt="image" src="https://github.com/user-attachments/assets/f81872d2-6a1a-4b16-93ec-e5bf27bda287" />
 
 
 

@@ -12,7 +12,8 @@
       - high-quality MFCs
       - quartz tube with custom stainless steel ends for attaching the gas lines
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/01149e02-31a5-4246-919e-bb9377a8f1b4" />
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/1e538b04-5110-443d-ae96-7a2ad3bd4349" />
+
      
       - mechanical fitting issue and a potential gas flow/sealing problem
       
@@ -44,9 +45,9 @@ In order to determine more about the feasibility of the desired LAr detector and
 ## Design Approach - Hot-wall Horizontal Tube Reactor
 This design is simple and relatively cost effective. The nitrogen gas flows throughout the system acting as carrier and purging gas. To the immediate right of the mass flow controllers, solenoid valves are included to minimize dead volume between the valves and the chamber, ensuring sharp precursor pulses and efficient purging (gas carrier lines will also be as short as possible for these same reasons). The controllers will be connected, monitored and regulated through the ion guage controller 100. It's main function is to regulate gas flow rates by interfacing with the mass flow controllers (MFCs), based on the pressure readings it receives from the system. An Arduino is in control of the solenoid and injection valves and their timing. Injection valves are placed inside the 1300 furnace where they lead directly into the entrance of a quartz tube with stainless steel custom ends. Inside and near the middle of the 21100 tube furnace is where the deposition will take place. The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz tube inside the 21100 tube furnace (still working on the diameter size of the tube in order to achieve a laminar vs a turbelent flow). The proper temperature control of the substrate and surroundings is needed in order to minimize any inconsistencies in the film growth. High uniformity is essential for testing the desired devices performance with respect to charge transfer efficiency and reproducability of high quality thin films. From there the gasses flow over the substrate and continue to the vacuum pump and are expelled through the fume hood. 
 
-The general layout is outlined below:
+### General layout is outlined below:
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/a7e22b79-55c8-4691-9182-093222db085b" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/77bb7023-7185-47d0-b0bc-a84bdd4a2a53" />
 
 - Nitrogen carrier gas is distributed via three mass flow controllers (MFCs) for TMA, H₂O, and purge.
 - Solenoid valves immediately after each MFC enable sharp, programmable pulsing.
@@ -69,7 +70,7 @@ The flow sequence will be later determined though recipe development for critica
 - Flow rates: Specific carrier gas flow rates during each phase
 - Pressure setpoints: Target pressures for each phase of the cycle
 
-## Electrical Schematic
+## Electrical Schematic Overview
 The block diagrams provide an overview of the control and power infrastructure and identifies all devices and subsystems that need electrical power, control signals, or monitoring. These include: 
 - Mass Flow Controllers (MFCs) for precise gas delivery
 - Solenoid and injection valves for sharp, programmable gas pulses
@@ -78,15 +79,12 @@ The block diagrams provide an overview of the control and power infrastructure a
 - Vacuum pump and heat sources
 - Microcontroller (Arduino) and Ion Gauge Controller (IGC100) for automation and feedback
 
-
 ### Components Requiring Electrical Control or Connection
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
-
-
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
 
 ### Block Diagram
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
 
 This diagram organizes these components into logical power and control “buses”:
 - 120V AC Bus: Supplies high-power devices (furnaces, vacuum pump, heat source)
@@ -97,10 +95,12 @@ The diagram visually clarifies how each device connects to its respective power 
 
 ### Essential Symbols for Electrical Schematic 
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
 
+### Electrical Schematic 
 
-<img width="1300" alt="image" src="https://github.com/user-attachments/assets/af24f864-a9f2-4341-a018-b46ae055a022" />
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/c0076143-3f02-4445-bd78-73b4fdf50d8c" />
+
 
 
 

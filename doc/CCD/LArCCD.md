@@ -250,9 +250,12 @@ Consider the need for a load-lock or system that can transport susbtrate without
 Layer Deposition of Metal Oxide Thin
 Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 4) [Design and Construction of an ALD Reactor](https://www.ecorfan.org/taiwan/research_journals/Ingenieria_Tecnologica/vol5num16/Journal_of_Technological_Engineering_V5_N16_3.pdf)
-5) [OPERATING MANUAL FOR MASS FLOW CONTROLLERS](https://www.lesker.com/newweb/process_instruments/pdf/kjlc-manual-alicat-mc.pdf)
-6) [Controling a Solenoid Valve With an Arduino](https://www.instructables.com/Controling-a-solenoid-valve-with-an-Arduino/)
-7) []()
+5) [The Design and Construction of a Cost-Effective Atomic Layer Deposition System for Thin Film Growth](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/zg64tt67k)
+6) [The Design and Fabrication of an Atomic Layer Deposition Reactor for Coating Powders](https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1285&context=honors)
+7) [Development of a powder atomic layer deposition reactor for research purposes](https://aaltodoc.aalto.fi/items/da057807-ba67-4c89-8d88-f828a46bc56b)
+8) [OPERATING MANUAL FOR MASS FLOW CONTROLLERS](https://www.lesker.com/newweb/process_instruments/pdf/kjlc-manual-alicat-mc.pdf)
+9) [Controling a Solenoid Valve With an Arduino](https://www.instructables.com/Controling-a-solenoid-valve-with-an-Arduino/)
+10) []()
 
 ---
 

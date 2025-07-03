@@ -216,6 +216,8 @@ Consider the need for a load-lock or system that can transport susbtrate without
 - Glass wool 
 - Aluminum foil 
 - Tygon tubing
+- Relay
+  - [Omega SSRL240DC10 SOLID STATE RELAYS](https://rspsupply.com/p-782675-omega-ssrl240dc10-solid-state-relays.aspx)
 
   - Welch 1400 dual seal rotary vane pump ($3,000). 
   - Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr.

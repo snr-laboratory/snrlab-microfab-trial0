@@ -211,27 +211,46 @@ Consider the need for a load-lock or system that can transport susbtrate without
 ## Items in Need of Purchase:
 
 ### Flow Controllers and Valves
-
-- Mass flow controller [Omega, FMA5414A-ST]
-- Solenoid valves [SMC, NVZ5120-5LZ-01T]
-- ALD valves [Swagelok, 6LVV-ALD3TC333P-C,6LVV-A31V222P-AA]
-- Pressure sensor [InstruTech, CVG101GF].
-- Mass Flow Controllers (x3)
-- Solenoid valves/injection ports/Control valves (x5)
-  - [U.S. Solid 1/4inches Stainless Steel Electric Solenoid Valve 24VDC](https://www.amazon.com/Stainless-Electric-Solenoid-Normally-Closed/dp/B00APD8M2U?psc=1&smid=A20QEF2LEKCK8G&gQT=0&utm_source=Perplexity&utm_medium=referral)
-  - [1/4" Solenoid Valve - 24V DC Stainless Steel Electric Solenoid Valve](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?_pos=19&_sid=23a033fbd&_ss=r)
-
+Flow Controllers
 - N2	Elastomer	100 SCCM	KJLMCH4BAA1 $1,480.00 3-4 Weeks (x2)
 - N2	Elastomer	1000 SCCM	KJLMCK4BAA1 $1,480.00 3-4 Weeks (x2)
     - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
-    - [Alicat - Alicat Mass Flow Controller - Standard Configuration
+    - [Technical Data for MC-Series Mass Flow Controllers](https://www.lesker.com/newweb/process_instruments/pdf/kjlc-specsheet-mc-10-20.pdf)
+ 
+Valves
+
+General Valves
+  - [JFSV00068](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?srsltid=AfmBOopZIKPCtywSAE2vqqs5Sqyfi6Rtx4oVVjlZtFwsCVOxILQsX-oa)
+
+  - [U.S. Solid 1/4inches Stainless Steel Electric Solenoid Valve 24VDC](https://www.amazon.com/Stainless-Electric-Solenoid-Normally-Closed/dp/B00APD8M2U?psc=1&smid=A20QEF2LEKCK8G&gQT=0&utm_source=Perplexity&utm_medium=referral)
+  - [1/4" Solenoid Valve - 24V DC Stainless Steel Electric Solenoid Valve](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?_pos=19&_sid=23a033fbd&_ss=r)
+
+Injection/ALD Valves
+- Swagelok ALD3 (6LVV-ALD3TC333P-C) is an ultrahigh-purity (UHP) diaphragm valve specifically designed for atomic layer deposition (ALD) applications.
+  
+[Ordering Information and Dimensions (ALD3 and ALD6)](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)
+
+- 6LVV-ALD3BW4-P-C Swagelok 6LVV-ALD3BW4-P-C valve is a robust, high-purity, and industry-proven choice for your ALD precursor injection needs. Its materials, actuation, connection type, and temperature rating align perfectly with the requirements for delivering TMA and water vapor in Al₂O₃ ALD process, ensuring precise, contamination-free, and reliable operation.
+
+
+Flow Controllers Cont.
+  - [Alicat - Alicat Mass Flow Controller - Standard Configuration
 100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
 
-  - [Mass Flow Controller 200SCCM - ebay 750.00](https://www.ebay.com/itm/224696824012?_skw=Alicat+MC-100SCCM-D%2F5M&itmmeta=01JXNAY7PYA123DKX735MXJF9Q&hash=item3450f970cc:g:IWIAAOSwTMNhlI4c&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1dv5ftEkM4DvjiGLqPDECaDN9qsfmHbuElA5t0vVd%2FhvQH2%2BGzne6xJvAW642DW%2BEKi%2BKbFY1GQzox4CIexX4QAwYjxARi8ramSmCgnUEdGKMoxUaR3VmO1OccJU06kGREOAtw%2FRMAUhuFs7IxAlz9eL9cSHqCQuxH0xSziPMLYKEvWzcovgIT3TTeaYl2Iw0ZCWlwoa0REnkAla7%2Fu90Wn4dEoRLeGXpN7B%2BxkOecL6yJzi%2FxjFVN4QqPE6dKQw4NQW0EITX2vlkATzWuFLkEHQ13XK5EB7W18zpapXzrKWA%3D%3D%7Ctkp%3ABk9SR8r7-KrtZQ)
+- [Mass Flow Controller 200SCCM - ebay 750.00](https://www.ebay.com/itm/224696824012?_skw=Alicat+MC-100SCCM-D%2F5M&itmmeta=01JXNAY7PYA123DKX735MXJF9Q&hash=item3450f970cc:g:IWIAAOSwTMNhlI4c&itmprp=enc%3AAQAKAAAA8FkggFvd1GGDu0w3yXCmi1dv5ftEkM4DvjiGLqPDECaDN9qsfmHbuElA5t0vVd%2FhvQH2%2BGzne6xJvAW642DW%2BEKi%2BKbFY1GQzox4CIexX4QAwYjxARi8ramSmCgnUEdGKMoxUaR3VmO1OccJU06kGREOAtw%2FRMAUhuFs7IxAlz9eL9cSHqCQuxH0xSziPMLYKEvWzcovgIT3TTeaYl2Iw0ZCWlwoa0REnkAla7%2Fu90Wn4dEoRLeGXpN7B%2BxkOecL6yJzi%2FxjFVN4QqPE6dKQw4NQW0EITX2vlkATzWuFLkEHQ13XK5EB7W18zpapXzrKWA%3D%3D%7Ctkp%3ABk9SR8r7-KrtZQ)
     
   - [CO2 HC Mass Flow Controller 699.00 - ebay - purge](https://www.ebay.com/itm/396331121681?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3De149730541c2478d8e99ba6e83e8068b%26pid%3D101429%26rk%3D10%26rkt%3D12%26sd%3D297271799704%26itm%3D396331121681%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A396331121681e149730541c2478d8e99ba6e83e8068b%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfDn%252Bw3ECNPKF2t0SHPE4%252BQO59tOZXlgaorUPO71sKfwDRh2VdQqxVNPdvUaWYxE4F3MqjykjhKOGO45N%252FYndLIOJXXUA%252BnS5eIsysqEVlw%252Bo1uBsS8VmPrulO%252F9X7CPEFd4FQHewc%252BYbwh%252FsTGFddCFrc5uh%252FPFwCaUXCY%252FWiuZh1wCTJzbnNfHCIwuJ1FUJmrSqrHw99IFpxG7vHu%252F2ELY%252FqgbvXw1AmpuHogYdQpxO4rxm0b1uLl8FjfkndBJ0EA1Veynb4bGWymtHrS402T52Vb3cGICF3ezXQKpDM--H%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNB9F4W9857W8XDQMWC3ARQ)
     
   - [GAS O2 DS Mass Flow Controller 500SCCM - ebay (x4)](https://www.ebay.com/itm/226610185945?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3D27bf10683ee049b98980d371e7613afa%26pid%3D101429%26rk%3D7%26rkt%3D12%26sd%3D126697791403%26itm%3D226610185945%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A22661018594527bf10683ee049b98980d371e7613afa%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfAOPdl3GMvCFjhGIyqIQRgbhjJsu1leWkMUieCZPVK4ww94HP3VROkz9G%252BFB5mVdvcChj8EyqFVjA8J46v%252FkebvrfMry4UrlxoOC3PR1gE2a60eYXx4DTHbl%252BFU6P3iHyOGUCT7S%252BrlzNyXaZ%252Fhorra7HC%252FzRNpJxZuWrSgNo%252BFw6kBrskmgK2GBBkbdgh5OpFVponqdjyZDisMkXFI%252FO8vnYJaEKCLcxiFF1V09v9MPd95mRK9IcZG4%252BFRRZ6Mmj58lqbPJ--SB7ktAucJzOhxfIN63qw67kBqSJ%252BIctRrY%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNBN0EHGWZQHY81TGWAYDTA)
+
+- Mass flow controller [Omega, FMA5414A-ST]
+
+Valves Cont. 
+- Solenoid valves [SMC, NVZ5120-5LZ-01T]
+- ALD valves [Swagelok, 6LVV-ALD3TC333P-C,6LVV-A31V222P-AA]
+
+
+ Pressure sensor [InstruTech, CVG101GF]
 
 ### Gas Handling and Delivery 
 - Nitrogen (N₂), high purity (99.999% or better), cylinder with appropriate regulator

@@ -1,4 +1,11 @@
 # Milestone Deadlines:
+# Recap from Previous Week
+- Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections.
+-  Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic. Finalize a comprehensive materials list by July 8
+-  Milestone 2: Place order for materials by July 9
+-  Milestoen 3: (pending review of ES) 
+
+# 06/30-07/03
 - Milestone 1: Finish gas flow design along with description by Jun 24th
   - HVC / stainless steel ends / Quartz tube still pending (moving on to electrical to get a better idea of the remaining materials) - HVC flange is 6.7cm in diameter and tube furnace diameter inlet (not quartz tube) is 4.9cm
 - Milestone 2: Electrial design by Jun 27
@@ -11,6 +18,7 @@
     - Bottleneck items:
       - high-quality MFCs
       - quartz tube with custom stainless steel ends for attaching the gas lines
+
 
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/1e538b04-5110-443d-ae96-7a2ad3bd4349" />
 

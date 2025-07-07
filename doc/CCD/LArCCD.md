@@ -1,9 +1,8 @@
 # Milestone Deadlines:
 # Recap from Previous Week and New Deadlines (pending)
-- Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections.
+- Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/37d197aa-a793-4a92-8dcd-ec7f7a03ae7f" />
-
 
 -  Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic. Finalize a comprehensive materials list by July 8
 -  Milestone 2: Place order for materials by July 9

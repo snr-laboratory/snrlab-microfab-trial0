@@ -133,15 +133,6 @@ ALD Operating Temperature
 [Investigation of abnormally high growth-per-cycle in atomic layer
 deposition of Al2O3 using trimethylaluminum and water](https://pdf.sciencedirectassets.com/271533/1-s2.0-S0169433221X00281/1-s2.0-S0169433221023357/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG8aCXVzLWVhc3QtMSJHMEUCIBzXzWfcJB6HA7re1SuymBJQXCKE1%2Ff4%2BcTqcYYVhHjfAiEArXKOM%2FdUIVCsTwtNvWTU%2BTO0PezLlEwDIA17x%2FdQRloqswUIeBAFGgwwNTkwMDM1NDY4NjUiDCBBE1XuciK8ZnkbNyqQBbv2NB44aZ0ONvM562cHHiagN7pO2ujJJ6dXoimB8VnkSHaFyysT5JDA%2FXskiFTY2%2BhhsR%2FlnTZ1wg5T4WUu4Fk856N%2FbjlR1sCLlmPVFZVNO%2Fh8o58IGkZq7O4Wc4j%2Bu873annv%2BuHsi%2FCB%2B2Isrm4d3jFUqTNCBSNRsjc3VWa6gklZCYtVlKIgy%2F7B7WMneD2ZuUlIx7BzekIJJtVRZYxBDHYtfFaWk8lk0814wwUWK1iVNEtCB1LfjEoDwTu7o3P50HX8yd%2FYyABGzMKsgvc7nbBYcmnQTfUpnQY0nBSNqQSBdWEGbvMfPKbgZ3pbdb8TJRuMXz4sySAIaUGEzCuPQI4HVEFjhzZgGaMCOAgjnUZOibYbX%2FG0QykWNwJFjUWPwlgkEt4p6TRCaGlZccjnwXso1VmmOeGrU%2FxYhuz4oxrog8h3qZ0ym%2FN4WXa6JaiZZLk%2FCnsLSTlkf%2FFls9gLFjG7vJHfPxvbMpDK8Zjds7DNvHuXl8DOw2Cha5ouAnjzc0h9X4yEqfmkru7CrWykU4gLkCMM64xO7CUdpcUoFeBqLpATNCIgj57uUv53ryKcQZn%2F%2FEDdzwigE8SBGNfj7eearwYkf18qe%2F8KzO66SI2fYIGpEAgXc%2BJcs%2BwJwzbcSLtiBB99CsJilvwXeu7ay7nbV%2B5dlJkjM7RLMwACW9t%2BAZufV8DYyk%2BlrURHoMDgT%2FYAirD8tGjvwpUS5T4wgNgQbk%2F5IGew35mckasc8zeUHf6ZcTRRfIM338SIR694woLOoc5pc0Pb7%2B0PkmpRsiSu60O7P0JEDESKnayGi8pDW%2BRGVi77t4sWvLS3v4Sve9AD3HZO5FqyT9vMhAv0t%2F7g7fkjcXP%2FAsoaawopMI7Br8MGOrEB1u15D122lyDH2kzAROlVXsYznOIi8zuFGmsaTk3UKj2ATaH8TsgdyKv1FI%2BzIcDTp8oP6OlYrVSJ2twVDIKxWkTfThx0ItSf0QA%2Bogw669zcyz9pnggwx1r22oq%2BY9nkG05L5q6xC%2BvKkbWFwnVk4deDb2xmQlNYMl6YycA8Yr0ppJRInn9icZMJOmbxOiigNhBeYIGkHqkeqX45IZxoG1vOpbhdHUp2k9tjGgVL%2BLVS&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250707T165133Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYY6S6M4XA%2F20250707%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a429a7d54231d37dc5b3e3db83806511f36d5b3ff630f46c42c9039688aab5b0&hash=26e35e67dd5345e549c3bb1ac2cff20918f1dc08af68c19a462233c755797291&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0169433221023357&tid=spdf-693dd172-34c9-4ba1-84ad-14cd8434abcb&sid=baf325c57fd1e84aa30a52d7dcb9769df314gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0f1057540c560a570b58&rr=95b8d8e7cda5e781&cc=us)
 
-
-
-
-
-
-
-
-
-
 ---
 ## Reaction Chamber
   - 21100 Tube Furnace by Barnstead Thermolyne
@@ -218,40 +209,20 @@ Consider the need for a load-lock or system that can transport susbtrate without
 --- 
 
 ## Items in Need of Purchase:
+
+### Flow Controllers and Valves
+
+- Mass flow controller [Omega, FMA5414A-ST]
+- Solenoid valves [SMC, NVZ5120-5LZ-01T]
+- ALD valves [Swagelok, 6LVV-ALD3TC333P-C,6LVV-A31V222P-AA]
+- Pressure sensor [InstruTech, CVG101GF].
 - Mass Flow Controllers (x3)
 - Solenoid valves/injection ports/Control valves (x5)
   - [U.S. Solid 1/4inches Stainless Steel Electric Solenoid Valve 24VDC](https://www.amazon.com/Stainless-Electric-Solenoid-Normally-Closed/dp/B00APD8M2U?psc=1&smid=A20QEF2LEKCK8G&gQT=0&utm_source=Perplexity&utm_medium=referral)
-  - [1/4" Solenoid Valve - 24V DC Stainless Steel Electric Solenoid Valve](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?_pos=19&_sid=23a033fbd&_ss=r)  
-- Nitrogen Gas
-- Trimethylaluminum
-- DI H2O
-- Quartz tube (5.08cm or 2inches) with stainless steel end connectors
-  - Ace Glass and A&N Corp. 
-- Temperature monitor  
-  - Middle of furnace 
-  - Entry
-- Ceramic boat for Sample 
-- 50mL Schlenk flask 
-- 10 mL two-neck round-bottom flask 
-  - 40 mL electro-polished stainless steel sample cylinder with top and bottom openings could be used ($200, Swagelok).
-- Quartz crystal 
-  - [INFICON ALD sensors](https://www.inficon.com/en/products/thin-film-technology/ald-sensor)   
-- Heating tape (precursor flasks, valves, and associated tubing)
-- Glass wool 
-- Aluminum foil 
-- Tygon tubing
-- Relay
-  - [Omega SSRL240DC10 SOLID STATE RELAYS](https://rspsupply.com/p-782675-omega-ssrl240dc10-solid-state-relays.aspx)
+  - [1/4" Solenoid Valve - 24V DC Stainless Steel Electric Solenoid Valve](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?_pos=19&_sid=23a033fbd&_ss=r)
 
-  - Welch 1400 dual seal rotary vane pump ($3,000). 
-  - Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr.
-  - To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. $685
-  
-<img width="784" alt="image" src="https://github.com/user-attachments/assets/d8bc2839-9378-4985-8f51-45ef8371d1f5" />
-
-### Vendor Kurt J. Lesker Company
-  - N2	Elastomer	100 SCCM	KJLMCH4BAA1 $1,480.00 3-4 Weeks (x2)
-  - N2	Elastomer	1000 SCCM	KJLMCK4BAA1 $1,480.00 3-4 Weeks (x2)
+- N2	Elastomer	100 SCCM	KJLMCH4BAA1 $1,480.00 3-4 Weeks (x2)
+- N2	Elastomer	1000 SCCM	KJLMCK4BAA1 $1,480.00 3-4 Weeks (x2)
     - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
     - [Alicat - Alicat Mass Flow Controller - Standard Configuration
 100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
@@ -261,6 +232,45 @@ Consider the need for a load-lock or system that can transport susbtrate without
   - [CO2 HC Mass Flow Controller 699.00 - ebay - purge](https://www.ebay.com/itm/396331121681?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3De149730541c2478d8e99ba6e83e8068b%26pid%3D101429%26rk%3D10%26rkt%3D12%26sd%3D297271799704%26itm%3D396331121681%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A396331121681e149730541c2478d8e99ba6e83e8068b%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfDn%252Bw3ECNPKF2t0SHPE4%252BQO59tOZXlgaorUPO71sKfwDRh2VdQqxVNPdvUaWYxE4F3MqjykjhKOGO45N%252FYndLIOJXXUA%252BnS5eIsysqEVlw%252Bo1uBsS8VmPrulO%252F9X7CPEFd4FQHewc%252BYbwh%252FsTGFddCFrc5uh%252FPFwCaUXCY%252FWiuZh1wCTJzbnNfHCIwuJ1FUJmrSqrHw99IFpxG7vHu%252F2ELY%252FqgbvXw1AmpuHogYdQpxO4rxm0b1uLl8FjfkndBJ0EA1Veynb4bGWymtHrS402T52Vb3cGICF3ezXQKpDM--H%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNB9F4W9857W8XDQMWC3ARQ)
     
   - [GAS O2 DS Mass Flow Controller 500SCCM - ebay (x4)](https://www.ebay.com/itm/226610185945?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D264183%26meid%3D27bf10683ee049b98980d371e7613afa%26pid%3D101429%26rk%3D7%26rkt%3D12%26sd%3D126697791403%26itm%3D226610185945%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimPLMWebV1EmbeddedAuctionsCPCAutoManualWithCIIXAIEbertEmbRecallsUpdatedRanker0424NoIMA&_trksid=p2332490.c101429.m2460&itmprp=cksum%3A22661018594527bf10683ee049b98980d371e7613afa%7Cenc%3AAQAKAAABQKxsCgy5i7ztWhjg%252FVuODCBGFXnymLLtCQPw0Pb%252BAnnUrEh3Uicx%252BzponjKRRstuhNepgyA9zsxxm9WkU4eJhJNc0FnE3sWn9QNPQ9BsfycWHf4xsNkj50TMSN%252FYu8xkfAOPdl3GMvCFjhGIyqIQRgbhjJsu1leWkMUieCZPVK4ww94HP3VROkz9G%252BFB5mVdvcChj8EyqFVjA8J46v%252FkebvrfMry4UrlxoOC3PR1gE2a60eYXx4DTHbl%252BFU6P3iHyOGUCT7S%252BrlzNyXaZ%252Fhorra7HC%252FzRNpJxZuWrSgNo%252BFw6kBrskmgK2GBBkbdgh5OpFVponqdjyZDisMkXFI%252FO8vnYJaEKCLcxiFF1V09v9MPd95mRK9IcZG4%252BFRRZ6Mmj58lqbPJ--SB7ktAucJzOhxfIN63qw67kBqSJ%252BIctRrY%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01JXNBN0EHGWZQHY81TGWAYDTA)
+
+### Gas Handling and Delivery 
+- Nitrogen (N₂), high purity (99.999% or better), cylinder with appropriate regulator
+- Trimethylaluminum (TMA), ALD grade
+- Deionized Water (DI H₂O)
+- Stainless steel tubing (1/4" OD, electropolished, for all gas lines)
+- Tygon tubing
+  - Tygon F-4040-A or Tygon 2375
+    - Tygon 2375 is specifically engineered for ultra-high chemical resistance and purity. It is plasticizer-free, minimizing contamination risks, and is suitable for aggressive chemicals, including acids, bases, and organic solvents. The tubing is also clear, allowing for better visual inspection of flow and cleanliness. Its smooth inner surface reduces the risk of particulate buildup and cross-contamination
+    - [Tygon® formula 2375 laboratory tubing](https://www.sigmaaldrich.com/US/en/product/aldrich/z685631)
+    - [Masterflex® Transfer Tubing, Tygon® 2375, 5/16" ID x 7/16" OD; 50 Ft
+Catalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/masterflex-transfer-tubing-tygon-2375-avantor)
+- Swagelok compression fittings (for leak-tight connections)
+- Stainless steel elbows, tees, and adapters 
+- 50mL Schlenk flask 
+- 10 mL two-neck round-bottom flask 
+  - 40 mL electro-polished stainless steel sample cylinder with top and bottom openings could be used ($200, Swagelok).
+- Heating tape (precursor flasks, valves, and associated tubing)
+- Glass wool 
+- Aluminum foil 
+
+### 
+- Quartz tube (5.08cm or 2inches) with stainless steel end connectors
+  - Ace Glass and A&N Corp. 
+- Temperature monitor  
+  - Middle of furnace 
+  - Entry
+- Ceramic boat for Sample 
+- Quartz crystal 
+  - [INFICON ALD sensors](https://www.inficon.com/en/products/thin-film-technology/ald-sensor)   
+- Relay
+  - [Omega SSRL240DC10 SOLID STATE RELAYS](https://rspsupply.com/p-782675-omega-ssrl240dc10-solid-state-relays.aspx)
+
+  - Welch 1400 dual seal rotary vane pump ($3,000). 
+  - Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr.
+  - To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. $685
+  
+<img width="784" alt="image" src="https://github.com/user-attachments/assets/d8bc2839-9378-4985-8f51-45ef8371d1f5" />
+
 
 --- 
 

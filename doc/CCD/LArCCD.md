@@ -6,7 +6,7 @@
 
 -  Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic. Finalize a comprehensive materials list by July 8
 -  Milestone 2: Place order for materials by July 9
--  Milestoen 3: (pending review of ES) 
+-  Milestone 3: (pending review of ES) 
 
 # 06/30-07/03
 - Milestone 1: Finish gas flow design along with description by Jun 24th

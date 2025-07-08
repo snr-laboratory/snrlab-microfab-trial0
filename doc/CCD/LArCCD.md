@@ -271,9 +271,14 @@ Flow Controllers
     - [Tygon® formula 2375 laboratory tubing](https://www.sigmaaldrich.com/US/en/product/aldrich/z685631)
     - [Masterflex® Transfer Tubing, Tygon® 2375, 5/16" ID x 7/16" OD; 50 Ft
 Catalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/masterflex-transfer-tubing-tygon-2375-avantor)
-    - 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
-    - 
-- Stainless steel elbows, tees, and adapters 
+    - MFC Inlet - 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
+      - Swagelok SS-2-HC-6 or equivalent (Secure the tubing with a hose clamp)
+    - Gas Carrier
+      - For NPT Outlet: 1/4" NPT Male to 1/4" Hose Barb Adapter (for 1/4" NPT) or a 1/8" NPT Male to 1/4" Hose Barb Adapter (for 1/8" NPT).
+      - For Swagelok Compression Outlet:Swagelok 1/4" Tube to 1/4" Hose Barb Adapter (e.g., SS-4-HC-6).
+
+
+### Glassware
 - 50mL Schlenk flask 
 - 10 mL two-neck round-bottom flask 
   - 40 mL electro-polished stainless steel sample cylinder with top and bottom openings could be used ($200, Swagelok).

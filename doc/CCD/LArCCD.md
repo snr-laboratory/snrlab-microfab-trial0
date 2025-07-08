@@ -1,6 +1,8 @@
 # Milestone Deadlines:
 - Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic.
-    - Include part numbers to electrical schematic 
+    - Include part numbers to electrical schematic
+    - Flexible adapter for quartz tube
+    - PT100 sensor  
     - Include Emergency Shutoff
     - Adaptable for SiO2 - Si/SiO2/Si device to test if electrons behavior in LAr (preliminary test)
     - Aim to have hole-free by July 10  

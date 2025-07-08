@@ -144,6 +144,8 @@ deposition of Al2O3 using trimethylaluminum and water](https://pdf.sciencedirect
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/a2504053-541a-4f34-aba9-59b5884fd618" />
 
+[Type F21100 Tube Furnace OPERATION MANUAL](https://www.nist.gov/system/files/documents/ncnr/E133tubefurnace.pdf)
+
 ## Precursor Chamber
    - 1300 Furnace by Barnstead Thermolyne
      
@@ -278,9 +280,13 @@ Catalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/
 - Glass wool 
 - Aluminum foil 
 
-### 
+### Rxn Chamber
 - Quartz tube (5.08cm or 2inches) with stainless steel end connectors
-  - Ace Glass and A&N Corp. 
+  - [Quartz Tube: 50ODx44 IDx 600 L, mm (2"Dx24"L) for DIY Tube Furnace - TQ50D610](https://mtixtl.com/products/tq50d610)
+  - Having 6 inches (15 cm) or more of tube extending beyond each end allows for:
+    - Gas mixing and thermalization before the substrate
+    - Placement of feedthroughs and sensors outside the hot zone to avoid overheating
+    - Safe sealing and handling
 - Temperature monitor  
   - Middle of furnace 
   - Entry

@@ -129,6 +129,7 @@ Base Pressure: Below 500 mTorr
 
 [Operating pressure influences over micro trenches in exposure time
 introduced atomic layer deposition](https://pdf.sciencedirectassets.com/271451/1-s2.0-S0017931020X00044/1-s2.0-S0017931019354043/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG8aCXVzLWVhc3QtMSJHMEUCIC0RbSRvmnk46%2BsfDgGRA497hLRFFTeJWHzZisOsAnn4AiEAxF0UB8BOwJhx2vOK9aMstmo0da0wvMgzoK1sq1DgX%2BAqsgUIeBAFGgwwNTkwMDM1NDY4NjUiDKiDw8mI1RideEC%2BCiqPBeF49Uw%2BtVUg%2F88Lx72wI14zYLA20lPQj%2Fd%2F2ytZYvIJiFGsfIzkEM7qp97RPD0iBl94netIIMbiOqLffHhiT1n1XxXfNObormffIKvWKIq6dY8jFY5AQnJNF6mj0sB1jfZwXYEWpYmf3VJNQn2rmUWDt2NhmUGd0xSmlLhVvaqJh6I7WnuvMenMREwWQLS9DHa3udB%2FdzrbQpECWbliBXDxyDfTBlC0fLhGPlb79gi41SL0YNX5GX8llFj16ozRueiL7PBdtBXwiFV8x8v9ajESd244k%2FIpp88S3ym5%2BQZPjFPvcD6O2xRfHF39HPSs%2FaHYv%2FY0jAiKMeIlJxumt%2FVcotsQtjp%2BTgBn50r6qKtWvh3rskSvudmKQIL05eyt6vtQTiEo1sMY7CtLnGQoTkxtxvR6hVoqSI%2FqUu5crAMq2IunCj8lsJmBpVSA0JDeLMjoi1OnyRV2YHnyHe7p2vBN1iBfkm0kh5xPFcw%2BwJE4IbgEWSUKHtj3Wu2RWlrAu0mMhRkKn2kWJPFg2CWfjLDoDYCZdDcgpIFh91Pv3aZV%2BTbaMsWGNzaSWffx4VX0QwrvCf%2BwKAsKHRDF54A3GVOqClvtuwwb%2F9T3yciqpvwdKv0c9aFOd%2F1V3xsAx9uhU1NmiiLsT4gPRYTYarrhO5wJYR748rvZS4dwv25IJFL5PNJQID10zSQ4FLeEE3X3gSx5FwkIHBe3W5ihIMp%2Bw2H7DSJ99M1TmzvDVo4EQ%2FLcgbxh7ivchluAtpaDty63KbzhO8nLg0yiYg%2BxTcM94qni87WVvNXyNpxjQ20ljkQgjiHhp%2FCkA8B5x5%2FlYwX7mQ4zy8AITkkgMaKBXIJXgP%2FO6Qp%2B3%2FDM38xq67HL%2FYIwkrOvwwY6sQGwz7l1XNldFfn5uh9Yp25vpo0lbwZ9iMUo9TSYnBulsI4rMvUOm6CgCR6hSIpTM%2FHNa6bFM5Gzkem%2FZQOo%2BlP8bmIJ8t92s7Z5nYQ2TI2yGLoiLzsHwITpTbJr9SVU9OyMD%2BA%2BK3z4tSWfB7q0xE31aaIPw8F2AXXdKSfxbHfAMCggxQkPo5AMS%2Fqx%2F7JaAGkNdQ5l7LZxnvv1mlFhWijxMTzvDwkHSBtvgggolkNdosE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250707T150833Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYSLATPC2B%2F20250707%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b74aa972bb2fc659b5f70ffd8f35f3f139b3a21152472c87ac8160cfc8b5bfde&hash=2caad05412f0fb396aee1b184406c0f51e443d29a7a99d4942106716385cd838&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0017931019354043&tid=spdf-2882168f-dcd7-4d39-94b2-0e2cd3350f03&sid=baf325c57fd1e84aa30a52d7dcb9769df314gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0f1057540c565a5d5e58&rr=95b842077d926b15&cc=us)
+
 [Vacuum requirements](https://www.pfeiffer-vacuum.com/global/en/markets/semiconductor/deposition/ald)
 
 ALD Operating Temperature
@@ -171,6 +172,7 @@ deposition of Al2O3 using trimethylaluminum and water](https://pdf.sciencedirect
   - In the IGC100 menu, configure the analog port as an output.
   - Set the output voltage to the desired value for the flow rate you want.
   - GC100 can be programmed to change the output voltage based on time, pressure, or other events, allowing for automated flow control sequences
+
 [IGC100](https://www.gmp.ch/htmlarea/pdf/srs/IGC100c_intl.pdf)
 
 ## Arduino/Python-Based Controller
@@ -188,7 +190,9 @@ deposition of Al2O3 using trimethylaluminum and water](https://pdf.sciencedirect
     3) Nitrogen carrier/purge gas: 0-500 sccm range
        
 [Exploring TMA and H2O Flow Rate Effects on Al2O3](https://www.mdpi.com/2079-6412/14/5/578)
+
 [ALD Recipe](https://www.seas.upenn.edu/~nanosop/ALD_Recipes.htm)
+
 [Investigation and Optimization of Process Parameters on Growth Rate in Al2O3 ](https://pmc.ncbi.nlm.nih.gov/articles/PMC12072700/)
 
 ---
@@ -232,6 +236,7 @@ Flow Controllers
   - [JFSV00068](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?srsltid=AfmBOopZIKPCtywSAE2vqqs5Sqyfi6Rtx4oVVjlZtFwsCVOxILQsX-oa)
 
   - [U.S. Solid 1/4inches Stainless Steel Electric Solenoid Valve 24VDC](https://www.amazon.com/Stainless-Electric-Solenoid-Normally-Closed/dp/B00APD8M2U?psc=1&smid=A20QEF2LEKCK8G&gQT=0&utm_source=Perplexity&utm_medium=referral)
+
   - [1/4" Solenoid Valve - 24V DC Stainless Steel Electric Solenoid Valve](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?_pos=19&_sid=23a033fbd&_ss=r)
 
 ### Injection/ALD Valves
@@ -275,10 +280,11 @@ Flow Controllers
 Catalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/masterflex-transfer-tubing-tygon-2375-avantor)
     - MFC Inlet - 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
       - Swagelok SS-2-HC-6 or equivalent (Secure the tubing with a hose clamp)
+    - - MFC Outlet - 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
     - Gas Carrier
       - For NPT Outlet: 1/4" NPT Male to 1/4" Hose Barb Adapter (for 1/4" NPT) or a 1/8" NPT Male to 1/4" Hose Barb Adapter (for 1/8" NPT).
-      - For Swagelok Compression Outlet:Swagelok 1/4" Tube to 1/4" Hose Barb Adapter (e.g., SS-4-HC-6).
-
+      - For Swagelok Compression Outlet:Swagelok 1/4" Tube to 1/4" Hose Barb Adapter (e.g., SS-4-HC-
+    - Solenoid (General) Valves - from MFCs: 1/8" NPT Male to 1/4" Hose Barb Adapter to 1/4" Hose Barb Adapter to 1/4" NPT Male lead to inlet. For outlet, 1/4" NPT male to 1/4" Swagelok tube adapter.
 
 ### Glassware
 - 50mL Schlenk flask 

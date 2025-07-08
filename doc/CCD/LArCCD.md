@@ -5,7 +5,7 @@
     - Adaptable for SiO2 - Si/SiO2/Si device to test if electrons behavior in LAr (preliminary test)
     - Aim to have hole-free by July 10  
 - Milestone 2: Finalize a comprehensive materials list by July 10 
-- Milestone 3: Place order for materials by July 11
+- Milestone 3: Place order for materials by July 11.
 
 # Recap from Previous Week and New Deadlines (pending)
 - Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. **HVC electrical feedthrough with boat is not necessary at this time - maybe later down the road we can revisit for the deposition of SiO2**

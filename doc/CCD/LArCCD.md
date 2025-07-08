@@ -1,6 +1,6 @@
 # Milestone Deadlines:
 # Recap from Previous Week and New Deadlines (pending)
-- Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. 
+- Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. **HVC electrical feedthrough with boat is not necessary at this time - maybe later down the road we can revisit for the deposition of SiO2**
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/37d197aa-a793-4a92-8dcd-ec7f7a03ae7f" />
 
@@ -110,7 +110,8 @@ The diagram visually clarifies how each device connects to its respective power 
 
 ### Electrical Schematic 
 
-<img width="1900" alt="image" src="https://github.com/user-attachments/assets/3994b893-74fb-4157-8567-50a465ec6f3c" />
+<img width="2028" alt="image" src="https://github.com/user-attachments/assets/18fa5588-167b-47d5-8877-13b41c3b031a" />
+
 
 ### ALD Operation
 
@@ -217,15 +218,15 @@ Flow Controllers
     - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
     - [Technical Data for MC-Series Mass Flow Controllers](https://www.lesker.com/newweb/process_instruments/pdf/kjlc-specsheet-mc-10-20.pdf)
  
-Valves
+### Valves
 
-General Valves
+### General Valves
   - [JFSV00068](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?srsltid=AfmBOopZIKPCtywSAE2vqqs5Sqyfi6Rtx4oVVjlZtFwsCVOxILQsX-oa)
 
   - [U.S. Solid 1/4inches Stainless Steel Electric Solenoid Valve 24VDC](https://www.amazon.com/Stainless-Electric-Solenoid-Normally-Closed/dp/B00APD8M2U?psc=1&smid=A20QEF2LEKCK8G&gQT=0&utm_source=Perplexity&utm_medium=referral)
   - [1/4" Solenoid Valve - 24V DC Stainless Steel Electric Solenoid Valve](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?_pos=19&_sid=23a033fbd&_ss=r)
 
-Injection/ALD Valves
+### Injection/ALD Valves
 - Swagelok ALD3 (6LVV-ALD3TC333P-C) is an ultrahigh-purity (UHP) diaphragm valve specifically designed for atomic layer deposition (ALD) applications.
   
 [Ordering Information and Dimensions (ALD3 and ALD6)](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)
@@ -233,7 +234,7 @@ Injection/ALD Valves
 - 6LVV-ALD3BW4-P-C Swagelok 6LVV-ALD3BW4-P-C valve is a robust, high-purity, and industry-proven choice for your ALD precursor injection needs. Its materials, actuation, connection type, and temperature rating align perfectly with the requirements for delivering TMA and water vapor in Al₂O₃ ALD process, ensuring precise, contamination-free, and reliable operation.
 
 
-Flow Controllers Cont.
+### Flow Controllers Cont.
   - [Alicat - Alicat Mass Flow Controller - Standard Configuration
 100 SCCM](https://store.alicat.com/checkouts/cn/Z2NwLXVzLWNlbnRyYWwxOjAxSlhOM0FOSlNDSDRTVEtaMzNaSzdGUEtB?auto_redirect=false&edge_redirect=true&locale=en-US&skip_shop_pay=true)
 
@@ -245,12 +246,13 @@ Flow Controllers Cont.
 
 - Mass flow controller [Omega, FMA5414A-ST]
 
-Valves Cont. 
+### Valves Cont. 
 - Solenoid valves [SMC, NVZ5120-5LZ-01T]
 - ALD valves [Swagelok, 6LVV-ALD3TC333P-C,6LVV-A31V222P-AA]
 
 
- Pressure sensor [InstruTech, CVG101GF]
+### Pressure sensor 
+- InstruTech, CVG101GF
 
 ### Gas Handling and Delivery 
 - Nitrogen (N₂), high purity (99.999% or better), cylinder with appropriate regulator

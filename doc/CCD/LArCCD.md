@@ -287,9 +287,9 @@ Catalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/
     - Gas mixing and thermalization before the substrate
     - Placement of feedthroughs and sensors outside the hot zone to avoid overheating
     - Safe sealing and handling
-- Temperature monitor  
-  - Middle of furnace 
-  - Entry
+- Temperature monitor (x2)   
+  - Middle of furnace (in stock)
+  - Entry (in stock)
 - Ceramic boat for Sample 
 - Quartz crystal 
   - [INFICON ALD sensors](https://www.inficon.com/en/products/thin-film-technology/ald-sensor)   

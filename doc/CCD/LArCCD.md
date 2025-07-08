@@ -265,13 +265,14 @@ Flow Controllers
 - Trimethylaluminum (TMA), ALD grade
 - Deionized Water (DI H₂O)
 - Stainless steel tubing (1/4" OD, electropolished, for all gas lines)
-- Tygon tubing
+- Tygon Tubing to Alicat MFCs and Carrier Gas Cylinder
   - Tygon F-4040-A or Tygon 2375
     - Tygon 2375 is specifically engineered for ultra-high chemical resistance and purity. It is plasticizer-free, minimizing contamination risks, and is suitable for aggressive chemicals, including acids, bases, and organic solvents. The tubing is also clear, allowing for better visual inspection of flow and cleanliness. Its smooth inner surface reduces the risk of particulate buildup and cross-contamination
     - [Tygon® formula 2375 laboratory tubing](https://www.sigmaaldrich.com/US/en/product/aldrich/z685631)
     - [Masterflex® Transfer Tubing, Tygon® 2375, 5/16" ID x 7/16" OD; 50 Ft
 Catalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/masterflex-transfer-tubing-tygon-2375-avantor)
-- Swagelok compression fittings (for leak-tight connections)
+    - 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
+    - 
 - Stainless steel elbows, tees, and adapters 
 - 50mL Schlenk flask 
 - 10 mL two-neck round-bottom flask 

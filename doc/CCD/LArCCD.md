@@ -1,12 +1,16 @@
 # Milestone Deadlines:
+-  Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic.
+  - Include part numbers to electrical schematic 
+  - Include Emergency Shutoff
+  - Adaptable for SiO2 - Si/SiO2/Si device to test if electrons behavior in LAr (preliminary test)
+  - Aim to have hole-free by July 10  
+-  Milestone 2: Finalize a comprehensive materials list by July 10 
+-  Milestone 3: Place order for materials by July 11
+
 # Recap from Previous Week and New Deadlines (pending)
 - Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. **HVC electrical feedthrough with boat is not necessary at this time - maybe later down the road we can revisit for the deposition of SiO2**
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/37d197aa-a793-4a92-8dcd-ec7f7a03ae7f" />
-
--  Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic. Finalize a comprehensive materials list by July 8
--  Milestone 2: Place order for materials by July 9
--  Milestone 3: (pending review of ES) 
 
 # 06/30-07/03
 - Milestone 1: Finish gas flow design along with description by Jun 24th

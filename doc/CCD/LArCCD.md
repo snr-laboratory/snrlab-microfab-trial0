@@ -79,7 +79,7 @@ The key innovation of ALD is in its ability to carefully control the introductio
 
 N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. The purge line is redirected for faster purge times and to avoid contamination through the sharing lines. For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
 
-As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can result in unwanted lower quality grown films. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. At this point, the gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
+**As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can result in unwanted lower quality grown films. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. HVC IS AN ELECTRICAL FEEDTHROUGH NOT INTENDED FOR VAPOR PRESSURE CONTROL** At this point, the gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
 
 The flow sequence will be later determined though recipe development for critical information as follows:
 - Valve timing: How long each injection valve remains open
@@ -271,20 +271,35 @@ Flow Controllers
 - Nitrogen (N₂), high purity (99.999% or better), cylinder with appropriate regulator
 - Trimethylaluminum (TMA), ALD grade
 - Deionized Water (DI H₂O)
-- Stainless steel tubing (1/4" OD, electropolished, for all gas lines)
+  
 - Tygon Tubing to Alicat MFCs and Carrier Gas Cylinder
   - Tygon F-4040-A or Tygon 2375
     - Tygon 2375 is specifically engineered for ultra-high chemical resistance and purity. It is plasticizer-free, minimizing contamination risks, and is suitable for aggressive chemicals, including acids, bases, and organic solvents. The tubing is also clear, allowing for better visual inspection of flow and cleanliness. Its smooth inner surface reduces the risk of particulate buildup and cross-contamination
+
     - [Tygon® formula 2375 laboratory tubing](https://www.sigmaaldrich.com/US/en/product/aldrich/z685631)
-    - [Masterflex® Transfer Tubing, Tygon® 2375, 5/16" ID x 7/16" OD; 50 Ft
-Catalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/masterflex-transfer-tubing-tygon-2375-avantor)
-    - MFC Inlet - 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
-      - Swagelok SS-2-HC-6 or equivalent (Secure the tubing with a hose clamp)
-    - - MFC Outlet - 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
+
+    - [Masterflex® Transfer Tubing, Tygon® 2375, 5/16" ID x 7/16" OD; 50 FtCatalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/masterflex-transfer-tubing-tygon-2375-avantor)
+
+    - MFCs
+      - Inlet: 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel). Swagelok SS-2-HC-6 or equivalent 
+      - Outlet: 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
+
     - Gas Carrier
-      - For NPT Outlet: 1/4" NPT Male to 1/4" Hose Barb Adapter (for 1/4" NPT) or a 1/8" NPT Male to 1/4" Hose Barb Adapter (for 1/8" NPT).
-      - For Swagelok Compression Outlet:Swagelok 1/4" Tube to 1/4" Hose Barb Adapter (e.g., SS-4-HC-
-    - Solenoid (General) Valves - from MFCs: 1/8" NPT Male to 1/4" Hose Barb Adapter to 1/4" Hose Barb Adapter to 1/4" NPT Male lead to inlet. For outlet, 1/4" NPT male to 1/4" Swagelok tube adapter.
+      - NPT Outlet: 1/4" NPT Male to 1/4" Hose Barb Adapter (for 1/4" NPT) or a 1/8" NPT Male to 1/4" Hose Barb Adapter (for 1/8" NPT).
+      - Swagelok Compression Outlet: Swagelok 1/4" Tube to 1/4" Hose Barb Adapter (e.g., SS-4-HC-6)
+
+    - Solenoid General Valves
+      - Inlets: 1/8" NPT Male to 1/4" Hose Barb Adapter to 1/4" Hose Barb Adapter to 1/4" NPT Male lead to inlet.
+      - Outlet, 1/4" NPT male to 1/4" Swagelok tube adapter.
+
+    - ALD Valves
+      - Outlet: SS-4-TA-1-4 Swagelok 1/4" Male NPT to 1/4" Tube Fitting. This fitting threads into the solenoid's 1/4" NPT female outlet and provides a Swagelok compression fitting for 1/4" OD stainless steel tubing
+      - Inlet: Swagelok 1/4" Tube to 1/4" Male VCR® Face Seal Adapter
+
+    - Stainless steel tubing (1/4" OD, electropolished, for all gas lines)
+      - 1/4" OD x 0.035" wall 316/316L Stainless Steel Tubing 
+
+
 
 ### Glassware
 - 50mL Schlenk flask 
@@ -307,6 +322,10 @@ Catalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/
 - Ceramic boat for Sample 
 - Quartz crystal 
   - [INFICON ALD sensors](https://www.inficon.com/en/products/thin-film-technology/ald-sensor)   
+
+
+
+
 - Relay
   - [Omega SSRL240DC10 SOLID STATE RELAYS](https://rspsupply.com/p-782675-omega-ssrl240dc10-solid-state-relays.aspx)
 

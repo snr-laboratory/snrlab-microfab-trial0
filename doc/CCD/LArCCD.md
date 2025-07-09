@@ -148,6 +148,7 @@ deposition of Al2O3 using trimethylaluminum and water](https://pdf.sciencedirect
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/a2504053-541a-4f34-aba9-59b5884fd618" />
 
 [Type F21100 Tube Furnace OPERATION MANUAL](https://www.nist.gov/system/files/documents/ncnr/E133tubefurnace.pdf)
+[Thermolyne F21100 Tube Furnace](https://www.nist.gov/laboratories/tools-instruments/thermolyne-f21100-tube-furnace)
 
 ## Precursor Chamber
    - 1300 Furnace by Barnstead Thermolyne

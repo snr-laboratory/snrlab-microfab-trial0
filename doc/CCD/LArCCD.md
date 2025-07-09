@@ -265,9 +265,34 @@ Flow Controllers
 - ALD valves [Swagelok, 6LVV-ALD3TC333P-C,6LVV-A31V222P-AA]
 
 
-### Pressure sensor 
-- InstruTech, CVG101GF
+### Temperature and Pressure sensor 
 
+Granville-Phillips Convectron Gauge (Catalog No. 275185)
+- Convectron Pirani gauge (thermal conductivity gauge)
+  - 1 × 10⁻⁴ Torr to atmosphere
+  - [MKS Granville Phillips 275 Convectron Gauge Vacuum Pressure Measurement Sensor, 1/4 inch Female 4 VCR Fitting](https://www.idealvac.com/en-us/MKS-Granville-Phillips-275-Convectron-Gauge-Vacuum-Pressure-Measurement-Sensor-4-VCR-14-inch-PN:-275185/pp/P102686?srsltid=AfmBOop73eAyvhYH-7F-2SPT6Qgsy4iYLRUoBEDt8UVAGOaAF0LlQbGq)
+
+    - 1/4" Swagelok Tube to 1/4" Male VCR Face Seal Adapter
+      -  Part Number: SS-4-WVCR-6-400
+
+
+
+
+
+
+
+
+
+- PT100 Sensor for Chamber Temperature Monitoring  
+  - Middle of furnace 
+  - [RTD PT100 Thermocouple Sensor](https://www.aavadinstrument.com/product/rtd-pt100-thermocouple-sensor/)
+    - Part Number: APES-6×80  
+
+ [PT-100 Aavad - B](https://www.aavadinstrument.com/product/3-wire-rtd-sensor/)
+
+- Pirani Sensor for Chamber Pressure Monitoring  
+  - InstruTech, CVG101GF
+  
 ### Gas Handling and Delivery 
 - Nitrogen (N₂), high purity (99.999% or better), cylinder with appropriate regulator
 - Trimethylaluminum (TMA), ALD grade
@@ -281,38 +306,41 @@ Flow Controllers
 
     - [Masterflex® Transfer Tubing, Tygon® 2375, 5/16" ID x 7/16" OD; 50 FtCatalog # MFLX95630-17](https://www.avantorsciences.com/us/en/product/NA5144177/masterflex-transfer-tubing-tygon-2375-avantor)
 
-    - MFCs
-      - Inlet: 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel). Swagelok SS-2-HC-6 or equivalent 
-      - Outlet: 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
-      - In/Outlet: [Stainless Steel Hose Connector, 1/8 in. Male NPT, 1/4 in. Hose ID](https://products.swagelok.com/en/c/connectors-plastic-tubing/p/SS-4-HC-1-2)
+- MFCs
+  - Inlet: 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel). Swagelok SS-2-HC-6 or equivalent 
+  - Outlet: 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
+  - In/Outlet: [Stainless Steel Hose Connector, 1/8 in. Male NPT, 1/4 in. Hose ID](https://products.swagelok.com/en/c/connectors-plastic-tubing/p/SS-4-HC-1-2)
       - Part Number: SS-4-HC-1-2
         
-    - Gas Carrier
-      - NPT Outlet: 1/4" NPT Male to 1/4" Hose Barb Adapter (for 1/4" NPT) or a 1/8" NPT Male to 1/4" Hose Barb Adapter (for 1/8" NPT).
-      - Swagelok Compression Outlet: Swagelok 1/4" Tube to 1/4" Hose Barb Adapter
-      - (e.g., SS-4-HC-6 Part Number: SS-2-HC-6 (Swagelok))
+- Gas Carrier
+  - NPT Outlet: 1/4" NPT Male to 1/4" Hose Barb Adapter (for 1/4" NPT) or a 1/8" NPT Male to 1/4" Hose Barb Adapter (for 1/8" NPT).
+  - Swagelok Compression Outlet: Swagelok 1/4" Tube to 1/4" Hose Barb Adapter
+      - Part Number: SS-2-HC-6 (Swagelok), SS-4-HC-6 )
 
-    - Solenoid General Valves
-      - Inlets: 1/4" Hose Barb Adapter to 1/4" NPT Male  
+- Solenoid General Valves
+  - Inlets: 1/4" Hose Barb Adapter to 1/4" NPT Male  
       - Part Number: SS-4-HC-1-4
       - [Stainless Steel Hose Connector, 1/4 in. Male NPT, 1/4 in. Hose ID](https://products.swagelok.com/en/search/?text=SS-4-HC-1-4)
 
-      - Outlet: 1/4" NPT male to 1/4" Swagelok SS tube adapter.
+  - Outlet: 1/4" NPT male to 1/4" Swagelok SS tube adapter.
       - Part Number: SS-4-TA-1-4
       - [Stainless Steel Swagelok Tube Fitting, Male Tube Adapter, 1/4 in. Tube OD x 1/4 in. Male NPT](https://products.swagelok.com/en/search/?text=SS-4-TA-1-4)
       
   
 
-    - ALD Valves
-      - Outlet: 1/4" Male NPT to 1/4" Swagelok SS Tube Fitting. This fitting threads into the solenoid's 1/4" NPT female outlet and provides a Swagelok compression fitting for 1/4" OD stainless steel tubing
+- ALD Valves
+  - Outlet: 1/4" Male NPT to 1/4" Swagelok SS Tube Fitting. This fitting threads into the solenoid's 1/4" NPT female outlet and provides a Swagelok compression fitting for 1/4" OD stainless steel tubing
       - Part Number: SS-4-TA-1-4
         
-      - Inlet: Swagelok 1/4" Tube to 1/4" Male VCR® Face Seal Adapter
+  - Inlet: Swagelok 1/4" Tube to 1/4" Male VCR® Face Seal Adapter
       - Part Number: SS-4-WVCR-6-400
       - [316 Stainless Steel Welded VCR Face Seal Fitting, Swagelok Tube Fitting Connector, 1/4 in. WVCR x 1/4 in. Tube Fitting](https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400)
 
-    - Stainless Steel Tubing 
-      - 1/4" OD x 0.035" wall 316/316L Stainless Steel Tubing Electropolished
+- Stainless Steel Tubing 
+  - 1/4" OD x 0.035" wall 316/316L Stainless Steel Tubing Electropolished
+      - Part Number: SS-T4-S-035-20
+      - [Stainless Steel Seamless Tubing and
+Tube Support Systems](https://www.swagelok.com/-/media/distributor-media/l-n/michigan/webinars/tvp/catalog--stainless-steel-seamless-tubing-and-tube-supports-ms01181-revg.ashx)
 
 ### Vacuum Fittings
 Vacuum-Grade Stainless Steel Feedthrough Cap
@@ -335,9 +363,8 @@ Vacuum-Grade Stainless Steel Feedthrough Cap
     - Gas mixing and thermalization before the substrate
     - Placement of feedthroughs and sensors outside the hot zone to avoid overheating
     - Safe sealing and handling
-- Temperature monitor (x2)   
-  - Middle of furnace (in stock)
-  - Entry (in stock)
+      - Part Number: TQ50D610
+
 - Ceramic boat for Sample 
 - Quartz crystal 
   - [INFICON ALD sensors](https://www.inficon.com/en/products/thin-film-technology/ald-sensor)   
@@ -369,7 +396,7 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 7) [Development of a powder atomic layer deposition reactor for research purposes](https://aaltodoc.aalto.fi/items/da057807-ba67-4c89-8d88-f828a46bc56b)
 8) [OPERATING MANUAL FOR MASS FLOW CONTROLLERS](https://www.lesker.com/newweb/process_instruments/pdf/kjlc-manual-alicat-mc.pdf)
 9) [Controling a Solenoid Valve With an Arduino](https://www.instructables.com/Controling-a-solenoid-valve-with-an-Arduino/)
-10) []()
+
 
 ---
 

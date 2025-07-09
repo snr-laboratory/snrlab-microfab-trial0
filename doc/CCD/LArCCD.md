@@ -283,21 +283,35 @@ Flow Controllers
     - MFCs
       - Inlet: 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel). Swagelok SS-2-HC-6 or equivalent 
       - Outlet: 1/8" NPT Male to 1/4" Hose Barb Adapter (Stainless Steel)
-
+      - In/Outlet: [Stainless Steel Hose Connector, 1/8 in. Male NPT, 1/4 in. Hose ID](https://products.swagelok.com/en/c/connectors-plastic-tubing/p/SS-4-HC-1-2)
+      - Part Number: SS-4-HC-1-2
+        
     - Gas Carrier
       - NPT Outlet: 1/4" NPT Male to 1/4" Hose Barb Adapter (for 1/4" NPT) or a 1/8" NPT Male to 1/4" Hose Barb Adapter (for 1/8" NPT).
-      - Swagelok Compression Outlet: Swagelok 1/4" Tube to 1/4" Hose Barb Adapter (e.g., SS-4-HC-6)
+      - Swagelok Compression Outlet: Swagelok 1/4" Tube to 1/4" Hose Barb Adapter
+      - (e.g., SS-4-HC-6 Part Number: SS-2-HC-6 (Swagelok))
 
     - Solenoid General Valves
-      - Inlets: 1/8" NPT Male to 1/4" Hose Barb Adapter to 1/4" Hose Barb Adapter to 1/4" NPT Male lead to inlet.
-      - Outlet, 1/4" NPT male to 1/4" Swagelok tube adapter.
+      - Inlets: 1/4" Hose Barb Adapter to 1/4" NPT Male  
+      - Part Number: SS-4-HC-1-4
+      - [Stainless Steel Hose Connector, 1/4 in. Male NPT, 1/4 in. Hose ID](https://products.swagelok.com/en/search/?text=SS-4-HC-1-4)
+
+      - Outlet: 1/4" NPT male to 1/4" Swagelok SS tube adapter.
+      - Part Number: SS-4-TA-1-4
+      - [Stainless Steel Swagelok Tube Fitting, Male Tube Adapter, 1/4 in. Tube OD x 1/4 in. Male NPT](https://products.swagelok.com/en/search/?text=SS-4-TA-1-4)
+      
+  
 
     - ALD Valves
-      - Outlet: SS-4-TA-1-4 Swagelok 1/4" Male NPT to 1/4" Tube Fitting. This fitting threads into the solenoid's 1/4" NPT female outlet and provides a Swagelok compression fitting for 1/4" OD stainless steel tubing
+      - Outlet: 1/4" Male NPT to 1/4" Swagelok SS Tube Fitting. This fitting threads into the solenoid's 1/4" NPT female outlet and provides a Swagelok compression fitting for 1/4" OD stainless steel tubing
+      - Part Number: SS-4-TA-1-4
+        
       - Inlet: Swagelok 1/4" Tube to 1/4" Male VCR® Face Seal Adapter
+      - Part Number: SS-4-WVCR-6-400
+      - [316 Stainless Steel Welded VCR Face Seal Fitting, Swagelok Tube Fitting Connector, 1/4 in. WVCR x 1/4 in. Tube Fitting](https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400)
 
-    - Stainless steel tubing (1/4" OD, electropolished, for all gas lines)
-      - 1/4" OD x 0.035" wall 316/316L Stainless Steel Tubing 
+    - Stainless Steel Tubing 
+      - 1/4" OD x 0.035" wall 316/316L Stainless Steel Tubing Electropolished
 
 
 

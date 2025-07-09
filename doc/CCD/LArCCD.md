@@ -314,6 +314,10 @@ Flow Controllers
     - Stainless Steel Tubing 
       - 1/4" OD x 0.035" wall 316/316L Stainless Steel Tubing Electropolished
 
+### Vacuum Fittings
+Vacuum-Grade Stainless Steel Feedthrough Cap
+- Feedthrough Type: 1/4" Tube OD Bulkhead Union (Swagelok SS-400-61 or equivalent)1/4" Tube OD Bulkhead Union (Swagelok SS-400-61 or equivalent)
+- The cap should have three holes (one for each gas line), each sized for the bulkhead union (typically 7/16" diameter per hole for SS-400-61)
 
 
 ### Glassware

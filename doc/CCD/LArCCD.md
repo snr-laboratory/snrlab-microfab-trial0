@@ -28,10 +28,8 @@
       - high-quality MFCs
       - quartz tube with custom stainless steel ends for attaching the gas lines
 
-
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/1e538b04-5110-443d-ae96-7a2ad3bd4349" />
 
-     
       - mechanical fitting issue and a potential gas flow/sealing problem
       
 # Priority List
@@ -116,8 +114,7 @@ The diagram visually clarifies how each device connects to its respective power 
 
 ### Electrical Schematic 
 
-<img width="1900" alt="image" src="https://github.com/user-attachments/assets/e71706da-69b9-4a6a-b8b0-5c2f4119e0e1" />
-
+<img width="2000" alt="image" src="https://github.com/user-attachments/assets/e3dad944-e69a-4374-b4c2-47db08ff4dcc" />
 
 ### ALD Operation
 

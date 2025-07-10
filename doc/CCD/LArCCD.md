@@ -121,6 +121,23 @@ The diagram visually clarifies how each device connects to its respective power 
 
 Process Pressure Range: 0.1–5 Torr
 - Operating pressures for ALD reactors from 0.1 to 10 Torr, with 1–5 Torr being common for systems using carrier gas flow.
+  - At lower pressures, gas flow is in the molecular or transitional regime, where wall interactions and flow uniformity become more important.
+  - At higher pressures (several Torr and above), viscous flow dominates, and turbulence or mixing can be more pronounced.
+
+Turbulence vs Laminar Flow
+    - Turbulence increases mixing and can cause non-uniform deposition or unwanted reactions.
+    - **Laminar flow is preferred for controlled, predictable gas delivery and uniform film growth**
+
+Wall Reactions
+    - Gases reacting with the tube walls before reaching the substrate can lead to precursor depletion, byproduct formation, or contamination.
+    - The thermalization region should be hot enough to prevent condensation but not so long that significant wall reactions occur before the gases reach the substrate.
+
+Effect of Changing Inner Diameter (ID)
+- Sudden changes in ID (from smaller to larger, or vice versa) can cause flow disturbances, eddies, or turbulence, especially at higher pressures. Lead to regions of stagnant flow (dead zones) where gases can mix or react with walls.
+- Increase the risk of precursor condensation or byproduct accumulation in larger-diameter sections.
+- **Keep inner diameter as consistent as possible throughout the gas path, especially from the gas inlet through the thermalization region and into the reaction zone.**
+  - If a change in diameter is unavoidable, use smooth transitions (e.g., conical reducers) rather than abrupt steps to minimize turbulence and dead zones.
+
 
 Base Pressure: Below 500 mTorr
 - It is standard to evacuate the ALD chamber to a base pressure as low as possible—ideally below 500 mTorr (0.5 Torr)—to remove contaminants and residual gases.

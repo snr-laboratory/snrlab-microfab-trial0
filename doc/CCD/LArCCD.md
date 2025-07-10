@@ -114,7 +114,8 @@ The diagram visually clarifies how each device connects to its respective power 
 
 ### Electrical Schematic 
 
-<img width="1700" height="619" alt="image" src="https://github.com/user-attachments/assets/dc1320e7-2e87-4f6d-8602-7878079e7245" />
+<img width="1800" height="695" alt="image" src="https://github.com/user-attachments/assets/5abf11d1-c9f9-4d3b-bcf7-b245e26f7a64" />
+
 
 
 ### ALD Operation

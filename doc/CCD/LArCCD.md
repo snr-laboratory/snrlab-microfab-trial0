@@ -138,6 +138,10 @@ Effect of Changing Inner Diameter (ID)
 - **Keep inner diameter as consistent as possible throughout the gas path, especially from the gas inlet through the thermalization region and into the reaction zone.**
   - If a change in diameter is unavoidable, use smooth transitions (e.g., conical reducers) rather than abrupt steps to minimize turbulence and dead zones.
 
+-Process operates at 0.1–5 Torr, with a base pressure target below 0.5 Torr for chamber evacuation. This is in the low-pressure (transitional to molecular) flow regime, where:
+  - Laminar flow is easily maintained in a straight, matched-diameter path.
+  - Wall interactions and dead volume become more important than turbulence.
+  - The bellows must be vacuum-tight and rated for at least 10⁻³ Torr, which all standard 4-inch KF40 bellows meet.
 
 Base Pressure: Below 500 mTorr
 - It is standard to evacuate the ALD chamber to a base pressure as low as possible—ideally below 500 mTorr (0.5 Torr)—to remove contaminants and residual gases.

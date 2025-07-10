@@ -264,7 +264,7 @@ Flow Controllers
 
 ### Temperature and Pressure sensor 
 
-Granville-Phillips Convectron Gauge (Catalog No. 275185)
+Granville-Phillips Convectron Gauge (Catalog No. 275185). The 275185 Convection-enhanced Pirani Vacuum Gauge provides reliable measurement from 10-4 Torr to atmosphere using a gold plated tungsten sensor, and features a 1/4 inch female VCR fitting.
 - Convectron Pirani gauge (thermal conductivity gauge)
   - 1 × 10⁻⁴ Torr to atmosphere
   - [MKS Granville Phillips 275 Convectron Gauge Vacuum Pressure Measurement Sensor, 1/4 inch Female 4 VCR Fitting](https://www.idealvac.com/en-us/MKS-Granville-Phillips-275-Convectron-Gauge-Vacuum-Pressure-Measurement-Sensor-4-VCR-14-inch-PN:-275185/pp/P102686?srsltid=AfmBOop73eAyvhYH-7F-2SPT6Qgsy4iYLRUoBEDt8UVAGOaAF0LlQbGq)
@@ -272,7 +272,8 @@ Granville-Phillips Convectron Gauge (Catalog No. 275185)
     - 1/4" Swagelok Tube to 1/4" Male VCR Face Seal Adapter
       -  Part Number: SS-4-WVCR-6-400
 
-
+      - Hastings-Raydist Vacuum Gauge Tube. A sensor element used in vacuum gauges to measure the pressure within a vacuum system. Specifically, designed for use in a thermal conductivity gauge (Pirani or convection gauge), which measures vacuum pressure by detecting changes in heat loss from a heated filament inside the tube.
+      - The Hastings-Raydist tube serves as the sensor element for the   Convectron gauge, meaning it is the part inside the gauge that actually senses the vacuum pressure through thermal conductivity and convection effects. 
 
 
 

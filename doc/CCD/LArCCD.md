@@ -114,7 +114,8 @@ The diagram visually clarifies how each device connects to its respective power 
 
 ### Electrical Schematic 
 
-<img width="2000" alt="image" src="https://github.com/user-attachments/assets/e3dad944-e69a-4374-b4c2-47db08ff4dcc" />
+<img width="1700" height="619" alt="image" src="https://github.com/user-attachments/assets/dc1320e7-2e87-4f6d-8602-7878079e7245" />
+
 
 ### ALD Operation
 
@@ -244,6 +245,16 @@ Flow Controllers
 
 - 6LVV-ALD3BW4-P-C Swagelok 6LVV-ALD3BW4-P-C valve is a robust, high-purity, and industry-proven choice for your ALD precursor injection needs. Its materials, actuation, connection type, and temperature rating align perfectly with the requirements for delivering TMA and water vapor in Al₂O₃ ALD process, ensuring precise, contamination-free, and reliable operation.
 
+### Needle Nose Valve
+Stainless Steel Integral Bonnet Needle Valve, 0.37 Cv, 1/4 in. Swagelok Tube Fitting, Regulating Stem
+- Part #: SS-1RS4
+- [Stainless Steel Integral Bonnet Needle Valve](https://products.swagelok.com/en/c/straight-pattern-regulating-stem/p/SS-1RS4)
+
+  - VIVO HOME Pump Fitting
+    - Stainless Steel Swagelok Tube Fitting, Union, 1/4 in. Tube OD x 1/4 in. AN Tube Flare
+    - Part #: SS-400-6-4AN
+    - [Tube Fitting, Union, 1/4 in. Tube OD x 1/4 in. AN Tube Flare](https://products.swagelok.com/en/c/straights/p/SS-400-6-4AN)
+
 
 ### Flow Controllers Cont.
   - [Alicat - Alicat Mass Flow Controller - Standard Configuration
@@ -262,7 +273,7 @@ Flow Controllers
 - ALD valves [Swagelok, 6LVV-ALD3TC333P-C,6LVV-A31V222P-AA]
 
 
-### Temperature and Pressure sensor 
+### Pressure Sensor 
 
 Granville-Phillips Convectron Gauge (Catalog No. 275185). The 275185 Convection-enhanced Pirani Vacuum Gauge provides reliable measurement from 10-4 Torr to atmosphere using a gold plated tungsten sensor, and features a 1/4 inch female VCR fitting.
 - Convectron Pirani gauge (thermal conductivity gauge)
@@ -272,24 +283,24 @@ Granville-Phillips Convectron Gauge (Catalog No. 275185). The 275185 Convection-
     - 1/4" Swagelok Tube to 1/4" Male VCR Face Seal Adapter
       -  Part Number: SS-4-WVCR-6-400
 
+      - Cable: use SRS 0105C4 Dual Pirani Gauge cable [CABLE-PIRANI-C-PIRANI-3M](https://www.vacom.net/en/cable-pirani-c-pirani-3m.html)
+      - Adapter: use SRS 0105CA1 [DB15-ADAPTOR](https://www.gentec-eo.com/products/db15-adaptor)
+      - Port: plug DB-15 into PIRANI port
+
       - Hastings-Raydist Vacuum Gauge Tube. A sensor element used in vacuum gauges to measure the pressure within a vacuum system. Specifically, designed for use in a thermal conductivity gauge (Pirani or convection gauge), which measures vacuum pressure by detecting changes in heat loss from a heated filament inside the tube.
       - The Hastings-Raydist tube serves as the sensor element for the   Convectron gauge, meaning it is the part inside the gauge that actually senses the vacuum pressure through thermal conductivity and convection effects. 
 
+- Pirani Sensor for Chamber Pressure Monitoring  
+  - InstruTech, CVG101GF
 
-
-
-
-
-
-- PT100 Sensor for Chamber Temperature Monitoring  
+### Temperature Sensor 
+- PT100 Sensor for Chamber Temperature Monitoring (Class A) 
   - Middle of furnace 
   - [RTD PT100 Thermocouple Sensor](https://www.aavadinstrument.com/product/rtd-pt100-thermocouple-sensor/)
     - Part Number: APES-6×80  
 
- [PT-100 Aavad - B](https://www.aavadinstrument.com/product/3-wire-rtd-sensor/)
+ - [Class B PT-100 Aavad](https://www.aavadinstrument.com/product/3-wire-rtd-sensor/)
 
-- Pirani Sensor for Chamber Pressure Monitoring  
-  - InstruTech, CVG101GF
   
 ### Gas Handling and Delivery 
 - Nitrogen (N₂), high purity (99.999% or better), cylinder with appropriate regulator

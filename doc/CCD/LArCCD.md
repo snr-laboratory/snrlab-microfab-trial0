@@ -125,6 +125,9 @@ Process Pressure Range: 0.1–5 Torr
   - At lower pressures, gas flow is in the molecular or transitional regime, where wall interactions and flow uniformity become more important.
   - At higher pressures (several Torr and above), viscous flow dominates, and turbulence or mixing can be more pronounced.
 
+Base Pressure: Below 500 mTorr
+- It is standard to evacuate the ALD chamber to a base pressure as low as possible—ideally below 500 mTorr (0.5 Torr)—to remove contaminants and residual gases.
+
 Turbulence vs Laminar Flow
     - Turbulence increases mixing and can cause non-uniform deposition or unwanted reactions.
     - **Laminar flow is preferred for controlled, predictable gas delivery and uniform film growth**
@@ -144,8 +147,12 @@ Effect of Changing Inner Diameter (ID)
   - Wall interactions and dead volume become more important than turbulence.
   - The bellows must be vacuum-tight and rated for at least 10⁻³ Torr, which all standard 4-inch KF40 bellows meet.
 
-Base Pressure: Below 500 mTorr
-- It is standard to evacuate the ALD chamber to a base pressure as low as possible—ideally below 500 mTorr (0.5 Torr)—to remove contaminants and residual gases.
+Gas Flow and Precursor Mixing Considerations
+- Research on spatial ALD systems demonstrates that transitional flow regimes can cause precursor intermixing even in temporal ALD systems. The key concern is that transitional flow creates:
+  - Unsteady flow patterns that can cause precursor mixing
+  - Residence time variations across the reactor cross-section
+  - Non-uniform precursor concentration profiles
+  - Increased risk of CVD-like reactions
 
 [Operating pressure influences over micro trenches in exposure time
 introduced atomic layer deposition](https://pdf.sciencedirectassets.com/271451/1-s2.0-S0017931020X00044/1-s2.0-S0017931019354043/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG8aCXVzLWVhc3QtMSJHMEUCIC0RbSRvmnk46%2BsfDgGRA497hLRFFTeJWHzZisOsAnn4AiEAxF0UB8BOwJhx2vOK9aMstmo0da0wvMgzoK1sq1DgX%2BAqsgUIeBAFGgwwNTkwMDM1NDY4NjUiDKiDw8mI1RideEC%2BCiqPBeF49Uw%2BtVUg%2F88Lx72wI14zYLA20lPQj%2Fd%2F2ytZYvIJiFGsfIzkEM7qp97RPD0iBl94netIIMbiOqLffHhiT1n1XxXfNObormffIKvWKIq6dY8jFY5AQnJNF6mj0sB1jfZwXYEWpYmf3VJNQn2rmUWDt2NhmUGd0xSmlLhVvaqJh6I7WnuvMenMREwWQLS9DHa3udB%2FdzrbQpECWbliBXDxyDfTBlC0fLhGPlb79gi41SL0YNX5GX8llFj16ozRueiL7PBdtBXwiFV8x8v9ajESd244k%2FIpp88S3ym5%2BQZPjFPvcD6O2xRfHF39HPSs%2FaHYv%2FY0jAiKMeIlJxumt%2FVcotsQtjp%2BTgBn50r6qKtWvh3rskSvudmKQIL05eyt6vtQTiEo1sMY7CtLnGQoTkxtxvR6hVoqSI%2FqUu5crAMq2IunCj8lsJmBpVSA0JDeLMjoi1OnyRV2YHnyHe7p2vBN1iBfkm0kh5xPFcw%2BwJE4IbgEWSUKHtj3Wu2RWlrAu0mMhRkKn2kWJPFg2CWfjLDoDYCZdDcgpIFh91Pv3aZV%2BTbaMsWGNzaSWffx4VX0QwrvCf%2BwKAsKHRDF54A3GVOqClvtuwwb%2F9T3yciqpvwdKv0c9aFOd%2F1V3xsAx9uhU1NmiiLsT4gPRYTYarrhO5wJYR748rvZS4dwv25IJFL5PNJQID10zSQ4FLeEE3X3gSx5FwkIHBe3W5ihIMp%2Bw2H7DSJ99M1TmzvDVo4EQ%2FLcgbxh7ivchluAtpaDty63KbzhO8nLg0yiYg%2BxTcM94qni87WVvNXyNpxjQ20ljkQgjiHhp%2FCkA8B5x5%2FlYwX7mQ4zy8AITkkgMaKBXIJXgP%2FO6Qp%2B3%2FDM38xq67HL%2FYIwkrOvwwY6sQGwz7l1XNldFfn5uh9Yp25vpo0lbwZ9iMUo9TSYnBulsI4rMvUOm6CgCR6hSIpTM%2FHNa6bFM5Gzkem%2FZQOo%2BlP8bmIJ8t92s7Z5nYQ2TI2yGLoiLzsHwITpTbJr9SVU9OyMD%2BA%2BK3z4tSWfB7q0xE31aaIPw8F2AXXdKSfxbHfAMCggxQkPo5AMS%2Fqx%2F7JaAGkNdQ5l7LZxnvv1mlFhWijxMTzvDwkHSBtvgggolkNdosE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250707T150833Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYSLATPC2B%2F20250707%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b74aa972bb2fc659b5f70ffd8f35f3f139b3a21152472c87ac8160cfc8b5bfde&hash=2caad05412f0fb396aee1b184406c0f51e443d29a7a99d4942106716385cd838&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0017931019354043&tid=spdf-2882168f-dcd7-4d39-94b2-0e2cd3350f03&sid=baf325c57fd1e84aa30a52d7dcb9769df314gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=0f1057540c565a5d5e58&rr=95b842077d926b15&cc=us)
@@ -378,6 +385,30 @@ Vacuum-Grade Stainless Steel Feedthrough Cap
 - Feedthrough Type: 1/4" Tube OD Bulkhead Union (Swagelok SS-400-61 or equivalent)1/4" Tube OD Bulkhead Union (Swagelok SS-400-61 or equivalent)
 - The cap should have three holes (one for each gas line), each sized for the bulkhead union (typically 7/16" diameter per hole for SS-400-61)
 
+Component: Custom Entrance Cap - KF40 to Quartz Tube Transition
+Application: ALD Vacuum System
+
+Materials:
+- Body: 316L stainless steel per ASTM A276
+- O-rings: Viton (FKM) for high-temperature operation
+- Surface finish: 32 μin Ra or better on sealing surfaces
+
+Dimensions:
+- KF40 flange side: Standard ISO-KF 40mm nominal diameter
+- Quartz tube side: 50mm ± 0.1mm internal diameter accommodation
+- Transition angle: 15° half-angle for optimal flow characteristics
+- Overall length: 60-80mm (to be optimized for thermal expansion)
+
+Operating Conditions:
+- Vacuum level: 10⁻⁹ Torr
+- Temperature range: Ambient to 300°C
+- Pressure differential: Full atmospheric to vacuum
+- Gas compatibility: N₂, Ar, TMA, H₂O (ALD precursors)
+
+Sealing Requirements:
+- Leak rate: < 10⁻¹⁰ Torr·L/s
+- Thermal cycling: 100 cycles minimum without degradation
+- Dual O-ring design preferred for redundancy
 
 ### Glassware
 - 50mL Schlenk flask 

@@ -1,13 +1,51 @@
 # Milestone Deadlines:
+ - Bellow with AD20 Aluminum Support
+ - Custom SS caps for quartz tube ends 
+ - Include Emergency Shutoff
+
+
+### Bellow
+### MH-QF-C12 (Kurt J. Lesker) — Key Features
+
+**Part Number:** MH-QF-C12
+- **Vendor:** Kurt J. Lesker Company
+- **Length:** 12 inches (304.8 mm)
+- **Flange Type:** KF40 (NW40, ISO-KF 40)
+- **Material:** 304/316L stainless steel (bellows and flanges)
+- **Spring Rate:** ~6.5 N/mm (typical for this size)
+- **Compression at 127 N (vacuum):** ~19.6 mm (~6.5% of length)
+- **Vacuum Rating:** UHV compatible (≤10⁻⁸ Torr)
+- **Temperature Rating:** Suitable for ALD (up to 200–300°C)
+- **Stroke Capability:** ±24 mm (ample for thermal cycling)
+- **Chemical Compatibility:** Handles N₂, TMA, H₂O, and other ALD gases
+- **Connection:** Standard KF40 centering ring and clamp (no special adapters needed)
+- **Lead Time:** Typically 2–3 weeks
+- **Cost:** ~$161 (as of last check)
+
+- Provides robust mechanical and thermal decoupling between rigid vacuum components and the quartz tube entrance.
+- Ensures vacuum integrity and reliability during repeated ALD cycles and thermal cycling.
+- Readily available, industry-standard part with proven performance in similar ALD and vacuum systems.
+- Directly fits your existing CF/KF40 adapter and supports modular upgrades or maintenance.
+
+### Ordering Information
+- **Kurt J. Lesker Company**
+  - Website: lesker.com
+  - Phone: 1-800-245-1656
+  - Request: MH-QF-C12, KF40 bellows, 12-inch
+
+[Hydraulically (Hydro) Formed Bellows - KF (QF) Flanged (Standard Unbraided Wall)](https://www.lesker.com/newweb/flanges/bellows_kf_hydraulicallyformed.cfm?pgid=standard)
+
+
+# 07/07-07/11
 - Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic.
     - Include part numbers to electrical schematic
     - Flexible adapter for quartz tube
     - PT100 sensor  
     - Include Emergency Shutoff
     - Adaptable for SiO2 - Si/SiO2/Si device to test if electrons behavior in LAr (preliminary test)
-    - Aim to have hole-free by July 10  
-- Milestone 2: Finalize a comprehensive materials list by July 10 
-- Milestone 3: Place order for materials by July 11.
+    - Aim to have hole-free by July 10  **not met**
+- Milestone 2: Finalize a comprehensive materials list by July 10 **not met**
+- Milestone 3: Place order for materials by July 11. **not met**
 
 # Recap from Previous Week and New Deadlines (pending)
 - Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. **HVC electrical feedthrough with boat is not necessary at this time - maybe later down the road we can revisit for the deposition of SiO2**

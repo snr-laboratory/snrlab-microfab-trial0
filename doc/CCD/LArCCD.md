@@ -4,13 +4,12 @@
 <img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
 
  - Include Emergency Shutoff
-<img width="800" height="900" alt="image" src="https://github.com/user-attachments/assets/a3b7ca1a-15f3-4621-898e-ec877234c7c2" />
+<img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/926b1c77-e8dc-4eb3-a6bb-856f5c0bdf14" />
 
- 
- 
  - Aluminum Support
- - Custom SS caps for quartz tube ends 
-
+ - Custom SS caps for quartz tube ends
+  - https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/
+  - 46 OD Quartz tube
 
 <img width="1000" height="578" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
 

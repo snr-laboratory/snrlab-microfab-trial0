@@ -8,8 +8,8 @@
 
  - Aluminum Support
  - Custom SS caps for quartz tube ends
-  - https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/
-  - 46 OD Quartz tube
+    - https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/
+    - 46 OD Quartz tube
 
 <img width="1000" height="578" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
 

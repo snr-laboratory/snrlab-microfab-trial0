@@ -1,15 +1,20 @@
 # Milestone Deadlines:
  - Remove Bellow (unwanted turbulence)
    
-<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
+<img width="1000" height="540" alt="image" src="https://github.com/user-attachments/assets/2ae6380a-fd3a-4a94-bdf0-5d7db2c5c0f3" />
 
  - Include Emergency Shutoff
-<img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/926b1c77-e8dc-4eb3-a6bb-856f5c0bdf14" />
+
+<img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/767746e8-3f11-4ec3-99bf-1968010a3956" />
+
 
  - Aluminum Support
  - Custom SS caps for quartz tube ends
+    - They are available to fit work tubes with the following outside diameters: 32, 46, 60, 86, 100, 150 and 200 mm. Other sizes are available at additional cost.
     - https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/
-    - 46 OD Quartz tube
+  
+  - 46 OD Quartz tube (contacting company to see how much it will cost to have the 50OD custom ends made)
+      - 
 
 <img width="1000" height="578" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
 

@@ -1,8 +1,16 @@
 # Milestone Deadlines:
- - Remove Bellow
+ - Remove Bellow (unwanted turbulence)
+   
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
+
+ - Include Emergency Shutoff
+<img width="800" height="900" alt="image" src="https://github.com/user-attachments/assets/a3b7ca1a-15f3-4621-898e-ec877234c7c2" />
+
+ 
+ 
  - Aluminum Support
  - Custom SS caps for quartz tube ends 
- - Include Emergency Shutoff
+
 
 <img width="1000" height="578" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
 

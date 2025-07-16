@@ -1,5 +1,6 @@
 # Milestone Deadlines:
- - Bellow with AD20 Aluminum Support
+ - Remove Bellow
+ - Aluminum Support
  - Custom SS caps for quartz tube ends 
  - Include Emergency Shutoff
 

@@ -14,7 +14,7 @@
     - https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/
   
   - 46 OD Quartz tube (contacting company to see how much it will cost to have the 50OD custom ends made)
-      - 
+      - https://almathcrucibles.com/product/qua4642/
 
 <img width="1000" height="578" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
 

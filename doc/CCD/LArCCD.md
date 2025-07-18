@@ -511,6 +511,8 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 7) [Development of a powder atomic layer deposition reactor for research purposes](https://aaltodoc.aalto.fi/items/da057807-ba67-4c89-8d88-f828a46bc56b)
 8) [OPERATING MANUAL FOR MASS FLOW CONTROLLERS](https://www.lesker.com/newweb/process_instruments/pdf/kjlc-manual-alicat-mc.pdf)
 9) [Controling a Solenoid Valve With an Arduino](https://www.instructables.com/Controling-a-solenoid-valve-with-an-Arduino/)
+10) [SNS VACUUM CONTROL SYSTEM: SOFTWARE DESIGN STRATEGY
+AND COMMISSIONING EXPERIENCE*](https://accelconf.web.cern.ch/ica03/papers/WP567.pdf)
 
 
 ---

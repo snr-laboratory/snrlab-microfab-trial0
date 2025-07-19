@@ -14,7 +14,19 @@ PTFE is rated for continuous use up to ~250°C, and is stable in high vacuum. If
   - PTFE Tape: McMaster-Carr #7644A74 (1" wide, 0.5 mm, adhesive-backed)
     
 Limit unwanted heat transfer between your support system and the critical temperature zone of your vacuum cross fitting, helping maintain stable gas/process temperatures.
- 
+
+DB-15 - 3-wire RTD sensor
+Bolt the DB-15 feedthrough into port cap (F0275NOOONLN), and pass RTD wires through using 3 pins creating a vacuum-sealed signal path.
+
+  - Kurt J. Lesker DB-15 feedthrough (IFDGG091053)
+    - Vacuum side	Solder or crimp your RTD wires (3 for 3-wire RTD) to the inside DB-15 connector pins; insulate as needed for safety.
+    - Air side	Plug a standard DB-15 matching cable into the external connector, running to your temperature controller, DAQ, or display.
+    - https://www.lesker.com/feedthroughs/instrument-feedthroughs-mpdt-subd/part/ifdgg091053
+
+Granville-Phillips 275 Convectron Gauge
+  - 
+
+      
  
 # 07/07-07/11 
  - Remove Bellow (unwanted turbulence)

@@ -23,7 +23,7 @@ Bolt the DB-15 feedthrough into port cap (F0275NOOONLN), and pass RTD wires thro
     - Air side	Plug a standard DB-15 matching cable into the external connector, running to your temperature controller, DAQ, or display.
     - https://www.lesker.com/feedthroughs/instrument-feedthroughs-mpdt-subd/part/ifdgg091053
 
-4 way Cross Parameter	Values:
+4 Way Cross Parameter	Values:
 - Flange size/OD	DN35CF-DN40CF (2.75" OD / 69.85 mm)
 - Flange bolt circle	2.16" (54.86 mm)
 - Bolt hole diameter	~0.265" (6.7 mm, accept 1/4-28 bolts)
@@ -35,7 +35,11 @@ Bolt the DB-15 feedthrough into port cap (F0275NOOONLN), and pass RTD wires thro
 - UHV rating	Yes
 - Nominal bore	1.32" (33.5 mm, matches 1.5" tube ID)d
 
-
+CF/KF Adapter for 4 Way Cross 
+- F0275XQF40 Adapter
+- OD: 1.50" (38.1 mm)
+- Typically built on 1.5" tube, matching CF275 cross standard
+- The actual inner diameter for 1.5" tube is typically around 1.32" (33.5 mm), which is the standard for vacuum-grade 1.5" OD tubing.
 
 Granville-Phillips 275 Convectron Gauge
   - 

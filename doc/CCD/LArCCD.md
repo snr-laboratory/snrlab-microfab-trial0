@@ -513,6 +513,8 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 9) [Controling a Solenoid Valve With an Arduino](https://www.instructables.com/Controling-a-solenoid-valve-with-an-Arduino/)
 10) [SNS VACUUM CONTROL SYSTEM: SOFTWARE DESIGN STRATEGY
 AND COMMISSIONING EXPERIENCE*](https://accelconf.web.cern.ch/ica03/papers/WP567.pdf)
+11) [A GENERAL SOLUTION FOR
+COMPLEX VACUUM SYSTEM CONTROLS](https://inspirehep.net/files/c96cc3526c4c41a05b809dc187458c6e)
 
 
 ---

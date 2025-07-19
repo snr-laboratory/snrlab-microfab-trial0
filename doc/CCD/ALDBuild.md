@@ -1,4 +1,22 @@
 # Milestone Deadlines:
+ 
+# 07/14-07/18
+PTFE (Polytetrafluoroethylene, known by brand names like Teflon®) is a high-performance polymer with extremely low thermal conductivity (~0.25 W/m·K), excellent chemical resistance, non-stick properties, and the ability to tolerate vacuum and mild heating environments. As a thermal barrier, PTFE is extremely effective in reducing heat flow between metal parts.
+
+- Clean the mating surfaces (cross and collar) to remove oils/dust.
+- Wrap the PTFE around the region of the vacuum cross where the collar will clamp. Ensure there is no folding or creasing, which could cause uneven pressure.
+- Install the shaft collar over the PTFE barrier, tightening as specified but not excessive, PTFE is soft and may deform under very high compression.
+- For best practice, slightly chamfer or smooth any sharp collar edges; PTFE is tough but prone to cold-flow under repeated high pressure.
+
+PTFE is rated for continuous use up to ~250°C, and is stable in high vacuum. If extra thermal isolation is needed, stack two layers or consider using a thin mica washer instead.
+
+  - PTFE Sheet: McMaster-Carr #8734K11 (6" × 6", 0.5 mm thick)
+  - PTFE Tape: McMaster-Carr #7644A74 (1" wide, 0.5 mm, adhesive-backed)
+    
+Limit unwanted heat transfer between your support system and the critical temperature zone of your vacuum cross fitting, helping maintain stable gas/process temperatures.
+ 
+ 
+# 07/07-07/11 
  - Remove Bellow (unwanted turbulence)
    
 <img width="1000" height="540" alt="image" src="https://github.com/user-attachments/assets/2ae6380a-fd3a-4a94-bdf0-5d7db2c5c0f3" />

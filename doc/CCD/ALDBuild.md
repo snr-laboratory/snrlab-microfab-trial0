@@ -374,6 +374,17 @@ Flow Controllers
 
 ### Injection/ALD Valves
 - Swagelok ALD3 (6LVV-ALD3TC333P-C) is an ultrahigh-purity (UHP) diaphragm valve specifically designed for atomic layer deposition (ALD) applications.
+
+  - ALD3 with Thermal Actuator, Normally Closed
+      - Thermal isolation coupling: Limits conductive heat transfer from valve body to actuator, essential when heating your ALD reactor
+      - Extended actuator life: Prevents thermal degradation during heated ALD processes
+      - Uniform temperature distribution: Reduces cold spots that could affect Al₂O₃ deposition uniformity
+      - Lower power consumption: Significantly reduces electrical power required for valve heating
+    - Normally Closed Configuration:
+      - Fail-safe operation: Valve closes if air pressure is lost, protecting your Al₂O₃ deposition process from contamination
+      - Process control: Better suited for precise precursor dosing typical in ALD applications
+      - Technical Specifications Alignment:
+      - Operating pressure: Vacuum to 145 psig (10.0 bar) - suitable for your ALD chamber
   
 [Ordering Information and Dimensions (ALD3 and ALD6)](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)
 

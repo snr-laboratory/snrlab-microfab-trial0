@@ -1,4 +1,22 @@
 # Milestone Deadlines:
+
+## 4-Way Cross
+- C-0275
+DN35CF-DN40CF (2.75" OD) 
+
+## CF Caps
+- f0275n000nln
+FLANGE,UHV,316LN,ESR,BLANK,FXD, 2.75"OD
+
+- IFDGG091053
+INSTRUMENTATION FEEDTHROUGH, DOUBLE ENDED SUBMINIATURE-D STYLE CONNECTOR, GROUNDED SHIELD, RECESSED CONDUCTOR(S), 9 PIN, 500V AND 5 AMP RATING PER PIN, MOUNTED ON A DN40CF (2.75" OD) FLANGE, NO CONNECTORS INCLUDED
+
+## Adapters
+- F0275XQF40LB
+DN35CF-DN40CF (2.75" OD) 
+
+## 
+
  
 # 07/14-07/18
 PTFE (Polytetrafluoroethylene, known by brand names like Teflon®) is a high-performance polymer with extremely low thermal conductivity (~0.25 W/m·K), excellent chemical resistance, non-stick properties, and the ability to tolerate vacuum and mild heating environments. As a thermal barrier, PTFE is extremely effective in reducing heat flow between metal parts.

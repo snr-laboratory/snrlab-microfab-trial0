@@ -1,4 +1,3 @@
-# Milestone Deadlines:
 
 ## 4-Way Cross
 - C-0275

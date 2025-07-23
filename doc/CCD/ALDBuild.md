@@ -14,7 +14,8 @@ INSTRUMENTATION FEEDTHROUGH, DOUBLE ENDED SUBMINIATURE-D STYLE CONNECTOR, GROUND
 - F0275XQF40LB
 DN35CF-DN40CF (2.75" OD) 
 
-## 
+## 275 Convectron Gauge Cable to Pirani IGC100 
+- https://www.idealvac.com/en-us/MKS-Granville-Phillips-360-or-370-Dual-Convectron-Gauge-Cable-Connects-Two-275-Convectron-Gauge-Tubes-25-ft-PN:-303040-25/pp/P104668?srsltid=AfmBOorBvFmHigdXwOFWR4SES34BYbFNIfGOyTDny1WGDq5tvc9cSUQZ
 
  
 # 07/14-07/18

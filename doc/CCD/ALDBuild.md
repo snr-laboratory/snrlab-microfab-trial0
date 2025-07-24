@@ -17,164 +17,6 @@ DN35CF-DN40CF (2.75" OD)
 ## 275 Convectron Gauge Cable to Pirani IGC100 
 - https://www.idealvac.com/en-us/MKS-Granville-Phillips-360-or-370-Dual-Convectron-Gauge-Cable-Connects-Two-275-Convectron-Gauge-Tubes-25-ft-PN:-303040-25/pp/P104668?srsltid=AfmBOorBvFmHigdXwOFWR4SES34BYbFNIfGOyTDny1WGDq5tvc9cSUQZ
 
- 
-# 07/14-07/18
-PTFE (Polytetrafluoroethylene, known by brand names like Teflon®) is a high-performance polymer with extremely low thermal conductivity (~0.25 W/m·K), excellent chemical resistance, non-stick properties, and the ability to tolerate vacuum and mild heating environments. As a thermal barrier, PTFE is extremely effective in reducing heat flow between metal parts.
-
-- Clean the mating surfaces (cross and collar) to remove oils/dust.
-- Wrap the PTFE around the region of the vacuum cross where the collar will clamp. Ensure there is no folding or creasing, which could cause uneven pressure.
-- Install the shaft collar over the PTFE barrier, tightening as specified but not excessive, PTFE is soft and may deform under very high compression.
-- For best practice, slightly chamfer or smooth any sharp collar edges; PTFE is tough but prone to cold-flow under repeated high pressure.
-
-PTFE is rated for continuous use up to ~250°C, and is stable in high vacuum. If extra thermal isolation is needed, stack two layers or consider using a thin mica washer instead.
-
-  - PTFE Sheet: McMaster-Carr #8734K11 (6" × 6", 0.5 mm thick)
-  - PTFE Tape: McMaster-Carr #7644A74 (1" wide, 0.5 mm, adhesive-backed)
-    
-Limit unwanted heat transfer between your support system and the critical temperature zone of your vacuum cross fitting, helping maintain stable gas/process temperatures.
-
-DB-15 - 3-wire RTD sensor
-Bolt the DB-15 feedthrough into port cap (F0275NOOONLN), and pass RTD wires through using 3 pins creating a vacuum-sealed signal path.
-
-  - Kurt J. Lesker DB-15 feedthrough (IFDGG091053)
-    - Vacuum side	Solder or crimp your RTD wires (3 for 3-wire RTD) to the inside DB-15 connector pins; insulate as needed for safety.
-    - Air side	Plug a standard DB-15 matching cable into the external connector, running to your temperature controller, DAQ, or display.
-    - https://www.lesker.com/feedthroughs/instrument-feedthroughs-mpdt-subd/part/ifdgg091053
-
-4 Way Cross Parameter	Values:
-- Flange size/OD	DN35CF-DN40CF (2.75" OD / 69.85 mm)
-- Flange bolt circle	2.16" (54.86 mm)
-- Bolt hole diameter	~0.265" (6.7 mm, accept 1/4-28 bolts)
-- Number of bolts	6
-- Flange style	Non-rotatable or rotatable (depending on order)
-- Flange thickness	~0.5" (12.7 mm)
-- Tube OD per port	1.5" (38.1 mm)
-- Material	304L Stainless Steel
-- UHV rating	Yes
-- Nominal bore	1.32" (33.5 mm, matches 1.5" tube ID)d
-- https://www.lesker.com/newweb/flanges/fittings_cf_crosses.cfm?pgid=4waystd&highlight=c-0275
-
-CF/KF Adapter for 4 Way Cross 
-- F0275XQF40 Adapter
-- OD: 1.50" (38.1 mm)
-- Typically built on 1.5" tube, matching CF275 cross standard
-- The actual inner diameter for 1.5" tube is typically around 1.32" (33.5 mm), which is the standard for vacuum-grade 1.5" OD tubing.
-- https://www.lesker.com/newweb/flanges/adapters_flanged_1.cfm?pgid=cfkf&highlight=F0275XQF40
-
-
-
-Granville-Phillips 275 Convectron Gauge
-  - 
-
-      
- 
-# 07/07-07/11 
- - Remove Bellow (unwanted turbulence)
-   
-<img width="1000" height="540" alt="image" src="https://github.com/user-attachments/assets/2ae6380a-fd3a-4a94-bdf0-5d7db2c5c0f3" />
-
- - Include Emergency Shutoff
-
-<img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/767746e8-3f11-4ec3-99bf-1968010a3956" />
-
-
- - Aluminum Support
- - Custom SS caps for quartz tube ends
-    - They are available to fit work tubes with the following outside diameters: 32, 46, 60, 86, 100, 150 and 200 mm. Other sizes are available at additional cost.
-    - https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/
-  
-  - 46 OD Quartz tube (contacting company to see how much it will cost to have the 50OD custom ends made)
-      - https://almathcrucibles.com/product/qua4642/
-
-<img width="1000" height="578" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
-
-
-### Bellow
-### MH-QF-C12 (Kurt J. Lesker) — Key Features
-
-**Part Number:** MH-QF-C12
-- **Vendor:** Kurt J. Lesker Company
-- **Length:** 12 inches (304.8 mm)
-- **Flange Type:** KF40 (NW40, ISO-KF 40)
-- **Material:** 304/316L stainless steel (bellows and flanges)
-- **Spring Rate:** ~6.5 N/mm (typical for this size)
-- **Compression at 127 N (vacuum):** ~19.6 mm (~6.5% of length)
-- **Vacuum Rating:** UHV compatible (≤10⁻⁸ Torr)
-- **Temperature Rating:** Suitable for ALD (up to 200–300°C)
-- **Stroke Capability:** ±24 mm (ample for thermal cycling)
-- **Chemical Compatibility:** Handles N₂, TMA, H₂O, and other ALD gases
-- **Connection:** Standard KF40 centering ring and clamp (no special adapters needed)
-- **Lead Time:** Typically 2–3 weeks
-- **Cost:** ~$161 (as of last check)
-
-- Provides robust mechanical and thermal decoupling between rigid vacuum components and the quartz tube entrance.
-- Ensures vacuum integrity and reliability during repeated ALD cycles and thermal cycling.
-- Readily available, industry-standard part with proven performance in similar ALD and vacuum systems.
-- Directly fits your existing CF/KF40 adapter and supports modular upgrades or maintenance.
-
-### Ordering Information
-- **Kurt J. Lesker Company**
-  - Website: lesker.com
-  - Phone: 1-800-245-1656
-  - Request: MH-QF-C12, KF40 bellows, 12-inch
-
-[Hydraulically (Hydro) Formed Bellows - KF (QF) Flanged (Standard Unbraided Wall)](https://www.lesker.com/newweb/flanges/bellows_kf_hydraulicallyformed.cfm?pgid=standard)
-
-
-# 07/07-07/11
-- Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic.
-    - Include part numbers to electrical schematic
-    - Flexible adapter for quartz tube
-    - PT100 sensor  
-    - Include Emergency Shutoff
-    - Adaptable for SiO2 - Si/SiO2/Si device to test if electrons behavior in LAr (preliminary test)
-    - Aim to have hole-free by July 10  **not met**
-- Milestone 2: Finalize a comprehensive materials list by July 10 **not met**
-- Milestone 3: Place order for materials by July 11. **not met**
-
-# Recap from Previous Week and New Deadlines (pending)
-- Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. **HVC electrical feedthrough with boat is not necessary at this time - maybe later down the road we can revisit for the deposition of SiO2**
-
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/37d197aa-a793-4a92-8dcd-ec7f7a03ae7f" />
-
-# 06/30-07/03
-- Milestone 1: Finish gas flow design along with description by Jun 24th
-  - HVC / stainless steel ends / Quartz tube still pending (moving on to electrical to get a better idea of the remaining materials) - HVC flange is 6.7cm in diameter and tube furnace diameter inlet (not quartz tube) is 4.9cm
-- Milestone 2: Electrial design by Jun 27
-  - **Milestone 2: Electrial design timeline was not met**
-      - **Arduino Connections are taking longer than anticipated. Once this is resolved progress should move more quickly**
-- Milestone 3: Material list ready to submit by Jun 30
-  - **Deadline delayed a day or two - July 1 or 2**  
-- Milestone 4: Order materials by Jul 1
-  - **Deadline delayed - July 3**  
-    - Bottleneck items:
-      - high-quality MFCs
-      - quartz tube with custom stainless steel ends for attaching the gas lines
-
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/1e538b04-5110-443d-ae96-7a2ad3bd4349" />
-
-      - mechanical fitting issue and a potential gas flow/sealing problem
-      
-# Priority List
-1) Atomic Layer Deposition (ALD) Tool
-    - Draw schematic for tool design
-      - Gas flow
-      - Electrical
-2) Fully understand the physical measurement process 
-    - CV and how it’s related to the microphysics of the surface  
-3) Detailed diagram of the surface of Al2O3 
-    - Thickness and layer details 
-4) Device mask (no overlapping gates)
-    - Check later with simulation for  satisfactory electric field penetration and integrity. 
-5) Test plan for readout schematic 
-    - Exact device shape  with details  
-    - Special test structure that is a separate from the device 
-6) Liquid argon system
-    - Argon recirculation 
-    - LAr coffee brewer inspired recirculation device
-7) We need mobile charge carriers in the semiconductor (LAr)
-    - Create a method for generating carriers needed for CV measurements 
-
 ---
 
 # Atomic Layer Deposition (ALD) Reactor System
@@ -596,5 +438,158 @@ Films](https://www.diva-portal.org/smash/get/diva2:1567530/FULLTEXT01.pdf)
 AND COMMISSIONING EXPERIENCE*](https://accelconf.web.cern.ch/ica03/papers/WP567.pdf)
 11) [A GENERAL SOLUTION FOR
 COMPLEX VACUUM SYSTEM CONTROLS](https://inspirehep.net/files/c96cc3526c4c41a05b809dc187458c6e)
+
+
+# Priority List
+1) Atomic Layer Deposition (ALD) Tool
+    - Draw schematic for tool design
+      - Gas flow
+      - Electrical
+2) Fully understand the physical measurement process 
+    - CV and how it’s related to the microphysics of the surface  
+3) Detailed diagram of the surface of Al2O3 
+    - Thickness and layer details 
+4) Device mask (no overlapping gates)
+    - Check later with simulation for  satisfactory electric field penetration and integrity. 
+5) Test plan for readout schematic 
+    - Exact device shape  with details  
+    - Special test structure that is a separate from the device 
+6) Liquid argon system
+    - Argon recirculation 
+    - LAr coffee brewer inspired recirculation device
+7) We need mobile charge carriers in the semiconductor (LAr)
+    - Create a method for generating carriers needed for CV measurements 
+
+## Notes
+
+# 07/14-07/18
+PTFE (Polytetrafluoroethylene, known by brand names like Teflon®) is a high-performance polymer with extremely low thermal conductivity (~0.25 W/m·K), excellent chemical resistance, non-stick properties, and the ability to tolerate vacuum and mild heating environments. As a thermal barrier, PTFE is extremely effective in reducing heat flow between metal parts.
+
+- Clean the mating surfaces (cross and collar) to remove oils/dust.
+- Wrap the PTFE around the region of the vacuum cross where the collar will clamp. Ensure there is no folding or creasing, which could cause uneven pressure.
+- Install the shaft collar over the PTFE barrier, tightening as specified but not excessive, PTFE is soft and may deform under very high compression.
+- For best practice, slightly chamfer or smooth any sharp collar edges; PTFE is tough but prone to cold-flow under repeated high pressure.
+
+PTFE is rated for continuous use up to ~250°C, and is stable in high vacuum. If extra thermal isolation is needed, stack two layers or consider using a thin mica washer instead.
+
+  - PTFE Sheet: McMaster-Carr #8734K11 (6" × 6", 0.5 mm thick)
+  - PTFE Tape: McMaster-Carr #7644A74 (1" wide, 0.5 mm, adhesive-backed)
+    
+Limit unwanted heat transfer between your support system and the critical temperature zone of your vacuum cross fitting, helping maintain stable gas/process temperatures.
+
+DB-15 - 3-wire RTD sensor
+Bolt the DB-15 feedthrough into port cap (F0275NOOONLN), and pass RTD wires through using 3 pins creating a vacuum-sealed signal path.
+
+  - Kurt J. Lesker DB-15 feedthrough (IFDGG091053)
+    - Vacuum side	Solder or crimp your RTD wires (3 for 3-wire RTD) to the inside DB-15 connector pins; insulate as needed for safety.
+    - Air side	Plug a standard DB-15 matching cable into the external connector, running to your temperature controller, DAQ, or display.
+    - https://www.lesker.com/feedthroughs/instrument-feedthroughs-mpdt-subd/part/ifdgg091053
+
+4 Way Cross Parameter	Values:
+- Flange size/OD	DN35CF-DN40CF (2.75" OD / 69.85 mm)
+- Flange bolt circle	2.16" (54.86 mm)
+- Bolt hole diameter	~0.265" (6.7 mm, accept 1/4-28 bolts)
+- Number of bolts	6
+- Flange style	Non-rotatable or rotatable (depending on order)
+- Flange thickness	~0.5" (12.7 mm)
+- Tube OD per port	1.5" (38.1 mm)
+- Material	304L Stainless Steel
+- UHV rating	Yes
+- Nominal bore	1.32" (33.5 mm, matches 1.5" tube ID)d
+- https://www.lesker.com/newweb/flanges/fittings_cf_crosses.cfm?pgid=4waystd&highlight=c-0275
+
+CF/KF Adapter for 4 Way Cross 
+- F0275XQF40 Adapter
+- OD: 1.50" (38.1 mm)
+- Typically built on 1.5" tube, matching CF275 cross standard
+- The actual inner diameter for 1.5" tube is typically around 1.32" (33.5 mm), which is the standard for vacuum-grade 1.5" OD tubing.
+- https://www.lesker.com/newweb/flanges/adapters_flanged_1.cfm?pgid=cfkf&highlight=F0275XQF40
+
+# 07/07-07/11 
+ - Remove Bellow (unwanted turbulence)
+   
+<img width="1000" height="540" alt="image" src="https://github.com/user-attachments/assets/2ae6380a-fd3a-4a94-bdf0-5d7db2c5c0f3" />
+
+ - Include Emergency Shutoff
+
+<img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/767746e8-3f11-4ec3-99bf-1968010a3956" />
+
+
+ - Aluminum Support
+ - Custom SS caps for quartz tube ends
+    - They are available to fit work tubes with the following outside diameters: 32, 46, 60, 86, 100, 150 and 200 mm. Other sizes are available at additional cost.
+    - https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/
+  
+  - 46 OD Quartz tube (contacting company to see how much it will cost to have the 50OD custom ends made)
+      - https://almathcrucibles.com/product/qua4642/
+
+<img width="1000" height="578" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
+
+# 07/07-07/11
+- Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic.
+    - Include part numbers to electrical schematic
+    - Flexible adapter for quartz tube
+    - PT100 sensor  
+    - Include Emergency Shutoff
+    - Adaptable for SiO2 - Si/SiO2/Si device to test if electrons behavior in LAr (preliminary test)
+    - Aim to have hole-free by July 10  **not met**
+- Milestone 2: Finalize a comprehensive materials list by July 10 **not met**
+- Milestone 3: Place order for materials by July 11. **not met**
+
+# Recap from Previous Week and New Deadlines (pending)
+- Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. **HVC electrical feedthrough with boat is not necessary at this time - maybe later down the road we can revisit for the deposition of SiO2**
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/37d197aa-a793-4a92-8dcd-ec7f7a03ae7f" />
+
+# 06/30-07/03
+- Milestone 1: Finish gas flow design along with description by Jun 24th
+  - HVC / stainless steel ends / Quartz tube still pending (moving on to electrical to get a better idea of the remaining materials) - HVC flange is 6.7cm in diameter and tube furnace diameter inlet (not quartz tube) is 4.9cm
+- Milestone 2: Electrial design by Jun 27
+  - **Milestone 2: Electrial design timeline was not met**
+      - **Arduino Connections are taking longer than anticipated. Once this is resolved progress should move more quickly**
+- Milestone 3: Material list ready to submit by Jun 30
+  - **Deadline delayed a day or two - July 1 or 2**  
+- Milestone 4: Order materials by Jul 1
+  - **Deadline delayed - July 3**  
+    - Bottleneck items:
+      - high-quality MFCs
+      - quartz tube with custom stainless steel ends for attaching the gas lines
+
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/1e538b04-5110-443d-ae96-7a2ad3bd4349" />
+
+      - mechanical fitting issue and a potential gas flow/sealing problem
+      
+## Discarded 
+
+### Bellow
+### MH-QF-C12 (Kurt J. Lesker) — Key Features
+
+**Part Number:** MH-QF-C12
+- **Vendor:** Kurt J. Lesker Company
+- **Length:** 12 inches (304.8 mm)
+- **Flange Type:** KF40 (NW40, ISO-KF 40)
+- **Material:** 304/316L stainless steel (bellows and flanges)
+- **Spring Rate:** ~6.5 N/mm (typical for this size)
+- **Compression at 127 N (vacuum):** ~19.6 mm (~6.5% of length)
+- **Vacuum Rating:** UHV compatible (≤10⁻⁸ Torr)
+- **Temperature Rating:** Suitable for ALD (up to 200–300°C)
+- **Stroke Capability:** ±24 mm (ample for thermal cycling)
+- **Chemical Compatibility:** Handles N₂, TMA, H₂O, and other ALD gases
+- **Connection:** Standard KF40 centering ring and clamp (no special adapters needed)
+- **Lead Time:** Typically 2–3 weeks
+- **Cost:** ~$161 (as of last check)
+
+- Provides robust mechanical and thermal decoupling between rigid vacuum components and the quartz tube entrance.
+- Ensures vacuum integrity and reliability during repeated ALD cycles and thermal cycling.
+- Readily available, industry-standard part with proven performance in similar ALD and vacuum systems.
+- Directly fits your existing CF/KF40 adapter and supports modular upgrades or maintenance.
+
+### Ordering Information
+- **Kurt J. Lesker Company**
+  - Website: lesker.com
+  - Phone: 1-800-245-1656
+  - Request: MH-QF-C12, KF40 bellows, 12-inch
+
+[Hydraulically (Hydro) Formed Bellows - KF (QF) Flanged (Standard Unbraided Wall)](https://www.lesker.com/newweb/flanges/bellows_kf_hydraulicallyformed.cfm?pgid=standard)
 
 

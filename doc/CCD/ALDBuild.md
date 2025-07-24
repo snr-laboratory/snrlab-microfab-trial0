@@ -25,24 +25,17 @@ In order to determine more about the feasibility of the desired LAr detector and
 ## Design Approach - Hot-wall Horizontal Tube Reactor
 This design is simple and relatively cost effective. The nitrogen gas flows throughout the system acting as carrier and purging gas. To the immediate right of the mass flow controllers, solenoid valves are included to minimize dead volume between the valves and the chamber, ensuring sharp precursor pulses and efficient purging (gas carrier lines will also be as short as possible for these same reasons). The controllers will be connected, monitored and regulated through the ion guage controller 100. It's main function is to regulate gas flow rates by interfacing with the mass flow controllers (MFCs), based on the pressure readings it receives from the system. An Arduino is in control of the solenoid and injection valves and their timing. Injection valves are placed inside the 1300 furnace where they lead directly into the entrance of a quartz tube with stainless steel custom ends. Inside and near the middle of the 21100 tube furnace is where the deposition will take place. The hot-wall horizontal tube reactor will enable us to uniformly heat the quartz tube inside the 21100 tube furnace (still working on the diameter size of the tube in order to achieve a laminar vs a turbelent flow). The proper temperature control of the substrate and surroundings is needed in order to minimize any inconsistencies in the film growth. High uniformity is essential for testing the desired devices performance with respect to charge transfer efficiency and reproducability of high quality thin films. From there the gasses flow over the substrate and continue to the vacuum pump and are expelled through the fume hood. 
 
-### General layout is outlined below:
-
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/77bb7023-7185-47d0-b0bc-a84bdd4a2a53" />
-
 - Nitrogen carrier gas is distributed via three mass flow controllers (MFCs) for TMA, H₂O, and purge.
 - Solenoid valves immediately after each MFC enable sharp, programmable pulsing.
 - Precursor and purge gases are routed through a 1300°C furnace and injection valves, then into the main reactor (21100 tube furnace) via heated lines (HVC 150) to prevent condensation.
 - The system is monitored and controlled by Arduino/IGC100, with final exhaust through a vacuum line and fume hood.
 
-## Gas Flow Schematic
-The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants; and more importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). The design outlined shows the unidirectional flow of gases. The gas flow shown below follows a single direction from the carrier/purging source all the way to the vacuum pump: 
-
-<img width="1600" alt="image" src="https://github.com/user-attachments/assets/38c9e26a-c805-41da-98e2-ddaecbf9a2c3" />
-
+## Gas Flow 
+The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants; and more importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). 
 
 N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. The purge line is redirected for faster purge times and to avoid contamination through the sharing lines. For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
 
-**As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can result in unwanted lower quality grown films. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. HVC IS AN ELECTRICAL FEEDTHROUGH NOT INTENDED FOR VAPOR PRESSURE CONTROL** At this point, the gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
+The gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
 
 The flow sequence will be later determined though recipe development for critical information as follows:
 - Valve timing: How long each injection valve remains open
@@ -50,41 +43,11 @@ The flow sequence will be later determined though recipe development for critica
 - Flow rates: Specific carrier gas flow rates during each phase
 - Pressure setpoints: Target pressures for each phase of the cycle
 
-## Electrical Schematic Overview
-The block diagrams provide an overview of the control and power infrastructure and identifies all devices and subsystems that need electrical power, control signals, or monitoring. These include: 
-- Mass Flow Controllers (MFCs) for precise gas delivery
-- Solenoid and injection valves for sharp, programmable gas pulses
-- Two furnaces (1300°C and 21100°C tube furnaces) for precursor vaporization and deposition
-- Pressure and temperature sensors for real-time monitoring
-- Vacuum pump and heat sources
-- Microcontroller (Arduino) and Ion Gauge Controller (IGC100) for automation and feedback
-
-### Components Requiring Electrical Control or Connection
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
-
-### Block Diagram
-
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
-
-This diagram organizes these components into logical power and control “buses”:
-- 120V AC Bus: Supplies high-power devices (furnaces, vacuum pump, heat source)
-- 24V DC Bus: Powers solenoid valves, MFCs, and certain sensors/actuators
-- 5V DC Bus: Feeds microcontrollers and low-voltage sensors
-
-The diagram visually clarifies how each device connects to its respective power supply. The schematic ensures that all electrical requirements are mapped out before construction, highlighting the need for multiple, isolated power supplies to safely operate both high-power and sensitive control electronics ( helps identify potential overloads, grounding issues, or points of failure).  
-
-### Essential Symbols for Electrical Schematic 
-
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
-
-### Electrical Schematic 
+## Electrical Schematic
 
 <img width="1800" height="695" alt="image" src="https://github.com/user-attachments/assets/5abf11d1-c9f9-4d3b-bcf7-b245e26f7a64" />
 
-
-
 ### ALD Operation
-
 Process Pressure Range: 0.1–5 Torr
 - Operating pressures for ALD reactors from 0.1 to 10 Torr, with 1–5 Torr being common for systems using carrier gas flow.
   - At lower pressures, gas flow is in the molecular or transitional regime, where wall interactions and flow uniformity become more important.
@@ -207,11 +170,6 @@ emissions](https://pubs.rsc.org/en/content/articlepdf/2015/ra/c4ra14568b)
 - Filmetrics - sample thickness
 - Ellipsometry - sample thickness
   
----
-
-## Additional Considerations
-Consider the need for a load-lock or system that can transport susbtrate without the risk of contamination
-
 --- 
 
 ## Items in Need of Purchase:
@@ -223,8 +181,6 @@ Flow Controllers
     - [100SCCM and 1000SCCM](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)
     - [Technical Data for MC-Series Mass Flow Controllers](https://www.lesker.com/newweb/process_instruments/pdf/kjlc-specsheet-mc-10-20.pdf)
  
-### Valves
-
 ### General Valves
   - [JFSV00068](https://ussolid.com/products/u-s-solid-electric-solenoid-valve-1-4-24v-dc-solenoid-valve-stainless-steel-body-normally-closed-viton-seal-html?srsltid=AfmBOopZIKPCtywSAE2vqqs5Sqyfi6Rtx4oVVjlZtFwsCVOxILQsX-oa)
 
@@ -558,8 +514,67 @@ CF/KF Adapter for 4 Way Cross
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/1e538b04-5110-443d-ae96-7a2ad3bd4349" />
 
       - mechanical fitting issue and a potential gas flow/sealing problem
-      
-## Discarded 
+
+
+## Modified
+### General layout is outlined below:
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/77bb7023-7185-47d0-b0bc-a84bdd4a2a53" />
+
+- Nitrogen carrier gas is distributed via three mass flow controllers (MFCs) for TMA, H₂O, and purge.
+- Solenoid valves immediately after each MFC enable sharp, programmable pulsing.
+- Precursor and purge gases are routed through a 1300°C furnace and injection valves, then into the main reactor (21100 tube furnace) via heated lines (HVC 150) to prevent condensation.
+- The system is monitored and controlled by Arduino/IGC100, with final exhaust through a vacuum line and fume hood.
+
+## Gas Flow 
+The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants; and more importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). The design outlined shows the unidirectional flow of gases. The gas flow shown below follows a single direction from the carrier/purging source all the way to the vacuum pump: 
+
+<img width="1600" alt="image" src="https://github.com/user-attachments/assets/38c9e26a-c805-41da-98e2-ddaecbf9a2c3" />
+
+
+N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. The purge line is redirected for faster purge times and to avoid contamination through the sharing lines. For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
+
+**As precursor TMA and coreactant H2O leave the 1300 furnace and are injected into the tube furnace, the risk of vapor pressure fluctuations due to gasses condensing can result in unwanted lower quality grown films. To account for these issues, the high voltage ceramic (HVC)-150 feedthrough will ensure that the gas vapor pressure will be maintained by the HVC-150 feedthrough as well as prevent any condensation in the delivery lines. HVC IS AN ELECTRICAL FEEDTHROUGH NOT INTENDED FOR VAPOR PRESSURE CONTROL** At this point, the gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
+
+The flow sequence will be later determined though recipe development for critical information as follows:
+- Valve timing: How long each injection valve remains open
+- Purge duration: How long between precursor pulses to ensure complete purging
+- Flow rates: Specific carrier gas flow rates during each phase
+- Pressure setpoints: Target pressures for each phase of the cycle
+
+## Electrical Schematic Overview
+The block diagrams provide an overview of the control and power infrastructure and identifies all devices and subsystems that need electrical power, control signals, or monitoring. These include: 
+- Mass Flow Controllers (MFCs) for precise gas delivery
+- Solenoid and injection valves for sharp, programmable gas pulses
+- Two furnaces (1300°C and 21100°C tube furnaces) for precursor vaporization and deposition
+- Pressure and temperature sensors for real-time monitoring
+- Vacuum pump and heat sources
+- Microcontroller (Arduino) and Ion Gauge Controller (IGC100) for automation and feedback
+
+### Components Requiring Electrical Control or Connection
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
+
+### Block Diagram
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
+
+This diagram organizes these components into logical power and control “buses”:
+- 120V AC Bus: Supplies high-power devices (furnaces, vacuum pump, heat source)
+- 24V DC Bus: Powers solenoid valves, MFCs, and certain sensors/actuators
+- 5V DC Bus: Feeds microcontrollers and low-voltage sensors
+
+The diagram visually clarifies how each device connects to its respective power supply. The schematic ensures that all electrical requirements are mapped out before construction, highlighting the need for multiple, isolated power supplies to safely operate both high-power and sensitive control electronics ( helps identify potential overloads, grounding issues, or points of failure).  
+
+### Essential Symbols for Electrical Schematic 
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
+
+
+
+
+
+
+## Discarded
 
 ### Bellow
 ### MH-QF-C12 (Kurt J. Lesker) — Key Features

@@ -45,7 +45,8 @@ The flow sequence will be later determined though recipe development for critica
 
 ## Electrical Schematic
 
-<img width="1800" height="695" alt="image" src="https://github.com/user-attachments/assets/5abf11d1-c9f9-4d3b-bcf7-b245e26f7a64" />
+<img width="1900" height="649" alt="image" src="https://github.com/user-attachments/assets/c15a2fcf-e002-4ed2-b08a-138d84da2368" />
+
 
 ### ALD Operation
 Process Pressure Range: 0.1–5 Torr

@@ -299,13 +299,13 @@ Granville-Phillips Convectron Gauge (Catalog No. 275185). The 275185 Convection-
   
 
 - ALD Valves
-  - Outlet: 1/4" Male NPT to 1/4" Swagelok SS Tube Fitting. This fitting threads into the solenoid's 1/4" NPT female outlet and provides a Swagelok compression fitting for 1/4" OD stainless steel tubing
-      - Part Number: SS-4-TA-1-4
-        
   - Inlet: Swagelok 1/4" Tube to 1/4" Male VCR® Face Seal Adapter
       - Part Number: SS-4-WVCR-6-400
       - [316 Stainless Steel Welded VCR Face Seal Fitting, Swagelok Tube Fitting Connector, 1/4 in. WVCR x 1/4 in. Tube Fitting](https://products.swagelok.com/en/c/straights/p/SS-4-WVCR-6-400)
 
+  - Outlet:SS-4-WVCR-6-400
+ 
+  
 - Stainless Steel Tubing 
   - 1/4" OD x 0.035" wall 316/316L Stainless Steel Tubing Electropolished
       - Part Number: SS-T4-S-035-20

@@ -17,6 +17,17 @@ DN35CF-DN40CF (2.75" OD)
 ## 275 Convectron Gauge Cable to Pirani IGC100 
 - https://www.idealvac.com/en-us/MKS-Granville-Phillips-360-or-370-Dual-Convectron-Gauge-Cable-Connects-Two-275-Convectron-Gauge-Tubes-25-ft-PN:-303040-25/pp/P104668?srsltid=AfmBOorBvFmHigdXwOFWR4SES34BYbFNIfGOyTDny1WGDq5tvc9cSUQZ
 
+## Mounting Setup
+- Solid Aluminum Plate: .187" Thick
+  - Part #: 2454
+  - [6061-T6 aluminum alloy](https://8020.net/2454.html)
+
+-  30mm X 30mm T-Slotted Profile - Four Open T-Slots
+  - Part #: 30-3030
+  - [30mm x 30mm metric 30 series square T-slot](https://8020.net/30-3030.html)
+
+- BOM
+  - []() 
 
 ## Additional 
 - Residual gas analyzer 

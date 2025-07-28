@@ -32,6 +32,16 @@ DN35CF-DN40CF (2.75" OD)
 ## 2 Neck RBFs - TMA
 - 10mL Schlenk Flask with PTFE Stopcock
   - [Synthware™ Schlenk Flasks, Modified, with PTFE Stopcock](https://www.fishersci.com/shop/products/synthware-schlenk-flasks-modified-ptfe-stopcock-13/31501342)
+ 
+## Cable for 100A O408 - 1000 mL, Fabric Heating Mantle, 115V 
+- Connects to Lakeshore 331 (input A or B) to control the temperature
+
+## Custom SS caps for quartz tube ends
+- They are available to fit work tubes with the following outside diameters: 32, 46, 60, 86, 100, 150 and 200 mm. Other sizes are available at additional cost.
+  - https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/
+  
+- 46 OD Quartz tube (contacting company to see how much it will cost to have the 50OD custom ends made)
+      - https://almathcrucibles.com/product/qua4642/
 
 ## Additional 
 - Residual gas analyzer 
@@ -53,7 +63,7 @@ The key innovation of ALD is in its ability to carefully control the introductio
 
 N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. The purge line is redirected for faster purge times and to avoid contamination through the sharing lines. For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 1000mL Schlenk flask (or similar) outside the furnace, will be heated in a fabric heating mantle to control the evaporation using the Lakeshore 331. 
 
-  - [100A O408 - 1000 mL, Fabric Heating Mantle, 115V]([https://www.labdepotinc.com/p-2-series-o-hemispherical-mantle-115-v-230-v?utm_term=&utm_campaign=Zombie+SKU+PMax&utm_source=adwords&utm_medium=ppc&hsa_acc=5326096552&hsa_cam=22295522342&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22299254812&gbraid=0AAAAADnVOIccciIEedHnwzFboH2VOzjbN&gclid=CjwKCAjwv5zEBhBwEiwAOg2YKJNLFVoFzUy-GgATPyhfZLV9GP1MFsqOqQKTmzFI-yT8zFbeIrtKUBoCnwsQAvD_BwE](https://www.labdepotinc.com/p-2-series-o-hemispherical-mantle-115-v-230-v?utm_term=&utm_campaign=Zombie+SKU+PMax&utm_source=adwords&utm_medium=ppc&hsa_acc=5326096552&hsa_cam=22295522342&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22299254812&gbraid=0AAAAADnVOIccciIEedHnwzFboH2VOzjbN&gclid=CjwKCAjwv5zEBhBwEiwAOg2YKJNLFVoFzUy-GgATPyhfZLV9GP1MFsqOqQKTmzFI-yT8zFbeIrtKUBoCnwsQAvD_BwE))
+  - [100A O408 - 1000 mL, Fabric Heating Mantle, 115V]([https://www.labdepotinc.com/p-2-series-o-hemispherical-mantle-115-v-230-v?utm_term=&utm_campaign=Zombie+SKU+PMax&utm_source=adwords&utm_medium=ppc&hsa_acc=5326096552&hsa_cam=22295522342&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22299254812&gbraid=0AAAAADnVOIccciIEedHnwzFboH2VOzjbN&gclid=CjwKCAjwv5zEBhBwEiwAOg2YKJNLFVoFzUy-GgATPyhfZLV9GP1MFsqOqQKTmzFI-yT8zFbeIrtKUBoCnwsQAvD_BwE](https://www.labdepotinc.com/p-2-series-o-hemispherical-mantle-115-v-230-v?utm_term=&utm_campaign=Zombie+SKU+PMax&utm_source=adwords&utm_medium=ppc&hsa_acc=5326096552&hsa_cam=22295522342&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22299254812&gbraid=0AAAAADnVOIccciIEedHnwzFboH2VOzjbN&gclid=CjwKCAjwv5zEBhBwEiwAOg2YKJNLFVoFzUy-GgATPyhfZLV9GP1MFsqOqQKTmzFI-yT8zFbeIrtKUBoCnwsQAvD_BwE)
 
 The gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
 
@@ -484,7 +494,7 @@ CF/KF Adapter for 4 Way Cross
 
 # 07/07-07/11 
  - Remove Bellow (unwanted turbulence)
-   
+   - The bellows must be vacuum-tight and rated for at least 10⁻³ Torr, which all standard 4-inch KF40 bellows meet.
 <img width="1000" height="540" alt="image" src="https://github.com/user-attachments/assets/2ae6380a-fd3a-4a94-bdf0-5d7db2c5c0f3" />
 
  - Include Emergency Shutoff

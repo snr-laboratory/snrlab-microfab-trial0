@@ -26,6 +26,9 @@ DN35CF-DN40CF (2.75" OD)
   - Part #: 30-3030
   - [30mm x 30mm metric 30 series square T-slot](https://8020.net/30-3030.html)
 
+- T-Slot Sliders
+  - [T-SLOT SLIDERS](https://www.modularcomponents.com.au/building-blocks/sliding-and-lifting-mechanisms/t-slot-sliding-inserts/) 
+
 - BOM
   - []() 
 

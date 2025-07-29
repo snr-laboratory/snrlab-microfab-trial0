@@ -94,11 +94,6 @@ The flow sequence will be later determined though recipe development for critica
 - Flow rates: Specific carrier gas flow rates during each phase
 - Pressure setpoints: Target pressures for each phase of the cycle
 
-## Electrical Schematic
-
-<img width="1900" height="649" alt="image" src="https://github.com/user-attachments/assets/c15a2fcf-e002-4ed2-b08a-138d84da2368" />
-
-
 ### ALD Operation
 Process Pressure Range: 0.1–5 Torr
 - Operating pressures for ALD reactors from 0.1 to 10 Torr, with 1–5 Torr being common for systems using carrier gas flow.

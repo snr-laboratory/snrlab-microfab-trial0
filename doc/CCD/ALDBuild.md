@@ -6,6 +6,12 @@ DN35CF-DN40CF (2.75" OD)
 ## Shaft Collars
 - 
 
+## PTFE Tape
+- 5490 25MM SEALING TAPE, PTFE, 32.9M X 25.4MM
+  - [SEALING TAPE, PTFE, 32.9M X 25.4MM](https://www.newark.com/3m/5490-25mm/sealing-tape-ptfe-32-9m-x-25-4mm/dp/43Y4598?cfm=true)
+  - [3M™ PTFE Film Tape 5490](https://www.mc-mc.com/product/3m-7000050121?option=3MCO54903%2F4X36YD)
+  - [Low-Friction Tape](https://www.mcmaster.com/products/tape/tape-3~/?s=ptfe+tape)
+  
 ## CF Caps
 - f0275n000nln
 FLANGE,UHV,316LN,ESR,BLANK,FXD, 2.75"OD

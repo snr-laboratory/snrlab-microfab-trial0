@@ -1,3 +1,9 @@
+# Hot-Wall Horizontal Tube Reactor 3D Model and Electrical Schematic (WIP) 
+
+
+
+<img width="2037" height="756" alt="image" src="https://github.com/user-attachments/assets/d07f90b4-3cb1-4cfc-9c12-2d070518f98f" />
+
 
 ## 4-Way Cross
 - C-0275;DN35CF-DN40CF (2.75" OD)
@@ -80,7 +86,7 @@ N2 is used as the carrier and purging gas starting from the mass flow controller
 
   - [100A O408 - 1000 mL, Fabric Heating Mantle, 115V]([https://www.labdepotinc.com/p-2-series-o-hemispherical-mantle-115-v-230-v?utm_term=&utm_campaign=Zombie+SKU+PMax&utm_source=adwords&utm_medium=ppc&hsa_acc=5326096552&hsa_cam=22295522342&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22299254812&gbraid=0AAAAADnVOIccciIEedHnwzFboH2VOzjbN&gclid=CjwKCAjwv5zEBhBwEiwAOg2YKJNLFVoFzUy-GgATPyhfZLV9GP1MFsqOqQKTmzFI-yT8zFbeIrtKUBoCnwsQAvD_BwE](https://www.labdepotinc.com/p-2-series-o-hemispherical-mantle-115-v-230-v?utm_term=&utm_campaign=Zombie+SKU+PMax&utm_source=adwords&utm_medium=ppc&hsa_acc=5326096552&hsa_cam=22295522342&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22299254812&gbraid=0AAAAADnVOIccciIEedHnwzFboH2VOzjbN&gclid=CjwKCAjwv5zEBhBwEiwAOg2YKJNLFVoFzUy-GgATPyhfZLV9GP1MFsqOqQKTmzFI-yT8zFbeIrtKUBoCnwsQAvD_BwE)
 
-The gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the location of the HVC and entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
+The gas flow will proceed follows: surface saturation by pulsing precursor TMA, purging, self-limiting surface reaction by pulsing coreactant water, purging and then repeating each cycle for desired number for layers. The injection valve timing will need to be operated by some Adrunio setup that can synchronize the four-step cycle to ensure complete precursor delivery and purging between cycles. At the entrance into the tube furnace, a pressure gauge will monitor the gas pressure. Using the needle valve on the end of the tube furnace leading to the vacuum pump, we can adjust the flow rate until we achieve the desired pressure. 
 
 The flow sequence will be later determined though recipe development for critical information as follows:
 - Valve timing: How long each injection valve remains open

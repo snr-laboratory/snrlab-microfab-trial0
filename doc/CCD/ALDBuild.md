@@ -4,8 +4,11 @@
 DN35CF-DN40CF (2.75" OD)
 
 ## Shaft Collars
-- 
-
+- Ruland OF-SP-24-F, 1 1/2" Shaft Collar With OD Flats And Holes, Black Oxide Steel, Two-Piece Clamp Style, 2 3/8" OD, 0.563" Width
+  - [Ruland OF-SP-24-F, 1 1/2" Shaft Collar With OD Flats And Holes](https://www.ruland.com/of-sp-24-f.html#)
+  - Other vendors
+    - [Clamping Shaft Collars - MiSUMi](https://us.misumi-ec.com/vona2/detail/110302155240/?HissuCode=U-SSCSP&PNSearch=U-SSCSP&searchFlow=results2type&KWSearch=U-SSCSP)
+    - [TWO-PIECE SPLIT SHAFT COLLARS - Stafford](https://shaft-collars-couplings.staffordmfg.com/viewitems/round-bore-shaft-collars/two-piece-split-shaft-collars-)  
 ## PTFE Tape
 - 5490 25MM SEALING TAPE, PTFE, 32.9M X 25.4MM
   - [SEALING TAPE, PTFE, 32.9M X 25.4MM](https://www.newark.com/3m/5490-25mm/sealing-tape-ptfe-32-9m-x-25-4mm/dp/43Y4598?cfm=true)

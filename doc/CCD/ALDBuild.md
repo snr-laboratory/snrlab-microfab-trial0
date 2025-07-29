@@ -1,8 +1,7 @@
 
 ## 4-Way Cross
-- C-0275
-DN35CF-DN40CF (2.75" OD)
-
+- C-0275;DN35CF-DN40CF (2.75" OD)
+  - [CROSS,4-WAY,SS,1.5" TUBE OD, 2-3/4" UHV,2.46" "A" DIM](https://www.lesker.com/flanges/fittings-cf-crosses/part/c-0275)
 ## Shaft Collars
 - Ruland OF-SP-24-F, 1 1/2" Shaft Collar With OD Flats And Holes, Black Oxide Steel, Two-Piece Clamp Style, 2 3/8" OD, 0.563" Width
   - [Ruland OF-SP-24-F, 1 1/2" Shaft Collar With OD Flats And Holes](https://www.ruland.com/of-sp-24-f.html#)

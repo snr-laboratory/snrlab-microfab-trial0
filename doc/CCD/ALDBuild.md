@@ -17,16 +17,18 @@
 ## CF Caps
 - f0275n000nln
 FLANGE,UHV,316LN,ESR,BLANK,FXD, 2.75"OD
-
+  - [FLANGE,UHV,316LN,ESR,BLANK,FXD, 2.75"OD](https://www.lesker.com/flanges/flanges-cf-316ss/part/f0275n000nln)
 - IFDGG091053
 INSTRUMENTATION FEEDTHROUGH, DOUBLE ENDED SUBMINIATURE-D STYLE CONNECTOR, GROUNDED SHIELD, RECESSED CONDUCTOR(S), 9 PIN, 500V AND 5 AMP RATING PER PIN, MOUNTED ON A DN40CF (2.75" OD) FLANGE, NO CONNECTORS INCLUDED
+  - [INSTRUMENTATION FEEDTHROUGH](https://www.lesker.com/feedthroughs/instrument-feedthroughs-mpdt-subd/part/ifdgg091053)
 
 ## CF/KF Adapter
 - F0275XQF40LB
-DN35CF-DN40CF (2.75" OD) 
+DN35CF-DN40CF (2.75" OD)
+  - [CF to KF (QF) HV Adapter Flanges](https://www.lesker.com/newweb/flanges/adapters_flanged_1.cfm?pgid=cfkf&highlight=F0275XQF40LB) 
 
 ## 275 Convectron Gauge Cable to Pirani IGC100 
-- https://www.idealvac.com/en-us/MKS-Granville-Phillips-360-or-370-Dual-Convectron-Gauge-Cable-Connects-Two-275-Convectron-Gauge-Tubes-25-ft-PN:-303040-25/pp/P104668?srsltid=AfmBOorBvFmHigdXwOFWR4SES34BYbFNIfGOyTDny1WGDq5tvc9cSUQZ
+- [MKS Granville Phillips 360 or 370 Dual Convectron Gauge Cable,](https://www.idealvac.com/en-us/MKS-Granville-Phillips-360-or-370-Dual-Convectron-Gauge-Cable-Connects-Two-275-Convectron-Gauge-Tubes-25-ft-PN:-303040-25/pp/P104668?srsltid=AfmBOorBvFmHigdXwOFWR4SES34BYbFNIfGOyTDny1WGDq5tvc9cSUQZ)
 
 ## Mounting Setup
 - Solid Aluminum Plate: .187" Thick

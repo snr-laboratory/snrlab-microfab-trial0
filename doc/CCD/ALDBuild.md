@@ -57,6 +57,7 @@ DN35CF-DN40CF (2.75" OD)
       - https://almathcrucibles.com/product/qua4642/
 
 ## Additional 
+- Chemical aftertreament unit - before pump?
 - Residual gas analyzer 
 ---
 

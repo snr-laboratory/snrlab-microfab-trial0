@@ -32,8 +32,6 @@ DN35CF-DN40CF (2.75" OD)
 - T-Slot Sliders
   - [T-SLOT SLIDERS](https://www.modularcomponents.com.au/building-blocks/sliding-and-lifting-mechanisms/t-slot-sliding-inserts/) 
 
-- BOM
-  - []() 
 
 ## 2 Neck RBFs - TMA
 - 10mL Schlenk Flask with PTFE Stopcock

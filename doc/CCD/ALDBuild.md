@@ -4,6 +4,21 @@
 
 <img width="2037" height="756" alt="image" src="https://github.com/user-attachments/assets/d07f90b4-3cb1-4cfc-9c12-2d070518f98f" />
 
+- Front
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9cb3bb80-357d-422a-9f24-855514e5433d" />
+
+- Top
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d0722623-bcb0-4506-9d9c-8628818e95b6" />
+
+- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6802197e-31d8-4476-b807-271c0528171f" />
+
+<img width="1782" height="684" alt="image" src="https://github.com/user-attachments/assets/f92b0b16-1c07-40f2-912a-4429ff469dec" />
+
+
+<img width="1706" height="656" alt="image" src="https://github.com/user-attachments/assets/374166db-635b-45d0-8914-b09e88e5a443" />
+
+<img width="1310" height="820" alt="image" src="https://github.com/user-attachments/assets/8da00a6e-e80b-4592-ad7c-f83e29291cd7" />
+
 
 ## 4-Way Cross
 - C-0275;DN35CF-DN40CF (2.75" OD)

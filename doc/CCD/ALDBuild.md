@@ -10,6 +10,16 @@ This is where things can go bad
   - Avoid storing in areas of heat/flames.
   - TMA should be kept in a tightly sealed container that is upright
   - Properly purge all lines and delivery paths with inert gas (e.g., N₂ or Ar) before/after use
+ 
+- Flash Point: May ignite spontaneously
+  - Closed cup: -17C
+    - [TMA SDS](https://www.umass.edu/ials/sites/default/files/msds/Trimethylaluminum.pdf)
+- Flash point : ignites in air
+  - [TMA SDS](https://www.gelest.com/wp-content/uploads/OMAL086_TRIMETHYLALUMINUM_GHS-US_English-US.pdf)
+- Water Solubility: reacts violently
+
+[TMA Fact Sheet](https://nj.gov/health/eoh/rtkweb/documents/fs/1926.pdf)
+  
 
 
 

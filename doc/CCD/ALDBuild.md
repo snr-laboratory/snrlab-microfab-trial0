@@ -1,6 +1,7 @@
 # Hot-Wall Horizontal Tube Reactor 3D Model and Electrical Schematic (WIP) 
 
 ## Trimethylaluminum (TMA)
+- This is where things can go bad
 - Extreme Pyrophoricity
 - 
 

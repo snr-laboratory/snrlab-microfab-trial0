@@ -1,5 +1,8 @@
 # Hot-Wall Horizontal Tube Reactor 3D Model and Electrical Schematic (WIP) 
 
+## Trimethylaluminum (TMA)
+- Extreme Pyrophoricity
+- 
 
 
 <img width="2037" height="756" alt="image" src="https://github.com/user-attachments/assets/d07f90b4-3cb1-4cfc-9c12-2d070518f98f" />

@@ -1,9 +1,19 @@
 # Hot-Wall Horizontal Tube Reactor 3D Model and Electrical Schematic (WIP) 
 
 ## Trimethylaluminum (TMA)
-- This is where things can go bad
-- Extreme Pyrophoricity
-- 
+This is where things can go bad
+- Trimethylaluminum (TMA) is a highly pyrophoric (flammable corrosive) liquid and vapor.  Pyrophoric materials spontaneously ignite when exposed to air.
+- Additional hazards include corrosivity, water reactivity, peroxide formation, toxicity, damage to the liver, kidneys and central nervous system. 
+- TMA must never be exposed to atmospheric air or humidity. All handling must occur in a dry, inert gas atmosphere—ideally using glove boxes, well-sealed ALD systems, or specialized delivery equipment
+  - TMA should be kept under an inert atmosphere of inert gas a cool as its air sensitive.
+  - It should be kept in a dry place away from other incompatible chemicals like flammables, water, or other oxidizers.
+  - Avoid storing in areas of heat/flames.
+  - TMA should be kept in a tightly sealed container that is upright
+  - Properly purge all lines and delivery paths with inert gas (e.g., N₂ or Ar) before/after use
+
+
+
+   
 
 [Conformality in atomic layer deposition: Current status overview of analysis and modelling ](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
 

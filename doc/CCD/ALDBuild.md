@@ -5,6 +5,7 @@
 - Extreme Pyrophoricity
 - 
 
+[Conformality in atomic layer deposition: Current status overview of analysis and modelling ](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
 
 <img width="2037" height="756" alt="image" src="https://github.com/user-attachments/assets/d07f90b4-3cb1-4cfc-9c12-2d070518f98f" />
 

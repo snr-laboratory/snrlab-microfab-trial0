@@ -193,7 +193,7 @@ deposition of Al2O3 using trimethylaluminum and water](https://pdf.sciencedirect
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/3cfdc69b-89c2-40f0-955c-ded2dbba9771" />
 
 ## Regulating Gas Flow Rates 
-   - Ion guage controller Model IGC100 by Stanford Research Systems
+   - Ion gauge controller Model IGC100 by Stanford Research Systems
       - IGC100 features four analog input/output ports (AN1–AN4)
         - voltage in the range of ±12 VDC
        

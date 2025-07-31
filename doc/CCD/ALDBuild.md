@@ -27,18 +27,13 @@ This is where things can go bad
 
 [Conformality in atomic layer deposition: Current status overview of analysis and modelling ](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
 
-<img width="2037" height="756" alt="image" src="https://github.com/user-attachments/assets/d07f90b4-3cb1-4cfc-9c12-2d070518f98f" />
 
-- Front
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9cb3bb80-357d-422a-9f24-855514e5433d" />
+<img width="2032" height="653" alt="image" src="https://github.com/user-attachments/assets/bc7251b7-6253-4809-baca-1b70926f851b" />
 
-- Top
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d0722623-bcb0-4506-9d9c-8628818e95b6" />
 
-- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6802197e-31d8-4476-b807-271c0528171f" />
+<img width="2001" height="726" alt="image" src="https://github.com/user-attachments/assets/930521e5-9773-448d-844d-2247544adfce" />
 
 <img width="1782" height="684" alt="image" src="https://github.com/user-attachments/assets/f92b0b16-1c07-40f2-912a-4429ff469dec" />
-
 
 <img width="1706" height="656" alt="image" src="https://github.com/user-attachments/assets/374166db-635b-45d0-8914-b09e88e5a443" />
 

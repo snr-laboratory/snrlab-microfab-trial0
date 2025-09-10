@@ -9,7 +9,17 @@ The advantages of ALD lie in the chemistry of self-limiting reactions. In ALD, s
 
 The purpose of this document is to propose how to construct a flow-type hot-walled horizontal tube reactor and utilize existing ALD recipes from others previous work to study the growth and quality of 50nm of Al2O3 on a silicon substrate.  
 
-Figure 1: Onshape 3D model of the basic layout without tygon, stainless steel tubing, precursor, bellow/trap, fume hood or power connections. 
+Figure 1. Onshape 3D model of the basic layout:
+
+<img width="1668" height="791" alt="image" src="https://github.com/user-attachments/assets/5b983d93-9716-4cf2-a6fd-c184d26dac2b" />
+
+Diagram 1. Gas Flow Schematic
+
+<img width="1885" height="439" alt="image" src="https://github.com/user-attachments/assets/384543ab-3bd3-485d-b94f-7cc0ff667983" />
+
+Diagram 2. Electrical Schematic 
+
+<img width="1903" height="895" alt="image" src="https://github.com/user-attachments/assets/a0c0651c-24fd-45f7-b70d-683308c3fb57" />
 
 Tool Operation  
 General layout is outlined below:

@@ -1,4 +1,4 @@
-# In-House Flow-Type Hot-Wall Horizontal Tube Reactor: A Custom-Built Effective Atomic Layer Deposition System for Al2O3 Thin Film Studies  
+# In-House Flow-Type Hot-Wall Horizontal Tube Reactor: A Custom-Built Atomic Layer Deposition System for Al2O3 Thin Film Studies  
 
 ## Motivation   
 In order to determine more about the feasibility of the desired LAr Skipper Like CCD detector and its working principle regarding charge transfer, we must remove the "chokepoint," which in our case is the atomic layer deposition (ALD) system for the growth of 50nm of Al₂O₃. This key component for growing a high quality thin film of Al₂O₃ may allow us to  study the effects of LAr and Al₂O₃ interface behavior and extract information on the efficiency of measuring and transporting charge. All this in the hope of advancing and contributing to exceptionally sensitive devices needed for next generation high energy particle detectors.  

@@ -1,9 +1,9 @@
-In-House Flow-Type Hot-Wall Horizontal Tube Reactor: A Custom-Built Cost Effective Atomic Layer Deposition System for Al2O3 Thin Film Studies  
+# In-House Flow-Type Hot-Wall Horizontal Tube Reactor: A Custom-Built Cost Effective Atomic Layer Deposition System for Al2O3 Thin Film Studies  
 
-Motivation   
+## Motivation   
 In order to determine more about the feasibility of the desired LAr Skipper Like CCD detector and its working principle regarding charge transfer, we must remove the "chokepoint," which in our case is the atomic layer deposition (ALD) system for the growth of 50nm of Al₂O₃. This key component for growing a high quality thin film of Al₂O₃ may allow us to  study the effects of LAr and Al₂O₃ interface behavior and extract information on the efficiency of measuring and transporting charge. All this in the hope of advancing and contributing to exceptionally sensitive devices needed for next generation high energy particle detectors.  
 
-Introduction   
+## Introduction   
 Alumina or Aluminum Oxide (Al2O3) is a very well known and studied material. Al2O3 is classified as a high-k dielectric material and in regards to semiconductor devices it is defined as being a good insulator and charge storage material especially when compared to the well established silicon dioxide \[Experimental Yuxi Wang Al2O3\]. This among many of its other properties like large band gap or theoretical breakdown strength makes Al2O3 a desirable and strong candidate for further research studies in many different fields, especially for uses in microelectronic applications \[Experimental Yuxi Wang Al2O3; Characterization of electrical traps Md. Mamunur Rahman\].   
 The advantages of ALD lie in the chemistry of self-limiting reactions. In ALD, select reactants are carefully introduced into the system and by controlling the manner in which they are introduced, high quality films with excellent uniformity, conformality and thickness control can be achieved. Marking this vapor deposition technique as one of the most utilized methods for tackling the issues in thin film defects and impurities for achieving enhanced ultrathin films needed for pushing the boundaries on new and innovative technologies \[ADV Zhang 2022 \]. Among the many atomic layer deposition recipes, Al2O3 stands out among the rest due to its robust and highly effective half reactions producing high purity films at low temperatures with ease \[ALT TMA/H2O Sperling \].  
 
@@ -24,13 +24,10 @@ Diagram 2. Electrical Schematic
 Tool Operation  
 General layout is outlined below:
 
-* Nitrogen carrier gas is distributed via three mass flow controllers (MFCs) for trimethylaluminum (TMA), H₂O, and purge.  
-* The system flow rate and stability are monitored and controlled by the ion gauge controller 100 (IGC100) and Arduino respectively. This includes:  
-  * MFCs flow rate monitored by the IGC100  
+* The system begins at the source nitrogen tank which acts as a carrier and purging gas source. The tank has a stainless steel pipe fitting immediately after the gas regulator that has three lines directly connected to mass flow controllers (MFCs) through tygon tubing. These MFCs are connected to a breakout box designed by alicat and is capable of distributing power to all three controllers from a single power source as well as serving as the method for communicating, controlling and monitoring froma single computer interface. Each reactant has is own dedicated MFC (trimethylaluminum (TMA), H₂O, and N2 purge) to better control the actual mass flow rate (100SCCM (TMA and H2O and 1000SCCM (N2)).
+  
   * Solenoid valves which function as emergency shutoff valves programmed by the Arduino  
   * ALD3 valve precise injection and pulsing is programmed by the Arduino
-
-* TMA and carrier gas is routed through a 1300°C furnace, then into the main reactor (21100 tube furnace) via heated stainless steel tubing lines  to prevent condensation. However, this might need to be reconsidered as it could pose a serious safety issue. This is where points of failure can occur and needs to be carefully planned to avoid injury. 
 
 * DI H20 is housed in a three neck round bottom flask along with a heating mantle to control the vapor pressure for carrier gas to come in and sweep H2O vapors toward the ALD3 valves leading to the furnace through stainless steel lines. 
 

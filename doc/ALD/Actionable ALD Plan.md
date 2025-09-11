@@ -10,13 +10,14 @@ The advantages of ALD lie in the chemistry of self-limiting reactions. In ALD, s
 
 The purpose of this document is to propose how to construct a flow-type hot-walled horizontal tube reactor and utilize existing ALD recipes from others previous work to study the growth and quality of 50nm of Al2O3 on a silicon substrate. By fluctating the precursor delivery times, gas flow management, and temperature and pressure synergy, the defect concentration present in the growth of alumina can be manilpulated and measured. The use of C/V measurements can be used to determine this and charaterization of the deposited films can be done quickly using scanning electron microscopy and energy dispersive x-ray spectroscopy. 
 
-Figure 1. Onshape 3D model of the basic layout:
+Figure 1. Onshape 3D model
 
 <img width="1668" height="791" alt="image" src="https://github.com/user-attachments/assets/5b983d93-9716-4cf2-a6fd-c184d26dac2b" />
 
 Diagram 1. Gas Flow Schematic
 
-<img width="1885" height="439" alt="image" src="https://github.com/user-attachments/assets/384543ab-3bd3-485d-b94f-7cc0ff667983" />
+<img width="1920" height="485" alt="image" src="https://github.com/user-attachments/assets/5a0a1944-c648-4387-88b1-babe718c3f0f" />
+
 
 Diagram 2. Electrical Schematic 
 

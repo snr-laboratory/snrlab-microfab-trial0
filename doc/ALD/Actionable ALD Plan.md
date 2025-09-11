@@ -21,17 +21,15 @@ Diagram 2. Electrical Schematic
 
 <img width="1903" height="895" alt="image" src="https://github.com/user-attachments/assets/a0c0651c-24fd-45f7-b70d-683308c3fb57" />
 
-Tool Operation  
-General layout is outlined below:
-
-* The system begins at the source nitrogen tank which acts as a carrier and purging gas source. The tank has a stainless steel pipe fitting immediately after the gas regulator that has three lines directly connected to mass flow controllers (MFCs) through tygon tubing. These MFCs are connected to a breakout box designed by alicat and is capable of distributing power to all three controllers from a single power source as well as serving as the method for communicating, controlling and monitoring froma single computer interface. Each reactant has is own dedicated MFC (trimethylaluminum (TMA), H₂O, and N2 purge) to better control the actual mass flow rate (100SCCM (TMA and H2O and 1000SCCM (N2)).
+## Tool Operation  
+The system begins at the source nitrogen tank which acts as a carrier and purging gas source. The tank has a stainless steel pipe fitting immediately after the gas regulator that has three lines directly connected to mass flow controllers (MFCs) through tygon tubing. These MFCs are connected to a breakout box designed by alicat and is capable of distributing power to all three controllers from a single power source as well as serving as the method for communicating, controlling and monitoring froma single computer interface. Each reactant has is own dedicated MFC (trimethylaluminum (TMA), H₂O, and N2 purge) to better control the actual mass flow rate (100SCCM (TMA and H2O and 1000SCCM (N2)).
   
   * Solenoid valves which function as emergency shutoff valves programmed by the Arduino  
   * ALD3 valve precise injection and pulsing is programmed by the Arduino
 
 * DI H20 is housed in a three neck round bottom flask along with a heating mantle to control the vapor pressure for carrier gas to come in and sweep H2O vapors toward the ALD3 valves leading to the furnace through stainless steel lines. 
 
-System Parameters
+## System Parameters
 
 1. System Media  
    * Trimethylaluminum (TMA) \- Metal precursor (ALD Grade)  

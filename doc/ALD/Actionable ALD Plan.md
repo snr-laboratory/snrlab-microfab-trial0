@@ -12,7 +12,9 @@ The purpose of this document is to propose how to construct a flow-type hot-wall
 
 Figure 1. Onshape 3D model
 
-<img width="1500" height="700" alt="image" src="https://github.com/user-attachments/assets/5b983d93-9716-4cf2-a6fd-c184d26dac2b" />
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/f67354b6-1f78-4f90-803d-bbcf9ab31917" />
+
+<img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/0ed9d89e-afbd-440f-a7e9-564e506e77d8" />
 
 Diagram 1. Gas Flow Schematic
 
@@ -20,7 +22,7 @@ Diagram 1. Gas Flow Schematic
 
 Diagram 2. Electrical Schematic 
 
-<img width="2035" height="993" alt="image" src="https://github.com/user-attachments/assets/dfdc96f9-9601-48cc-9ca1-7633693420c1" />
+<img width="1920" height="939" alt="image" src="https://github.com/user-attachments/assets/42150ebe-0afb-46da-8512-053451ce1c69" />
 
 ## Tool Operation  
 The system begins at the source nitrogen tank which acts as a carrier and purging gas source. The tank has a stainless steel pipe fitting immediately after the gas regulator outlet that has three lines directly connected to mass flow controllers (MFCs). These MFCs are connected to a breakout box which is capable of distributing power to all three controllers from a single power source as well as serving as the method for communicating, controlling and monitoring from a single computer interface. Each reactant has is own dedicated MFC (trimethylaluminum (TMA), H₂O, and N2 purge) to better control the actual mass flow rate (100SCCM (TMA and H2O) and 1000SCCM (N2)) and gas flow managament through the system. 

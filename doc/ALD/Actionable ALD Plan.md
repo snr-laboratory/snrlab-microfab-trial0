@@ -37,6 +37,7 @@ All gasses, are drawn into the vac assembly region then proceed to the tube fura
 
 DI H20 is housed in a three neck round bottom flask with a fabric 1L heating mantle at its base. The heating mantle temperature is controlled using a basic PL120 (5-100% range) temperature controller that can regulate the input voltage providing gentle heating capable of stable control in the range of 25-100C. 
 
+The 8 relay module has the solenoid valves for TMA, H2O and N2 connected to channels K1-K3 with 18 awg wires connected from the DIN 43650B to NO and COM on the relay. 
 
 ## System Parameters
 

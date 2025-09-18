@@ -14,8 +14,6 @@ Figure 1. Onshape 3D model
 
 <img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/f67354b6-1f78-4f90-803d-bbcf9ab31917" />
 
-<img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/0ed9d89e-afbd-440f-a7e9-564e506e77d8" />
-
 Diagram 1. Gas Flow Schematic
 
 <img width="2000" height="900" alt="image" src="https://github.com/user-attachments/assets/9f4b3fac-f492-4f49-b923-b3a5a84ec2b6" />

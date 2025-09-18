@@ -226,7 +226,11 @@ Vacuum Measurement Controller](https://www.ccrprocessproducts.com/wp-content/upl
   * Vendor: [Alicat MC Series Mass Flow Controllers](https://www.lesker.com/newweb/process_instruments/mass-flow-alicat-mc.cfm)  
   * Unit Price: $1480.00
  
-### 3 Device Hub MFCs
+### 3-9 Device Hub MFCs
+
+[Model BB9-232
+USB Multi-Drop Box](https://documents.alicat.com/manuals/BB9-232_Manual.pdf)
+
   * Breakout Box for RS-232
 
 [Model BB3-232 and BB3-I-232
@@ -234,6 +238,8 @@ USB Multi-Drop Box](https://www.alphacontrols.com/Multimedia/www.alphacontrols.c
 
 [3 Device Hub - Breakout Box for RS-232
 ](https://store.alicat.com/products/3-device-hub?variant=38490914488505&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqrGnPaV1hJ9Syi9rY_o7jCQGu79sYZHrFjfxJGBgjhNQCzeiyln6Y&com_cvv=8fb3d522dc163aeadb66e08cd7450cbbdddc64c6cf2e8891f6d48747c6d56d2c)
+
+[Virtual COM port (VCP) drivers](https://ftdichip.com/drivers/vcp-drivers/) 
 
 ### ALD Valves (TMA and H2O)
   * Part number: 6LVV-ALD3TMR4-P-CV  

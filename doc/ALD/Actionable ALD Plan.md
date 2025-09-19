@@ -176,6 +176,10 @@ Tube Furnace](https://www.nist.gov/system/files/documents/ncnr/E133tubefurnace.p
     
   * Analog Shield Function: high-precision data acquisition interface
 
+[The Analog Shield ](https://digilent.com/reference/analog_shield/ref_manual?srsltid=AfmBOooiFctCUQOJiphxoxk2TGQxglWAU4Q2RaJNXN3TFQQp64O1rBTJ)
+
+[Analog Shield Reference Manual](https://digilent.com/reference/_media/analogshield_rm_rev3.pdf?srsltid=AfmBOooZ0vDe6Q3KeHLBOxDPAl4sw8hrw3vaZptGWixtSi_Zci4WXxhK)
+
 [ARDUINO MEGA 2560-REV3](https://content.arduino.cc/assets/Pinout-Mega2560rev3_latest.pdf)
 
 [Arduino Mega 2560 Rev3: Block Diagram, Features and Applications](https://www.utmel.com/components/arduino-mega-2560-rev3-block-diagram-features-and-applications?id=2182)

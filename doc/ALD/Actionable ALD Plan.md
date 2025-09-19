@@ -39,115 +39,6 @@ DI H20 is housed in a three neck round bottom flask with a fabric 1L heating man
 
 The 8 channel relay module has the solenoid valves for TMA, H2O and N2 connected to channels K1-K3 with 18 awg wires connected from the DIN 43650B to NO and COM on the relay. The relay itself will have an external 24V power supply connected to 
 
-## System Parameters
-
-1. System Media  
-   * Trimethylaluminum (TMA) \- Metal precursor (ALD Grade)  
-   * DI Water (H₂O)   
-   * Nitrogen (N₂) \- Alternative purge gas (N₂, ≥99.999%) 
-
-[TMS MSDS](https://www.umass.edu/ials/sites/default/files/msds/Trimethylaluminum.pdf)
-
-2. System Design Pressure  
-   * Low pressure (flow-type): ~100 Pa   (0.75 Torr)   
-   * Oregon State system: 300 mTorr base to 3.75 Torr with gas flow  
-   * Typical process: 75 mTorr to 7.5 Torr typical
-
-[The Design and Construction of a Cost-Effective Atomic Layer Deposition System for Thin Film Growth](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/zg64tt67k)  
-
-   * Process operates at 0.1–5 Torr with a base pressure below 0.5 Torr prior to precursor dosing.
-
-* Operating safety consideration: Most systems designed for <10 Torr operation
-
-<img width="558" height="154" alt="image" src="https://github.com/user-attachments/assets/365f650d-fa93-4bb7-9a67-698c88858553" />
-
-[Development of a powder atomic layer deposition reactor for research purposes Simon Andsten](https://aaltodoc.aalto.fi/server/api/core/bitstreams/9ca59ceb-2f97-4f79-a86c-5f00aeb70a85/content) 
-
-[Conformality in atomic layer deposition: Current status overview of analysis and modelling](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
-
-3. System Design Temperature (various reported ranges)  
-### TMA   
-  * TMA: 25-200°C  
-  * Lines maintained at ~115-120°C; avoids condensation.
-     
-### Water flask
-  * 50–100°C controlled via mantle.  
-
-### Optimal Al₂O₃ ALD temperature: 150-300°C  
-  * TMA/H₂O ALD window: 269-384°C (optimal range)  
-  * Oregon State system: 25-350°C capability
-    
-<img width="470" height="232" alt="image" src="https://github.com/user-attachments/assets/0f54e40f-0960-4485-92d5-ab9bba8956aa" />
-
-Figure 2. ALD processing window and how growth per cycle can be influenced by temperature.
-
-[The Design and Fabrication of an Atomic Layer Deposition Reactor for Coating Powders Natalie Altvater University of Maine](https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1285&context=honors)
-
-[Development of a powder atomic layer deposition reactor for research purposes Simon Andsten](https://aaltodoc.aalto.fi/server/api/core/bitstreams/9ca59ceb-2f97-4f79-a86c-5f00aeb70a85/content) 
-
-4. System Flow Rate  
-   * Process gas flow (TMA and H2O): 5-75 sccm commonly used  
-   * TMA/H₂O gas lines: 0–100 sccm MFC range.  
-   * Nitrogen carrier: 20-800 mL/min   
-   * Oregon State optimal (N2): 150 mL/min  
-   * Purge line: Up to 500 sccm, flexible for rapid purging.  
-   * Carrier N₂: 20–800 mL/min practical operation; can adjust for recipes.
-
-[Development of an Atomic Layer Deposition System for Deposition of Alumina as a Hydrogen Permeation Barrier](https://arxiv.org/pdf/2507.00958)  
-
-[Dynamic Modeling for the Design and Cyclic Operation of an Atomic Layer Deposition (ALD) Reactor](https://www.mdpi.com/2227-9717/1/2/128) 
-
-[Low-Temperature Al2O3 Atomic Layer Deposition](https://www.forgenano.com/wp-content/uploads/2012/02/2004-Groner-Low-temp-Al2O3-ALD.pdf)
-
-[Experimental study of trimethyl aluminum decomposition](https://www.sciencedirect.com/science/article/abs/pii/S0022024817303767)
-
-[COST-EFFECTIVE ATOMIC LAYER
-DEPOSITION SYSTEM POSTER](https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-03/silsbycarson\_6095338\_75501011\_expo\_poster\_ald\_final-1.pdf) 
-
-[The Design and Construction of a Cost-Effective Atomic Layer Deposition System for Thin Film Growth](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/zg64tt67k)  
- 
-[Conformality in atomic layer deposition: Current status overview of analysis and modelling](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
-
-5. Base Pressure   
-* Evacuate to as low as possible before dosing, target below 0.5 Torr   
-* Flow-type reactors: ~100 Pa (0.75 Torr)  
-  * Oregon State system: 300 mTorr 
-
-[The Design and Construction of a Cost-Effective Atomic Layer Deposition System for Thin Film Growth](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/zg64tt67k)  
- 
-[Conformality in atomic layer deposition: Current status overview of analysis and modelling](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
-
-6. TMA Hazards 
-* Pyrophoric, flash point -17°C, spontaneous ignition in air, violently water-reactive.  
-* Hot zones exceeding 200°C - TMA decomposition  
-* Connection points - Potential leaks to atmosphere  
-* Valve seats and seals - Corrosion/degradation  
-* Precursor lines - Condensation if too cool, decomposition if too hot  
-* Reactor inlet - Direct exposure to high temperatures  
-* Water contact points: Any moisture   
-* Pump oil
-
-7. Temperature and Vapor Pressures of TMA and Water   
-* TMA: Heated to 120°C for vaporization (may adjust between 90–120°C; keep below ~150°C).  
-* Water: Typically 50–100°C via mantle or sand bath; warm enough to produce sufficient vapor pressure.  
-    * TMA bubbler: 10-20°C for controlled vapor pressure  
-    * Water bubbler: 20°C (vapor pressure ~17.5 Torr)
- 
-    * TMA bubbler: 120°C  
-    * TMA delivery lines: 140°C (prevent condensation)  
-    * Water: Room temperature (adequate vapor pressure)
-
-[The Design and Fabrication of an Atomic Layer Deposition Reactor for Coating Powders Natalie Altvater University of Maine](https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1285&context=honors)
-
-[Exploring TMA and H2O Flow Rate Effects on Al2O3 Thin Film Deposition by Thermal ALD: Insights from Zero-Dimensional Modeling](https://www.mdpi.com/2079-6412/14/5/578) 
-
-[Dynamic Modeling for the Design and Cyclic Operation of an
-Atomic Layer Deposition (ALD) Reactor](https://pdfs.semanticscholar.org/a303/a54b45be1f323ff84b20ab3a62069230c343.pdf)
-
-[Estimating the thermochemical properties of trimethylaluminum for thin-film processing applications | Journal of Vacuum Science & Technology A | AIP Publishing](https://pubs.aip.org/avs/jva/article/36/5/050602/287/Estimating-the-thermochemical-properties-of)
-
-[Investigating the Trimethylaluminium/Water ALD Process on Mesoporous Silica by In Situ Gravimetric Monitoring - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6027410/)
-
 ## Materials in Stock
 
 ### 21100 Tube Furnace by Barnstead Thermolyne  
@@ -353,13 +244,118 @@ SEALING TAPE, PTFE, 32.9M X 25.4MM](https://www.newark.com/3m/5490-25mm/sealing-
 * SS-4-WVCR-6-400  
 * Feedthroughs SS-400-61 
 
-* Ceramic Boat and Arm  
-    
+* Ceramic Boat and Arm   
 * Heating Tape  
-    
 * Glass Wool   
   
+## System Parameters
 
+1. System Media  
+   * Trimethylaluminum (TMA) \- Metal precursor (ALD Grade)  
+   * DI Water (H₂O)   
+   * Nitrogen (N₂) \- Alternative purge gas (N₂, ≥99.999%) 
+
+[TMS MSDS](https://www.umass.edu/ials/sites/default/files/msds/Trimethylaluminum.pdf)
+
+2. System Design Pressure  
+   * Low pressure (flow-type): ~100 Pa   (0.75 Torr)   
+   * Oregon State system: 300 mTorr base to 3.75 Torr with gas flow  
+   * Typical process: 75 mTorr to 7.5 Torr typical
+
+[The Design and Construction of a Cost-Effective Atomic Layer Deposition System for Thin Film Growth](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/zg64tt67k)  
+
+   * Process operates at 0.1–5 Torr with a base pressure below 0.5 Torr prior to precursor dosing.
+
+* Operating safety consideration: Most systems designed for <10 Torr operation
+
+<img width="558" height="154" alt="image" src="https://github.com/user-attachments/assets/365f650d-fa93-4bb7-9a67-698c88858553" />
+
+[Development of a powder atomic layer deposition reactor for research purposes Simon Andsten](https://aaltodoc.aalto.fi/server/api/core/bitstreams/9ca59ceb-2f97-4f79-a86c-5f00aeb70a85/content) 
+
+[Conformality in atomic layer deposition: Current status overview of analysis and modelling](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
+
+3. System Design Temperature (various reported ranges)  
+### TMA   
+  * TMA: 25-200°C  
+  * Lines maintained at ~115-120°C; avoids condensation.
+     
+### Water flask
+  * 50–100°C controlled via mantle.  
+
+### Optimal Al₂O₃ ALD temperature: 150-300°C  
+  * TMA/H₂O ALD window: 269-384°C (optimal range)  
+  * Oregon State system: 25-350°C capability
+    
+<img width="470" height="232" alt="image" src="https://github.com/user-attachments/assets/0f54e40f-0960-4485-92d5-ab9bba8956aa" />
+
+Figure 2. ALD processing window and how growth per cycle can be influenced by temperature.
+
+[The Design and Fabrication of an Atomic Layer Deposition Reactor for Coating Powders Natalie Altvater University of Maine](https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1285&context=honors)
+
+[Development of a powder atomic layer deposition reactor for research purposes Simon Andsten](https://aaltodoc.aalto.fi/server/api/core/bitstreams/9ca59ceb-2f97-4f79-a86c-5f00aeb70a85/content) 
+
+4. System Flow Rate  
+   * Process gas flow (TMA and H2O): 5-75 sccm commonly used  
+   * TMA/H₂O gas lines: 0–100 sccm MFC range.  
+   * Nitrogen carrier: 20-800 mL/min   
+   * Oregon State optimal (N2): 150 mL/min  
+   * Purge line: Up to 500 sccm, flexible for rapid purging.  
+   * Carrier N₂: 20–800 mL/min practical operation; can adjust for recipes.
+
+[Development of an Atomic Layer Deposition System for Deposition of Alumina as a Hydrogen Permeation Barrier](https://arxiv.org/pdf/2507.00958)  
+
+[Dynamic Modeling for the Design and Cyclic Operation of an Atomic Layer Deposition (ALD) Reactor](https://www.mdpi.com/2227-9717/1/2/128) 
+
+[Low-Temperature Al2O3 Atomic Layer Deposition](https://www.forgenano.com/wp-content/uploads/2012/02/2004-Groner-Low-temp-Al2O3-ALD.pdf)
+
+[Experimental study of trimethyl aluminum decomposition](https://www.sciencedirect.com/science/article/abs/pii/S0022024817303767)
+
+[COST-EFFECTIVE ATOMIC LAYER
+DEPOSITION SYSTEM POSTER](https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-03/silsbycarson\_6095338\_75501011\_expo\_poster\_ald\_final-1.pdf) 
+
+[The Design and Construction of a Cost-Effective Atomic Layer Deposition System for Thin Film Growth](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/zg64tt67k)  
+ 
+[Conformality in atomic layer deposition: Current status overview of analysis and modelling](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
+
+5. Base Pressure   
+* Evacuate to as low as possible before dosing, target below 0.5 Torr   
+* Flow-type reactors: ~100 Pa (0.75 Torr)  
+  * Oregon State system: 300 mTorr 
+
+[The Design and Construction of a Cost-Effective Atomic Layer Deposition System for Thin Film Growth](https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/zg64tt67k)  
+ 
+[Conformality in atomic layer deposition: Current status overview of analysis and modelling](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
+
+6. TMA Hazards 
+* Pyrophoric, flash point -17°C, spontaneous ignition in air, violently water-reactive.  
+* Hot zones exceeding 200°C - TMA decomposition  
+* Connection points - Potential leaks to atmosphere  
+* Valve seats and seals - Corrosion/degradation  
+* Precursor lines - Condensation if too cool, decomposition if too hot  
+* Reactor inlet - Direct exposure to high temperatures  
+* Water contact points: Any moisture   
+* Pump oil
+
+7. Temperature and Vapor Pressures of TMA and Water   
+* TMA: Heated to 120°C for vaporization (may adjust between 90–120°C; keep below ~150°C).  
+* Water: Typically 50–100°C via mantle or sand bath; warm enough to produce sufficient vapor pressure.  
+    * TMA bubbler: 10-20°C for controlled vapor pressure  
+    * Water bubbler: 20°C (vapor pressure ~17.5 Torr)
+ 
+    * TMA bubbler: 120°C  
+    * TMA delivery lines: 140°C (prevent condensation)  
+    * Water: Room temperature (adequate vapor pressure)
+
+[The Design and Fabrication of an Atomic Layer Deposition Reactor for Coating Powders Natalie Altvater University of Maine](https://digitalcommons.library.umaine.edu/cgi/viewcontent.cgi?article=1285&context=honors)
+
+[Exploring TMA and H2O Flow Rate Effects on Al2O3 Thin Film Deposition by Thermal ALD: Insights from Zero-Dimensional Modeling](https://www.mdpi.com/2079-6412/14/5/578) 
+
+[Dynamic Modeling for the Design and Cyclic Operation of an
+Atomic Layer Deposition (ALD) Reactor](https://pdfs.semanticscholar.org/a303/a54b45be1f323ff84b20ab3a62069230c343.pdf)
+
+[Estimating the thermochemical properties of trimethylaluminum for thin-film processing applications | Journal of Vacuum Science & Technology A | AIP Publishing](https://pubs.aip.org/avs/jva/article/36/5/050602/287/Estimating-the-thermochemical-properties-of)
+
+[Investigating the Trimethylaluminium/Water ALD Process on Mesoporous Silica by In Situ Gravimetric Monitoring - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6027410/)
 
 
 

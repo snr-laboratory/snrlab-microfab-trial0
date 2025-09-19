@@ -252,8 +252,14 @@ USB Multi-Drop Box](https://www.alphacontrols.com/Multimedia/www.alphacontrols.c
 for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)  
 
 ### Solenoid Valves (x3)  
-  * Part number: SZW-15K-24VAC  
-  * Vendor: [1/2" 24V AC Stainless Steel Solenoid Valve N/O](https://www.electricsolenoidvalves.com/1-2-24v-ac-stainless-steel-solenoid-valve-normally-open/#models) 
+  * RS-150-24
+
+[AC/DC CONVERTER 24V 156W](https://www.digikey.com/en/products/detail/mean-well-usa-inc/RS-150-24/7706171)
+
+[150W Single Output Switching Power Supply](https://www.meanwellusa.com/upload/pdf/RS-150/RS-150-spec.pdf)
+
+    * Part number: SZW-15K-24VAC  
+    * Vendor: [1/2" 24V AC Stainless Steel Solenoid Valve N/O](https://www.electricsolenoidvalves.com/1-2-24v-ac-stainless-steel-solenoid-valve-normally-open/#models) 
 
 ### Solenoid Valve Cables
   * DigiKey Part Number: CN101R-250-ND

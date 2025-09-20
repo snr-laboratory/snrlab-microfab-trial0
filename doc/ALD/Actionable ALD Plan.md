@@ -243,6 +243,8 @@ Solenoid valves fittings:
 * Part #: SS-4-HC-1-4
 [Stainless Steel Hose Connector, 1/4 in. Male NPT, 1/4 in. Hose ID](https://products.swagelok.com/en/c/connectors-plastic-tubing/p/SS-4-HC-1-4)
 
+* Part #: SS-400-1-4
+[Stainless Steel Swagelok Tube Fitting, Male Connector, 1/4 in. Tube OD x 1/4 in. Male NPT](https://products.swagelok.com/en/c/straights/p/SS-400-1-4?utm_source=google&utm_medium=paid-search&utm_campaign=(n_google)(c_usa)(l_en)(p_sku-promotion)(e_search)(t_generic-products)(i_gi-valves-fittings-group)&gclsrc=aw.ds&gad_source=1&gad_campaignid=22647578764&gbraid=0AAAAAD_cvrvCLf42_QuIrscQ3mVdXAjcG&gclid=CjwKCAjwobnGBhBNEiwAu2mpFEuZqaEtEIlq3LEFbH50V6IFv0hGFhXSNA96nJff43ZsTLYVRSan2RoC5m8QAvD_BwE)
 
 
 

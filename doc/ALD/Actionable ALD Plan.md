@@ -143,8 +143,12 @@ USB Multi-Drop Box](https://www.alphacontrols.com/Multimedia/www.alphacontrols.c
 for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)  
 
 ### Solenoid Valves (x3)  
-* 1/2" 24V DC Stainless Electric Solenoid Valve
-  * SKU: SZW-15-24VDC
+* SKU: SS-3J-24VDC
+
+[1/4" 24V DC Stainless Electric Solenoid Valve](https://www.electricsolenoidvalves.com/1-4-24v-dc-stainless-electric-solenoid-valve/)
+
+    * 1/2" 24V DC Stainless Electric Solenoid Valve
+    * SKU: SZW-15-24VDC
 
 [24V DC Stainless Electric Solenoid Valve](https://www.electricsolenoidvalves.com/1-2-inch-24v-dc-stainless-electric-solenoid-valve-ss/?searchid=233425&search_query=1%2F2%22+24V+AC+Stainless+Steel+Solenoid+Valve+N%2FO+DC#description)
 
@@ -235,6 +239,12 @@ SEALING TAPE, PTFE, 32.9M X 25.4MM](https://www.newark.com/3m/5490-25mm/sealing-
   * Vendor: [https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/](https://www.carbolite-gero.com/products/modified-atmosphere/work-tube-accessories/)
 
 ### Swagelok Fittings/Adapters 
+Solenoid valves fittings:
+* Part #: SS-4-HC-1-4
+[Stainless Steel Hose Connector, 1/4 in. Male NPT, 1/4 in. Hose ID](https://products.swagelok.com/en/c/connectors-plastic-tubing/p/SS-4-HC-1-4)
+
+
+
 
 * Z685631 Tygon 2375 represented by black dashed line (1/4" OD)  
 * Stainless steel tubing (1/4" OD) represented by blue dotted line  

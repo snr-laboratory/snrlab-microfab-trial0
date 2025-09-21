@@ -142,6 +142,8 @@ USB Multi-Drop Box](https://www.alphacontrols.com/Multimedia/www.alphacontrols.c
   * Vendor: [Ultrahigh-Purity Valves
 for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)  
 
+<img width="469" height="941" alt="image" src="https://github.com/user-attachments/assets/418ae34c-4118-46b3-8a0d-4e27e4624e56" />
+
 ### Solenoid Valves (x3)  
 * SKU: SS-3J-24VDC
 

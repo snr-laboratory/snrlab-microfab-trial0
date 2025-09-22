@@ -149,6 +149,13 @@ for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/m
 
 [1/4" 24V DC Stainless Electric Solenoid Valve](https://www.electricsolenoidvalves.com/1-4-24v-dc-stainless-electric-solenoid-valve/)
 
+* Switching power supply
+* Mfr. #:LRS-100-24
+
+[power supply](https://www.mouser.com/ProductDetail/MEAN-WELL/LRS-100-24?qs=vDxCgdWo2h8VcCv3wQzZdg%3D%3D)
+
+[100W Single Output Switching Power Supply Data Sheet](https://www.meanwellusa.com/upload/pdf/LRS-100/LRS-100-spec.pdf)
+    
     * 1/2" 24V DC Stainless Electric Solenoid Valve
     * SKU: SZW-15-24VDC
 

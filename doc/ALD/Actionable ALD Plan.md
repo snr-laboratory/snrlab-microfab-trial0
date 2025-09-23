@@ -149,25 +149,12 @@ for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/m
 
 [1/4" 24V DC Stainless Electric Solenoid Valve](https://www.electricsolenoidvalves.com/1-4-24v-dc-stainless-electric-solenoid-valve/)
 
-* Switching power supply
-* Mfr. #:LRS-100-24
 
+### Switching power supply
+* Mfr. #:LRS-100-24
 [power supply](https://www.mouser.com/ProductDetail/MEAN-WELL/LRS-100-24?qs=vDxCgdWo2h8VcCv3wQzZdg%3D%3D)
 
-[100W Single Output Switching Power Supply Data Sheet](https://www.meanwellusa.com/upload/pdf/LRS-100/LRS-100-spec.pdf)
-    
-    * 1/2" 24V DC Stainless Electric Solenoid Valve
-    * SKU: SZW-15-24VDC
-
-[24V DC Stainless Electric Solenoid Valve](https://www.electricsolenoidvalves.com/1-2-inch-24v-dc-stainless-electric-solenoid-valve-ss/?searchid=233425&search_query=1%2F2%22+24V+AC+Stainless+Steel+Solenoid+Valve+N%2FO+DC#description)
-
-[Electricsolenoidvalves.com](https://www.electricsolenoidvalves.com/content/Stainless_Valves_Spec_Sheet.pdf)
-  
-  * Power supply RS-150-24
-
-[AC/DC CONVERTER 24V 156W](https://www.digikey.com/en/products/detail/mean-well-usa-inc/RS-150-24/7706171)
-
-[150W Single Output Switching Power Supply](https://www.meanwellusa.com/upload/pdf/RS-150/RS-150-spec.pdf)
+  * [Screw Terminal Strip Blocks](https://www.amazon.com/Positions-Terminal-Pre-Insulated-Barrier-MILAPEAK/dp/B07CLW5FPS/ref=sr_1_1_sspa?crid=14KB3FGN2JIO1&dib=eyJ2IjoiMSJ9.ho-fAVOYCkeTSUCeRjZLVEAprI-1UHs7n-KhI8QxPZk052-5VuefnawV17Qd_QpI7yWEt_dev_juvhihtCAW8LRK_Cn4EXxwsDcAZZt5JKHj7J8TCKWek_bU-bqEcU8d3J2WlWu5MXrVo5CLK_Pst0OtEVwQBvTFZFC-nPsNV8yE6KM8WnzBeo91wCTklgoYAeImvAfFM1GR2My7CVYOwdPjjzCoXx250nREmtBtwog.vpINqae7vwJMbQ8kZbeww-YPCaEC8LZiDaXm1hkiVN0&dib_tag=se&keywords=block%2Bterminal&qid=1758586631&sprefix=block%2Bter%2Caps%2C109&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
 
 
 ### Solenoid Valve Cables

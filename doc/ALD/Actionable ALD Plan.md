@@ -68,6 +68,7 @@ Tube Furnace](https://www.nist.gov/system/files/documents/ncnr/E133tubefurnace.p
   * an ICSP interface and reset button
     
   * Analog Shield Function: high-precision data acquisition interface
+  * 8 Relay Module: Hong wei JQC3F-05VDC-C
 
 [The Analog Shield ](https://digilent.com/reference/analog_shield/ref_manual?srsltid=AfmBOooiFctCUQOJiphxoxk2TGQxglWAU4Q2RaJNXN3TFQQp64O1rBTJ)
 

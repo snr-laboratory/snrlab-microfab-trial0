@@ -12,11 +12,17 @@ The purpose of this document is to propose how to construct a flow-type hot-wall
 
 Figure 1. Onshape 3D model
 
-<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/f67354b6-1f78-4f90-803d-bbcf9ab31917" />
+<img width="4013" height="1911" alt="image" src="https://github.com/user-attachments/assets/d1485b3b-5b8f-4288-8f03-4d29de117c31" />
+
+<img width="3186" height="1953" alt="image" src="https://github.com/user-attachments/assets/2b039f26-b4d2-408e-be05-879f5a86d55d" />
+
+<img width="3350" height="1810" alt="image" src="https://github.com/user-attachments/assets/5bbffdee-eb50-4871-8799-7588cdc18961" />
+
 
 Diagram 1. Gas Flow Schematic
 
-<img width="2000" height="900" alt="image" src="https://github.com/user-attachments/assets/9f4b3fac-f492-4f49-b923-b3a5a84ec2b6" />
+<img width="8063" height="44016" alt="image" src="https://github.com/user-attachments/assets/b5594684-8bde-42b0-b2ad-dc4e699c508c" />
+
 
 Diagram 2. Electrical Schematic 
 

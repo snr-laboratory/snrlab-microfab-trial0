@@ -153,12 +153,16 @@ for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/m
 [1/4" 24V DC Stainless Electric Solenoid Valve](https://www.electricsolenoidvalves.com/1-4-24v-dc-stainless-electric-solenoid-valve/)
 
 
-### Switching power supply
+### Switch-Mode Power Supply (SMPS)
+For solenoid and ALD3 valves (24VDC):
 * Mfr. #:LRS-100-24
 [power supply](https://www.mouser.com/ProductDetail/MEAN-WELL/LRS-100-24?qs=vDxCgdWo2h8VcCv3wQzZdg%3D%3D)
 
   * [Screw Terminal Strip Blocks](https://www.amazon.com/Positions-Terminal-Pre-Insulated-Barrier-MILAPEAK/dp/B07CLW5FPS/ref=sr_1_1_sspa?crid=14KB3FGN2JIO1&dib=eyJ2IjoiMSJ9.ho-fAVOYCkeTSUCeRjZLVEAprI-1UHs7n-KhI8QxPZk052-5VuefnawV17Qd_QpI7yWEt_dev_juvhihtCAW8LRK_Cn4EXxwsDcAZZt5JKHj7J8TCKWek_bU-bqEcU8d3J2WlWu5MXrVo5CLK_Pst0OtEVwQBvTFZFC-nPsNV8yE6KM8WnzBeo91wCTklgoYAeImvAfFM1GR2My7CVYOwdPjjzCoXx250nREmtBtwog.vpINqae7vwJMbQ8kZbeww-YPCaEC8LZiDaXm1hkiVN0&dib_tag=se&keywords=block%2Bterminal&qid=1758586631&sprefix=block%2Bter%2Caps%2C109&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
 
+For the 8 relay module:
+* Mfr. #: LRS-35-5
+  [Switching Power Supplies 35W 5V 7A](https://www.mouser.com/ProductDetail/MEAN-WELL/LRS-35-5?qs=vDxCgdWo2h86Om%2Far%2FQvsg%3D%3D)
 
 ### Solenoid Valve Cables
   * DigiKey Part Number: CN101R-250-ND

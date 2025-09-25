@@ -20,7 +20,9 @@ Diagram 1. Gas Flow Schematic
 
 Diagram 2. Electrical Schematic 
 
-<img width="1920" height="939" alt="image" src="https://github.com/user-attachments/assets/42150ebe-0afb-46da-8512-053451ce1c69" />
+<img width="3764" height="1892" alt="image" src="https://github.com/user-attachments/assets/9230471d-99db-4343-9908-512a8e238ef9" />
+
+
 
 ## Tool Operation  
 The system begins at the source nitrogen tank which acts as a carrier and purging gas source. The tank has a stainless steel pipe fitting immediately after the gas regulator outlet that has three lines directly connected to mass flow controllers (MFCs). These MFCs are connected to a breakout box which is capable of distributing power to all three controllers from a single power source as well as serving as the method for communicating, controlling and monitoring from a single computer interface. Each reactant has is own dedicated MFC (trimethylaluminum (TMA), H₂O, and N2 purge) to better control the actual mass flow rate (100SCCM (TMA and H2O) and 1000SCCM (N2)) and gas flow managament through the system. 

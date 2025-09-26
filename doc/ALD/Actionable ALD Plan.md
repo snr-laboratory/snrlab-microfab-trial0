@@ -149,8 +149,9 @@ USB Multi-Drop Box](https://www.alphacontrols.com/Multimedia/www.alphacontrols.c
 [Virtual COM port (VCP) drivers](https://ftdichip.com/drivers/vcp-drivers/) 
 
 ### ALD Valves (TMA and H2O)
-  * Part number: 6LVV-ALD3TMR4-P-CV  
-  * Vendor: [Ultrahigh-Purity Valves
+  * 6LVV-ALD3MR4-P-CSLV
+    * Part number: 6LVV-ALD3TMR4-P-CV  
+    * Vendor: [Ultrahigh-Purity Valves
 for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)  
 
 <img width="469" height="941" alt="image" src="https://github.com/user-attachments/assets/418ae34c-4118-46b3-8a0d-4e27e4624e56" />

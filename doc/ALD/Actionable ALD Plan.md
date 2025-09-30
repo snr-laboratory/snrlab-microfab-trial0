@@ -145,7 +145,12 @@ USB Multi-Drop Box](https://www.alphacontrols.com/Multimedia/www.alphacontrols.c
 [Virtual COM port (VCP) drivers](https://ftdichip.com/drivers/vcp-drivers/) 
 
 ### ALD Valves (TMA and H2O)
-  * 6LVV-ALD3MR4-P-CSLV
+ * Part number: 6LVV-ALD3MR4-P-CV  
+
+    * 6LVV-ALD3MR4-P-CSLV
+    * Electronic Position Sensor?: May not provide significant benefits - Temperature will most likely be the most significant factor influencing film growth vs ms deviations in dosing. 
+    * [Investigation and Optimization of Process Parameters on Growth Rate in Al2O3 Atomic Layer Deposition (ALD) Using Statistical Approach](https://www.mdpi.com/1996-1944/18/9/1918#:~:text=examined%20the%20growth%20rate%20and,significance%20of%20deposition%20temperature%20effect.)   
+    
     * Part number: 6LVV-ALD3TMR4-P-CV  
     * Vendor: [Ultrahigh-Purity Valves
 for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)  

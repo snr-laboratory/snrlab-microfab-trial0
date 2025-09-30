@@ -26,8 +26,7 @@ Diagram 1. Gas Flow Schematic
 
 Diagram 2. Electrical Schematic 
 
-<img width="3764" height="1892" alt="image" src="https://github.com/user-attachments/assets/9230471d-99db-4343-9908-512a8e238ef9" />
-
+<img width="1920" height="1080" alt="ES9_30_25" src="https://github.com/user-attachments/assets/6af765c3-2977-4a93-98e2-99dc6db8e0e7" />
 
 
 ## Tool Operation  

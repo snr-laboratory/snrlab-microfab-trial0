@@ -18,8 +18,7 @@ Figure 1. Onshape 3D model
 
 Diagram 1. Gas Flow Schematic
 
-<img width="8063" height="44016" alt="image" src="https://github.com/user-attachments/assets/b5594684-8bde-42b0-b2ad-dc4e699c508c" />
-
+<img width="3566" height="850" alt="image" src="https://github.com/user-attachments/assets/f9319415-df90-4a0e-bbad-8fe01b1fdd15" />
 
 Diagram 2. Electrical Schematic 
 

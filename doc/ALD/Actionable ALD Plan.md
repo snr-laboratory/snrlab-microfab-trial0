@@ -43,7 +43,7 @@ All gasses, are drawn into the vac assembly region then proceed to the tube fura
 
 DI H20 is housed in a three neck round bottom flask with a fabric 1L heating mantle at its base. The heating mantle temperature is controlled using a basic PL120 (5-100% range) temperature controller that can regulate the input voltage providing gentle heating capable of stable control in the range of 25-100C. 
 
-The 8 channel relay module has the solenoid and ALD valves (TMA, H2O and N2 - N2 does not have an ALD valve since it is for carrier and purging) connected to channels K1-K5. The solenoid and ALD valves will have an external 24V power supply connected to the COM of the relay. A block screw terminal serves to fan out the number of connections to power all the valves. The 8 relay module will be powered externally by a 5V power supply. The Mean Well 5V switch mode power supply   
+The 8 channel relay module has the solenoid and ALD valves (TMA, H2O and N2 - N2 does not have an ALD valve since it is for carrier and purging) connected to channels K1-K5. The solenoid and ALD valves will have an external 24V power supply connected to the COM of the relay. A block screw terminal serves to fan out the number of connections to power all the valves. The 8 relay module will be powered externally by a 5V power supply. The Mean Well 5V switch mode power supply (SMPS) will power both the coil and logic power of the Hong Wei JQC3F-05VDC-C 8 relay module. This isolates the Arduino Mega 2560 and removes any stress that can damage the Arduino.   
 
 ## Materials in Stock
 

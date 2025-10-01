@@ -398,6 +398,13 @@ Experimental Characterization of ALD Grown Al\&lt;SUB\&gt;2\&lt;/SUB\&gt;O\&lt;S
 
 5 M. Lubitz, P.A. Medina, A. Antic, J.T. Rosin, and B.D. Fahlman, “Cost-Effective Systems for Atomic Layer Deposition,” J. Chem. Educ. 91(7), 1022–1027 (2014).
 
+## Growth Studies
+[Nanocomposite Coatings with Tunable Properties Prepared by Atomic Layer Deposition](https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/materials-science-and-engineering/chemical-vapor-deposition/nanocomposite-coatings-with-tunable-properties?srsltid=AfmBOoq4VkNkVPv_lXVju9TIM9Odf3WiqaSiR8fYR6LgwUJqpgyDeJZu)
+  * Between 95–115s, two TMA/ H2O cycles for Al2O3 ALD are shown and the QCM signals match the expected pattern for Al2O3 ALD.3 The net mass gain for each Al2O3 ALD cycle is ~30 ng/cm2, which is slightly smaller than the expected value.
+
+
+
+
 
 
 ## TMA Temperature Selection (AI)

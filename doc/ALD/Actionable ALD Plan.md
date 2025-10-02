@@ -403,6 +403,14 @@ Experimental Characterization of ALD Grown Al\&lt;SUB\&gt;2\&lt;/SUB\&gt;O\&lt;S
   * Between 95–115s, two TMA/ H2O cycles for Al2O3 ALD are shown and the QCM signals match the expected pattern for Al2O3 ALD.3 The net mass gain for each Al2O3 ALD cycle is ~30 ng/cm2, which is slightly smaller than the expected value.
 
 
+## ALD Challenges 
+[Challenges for Non-Ideal Atomic Layer Deposition Processes & Systems](https://www.lesker.com/blog/challenges-for-non-ideal-atomic-layer-deposition-processes-systems) 
+  * At a pressure of 10-3 Torr the ALD system is in viscous flow (versus continuum or molecular flow) with a carrier/precursor gas mixture of ~24 trillion molecules per cc rushing through the system. Flow in this regime is characterized by the development of vortices, dead zones, and unpredictable flow patterns. The viscous flow regime is given as an example of Chaos Theory [3]. While gas flow in an ALD system is deterministic based on known conditions, it is still not predictable. Mixing of the carrier gas and precursor during the dose cycle can also be an issue.
+  * Heat transfer in vacuum is a unique engineering challenge. At the operating pressures of ALD there is little heat transferred by conduction or convection, so the process relies on radiation and energy exchange from molecular collisions.
+  * Incomplete substrate functionalization can be a source of film defects. With an insufficient number of reaction sites for precursors the resulting film growth may not be in monolayers. Some of the substrate may be coated as planned, but films that nucleate in non-functionalized areas can be a source for non-conformity and surface roughness. They may also be sources of unintended chemical by-products during the ALD process where unreacted or incompletely reacted precursors are left to combine and form impurities.
+  * One considerable challenge is operating a QCM at the temperatures required for ALD; another is functionalization of the QCM's surface so that it attracts precursor and undergoes the same chemical reactions as the substrate.
+
+
 
 
 

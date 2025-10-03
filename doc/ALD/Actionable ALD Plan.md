@@ -410,9 +410,25 @@ Experimental Characterization of ALD Grown Al\&lt;SUB\&gt;2\&lt;/SUB\&gt;O\&lt;S
   * Incomplete substrate functionalization can be a source of film defects. With an insufficient number of reaction sites for precursors the resulting film growth may not be in monolayers. Some of the substrate may be coated as planned, but films that nucleate in non-functionalized areas can be a source for non-conformity and surface roughness. They may also be sources of unintended chemical by-products during the ALD process where unreacted or incompletely reacted precursors are left to combine and form impurities.
   * One considerable challenge is operating a QCM at the temperatures required for ALD; another is functionalization of the QCM's surface so that it attracts precursor and undergoes the same chemical reactions as the substrate.
 
+## ALD Overview
+  * [overview of methods for in situ studies of ALD processes &
+reaction mechanisms](https://www.atomiclimits.com/wp-content/uploads/2018/07/Kessels-Tutorial-ALD-ALE-Atomic-Limits-version.pdf?utm_source=chatgpt.com) 
+    * [In situ Studies of ALD Processes & Reaction Mechanisms](https://www.atomiclimits.com/2018/07/28/in-situ-studies-of-ald-processes-reaction-mechanisms/#QCM)
 
+| Parameter               |                                   Start Point            | Rationale / notes                                                                                                                |
+| ----------------------- | -------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------- |
+| **Substrate temp**      |                          **200 °C** (explore 175–250 °C) | In the Al₂O₃ ALD window; avoids TMA decomposition >~300 °C. Use high-T crystals optimized near setpoint. ([atomiclimits.com][1]) |
+| **Process pressure**    |                                **~1 Torr** during pulses | Viscous-flow tubular ALD commonly runs 0.1–5 Torr; ~1 Torr is a sweet spot for dosing and purge. ([atomiclimits.com][1])         |
+| **Base between pulses** |                                        **≤0.1–0.5 Torr** | Pump can reach ~0.04 Torr ultimate; low base ensures clean purges.                                                               |
+| **N₂ carrier**          |                                    **150 sccm** constant | Typical for 2″ tubes; adjust to hold ~1 Torr. ([atomiclimits.com][1])                                                            |
+| **N₂ purge**            | **150 sccm** (optionally spike 300–500 sccm for 1–2 s)** | Faster clearing if spiked; verify on QCM that mass returns to baseline.                                                          |
+| **TMA pulse**           |                                   **0.5 s @ 20–40 sccm** | Saturation in most 2″ tubes; tune by QCM step height vs pulse length/flow.                                                       |
+| **Purge after TMA**     |                                                **5–8 s** | Long enough to remove CH₄ and excess TMA; confirm flat QCM trace.                                                                |
+| **H₂O pulse**           |                                   **0.5 s @ 20–40 sccm** | Tune by QCM; avoid huge water bursts that extend purge.                                                                          |
+| **Purge after H₂O**     |                                                **5–8 s** | Return near base pressure and flat QCM mass before next cycle.                                                                   |
+| **Expected GPC**        |                                       **~1.0 Å / cycle** | Verify with QCM staircase at steady-state. ([atomiclimits.com][1])                                                               |
 
-
+[1]: https://www.atomiclimits.com/wp-content/uploads/2018/07/Kessels-Tutorial-ALD-ALE-Atomic-Limits-version.pdf?utm_source=chatgpt.com "In situ Studies of ALD Processes & Reaction Mechanisms"
 
 
 ## TMA Temperature Selection (AI)

@@ -22,11 +22,11 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 
 ---
 
-### Completion summary (20251006)
+## Completion summary (20251006)
 
 **Status:** (pending sensor integration via Lakeshore 331 and Ion Gauge 100 using control box)
 
-## Overview
+### Overview
 The electronic control system for the ALD setup was successfully assembled and demonstrated using cooling fans as dummy loads. The system controls five fans (TMA sequence/safety, H₂O sequence/safety, N₂ purge, TMA ALD pulse, H₂O ALD pulse) through an Arduino-based MCU and PC interface (platformio), achieving ALD-appropriate timing and sequencing.
 
 ### Hardware configuration

@@ -20,9 +20,13 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 
 ---
 
+## Task for 20251007
+### Timestamp and proper electrical organization
+The demonstration of dummy loads meeting ALD requirements needs to be further verified. The addition of some form of time stamp will be researched and incorporated to prove that the timing sequence and time is indeed meeting the desired ALD requirements. In addition, the test loads will be neatly and properly wired and organzied into the electrical box to meet compliance system standards. 
+
 ---
 
-## Completion summary (20251006)
+## Completion summary 20251006
 
 **Status:** (pending sensor integration via Lakeshore 331 and Ion Gauge 100 using control box)
 

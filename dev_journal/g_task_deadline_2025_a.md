@@ -23,6 +23,7 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 ## Task for 20251008
 ### Timestamp 
 Now that the elements are organized properly in the electrical box, demonstration of dummy loads meeting ALD requirements still needs to be further verified to prove that the timing sequence and time is indeed meeting the desired ALD requirements. Current suitability for ALD pulsing using delay() function are poor and not suitable for precision short reactant dosing.
+  - Read on how to use an oscilloscope on how to do this. 
 
 ---
 

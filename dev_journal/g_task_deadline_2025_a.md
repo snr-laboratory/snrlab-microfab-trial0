@@ -20,6 +20,12 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 
 ---
 
+## Task for 20251008
+### Timestamp 
+Now that the elements are organized properly in the electrical box, demonstration of dummy loads meeting ALD requirements still needs to be further verified to prove that the timing sequence and time is indeed meeting the desired ALD requirements. 
+
+---
+
 ## Task for 20251007
 ### Timestamp and proper electrical organization
 The demonstration of dummy loads meeting ALD requirements needs to be further verified. The addition of some form of time stamp will be researched and incorporated to prove that the timing sequence and time is indeed meeting the desired ALD requirements. In addition, the test loads will be neatly and properly wired and organzied into the electrical box to meet compliance system standards. 

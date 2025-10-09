@@ -18,11 +18,23 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate the timing of actuation meets the ALD requirements.
 - Demonstrate compliance to minimum electrical system standards.
 
+--- 
+## Task for 20251009
+### Rigol DS1102E Digital Oscilloscope
+Formulate a plan to explore and measure the actual pulse width of the 50ms and 25ms TMA and H2O ALD pulse Arduino commands (most crucial timing of interest). Using channel 1&2 simultaneously, CH1 probe will be connected to Pin 4 (TMA) and its ground clip to the Arduino's GND (through jumpers) and second probe connects to CH2 input. Connection follows the same scheme, except for Pin 5 (H₂O) and its ground clip to the same Arduino GND. 
+
+- Make sure to configure o-scope to 10X attenuation setting (Connect probe to gnd and square wave form on o-scope -> CH1 -> Probe -> 10X -> repeat for CH2)
+  
+In addition:
+- Measure any differences in relay's performance and use this information to make any necessary modifications
+  - code based solutions or hardware (eg solid state relays)
+    
 ---
 
 ## Task for 20251008
 ### Timestamp 
 Now that the elements are organized properly in the electrical box, demonstration of dummy loads meeting ALD requirements still needs to be further verified to prove that the timing sequence and time is indeed meeting the desired ALD requirements. Current suitability for ALD pulsing using delay() function are poor and not suitable for precision short reactant dosing.
+  
   - Read on how to use an oscilloscope on how to do this. 
 
 ---

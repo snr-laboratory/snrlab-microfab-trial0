@@ -1,7 +1,7 @@
 ## Task for 20251009
 ### 10X Calibration 
 
-<img width="546" height="311" alt="calibration_10X" src="https://github.com/user-attachments/assets/d3cb2ab0-76ea-48d9-b7fa-920f35509261" />
+<img width="546" height="311" alt="calibration_10X" src="https://github.com/user-attachments/assets/5a110715-99ee-435e-85ce-cc3a35e41a20" />
 
 ### Initial reading
 

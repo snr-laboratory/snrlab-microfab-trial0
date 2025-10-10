@@ -2,10 +2,19 @@
 
 ### Test faster code TMA
 
+### Auto 200us TMA 
+
+<img width="1276" height="623" alt="Auto 200us TMA 2" src="https://github.com/user-attachments/assets/d390e440-5309-4edc-be2a-58cfaa60e6b8" />
+
+<img width="1209" height="576" alt="Auto 200us TMA 1" src="https://github.com/user-attachments/assets/fe272c7d-ffb6-488b-82c8-d4fc93239b4c" />
+
+### 200us TMA manual 
+<img width="1050" height="498" alt="200us_TMA_manual " src="https://github.com/user-attachments/assets/d0a99284-baa7-4a12-86de-938099d857a7" />
+
+### 10ms TMA manual 
 - Manual time cursor selection gives a delta time value of 0.8ms!
   - revist code, but first try automatic measurement to verify 
 <img width="1280" height="676" alt="test_faster code_TMA" src="https://github.com/user-attachments/assets/36ba2bae-9afd-4198-9a50-f5ae958ed43f" />
-
 
 ### Original code 
 #include <Arduino.h>

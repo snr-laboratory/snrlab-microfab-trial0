@@ -1,3 +1,107 @@
+## Task for 20251010
+### Original Code 
+#include <Arduino.h>
+
+// -------- Pin mapping (Arduino Mega digital pins) --------
+#define IN_TMA_SV   7   // IN1: TMA safety/sequence valve
+#define IN_H2O_SV   6   // IN2: H2O safety/sequence valve
+#define IN_PURGE    5   // IN3: N2 purge valve
+#define IN_TMA_ALD  4   // IN4: TMA ALD pulse valve
+#define IN_H2O_ALD  3   // IN5: H2O ALD pulse valve
+
+// -------- Logic polarity --------
+// Set to 1 if your board is ACTIVE-LOW (LOW = ON, HIGH = OFF).
+// Set to 0 if ACTIVE-HIGH (HIGH = ON, LOW = OFF).
+#define ACTIVE_LOW  1
+
+inline void valveOn(uint8_t pin){ digitalWrite(pin, ACTIVE_LOW ? LOW  : HIGH); }
+inline void valveOff(uint8_t pin){ digitalWrite(pin, ACTIVE_LOW ? HIGH : LOW ); }
+
+// -------- Timing (milliseconds) --------
+const unsigned long PURGE_START_MS = 5000; // Step 1: initial N2 purge: 5 s
+const unsigned long PURGE_MS       = 3000; // Steps 3 & 5: 3 s
+const unsigned long SV_SETTLE_MS   = 500;   // 0.5 s line settle before ALD pulse
+const unsigned long TMA_PULSE_MS   = 50;    // TMA 50 ms pulse
+const unsigned long H2O_PULSE_MS   = 25;    // H2O 25 ms pulse
+
+void allValvesOff() {
+  valveOff(IN_TMA_SV);
+  valveOff(IN_H2O_SV);
+  valveOff(IN_PURGE);
+  valveOff(IN_TMA_ALD);
+  valveOff(IN_H2O_ALD);
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(IN_TMA_SV,   OUTPUT);
+  pinMode(IN_H2O_SV,   OUTPUT);
+  pinMode(IN_PURGE,    OUTPUT);
+  pinMode(IN_TMA_ALD,  OUTPUT);
+  pinMode(IN_H2O_ALD,  OUTPUT);
+
+  allValvesOff();
+  Serial.println(F("ALD Demo: TMA(50ms) / Purge(3s) / H2O(25ms) / Purge(3s)"));
+}
+
+void loop() {
+  // ---- Step 1: N2 purge 5 s (clean start) ----
+  Serial.println(F("[Step 1] Purge ON (5 s)"));
+  valveOn(IN_PURGE);
+  delay(PURGE_START_MS);
+  valveOff(IN_PURGE);
+  Serial.println(F("[Step 1] Purge OFF"));
+
+  // ---- Step 2: TMA half-cycle ----
+  Serial.println(F("[Step 2] TMA SV OPEN"));
+  valveOn(IN_TMA_SV);
+  delay(SV_SETTLE_MS);
+
+  Serial.println(F("[Step 2] TMA ALD PULSE 50 ms"));
+  valveOn(IN_TMA_ALD);
+  delay(TMA_PULSE_MS);
+  valveOff(IN_TMA_ALD);
+
+  delay(SV_SETTLE_MS);
+  Serial.println(F("[Step 2] TMA SV CLOSE"));
+  valveOff(IN_TMA_SV);
+
+  // ---- Step 3: Purge 3 s ----
+  Serial.println(F("[Step 3] Purge ON (3 s)"));
+  valveOn(IN_PURGE);
+  delay(PURGE_MS);
+  valveOff(IN_PURGE);
+  Serial.println(F("[Step 3] Purge OFF"));
+
+  // ---- Step 4: H2O half-cycle ----
+  Serial.println(F("[Step 4] H2O SV OPEN"));
+  valveOn(IN_H2O_SV);
+  delay(SV_SETTLE_MS);
+
+  Serial.println(F("[Step 4] H2O ALD PULSE 25 ms"));
+  valveOn(IN_H2O_ALD);
+  delay(H2O_PULSE_MS);
+  valveOff(IN_H2O_ALD);
+
+  delay(SV_SETTLE_MS);
+  Serial.println(F("[Step 4] H2O SV CLOSE"));
+  valveOff(IN_H2O_SV);
+
+  // ---- Step 5: Purge 3 s ----
+  Serial.println(F("[Step 5] Purge ON (3 s)"));
+  valveOn(IN_PURGE);
+  delay(PURGE_MS);
+  valveOff(IN_PURGE);
+  Serial.println(F("[Step 5] Purge OFF"));
+
+  // ---- Step 6: Repeat ----
+  Serial.println(F("Cycle complete. Repeating...\n"));
+  allValvesOff(); // be explicit
+  // loop() now repeats automatically
+}
+
+
 ## Task for 20251009
 ### 10X Calibration 
 

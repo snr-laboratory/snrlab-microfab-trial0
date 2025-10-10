@@ -20,7 +20,9 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 
 --- 
 ## Task for 20251009
-### Rigol DS1102E Digital Oscilloscope
+### Rigol DS1102E Digital Oscilloscope 
+[User’s Guide](https://phas.ubc.ca/~enph259/2017-18Term1/Protected/Labs/SpecificationSheets_UserManuals/Oscilloscope/DS1000E_User_Manual.pdf?utm_source=chatgpt.com)
+
 Formulate a plan to explore and measure the actual pulse width of the 50ms and 25ms TMA and H2O ALD pulse Arduino commands (most crucial timing of interest). Using channel 1&2 simultaneously, CH1 probe will be connected to Pin 4 (TMA) and its ground clip to the Arduino's GND (through jumpers) and second probe connects to CH2 input. Connection follows the same scheme, except for Pin 5 (H₂O) and its ground clip to the same Arduino GND. 
 
 - Make sure to configure o-scope to 10X attenuation setting (Connect probe to gnd and square wave form on o-scope -> CH1 -> Probe -> 10X -> repeat for CH2)

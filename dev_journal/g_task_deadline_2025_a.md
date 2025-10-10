@@ -19,8 +19,33 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 --- 
+## Task for 20251010
+### Rigol DS1102E digital oscilloscope cont. 
+doc/ALD/Journal.md
+1. Testing code vs. the relay system
+
+- Current method (Unloaded): By connecting the scope directly to the Arduino pin with the relay disconnected, we are purely testing the software and the microcontroller's output. This is to check if the code produces a correctly timed 5V pulse to confirm the logic is sound.
+
+- Loaded method: connect the relay and connect probe to that line (TMA), to test the system's performance. This is to see if the Arduino pin can effectively drive the relay input without the signal degrading. 
+
+2. Testing the timing sequence
+To test the timing shift between the TMA valve closing and the nitrogen purge valve opening for example, I plan to:
+
+- Connect channel 2: Use second probe on CH2 input of the scope (Remember to set the probe and the channel to 10X - calibrate as before).
+
+- Probe the second signal: Connect the CH2 probe tip to the Arduino pin3 or IN3 that controls nitrogen purge solenoid. Connect the CH2 ground clip to Arduino gnd.
+
+- Activate both channels: Press CH1 and CH2 buttons on scope.
+
+- Set trigger source: In trigger menu, keep the source set to CH1. Always start when the TMA pulse happens.
+
+- Observe the sequence: CH1 (TMA) pulse and CH2 pulse, look for exactly when it turns on relative to the TMA pulse turning off.
+
+- Use the time cursors to precisely measure the delay between the rising edge of the TMA signal and the falling edge of the nitrogen signal, confirming purge timing. 
+
+--- 
 ## Task for 20251009
-### Rigol DS1102E Digital Oscilloscope 
+### Rigol DS1102E digital oscilloscope 
 [User’s Guide](https://phas.ubc.ca/~enph259/2017-18Term1/Protected/Labs/SpecificationSheets_UserManuals/Oscilloscope/DS1000E_User_Manual.pdf?utm_source=chatgpt.com)
 
 Formulate a plan to explore and measure the actual pulse width of the 50ms and 25ms TMA and H2O ALD pulse Arduino commands (most crucial timing of interest). Using channel 1&2 simultaneously, CH1 probe will be connected to Pin 4 (TMA) and its ground clip to the Arduino's GND (through jumpers) and second probe connects to CH2 input. Connection follows the same scheme, except for Pin 5 (H₂O) and its ground clip to the same Arduino GND. 

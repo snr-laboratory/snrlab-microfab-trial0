@@ -221,8 +221,32 @@ void loop() {
   // loop() now repeats automatically
 }
 
+### Simple code test 
+#include <Arduino.h>
 
+// Define the pin you are testing
+#define IN_TMA_ALD  4 
 
+// Define the logic polarity
+#define ACTIVE_LOW  1
+inline void valveOn(uint8_t pin){ digitalWrite(pin, ACTIVE_LOW ? LOW  : HIGH); }
+inline void valveOff(uint8_t pin){ digitalWrite(pin, ACTIVE_LOW ? HIGH : LOW ); }
+
+void setup() {
+  // Setup only the pin we are testing
+  pinMode(IN_TMA_ALD, OUTPUT);
+  valveOff(IN_TMA_ALD); // Start with the valve off
+}
+
+void loop() {
+  // Generate the 50ms pulse
+  valveOn(IN_TMA_ALD);
+  delay(50); // The 50ms pulse duration
+  valveOff(IN_TMA_ALD);
+
+  // Wait for a short period before the next pulse
+  delay(500); // Wait half a second
+}
 
 ## Task for 20251009
 ### 10X calibration 

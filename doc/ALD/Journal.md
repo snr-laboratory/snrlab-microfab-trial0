@@ -1,5 +1,6 @@
 ## Task for 20251010
 ### Isolated TMA code
+- The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
 <img width="1280" height="623" alt="Isolated TMA code" src="https://github.com/user-attachments/assets/4be209df-13ee-40ae-bdd4-f24090c16f8c" />
 
 ### Simplified code for TMA to isolate this signal 

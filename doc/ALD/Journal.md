@@ -2,6 +2,26 @@
 
 ### Test faster code TMA
 
+### Simplified code for TMA to isolate this signal 
+// Minimal Test Sketch for Pin 4 Timing Verification
+#define IN_TMA_ALD 4
+const unsigned long TMA_PULSE_MS = 50;
+
+void setup() {
+  pinMode(IN_TMA_ALD, OUTPUT);
+}
+
+void loop() {
+  // Set pin HIGH for the specified duration
+  digitalWrite(IN_TMA_ALD, HIGH);
+  delay(TMA_PULSE_MS);
+
+  // Set pin LOW and wait before repeating
+  digitalWrite(IN_TMA_ALD, LOW);
+  delay(500); // A 0.5 second pause makes the pulse easy to see
+}
+
+
 ### Auto 200us TMA 
 
 <img width="1276" height="623" alt="Auto 200us TMA 2" src="https://github.com/user-attachments/assets/d390e440-5309-4edc-be2a-58cfaa60e6b8" />

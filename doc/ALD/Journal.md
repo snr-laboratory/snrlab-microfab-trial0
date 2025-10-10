@@ -21,7 +21,7 @@ void loop() {
   delay(500); // A 0.5 second pause makes the pulse easy to see
 }
 
-
+### Faster test code TMA
 ### Auto 200us TMA 
 
 <img width="1276" height="623" alt="Auto 200us TMA 2" src="https://github.com/user-attachments/assets/d390e440-5309-4edc-be2a-58cfaa60e6b8" />

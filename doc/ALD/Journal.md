@@ -1,25 +1,27 @@
 ## Task for 20251010
-
-### Test faster code TMA
+### Isolated TMA code
+<img width="1280" height="623" alt="Isolated TMA code" src="https://github.com/user-attachments/assets/4be209df-13ee-40ae-bdd4-f24090c16f8c" />
 
 ### Simplified code for TMA to isolate this signal 
+#include <Arduino.h>
+
 // Minimal Test Sketch for Pin 4 Timing Verification
 #define IN_TMA_ALD 4
 const unsigned long TMA_PULSE_MS = 50;
 
 void setup() {
   pinMode(IN_TMA_ALD, OUTPUT);
+  Serial.begin(115200);
+  Serial.println(">>> Minimal TMA pulse test running <<<");
 }
 
 void loop() {
-  // Set pin HIGH for the specified duration
-  digitalWrite(IN_TMA_ALD, HIGH);
-  delay(TMA_PULSE_MS);
-
-  // Set pin LOW and wait before repeating
-  digitalWrite(IN_TMA_ALD, LOW);
-  delay(500); // A 0.5 second pause makes the pulse easy to see
+  digitalWrite(IN_TMA_ALD, HIGH);   // Set pin 4 HIGH for 50 ms
+  delay(TMA_PULSE_MS);              // Pulse duration (50 ms)
+  digitalWrite(IN_TMA_ALD, LOW);    // Set pin 4 LOW
+  delay(500);                       // 0.5 s pause (for visibility)
 }
+
 
 ### Faster test code TMA
 ### Auto 200us TMA 

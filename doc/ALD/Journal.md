@@ -141,7 +141,12 @@ void loop() {
   // loop() now repeats automatically
 }
 
-### Quick test code
+
+### Connecting to RIGOL 
+- saving data directly to computer
+[1000 SERIES DIGITAL OSCILLOSCOPES](https://www.rigolna.com/products/digital-oscilloscopes/1000/?srsltid=AfmBOoq1boQnvtdmj9wyaQz45k5QzqIhtwBUH02tY6NU2v0IfpXUj1Yn)
+
+### Quick test code (not sure) 
 
 #include <Arduino.h>
 
@@ -244,7 +249,7 @@ void loop() {
   // loop() now repeats automatically
 }
 
-### Simple code test 
+### Simple code test (not sure) 
 #include <Arduino.h>
 
 // Define the pin you are testing

@@ -1,5 +1,10 @@
+## Task for 20251013
+### Isolated TMA code - auto/+width measurment 
+- The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
+<img width="855" height="420" alt="Auto TMA Isolated +W" src="https://github.com/user-attachments/assets/aa83d7ee-bac4-4f87-af0e-f9ede09d6d50" />
+
 ## Task for 20251010
-### Isolated TMA code
+### Isolated TMA code - manual measurment 
 - The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
 <img width="1280" height="623" alt="Isolated TMA code" src="https://github.com/user-attachments/assets/4be209df-13ee-40ae-bdd4-f24090c16f8c" />
 

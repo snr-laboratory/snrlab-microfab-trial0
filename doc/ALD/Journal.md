@@ -1,7 +1,7 @@
 ## Task for 20251013
 ### Latency loaded isolated TMA code test - auto/+width measurment 
-Probing COM/NO (The Action) - How long after the command is given does the valve actually get power?
-
+Probing NO (The Action) - How long after the command is given does the valve actually get power?
+<img width="1279" height="620" alt="Probing NO (The Action)" src="https://github.com/user-attachments/assets/a40385bc-3c30-42b2-947f-72dc2bae5bbe" />
 
 
 ### Loaded isolated TMA code test - auto/+width measurment 

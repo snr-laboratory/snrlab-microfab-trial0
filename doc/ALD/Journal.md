@@ -6,6 +6,7 @@ Probing COM/NO (The Action) - How long after the command is given does the valve
 
 ### Loaded isolated TMA code test - auto/+width measurment 
 Probing IN4 (The Command) - Is the command from the Arduino getting to the relay with the correct timing?
+<img width="1293" height="638" alt="Probing IN4 Command" src="https://github.com/user-attachments/assets/27afa9e2-43ac-42bb-9413-ec40c66bef70" />
 
 
 ### Isolated TMA code test - auto/+width measurment 

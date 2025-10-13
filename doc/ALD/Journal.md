@@ -2,7 +2,9 @@
 ### Latency loaded isolated TMA code test - auto/+width measurment 
 Probing NO (The Action) - How long after the command is given does the valve actually get power?
 <img width="1279" height="620" alt="Probing NO (The Action)" src="https://github.com/user-attachments/assets/a40385bc-3c30-42b2-947f-72dc2bae5bbe" />
-
+Cursor measurement difference (4.60ms): 
+<img width="1286" height="610" alt="Latency Probing NO " src="https://github.com/user-attachments/assets/62c7e680-1bbc-4ade-a527-2ee81679fb3c" />
+Measured the time delay between the Arduino sending the command (the rising edge of the yellow CH1 signal) and the relay's contact first making a physical connection (the start of the blue CH2 signal). This 4.60ms delay is the relay's actuation time or latency.
 
 ### Loaded isolated TMA code test - auto/+width measurment 
 Probing IN4 (The Command) - Is the command from the Arduino getting to the relay with the correct timing?

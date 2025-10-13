@@ -19,6 +19,14 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 --- 
+## Task for 20251013
+doc/ALD/Journal.md
+1. Testing the loaded isolated TMA code as well as the latency when loaded. Probing NO on relay can help us to determine how long after the command is given does the valve actually get power? And probing IN4 can inform if the command from the Arduino is getting to the relay with the correct timing. 
+
+2. Dual-channel timing test (TMA vs. Purge Sequence) i.e measuring the timing between the TMA pulse and another event in the ALD sequence. Other timing sequences of concern in the ALD process is the delay between the end of the TMA dose and the start of the N₂ purge (which clears out the precursor). Measuring this can provide us with any unwanted delays we might need to account for in the code. 
+
+___
+
 ## Task for 20251010
 ### Rigol DS1102E digital oscilloscope cont. 
 doc/ALD/Journal.md

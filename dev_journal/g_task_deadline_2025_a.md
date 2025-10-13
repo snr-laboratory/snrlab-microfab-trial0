@@ -25,6 +25,9 @@ doc/ALD/Journal.md
 
 2. Dual-channel timing test (TMA vs. Purge Sequence) i.e measuring the timing between the TMA pulse and another event in the ALD sequence. Other timing sequences of concern in the ALD process is the delay between the end of the TMA dose and the start of the N₂ purge (which clears out the precursor). Measuring this can provide us with any unwanted delays we might need to account for in the code. 
 
+3. Measure settling time (bounce duration)
+4. Account for latency in the code
+   
 ___
 
 ## Task for 20251010

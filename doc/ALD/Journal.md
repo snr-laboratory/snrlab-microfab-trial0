@@ -1,4 +1,10 @@
 ## Task for 20251013
+### Measure settling time (bounce duration)
+<img width="1280" height="795" alt="Settling bounce measurement" src="https://github.com/user-attachments/assets/abb80acc-fabc-4f81-ad37-ec3a0fa0680f" />
+Time elapsed between the start of the bounce and the end of the bounce is 49.4 ms?!
+
+
+
 ### Latency loaded isolated TMA code test - auto/+width measurment 
 Probing NO (The Action) - How long after the command is given does the valve actually get power?
 <img width="1279" height="620" alt="Probing NO (The Action)" src="https://github.com/user-attachments/assets/a40385bc-3c30-42b2-947f-72dc2bae5bbe" />

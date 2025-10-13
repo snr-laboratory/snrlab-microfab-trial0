@@ -1,10 +1,19 @@
 ## Task for 20251013
-### Isolated TMA code - auto/+width measurment 
+### Latency loaded isolated TMA code test - auto/+width measurment 
+Probing COM/NO (The Action) - How long after the command is given does the valve actually get power?
+
+
+
+### Loaded isolated TMA code test - auto/+width measurment 
+Probing IN4 (The Command) - Is the command from the Arduino getting to the relay with the correct timing?
+
+
+### Isolated TMA code test - auto/+width measurment 
 - The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
 <img width="855" height="420" alt="Auto TMA Isolated +W" src="https://github.com/user-attachments/assets/aa83d7ee-bac4-4f87-af0e-f9ede09d6d50" />
 
 ## Task for 20251010
-### Isolated TMA code - manual measurment 
+### Isolated TMA code test - manual measurment 
 - The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
 <img width="1280" height="623" alt="Isolated TMA code" src="https://github.com/user-attachments/assets/4be209df-13ee-40ae-bdd4-f24090c16f8c" />
 

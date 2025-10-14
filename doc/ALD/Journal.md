@@ -1,8 +1,23 @@
 ## Task for 20251013
-### Measure settling time (bounce duration)
+### Measure settling time (bounce duration) - 5ms
+For any short pulse duration, the relay's physical limitations (its latency and bounce) prevent it from ever providing a clean, stable output.
+
+<img width="1267" height="600" alt="settling time 5ms" src="https://github.com/user-attachments/assets/415ec8bc-9724-4bdd-8bd3-9ef51d363886" />
+- Consistent bounce frequency
+  
+### Measure settling time (bounce duration) - 25ms
+<img width="1285" height="626" alt="settling time 25ms" src="https://github.com/user-attachments/assets/3b4542c6-b173-4b16-9a2d-e1ccdbea22a1" />
+- Same behavior regarding the 2.0ms consistent bounce frequency
+
+### Measure settling time (bounce duration) - 10ms
+<img width="1285" height="638" alt="settling time 10ms" src="https://github.com/user-attachments/assets/ce9a9bf8-1454-4d1a-bf69-0cca05f38748" />
+At 10ms the wave form is also the same for 50ms (500Hz) - 2.0ms 
+- The relay never reaches a stable, closed state during the entire 10 ms pulse.
+  
+### Measure settling time (bounce duration) - 50ms
 <img width="1280" height="795" alt="Settling bounce measurement" src="https://github.com/user-attachments/assets/abb80acc-fabc-4f81-ad37-ec3a0fa0680f" />
 Time elapsed between the start of the bounce and the end of the bounce is 49.4 ms?!
-
+- 2.0ms wave form -> 500Hz frequency 
 
 
 ### Latency loaded isolated TMA code test - auto/+width measurment 

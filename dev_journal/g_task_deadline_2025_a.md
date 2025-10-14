@@ -21,6 +21,12 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 --- 
 ## Task for 20251013
 doc/ALD/Journal.md
+
+Determine how to use a discriminator to overcome this issue or consider solid state relays (SSRs).
+
+---
+## Task for 20251013
+doc/ALD/Journal.md
 1. Testing the loaded isolated TMA code as well as the latency when loaded. Probing NO on relay can help us to determine how long after the command is given does the valve actually get power? And probing IN4 can inform if the command from the Arduino is getting to the relay with the correct timing. 
 
 **2. Measure settling time (bounce duration)**

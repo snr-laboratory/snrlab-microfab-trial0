@@ -21,8 +21,9 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 --- 
 ## Task for 20251014
 doc/ALD/Journal.md
+1. See if there are any sources or simulations that show the same behavior regarding the bouncing behavior we found yesterday and verify with technical data sheet. 
 
-Determine how to use a discriminator to overcome this issue or consider solid state relays (SSRs).
+- other options: Determine how to use/incorporate a discriminator or consider solid state relays (SSRs).
 
 ---
 ## Task for 20251013

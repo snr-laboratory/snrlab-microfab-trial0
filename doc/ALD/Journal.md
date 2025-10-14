@@ -1,3 +1,8 @@
+## Task for 20251014
+Fixing ground connections
+
+<img width="1276" height="637" alt="gnd to 5VPS" src="https://github.com/user-attachments/assets/fdd74577-b7b6-4e07-b228-c01e758b5161" />
+
 ## Task for 20251013
 ### Measure settling time (bounce duration) - 5ms
 For any short pulse duration, the relay's physical limitations (its latency and bounce) prevent it from ever providing a clean, stable output.

@@ -9,6 +9,11 @@ The difference in yesterdays observed behavior on the scope was due to where I w
 
 Its interesting to note that the results are the same with or without the 5V and GND from Arduino to relay VCC and GND on the logic region. This leads me to believe that the external power source is enough to power the coil and logic power and there is no need for the arduino connections to the logic of the relay aside from the digital pins to inputs IN1-8. 
 
+VCC - The VCC pin serves as the power supply for the "control side" or "logic side" of the module. Its exclusive function is to provide a clean, stable, low-current 5V source to the input side of the onboard optocouplers and the corresponding channel status LEDs. When a microcontroller sends a signal to activate a relay, it is the VCC rail that sources the small current—typically 15-20mA per channel—required to illuminate the internal LED within the optocoupler. The total current draw on this pin is modest, even with all channels active. 
+
+JD-VCC - The JD-VCC pin is designated to power the "actuation side" or "power side" of the module. This rail provides the significantly higher current necessary to energize the electromagnetic coils within the physical relays, which mechanically pull the switch contacts into their active state.
+
+The fundamental reason for this dual-power architecture is the electrical incompatibility of the two domains. The logic side, which interfaces directly with the microcontroller, requires a stable, low-noise power source for reliable operation. The actuation side, energizing and de-energizing eight inductive coils generates significant electromagnetic interference (EMI), creates substantial current surges on the power rail, and produces high-voltage transients (inductive kickback). Allowing this electrical noise to contaminate the logic power supply is a direct cause of microcontroller resets, data corruption, erratic sensor readings, and overall system instability. The separation of VCC and JD-VCC provides the necessary framework to isolate these two hostile environments from one another.
 
 ## Task for 20251014
 Fixing ground connections

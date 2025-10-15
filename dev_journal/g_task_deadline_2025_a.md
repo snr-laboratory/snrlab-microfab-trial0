@@ -22,6 +22,11 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 ## Task for 20251015
 doc/ALD/Journal.md
 
+Yesterday, after connecting a 24 V solenoid skinner valve I was able to observe a different behavior. The oscillations are gone but still some unstable behavior in the blue wave form (probe 2) presists at the inital triggering of the valve.
+
+I need to investigate whether this is a case of inrush current leading to micro-welding which leads to the observed intial dip and then gradual rise until it becomes stable. Not sure why we see the second dip, but it could also be that if the oscillations are being suppressed by the inductive load, then the sticking of the relay armature is finally being released and we see that in the dip. If this is the case, could this suppression of the "bounce" by the inductive load present issues later on (eg long run periods cause failure of the mechanical relay or the armature not releasing and staying stuck?). 
+
+Its interesting to note that the results are the same with or without the 5V and GND from Arduino to relay VCC and GND on the logic region. This leads me to believe that the external power source is enough to power the coil and logic power and there is no need for the arduino connections to the logic of the relay aside from the digital pins to inputs IN1-8. The JD-VCC is the coil power side and the VCC is the logic side so the connections to logic VCC from arduino should not be necessary, I beleive. 
 
 
 ## Task for 20251014

@@ -1,5 +1,32 @@
 ## Task for 20251015
 
+### H2O ALD scope
+
+50ms - delay between logic command and relay actuation is 4.80ms or 208Hz
+<img width="1073" height="796" alt="H2O delay test 50ms " src="https://github.com/user-attachments/assets/e7b599de-d7ba-4718-80f8-6bb829b3cb3c" />
+
+
+
+### H2O ALD Test Code
+#include <Arduino.h>
+// Minimal Test Sketch for Pin 3 Timing Verification 
+#define IN_H2O_ALD 3 
+const unsigned long H2O_PULSE_MS = 50;
+
+void setup() { 
+  pinMode(IN_H2O_ALD, OUTPUT); 
+  Serial.begin(115200); 
+  Serial.println(">>> Minimal H2O pulse test running <<<"); 
+}
+
+void loop() { 
+  digitalWrite(IN_H2O_ALD, HIGH);   // Set pin 3 HIGH for 50 ms 
+  delay(H2O_PULSE_MS);              // Pulse duration (50 ms) 
+  digitalWrite(IN_H2O_ALD, LOW);    // Set pin 3 LOW 
+  delay(500);                       // 0.5 s pause (for visibility) 
+  }
+
+
 ### Flyback diode?
 The Universal Rule for Flyback Diodes
 

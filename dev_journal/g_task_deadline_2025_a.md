@@ -19,8 +19,15 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 --- 
+## Task for 20251015
+doc/ALD/Journal.md
+
+
+
 ## Task for 20251014
 doc/ALD/Journal.md
+**Fix gounding connections**
+
 1. See if there are any sources or simulations that show the same behavior regarding the bouncing behavior we found yesterday and verify with technical data sheet. 
 
 - other options: Determine how to use/incorporate a discriminator or consider solid state relays (SSRs).
@@ -28,7 +35,7 @@ doc/ALD/Journal.md
 ---
 ## Task for 20251013
 doc/ALD/Journal.md
-1. Testing the loaded isolated TMA code as well as the latency when loaded. Probing NO on relay can help us to determine how long after the command is given does the valve actually get power? And probing IN4 can inform if the command from the Arduino is getting to the relay with the correct timing. 
+1. Continue testing the loaded isolated TMA code as well as the latency when loaded. Probing NO on relay can help us to determine how long after the command is given does the valve actually get power? And probing IN4 can inform if the command from the Arduino is getting to the relay with the correct timing. 
 
 **2. Measure settling time (bounce duration)**
 - mini oscillations happening within CH2 - need to investigate this further to see if this will present issues 
@@ -36,7 +43,17 @@ doc/ALD/Journal.md
 3. Account for latency in the code
    
 4. Dual-channel timing test (TMA vs. Purge Sequence) i.e measuring the timing between the TMA pulse and another event in the ALD sequence. Other timing sequences of concern in the ALD process is the delay between the end of the TMA dose and the start of the N₂ purge (which clears out the precursor). Measuring this can provide us with any unwanted delays we might need to account for in the code. 
-   
+
+---
+## Task for 20251012
+Loaded isolated TMA code test and latency loaded isolated TMA code test
+- Measured the time delay between the Arduino sending the command (the rising edge of the yellow CH1 signal) and the relay's contact first making a physical connection (the start of the blue CH2 signal). The delay was determined to be 4.60ms delay and is the relay's actuation time or latency.
+
+---
+## Task for 20251011
+Isolated the TMA code test - auto/+width measurment 
+- The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
+
 ___
 
 ## Task for 20251010

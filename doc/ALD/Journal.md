@@ -1,4 +1,30 @@
 ## Task for 20251015
+
+### Flyback diode?
+The Universal Rule for Flyback Diodes
+
+The fundamental rule for connecting a flyback diode:
+
+The diode is installed in parallel with the inductive load (the solenoid). The cathode (the end with the band/stripe) must connect to the more positive voltage point of the load, and the anode connects to the more negative point.
+
+The diode must be reverse-biased when the solenoid is powered on
+
+
+### Intial current rise (Dip)
+As current begins to flow into the solenoid coil, which is an inductor, and resists an instantaneous change in current. Consequently, the current does not jump to its maximum value but instead begins to ramp up at a rate determined by the coil's inductance (L) and the total circuit resistance (R).
+
+The first dip we see is the electrical signature of the solenoid's mechanical actuation. 
+
+**Microwelding is not the cause or else the relay would cease to repeat opening and closing.**
+
+Second dip must be discharging (verify how much time it took for the ramp up and discharge) 
+
+<img width="1291" height="724" alt="Screenshot 2025-10-15 at 1 02 05 PM" src="https://github.com/user-attachments/assets/2ad8c063-15e2-431c-9cea-c39481438e1d" />
+
+
+Delay between logic and actuation is 4.40ms with a frequency of 227Hz
+<img width="924" height="452" alt="4 40ms delay 24V load" src="https://github.com/user-attachments/assets/cfa57967-2ea4-4040-9857-78e2c8b3168f" />
+
 Correct wiring schematic for complete Arduino isolation. The configuration removes the minor load from the Arduino's onboard voltage regulator entirely. This places the entire operational load of the relay module onto the external power supply, ensuring the Arduino's power rail is stable. 
 - External PSU +5V → Relay Module VCC pin → Internal Resistor & Optocoupler LED → Relay Module INx pin → Arduino Digital Pin → Arduino Internal Ground
 

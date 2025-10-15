@@ -1,8 +1,23 @@
 ## Task for 20251015
 
+
+
+
+
 ### H2O ALD scope
 
-50ms - delay between logic command and relay actuation is 4.80ms or 208Hz
+#### 10ms
+- delay between logic command and relay actuation is 5.12ms or 195Hz
+<img width="1165" height="866" alt="H2O ALD scope 10ms" src="https://github.com/user-attachments/assets/09bfdd22-fcf3-4eb1-a45f-2ee20ffeeda2" />
+
+
+#### 25ms 
+- delay between logic command and relay actuation is 5.00ms or 200Hz
+<img width="1260" height="968" alt="H2O ALD scope 25ms" src="https://github.com/user-attachments/assets/1739c16a-3c1a-4125-8ad4-75d71ed4a597" />
+
+
+#### 50ms 
+- delay between logic command and relay actuation is 4.80ms or 208Hz
 <img width="1073" height="796" alt="H2O delay test 50ms " src="https://github.com/user-attachments/assets/e7b599de-d7ba-4718-80f8-6bb829b3cb3c" />
 
 

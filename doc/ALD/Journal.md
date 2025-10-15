@@ -24,7 +24,7 @@ At 10ms the wave form is also the same for 50ms (500Hz) - 2.0ms
 Time elapsed between the start of the bounce and the end of the bounce is 49.4 ms?!
 - 2.0ms wave form -> 500Hz frequency 
 
-
+## Task for 20251012
 ### Latency loaded isolated TMA code test - auto/+width measurment 
 Probing NO (The Action) - How long after the command is given does the valve actually get power?
 <img width="1279" height="620" alt="Probing NO (The Action)" src="https://github.com/user-attachments/assets/a40385bc-3c30-42b2-947f-72dc2bae5bbe" />
@@ -36,7 +36,7 @@ Measured the time delay between the Arduino sending the command (the rising edge
 Probing IN4 (The Command) - Is the command from the Arduino getting to the relay with the correct timing?
 <img width="1293" height="638" alt="Probing IN4 Command" src="https://github.com/user-attachments/assets/27afa9e2-43ac-42bb-9413-ec40c66bef70" />
 
-
+## Task for 20251011
 ### Isolated TMA code test - auto/+width measurment 
 - The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
 <img width="855" height="420" alt="Auto TMA Isolated +W" src="https://github.com/user-attachments/assets/aa83d7ee-bac4-4f87-af0e-f9ede09d6d50" />

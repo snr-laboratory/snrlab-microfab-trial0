@@ -22,6 +22,11 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 ## Task for 20251015
 doc/ALD/Journal.md
 
+1. Characterize All Critical Valves
+- Connect scope to each output (IN_H2O_ALD, IN_PURGE, etc.) and measure its specific actuation delay.
+- Create a complete timing profile for the hardware.
+- Correct for the delay in code. To achieve a true 50 ms mechanical opening for the TMA valve, adjust its constant: const unsigned long TMA_PULSE_MS = 54.48; // 50ms desired + 4.48ms delay then re-measure to confirm the result.
+
 Yesterday, after connecting a 24 V solenoid skinner valve I was able to observe a different behavior. The oscillations are gone but still some unstable behavior in the blue wave form (probe 2) presists at the inital triggering of the valve.
 
 I need to investigate whether this is a case of inrush current leading to micro-welding which leads to the observed intial dip and then gradual rise until it becomes stable. Not sure why we see the second dip, but it could also be that if the oscillations are being suppressed by the inductive load, then the sticking of the relay armature is finally being released and we see that in the dip. If this is the case, could this suppression of the "bounce" by the inductive load present issues later on (eg long run periods cause failure of the mechanical relay or the armature not releasing and staying stuck?). 

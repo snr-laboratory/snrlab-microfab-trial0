@@ -24,21 +24,33 @@
 
 ### H2O ALD Test Code
 #include <Arduino.h>
+
 // Minimal Test Sketch for Pin 3 Timing Verification 
+
 #define IN_H2O_ALD 3 
+
 const unsigned long H2O_PULSE_MS = 50;
 
 void setup() { 
+
   pinMode(IN_H2O_ALD, OUTPUT); 
+  
   Serial.begin(115200); 
+  
   Serial.println(">>> Minimal H2O pulse test running <<<"); 
+  
 }
 
 void loop() { 
+
   digitalWrite(IN_H2O_ALD, HIGH);   // Set pin 3 HIGH for 50 ms 
+  
   delay(H2O_PULSE_MS);              // Pulse duration (50 ms) 
+  
   digitalWrite(IN_H2O_ALD, LOW);    // Set pin 3 LOW 
+  
   delay(500);                       // 0.5 s pause (for visibility) 
+  
   }
 
 
@@ -140,20 +152,31 @@ Probing IN4 (The Command) - Is the command from the Arduino getting to the relay
 #include <Arduino.h>
 
 // Minimal Test Sketch for Pin 4 Timing Verification
+
 #define IN_TMA_ALD 4
+
 const unsigned long TMA_PULSE_MS = 50;
 
 void setup() {
+
   pinMode(IN_TMA_ALD, OUTPUT);
+  
   Serial.begin(115200);
+  
   Serial.println(">>> Minimal TMA pulse test running <<<");
+  
 }
 
 void loop() {
+
   digitalWrite(IN_TMA_ALD, HIGH);   // Set pin 4 HIGH for 50 ms
+  
   delay(TMA_PULSE_MS);              // Pulse duration (50 ms)
+  
   digitalWrite(IN_TMA_ALD, LOW);    // Set pin 4 LOW
+  
   delay(500);                       // 0.5 s pause (for visibility)
+  
 }
 
 

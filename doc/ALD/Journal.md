@@ -1,10 +1,178 @@
 ## Task for 20251015
+### TMA SV scope
+#### 10ms 
+
+The actuation delay 5.84ms or 171Hz. 
+
+<img width="867" height="644" alt="Screenshot 2025-10-15 at 8 53 09 PM" src="https://github.com/user-attachments/assets/c287c4e6-f5e9-42ef-9773-303bd36ee6f1" />
+
+From logic edge to acutation edge the difference is 4.48ms or 223Hz.
+
+<img width="945" height="709" alt="Screenshot 2025-10-15 at 8 53 17 PM" src="https://github.com/user-attachments/assets/9379d091-7296-4b2c-baa3-5754b8a2f97d" />
+
+#### 50ms 
+
+The actuation delay 6.80ms or 147Hz. 
+
+<img width="804" height="606" alt="Screenshot 2025-10-15 at 8 58 28 PM" src="https://github.com/user-attachments/assets/ac8f426f-c1a7-4226-a095-44d4e472c30d" />
+
+From logic edge to acutation edge the difference is 4.40ms or 227Hz.
+
+<img width="930" height="695" alt="Screenshot 2025-10-15 at 8 58 24 PM" src="https://github.com/user-attachments/assets/22bdd8bd-aa2a-4bae-bfe7-242d7d9d2384" />
+
+
+#include <Arduino.h>
+
+// Minimal Test Sketch for Pin 7 Timing Verification 
+
+#define TMA_SV 7 
+
+const unsigned long TMA_MS = 10;
+
+void setup() { 
+
+  pinMode(TMA_SV, OUTPUT); 
+  
+  Serial.begin(115200); 
+  
+  Serial.println(">>> Minimal TMA SV test running <<<"); 
+  
+}
+
+void loop() { 
+
+  digitalWrite(TMA_SV, HIGH); // Set pin 7 HIGH for 10 ms 
+  
+  delay(TMA_MS); // Pulse duration (10 ms) 
+  
+  digitalWrite(TMA_SV, LOW); // Set pin 7 LOW 
+  
+  delay(500); // 0.5 s pause (for visibility) 
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### H20 SV scope
+
+#### 10ms 
+
+The actuation delay 6.08ms or 164Hz. 
+
+<img width="878" height="658" alt="Screenshot 2025-10-15 at 8 42 33 PM" src="https://github.com/user-attachments/assets/2cb9b3a7-02dd-48cd-820c-0cc16943bcc2" />
+
+From logic edge to acutation edge the difference is 4.56ms or 219Hz.
+
+<img width="877" height="657" alt="Screenshot 2025-10-15 at 8 42 27 PM" src="https://github.com/user-attachments/assets/a4a0e5fb-fb66-45bc-9421-f8ef651e085d" />
+
+
+#### 50ms 
+
+The actuation delay 6.80ms or 147Hz. 
+
+<img width="923" height="696" alt="Screenshot 2025-10-15 at 8 37 54 PM" src="https://github.com/user-attachments/assets/776b6dc0-abce-4d2b-a3e7-17a9cf6dd20e" />
+
+From logic edge to acutation edge the difference is 4.40ms or 227Hz.
+
+<img width="937" height="708" alt="Screenshot 2025-10-15 at 8 38 00 PM" src="https://github.com/user-attachments/assets/9f5fa488-974a-4371-94ad-c0ac8dd9b7a9" />
+
+
+#include <Arduino.h>
+
+// Minimal Test Sketch for Pin 6 Timing Verification 
+
+#define H2O_SV 6 
+
+const unsigned long H2O_MS = 50;
+
+void setup() { 
+
+  pinMode(H2O_SV, OUTPUT);
+  
+  Serial.begin(115200);
+  
+  Serial.println(">>> Minimal H2O SV test running <<<");
+  
+}
+
+void loop() { 
+
+  digitalWrite(H2O_SV, HIGH); // Set pin 6 HIGH for 50 ms 
+  
+  delay(H2O_MS); // Pulse duration (50 ms) 
+  
+  digitalWrite(H2O_SV, LOW); // Set pin 6 LOW 
+  
+  delay(500); // 0.5 s pause (for visibility) 
+  
+  }
+
+### N2 purge scope
+#### 10ms 
+
+The actuation delay 5.76ms or 174Hz. 
+
+<img width="833" height="637" alt="actual delay" src="https://github.com/user-attachments/assets/3fbee96d-fe86-4273-bdd2-91a06b6a6857" />
+
+From logic edge to acutation edge the difference is 4.88ms or 205Hz.
+
+<img width="927" height="704" alt="Screenshot 2025-10-15 at 8 07 31 PM" src="https://github.com/user-attachments/assets/c0efd7c5-9a88-41fc-b3d2-602fae336bc1" />
+
+#### 50ms 
+
+The actuation delay 6.40ms or 156Hz. 
+
+<img width="928" height="702" alt="Screenshot 2025-10-15 at 8 13 18 PM" src="https://github.com/user-attachments/assets/1e57edb2-64c6-45f7-ba3a-ca544634e655" />
+
+From logic edge to acutation edge the difference is 4.80ms or 208Hz.
+
+<img width="741" height="575" alt="Screenshot 2025-10-15 at 8 13 13 PM" src="https://github.com/user-attachments/assets/32b5b67c-ed79-434c-b02a-26816ef6debc" />
+
+#include <Arduino.h>
+
+// Minimal Test Sketch for Pin 5 Timing Verification 
+
+#define IN_PURGE 5 
+
+const unsigned long PURGE_MS = 10;
+
+void setup() { 
+
+  pinMode(IN_PURGE, OUTPUT); 
+  
+  Serial.begin(115200); 
+  
+  Serial.println(">>> Minimal Purge test running <<<"); 
+  
+}
+
+void loop() { 
+
+  digitalWrite(IN_PURGE, HIGH); // Set pin 5 HIGH for 10 ms 
+  
+  delay(PURGE_MS); // Pulse duration (10 ms) 
+  
+  digitalWrite(IN_PURGE, LOW); // Set pin 5 LOW 
+  
+  delay(500); // 0.5 s pause (for visibility) 
+  
+  }
 
 
 ### Repeat of TMA 50ms
 The slow rise time once the actuation has been triggered is what we need to take into account and add back into the pulse time code in order to achieve the desired amount of dosing. The actutation or the valve opening is not the exact 50ms we would like but instead, due to the inductor resisting the instantaneous current, it is less and we must add that delay into the 50ms command time:
-
-
 #### 10ms  
 
 The actuation delay 5.60ms or 179Hz. 
@@ -26,7 +194,6 @@ From logic edge to acutation edge the difference is 4.80ms or 208Hz.
 
 
 ### H2O ALD scope
-
 #### 10ms
 - delay between logic command and relay actuation is 5.12ms or 195Hz
 <img width="1165" height="866" alt="H2O ALD scope 10ms" src="https://github.com/user-attachments/assets/09bfdd22-fcf3-4eb1-a45f-2ee20ffeeda2" />
@@ -220,26 +387,44 @@ void loop() {
 #include <Arduino.h>
 
 // -------- Pin mapping (Arduino Mega digital pins) --------
+
 #define IN_TMA_SV   7   // IN1: TMA safety/sequence valve
+
 #define IN_H2O_SV   6   // IN2: H2O safety/sequence valve
+
 #define IN_PURGE    5   // IN3: N2 purge valve
+
 #define IN_TMA_ALD  4   // IN4: TMA ALD pulse valve
+
 #define IN_H2O_ALD  3   // IN5: H2O ALD pulse valve
 
+
 // -------- Logic polarity --------
+
 // Set to 1 if your board is ACTIVE-LOW (LOW = ON, HIGH = OFF).
+
 // Set to 0 if ACTIVE-HIGH (HIGH = ON, LOW = OFF).
+
 #define ACTIVE_LOW  1
 
+
 inline void valveOn(uint8_t pin){ digitalWrite(pin, ACTIVE_LOW ? LOW  : HIGH); }
+
 inline void valveOff(uint8_t pin){ digitalWrite(pin, ACTIVE_LOW ? HIGH : LOW ); }
 
+
 // -------- Timing (milliseconds) --------
+
 const unsigned long PURGE_START_MS = 5000; // Step 1: initial N2 purge: 5 s
+
 const unsigned long PURGE_MS       = 3000; // Steps 3 & 5: 3 s
+
 const unsigned long SV_SETTLE_MS   = 500;   // 0.5 s line settle before ALD pulse
+
 const unsigned long TMA_PULSE_MS   = 50;    // TMA 50 ms pulse
+
 const unsigned long H2O_PULSE_MS   = 25;    // H2O 25 ms pulse
+
 
 void allValvesOff() {
   valveOff(IN_TMA_SV);

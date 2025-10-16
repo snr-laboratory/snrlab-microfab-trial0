@@ -1,7 +1,28 @@
 ## Task for 20251015
 
 
+### Repeat of TMA 50ms
+The slow rise time once the actuation has been triggered is what we need to take into account and add back into the pulse time code in order to achieve the desired amount of dosing. The actutation or the valve opening is not the exact 50ms we would like but instead, due to the inductor resisting the instantaneous current, it is less and we must add that delay into the 50ms command time:
 
+
+#### 10ms  
+
+The actuation delay 5.60ms or 179Hz. 
+
+<img width="926" height="706" alt="10ms TMA actual" src="https://github.com/user-attachments/assets/e4f49fd1-13f1-4795-8182-97fb908e223c" />
+
+From logic edge to acutation edge the difference is 4.40ms or 227Hz. 
+
+<img width="871" height="646" alt="Screenshot 2025-10-15 at 7 43 05 PM" src="https://github.com/user-attachments/assets/0ee1d2db-1128-4b44-950a-146d73623c3b" />
+
+#### 50ms
+The actuation delay is the slow rise time which is 6.40ms or 156Hz.
+
+<img width="933" height="703" alt="50ms TMA repeat actual delay " src="https://github.com/user-attachments/assets/b029d97d-1f57-4157-ab84-b8ba7416b6f4" />
+
+From logic edge to acutation edge the difference is 4.80ms or 208Hz. 
+
+<img width="805" height="620" alt="50ms repeat TMA delay" src="https://github.com/user-attachments/assets/e9ad4c85-7cdd-4b4a-b189-f0d1e8c6cf87" />
 
 
 ### H2O ALD scope

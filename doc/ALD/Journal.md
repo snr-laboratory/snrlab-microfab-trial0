@@ -1,3 +1,26 @@
+## Task for 20251016
+
+| Slow Rise Delay | 10ms     | 50ms |
+|-----------------|----------|------|
+|TMA ALD          |5.60      |6.40  |
+|H2O ALD          |5.68      |6.16  |
+|TMA SV           |5.84      |6.80  |
+|H2O SV           |6.08      |6.80  |
+|N2  SV           |5.76      |6.40  |
+
+### The relay signal goes low, but a slow rise delay occurs before reaching a steady state.
+
+
+| Command to Actuation delay | 10ms     | 50ms |
+|----------------------------|----------|------|
+|TMA ALD                     |4.40      |4.80  |
+|H2O ALD                     |5.04      |5.04  |
+|TMA SV                      |4.48      |4.40  |
+|H2O SV                      |4.56      |4.40  |
+|N2  SV                      |4.88      |4.80  |
+
+### The logic signal goes high, but nothing happens at the valve yet.
+
 ## Task for 20251015
 ### TMA SV scope
 #### 10ms 

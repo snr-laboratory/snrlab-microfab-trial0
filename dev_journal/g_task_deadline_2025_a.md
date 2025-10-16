@@ -18,6 +18,15 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate the timing of actuation meets the ALD requirements.
 - Demonstrate compliance to minimum electrical system standards.
 
+---
+## Task for 20251016
+1. Carefully analyze the results from 20251015
+2. Measure Turn-Off Delay - time it takes for valves to close
+- trigger settings to falling edge vs rising edge (Arduino pin going from high to low)   
+3. Correct code for any delays concerning open and close times
+4. A Two-Channel Sequence Measurement
+- Measure the actual time gap between one valve closing and the next one opening (TMA-to-Purge transition is the most critical). 
+
 --- 
 ## Task for 20251015
 doc/ALD/Journal.md

@@ -3,11 +3,15 @@
 ### IN5 inductive kickback measurement = 120us or 8.33kHz
 - Introduce flyback diode 1N4002
 - Also an inline 4A fuse on the +24vdc and +5vdc output to the terminal blocks would be good as well. 
+- First Event (Slow Rise) - Valve opening and energizing. Must be added to the code's pulse duration.
+- Second Event (Kickback) - Occurs after the dose is complete. Degrades relay contacts and causes unpredictable timing shifts over time. 
 
+---
 <img width="500" height="699" alt="Screenshot 2025-10-16 at 4 39 06 PM" src="https://github.com/user-attachments/assets/5d622718-d907-470a-ae38-b4c346e84eb9" />
 
 <img width="500" height="726" alt="Screenshot 2025-10-16 at 4 35 18 PM" src="https://github.com/user-attachments/assets/928af4ae-b534-4a90-88a3-5fb8e7a22475" />
 
+---
 
 | Rise Time       | 10ms     | 50ms |
 |-----------------|----------|------|

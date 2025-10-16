@@ -1,6 +1,15 @@
 ## Task for 20251016
 
-| Slow Rise Delay | 10ms     | 50ms |
+### IN5 inductive kickback measurement = 120us or 8.33kHz
+- Introduce flyback diode 1N4002
+- Also an inline 4A fuse on the +24vdc and +5vdc output to the terminal blocks would be good as well. 
+
+<img width="500" height="699" alt="Screenshot 2025-10-16 at 4 39 06 PM" src="https://github.com/user-attachments/assets/5d622718-d907-470a-ae38-b4c346e84eb9" />
+
+<img width="500" height="726" alt="Screenshot 2025-10-16 at 4 35 18 PM" src="https://github.com/user-attachments/assets/928af4ae-b534-4a90-88a3-5fb8e7a22475" />
+
+
+| Rise Time       | 10ms     | 50ms |
 |-----------------|----------|------|
 |TMA ALD          |5.60      |6.40  |
 |H2O ALD          |5.68      |6.16  |
@@ -8,10 +17,11 @@
 |H2O SV           |6.08      |6.80  |
 |N2  SV           |5.76      |6.40  |
 
-### The relay signal goes low, but a slow rise delay occurs before reaching a steady state.
+### Rise time
+- The relay signal goes low, but a slow rise delay occurs before reaching a steady state.
+- The time it takes for the solenoid coil to energize and for the voltage to ramp up to a stable state after the relay has already made contact.
 
-
-| Command to Actuation delay | 10ms     | 50ms |
+| Command to Actuation Delay | 10ms     | 50ms |
 |----------------------------|----------|------|
 |TMA ALD                     |4.40      |4.80  |
 |H2O ALD                     |5.04      |5.04  |
@@ -20,6 +30,7 @@
 |N2  SV                      |4.88      |4.80  |
 
 ### The logic signal goes high, but nothing happens at the valve yet.
+- actuation latency: the delay between a command being sent and the physical action occurring
 
 ## Task for 20251015
 ### TMA SV scope

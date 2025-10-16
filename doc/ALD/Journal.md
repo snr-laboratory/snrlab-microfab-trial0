@@ -2,21 +2,21 @@
 ### TMA SV scope
 #### 10ms 
 
-The actuation delay 5.84ms or 171Hz. 
+#### The actuation delay 5.84ms or 171Hz. 
 
 <img width="867" height="644" alt="Screenshot 2025-10-15 at 8 53 09 PM" src="https://github.com/user-attachments/assets/c287c4e6-f5e9-42ef-9773-303bd36ee6f1" />
 
-From logic edge to acutation edge the difference is 4.48ms or 223Hz.
+#### From logic edge to acutation edge the difference is 4.48ms or 223Hz.
 
 <img width="945" height="709" alt="Screenshot 2025-10-15 at 8 53 17 PM" src="https://github.com/user-attachments/assets/9379d091-7296-4b2c-baa3-5754b8a2f97d" />
 
 #### 50ms 
 
-The actuation delay 6.80ms or 147Hz. 
+#### The actuation delay 6.80ms or 147Hz. 
 
 <img width="804" height="606" alt="Screenshot 2025-10-15 at 8 58 28 PM" src="https://github.com/user-attachments/assets/ac8f426f-c1a7-4226-a095-44d4e472c30d" />
 
-From logic edge to acutation edge the difference is 4.40ms or 227Hz.
+#### From logic edge to acutation edge the difference is 4.40ms or 227Hz.
 
 <img width="930" height="695" alt="Screenshot 2025-10-15 at 8 58 24 PM" src="https://github.com/user-attachments/assets/22bdd8bd-aa2a-4bae-bfe7-242d7d9d2384" />
 
@@ -52,39 +52,26 @@ void loop() {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### H20 SV scope
 
 #### 10ms 
 
-The actuation delay 6.08ms or 164Hz. 
+#### The actuation delay 6.08ms or 164Hz. 
 
 <img width="878" height="658" alt="Screenshot 2025-10-15 at 8 42 33 PM" src="https://github.com/user-attachments/assets/2cb9b3a7-02dd-48cd-820c-0cc16943bcc2" />
 
-From logic edge to acutation edge the difference is 4.56ms or 219Hz.
+#### From logic edge to acutation edge the difference is 4.56ms or 219Hz.
 
 <img width="877" height="657" alt="Screenshot 2025-10-15 at 8 42 27 PM" src="https://github.com/user-attachments/assets/a4a0e5fb-fb66-45bc-9421-f8ef651e085d" />
 
 
 #### 50ms 
 
-The actuation delay 6.80ms or 147Hz. 
+#### The actuation delay 6.80ms or 147Hz. 
 
 <img width="923" height="696" alt="Screenshot 2025-10-15 at 8 37 54 PM" src="https://github.com/user-attachments/assets/776b6dc0-abce-4d2b-a3e7-17a9cf6dd20e" />
 
-From logic edge to acutation edge the difference is 4.40ms or 227Hz.
+#### From logic edge to acutation edge the difference is 4.40ms or 227Hz.
 
 <img width="937" height="708" alt="Screenshot 2025-10-15 at 8 38 00 PM" src="https://github.com/user-attachments/assets/9f5fa488-974a-4371-94ad-c0ac8dd9b7a9" />
 
@@ -122,21 +109,21 @@ void loop() {
 ### N2 purge scope
 #### 10ms 
 
-The actuation delay 5.76ms or 174Hz. 
+#### The actuation delay 5.76ms or 174Hz. 
 
 <img width="833" height="637" alt="actual delay" src="https://github.com/user-attachments/assets/3fbee96d-fe86-4273-bdd2-91a06b6a6857" />
 
-From logic edge to acutation edge the difference is 4.88ms or 205Hz.
+#### From logic edge to acutation edge the difference is 4.88ms or 205Hz.
 
 <img width="927" height="704" alt="Screenshot 2025-10-15 at 8 07 31 PM" src="https://github.com/user-attachments/assets/c0efd7c5-9a88-41fc-b3d2-602fae336bc1" />
 
 #### 50ms 
 
-The actuation delay 6.40ms or 156Hz. 
+#### The actuation delay 6.40ms or 156Hz. 
 
 <img width="928" height="702" alt="Screenshot 2025-10-15 at 8 13 18 PM" src="https://github.com/user-attachments/assets/1e57edb2-64c6-45f7-ba3a-ca544634e655" />
 
-From logic edge to acutation edge the difference is 4.80ms or 208Hz.
+#### From logic edge to acutation edge the difference is 4.80ms or 208Hz.
 
 <img width="741" height="575" alt="Screenshot 2025-10-15 at 8 13 13 PM" src="https://github.com/user-attachments/assets/32b5b67c-ed79-434c-b02a-26816ef6debc" />
 
@@ -175,37 +162,37 @@ void loop() {
 The slow rise time once the actuation has been triggered is what we need to take into account and add back into the pulse time code in order to achieve the desired amount of dosing. The actutation or the valve opening is not the exact 50ms we would like but instead, due to the inductor resisting the instantaneous current, it is less and we must add that delay into the 50ms command time:
 #### 10ms  
 
-The actuation delay 5.60ms or 179Hz. 
+#### The actuation delay 5.60ms or 179Hz. 
 
 <img width="926" height="706" alt="10ms TMA actual" src="https://github.com/user-attachments/assets/e4f49fd1-13f1-4795-8182-97fb908e223c" />
 
-From logic edge to acutation edge the difference is 4.40ms or 227Hz. 
+#### From logic edge to acutation edge the difference is 4.40ms or 227Hz. 
 
 <img width="871" height="646" alt="Screenshot 2025-10-15 at 7 43 05 PM" src="https://github.com/user-attachments/assets/0ee1d2db-1128-4b44-950a-146d73623c3b" />
 
 #### 50ms
-The actuation delay is the slow rise time which is 6.40ms or 156Hz.
+#### The actuation delay is the slow rise time which is 6.40ms or 156Hz.
 
 <img width="933" height="703" alt="50ms TMA repeat actual delay " src="https://github.com/user-attachments/assets/b029d97d-1f57-4157-ab84-b8ba7416b6f4" />
 
-From logic edge to acutation edge the difference is 4.80ms or 208Hz. 
+#### From logic edge to acutation edge the difference is 4.80ms or 208Hz. 
 
 <img width="805" height="620" alt="50ms repeat TMA delay" src="https://github.com/user-attachments/assets/e9ad4c85-7cdd-4b4a-b189-f0d1e8c6cf87" />
 
 
 ### H2O ALD scope
 #### 10ms
-- delay between logic command and relay actuation is 5.12ms or 195Hz
+#### delay between logic command and relay actuation is 5.12ms or 195Hz
 <img width="1165" height="866" alt="H2O ALD scope 10ms" src="https://github.com/user-attachments/assets/09bfdd22-fcf3-4eb1-a45f-2ee20ffeeda2" />
 
 
 #### 25ms 
-- delay between logic command and relay actuation is 5.00ms or 200Hz
+#### delay between logic command and relay actuation is 5.00ms or 200Hz
 <img width="1260" height="968" alt="H2O ALD scope 25ms" src="https://github.com/user-attachments/assets/1739c16a-3c1a-4125-8ad4-75d71ed4a597" />
 
 
 #### 50ms 
-- delay between logic command and relay actuation is 4.80ms or 208Hz
+#### delay between logic command and relay actuation is 4.80ms or 208Hz
 <img width="1073" height="796" alt="H2O delay test 50ms " src="https://github.com/user-attachments/assets/e7b599de-d7ba-4718-80f8-6bb829b3cb3c" />
 
 

@@ -19,6 +19,11 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 ---
+## Task for 20251017
+1. Refine Arduino code to reflect actuation latency and rise time
+2. Order items in need of purchase
+
+---
 ## Task for 20251016
 **I was under the impression that the rise time or voltage sag was an effect that would impact the dosing, but the first dip we see means the valve is open but stablizing. It is the inductive kickback at the end that is the real issue. We want the valve to completely close or this will impact the desired dosing if it does not shut off when instructed. To mitigate this effect we could use a flyback diode across the solenoid valve connections as close as possible to the solenoid in order to achieve proper ALD timing requirements. This will prevent the valve from opening and remain closed.**  
 

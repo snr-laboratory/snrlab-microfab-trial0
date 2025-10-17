@@ -2,6 +2,8 @@
 
 ### IN5 inductive kickback measurement = 120us or 8.33kHz
 - Introduce flyback diode 1N4002
+  - absorb the damaging voltage spike created when turning off the solenoid valves.
+  - prevent inconsistencies in timing and reduce premature failure of contacts of mechanical relays.
 - Also an inline 4A fuse on the +24vdc and +5vdc output to the terminal blocks would be good as well. 
 - First Event (Slow Rise) - Valve opening and energizing. Must be added to the code's pulse duration.
 - Second Event (Kickback) - Occurs after the dose is complete. Degrades relay contacts and causes unpredictable timing shifts over time. 

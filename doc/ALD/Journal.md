@@ -1,5 +1,102 @@
-## Task for 20251016
+## Task for 20251017
+### Revised code (from original)
+#include <Arduino.h>
 
+// -------- Pin mapping (Arduino Mega digital pins) --------
+#define IN_TMA_SV 7
+#define IN_H2O_SV 6
+#define IN_PURGE 5
+#define IN_TMA_ALD 4
+#define IN_H2O_ALD 3
+
+// -------- Logic polarity --------
+#define ACTIVE_LOW 1 //
+inline void valveOn(uint8_t pin){ digitalWrite(pin, ACTIVE_LOW ? LOW : HIGH); }
+inline void valveOff(uint8_t pin){ digitalWrite(pin, ACTIVE_LOW ? HIGH : LOW ); }
+
+// -------- Valve Characterization Constants (Your Measured Data) ⏱️ --------
+// --- Turn-on Delays ---
+const float TMA_ALD_ON_LATENCY_MS = 4.80; // "Command to Actuation delay" for 50ms
+const float TMA_ALD_RISE_TIME_MS  = 6.40; // "Slow Rise Delay" for 50ms
+const float H2O_ALD_ON_LATENCY_MS = 5.04; // "Command to Actuation delay"
+const float H2O_ALD_RISE_TIME_MS  = 6.16; // "Slow Rise Delay" for 50ms
+
+// --- Turn-off Delays ---
+// !! PLACEHOLDERS !! To be measured after flyback diodes are installed.
+const float TMA_ALD_OFF_LATENCY_MS = 0.0;
+const float H2O_ALD_OFF_LATENCY_MS = 0.0;
+
+// -------- Desired Chemical Timing (Scientific Parameters) --------
+const unsigned long PURGE_START_MS = 5000;
+const unsigned long PURGE_MS = 3000;
+const unsigned long SV_SETTLE_MS = 500;
+const unsigned long TMA_DOSE_MS = 50; // The desired chemical exposure time
+const unsigned long H2O_DOSE_MS = 25; // The desired chemical exposure time
+
+// -------- Calculated Command Times (Timing Corrected for Hardware) --------
+const unsigned long TMA_PULSE_COMMAND_MS = TMA_DOSE_MS + TMA_ALD_ON_LATENCY_MS + TMA_ALD_RISE_TIME_MS;
+const unsigned long H2O_PULSE_COMMAND_MS = H2O_DOSE_MS + H2O_ALD_ON_LATENCY_MS + H2O_ALD_RISE_TIME_MS;
+
+
+void allValvesOff() {
+    valveOff(IN_TMA_SV); valveOff(IN_H2O_SV); valveOff(IN_PURGE);
+    valveOff(IN_TMA_ALD); valveOff(IN_H2O_ALD);
+}
+
+void setup() {
+    Serial.begin(115200);
+    pinMode(IN_TMA_SV, OUTPUT); pinMode(IN_H2O_SV, OUTPUT); pinMode(IN_PURGE, OUTPUT);
+    pinMode(IN_TMA_ALD, OUTPUT); pinMode(IN_H2O_ALD, OUTPUT);
+    allValvesOff();
+    Serial.println(F("ALD Demo: Corrected Timing"));
+}
+
+void loop() {
+    // ---- Step 1: Initial Purge ----
+    Serial.println(F("[Step 1] Purge ON"));
+    valveOn(IN_PURGE); delay(PURGE_START_MS); valveOff(IN_PURGE);
+
+    // ---- Step 2: TMA half-cycle ----
+    Serial.println(F("[Step 2] TMA SV OPEN"));
+    valveOn(IN_TMA_SV); delay(SV_SETTLE_MS);
+
+    // Use the CALCULATED command time to achieve the DESIRED dose time
+    Serial.print(F("[Step 2] TMA ALD PULSE (Command: "));
+    Serial.print(TMA_PULSE_COMMAND_MS); Serial.println(F(" ms)"));
+    valveOn(IN_TMA_ALD); delay(TMA_PULSE_COMMAND_MS); valveOff(IN_TMA_ALD);
+
+    delay(SV_SETTLE_MS);
+    Serial.println(F("[Step 2] TMA SV CLOSE"));
+    valveOff(IN_TMA_SV);
+
+    // ---- Step 3: Purge ----
+    Serial.println(F("[Step 3] Purge ON"));
+    valveOn(IN_PURGE); delay(PURGE_MS); valveOff(IN_PURGE);
+
+    // ---- Step 4: H2O half-cycle ----
+    Serial.println(F("[Step 4] H2O SV OPEN"));
+    valveOn(IN_H2O_SV); delay(SV_SETTLE_MS);
+
+    // Use the CALCULATED command time to achieve the DESIRED dose time
+    Serial.print(F("[Step 4] H2O ALD PULSE (Command: "));
+    Serial.print(H2O_PULSE_COMMAND_MS); Serial.println(F(" ms)"));
+    valveOn(IN_H2O_ALD); delay(H2O_PULSE_COMMAND_MS); valveOff(IN_H2O_ALD);
+
+    delay(SV_SETTLE_MS);
+    Serial.println(F("[Step 4] H2O SV CLOSE"));
+    valveOff(IN_H2O_SV);
+
+    // ---- Step 5: Final Purge ----
+    Serial.println(F("[Step 5] Purge ON"));
+    valveOn(IN_PURGE); delay(PURGE_MS); valveOff(IN_PURGE);
+
+    // ---- Step 6: Repeat ----
+    Serial.println(F("Cycle complete. Repeating...\n"));
+    allValvesOff();
+}
+
+
+## Task for 20251016
 ### IN5 inductive kickback measurement = 120us or 8.33kHz
 - Introduce flyback diode 1N4002
   - absorb the damaging voltage spike created when turning off the solenoid valves.
@@ -42,7 +139,7 @@
 ### TMA SV scope
 #### 10ms 
 
-#### The actuation delay 5.84ms or 171Hz. 
+#### The rise time is 5.84ms or 171Hz. 
 
 <img width="500" height="644" alt="Screenshot 2025-10-15 at 8 53 09 PM" src="https://github.com/user-attachments/assets/c287c4e6-f5e9-42ef-9773-303bd36ee6f1" />
 
@@ -52,7 +149,7 @@
 
 #### 50ms 
 
-#### The actuation delay 6.80ms or 147Hz. 
+#### The rise time is 6.80ms or 147Hz. 
 
 <img width="500" height="606" alt="Screenshot 2025-10-15 at 8 58 28 PM" src="https://github.com/user-attachments/assets/ac8f426f-c1a7-4226-a095-44d4e472c30d" />
 
@@ -93,10 +190,8 @@ void loop() {
 
 
 ### H20 SV scope
-
 #### 10ms 
-
-#### The actuation delay 6.08ms or 164Hz. 
+#### The  rise time is 6.08ms or 164Hz. 
 
 <img width="500" height="658" alt="Screenshot 2025-10-15 at 8 42 33 PM" src="https://github.com/user-attachments/assets/2cb9b3a7-02dd-48cd-820c-0cc16943bcc2" />
 
@@ -107,7 +202,7 @@ void loop() {
 
 #### 50ms 
 
-#### The actuation delay 6.80ms or 147Hz. 
+#### The rise time is 6.80ms or 147Hz. 
 
 <img width="500" height="696" alt="Screenshot 2025-10-15 at 8 37 54 PM" src="https://github.com/user-attachments/assets/776b6dc0-abce-4d2b-a3e7-17a9cf6dd20e" />
 
@@ -148,8 +243,7 @@ void loop() {
 
 ### N2 purge scope
 #### 10ms 
-
-#### The actuation delay 5.76ms or 174Hz. 
+#### The rise time is 5.76ms or 174Hz. 
 
 <img width="500" height="637" alt="actual delay" src="https://github.com/user-attachments/assets/3fbee96d-fe86-4273-bdd2-91a06b6a6857" />
 
@@ -158,8 +252,7 @@ void loop() {
 <img width="500" height="704" alt="Screenshot 2025-10-15 at 8 07 31 PM" src="https://github.com/user-attachments/assets/c0efd7c5-9a88-41fc-b3d2-602fae336bc1" />
 
 #### 50ms 
-
-#### The actuation delay 6.40ms or 156Hz. 
+#### The rise time is 6.40ms or 156Hz. 
 
 <img width="500" height="702" alt="Screenshot 2025-10-15 at 8 13 18 PM" src="https://github.com/user-attachments/assets/1e57edb2-64c6-45f7-ba3a-ca544634e655" />
 
@@ -201,8 +294,7 @@ void loop() {
 ### Repeat of TMA 50ms
 The slow rise time once the actuation has been triggered is what we need to take into account and add back into the pulse time code in order to achieve the desired amount of dosing. The actutation or the valve opening is not the exact 50ms we would like but instead, due to the inductor resisting the instantaneous current, it is less and we must add that delay into the 50ms command time:
 #### 10ms  
-
-#### The actuation delay 5.60ms or 179Hz. 
+#### The rise time is 5.60ms or 179Hz. 
 
 <img width="500" height="706" alt="10ms TMA actual" src="https://github.com/user-attachments/assets/e4f49fd1-13f1-4795-8182-97fb908e223c" />
 
@@ -211,7 +303,7 @@ The slow rise time once the actuation has been triggered is what we need to take
 <img width="500" height="646" alt="Screenshot 2025-10-15 at 7 43 05 PM" src="https://github.com/user-attachments/assets/0ee1d2db-1128-4b44-950a-146d73623c3b" />
 
 #### 50ms
-#### The actuation delay is the slow rise time which is 6.40ms or 156Hz.
+#### The slow rise time is 6.40ms or 156Hz.
 
 <img width="500" height="703" alt="50ms TMA repeat actual delay " src="https://github.com/user-attachments/assets/b029d97d-1f57-4157-ab84-b8ba7416b6f4" />
 

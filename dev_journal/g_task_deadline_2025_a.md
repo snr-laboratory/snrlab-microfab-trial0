@@ -19,6 +19,12 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 ---
+## Task for 20251020
+1. install flyback diodes
+2. measure the turn-off delay
+3. correct code
+   
+---
 ## Task for 20251017
 1. Refine Arduino code to reflect actuation latency and rise time
 2. Order items in need of purchase

@@ -1,3 +1,11 @@
+
+## Task for 20251020.21
+
+install flyback diodes
+measure the turn-off delay
+correct code
+
+
 ## Task for 20251017
 ### Revised code (from original)
 #include <Arduino.h>

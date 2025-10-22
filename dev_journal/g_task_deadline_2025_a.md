@@ -19,11 +19,14 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 ---
-## Task for 20251020
+## Task for 20251020-22
 1. install flyback diodes
-2. measure the turn-off delay
-3. correct code
-   
+- installation is not going well. I was able to correct the blue wave form, but the skinner solenoid valve was not audible - ie you couldnt hear it actuating.
+- Trying to fix this issue before measuring the turn-off delay
+     
+3. measure the turn-off delay (pending)
+4. correct code (pending)
+   a o
 ---
 ## Task for 20251017
 1. Refine Arduino code to reflect actuation latency and rise time

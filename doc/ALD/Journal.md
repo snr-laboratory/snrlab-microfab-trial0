@@ -1,7 +1,8 @@
 
-## Task for 20251020.21
+## Task for 20251020.21.22
 
 install flyback diodes
+- resolve issue with installation
 measure the turn-off delay
 correct code
 

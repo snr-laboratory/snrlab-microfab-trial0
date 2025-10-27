@@ -1,4 +1,38 @@
+## Task for 20251027
+Blue wave form measurments attempt 2: same setup as before. The black end of the diode (white strip on physical packaging) is labeled as anode and is connected to the GND wire (-). The silver or white strip of the diode (red strip on physical packaging) is connected to the NO wire (+).
 
+The wave form has noticeable changes, but the odd thing is that the solenoid valve stops actuating. You can hear it when you first turn on the power supply but then it goes away and you can also feel it is getting warm (the body of the SV).
+
+### Inductive kickback: 120us
+<img width="500" height="766" alt="blue wave form measurments attempt 2" src="https://github.com/user-attachments/assets/07dd85af-773b-415d-909e-9a5594fdb220" />
+
+### bwf 9.00ms
+<img width="500" height="637" alt="bwf 9ms" src="https://github.com/user-attachments/assets/ad997db8-ec8e-4663-841b-063526120d4f" />
+
+### ywf 10.0ms
+<img width="500" height="770" alt="Screenshot 2025-10-27 at 10 13 40 AM" src="https://github.com/user-attachments/assets/dfe44723-d622-4076-851b-b007c9452890" />
+
+### delay ywf to bwf 5 04ms
+<img width="500" height="674" alt="delay in ywf to bwf 5 04ms" src="https://github.com/user-attachments/assets/cc0b405d-3812-43b5-b069-e0492fcd5606" />
+
+
+### No flyback diode (attempt 1) 
+<img width="500" height="546" alt="no flyback" src="https://github.com/user-attachments/assets/81f98eca-eaff-4b4c-94fb-e5350c6a4d7b" />
+
+### Flyback diode installed yellow wave form measeurment at 10.1ms
+<img width="500" height="566" alt="Fdiode installed" src="https://github.com/user-attachments/assets/98efef5d-a1ce-45ea-b5f1-f7034848aa08" />
+
+### Flyback diode installed blue wave form measeurment at 9.12ms
+<img width="500" height="580" alt="Fdiode installed blue wf" src="https://github.com/user-attachments/assets/3fb2032f-6156-4d31-9305-ecfb405f772d" />
+
+### Flyback diode installed blue wave form measeurment zoomed in: 120us delta X
+<img width="500" height="567" alt="zoom in bwf delta x" src="https://github.com/user-attachments/assets/1a053e81-da85-4bc5-90ef-90d74ce7470d" />
+
+### Flyback diode installed blue wave form measeurment zoomed in: 112us delta X
+<img width="867" height="650" alt="bwf delta x 2" src="https://github.com/user-attachments/assets/b8d2d580-1cf3-4f06-9dd1-13eaf5428aa4" />
+
+
+---
 ## Task for 20251020.21.22
 
 install flyback diodes
@@ -6,7 +40,7 @@ install flyback diodes
 measure the turn-off delay
 correct code
 
-
+---
 ## Task for 20251017
 ### Revised code (from original)
 #include <Arduino.h>
@@ -104,7 +138,7 @@ void loop() {
     allValvesOff();
 }
 
-
+---
 ## Task for 20251016
 ### IN5 inductive kickback measurement = 120us or 8.33kHz
 - Introduce flyback diode 1N4002

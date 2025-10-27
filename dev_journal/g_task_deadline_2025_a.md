@@ -19,6 +19,10 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 ---
+## Task for 20251027
+Continuning to troubleshoot the flyback diode installation to rid the scope measurements of inductive kick back and account for the delays. Trying different channels and re-running the script.
+
+---
 ## Task for 20251020-22
 1. install flyback diodes
 - installation is not going well. I was able to correct the blue wave form, but the skinner solenoid valve was not audible - ie you couldnt hear it actuating.

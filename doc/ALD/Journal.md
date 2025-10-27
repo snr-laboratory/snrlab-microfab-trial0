@@ -1,4 +1,23 @@
 ## Task for 20251027
+
+### Relay board and code
+Relay is built to be Active-LOW (optocoupler to protect Arduino --> requires activating an LED - Active low). It will only turn ON when it receives a LOW signal.
+
+### New script ywf 10.0ms or 100Hz
+<img width="500" height="690" alt="new script" src="https://github.com/user-attachments/assets/e8e4aae0-2546-4187-8ca2-12ae68b0ea13" />
+
+### delay of ywf to bwf 4.32ms or 231Hz
+<img width="870" height="665" alt="ns delay of ywf to bwf" src="https://github.com/user-attachments/assets/b1c0ed18-9dca-4f0a-be57-6a1851167891" />
+
+### New script bwf 10.0ms or 100Hz
+<img width="887" height="676" alt="bwf 10 9ms or 91 9Hz" src="https://github.com/user-attachments/assets/3d754e37-66c8-454a-bb9d-e3e18ee07cd7" />
+
+### Zoom in of bwf 120us or 8.33kHz
+<img width="925" height="698" alt="120us ns" src="https://github.com/user-attachments/assets/e393194d-c8b5-47df-8fa1-4817b8651865" />
+
+### Zoom in of bwf 120us or 8.33kHz (#2)
+<img width="975" height="720" alt="120us ns bwf 2" src="https://github.com/user-attachments/assets/da56cbba-7d27-4350-9db8-e8a88ea3866c" />
+
 Blue wave form measurments attempt 2: same setup as before. The black end of the diode (white strip on physical packaging) is labeled as anode and is connected to the GND wire (-). The silver or white strip of the diode (red strip on physical packaging) is connected to the NO wire (+).
 
 The wave form has noticeable changes, but the odd thing is that the solenoid valve stops actuating. You can hear it when you first turn on the power supply but then it goes away and you can also feel it is getting warm (the body of the SV).

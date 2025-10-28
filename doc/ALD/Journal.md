@@ -23,6 +23,8 @@
 
 ## Task for 20251027
 
+* Spikes before stabilization is mechanical contact bounce. 4.32ms is the latency (the time it takes for the metal arm inside the relay to move). The spikes after that are the arm physically "bouncing" against its contact point (120us). 
+
 ### Relay board and code
 Relay is built to be Active-LOW (optocoupler to protect Arduino --> requires activating an LED - Active low). It will only turn ON when it receives a LOW signal.
 

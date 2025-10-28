@@ -1,3 +1,26 @@
+## Task for 20251028
+### new SV ywf 10.1ms or 99.2Hz
+<img width="500" height="781" alt="new SV ywf 10 1ms or 99 2Hz" src="https://github.com/user-attachments/assets/02ce9431-2394-453d-a326-18ecbcc2e681" />
+
+### new SV delay 4.40ms or 227Hz
+<img width="500" height="747" alt="new SV delay 4 40ms or 227Hz" src="https://github.com/user-attachments/assets/d98df009-0a1b-4a38-861f-31425bc5f9ed" />
+
+### new SV bwf 10.9ms or 91.9Hz
+<img width="500" height="726" alt="new SV bwf 10 9ms or 91 9Hz" src="https://github.com/user-attachments/assets/fe1ddee7-e005-4a61-95f2-10074276c350" />
+
+### new SV bwf spikes 112us or 8.93kHz
+<img width="500" height="723" alt="new SV bwf spikes 112us or 8 93kHz" src="https://github.com/user-attachments/assets/ab76104f-795b-4d52-8cb2-ca57eebc997a" />
+
+### ### new SV bwf spikes 120us or 8.33kHz
+<img width="500" height="643" alt="### new SV bwf spikes 120us or 8 33kHz" src="https://github.com/user-attachments/assets/71b299ce-40fe-4d0f-9532-1bca0f3af649" />
+
+
+### More on relay and commands
+- Relay board is Active-LOW because its hardware uses an optocoupler for isolation.
+- The optocoupler's internal LED is wired between the board's VCC (5V) and the Arduino's IN pin.
+- To activate the relay, the LED must light up. This only happens when the IN pin is pulled to LOW (0V), creating a voltage difference for current to flow.
+- This is a common and safer "fail-safe" design. If the Arduino crashes or reboots, its pins will default to a HIGH state, which keeps all your relays (pyrophoric TMA valves) safely OFF.
+
 ## Task for 20251027
 
 ### Relay board and code

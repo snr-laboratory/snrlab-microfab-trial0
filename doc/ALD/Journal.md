@@ -1,4 +1,7 @@
 ## Task for 20251028
+### spike time 400us
+<img width="500" height="671" alt="spike total time 400us" src="https://github.com/user-attachments/assets/555e7f21-6c83-4ec7-a4fa-3608612bbd95" />
+
 ### new SV ywf 10.1ms or 99.2Hz
 <img width="500" height="781" alt="new SV ywf 10 1ms or 99 2Hz" src="https://github.com/user-attachments/assets/02ce9431-2394-453d-a326-18ecbcc2e681" />
 

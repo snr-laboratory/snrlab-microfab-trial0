@@ -1,3 +1,15 @@
+## Task for 20251029
+### SV data collection 
+
+<img width="730" height="277" alt="avg sv runs" src="https://github.com/user-attachments/assets/05516fb4-84e4-4ced-b408-f5677a4a1a98" />
+
+<img width="730" height="536" alt="SV run 1" src="https://github.com/user-attachments/assets/9101c5fc-bb2f-4262-867a-7953becb5bff" />
+
+<img width="730" height="250" alt="sv run 2" src="https://github.com/user-attachments/assets/d959428a-b179-4dac-93fe-1657fe7b4a78" />
+
+<img width="730" height="275" alt="sv run 3" src="https://github.com/user-attachments/assets/e33ac04f-6ca5-41f0-9957-083b4e4c3309" />
+
+
 ## Task for 20251028
 ### spike time 400us
 <img width="500" height="671" alt="spike total time 400us" src="https://github.com/user-attachments/assets/555e7f21-6c83-4ec7-a4fa-3608612bbd95" />

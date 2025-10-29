@@ -19,6 +19,14 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 ---
+## Task for 202510228/29
+Flyback diode installation is resolved and now actual solenoid valves alond with a skinner sv have been connected to relay and are each being tested individually. 
+
+Results show:
+- turn-on latencies (4.08ms - 4.88ms) and turn-off latencies (4.64ms - 5.17ms) are relatively consistent across the different valves.
+- The bounce duration varies a bit more (240µs - 453µs), but it confirms that all mechanical relays exhibit this behavior. IN1, IN3, and IN5 show significantly longer bounce times (~400µs+) than IN2 and IN4 (~240µs).
+
+---
 ## Task for 20251027
 Continuning to troubleshoot the flyback diode installation to rid the scope measurements of inductive kick back and account for the delays. Trying different channels and re-running the script.
 

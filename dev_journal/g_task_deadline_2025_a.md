@@ -19,8 +19,8 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 ---
-## Task for 202510228/29
-Flyback diode installation is resolved and now actual solenoid valves alond with a skinner sv have been connected to relay and are each being tested individually. 
+## Task for 20251028/29
+Flyback diode installation is resolved and now actual solenoid valves along with a skinner sv have been connected to relay and are each being tested individually. 
 
 Results show:
 - turn-on latencies (4.08ms - 4.88ms) and turn-off latencies (4.64ms - 5.17ms) are relatively consistent across the different valves.

@@ -3,7 +3,22 @@ IN1, IN2, IN3 (The "Sequence Valves"): These are safety/sequence solenoid valves
 
 IN4, IN5 (The "Pulse Valves"): These are ALD3 valves. These are fast, precise valves that perform the actual microsecond-to-millisecond pulsing for the ALD recipe.
 
+### Proceeding to the dual-channel test
+To demonstrate controller's ability to manage sequences accurately.
+  - Sequence control: Proves software can correctly control multiple valves turning on and off relative to each other.
+  - Channel delay: Measure the actual time gap between one dummy valve closing and the next opening, accounting for the measured latencies of these specific valves (inter-pulse timing).
 
+### Old code single-valve test 
+Purpose: To test the characteristics of one single valve in isolation.
+- Logic: Active-LOW. It correctly uses LOW to turn the valve ON and HIGH to turn it OFF.
+(word doc 20251029 Data Collection for SVs contains the code)
+
+### New Code: dual-channel test (IN4 - TMA ALD vs. IN3 - N2 Purge) 
+
+
+
+
+---
 ## Task for 20251029
 
 ### SV data collection 
@@ -16,7 +31,7 @@ IN4, IN5 (The "Pulse Valves"): These are ALD3 valves. These are fast, precise va
 
 <img width="730" height="275" alt="sv run 3" src="https://github.com/user-attachments/assets/e33ac04f-6ca5-41f0-9957-083b4e4c3309" />
 
-
+---
 ## Task for 20251028
 ### spike time 400us
 <img width="500" height="671" alt="spike total time 400us" src="https://github.com/user-attachments/assets/555e7f21-6c83-4ec7-a4fa-3608612bbd95" />
@@ -43,9 +58,10 @@ IN4, IN5 (The "Pulse Valves"): These are ALD3 valves. These are fast, precise va
 - To activate the relay, the LED must light up. This only happens when the IN pin is pulled to LOW (0V), creating a voltage difference for current to flow.
 - This is a common and safer "fail-safe" design. If the Arduino crashes or reboots, its pins will default to a HIGH state, which keeps all your relays (pyrophoric TMA valves) safely OFF.
 
+---
 ## Task for 20251027
 
-* Spikes before stabilization is mechanical contact bounce. 4.32ms is the latency (the time it takes for the metal arm inside the relay to move). The spikes after that are the arm physically "bouncing" against its contact point (120us). 
+**Spikes before stabilization is mechanical contact bounce. 4.32ms is the latency (the time it takes for the metal arm inside the relay to move). The spikes after that are the arm physically "bouncing" against its contact point (120us).**
 
 ### Relay board and code
 Relay is built to be Active-LOW (optocoupler to protect Arduino --> requires activating an LED - Active low). It will only turn ON when it receives a LOW signal.

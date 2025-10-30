@@ -13,7 +13,7 @@ Purpose: To test the characteristics of one single valve in isolation.
 - Logic: Active-LOW. It correctly uses LOW to turn the valve ON and HIGH to turn it OFF.
 (word doc 20251029 Data Collection for SVs contains the code)
 
-### New Code: dual-channel test (IN4 - TMA ALD vs. IN3 - N2 Purge) 
+### New code outline
 Test script to mimic real sequence:
 1. Open IN1 (Safety).
 2. Wait for the line to "settle" (SV_SETTLE_MS).
@@ -24,15 +24,102 @@ Test script to mimic real sequence:
    - Ensures the TMA pulse and the N₂ Purge pulse are cleanly separated and never happen at the same time.
 8. Open IN3 (Purge).
 
-### TMA safety vs. TMA pulse test
+### TMA safety vs. TMA pulse test 1 procedure
 Checks that the safety valve (IN1) is open and stable before the pulse valve (IN4) fires.
 - CH1 (Yellow): Probe tip on NO terminal for IN1 (Pin 7). Ground on 24V GND.
 - CH2 (Blue): Probe tip on NO terminal for IN4 (Pin 4). Ground on 24V GND.
 
-### TMA pulse vs. purge test
+### TMA pulse vs. purge test 2 procedure 
 Checks the gap between the end of the TMA dose and the start of the purge.
 - CH1 (Yellow): Probe tip on NO terminal for IN4 (Pin 4). Ground on 24V GND.
 - CH2 (Blue): Probe tip on NO terminal for IN3 (Pin 5). Ground on 24V GND.
+
+### 3-Valve sequence test code
+This script mimics the real ALD sequence: it opens the safety valve (IN1), waits for the line to settle, fires the pulse valve (IN4), closes both, and then fires the purge valve (IN3).
+
+This script uses Active-LOW logic (LOW=ON, HIGH=OFF) to run a safe ALD sequence:
+1. IN1_TMA_SV (Safety) turns ON.
+2. The code waits 500ms (SV_SETTLE_MS) to let the precursor line pressurize.
+3. IN4_TMA_ALD (Pulse) turns ON for 50ms, injecting the dose.
+4. Both the pulse valve (IN4) and the safety valve (IN1) are turned OFF.
+5. The code waits 50ms (PURGE_GAP_MS) as a safety buffer.
+6. IN3_N2_PURGE (Purge) turns ON to clean the chamber.
+7. The purge valve turns OFF, and the cycle repeats.
+
+### Test 1 (Settle Time)
+- measure when the TMA SV (IN1) fires and then how long until the TMA ALD valve (IN4) fires - the time between that and it should match what we set based on the code.
+- verifying that the software delay(SV_SETTLE_MS) command is executed correctly.
+- (ΔX) should be 500ms 
+
+
+### Test 2 (Purge Gap)
+- measure the gap time ie the time after IN1 and IN4 close till when the IN3 opens
+- from the moment the dose stops (IN4 - TMA ALD closes) to the moment the purge starts (IN3 - N2 Purge opens). This is the "dead time" that prevents precursor mixing.
+- expected Result: (ΔX) should be PURGE_GAP_MS (50ms) plus the turn-on latency of the purge valve (IN3, which was ~4.18ms).
+- expected gap of ~54.18ms.
+
+### New code
+#include <Arduino.h>
+
+// --- Pin Definitions ---
+// IN1 - TMA SV (Safety/Sequence Valve)
+#define IN1_TMA_SV   7 
+// IN4 - TMA ALD (Pulse Valve Dummy)
+#define IN4_TMA_ALD  4 
+// IN3 - N2 Purge (Purge Valve)
+#define IN3_N2_PURGE 5 
+
+// --- Desired Timings (Recipe) ---
+// Time for gas to fill the line between IN1 and IN4
+const unsigned long SV_SETTLE_MS = 500; 
+// The desired "chemical dose" time
+const unsigned long TMA_PULSE_MS = 50;  
+// The safety gap between TMA pulse ending and Purge starting
+const unsigned long PURGE_GAP_MS = 50;  
+
+void setup() {
+  pinMode(IN1_TMA_SV, OUTPUT);
+  pinMode(IN4_TMA_ALD, OUTPUT);
+  pinMode(IN3_N2_PURGE, OUTPUT);
+  
+  // Start with all valves OFF (HIGH = OFF for Active-LOW)
+  digitalWrite(IN1_TMA_SV, HIGH);
+  digitalWrite(IN4_TMA_ALD, HIGH);
+  digitalWrite(IN3_N2_PURGE, HIGH);
+  
+  Serial.begin(115200);
+  Serial.println(">>> 3-Valve Sequence Test: (IN1+IN4) vs IN3 <<<");
+}
+
+void loop() {
+  // --- TMA Half-Cycle ---
+  // 1. Open Safety Valve
+  digitalWrite(IN1_TMA_SV, LOW); // LOW = ON
+  
+  // 2. Wait for line to charge/settle
+  delay(SV_SETTLE_MS);
+  
+  // 3. Pulse the Dose Valve
+  digitalWrite(IN4_TMA_ALD, LOW); // LOW = ON
+  delay(TMA_PULSE_MS);
+  digitalWrite(IN4_TMA_ALD, HIGH); // HIGH = OFF
+  
+  // 4. Close Safety Valve
+  digitalWrite(IN1_TMA_SV, HIGH); // HIGH = OFF
+
+  // --- Gap ---
+  // 5. Wait for the programmed gap
+  delay(PURGE_GAP_MS);
+
+  // --- Purge Half-Cycle ---
+  // 6. Turn Purge valve ON
+  digitalWrite(IN3_N2_PURGE, LOW); // LOW = ON
+  delay(2000); // Keep purge on for 2 seconds
+  
+  // 7. Turn Purge valve OFF and wait
+  digitalWrite(IN3_N2_PURGE, HIGH); // HIGH = OFF
+  delay(1000); // Wait 1 second before repeating
+}
 
 ---
 ## Task for 20251029

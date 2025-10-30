@@ -14,9 +14,25 @@ Purpose: To test the characteristics of one single valve in isolation.
 (word doc 20251029 Data Collection for SVs contains the code)
 
 ### New Code: dual-channel test (IN4 - TMA ALD vs. IN3 - N2 Purge) 
+Test script to mimic real sequence:
+1. Open IN1 (Safety).
+2. Wait for the line to "settle" (SV_SETTLE_MS).
+   - This allows the precursor gas to completely fill the "dead volume" and stabilize at its full vapor pressure. To create a stable, high-pressure, repeatable dose of precursor gas by filling the dead volume first.
+4. Pulse IN4 (Dose).
+5. Close IN1 and IN4.
+6. Wait for a gap.
+   - Ensures the TMA pulse and the N₂ Purge pulse are cleanly separated and never happen at the same time.
+8. Open IN3 (Purge).
 
+### TMA safety vs. TMA pulse test
+Checks that the safety valve (IN1) is open and stable before the pulse valve (IN4) fires.
+- CH1 (Yellow): Probe tip on NO terminal for IN1 (Pin 7). Ground on 24V GND.
+- CH2 (Blue): Probe tip on NO terminal for IN4 (Pin 4). Ground on 24V GND.
 
-
+### TMA pulse vs. purge test
+Checks the gap between the end of the TMA dose and the start of the purge.
+- CH1 (Yellow): Probe tip on NO terminal for IN4 (Pin 4). Ground on 24V GND.
+- CH2 (Blue): Probe tip on NO terminal for IN3 (Pin 5). Ground on 24V GND.
 
 ---
 ## Task for 20251029

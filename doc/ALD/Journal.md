@@ -1,4 +1,11 @@
+## Task for 20251030
+IN1, IN2, IN3 (The "Sequence Valves"): These are safety/sequence solenoid valves. They open the main line for a precursor or the purge gas. A little bounce or a 5ms delay here doesn't matter, as they stay open for the whole half-cycle.
+
+IN4, IN5 (The "Pulse Valves"): These are ALD3 valves. These are fast, precise valves that perform the actual microsecond-to-millisecond pulsing for the ALD recipe.
+
+
 ## Task for 20251029
+
 ### SV data collection 
 
 <img width="730" height="277" alt="avg sv runs" src="https://github.com/user-attachments/assets/05516fb4-84e4-4ced-b408-f5677a4a1a98" />

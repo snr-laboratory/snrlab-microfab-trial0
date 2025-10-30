@@ -13,7 +13,7 @@ Purpose: To test the characteristics of one single valve in isolation.
 - Logic: Active-LOW. It correctly uses LOW to turn the valve ON and HIGH to turn it OFF.
 (word doc 20251029 Data Collection for SVs contains the code)
 
-### New code outline
+### New code rough outline
 Test script to mimic real sequence:
 1. Open IN1 (Safety).
 2. Wait for the line to "settle" (SV_SETTLE_MS).

@@ -20,9 +20,13 @@ Diagram 1. Gas Flow Schematic
 
 <img width="3566" height="850" alt="image" src="https://github.com/user-attachments/assets/f9319415-df90-4a0e-bbad-8fe01b1fdd15" />
 
-Diagram 2. Electrical Schematic 
+Diagram 2. Electrical schematic for testing command and relay response
 
-<img width="3224" height="1635" alt="image" src="https://github.com/user-attachments/assets/71bece57-6871-444a-8693-249d7c92d95e" />
+<img width="504" height="702" alt="image" src="https://github.com/user-attachments/assets/d6e344f0-b1ee-4ebd-a263-d0f940754433" />
+
+<img width="539" height="687" alt="image" src="https://github.com/user-attachments/assets/4a6b78c9-0835-4f7f-a90a-075066eee239" />
+
+
 
 
 ## Tool Operation  

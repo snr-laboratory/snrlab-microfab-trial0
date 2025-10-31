@@ -19,6 +19,10 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate compliance to minimum electrical system standards.
 
 ---
+## Task for 20251030/31
+Resolved the coding issue and measured the settle time between IN1 (TMA SV) and IN4 (TMA ALD). The system's behavior is reproducible and predictable. The results are consistent and proves the delay command is working as well as on times. The latencies and bounce are also tight and stable. 
+
+---
 ## Task for 20251028/29
 Flyback diode installation is resolved and now actual solenoid valves along with a skinner sv have been connected to relay and are each being tested individually. 
 

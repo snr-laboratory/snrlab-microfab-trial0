@@ -1,12 +1,18 @@
 ## Task for 20251031
+
+<img width="747" height="760" alt="image" src="https://github.com/user-attachments/assets/ac1e24b0-5e2b-4728-bec8-0d474223bdb3" />
+
+### New diagram for probing TMA safety vs. TMA pulse test 1 
+- a dedicated GND wire has now been added from the Arduino to the relay board
+
+<img width="1077" height="751" alt="image" src="https://github.com/user-attachments/assets/90238545-2332-445e-aa4f-3cebd38c7f69" />
+
 Issues with the new code. Previous probing setup to test commands and relay actuation:
 
 <img width="794" height="590" alt="image" src="https://github.com/user-attachments/assets/2fa255e6-0d64-4e5e-ac13-5e71337add87" />
 
-*** New diagram for probing TMA safety vs. TMA pulse test 1 - a dedicated GND wire has now been added from the Arduino to the relay board
 
-<img width="1077" height="751" alt="image" src="https://github.com/user-attachments/assets/90238545-2332-445e-aa4f-3cebd38c7f69" />
-
+---
 ## Task for 20251030
 IN1, IN2, IN3 (The "Sequence Valves"): These are safety/sequence solenoid valves. They open the main line for a precursor or the purge gas. A little bounce or a 5ms delay here doesn't matter, as they stay open for the whole half-cycle.
 

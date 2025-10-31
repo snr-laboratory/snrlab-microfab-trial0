@@ -1,3 +1,6 @@
+## Task for 20251031
+Issues with the new code. 
+
 ## Task for 20251030
 IN1, IN2, IN3 (The "Sequence Valves"): These are safety/sequence solenoid valves. They open the main line for a precursor or the purge gas. A little bounce or a 5ms delay here doesn't matter, as they stay open for the whole half-cycle.
 

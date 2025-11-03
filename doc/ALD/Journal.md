@@ -1,6 +1,40 @@
 ## Task for 20251103
 Connect the IGC100 to PC
 
+1. Terminal
+  - ls /dev/cu.usb*  
+    - /dev/cu.usbserial-FTG4OTA2 (name of port provided by terminal cmd)
+      
+2. Connect and read pressure
+  - type the screen command, paste port name, and add the baud rate (The IGC100's default baud rate is 9600).
+    - screen /dev/cu.usbserial-FTG4OTA2 115200
+    - Press Enter. The screen will go blank, which means you are now connected.
+
+3. Test communication
+  - Type the standard identification command and press Enter.
+    - *IDN? "blind-type" the command *IDN? and press Enter.
+      - to disconnect from screen, type Control-A and then type Control-D.
+    
+<img width="584" height="436" alt="image" src="https://github.com/user-attachments/assets/900ab08c-bf5d-4ade-9afc-2cc8438930a8" />
+
+    - Stanford_Research_Systems,IGC100,s/n115500,ver100 is the response from the gauge. Connection is working.
+
+4. Read pressure
+  - to read the pressure, (blindly) type the following commands and press Enter after each one:
+
+    - To read Ion Gauge (IG):
+      - READ? 0
+
+    - To read Convectron Gauge (PG2):
+      - READ? 2
+  
+    - finished, type Control-A and then Control-D to detach from the screen session.
+
+<img width="589" height="451" alt="image" src="https://github.com/user-attachments/assets/c0901f84-3db6-4acb-af32-dc86f57cd718" />
+issues... reading pressure is not working 
+
+
+
 
 
 

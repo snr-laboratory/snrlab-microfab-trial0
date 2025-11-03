@@ -66,6 +66,8 @@ Resolved the connection/coding issue and measured the settle time between IN1 (T
 - **micro-variations are harmless - larger timing errors or insufficient dosing can adversely affect film quality.**
 - **as pulse timing is consistent and long enough to achieve saturation, film quality remains high.**
 - **Ensuring stable, saturating precursor pulses and adequate purge separation is key to growing high-quality films**
+
+---
 [How to Improve ALD Process Consistency With Optimized Process Valves and Pneumatic Control Systems](https://www.swagelok.com/-/media/Distributor-Media/C-G/Cambridge/ALD/improve-ald-process-consistency.ashx?la=en&hash=BAFF75E7063A01423D86E67052EA39BCAAF4B48A&vgo_ee=LRRV6glqIfcVPcYsJBrMHi%2FZD%2BmsUFpJrc5fHf6IoVE%3D#:~:text=,chemical%20dose%20ALD%20Valve%20Flow)
 
 - The volume of these chemical doses is sometimes influenced by the process valve flow capacity but is nearly always influenced by the time (e.g., milliseconds) the process valve is open and delivering the chemical pulse. So clearly,timing is a critical consideration in developing and maintaining a production ALD process. Even relatively small variances, just a few milliseconds,in valve actuation response time can lead to significant changes in the amount of chemical delivered to the process

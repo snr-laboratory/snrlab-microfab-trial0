@@ -17,6 +17,7 @@ Connect the IGC100 to PC
     
 <img width="584" height="436" alt="image" src="https://github.com/user-attachments/assets/900ab08c-bf5d-4ade-9afc-2cc8438930a8" />
 
+
     - Stanford_Research_Systems,IGC100,s/n115500,ver100 is the response from the gauge. Connection is working.
 
 4. Read pressure

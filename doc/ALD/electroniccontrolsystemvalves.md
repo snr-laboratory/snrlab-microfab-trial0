@@ -62,3 +62,14 @@ Resolved the connection/coding issue and measured the settle time between IN1 (T
 - The system's behavior is reproducible and predictable. The results are consistent and proves the delay command is working as well as on time. The latencies and bounce are also tight and stable.
 
 
+### Timing tolerance
+
+[How to Improve ALD Process Consistency With Optimized Process Valves and Pneumatic Control Systems](https://www.swagelok.com/-/media/Distributor-Media/C-G/Cambridge/ALD/improve-ald-process-consistency.ashx?la=en&hash=BAFF75E7063A01423D86E67052EA39BCAAF4B48A&vgo_ee=LRRV6glqIfcVPcYsJBrMHi%2FZD%2BmsUFpJrc5fHf6IoVE%3D#:~:text=,chemical%20dose%20ALD%20Valve%20Flow)
+
+- The volume of these chemical doses is sometimes influenced by the process valve flow capacity but is nearly always influenced by the time (e.g., milliseconds) the process valve is open and delivering the chemical pulse. So clearly,timing is a critical consideration in developing and maintaining a production ALD process. Even relatively small variances, just a few milliseconds,in valve actuation response time can lead to significant changes in the amount of chemical delivered to the process
+
+<img width="450" height="396" alt="image" src="https://github.com/user-attachments/assets/66b00403-f252-496d-bb95-847dcec9b5fe" />
+
+
+
+

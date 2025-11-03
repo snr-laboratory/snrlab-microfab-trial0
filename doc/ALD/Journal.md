@@ -1,3 +1,10 @@
+## Task for 20251103
+Connect the IGC100 to PC
+
+
+
+
+---
 ## Task for 20251031
 
 <img width="747" height="760" alt="image" src="https://github.com/user-attachments/assets/ac1e24b0-5e2b-4728-bec8-0d474223bdb3" />

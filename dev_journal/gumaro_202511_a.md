@@ -21,7 +21,7 @@ valve_times_t vt = { .ms1 = 10,
 ```
 
 
-### Early scope measurements
+### Scope measurements
 
 - Trial 5: arbitrary time delay sequencing; IN2 & IN3
 

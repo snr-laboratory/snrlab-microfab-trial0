@@ -30,6 +30,9 @@ valve_times_t vt = { .ms1 = 10,
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/a31d112d-ac3d-4f44-9139-d9c388acef03" />
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/1f5c2579-99ed-409d-9555-e4e4e4192bd4" />
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/7f3b5006-e2a1-4cfc-960e-c31ce1ad78fb" />
+
+<img width="300" height="291" alt="image" src="https://github.com/user-attachments/assets/6f39baf9-2968-4472-9b20-46482dbbccb8" />
+
   
   - 202 ms N₂ purge
   - 74 ms h2o_sv_settle_ms

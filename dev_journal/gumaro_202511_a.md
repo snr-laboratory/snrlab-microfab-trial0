@@ -23,6 +23,15 @@ valve_times_t vt = { .ms1 = 10,
 
 ### Early scope measurements
 
+- Trial 4: E-stop; IN2 & IN3
+
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/dd934902-3631-42a4-92b1-5e5cf4564800" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/64f9724d-f5ce-4f6e-83e8-2ee0066b9e7a" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/a0afec51-fb50-491f-ae4b-faa5d940ceec" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/291eff8f-7c5d-43b2-9923-bf3213c03d05" />
+
+  - instead of 2.00s the time reported after pressing 'e' is 1.38s
+
 - Trial 3: IN2 & IN5
 
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/67b70ea6-0e26-456a-91f8-e72ac94fb5ff" />

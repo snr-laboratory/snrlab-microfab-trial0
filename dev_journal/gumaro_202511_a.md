@@ -23,7 +23,32 @@ valve_times_t vt = { .ms1 = 10,
 
 ### Early scope measurements
 
-- Trial 2
+- Trial 3: IN2 & IN5
+
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/67b70ea6-0e26-456a-91f8-e72ac94fb5ff" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/b78ea529-ce20-417f-8cc4-97067f5de724" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/8aebd37a-10eb-491d-86f5-ec8620d1338f" />
+<img width="300" height="293" alt="image" src="https://github.com/user-attachments/assets/5e370568-ccd8-41a7-97b5-6c440edfd895" />
+
+  - H₂O SV ON duration
+    - Expected ON time: 4129 − 3604 = 525 ms; measured ≈ 528 ms.
+  - H₂O settle delay (SV → ALD)
+    - Measured 502 ms = perfect confirmation of the H₂O line-fill / settle time. 
+  - H₂O ALD pulse width
+    - Expected: 4129 − 4104 = 25 ms; measured ~28 ms  
+
+- Trial 3: IN3 & IN4
+
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/93f3f889-52fa-472b-8142-f3c88b65c0a3" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/d32c3820-0bd7-43e8-afe5-5724999e52e5" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/0a905f18-5b4a-4321-bd2e-854e9cb72bcc" />
+
+  - N₂ purge ON time (IN3)
+    - 2.01 s, code says 2.00 s → that’s perfect agreement for the purge duration.
+  - 50 ms safety gap (TMA ALD → N₂ purge)
+    - Measured 48 ms vs commanded 50 ms → that’s exactly the TMA → purge safety gap we programmed, within relay + cursor error.  
+
+- Trial 2: IN1 & IN4
   
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/ff07f3f6-a4bc-4502-a80b-3b6ea157d1f5" />
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/9ba623be-31b3-43ed-b853-8ffbd8d4db28" />
@@ -40,14 +65,13 @@ valve_times_t vt = { .ms1 = 10,
       - Software: 50 ms
       - Measured: 50 ms
 
-- Trial 1
+- Trial 1: Test 
   
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/b98cef63-129e-481d-b8c3-8c4899a864bc" />
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/3d45604b-4ad6-4f30-af70-0eea757e32a7" />
-
 <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/6ad787b4-b344-4013-b31b-fbb165b84bdf" />
 
-    - TMA SV working exactly as commanded (expected ON-time is 554 − 4 ≈ 550 ms.).
+    - TMA SV working exactly as commanded (expected ON-time is 554 − 4 ≈ 550 ms).
 
 ### New test code
 ```

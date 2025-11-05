@@ -105,6 +105,51 @@ valve_times_t vt = { .ms1 = 10,
 
     - TMA SV working exactly as commanded (expected ON-time is 554 − 4 ≈ 550 ms).
 
+### Code and valve control/safety explained
+#### Hardware fail-safe design
+The precursor delivery valve system is actuated by an Arduino Uno microcontroller driving an 8-channel relay module (Hong-Wei JQC3F-05VDC-C). Each relay (K1-K5) switches a 24 V DC solenoid valve using the normally-open (NO) contact, while all valves themselves are normally-closed (NC). In the absence of electrical power, the relay coils are de-energized, the NO contacts open, and the valve coils are unpowered.
+
+The relay inputs are active-LOW: a logic LOW at an Arduino output pin energizes the relay coil and connects 24 V to the corresponding valve, whereas a logic HIGH de-energizes the relay and removes power from the valve coil. When the microcontroller is un-programmed, in reset, or unpowered, all valve control pins are effectively pulled HIGH, which keeps every relay off and every NC valve closed. So, when power is off or the MCU is un-programmed, all valves must be shut off at the purely hardware level.
+
+#### Software design safe state
+On power-up the firmware configures all valve control pins as outputs and immediately calls a dedicated helper function (void allValvesOff()). Because HIGH de-energizes each active-LOW relay input, this routine defines a software-level “safe state”: all relays are off and all NC valves are closed. The same function is called at the end of every ALD cycle and whenever an emergency stop occurs, so all valves OFF is consistently enforced as the only allowed idle or fault condition.
+
+The controller is organized as a two-layer state machine. A high-level SystemState variable takes one of three values: SYS_IDLE, SYS_RUNNING, or SYS_ESTOPPED. In SYS_IDLE the system is in a safe standby state with all valves off; in SYS_RUNNING the ALD sequence is active; and in SYS_ESTOPPED the system is in a latched fault state following an emergency stop. The main loop always calls a non-blocking command handler and then, only when SystemState == SYS_RUNNING, advances the ALD process state machine. In both SYS_IDLE and SYS_ESTOPPED, the loop does nothing except check for commands, leaving the valves in the safe state established by allValvesOff().
+
+#### Start command and definition of (t0)
+The firware recognizes three single character commands: 's' (start one ALD cycle), 'e' (emergency stop), and 'r' (reset from E-stop). 
+ 
+The “start” role is implemented by the 's' command when the system is in SYS_IDLE. Upon receiving this command, the controller:
+1. Records the current millisecond counter as the cycle start time
+  t0 = millis()
+in the variable cycleStartTime.
+2. Logs this event to the serial console.
+3. Sets the high-level mode to SYS_RUNNING.
+4. Initializes the low-level ALD state machine to its first step (TMA safety valve ON).
+
+This establishes a software definition of (t = 0) for the ALD cycle. All subsequent valve events are logged using the helper (void logEvent(const char* msg)) and every actuation is time-stamped as (t = millis() - t0). This command provides a detailed timing record that can be compared directly with oscilloscope measurements.
+
+#### Emergency stop (E-stop)
+The same serial command handler continuously checks for the 'e' character in every iteration of the main loop. If 'e' is received while a cycle is running (SYS_RUNNING), the firmware:
+
+1. Immediately calls allValvesOff(), de-energizing every relay and closing all valves.
+2. Logs an E-stop event with a timestamp relative to ( t_0 ).
+3. Sets SystemState = SYS_ESTOPPED.
+
+While in the SYS_ESTOPPED mode, all other commands are ignored except 'r' (reset). Only when 'r' is received does the controller:
+
+1. Call allValvesOff() again (defensive programming),
+2. Clear the fault by setting SystemState = SYS_IDLE,
+3. And inform the operator that the system is back in the safe idle state.
+
+This “latched” behavior ensures that an E-stop not only forces an immediate transition to the safe state but also prevents any further actuation until it is explicitly acknowledged and reset by the system. Oscilloscope measurements confirm that a purge pulse in progress is truncated at the instant the E-stop is received, demonstrating that the E-stop overrides the recipe timing and enforces safety.
+In the final instrument, a physical E-stop button will be wired to interrupt the 24 V valve supply and optionally to a digital input so the same firmware behavior can be driven by a hardware switch. In this prototype, the 'e' command emulates that behavior at the software level.
+
+#### Centralized timing recipe and arbitrary sequencing
+To demonstrate arbitrary time-delay sequencing of the five solenoid valves, all timing parameters for one ALD cycle are stored in a single centralized data structure. The low-level ALD state machine (AldStep) implements the full TMA–purge–H₂O–purge sequence as a series of non-blocking states: TMA_SV_ON, TMA_SETTLE, TMA_PULSE_ON, TMA_PULSE_OFF, PURGE_GAP_1, PURGE_ON_1, H2O_SV_ON, H2O_SETTLE, H2O_PULSE_ON, etc. Each state compares the elapsed time now - stepTimer to only one field of the aldRecipe struct. No hard-coded literal delays appear in the state machine logic. 
+
+Because of this structure, changing the ALD timing sequence is accomplished simply by editing the values in aldRecipe and recompiling; the control logic itself remains unchanged. By varying these values, arbitrary time-delay sequences for the five solenoid valves can be realized and tested without rewriting the state machine. 
+
 ### New test code
 ```
 #include <Arduino.h>

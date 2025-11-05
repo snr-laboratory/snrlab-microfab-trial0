@@ -1,4 +1,15 @@
 ## Task for 20251105
+#### IGC100 and miniterm
+<img width="586" height="249" alt="image" src="https://github.com/user-attachments/assets/601c0ed5-0659-4c76-90b3-f22e429b0466" />
+
+- connection is established, command GDTX? 4 (for PG2) is working and reading pressure from the Mac.
+- python3 -m serial.tools.miniterm /dev/cu.usbserial-FTG4OTA2 115200
+  - GDAT? p → read gauge/port p (numeric)
+  - GDTX? p → read gauge/port p (number + units)
+  - GSTA? p → status of gauge/port p
+  - [IGC100 Ion Gauge Controller](https://www.thinksrs.com/downloads/pdfs/manuals/IGC100m.pdf)
+    - p = port; p = 4 = PG2  
+
 ### Cycles included into typedef struct
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/06d16a79-acce-4578-bb5c-ef0e95f41248" />
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/35a38f45-bf9f-4d61-8ba0-6217ba673211" />

@@ -1,3 +1,11 @@
+## Task for 20251105
+### Cycles included into typedef struct
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/06d16a79-acce-4578-bb5c-ef0e95f41248" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/35a38f45-bf9f-4d61-8ba0-6217ba673211" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/ebebe690-6ba2-48f4-993a-dc315ff4f919" />
+
+The ALD timing recipe firmware was extended with an additional parameter, cycles_to_run, which specifies how many identical ALD cycles are executed in response to a single start command. Internally, the controller maintains a counter cyclesCompleted that is incremented each time the finite-state machine reaches the “cycle complete” state at the end of the second N₂ purge. If cyclesCompleted < cycles_to_run, the state machine automatically re-enters the TMA half-cycle, defines a new time origin t0 for that cycle, and repeats the same valve sequence without any change to the underlying logic or timing parameters. Only when the requested number of cycles has been executed does the controller return to the safe idle state (all valves off, SYS_IDLE). The emergency stop and reset behaviour are unchanged: an E-stop at any point in any cycle immediately calls allValvesOff(), aborts the remaining cycles in the run, and latches the system in SYS_ESTOPPED until a manual reset is issued.
+
 ## Task for 20251104
 
 - Wire and program for the system to have safe initial (and power-off) state.

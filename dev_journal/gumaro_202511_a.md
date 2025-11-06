@@ -1,6 +1,6 @@
 ## Task for 20251106
 - Wiring to reflect NC so when the arduino goes offline the command goes low and creates a safe state.
-  - Safe state defined: The safe state is when the VCC has no power and cannot activate the phototransistor and create a conductive path to energize the coil for the relay. That in turn results in an incomplete circuit and no longer is able to power the solenoid valves. So they remain shut and as such they do not release any gases. 
+  - Safe state defined: The safe state is when the VCC has no power and cannot activate the phototransistor and create a conductive path to energize the coils of the relay. That in turn results in an incomplete circuit and no longer is able to power the solenoid valves. So they remain shut and as such they do not release any gases. 
 - Create a time sequence diagram that reflects what the code is actually doing (eg specify a time delay: how do we know a valve was activated and when or relative to another valve.)
 - Refine code terminology (eg "settle time" does not appropriately reflect its function)
 - Purchase E-stop and Start button  

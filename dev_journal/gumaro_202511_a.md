@@ -1,6 +1,10 @@
 ## Task for 20251106
-- Wiring to reflect NC so when the arduino goes offline the command goes low and creates a safe state.
-  - Safe state defined: The safe state is when the VCC has no power and cannot activate the phototransistor and create a conductive path to energize the coils of the relay. That in turn results in an incomplete circuit and no longer is able to power the solenoid valves. So they remain shut and as such they do not release any gases. 
+- Refine wiring to reflect a safe state.
+  - Safe state defined: The safe state is when the VCC has no power and cannot activate the phototransistor and create a conductive path to energize the coils of the relay. That in turn results in an incomplete circuit and no longer is able to power the solenoid valves. So they remain shut and as such they do not release any gases.
+  - Consider connecting to the NC side of relay for the SVs. That way when the arduino is powered off, the command on the pins pulls the NC to NO which creates a safe state by keeping the relay coil de-energized since the circuit will no longer be complete.
+  - Arduino needs to be powered by the 5V SMPS (i.e. will eventually need to be a stand alone system. Hence the start and stop button) 
+    - power mcu through SMPS (5V). Determine if power jack  & USB can both be connected without issues
+
 - Create a time sequence diagram that reflects what the code is actually doing (eg specify a time delay: how do we know a valve was activated and when or relative to another valve.)
 - Refine code terminology (eg "settle time" does not appropriately reflect its function)
 - Purchase E-stop and Start button  

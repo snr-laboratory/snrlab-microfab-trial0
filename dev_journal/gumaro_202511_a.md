@@ -1,3 +1,429 @@
+## Task for 20251107 
+### Troubleshooting notes
+- If I remove the IN1-5 jumper wires and then remove the 5V pin on the Arduino power then nothing happens. The relays do not energize and the LED on the relay does not come on. 
+
+- But if i dont remove the IN1-5 jumper wires and then remove the 5V pin on the Arduino power then all the LEDs on the relay come one and the SV open (when NC SV are connected to NO and 0V of 24V SMPS and the COM connected to +24V of 24V SMPS) . The relays energize and all of the LED on the relay come on as well as the SVs, they open as well. 
+
+- In addition if the 5V pin is removed on the UNO that leads to the 5V SMPS and the GND pin is left connected that leads to the 0V SMPS, then the relays energize and all of the LED on the relay come on as well as the SVs, they open as well.
+
+- But if I remove the GND pin connected to the 0V SMPS and leave the 5V pin on the UNO that leads to the 5V SMPS then the relays do not energize and the LED on the relay does not come on nor do the SVs they remain closed. 
+
+- (SVs are connected to the NO and 0V 24V SMPS and com to +24V SMPS and the 5V SMPS supplies power to the 5V and GND power section of the UNO board as well as the JD-VCC/VCC/GND region of the relay board (but no connections from 5V SMPS to the logic region of the relay board - only IN1-5 on the logic have jumpers to PINs 7-3 on the UNO and the UNO has the USB data only cable to PC) ) 
+
+- Keeping the same wiring scheme as before (SVs are connected to the NO and 0V 24V SMPS and com to +24V SMPS and the 5V SMPS supplies power to the 5V and GND power section of the UNO board as well as the JD-VCC/VCC/GND region of the relay board (but no connections from 5V SMPS to the logic region of the relay board - only IN1-5 on the logic have jumpers to PINs 7-3 on the UNO and the UNO has the USB data only cable to PC) ), except with one change: the SVs are connected to the NC of the relay and the 0V 24V SMPS and com to +24V SMPS 
+
+- When all the valves are in the NC and instead of the NO relay side, if the power is switched on, then all the SVs immediately power on but the relay LEDs do not come on, but the SVs can clearly be felt and heard opening up. When the 5V is removed the relay LEDs come on as well as the SVs. 
+
+### Wiring scheme
+<img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/50d6b17f-9a15-4439-9c30-c50ece8f6cd9" />
+
+
+
+### Code with updated terminology
+```
+#include <Arduino.h>
+
+
+// ============================================================================
+//  Al2O3 ALD Valve Control – State Machine Version with Timing Recipe & Cycles
+//  - Non-blocking state machine (no delay())
+//  - High-level safety states: SYS_IDLE / SYS_RUNNING / SYS_ESTOPPED
+//  - Active-LOW relay logic driving NC valves
+//  - Centralized timing + cycle-count recipe (AldTimingRecipe)
+//  - PC commands via Serial: 's' (start run), 'e' (E-stop), 'r' (reset)
+// ============================================================================
+
+
+// ------------------------ Pin Definitions -----------------------------------
+// Relay inputs are ACTIVE-LOW:
+//   LOW  -> relay ON  -> 24 V applied to valve coil
+//   HIGH -> relay OFF -> valve coil unpowered
+//
+// Solenoid valves are NORMALLY-CLOSED (NC):
+//   Coil unpowered -> valve CLOSED (safe)
+//   Coil powered   -> valve OPEN
+//
+// Therefore, driving the Arduino pin HIGH = relay OFF = valve coil unpowered
+// = NC valve closed (safe state).
+
+
+#define IN1_TMA_SV      7   // TMA Sequence Valve (SV)
+#define IN2_H2O_SV      6   // H2O Sequence Valve (SV)
+#define IN3_N2_PURGE    5   // N2 Purge Valve
+#define IN4_TMA_ALD     4   // TMA Pulse Valve (ALD)
+#define IN5_H2O_ALD     3   // H2O Pulse Valve (ALD)
+
+
+// ------------------------ Timing + Cycle Recipe Structure -------------------
+// THESIS APPENDIX (RECIPE):
+// Centralized data structure storing all delay parameters AND the number of
+// ALD cycles to execute per 's' command. Changing these values changes the
+// entire timing and repetition behavior without modifying the state machine.
+typedef struct {
+ uint32_t tma_line_fill_ms;  // Time for TMA to fill line (SV open before pulse)
+ uint32_t tma_pulse_ms;      // TMA dose (ALD pulse) duration
+ uint32_t h2o_line_fill_ms;  // Time for H2O to fill line (SV open before pulse)
+ uint32_t h2o_pulse_ms;      // H2O dose (ALD pulse) duration
+ uint32_t purge_gap_ms;      // Brief pause between valve state changes
+ uint32_t purge_on_ms;       // N2 purge (convective sweep) duration
+ uint32_t purge_evacuate_ms; // Time for pump to evacuate purge gas (pump-down)
+ uint16_t cycles_to_run;     // Number of ALD cycles in one run
+} AldTimingRecipe;
+
+
+// One example recipe for Al2O3 (can be replaced/swapped without touching logic)
+AldTimingRecipe aldRecipe = {
+ 50,   // tma_line_fill_ms
+ 50,   // tma_pulse_ms
+ 50,   // h2o_line_fill_ms
+ 25,   // h2o_pulse_ms
+ 50,   // purge_gap_ms
+ 200,  // purge_on_ms
+ 100,  // purge_evacuate_ms
+ 5     // cycles_to_run (set to 10, 50, etc. for multi-cycle runs)
+};
+
+
+// ------------------------ High-Level System State ---------------------------
+enum SystemState {
+ SYS_IDLE,
+ SYS_RUNNING,
+ SYS_ESTOPPED
+};
+
+
+SystemState sysState = SYS_IDLE;
+
+
+// ------------------------ ALD Cycle State Machine ---------------------------
+enum AldState {
+ STEP_IDLE,          // no active cycle step
+ // TMA half-cycle
+ STEP_TMA_SV_ON,
+ STEP_TMA_LINE_FILL,
+ STEP_TMA_PULSE_ON,
+ STEP_TMA_PULSE_OFF,
+ // Purge after TMA
+ STEP_PURGE_GAP_1,
+ STEP_PURGE_ON_1,
+ STEP_PURGE_EVACUATE_1,
+ // H2O half-cycle
+ STEP_H2O_SV_ON,
+ STEP_H2O_LINE_FILL,
+ STEP_H2O_PULSE_ON,
+ STEP_H2O_PULSE_OFF,
+ // Purge after H2O
+ STEP_PURGE_GAP_2,
+ STEP_PURGE_ON_2,
+ STEP_PURGE_EVACUATE_2,
+ // End of cycle
+ STEP_CYCLE_DONE
+};
+
+
+AldState stepState = STEP_IDLE;
+
+
+// Time bookkeeping
+unsigned long previousMillis = 0;   // time reference for current step
+unsigned long cycleStartTime = 0;   // t = 0 reference for the current cycle
+
+
+// NEW: count how many cycles we've completed in this run
+uint16_t cyclesCompleted = 0;
+
+
+// ------------------------ Serial Command Characters ------------------------
+const char CMD_START = 's';  // start a run (one or more ALD cycles)
+const char CMD_ESTOP = 'e';  // emergency stop
+const char CMD_RESET = 'r';  // reset from ESTOPPED back to IDLE
+
+
+// ------------------------ Helper: Safe State (All Valves OFF) --------------
+void allValvesOff() {
+ digitalWrite(IN1_TMA_SV,   HIGH);  // relay OFF -> valve coil unpowered -> NC closed
+ digitalWrite(IN2_H2O_SV,   HIGH);
+ digitalWrite(IN3_N2_PURGE, HIGH);
+ digitalWrite(IN4_TMA_ALD,  HIGH);
+ digitalWrite(IN5_H2O_ALD,  HIGH);
+}
+
+
+// ------------------------ Helper: Logging with Timestamps -------------------
+void logEvent(const __FlashStringHelper *msg) {
+ unsigned long now = millis();
+ Serial.print(F("t = "));
+ Serial.print(now - cycleStartTime);  // relative to t0 for THIS cycle
+ Serial.print(F(" ms : "));
+ Serial.println(msg);
+}
+
+
+// ------------------------ Helper: Serial Command Handling -------------------
+// Non-blocking; checked every loop iteration.
+void checkSerialCommands() {
+ if (!Serial.available()) return;
+
+
+ char c = Serial.read();
+
+
+ // E-STOP: always honored immediately from ANY state
+ if (c == CMD_ESTOP || c == 'E') {
+   allValvesOff();
+   sysState        = SYS_ESTOPPED;
+   stepState       = STEP_IDLE;
+   cyclesCompleted = 0;   // abort the run
+   Serial.println();
+   Serial.println(F("!!! E-STOP ENGAGED !!!"));
+   Serial.println(F("All valves forced OFF. State latched as SYS_ESTOPPED."));
+   Serial.println(F("Send 'r' to reset when it is safe."));
+   return;
+ }
+
+
+ // RESET from E-STOP back to IDLE (valves remain OFF)
+ if (c == CMD_RESET || c == 'R') {
+   if (sysState == SYS_ESTOPPED) {
+     sysState        = SYS_IDLE;
+     stepState       = STEP_IDLE;
+     cyclesCompleted = 0;
+     allValvesOff();  // redundant, reinforces safe state
+     Serial.println();
+     Serial.println(F("E-STOP reset. System back to SYS_IDLE, all valves OFF."));
+     Serial.println(F("Send 's' to start a new run of ALD cycles."));
+   } else {
+     Serial.println(F("RESET ignored: system is not in SYS_ESTOPPED."));
+   }
+   return;
+ }
+
+
+ // START command: only allowed from IDLE
+ if (c == CMD_START || c == 'S') {
+   if (sysState == SYS_IDLE) {
+     sysState        = SYS_RUNNING;
+     stepState       = STEP_TMA_SV_ON;
+     cyclesCompleted = 0;             // NEW: start fresh run
+     cycleStartTime  = millis();      // define t = 0 for first cycle
+     previousMillis  = cycleStartTime;
+
+
+     Serial.println();
+     Serial.println(F("=== ALD RUN START ==="));
+     Serial.print(F("Requested cycles in run: "));
+     Serial.println(aldRecipe.cycles_to_run);
+     Serial.print(F("Cycle 1 t0 (millis since reset) = "));
+     Serial.println(cycleStartTime);
+     logEvent(F("All valves OFF at cycle start"));
+   } else {
+     Serial.println(F("START ignored: system not SYS_IDLE (either RUNNING or ESTOPPED)."));
+   }
+ }
+}
+
+
+// ------------------------ SETUP ---------------------------------------------
+void setup() {
+ // Configure all valve pins as outputs
+ pinMode(IN1_TMA_SV,   OUTPUT);
+ pinMode(IN2_H2O_SV,   OUTPUT);
+ pinMode(IN3_N2_PURGE, OUTPUT);
+ pinMode(IN4_TMA_ALD,  OUTPUT);
+ pinMode(IN5_H2O_ALD,  OUTPUT);
+
+
+ // SAFETY AT POWER-UP:
+ // Drive pins HIGH to de-energize all relays.
+ allValvesOff();
+
+
+ Serial.begin(115200);
+ Serial.println(F(">>> Al2O3 ALD Valve Control – Timing Recipe + Multi-Cycle <<<"));
+ Serial.println(F("SAFE POWER-UP: all valve pins set as OUTPUT and driven HIGH (relays OFF, NC valves closed)."));
+ Serial.println(F("Commands: 's' (start run), 'e' (E-stop), 'r' (reset)"));
+ Serial.println();
+}
+
+
+// ------------------------ MAIN LOOP ----------------------------------------
+void loop() {
+ // 1. Always check for PC commands (start, E-stop, reset)
+ checkSerialCommands();
+
+
+ // 2. If not RUNNING, do nothing else (safe idle or E-stop)
+ if (sysState != SYS_RUNNING) {
+   return;
+ }
+
+
+ // 3. RUNNING: advance ALD state machine based on elapsed time
+ unsigned long now = millis();
+
+
+ switch (stepState) {
+
+
+   case STEP_IDLE:
+     // Should not normally be here while SYS_RUNNING
+     break;
+
+
+   // ------------------ TMA Half-Cycle -------------------------------------
+   case STEP_TMA_SV_ON:
+     logEvent(F("TMA SV ON"));
+     digitalWrite(IN1_TMA_SV, LOW);         // open TMA sequence valve
+     previousMillis = now;
+     stepState = STEP_TMA_LINE_FILL;
+     break;
+
+
+   case STEP_TMA_LINE_FILL:
+     if (now - previousMillis >= aldRecipe.tma_line_fill_ms) {
+       logEvent(F("TMA ALD Pulse ON"));
+       digitalWrite(IN4_TMA_ALD, LOW);      // open TMA dose valve
+       previousMillis = now;
+       stepState = STEP_TMA_PULSE_ON;
+     }
+     break;
+
+
+   case STEP_TMA_PULSE_ON:
+     if (now - previousMillis >= aldRecipe.tma_pulse_ms) {
+       logEvent(F("TMA ALD Pulse OFF"));
+       digitalWrite(IN4_TMA_ALD, HIGH);     // close TMA dose valve
+       logEvent(F("TMA SV OFF"));
+       digitalWrite(IN1_TMA_SV, HIGH);      // close TMA sequence valve
+       previousMillis = now;
+       stepState = STEP_PURGE_GAP_1;
+     }
+     break;
+
+
+   // ------------------ First Purge (after TMA) ---------------------------
+   case STEP_PURGE_GAP_1:
+     if (now - previousMillis >= aldRecipe.purge_gap_ms) {
+       logEvent(F("N2 PURGE 1 ON"));
+       digitalWrite(IN3_N2_PURGE, LOW);     // open N2 purge valve
+       previousMillis = now;
+       stepState = STEP_PURGE_ON_1;
+     }
+     break;
+
+
+   case STEP_PURGE_ON_1:
+     if (now - previousMillis >= aldRecipe.purge_on_ms) {
+       logEvent(F("N2 PURGE 1 OFF"));
+       digitalWrite(IN3_N2_PURGE, HIGH);    // close N2 purge valve
+       previousMillis = now;
+       stepState = STEP_PURGE_EVACUATE_1;
+     }
+     break;
+
+
+   case STEP_PURGE_EVACUATE_1:
+     if (now - previousMillis >= aldRecipe.purge_evacuate_ms) {
+       logEvent(F("H2O SV ON"));
+       digitalWrite(IN2_H2O_SV, LOW);       // open H2O sequence valve
+       previousMillis = now;
+       stepState = STEP_H2O_LINE_FILL;
+     }
+     break;
+
+
+   // ------------------ H2O Half-Cycle ------------------------------------
+   case STEP_H2O_LINE_FILL:
+     if (now - previousMillis >= aldRecipe.h2o_line_fill_ms) {
+       logEvent(F("H2O ALD Pulse ON"));
+       digitalWrite(IN5_H2O_ALD, LOW);      // open H2O dose valve
+       previousMillis = now;
+       stepState = STEP_H2O_PULSE_ON;
+     }
+     break;
+
+
+   case STEP_H2O_PULSE_ON:
+     if (now - previousMillis >= aldRecipe.h2o_pulse_ms) {
+       logEvent(F("H2O ALD Pulse OFF"));
+       digitalWrite(IN5_H2O_ALD, HIGH);     // close H2O dose valve
+       logEvent(F("H2O SV OFF"));
+       digitalWrite(IN2_H2O_SV, HIGH);      // close H2O sequence valve
+       previousMillis = now;
+       stepState = STEP_PURGE_GAP_2;
+     }
+     break;
+
+
+   // ------------------ Second Purge (after H2O) --------------------------
+   case STEP_PURGE_GAP_2:
+     if (now - previousMillis >= aldRecipe.purge_gap_ms) {
+       logEvent(F("N2 PURGE 2 ON"));
+       digitalWrite(IN3_N2_PURGE, LOW);     // open N2 purge valve
+       previousMillis = now;
+       stepState = STEP_PURGE_ON_2;
+     }
+     break;
+
+
+   case STEP_PURGE_ON_2:
+     if (now - previousMillis >= aldRecipe.purge_on_ms) {
+       logEvent(F("N2 PURGE 2 OFF"));
+       digitalWrite(IN3_N2_PURGE, HIGH);    // close N2 purge valve
+       previousMillis = now;
+       stepState = STEP_PURGE_EVACUATE_2;
+     }
+     break;
+
+
+   case STEP_PURGE_EVACUATE_2:
+     if (now - previousMillis >= aldRecipe.purge_evacuate_ms) {
+       logEvent(F("=== ALD CYCLE COMPLETE ==="));
+       allValvesOff();                      // reinforce safe state
+       stepState = STEP_CYCLE_DONE;
+     }
+     break;
+
+
+   // ------------------ End-of-cycle logic (multi-cycle aware) ------------
+   case STEP_CYCLE_DONE: {
+     cyclesCompleted++;   // finished one cycle in this run
+
+
+     if (cyclesCompleted < aldRecipe.cycles_to_run) {
+       // Prepare and launch next cycle automatically
+       Serial.println();
+       Serial.print(F("--- Starting next cycle ("));
+       Serial.print(cyclesCompleted + 1);
+       Serial.print(F(" of "));
+       Serial.print(aldRecipe.cycles_to_run);
+       Serial.println(F(") ---"));
+
+
+       // Define a fresh t0 for the new cycle
+       cycleStartTime = now;
+       previousMillis = now;
+       stepState      = STEP_TMA_SV_ON;
+       logEvent(F("All valves OFF at cycle start"));
+       // sysState stays SYS_RUNNING
+     } else {
+       // All requested cycles finished → go back to idle (safe state)
+       sysState  = SYS_IDLE;
+       stepState = STEP_IDLE;
+       Serial.println();
+       Serial.print(F("Run complete: "));
+       Serial.print(cyclesCompleted);
+       Serial.println(F(" cycle(s) executed. System back to SYS_IDLE."));
+       Serial.println(F("Send 's' to start a new run."));
+     }
+     break;
+   }
+ }
+}
+
+
+
+```
 ## Task for 20251106
 - Refine wiring to reflect a safe state.
   - Safe state defined: The safe state is when the VCC has no power and cannot activate the phototransistor and create a conductive path to energize the coils of the relay. That in turn results in an incomplete circuit and no longer is able to power the solenoid valves. So they remain shut and as such they do not release any gases.

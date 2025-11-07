@@ -19,7 +19,8 @@
 
 ### Time sequence diagrams
 <img width="700" height="346" alt="image" src="https://github.com/user-attachments/assets/bf671fd6-b5fd-48bd-a6ae-9c8e3ec00f34" />
-<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/c8b21048-b339-4bdc-bec1-c33863d9fdcd" />
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/e3958dba-36e6-466a-b894-6c540273d9fa" />
+
 <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/6fb0b2ba-ea7a-4b43-a012-c5c93118a063" />
 <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/cdf4e40f-243e-44cb-bd2d-a3367b2b18c8" />
 

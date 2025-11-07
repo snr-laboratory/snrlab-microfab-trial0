@@ -17,6 +17,12 @@
 ### Wiring scheme
 <img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/50d6b17f-9a15-4439-9c30-c50ece8f6cd9" />
 
+### Time sequence diagrams
+<img width="700" height="346" alt="image" src="https://github.com/user-attachments/assets/bf671fd6-b5fd-48bd-a6ae-9c8e3ec00f34" />
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/c8b21048-b339-4bdc-bec1-c33863d9fdcd" />
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/6fb0b2ba-ea7a-4b43-a012-c5c93118a063" />
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/cdf4e40f-243e-44cb-bd2d-a3367b2b18c8" />
+
 
 
 ### Code with updated terminology

@@ -428,9 +428,10 @@ void loop() {
  }
 }
 
-
-
 ```
+
+
+
 ## Task for 20251106
 - Refine wiring to reflect a safe state.
   - Safe state defined: The safe state is when the VCC has no power and cannot activate the phototransistor and create a conductive path to energize the coils of the relay. That in turn results in an incomplete circuit and no longer is able to power the solenoid valves. So they remain shut and as such they do not release any gases.

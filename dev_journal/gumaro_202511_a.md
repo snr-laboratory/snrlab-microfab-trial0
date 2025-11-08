@@ -1,3 +1,18 @@
+## Task for 20251110
+- SV purpose needs to be rethought:
+  - **eg why can't the ALD valves themselves function to regulate gas flow (ie shut off an entire gas line when another half rxn is taking place or purge is happening) and dose chemical reactants?**
+  - consider any other reasons why we might need to keep them around eg building up pressure to help sweep the vapor gases and help to provide a better precursor dose? (maybe not likely, but worth looking into?)
+  - **overall, it seems more intentional and less redundant to reduce to a three valve system (TMA-ALD, H2O-ALD and N2-SV).**
+  - **Search for check valves to help limit any back flow and place after MFCs (backflow is probably not likely to occur but it is a nice added safety feature.**
+
+- Creating a situation where we change the relay from active-low to active-high (increases safe-state of the system - consider the observations during troubleshooting when testing the safety state when SVs are connected to NC)
+  - **making a dedicated house main switch**
+    - fix the final safety concern observed with previous connection
+    - **need to rethink logic in order to make relays active high:** 
+      - 3 modules on the relay will be dedicated to the valves     
+        - Arduino needs to be programmed to supply +24V to the three modules from the house main switch     
+- Refine timing sequence valves; follow example that was provided!
+
 ## Task for 20251107 
 ### Troubleshooting notes
 - If I remove the IN1-5 jumper wires and then remove the 5V pin on the Arduino power then nothing happens. The relays do not energize and the LED on the relay does not come on. 

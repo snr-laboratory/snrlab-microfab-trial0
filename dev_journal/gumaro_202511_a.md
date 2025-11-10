@@ -1,4 +1,7 @@
 ## Task for 20251110
+
+
+
 - SV purpose needs to be rethought:
   - **eg why can't the ALD valves themselves function to regulate gas flow (ie shut off an entire gas line when another half rxn is taking place or purge is happening) and dose chemical reactants?**
   - consider any other reasons why we might need to keep them around eg building up pressure to help sweep the vapor gases and help to provide a better precursor dose? (maybe not likely, but worth looking into?)
@@ -12,6 +15,17 @@
       - 3 modules on the relay will be dedicated to the valves     
         - Arduino needs to be programmed to supply +24V to the three modules from the house main switch     
 - Refine timing sequence valves; follow example that was provided!
+
+<img width="793" height="697" alt="image" src="https://github.com/user-attachments/assets/acbe6aed-4e69-4bb7-a814-c1e72521c485" />
+
+
+```
+
+
+
+```
+
+
 
 ## Task for 20251107 
 ### Troubleshooting notes

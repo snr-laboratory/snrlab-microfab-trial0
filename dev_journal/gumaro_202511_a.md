@@ -8,6 +8,17 @@
 ### Timing sequence diagram + K8 house main 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8bb8d002-58d1-4419-ba2f-de0fb1ea77d4" />
 
+### Scope measurements 
+-IN1 & IN2: TMA and H2O ALD valves (PIN 3 & 4)
+
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/1bfad42b-adfc-429c-ba75-615f7ed17f0c" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/1a6c8ae8-fedb-438d-a840-7224740facb9" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6b7a07b4-f519-41e8-88fc-a05e84949135" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/729d3530-ee59-4cbb-ae34-174d6a19e85f" />
+
+
+
+
 ### Code + K8 house main 
 ```
 #include <Arduino.h>

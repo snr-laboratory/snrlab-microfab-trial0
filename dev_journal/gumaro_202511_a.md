@@ -1,7 +1,8 @@
 ## Task for 20251111
 - Finish wiring safe state scheme (physical and diagram)
 - Update code and check with scope  
-<img width="346" height="532" alt="image" src="https://github.com/user-attachments/assets/aa939c6d-4945-45a2-8bdf-a9175126e1a6" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/d494ef04-8dca-445b-9096-5965aacbb9ea" />
+>
 
 ## Task for 20251110
 

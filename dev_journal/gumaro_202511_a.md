@@ -2,7 +2,8 @@
 - Finish wiring safe state scheme (physical and diagram)
 - Update code and check with scope  
 <img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/d494ef04-8dca-445b-9096-5965aacbb9ea" />
->
+
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/cc321029-2ece-4b9b-9255-516a35604aeb" />
 
 ## Task for 20251110
 

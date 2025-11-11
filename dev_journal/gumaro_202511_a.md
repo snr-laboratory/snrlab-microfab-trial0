@@ -1,6 +1,9 @@
+## Task for 20251111
+- Finish wiring safe state scheme (physical and diagram)
+- Update code and check with scope  
+<img width="346" height="532" alt="image" src="https://github.com/user-attachments/assets/aa939c6d-4945-45a2-8bdf-a9175126e1a6" />
+
 ## Task for 20251110
-
-
 
 - SV purpose needs to be rethought:
   - **eg why can't the ALD valves themselves function to regulate gas flow (ie shut off an entire gas line when another half rxn is taking place or purge is happening) and dose chemical reactants?**

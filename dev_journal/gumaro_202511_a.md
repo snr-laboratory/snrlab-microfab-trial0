@@ -16,8 +16,9 @@
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6b7a07b4-f519-41e8-88fc-a05e84949135" />
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/729d3530-ee59-4cbb-ae34-174d6a19e85f" />
 
-
-
+- TMA ALD: 48.0 ms
+- H2O ALD: 24.0 ms
+- Gap: 352 ms
 
 ### Code + K8 house main 
 ```

@@ -5,6 +5,323 @@
 
 <img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/cc321029-2ece-4b9b-9255-516a35604aeb" />
 
+### Code + K8 house main switch
+```
+#include <Arduino.h>
+
+// ============================================================================
+//  Al2O3 ALD Valve Control – 3-Valve + K8 "House Main" Safety (Final Version)
+//  - Non-blocking state machine (no delay())
+//  - Active-LOW relay logic (HIGH = OFF = SAFE)
+//  - K8 relay (IN8) acts as a "House Main" 24V power switch for K1–K3.
+//  - Valves can only be powered if House Main (K8) is ON (SYS_RUNNING).
+// ============================================================================
+
+// ------------------------ Pin Definitions -----------------------------------
+// Active-LOW:
+//   HIGH -> relay OFF -> NC valve closed (safe)
+//   LOW  -> relay ON  -> NC valve OPEN
+//
+// ARDUINO → RELAY MAPPING (Hong Wei JQC3F-05VDC-C):
+//   D3 -> IN1 -> K1 (TMA ALD valve)
+//   D4 -> IN2 -> K2 (H2O ALD valve)
+//   D5 -> IN3 -> K3 (N2 purge valve)
+//   D6 -> IN8 -> K8 (House Main 24V switch)
+
+#define VALVE_TMA_ALD   3   // Arduino D3 -> IN1 (K1)
+#define VALVE_H2O_ALD   4   // Arduino D4 -> IN2 (K2)
+#define VALVE_N2_PURGE  5   // Arduino D5 -> IN3 (K3)
+#define PIN_HOUSE_MAIN  6   // Arduino D6 -> IN8 (K8)
+
+// ------------------------ Timing + Cycle Recipe Structure -------------------
+typedef struct {
+  uint32_t tma_pulse_ms;      // TMA dose duration
+  uint32_t h2o_pulse_ms;      // H2O dose duration
+  uint32_t purge_gap_ms;      // Brief pause between valve state changes
+  uint32_t purge_on_ms;       // N2 purge duration
+  uint32_t purge_evacuate_ms; // Pump-down after purge
+  uint16_t cycles_to_run;     // Number of ALD cycles in one run
+} AldTimingRecipe;
+
+// Example recipe for Al2O3
+AldTimingRecipe aldRecipe = {
+  50,   // tma_pulse_ms
+  25,   // h2o_pulse_ms
+  50,   // purge_gap_ms
+  200,  // purge_on_ms
+  100,  // purge_evacuate_ms
+  5     // cycles_to_run
+};
+
+// ------------------------ High-Level System State ---------------------------
+enum SystemState {
+  SYS_IDLE,
+  SYS_RUNNING,
+  SYS_ESTOPPED
+};
+SystemState sysState = SYS_IDLE;
+
+// ------------------------ ALD Cycle State Machine ---------------------------
+enum AldState {
+  STEP_IDLE,
+  STEP_TMA_ON,
+  STEP_TMA_HOLD,
+  STEP_PURGE_GAP_1,
+  STEP_PURGE_ON_1,
+  STEP_PURGE_EVACUATE_1,
+  STEP_H2O_ON,
+  STEP_H2O_HOLD,
+  STEP_PURGE_GAP_2,
+  STEP_PURGE_ON_2,
+  STEP_PURGE_EVACUATE_2,
+  STEP_CYCLE_DONE
+};
+AldState stepState = STEP_IDLE;
+
+// Time bookkeeping
+unsigned long previousMillis = 0;
+unsigned long cycleStartTime = 0;
+uint16_t cyclesCompleted = 0;
+
+// ------------------------ Serial Command Characters ------------------------
+const char CMD_START = 's';
+const char CMD_ESTOP = 'e';
+const char CMD_RESET = 'r';
+
+// ------------------------ Helper: Valve-only safe state ---------------------
+// Turn OFF all three valves, but do NOT touch K8 (house main).
+// Used between steps / between cycles while SYS_RUNNING.
+void allValvesOff() {
+  digitalWrite(VALVE_TMA_ALD,   HIGH);
+  digitalWrite(VALVE_H2O_ALD,   HIGH);
+  digitalWrite(VALVE_N2_PURGE,  HIGH);
+}
+
+// ------------------------ Helper: Full safe state ---------------------------
+// Valves OFF + House Main OFF. Used on power-up, E-STOP, RESET, end-of-run.
+void allOutputsSafe() {
+  allValvesOff();
+  digitalWrite(PIN_HOUSE_MAIN, HIGH);  // K8 OFF -> +24_MAIN dead
+}
+
+// ------------------------ Helper: Logging with Timestamps -------------------
+void logEvent(const __FlashStringHelper *msg) {
+  unsigned long now = millis();
+  Serial.print(F("t = "));
+  Serial.print(now - cycleStartTime);
+  Serial.print(F(" ms : "));
+  Serial.println(msg);
+}
+
+// ------------------------ Helper: Serial Command Handling -------------------
+void checkSerialCommands() {
+  if (!Serial.available()) return;
+  char c = Serial.read();
+
+  // E-STOP: immediate, from any state
+  if (c == CMD_ESTOP || c == 'E') {
+    allOutputsSafe();
+    sysState        = SYS_ESTOPPED;
+    stepState       = STEP_IDLE;
+    cyclesCompleted = 0;
+    Serial.println();
+    Serial.println(F("!!! E-STOP ENGAGED !!!"));
+    Serial.println(F("K8 House Main OFF. All valves forced OFF."));
+    Serial.println(F("Send 'r' to reset when it is safe."));
+    return;
+  }
+
+  // RESET from E-STOP back to IDLE
+  if (c == CMD_RESET || c == 'R') {
+    if (sysState == SYS_ESTOPPED) {
+      sysState        = SYS_IDLE;
+      stepState       = STEP_IDLE;
+      cyclesCompleted = 0;
+      allOutputsSafe();
+      Serial.println();
+      Serial.println(F("E-STOP reset. System back to SYS_IDLE, K8 OFF, all valves OFF."));
+      Serial.println(F("Send 's' to start a new run."));
+    } else {
+      Serial.println(F("RESET ignored: system is not in SYS_ESTOPPED."));
+    }
+    return;
+  }
+
+  // START command: only allowed from IDLE
+  if (c == CMD_START || c == 'S') {
+    if (sysState == SYS_IDLE) {
+      sysState        = SYS_RUNNING;
+      stepState       = STEP_TMA_ON;
+      cyclesCompleted = 0;
+      cycleStartTime  = millis();
+      previousMillis  = cycleStartTime;
+
+      // Enable house main (K8) for the entire run
+      digitalWrite(PIN_HOUSE_MAIN, LOW);  // K8 ON -> +24_MAIN live
+
+      Serial.println();
+      Serial.println(F("=== ALD RUN START (K8 House Main ON) ==="));
+      Serial.print(F("Requested cycles in run: "));
+      Serial.println(aldRecipe.cycles_to_run);
+      Serial.print(F("Cycle 1 t0 (millis since reset) = "));
+      Serial.println(cycleStartTime);
+      logEvent(F("All valves OFF at cycle start"));
+    } else {
+      Serial.println(F("START ignored: system not SYS_IDLE (either RUNNING or ESTOPPED)."));
+    }
+  }
+}
+
+// ------------------------ SETUP ---------------------------------------------
+void setup() {
+  pinMode(VALVE_TMA_ALD,   OUTPUT); // D3
+  pinMode(VALVE_H2O_ALD,   OUTPUT); // D4
+  pinMode(VALVE_N2_PURGE,  OUTPUT); // D5
+  pinMode(PIN_HOUSE_MAIN,  OUTPUT); // D6
+
+  // SAFETY AT POWER-UP:
+  // Relays OFF (HIGH) -> valves closed + K8 OFF.
+  allOutputsSafe();
+
+  Serial.begin(115200);
+  Serial.println(F(">>> Al2O3 ALD Control – 3-Valve + K8 House Main (Final) <<<"));
+  Serial.println(F("SAFE POWER-UP: All relays HIGH (OFF). K8 is OFF, +24_MAIN off."));
+  Serial.println(F("Commands: 's' (start run), 'e' (E-stop), 'r' (reset)"));
+  Serial.println();
+}
+
+// ------------------------ MAIN LOOP ----------------------------------------
+void loop() {
+  checkSerialCommands();
+
+  if (sysState != SYS_RUNNING) {
+    return;  // IDLE or ESTOP: do nothing, everything is safe
+  }
+
+  unsigned long now = millis();
+
+  switch (stepState) {
+
+    case STEP_IDLE:
+      // Should not happen during SYS_RUNNING
+      break;
+
+    // ------------------ TMA Half-Cycle -------------------------------------
+    case STEP_TMA_ON:
+      logEvent(F("TMA valve ON"));
+      digitalWrite(VALVE_TMA_ALD, LOW);   // open TMA valve
+      previousMillis = now;
+      stepState = STEP_TMA_HOLD;
+      break;
+
+    case STEP_TMA_HOLD:
+      if (now - previousMillis >= aldRecipe.tma_pulse_ms) {
+        logEvent(F("TMA valve OFF"));
+        digitalWrite(VALVE_TMA_ALD, HIGH);  // close TMA valve
+        previousMillis = now;
+        stepState = STEP_PURGE_GAP_1;
+      }
+      break;
+
+    // ------------------ First Purge (after TMA) ----------------------------
+    case STEP_PURGE_GAP_1:
+      if (now - previousMillis >= aldRecipe.purge_gap_ms) {
+        logEvent(F("N2 PURGE 1 ON"));
+        digitalWrite(VALVE_N2_PURGE, LOW);  // open N2 purge valve
+        previousMillis = now;
+        stepState = STEP_PURGE_ON_1;
+      }
+      break;
+
+    case STEP_PURGE_ON_1:
+      if (now - previousMillis >= aldRecipe.purge_on_ms) {
+        logEvent(F("N2 PURGE 1 OFF"));
+        digitalWrite(VALVE_N2_PURGE, HIGH); // close N2 purge valve
+        previousMillis = now;
+        stepState = STEP_PURGE_EVACUATE_1;
+      }
+      break;
+
+    case STEP_PURGE_EVACUATE_1:
+      if (now - previousMillis >= aldRecipe.purge_evacuate_ms) {
+        logEvent(F("H2O valve ON"));
+        digitalWrite(VALVE_H2O_ALD, LOW);   // open H2O valve
+        previousMillis = now;
+        stepState = STEP_H2O_HOLD;
+      }
+      break;
+
+    // ------------------ H2O Half-Cycle -------------------------------------
+    case STEP_H2O_HOLD:
+      if (now - previousMillis >= aldRecipe.h2o_pulse_ms) {
+        logEvent(F("H2O valve OFF"));
+        digitalWrite(VALVE_H2O_ALD, HIGH);  // close H2O valve
+        previousMillis = now;
+        stepState = STEP_PURGE_GAP_2;
+      }
+      break;
+
+    // ------------------ Second Purge (after H2O) ---------------------------
+    case STEP_PURGE_GAP_2:
+      if (now - previousMillis >= aldRecipe.purge_gap_ms) {
+        logEvent(F("N2 PURGE 2 ON"));
+        digitalWrite(VALVE_N2_PURGE, LOW);  // open N2 purge valve
+        previousMillis = now;
+        stepState = STEP_PURGE_ON_2;
+      }
+      break;
+
+    case STEP_PURGE_ON_2:
+      if (now - previousMillis >= aldRecipe.purge_on_ms) {
+        logEvent(F("N2 PURGE 2 OFF"));
+        digitalWrite(VALVE_N2_PURGE, HIGH); // close N2 purge valve
+        previousMillis = now;
+        stepState = STEP_PURGE_EVACUATE_2;
+      }
+      break;
+
+    case STEP_PURGE_EVACUATE_2:
+      if (now - previousMillis >= aldRecipe.purge_evacuate_ms) {
+        logEvent(F("=== ALD CYCLE COMPLETE ==="));
+        allValvesOff();   // keep K8 ON between cycles
+        stepState = STEP_CYCLE_DONE;
+      }
+      break;
+
+    // ------------------ End-of-cycle logic (multi-cycle aware) ------------
+    case STEP_CYCLE_DONE: {
+      cyclesCompleted++;
+
+      if (cyclesCompleted < aldRecipe.cycles_to_run) {
+        Serial.println();
+        Serial.print(F("--- Starting next cycle ("));
+        Serial.print(cyclesCompleted + 1);
+        Serial.print(F(" of "));
+        Serial.print(aldRecipe.cycles_to_run);
+        Serial.println(F(") ---"));
+
+        cycleStartTime = now;
+        previousMillis = now;
+        stepState      = STEP_TMA_ON;
+        logEvent(F("All valves OFF at cycle start"));
+        // sysState stays SYS_RUNNING, K8 remains ON
+      } else {
+        // All requested cycles finished
+        allOutputsSafe();          // valves OFF + K8 OFF
+        sysState  = SYS_IDLE;
+        stepState = STEP_IDLE;
+        Serial.println();
+        Serial.print(F("Run complete: "));
+        Serial.print(cyclesCompleted);
+        Serial.println(F(" cycle(s) executed. System back to SYS_IDLE."));
+        Serial.println(F("Send 's' to start a new run."));
+      }
+      break;
+    }
+  }
+}
+```
+
 ## Task for 20251110
 
 - SV purpose needs to be rethought:

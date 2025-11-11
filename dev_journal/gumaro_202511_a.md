@@ -5,7 +5,10 @@
 
 <img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/cc321029-2ece-4b9b-9255-516a35604aeb" />
 
-### Code + K8 house main switch
+### Timing sequence diagram + K8 house main 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8bb8d002-58d1-4419-ba2f-de0fb1ea77d4" />
+
+### Code + K8 house main 
 ```
 #include <Arduino.h>
 

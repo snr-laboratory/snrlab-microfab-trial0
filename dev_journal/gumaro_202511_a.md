@@ -2,6 +2,9 @@
 - Install and verify E-stop and start buttons
 - Update onshape and drawio 
 
+### Check valves
+[Stainless Steel Poppet Check Valve, Fixed Pressure, 1/4 in. Swagelok Tube Fitting, 1/3 psig (0.03 bar)](https://products.swagelok.com/en/c/fixed-pressure/p/SS-4C-1%252F3?utm_source=chatgpt.com)
+
 ### Gas flow revised 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/74971176-2726-4d8d-aed3-406ca319f6c4" />
 

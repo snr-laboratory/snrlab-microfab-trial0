@@ -1,3 +1,10 @@
+## Task for 20251112
+- Install and verify E-stop and start buttons
+- Update Onshape and drawio 
+
+### Gas flow revised 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/74971176-2726-4d8d-aed3-406ca319f6c4" />
+
 ## Task for 20251111
 - Finish wiring safe state scheme (physical and diagram)
 - Update code and check with scope  

@@ -31,11 +31,18 @@
 - Gap: 352 ms
 
 -IN3 and IN8: N2 purge and house main (PIN 5 and 6)
+
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/cd3db9c0-6ec4-4942-9ea8-59523c3f0647" />
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/a6a903eb-b772-4d11-8774-fe7867a9f677" />
 
 - N2 purge: 200 ms 
 - Gap: 208 ms
+
+
+-IN3 and IN8: CH2 on +24V bus terminal
+
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/60865b2d-7484-4c51-82cd-e4047e736486" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/0a5d4782-6be3-464d-b763-84a2b414186a" />
 
 ### Code + K8 house main 
 ```

@@ -16,6 +16,325 @@
 ### Gas flow revised 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/74971176-2726-4d8d-aed3-406ca319f6c4" />
 
+### Code revised (K8 pulsed + Estop & start physical buttons + restart function)
+```
+#include <Arduino.h>
+
+/* ================= ALD Control – Pulsed K8 + E-stop sense (clarity vFinal) =================
+   Relay logic: ACTIVE-LOW (Hong-Wei JQC3F): LOW=ON, HIGH=OFF
+   K8 “house main”: pulsed around each valve window with MAIN_LEAD_MS / MAIN_LAG_MS margins
+   E-stop: 11–12 cuts 24 V (power side). Spare NO 23–24 → MCU for latching + logs.
+
+   WIRING (Arduino → relay inputs):
+     D3  -> IN1 (K1)  : TMA valve
+     D4  -> IN2 (K2)  : H2O valve
+     D5  -> IN3 (K3)  : N2 purge valve
+     D6  -> IN8 (K8)  : House main 24 V gate
+     D7  <- START (NO): 23→GND, 24→D7  (INPUT_PULLUP; pressed=LOW)
+     D2  <- E-STOP sense (NO spare): 23→GND, 24→D2 (INPUT_PULLUP; pressed=LOW)
+
+   Human flow:
+     E-stop press  -> ESTOPPED (latch, safe outputs)
+     E-stop release-> WAIT_RESET
+     START once    -> RESET -> IDLE
+     START again   -> RUN
+
+   Serial (optional):
+     's' start from IDLE (only if E-stop released)
+     'e' software E-stop
+     'r' reset to IDLE (ignored if E-stop still pressed)
+   =========================================================================================== */
+
+//
+// ------------------------------ Pin map (explicit) ------------------------------
+//
+#define VALVE_TMA_ALD   3   // Arduino D3 -> Relay IN1 (K1): TMA valve
+#define VALVE_H2O_ALD   4   // Arduino D4 -> Relay IN2 (K2): H2O valve
+#define VALVE_N2_PURGE  5   // Arduino D5 -> Relay IN3 (K3): N2 purge valve
+#define PIN_HOUSE_MAIN  6   // Arduino D6 -> Relay IN8 (K8): 24 V house-main gate
+#define PIN_START_BTN   7   // Arduino D7 <- Green START (NO): 23->GND, 24->D7
+#define PIN_ESTOP_SENSE 2   // Arduino D2 <- E-stop spare NO: 23->GND, 24->D2
+
+inline void relayOn (uint8_t p){ digitalWrite(p, LOW);  }  // ACTIVE-LOW energize
+inline void relayOff(uint8_t p){ digitalWrite(p, HIGH); }  // ACTIVE-LOW de-energize
+
+//
+// ------------------------------ Timing recipe (named) ------------------------------
+//
+typedef struct {
+  uint32_t tma_pulse_ms;       // TMA valve ON duration
+  uint32_t h2o_pulse_ms;       // H2O valve ON duration
+  uint32_t purge_gap_ms;       // All valves OFF before each N2 purge
+  uint32_t purge_on_ms;        // N2 purge valve ON duration
+  uint32_t purge_evacuate_ms;  // All valves OFF after each purge (pump-down)
+  uint16_t cycles_to_run;      // Number of ALD cycles
+} AldTimingRecipe;
+
+// Clear, designated initializer with per-field comments
+AldTimingRecipe R = {
+  .tma_pulse_ms      = 50,   // ms  (TMA ON)
+  .h2o_pulse_ms      = 25,   // ms  (H2O ON)
+  .purge_gap_ms      = 50,   // ms  (all OFF before each N2 purge)
+  .purge_on_ms       = 200,  // ms  (N2 ON)
+  .purge_evacuate_ms = 100,  // ms  (all OFF after N2 purge)
+  .cycles_to_run     = 5     // cycles
+};
+
+// K8 margins (lead before opening any valve, lag after closing it)
+const uint16_t MAIN_LEAD_MS = 100;
+const uint16_t MAIN_LAG_MS  = 100;
+// Sanity (compile-time) — adjust thresholds if you like
+static_assert(MAIN_LEAD_MS >= 10 && MAIN_LAG_MS >= 10, "K8 lead/lag too small");
+
+//
+// ------------------------------ Small helpers ------------------------------
+//
+inline bool isZero(uint32_t x){ return x == 0u; }  // prevents earlier compile issue
+
+struct Debounced { uint8_t pin; bool last, stable; unsigned long t; };
+const unsigned long DEBOUNCE_MS = 20;
+Debounced startBtn{PIN_START_BTN, HIGH, HIGH, 0};
+
+bool updateDebounce(Debounced &b){
+  bool r = digitalRead(b.pin);
+  if (r != b.last){ b.last = r; b.t = millis(); }
+  if ((millis() - b.t) > DEBOUNCE_MS && r != b.stable){ b.stable = r; return true; }
+  return false;
+}
+
+inline void allValvesOff(){ relayOff(VALVE_TMA_ALD); relayOff(VALVE_H2O_ALD); relayOff(VALVE_N2_PURGE); }
+inline void safeAll(){ allValvesOff(); relayOff(PIN_HOUSE_MAIN); }
+
+//
+// ------------------------------ State machine ------------------------------
+//
+enum S_t {
+  IDLE,
+  // TMA sequence
+  TMA_MAIN_LEAD, TMA_ON, TMA_MAIN_LAG, TMA_PURGE_GAP,
+  // Purge 1
+  PURGE1_MAIN_LEAD, PURGE1_ON, PURGE1_MAIN_LAG, PURGE1_EVACUATE,
+  // H2O
+  H2O_MAIN_LEAD, H2O_ON, H2O_MAIN_LAG, H2O_PURGE_GAP,
+  // Purge 2
+  PURGE2_MAIN_LEAD, PURGE2_ON, PURGE2_MAIN_LAG, PURGE2_EVACUATE,
+  // End
+  DONE,
+  // Safety
+  ESTOPPED,      // E-stop pressed (latched)
+  WAIT_RESET     // E-stop released; waiting for START to acknowledge reset
+};
+
+S_t S = IDLE;
+unsigned long t0 = 0, runStartMs = 0;
+uint16_t cyclesLeft = 0;
+bool estopPrev = HIGH; // INPUT_PULLUP: HIGH=not pressed, LOW=pressed
+
+void logEvent(const __FlashStringHelper *msg){
+  unsigned long now = millis();
+  Serial.print(F("t=")); Serial.print(now - runStartMs); Serial.print(F("ms : ")); Serial.println(msg);
+}
+
+void handleEstop(){
+  safeAll(); S = ESTOPPED; cyclesLeft = 0;
+  Serial.println(); Serial.println(F("*** E-STOP *** All outputs safe. Release then START to reset."));
+}
+
+void handleStartRun(){
+  cyclesLeft = R.cycles_to_run; runStartMs = millis(); t0 = runStartMs; S = TMA_MAIN_LEAD;
+  Serial.println(); Serial.println(F("=== RUN (pulsed-main) ===")); logEvent(F("TMA lead"));
+}
+
+//
+// ------------------------------ Setup / Inputs ------------------------------
+//
+void setup(){
+  pinMode(VALVE_TMA_ALD,OUTPUT);
+  pinMode(VALVE_H2O_ALD,OUTPUT);
+  pinMode(VALVE_N2_PURGE,OUTPUT);
+  pinMode(PIN_HOUSE_MAIN,OUTPUT);
+  pinMode(PIN_START_BTN,INPUT_PULLUP);   // NO: pressed=LOW
+  pinMode(PIN_ESTOP_SENSE,INPUT_PULLUP); // NO: pressed=LOW
+  safeAll();
+
+  estopPrev = digitalRead(PIN_ESTOP_SENSE);
+  if (estopPrev == LOW) { S = ESTOPPED; }
+
+  Serial.begin(115200);
+  Serial.println(F("ALD Control (pulsed K8, E-stop sense, Start-to-Reset)"));
+}
+
+void checkInputs(){
+  // E-stop edges
+  bool estopNow = digitalRead(PIN_ESTOP_SENSE);
+  if (estopNow == LOW && estopPrev == HIGH) handleEstop(); // pressed
+  if (S == ESTOPPED && estopNow == HIGH && estopPrev == LOW){
+    safeAll(); S = WAIT_RESET; Serial.println(F("E-stop released. Press START to RESET -> IDLE."));
+  }
+  estopPrev = estopNow;
+
+  // START button
+  if (updateDebounce(startBtn) && startBtn.stable == LOW){
+    if (digitalRead(PIN_ESTOP_SENSE) == LOW){
+      Serial.println(F("START ignored: E-stop down."));
+    } else if (S == IDLE){
+      Serial.println(F("START -> RUN")); handleStartRun();
+    } else if (S == WAIT_RESET){
+      Serial.println(F("RESET -> IDLE")); safeAll(); S = IDLE;
+    }
+  }
+
+  // Serial (guarded reset)
+  if (Serial.available()){
+    char c = Serial.read();
+    if      (c=='s' && S==IDLE && digitalRead(PIN_ESTOP_SENSE)==HIGH) handleStartRun();
+    else if (c=='e') handleEstop();
+    else if (c=='r'){
+      if (digitalRead(PIN_ESTOP_SENSE)==HIGH){ safeAll(); S=IDLE; Serial.println(F("RESET -> IDLE")); }
+      else                                    Serial.println(F("RESET ignored: E-stop down."));
+    }
+  }
+}
+
+//
+// ------------------------------ Core loop ------------------------------
+//
+void loop(){
+  checkInputs();
+  unsigned long now = millis();
+
+  switch (S){
+    case IDLE:
+    case ESTOPPED:
+    case WAIT_RESET:
+      break;
+
+    // ---- TMA ----
+    case TMA_MAIN_LEAD:
+      allValvesOff(); relayOn(PIN_HOUSE_MAIN); logEvent(F("K8 ON (TMA lead)"));
+      t0=now; S=TMA_ON; break;
+
+    case TMA_ON:
+      if (now - t0 >= MAIN_LEAD_MS){
+        if (!isZero(R.tma_pulse_ms)){ relayOn(VALVE_TMA_ALD); logEvent(F("TMA ON")); }
+        t0=now; S=TMA_MAIN_LAG;
+      }
+      break;
+
+    case TMA_MAIN_LAG:
+      if (isZero(R.tma_pulse_ms) || (now - t0 >= R.tma_pulse_ms)){
+        if (!isZero(R.tma_pulse_ms)){ relayOff(VALVE_TMA_ALD); logEvent(F("TMA OFF")); }
+        t0=now; S=TMA_PURGE_GAP;
+      }
+      break;
+
+    case TMA_PURGE_GAP:
+      if (now - t0 >= MAIN_LAG_MS){
+        relayOff(PIN_HOUSE_MAIN); logEvent(F("K8 OFF (TMA lag)"));
+        t0=now; S=PURGE1_MAIN_LEAD;
+      }
+      break;
+
+    // ---- Purge 1 ----
+    case PURGE1_MAIN_LEAD:
+      if (now - t0 >= R.purge_gap_ms){
+        allValvesOff(); relayOn(PIN_HOUSE_MAIN); logEvent(F("K8 ON (P1 lead)"));
+        t0=now; S=PURGE1_ON;
+      }
+      break;
+
+    case PURGE1_ON:
+      if (now - t0 >= MAIN_LEAD_MS){
+        if (!isZero(R.purge_on_ms)){ relayOn(VALVE_N2_PURGE); logEvent(F("P1 ON")); }
+        t0=now; S=PURGE1_MAIN_LAG;
+      }
+      break;
+
+    case PURGE1_MAIN_LAG:
+      if (isZero(R.purge_on_ms) || (now - t0 >= R.purge_on_ms)){
+        if (!isZero(R.purge_on_ms)){ relayOff(VALVE_N2_PURGE); logEvent(F("P1 OFF")); }
+        t0=now; S=PURGE1_EVACUATE;
+      }
+      break;
+
+    case PURGE1_EVACUATE:
+      if (now - t0 >= MAIN_LAG_MS){
+        relayOff(PIN_HOUSE_MAIN); logEvent(F("K8 OFF (P1 lag)"));
+        t0=now; S=H2O_MAIN_LEAD;
+      }
+      break;
+
+    // ---- H2O ----
+    case H2O_MAIN_LEAD:
+      if (now - t0 >= R.purge_evacuate_ms){
+        allValvesOff(); relayOn(PIN_HOUSE_MAIN); logEvent(F("K8 ON (H2O lead)"));
+        t0=now; S=H2O_ON;
+      }
+      break;
+
+    case H2O_ON:
+      if (now - t0 >= MAIN_LEAD_MS){
+        if (!isZero(R.h2o_pulse_ms)){ relayOn(VALVE_H2O_ALD); logEvent(F("H2O ON")); }
+        t0=now; S=H2O_MAIN_LAG;
+      }
+      break;
+
+    case H2O_MAIN_LAG:
+      if (isZero(R.h2o_pulse_ms) || (now - t0 >= R.h2o_pulse_ms)){
+        if (!isZero(R.h2o_pulse_ms)){ relayOff(VALVE_H2O_ALD); logEvent(F("H2O OFF")); }
+        t0=now; S=H2O_PURGE_GAP;
+      }
+      break;
+
+    case H2O_PURGE_GAP:
+      if (now - t0 >= MAIN_LAG_MS){
+        relayOff(PIN_HOUSE_MAIN); logEvent(F("K8 OFF (H2O lag)"));
+        t0=now; S=PURGE2_MAIN_LEAD;
+      }
+      break;
+
+    // ---- Purge 2 ----
+    case PURGE2_MAIN_LEAD:
+      if (now - t0 >= R.purge_gap_ms){
+        allValvesOff(); relayOn(PIN_HOUSE_MAIN); logEvent(F("K8 ON (P2 lead)"));
+        t0=now; S=PURGE2_ON;
+      }
+      break;
+
+    case PURGE2_ON:
+      if (now - t0 >= MAIN_LEAD_MS){
+        if (!isZero(R.purge_on_ms)){ relayOn(VALVE_N2_PURGE); logEvent(F("P2 ON")); }
+        t0=now; S=PURGE2_MAIN_LAG;
+      }
+      break;
+
+    case PURGE2_MAIN_LAG:
+      if (isZero(R.purge_on_ms) || (now - t0 >= R.purge_on_ms)){
+        if (!isZero(R.purge_on_ms)){ relayOff(VALVE_N2_PURGE); logEvent(F("P2 OFF")); }
+        t0=now; S=PURGE2_EVACUATE;
+      }
+      break;
+
+    case PURGE2_EVACUATE:
+      if (now - t0 >= MAIN_LAG_MS){
+        relayOff(PIN_HOUSE_MAIN); logEvent(F("K8 OFF (P2 lag)"));
+        t0=now; S=DONE;
+      }
+      break;
+
+    case DONE:
+      if (now - t0 >= R.purge_evacuate_ms){
+        logEvent(F("Cycle complete."));
+        if (--cyclesLeft > 0){ Serial.print(F("Left: ")); Serial.println(cyclesLeft); t0=now; S=TMA_MAIN_LEAD; }
+        else { logEvent(F("Run complete -> IDLE")); safeAll(); S=IDLE; }
+      }
+      break;
+  }
+}
+
+
+```
+
 ## Task for 20251111
 - Finish wiring safe state scheme (physical and diagram)
 - Update code and check with scope  

@@ -4,6 +4,8 @@
 ### Timing sequence diagram with K8 pulsing
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/84eb1c0b-bc81-441b-9e9f-01ceea3b6f29" />
 
+- We pulse K8 so valves can only physically receive 24 V during the exact windows we schedule. That means a single software or wiring fault can’t quietly hold a valve open between steps, and if a branch failed closed we’d only see leakage in brief K8 windows instead of continuously. It’s a second, independent permission layer—defense-in-depth. The trade-off is extra K8 cycling., 
+
 ### Scope K8 pulsing 
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7c4042fe-eab7-48e3-85d3-11e2afcc4144" />
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f08838b0-f6e4-4cc5-8c61-aac33c75597c" />

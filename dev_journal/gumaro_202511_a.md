@@ -1,6 +1,8 @@
 ## Task for 20251112
 - Install and verify E-stop and start buttons
 - Update onshape and drawio 
+### Timing sequence diagram with K8 pulsing
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/84eb1c0b-bc81-441b-9e9f-01ceea3b6f29" />
 
 ### Scope K8 pulsing 
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7c4042fe-eab7-48e3-85d3-11e2afcc4144" />

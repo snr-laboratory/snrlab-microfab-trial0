@@ -6,6 +6,8 @@
 
 ### Scope K8 pulsing 
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7c4042fe-eab7-48e3-85d3-11e2afcc4144" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f08838b0-f6e4-4cc5-8c61-aac33c75597c" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/d34b5fd3-72b0-4e19-97c9-7d522676605f" />
 
 
 ### Check valves

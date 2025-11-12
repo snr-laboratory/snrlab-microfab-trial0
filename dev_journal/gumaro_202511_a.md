@@ -1,6 +1,6 @@
 ## Task for 20251112
 - Install and verify E-stop and start buttons
-- Update Onshape and drawio 
+- Update onshape and drawio 
 
 ### Gas flow revised 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/74971176-2726-4d8d-aed3-406ca319f6c4" />
@@ -26,6 +26,13 @@
 - TMA ALD: 48.0 ms
 - H2O ALD: 24.0 ms
 - Gap: 352 ms
+
+-IN3 and IN8: N2 purge and house main (PIN 5 and 6)
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/cd3db9c0-6ec4-4942-9ea8-59523c3f0647" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/a6a903eb-b772-4d11-8774-fe7867a9f677" />
+
+- N2 purge: 200 ms 
+- Gap: 208 ms
 
 ### Code + K8 house main 
 ```

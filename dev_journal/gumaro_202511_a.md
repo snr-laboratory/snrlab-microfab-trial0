@@ -2,6 +2,10 @@
 - Install and verify E-stop and start buttons
 - Update onshape and drawio 
 
+### Scope K8 pulsing 
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7c4042fe-eab7-48e3-85d3-11e2afcc4144" />
+
+
 ### Check valves
 [Stainless Steel Poppet Check Valve, Fixed Pressure, 1/4 in. Swagelok Tube Fitting, 1/3 psig (0.03 bar)](https://products.swagelok.com/en/c/fixed-pressure/p/SS-4C-1%252F3?utm_source=chatgpt.com)
 

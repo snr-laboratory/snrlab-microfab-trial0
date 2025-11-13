@@ -4,11 +4,28 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 
 ---
 
+## 20251113
+
+| Start date | Assigned deadline | Actual completion |
+|------------|-------------------|-------------------|
+| 20251113   | 20251205          |                   |
+
+### Task description
+
+- Complete mechanical design (onshape model) of the system.
+- Generate bill of materials.
+- Procure all parts.
+- Construct support skeleton.
+- Demonstrate complete vacuum and gas flow.
+  - leaked checked, baked, temperature checked.
+
+----
+
 ## 20250926 Electronic control system
 
 | Start date | Assigned deadline | Actual completion |
 |------------|-------------------|-------------------|
-| 20250926   | 20251003          |                   |
+| 20250926   | 20251003          | 20251113          |
 
 ### Task description
 
@@ -17,15 +34,5 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 - Demonstrate the hardware system is entirely controlled by software both in MCU and in PC.
 - Demonstrate the timing of actuation meets the ALD requirements.
 - Demonstrate compliance to minimum electrical system standards.
-
-----
-
-## 20251104
-
-| Start date | Assigned deadline | Actual completion |
-|------------|-------------------|-------------------|
-| 20251104   | 20251111          |                   |
-
-### Task description
 
 ----

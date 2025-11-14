@@ -1,3 +1,8 @@
+## Reminder
+- Correct K8 pulsing to constant state and enter off state at the end of each cycle
+  - Correct timing diagram of new code
+  - nomenclature should match (timing diagram + code)  
+
 ## Task for 20251112
 - Install and verify E-stop and start buttons
 - Update onshape and drawio 

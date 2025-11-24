@@ -1,3 +1,126 @@
+
+## Corrections 
+<img width="829" height="714" alt="image" src="https://github.com/user-attachments/assets/41757e42-c75a-4e57-bffb-aea49062f528" />
+
+- revisedTSv2 - MATLAB folder with code
+
+### Code revised for constant K8
+```
+#include <Arduino.h>
+
+/* === ALD Control — constant K8 per cycle (final) ============================
+   ACTIVE-LOW relays (Hong-Wei): LOW=ON, HIGH=OFF
+   Pins: D3=TMA, D4=H2O, D5=N2, D6=K8(main), D7=START (NO->GND), D2=E-STOP sense (NO->GND)
+   E-stop: 11–12 cuts 24 V; spare NO 23–24 -> D2 for firmware latch.
+============================================================================= */
+
+#define VALVE_TMA_ALD   3
+#define VALVE_H2O_ALD   4
+#define VALVE_N2_PURGE  5
+#define PIN_HOUSE_MAIN  6
+#define PIN_START_BTN   7
+#define PIN_ESTOP_SENSE 2
+
+inline void relayOn (uint8_t p){ digitalWrite(p, LOW);  }
+inline void relayOff(uint8_t p){ digitalWrite(p, HIGH); }
+
+// ---- Recipe ----
+typedef struct {
+  uint32_t tma_pulse_ms;       // TMA ON
+  uint32_t h2o_pulse_ms;       // H2O ON
+  uint32_t purge_gap_ms;       // all OFF before each N2 purge
+  uint32_t purge_on_ms;        // N2 ON
+  uint32_t purge_evacuate_ms;  // all OFF after each N2 purge
+  uint16_t cycles_to_run;      // number of ALD cycles
+} AldTimingRecipe;
+
+AldTimingRecipe R = { 50, 25, 50, 200, 100, 5 };
+
+// K8 margins (cycle-level)
+const uint16_t main_lead_ms = 100;
+const uint16_t main_lag_ms  = 100;
+
+inline bool isZero(uint32_t x){ return x == 0u; }
+
+// ---- Debounce for START ----
+struct Debounced { uint8_t pin; bool last, stable; unsigned long t; };
+const unsigned long DEBOUNCE_MS = 20;
+Debounced startBtn{PIN_START_BTN, HIGH, HIGH, 0};
+bool updateDebounce(Debounced &b){
+  bool r = digitalRead(b.pin);
+  if (r != b.last){ b.last = r; b.t = millis(); }
+  if ((millis() - b.t) > DEBOUNCE_MS && r != b.stable){ b.stable = r; return true; }
+  return false;
+}
+
+inline void allValvesOff(){ relayOff(VALVE_TMA_ALD); relayOff(VALVE_H2O_ALD); relayOff(VALVE_N2_PURGE); }
+inline void safeAll(){ allValvesOff(); relayOff(PIN_HOUSE_MAIN); }
+
+// Interlocks (set later via serial; default TRUE so you’re unblocked)
+bool pressure_ok = true, temp_ok = true;
+
+// ---- States ----
+enum S_t { IDLE, MAIN_LEAD,
+           TMA_ON, TMA_OFF_GAP,
+           PURGE1_ON, PURGE1_OFF_EVAC,
+           H2O_ON, H2O_OFF_GAP,
+           PURGE2_ON, PURGE2_OFF_EVAC,
+           MAIN_LAG, DONE,
+           ESTOPPED, WAIT_RESET };
+S_t S = IDLE;
+
+unsigned long t0 = 0, runStartMs = 0;
+uint16_t cyclesLeft = 0;
+bool estopPrev = HIGH;
+
+void logEvent(const __FlashStringHelper* msg){
+  unsigned long now = millis();
+  Serial.print(F("t=")); Serial.print(now - runStartMs); Serial.print(F("ms : "));
+  Serial.println(msg);
+}
+
+void handleEstop(){ safeAll(); S = ESTOPPED; cyclesLeft = 0;
+  Serial.println(F("*** E-STOP *** All outputs safe. Release then START to reset.")); }
+
+void handleStartRun(){
+  cyclesLeft = R.cycles_to_run; runStartMs = millis(); t0 = runStartMs;
+  S = MAIN_LEAD; Serial.println(F("=== RUN (constant-K8-per-cycle) ==="));
+  logEvent(F("K8 lead begin"));
+}
+
+void setup(){
+  pinMode(VALVE_TMA_ALD,OUTPUT); pinMode(VALVE_H2O_ALD,OUTPUT);
+  pinMode(VALVE_N2_PURGE,OUTPUT); pinMode(PIN_HOUSE_MAIN,OUTPUT);
+  pinMode(PIN_START_BTN,INPUT_PULLUP); pinMode(PIN_ESTOP_SENSE,INPUT_PULLUP);
+  safeAll(); estopPrev = digitalRead(PIN_ESTOP_SENSE);
+  Serial.begin(115200);
+  if (estopPrev == LOW){ S = ESTOPPED; Serial.println(F("Boot: E-STOP pressed -> ESTOPPED.")); }
+}
+
+void checkInputs(){
+  // E-stop edges
+  bool estop = digitalRead(PIN_ESTOP_SENSE);
+  if (estop == LOW && estopPrev == HIGH) handleEstop();
+  if (S == ESTOPPED && estop == HIGH && estopPrev == LOW){ safeAll(); S = WAIT_RESET; Serial.println(F("E-stop released. START to RESET -> IDLE.")); }
+  estopPrev = estop;
+
+  // START button
+  if (updateDebounce(startBtn) && startBtn.stable == LOW){
+    if (digitalRead(PIN_ESTOP_SENSE)==LOW) Serial.println(F("START ignored: E-stop down."));
+    else if (S==IDLE && pressure_ok && temp_ok){ Serial.println(F("START -> RUN")); handleStartRun(); }
+    else if (S==WAIT_RESET){ Serial.println(F("RESET -> IDLE")); safeAll(); S = IDLE; }
+  }
+
+  // Serial: s/e/r + interlocks p/t
+  if (Serial.available()){
+    char c = Serial.read();
+    if      (c=='s' && S==IDLE && digitalRead(PIN_ESTOP_SENSE)==HIGH && pressure_ok && temp_ok) handleStartRun();
+    else if (c=='e') handleEstop();
+    else if (
+
+
+```
+
 ## Reminder
 - Correct K8 pulsing to constant state and enter off state at the end of each cycle
   - Correct timing diagram of new code

@@ -116,10 +116,97 @@ void checkInputs(){
     char c = Serial.read();
     if      (c=='s' && S==IDLE && digitalRead(PIN_ESTOP_SENSE)==HIGH && pressure_ok && temp_ok) handleStartRun();
     else if (c=='e') handleEstop();
-    else if (
+    else if (c=='r'){
+      if (digitalRead(PIN_ESTOP_SENSE)==HIGH){ safeAll(); S=IDLE; Serial.println(F("RESET -> IDLE")); }
+      else                                    Serial.println(F("RESET ignored: E-stop down."));
+    }
+    else if (c=='p'){ while(!Serial.available()){} pressure_ok = (Serial.read()=='1'); Serial.print(F("PRESSURE_OK=")); Serial.println(pressure_ok); }
+    else if (c=='t'){ while(!Serial.available()){} temp_ok     = (Serial.read()=='1'); Serial.print(F("TEMP_OK="));     Serial.println(temp_ok); }
+  }
+}
+
+void loop(){
+  checkInputs();
+  unsigned long now = millis();
+
+  switch (S){
+    case IDLE: case ESTOPPED: case WAIT_RESET: break;
+
+    // K8 ON once for the cycle
+    case MAIN_LEAD:
+      relayOn(PIN_HOUSE_MAIN); logEvent(F("K8 ON (cycle lead)"));
+      t0 = now; S = TMA_ON; break;
+
+    // TMA
+    case TMA_ON:
+      if (now - t0 >= main_lead_ms){
+        if (!isZero(R.tma_pulse_ms)){ relayOn(VALVE_TMA_ALD); logEvent(F("TMA ON")); }
+        t0 = now; S = TMA_OFF_GAP;
+      } break;
+
+    case TMA_OFF_GAP:
+      if (isZero(R.tma_pulse_ms) || (now - t0 >= R.tma_pulse_ms)){
+        if (!isZero(R.tma_pulse_ms)){ relayOff(VALVE_TMA_ALD); logEvent(F("TMA OFF")); }
+        t0 = now; S = PURGE1_ON;
+      } break;
+
+    // Purge 1
+    case PURGE1_ON:
+      if (now - t0 >= R.purge_gap_ms){
+        if (!isZero(R.purge_on_ms)){ relayOn(VALVE_N2_PURGE); logEvent(F("N2 PURGE 1 ON")); }
+        t0 = now; S = PURGE1_OFF_EVAC;
+      } break;
+
+    case PURGE1_OFF_EVAC:
+      if (isZero(R.purge_on_ms) || (now - t0 >= R.purge_on_ms)){
+        if (!isZero(R.purge_on_ms)){ relayOff(VALVE_N2_PURGE); logEvent(F("N2 PURGE 1 OFF")); }
+        t0 = now; S = H2O_ON;
+      } break;
+
+    // H2O
+    case H2O_ON:
+      if (now - t0 >= R.purge_evacuate_ms){
+        if (!isZero(R.h2o_pulse_ms)){ relayOn(VALVE_H2O_ALD); logEvent(F("H2O ON")); }
+        t0 = now; S = H2O_OFF_GAP;
+      } break;
+
+    case H2O_OFF_GAP:
+      if (isZero(R.h2o_pulse_ms) || (now - t0 >= R.h2o_pulse_ms)){
+        if (!isZero(R.h2o_pulse_ms)){ relayOff(VALVE_H2O_ALD); logEvent(F("H2O OFF")); }
+        t0 = now; S = PURGE2_ON;
+      } break;
+
+    // Purge 2
+    case PURGE2_ON:
+      if (now - t0 >= R.purge_gap_ms){
+        if (!isZero(R.purge_on_ms)){ relayOn(VALVE_N2_PURGE); logEvent(F("N2 PURGE 2 ON")); }
+        t0 = now; S = PURGE2_OFF_EVAC;
+      } break;
+
+    case PURGE2_OFF_EVAC:
+      if (isZero(R.purge_on_ms) || (now - t0 >= R.purge_on_ms)){
+        if (!isZero(R.purge_on_ms)){ relayOff(VALVE_N2_PURGE); logEvent(F("N2 PURGE 2 OFF")); }
+        t0 = now; S = MAIN_LAG;
+      } break;
+
+    // K8 OFF once after final evac + lag
+    case MAIN_LAG:
+      if (now - t0 >= R.purge_evacuate_ms + main_lag_ms){
+        relayOff(PIN_HOUSE_MAIN); logEvent(F("K8 OFF (cycle end)"));
+        t0 = now; S = DONE;
+      } break;
+
+    case DONE:
+      if (--cyclesLeft > 0){ Serial.print(F("Next cycle... remaining: ")); Serial.println(cyclesLeft);
+        t0 = now; S = MAIN_LEAD;
+      } else { logEvent(F("Run complete -> IDLE")); safeAll(); S = IDLE; }
+      break;
+  }
+}
 
 
 ```
+- (Part description and usage - chatgpt thread)
 
 ## Reminder
 - Correct K8 pulsing to constant state and enter off state at the end of each cycle

@@ -7,7 +7,7 @@ We propose a cleanroom-free Molecular Layer Epitaxy (MLE) process for cyclic dep
 
 ## 1. Motivation and Project Scope
 
-Conventional diamond CVD requires microwave plasma CVD (MPCVD) reactors ($30,000–$100,000+), hot filaments operating above 2000°C, or RF/DC plasma discharges — all of which preclude conformal coating of high-aspect-ratio structures and CMOS device integration. The SNR Lab tube reactor (Thermolyne 21100 furnace, Swagelok ALD3 manifold, VIVO VP125 pump) offers a simple, low-cost platform that, with minor modification, can deliver pulsed hydrocarbon and CO chemistry at controlled temperatures below 500°C.
+Conventional diamond CVD requires microwave plasma CVD (MPCVD) reactors ($30,000–$100,000+), hot filaments operating above 2000°C, or RF/DC plasma discharges — all of which preclude conformal coating of high-aspect-ratio structures and CMOS device integration. The tube reactor (Thermolyne 21100 furnace, Swagelok ALD3 manifold, VIVO VP125 pump) offers a simple, low-cost platform that, with minor modification, can deliver pulsed hydrocarbon and CO chemistry at controlled temperatures below 500°C.
 
 The central engineering goal is to eliminate the *full* plasma CVD reactor, not to eliminate all radical activation. The distinction matters: a bench-top UV lamp or a 10–50 W upstream remote discharge is categorically different in cost, complexity, and substrate damage from an MPCVD reactor. Conformal coverage — ALD's defining advantage over plasma — is preserved as long as activation is thermal or photon-based rather than ion-bombardment-based.
 

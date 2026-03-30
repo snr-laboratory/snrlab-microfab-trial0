@@ -54,7 +54,7 @@ Aim for "Near-Perfect" materials for magnon transport, we must quantify defect c
 * **C-V Profiling (Capacitance-Voltage):** To extract defect concentrations, frequency-dependent C-V and Conductance ($G/\omega$) measurements will be performed on Metal-Insulator-Semiconductor (MIS) capacitor structures (e.g., Al/NiO/p-Si). High-frequency (1 MHz) C-V curves allow for the determination of flat-band voltage ($V_{fb}$) and fixed oxide charge density ($Q_f$), while frequency dispersion between 10 kHz and 1 MHz is utilized to calculate the interface trap density ($D_{it}$) via the Terman or conductance methods [11, 12].
 
 
-### Experimental Plan
+## Experimental Plan
 
 **Phase 1: Infrastructure & Safety**
 * Procure $Ni(amd)_2$ and install a heated stainless steel bubbler on Port 3 (currently capped).

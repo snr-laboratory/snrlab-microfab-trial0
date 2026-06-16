@@ -4,19 +4,36 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 
 ---
 
+## 20260616 water-vapor-pulsed thermal oxidation of Cu
+
+| Start date | Assigned deadline | Actual completion |
+|------------|-------------------|-------------------|
+| 20260301   |    20260601       | 20260616          |      
+
+### Task description
+- Use water-vapor-pulsed thermal oxidation of Cu → Cu2O as a SAFE, VISIBLE way to validate the tool behavior and safety before committing to pyrophoric TMA.
+  - Show control and selectivity of Cu oxidation phases   
+- Establish per-pulse dose measurement from 20 Hz pressure logging + dual-RTD temperature logging.
+- Diagnose and correct any process faults found during the campaign.
+- Demonstrate run-to-run process reproducibility under identical recipe conditions.
+- Modify hardware/software if needed
+  - Schenk line had a backstreaming issue   
+
+----
+
 ## 20251113
 
 | Start date | Assigned deadline | Actual completion |
 |------------|-------------------|-------------------|
-| 20251113   | 20251205          |                   |
+| 20251113   | 20251205          | **20260801**      |
 
 ### Task description
 
-- Complete mechanical design (onshape model) of the system.
-- Generate bill of materials.
-- Procure all parts.
-- Construct support skeleton.
-- Demonstrate complete vacuum and gas flow.
+- Complete mechanical design (onshape model) of the system. **(mostly done; waiting on TMA diaphram valve; 20260701)**
+- Generate bill of materials. **(20260701)**
+- Procure all parts. **(TMA, sparging and QCM parts are still in need; 20260731)**
+- Construct support skeleton. **(done)**
+- Demonstrate complete vacuum and gas flow. **(TMA line + ALD3 valve has yet to be tested; 20260731)**
   - leaked checked, baked, temperature checked.
 
 ----

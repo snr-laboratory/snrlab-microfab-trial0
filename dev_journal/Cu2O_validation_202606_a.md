@@ -54,7 +54,9 @@ later use.
 - Identical parameters for J and K. Scripts: verify_reproducibility.py, plot_two_metrics.py,
 n2_diag.py, n2_verify.py, plot_n2_spike.py, plot_timing_runJK.py.
 
-### Preliminary Results
+----
+
+## Findings
 Failure mode found and fixed. Water back-streaming (not a leak).
 
 - When N2-valve opens after pump-down (furnace OFF), pre-fix runs showed a large pressure spike from a ~1 Torr floor.
@@ -74,11 +76,10 @@ Failure mode found and fixed. Water back-streaming (not a leak).
 - Cycle period: 11.54 s both runs; 393 detected pulses both runs.
 - A raw "absolute peak" comparison gives +2.3%. The raw peak rides on the working floor. The dose reproduced to 0.1%; Run K simply sat on a slightly higher working floor (3.75 J vs 3.98 K Torr), inflating the raw peak.
 
-The per-pulse rise:
+### The per-pulse rise
 ![caption](../doc/assets/Cu2O_validation_202606_a/two_metrics_reconciled-2.png)
 
-The process reproducibility metrics:
-
+### The process reproducibility metrics:
 |Metric                                      |Run J	           |Run K	                         |Agreement|
 |--------------------------------------------|-----------------|---------------------------------|---------|   
 |Per-pulse water dose (peak − local baseline)|1.248 ± 0.42 Torr|1.247 ± 0.42 Torr                | 0.1%    |   
@@ -88,8 +89,7 @@ The process reproducibility metrics:
 |Working floor (median)                      |3.75 Torr        |	3.98 Torr                    |  +6%    |   
 |Absolute peak (mean)                        |4.81 Torr        |	4.93 Torr                    | +2.3%   |   
 
-Temperature offsets:
-
+### Temperature offsets:
 | Run | Setpoint | RTD-B median | Offset |
 | --- | -------- | ------------ | ------ |
 | A   | 250      | 228.0        | 22.0   |
@@ -101,9 +101,10 @@ Temperature offsets:
 | K   | 250      | 225.1        | 24.9   |
 
 
-
 ### Cu2O films
 Cu2O color tracks oxide thickness (brown → pink/magenta → violet → blue). Films reproduced within a regime; Run K showed thicker, multi-color (rainbow) coverage. Color/uniformity variation is attributed to substrate strain and stress effects from sample prep (ie oxide growth occurs faster in regions that have undergone some form of mechanical stress or strain), not process drift.
+
+----
 
 ### Takeaways
 - The delivery tool and timing are validated for the water ALD3 valve + lines, N2 solenoid valve + lines and Cu oxidation
@@ -115,10 +116,15 @@ Cu2O color tracks oxide thickness (brown → pink/magenta → violet → blue). 
 Sampling rate vs actuation. 20 Hz is sufficient for per-pulse dose for these runs. It does not resolve the valve actuation waveform (single-digit-ms open) or short Al2O3 TMA pulses (~50 ms → ~1 sample). This is gauge-limited (IGC100 ~36 Hz), not code-limited? 
 - resolving fast pulses in the TMA phase would require a fast analog transducer (e.g., capacitance manometer + ADC).
 
+----
+
 ### Plans
 - Confirm dedicated TMA gas lines (Swagelok diaphragm valves on order).
 - Promote firmware pressure_ok / temp_ok interlocks from default-TRUE stubs to blocking checks before any TMA run (reason: a bad-state start with a pyrophoric precursor is the exact scenario the interlock exists to prevent).
 - PI safety sign-off before purchasing TMA.
+
+
+----
 
 ### References 
 [Oxidation mechanism of thin Cu films A gateway towards the formation of single oxide phase](https://univ-rennes.hal.science/hal-01809058/file/1.5028407-1.pdf)
@@ -139,6 +145,9 @@ Sampling rate vs actuation. 20 Hz is sufficient for per-pulse dose for these run
 of copper](https://ws.binghamton.edu/me/Zhou/Zhou-publications/CPL%20Effect%20of%20surface%20stresses%20on%20CuO%20nanowire%20growth%20in%20the%20thermal%20oxidation%20of%20Cu.pdf)
     -  mechanistic basis for why film color/morphology can vary 
 
+---- 
 
+## Appendix 
+(pending - images of films and run plot data will be added 20260618)
 
 

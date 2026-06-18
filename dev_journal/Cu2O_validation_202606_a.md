@@ -49,7 +49,7 @@ later use.
 
 - Run J/K recipe (identical for both): 250 °C setpoint, 500 ms H2O dose, 3 s dwell, 5 s N2 purge, 3 s evac, 400 cycles; net ≈ 11.7 s/cycle, ~ 78 min recipe (nominal ≈ 11.7 s; measured 11.54 s).
 - Logging. 20 Hz (50 ms) pressure + dual-RTD.
-    - Rate chosen against a measured IGC100 benchmark (GDAT? protocol: 19.96 Hz sustained; single-read 27 ms → ~36 Hz ceiling). 20 Hz sits below that ceiling so every sample is a genuine reading and no pulse feature is missed. See §5 for the limits.
+    - Rate chosen against a measured IGC100 benchmark (GDAT? protocol: 19.96 Hz sustained; single-read 27 ms → ~36 Hz ceiling). 20 Hz sits below that ceiling so every sample is a genuine reading and no pulse feature is missed.
 - Analysis (fully traceable). pandas → isolate recipe window (P 1–6 Torr oscillating AND RTD B > 200 °C) → scipy.signal.find_peaks (≥7 s spacing, prominence 0.3 Torr) for peaks and inverted troughs → per-pulse rise = peak − local pre-pulse minimum (prior 2.5 s) → drop first/last 3 cycles.
 - Identical parameters for J and K. Scripts: verify_reproducibility.py, plot_two_metrics.py,
 n2_diag.py, n2_verify.py, plot_n2_spike.py, plot_timing_runJK.py.

@@ -86,14 +86,14 @@ Failure mode found and fixed. Water back-streaming (not a leak).
 ![caption](../doc/assets/Cu2O_validation_202606_a/two_metrics_reconciled-2.png)
 
 ### The process reproducibility metrics:
-|Metric                                      |Run J	           |Run K	                         |Agreement|
-|--------------------------------------------|-----------------|---------------------------------|---------|   
-|Per-pulse water dose (peak − local baseline)|1.248 ± 0.42 Torr|1.247 ± 0.42 Torr                | 0.1%    |   
-|Detected pulses                             |394              |	393                          | ---     |   
-|Cycle period                                |11.54 s          |	11.54 s                      |identical|   
-|RTD-B plateau (recipe window median)        |225.8 °C         |	225.1 °C                     |±0.8 °C  |   
-|Working floor (median)                      |3.75 Torr        |	3.98 Torr                    |  +6%    |   
-|Absolute peak (mean)                        |4.81 Torr        |	4.93 Torr                    | +2.3%   |   
+|Metric                                      |Run J	           |Run K	                   |Agreement|
+|--------------------------------------------|-----------------|-------------------------|---------|   
+|Per-pulse water dose (peak − local baseline)|1.248 ± 0.42 Torr|1.247 ± 0.42 Torr        | 0.1%    |   
+|Detected pulses                             |394              |	393                    | ---     |   
+|Cycle period                                |11.54 s          |	11.54 s                |identical|   
+|RTD-B plateau (recipe window median)        |225.8 °C         |	225.1 °C               |±0.7 °C  |   
+|Working floor (median)                      |3.75 Torr        |	3.98 Torr              |  +6%    |   
+|Absolute peak (mean)                        |4.81 Torr        |	4.92 Torr              | +2.3%   |   
 
 ### Temperature offsets:
 | Run | Setpoint | RTD-B median | Offset |

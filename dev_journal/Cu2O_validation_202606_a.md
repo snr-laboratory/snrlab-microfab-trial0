@@ -38,6 +38,12 @@ later use.
 - VIVOHOME 110V 1/4 HP 3.5 CFM Single Stage Rotary Vane Air Vacuum Pump (5Pa ultimate vac = 0.03torr -> best achieved is ~600-700mTorr).
 - Inkbird ITC-106 PID + SSR-40DA (furnace setpoint).
 
+### Gas flow (revised)
+![caption](../doc/assets/Cu2O_validation_202606_a/gas_flow_a.drawio-2.svg)
+
+### Electrical (revised)
+![caption](../doc/assets/Cu2O_validation_202606_a/electrical_a.drawio.svg)
+
 ### Firmware
 - State machine with a data-driven recipe struct AldTimingRecipe
     - {tma_pulse_ms, h2o_pulse_ms, purge_gap/dwell_ms, purge_on_ms, purge_evacuate_ms, cycles}.

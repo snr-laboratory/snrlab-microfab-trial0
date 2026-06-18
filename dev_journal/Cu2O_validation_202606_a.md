@@ -156,4 +156,14 @@ of copper](https://ws.binghamton.edu/me/Zhou/Zhou-publications/CPL%20Effect%20of
 ## Appendix 
 (pending - images of films and run plot data will be added 20260618)
 
+#### Onshape model 
+Onshape modeling software used to develop the main architecture, assemble and test vital parts, and generate a rough bill of materials. 
+![caption](../doc/assets/Cu2O_validation_202606_a/Assembly 1.png)
+
+#### Cu samples A-K 
+![caption](../doc/assets/Cu2O_validation_202606_a/samples A_K.png)
+
+
+
+
 

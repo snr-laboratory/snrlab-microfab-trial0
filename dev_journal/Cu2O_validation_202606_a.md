@@ -82,10 +82,10 @@ Failure mode found and fixed. Water back-streaming (not a leak).
 - Cycle period: 11.54 s both runs; 393 detected pulses both runs.
 - A raw "absolute peak" comparison gives +2.3%. The raw peak rides on the working floor. The dose reproduced to 0.1%; Run K simply sat on a slightly higher working floor (3.75 J vs 3.98 K Torr), inflating the raw peak.
 
-![caption](../doc/assets/Cu2O_validation_202606_a/reproducibility_J_K.png)
-
 ### The per-pulse rise
 ![caption](../doc/assets/Cu2O_validation_202606_a/two_metrics_reconciled-2.png)
+
+![caption](../doc/assets/Cu2O_validation_202606_a/JvK_overlay.png)
 
 ### The process reproducibility metrics:
 |Metric                                      |Run J	           |Run K	                   |Agreement|

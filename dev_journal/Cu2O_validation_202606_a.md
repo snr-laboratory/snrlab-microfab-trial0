@@ -16,8 +16,7 @@ Summary for runs A-K for the oxidation of bare Cu to assess tool workings, repro
                     - awaiting a secondary valve to install for needed safety for incoming or outgoing gasses on the TMA line; then plan for air source 
             - Cons:
                 - can contaminate the lines; of course we could just flush with N2 and even bake out these lines to ensure nothing is sticking (H2O) and remove any residual gasses.
-                - O2 sources are dangerous and require approval and sensors for safety monitoring; stick to air
-                - could be redundant or a misuse of time. We know the behavior and are able to control a valve exactly similar to it, but this is its own part and it could have deviations that we are not aware of (probably best to do this setup, but not invest in optimizing films. ie if we get some black and mixed oxides of Cu on initial recipe, that's fine; just repeat and ensure the pressure and temperature logging behavior is similar and there are no signs or indications of leaks or unintended gas flow paths.
+                - We know the behavior and are able to control a valve exactly similar to it, but this is its own part and it could have deviations that we are not aware of (probably best to do this setup, but not invest in optimizing films. ie if we get some black and mixed oxides of Cu on initial recipe, that's fine; just repeat and ensure the pressure and temperature logging behavior is similar and there are no signs or indications of leaks or unintended gas flow paths.
                                
 - Validate the homemade pulsed-vapor precursor-delivery system: tool function, timing, logging, and
 safety.
@@ -53,9 +52,9 @@ later use.
   
 ![caption](../doc/assets/Cu2O_validation_202606_a/runJK_timing_vs_data.png)
 
-- Run J/K recipe (identical for both): 250 °C setpoint, 500 ms H2O dose, 3 s dwell, 5 s N2 purge, 3 s evac, 400 cycles; net ≈ 11.7 s/cycle, ~ 78 min recipe (nominal ≈ 11.7 s; measured 11.54 s).
+- Run J/K recipe (identical for both): 250 °C setpoint, 500 ms H2O dose, 3 s dwell, 5 s purge, 3 s evac, 400 cycles; net ~ 11.7 s/cycle, ~ 78 min recipe; measured 11.54 s, ~77 min).
 - Logging. 20 Hz (50 ms) pressure + dual-RTD.
-    - Rate chosen against a measured IGC100 benchmark (GDAT? protocol: 19.96 Hz sustained; single-read 27 ms → ~36 Hz ceiling). 20 Hz sits below that ceiling so every sample is a genuine reading and no pulse feature is missed.
+    - Rate chosen against a measured IGC100 benchmark ('GDAT?' protocol: 19.96 Hz sustained; single-read 27 ms → ~36 Hz ceiling). 20 Hz sits below that ceiling so every sample is a genuine reading and no pulse feature is missed.
 - Analysis (fully traceable). pandas → isolate recipe window (P 1–6 Torr oscillating AND RTD B > 200 °C) → scipy.signal.find_peaks (≥7 s spacing, prominence 0.3 Torr) for peaks and inverted troughs → per-pulse rise = peak − local pre-pulse minimum (prior 2.5 s) → drop first/last 3 cycles.
 - Identical parameters for J and K. Scripts: verify_reproducibility.py, plot_two_metrics.py,
 n2_diag.py, n2_verify.py, plot_n2_spike.py, plot_timing_runJK.py.
@@ -77,32 +76,32 @@ Failure mode found and fixed. Water back-streaming (not a leak).
 ![caption](../doc/assets/Cu2O_validation_202606_a/n2_spike_before_after-3.png)
 
 ### Process reproducibility: Run J vs run K (identical recipe, independent runs)
-- Per-pulse water dose (peak − local baseline): J = 1.248 ± 0.42 Torr, K = 1.247 ± 0.42 Torr → 0.1% across n=394/393 cycles each.
-- Substrate temperature plateau: 225.8 °C vs 225.1 °C → ±0.8 °C (RTD-B (rear-mount, ~24 °C position offset); reaction occurs at the 250 °C setpoint). 
-- Cycle period: 11.54 s both runs; 393 detected pulses both runs.
-- A raw "absolute peak" comparison gives +2.3%. The raw peak rides on the working floor. The dose reproduced to 0.1%; Run K simply sat on a slightly higher working floor (3.75 J vs 3.98 K Torr), inflating the raw peak.
+- Per-pulse water dose (peak − local baseline): J = 1.256 ± 0.42 Torr, K = 1.247 ± 0.42 Torr → 0.7% across n=388 per run cycles.
+- Substrate temperature plateau: 225.8 °C vs 225.1 °C → ±0.7 °C (RTD-B (rear-mount, ~24 °C position offset); reaction occurs at the 250 °C setpoint). 
+- Cycle period: 11.54 s both runs; 394 detected pulses both runs.
+- A raw "absolute peak" comparison gives +2.3%. The raw peak rides on the working floor. The dose reproduced to 0.7%; Run K simply sat on a slightly higher working floor (3.40 J vs 3.50 K Torr), inflating the raw peak.
 
 ### The per-pulse rise
-![caption](../doc/assets/Cu2O_validation_202606_a/two_metrics_reconciled-2.png)
-
 ![caption](../doc/assets/Cu2O_validation_202606_a/JvK_overlay.png)
 
 ### The process reproducibility metrics:
 |Metric                                      |Run J	           |Run K	                   |Agreement|
 |--------------------------------------------|-----------------|-------------------------|---------|   
-|Per-pulse water dose (peak − local baseline)|1.248 ± 0.42 Torr|1.247 ± 0.42 Torr        | 0.1%    |   
-|Detected pulses                             |394              |	393                    | ---     |   
+|Per-pulse water dose (peak − local baseline)|1.256 ± 0.42 Torr|1.247 ± 0.42 Torr        | 0.7%    |   
+|Detected pulses                             |394              |	394                    |identical|   
 |Cycle period                                |11.54 s          |	11.54 s                |identical|   
-|RTD-B plateau (recipe window median)        |225.8 °C         |	225.1 °C               |±0.7 °C  |   
-|Working floor (median)                      |3.75 Torr        |	3.98 Torr              |  +6%    |   
+|RTD-B plateau (recipe window median)        |225.8 °C         |	225.1 °C               | ±0.7 °C |   
+|Working floor (median)                      |3.40 Torr        |	3.50 Torr              | +3.1%   |   
 |Absolute peak (mean)                        |4.81 Torr        |	4.92 Torr              | +2.3%   |   
+
+* Pulse delivery: 400 cycles commanded; 394 distinct pressure peaks detected in both runs, evenly spaced at the 11.54 s period with no dropouts or merged cycles. The count is stable across detection thresholds (0.2–0.4 Torr), confirming reliable valve actuation every cycle. Per-cycle statistics use the 388 steady-state cycles (first/last 3 trimmed).
 
 ### Temperature offsets:
 | Run | Setpoint | RTD-B median | Offset |
 | --- | -------- | ------------ | ------ |
 | A   | 250      | 228.0        | 22.0   |
-| B   | 250      | 228.4        | 21.6   |
-| C   | 250      | 226.8        | 23.2   |
+| B   | 250      | 228.2        | 21.8   |
+| C   | 250      | 227.1        | 22.9   |
 | D   | 250      | 227.5        | 22.5   |
 | H   | 250      | 229.2        | 20.8   |
 | J   | 250      | 225.8        | 24.2   |
@@ -117,17 +116,19 @@ Cu2O color tracks oxide thickness (brown → pink/magenta → violet → blue). 
 ### Takeaways
 - The delivery tool and timing are validated for the water ALD3 valve + lines, N2 solenoid valve + lines and Cu oxidation
 - The cleanest evidence of reproducibility is the per-pulse pressure trace, not film color (color is confounded by strain/substrate/contact).
-- 3.75/3.98 Torr hot working floor is the steady-state nitrogen flow pressure (not residual water). The dynamic equilibrium between metered N2 inflow and pump throughput at 250 °C. It is set by plumbing (metering-valve position + pump speed). The pump-down evidence proves it: post-fix runs hit <5 Torr in 46–71 s vs 106–288 s pre-fix —> 2–6× faster. Trapped water would make it slower, not faster.
-- Per-cycle features (peak, rise) are reported as mean ± SD over all detected cycles; continuous baselines (working floor, RTD-B plateau) are reported as medians to resist transient excursions.
+- 3.40/3.50 Torr hot working floor is the steady-state nitrogen flow pressure (not residual water). The dynamic equilibrium between metered N2 inflow and pump throughput at 250 °C. It is set by plumbing (metering-valve position + pump speed). The pump-down evidence proves it: post-fix runs hit <5 Torr in 46–71 s vs 106–288 s pre-fix —> 2–6× faster. Trapped water would make it slower, not faster.
+- Per-cycle features (peak, trough/floor, rise) are reported as mean ± SD over all analyzed cycles; the RTD-B temperature plateau is reported as a median to resist slow thermal excursions.
 
 ### Limitations 
-Sampling rate vs actuation. 20 Hz is sufficient for per-pulse dose for these runs. It does not resolve the valve actuation waveform (single-digit-ms open) or short Al2O3 TMA pulses (~50 ms → ~1 sample). This is gauge-limited (IGC100 ~36 Hz), not code-limited? 
+Sampling rate vs actuation. 20 Hz is sufficient for per-pulse dose for these runs. It does not resolve the valve actuation waveform (single-digit-ms open) or short Al2O3 TMA pulses (~50 ms → ~1 sample). This is gauge-limited (IGC100 ~36 Hz), not code-limited? (faster acquisition is achievable in firmware is an open question for discussion) 
 - resolving fast pulses in the TMA phase would require a fast analog transducer (e.g., capacitance manometer + ADC).
 
 ----
 
 ### Plans
 - Confirm dedicated TMA gas lines (Swagelok diaphragm valves on order).
+- Decide on air-source install for ALD3-line testing and CuO-phase study; pending secondary safety valve.
+- Capacitance manometer + ADC for fast-pulse resolution 
 - Promote firmware pressure_ok / temp_ok interlocks from default-TRUE stubs to blocking checks before any TMA run (reason: a bad-state start with a pyrophoric precursor is the exact scenario the interlock exists to prevent).
 - PI safety sign-off before purchasing TMA.
 
@@ -199,23 +200,30 @@ Plumbing changes:
 ![caption](../doc/assets/Cu2O_validation_202606_a/schlenk_new.png)
 ![caption](../doc/assets/Cu2O_validation_202606_a/water_line_new.png)
 
+
+system:
+![caption](../doc/assets/Cu2O_validation_202606_a/system_v2.png)
+
+![caption](../doc/assets/Cu2O_validation_202606_a/System_v1.png)
+
 #### Cu samples A-K 
 ![caption](../doc/assets/Cu2O_validation_202606_a/samples_A_K.png)
 
 
 
+#### Summary table of runs and recipe conditions
 
-| Run | Role                      | Set­point (°C) | Cyc cmd | Cyc det | Complete    | Base P (Torr) | Pump-down to <5 Torr (s) | Period (s) | Floor­=trough mean (Torr) | Peak mean (Torr) | Per-pulse rise±SD (Torr) | RTD-B median (°C) | Offset (°C) | RTD-B max (°C) | N2-open spike (Torr) |
-| --- | ------------------------- | -------------- | ------- | ------- | ----------- | ------------- | ------------------------ | ---------- | ------------------------- | ---------------- | ------------------------ | ----------------- | ----------- | -------------- | -------------------- |
-| A   | Dry control (no DI water) | 250            | 400     | 109     | No (E-stop) | 1.11          | 2134*                    | 25.6       | ~1.0                      | 1.40             | 0.01±0.00                | 227.4             | 22.6        | 252.0          | 2.4 (dry)            |
-| B   | Validation (troubleshoot) | 250            | 400     | 241     | No (E-stop) | 1.46          | 288                      | 25.6       | 3.39                      | 5.01             | 0.07±0.03                | 228.2             | 21.8        | 230.7          | 46.9                 |
-| C   | Validation (early recipe) | 250            | 400     | 399     | Yes         | 2.03          | 126                      | 25.6       | 3.70                      | 5.23             | 0.08±0.04                | 227.1             | 22.9        | 231.4          | 86.7                 |
-| D   | Validation (magenta ref)  | 250            | 400     | 400     | Yes         | 2.93          | 106                      | 11.54      | 4.28                      | 5.90             | 0.60±0.16                | 227.4             | 22.6        | 231.5          | 89.2                 |
-| E   | Phase threshold (hot)     | ~285           | —       | 100     | n/a         | 1.04          | 116                      | 11.53      | 4.54                      | 6.36             | 0.64±0.15                | 284.8             | —           | 308.1          | 84.1                 |
-| F   | Phase threshold (hot)     | ~308           | —       | 397     | n/a         | 1.00          | 148                      | 11.54      | 4.47                      | 6.22             | 0.63±0.15                | 308.9             | —           | 312.2          | 88.4                 |
-| H   | First post gas-path fix   | 250            | 400     | 374     | ~Yes        | 1.56          | 71                       | 11.54      | 2.86                      | 3.90             | 0.71±0.29                | 229.1             | 20.9        | 244.9          | 12.5                 |
-| I   | High-water no-evac        | 300            | 350     | 120     | No          | 1.05          | 60                       | 17.9       | 5.32                      | 6.07             | 0.53±0.20                | 268.3             | 31.7        | 271.0          | —**                  |
-| J   | Canonical reproducibility | 250            | 400     | 393     | Yes         | 1.00          | 46                       | 11.54      | 3.39                      | 4.82             | 1.25±0.41                | 225.9             | 24.1        | 239.4          | 11.9                 |
-| K   | Canonical repeat          | 250            | 400     | 393     | Yes         | 1.03          | 47                       | 11.54      | 3.49                      | 4.93             | 1.24±0.41                | 225.8             | 24.2        | 227.5          | 11.3                 |
+| Run | Role                      | Set­point (°C) | Cyc cmd | Cyc det (peaks) | Complete    | Base P (Torr) | Pump-down to <5 Torr (s) | Period (s) | Floor­=trough mean (Torr) | Peak mean (Torr) | Per-pulse rise±SD (Torr) | RTD-B median (°C) | Offset (°C) | RTD-B max (°C) | N2-open spike (Torr) |
+| --- | ------------------------- | -------------- | ------- | --------------- | ----------- | ------------- | ------------------------ | ---------- | ------------------------- | ---------------- | ------------------------ | ----------------- | ----------- | -------------- | -------------------- |
+| A   | Dry control (no DI water) | 250            | 400     | 109             | No (E-stop) | 1.11          | n/a                      | 25.6       | ~1.0                      | —                | —                        | 228.0             | 22.0        | 252.1          | 2.4 (dry)            |
+| B   | Validation (troubleshoot) | 250            | 400     | 244             | No (E-stop) | 1.35          | 288                      | 25.6       | 3.46                      | 4.91             | 0.07±0.03                | 228.2             | 21.8        | 230.7          | 46.9                 |
+| C   | Validation (early recipe) | 250            | 400     | 403             | Yes         | 1.08          | 126                      | 25.6       | 3.71                      | 5.24             | 0.08±0.04                | 227.1             | 22.9        | 231.4          | 86.7                 |
+| D   | Validation (magenta ref)  | 250            | 400     | 402             | Yes         | 1.19          | 106                      | 11.54      | 4.28                      | 5.90             | 0.60±0.16                | 227.4             | 22.6        | 231.5          | 89.2                 |
+| E   | Phase threshold (hot)     | ~285           | —       | 101             | n/a         | 1.04          | 116                      | 11.54      | 4.57                      | 6.33             | 0.65±0.15                | 284.7             | —           | 308.1          | 84.1                 |
+| F   | Phase threshold (hot)     | ~308           | —       | 400             | n/a         | 0.74          | 148                      | 11.54      | 4.48                      | 6.22             | 0.63±0.15                | 307.7             | —           | 312.2          | 88.4                 |
+| H   | First post gas-path fix   | 250            | 400     | 376             | ~Yes        | 0.95          | 71                       | 11.54      | 2.89                      | 3.89             | 0.73±0.34                | 229.1             | 20.9        | 244.9          | 12.5                 |
+| I   | High-water no-evac        | 300            | 350     | 121             | No          | 0.61          | 60                       | 17.9       | 5.22                      | 6.07             | 0.54±0.21                | 260.1             | 39.9        | 271.0          | —*                   |
+| J   | Canonical reproducibility | 250            | 400     | 394             | Yes         | 0.64          | 46                       | 11.54      | 3.40                      | 4.81             | 1.25±0.41                | 225.8             | 24.2        | 239.4          | 11.9                 |
+| K   | Canonical repeat          | 250            | 400     | 394             | Yes         | 0.97          | 47                       | 11.54      | 3.50                      | 4.92             | 1.25±0.41                | 225.1             | 24.9        | 227.5          | 11.3                 |
 
-
+\* Run I was a no-evac, backfilled run; the N2-open spike is not cleanly isolable, so it is omitted.

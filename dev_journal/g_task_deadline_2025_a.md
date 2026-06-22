@@ -4,20 +4,34 @@ This journal documents tasks, assigned deadlines, and actual completion dates. I
 
 ---
 
+## 20260622
+
+| Start date | Assigned deadline | Actual completion |
+|------------|-------------------|-------------------|
+| 20260622   | 20260731          |                   |
+
+### Task description
+
+- Prove that ALD cycles are truly happening in the chamber.
+  - Use UTA available tools to validate grown material composition and thickness.
+  - Add secondary chemical injection.
+
+---
+
 ## 20260616 water-vapor-pulsed thermal oxidation of Cu
 
 | Start date | Assigned deadline | Actual completion |
 |------------|-------------------|-------------------|
-| 20260301   |    20260601       | 20260616          |      
+| 20260301   |    20260601       | 20260616          |
 
 ### Task description
 - Use water-vapor-pulsed thermal oxidation of Cu → Cu2O as a SAFE, VISIBLE way to validate the tool behavior and safety before committing to pyrophoric TMA.
-  - Show control and selectivity of Cu oxidation phases   
+  - Show control and selectivity of Cu oxidation phases
 - Establish per-pulse dose measurement from 20 Hz pressure logging + dual-RTD temperature logging.
 - Diagnose and correct any process faults found during the campaign.
 - Demonstrate run-to-run process reproducibility under identical recipe conditions.
 - Modify hardware/software if needed
-  - Schenk line had a backstreaming issue   
+  - Schenk line had a backstreaming issue
 
 ----
 

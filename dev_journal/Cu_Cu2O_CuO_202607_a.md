@@ -1,5 +1,86 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
+## Procedure 
+Authoring in the .ino file on Desktop, then cp it into src/main.cpp before each upload.
+
+- bash:
+
+```
+cd ~/Documents/PlatformIO/Projects/Cu2O_runA/
+~/.platformio/penv/bin/pio run
+```
+
+### Terminal 1 — dual logger (start FIRST, pump-down takes time)
+- bash
+```
+cd ~/Desktop/Cu2O && python3 dual_logger_v5_ald.py \
+  --ls-port /dev/cu.usbserial-AX59M1OT \
+  --igc-port /dev/cu.usbserial-FTG4OTA2 \
+  --setpoint 250 --interval 0.05 \
+  --output Cu2O_CuO_stack_$(date +%Y%m%d_%H%M%S)
+```
+
+**You should see the boot banner:**
+
+```
+text
+========================================================================
+  High-Speed ALD Pulse Logger  —  v5.0 (Stable 5 Hz)
+========================================================================
+Starting Background RTD Thread...
+Benchmarking IGC100 optimized read speed...
+  Pressure read: ~33 ms
+  Max theoretical pressure rate: ~30 Hz
+  Baseline — A: <ambient>   B: <ambient>   P: ~7e+02 Torr
+```
+
+### Terminal 2 — upload firmware to Uno
+
+- bash
+```
+cd ~/Documents/PlatformIO/Projects/Cu2O_runA/ && \
+cp ~/Desktop/Cu2O/Cu2O_CuO_stack_selective_phase.ino src/main.cpp && \
+~/.platformio/penv/bin/pio run -t upload --upload-port /dev/cu.usbmodem11101
+```
+
+**You'll see PlatformIO compile, then upload. Successful output ends with something like [SUCCESS] Took X seconds.**
+
+- bash
+```
+~/.platformio/penv/bin/pio device monitor -p /dev/cu.usbmodem11101 -b 115200 \
+  | tee ~/Desktop/Cu2O/arduino_Cu2O_CuO_stack_$(date +%Y%m%d_%H%M%S).log
+```
+
+**When it connects, you should see the boot banner (this replaces the Run J banner):** 
+
+```
+text
+=== Cu/Cu2O/CuO STACK -- READY ===
+Phase1 = Cu2O (H2O, D4+D8, Run J timing). Phase2 = CuO (AIR, D3+D9).
+Dwell != Evac (same valves, different gas composition, both kept).
+D8 water safety CLOSED during dwell/purge/evac AND all of Phase2.
+NO TMA. D3/D9 carry AIR. Dynamic mode (no pump isolation).
+--- COMMANDS (all valve toggles IDLE-only, safety-checked) ---
+  RUN CONTROL:
+    s = START stack run   e = E-STOP   r = RESET -> IDLE
+  MANUAL VALVE TOGGLES (single valves; active-LOW):
+    3/# = D3 (AIR ALD)     ON/OFF
+    4/$ = D4 (H2O ALD3)    ON/OFF
+    5/% = D5 (N2 purge)    ON/OFF
+    6/^ = D6 (K8 house)    ON/OFF
+    8/* = D8 (H2O Schlenk) ON/OFF
+    9/( = D9 (AIR safety)  ON/OFF
+  PAIRED TOGGLES:
+    a/A = AIR pair D3+D9   ON/OFF
+    w/W = H2O pair D4+D8   ON/OFF
+    n/o = N2 sweep (D5 + K8) ON/OFF  [legacy Run J behavior]
+  SAFETY:
+    x = PANIC ALL OFF (safeAll)
+    ? = reprint this menu
+  INTERLOCKS: p0/p1 = PRESSURE_OK,  t0/t1 = TEMP_OK
+--------------------------------------------------------------
+```
+
 ## Code full cycle 
 
 ```
@@ -413,6 +494,14 @@ void loop(){
   }
 }
 ```
+
+
+
+
+
+
+
+
 
 
 

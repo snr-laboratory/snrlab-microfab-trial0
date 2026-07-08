@@ -1,5 +1,18 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
+
+7/9/26
+
+**Line 126 in code = StackRecipe R - for making quick changes to # of cycles, dwell, purge, evac, and pulse.** 
+
+```
+//                    ---- PHASE 1: Cu2O (H2O) ----   ---- PHASE 2: CuO (AIR) ----
+//                    pulse dwell purge evac  cyc      pulse dwell purge evac  cyc
+StackRecipe R = {       500, 3000, 5000, 3000, 400,      500, 3000, 5000, 3000, 400 };
+//  Per cycle: ~11.7 s.   200 + 200 = 400 cycles = ~78 min total.
+```
+
+7/8/26
 ## New wiring
 ![caption](../doc/assets/Cu2O_validation_202606_a/ald_uno_wiring_map_v11.svg)
 

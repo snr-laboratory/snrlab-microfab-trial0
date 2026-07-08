@@ -1,7 +1,14 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
 
-7/9/26
+## 7/9/26
+
+- bash: (for future upload commands (cd into the project)):
+```
+cd ~/Documents/PlatformIO/Projects/Cu_Cu2O_CuO_phase_selectivity/
+```
+
+**Project in platformio renamed to Cu_Cu2O_CuO_phase_selectivity**
 
 **Line 126 in code = StackRecipe R - for making quick changes to # of cycles, dwell, purge, evac, and pulse.** 
 
@@ -12,7 +19,8 @@ StackRecipe R = {       500, 3000, 5000, 3000, 400,      500, 3000, 5000, 3000, 
 //  Per cycle: ~11.7 s.   200 + 200 = 400 cycles = ~78 min total.
 ```
 
-7/8/26
+
+## 7/8/26
 ## New wiring
 ![caption](../doc/assets/Cu2O_validation_202606_a/ald_uno_wiring_map_v11.svg)
 
@@ -20,8 +28,8 @@ StackRecipe R = {       500, 3000, 5000, 3000, 400,      500, 3000, 5000, 3000, 
 Authoring in the .ino file on Desktop, then cp it into src/main.cpp before each upload.
 
 - bash:
-
 ```
+**OLD** 
 cd ~/Documents/PlatformIO/Projects/Cu2O_runA/
 ~/.platformio/penv/bin/pio run
 ```

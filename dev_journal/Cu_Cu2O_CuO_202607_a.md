@@ -1,5 +1,8 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
+## New wiring
+![caption](../doc/assets/Cu2O_validation_202606_a/ald_uno_wiring_map_v11.svg)
+
 ## Procedure 
 Authoring in the .ino file on Desktop, then cp it into src/main.cpp before each upload.
 

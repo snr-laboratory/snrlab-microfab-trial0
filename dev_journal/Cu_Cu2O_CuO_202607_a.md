@@ -16,7 +16,7 @@ cd ~/Documents/PlatformIO/Projects/Cu_Cu2O_CuO_phase_selectivity/
 //                    ---- PHASE 1: Cu2O (H2O) ----   ---- PHASE 2: CuO (AIR) ----
 //                    pulse dwell purge evac  cyc      pulse dwell purge evac  cyc
 StackRecipe R = {       500, 3000, 5000, 3000, 400,      500, 3000, 5000, 3000, 400 };
-//  Per cycle: ~11.7 s.   200 + 200 = 400 cycles = ~78 min total.
+//  Per cycle: ~11.7 s.   800 cycles = ~156 min total.
 ```
 
 
@@ -26,13 +26,6 @@ StackRecipe R = {       500, 3000, 5000, 3000, 400,      500, 3000, 5000, 3000, 
 
 ## Procedure 
 Authoring in the .ino file on Desktop, then cp it into src/main.cpp before each upload.
-
-- bash:
-```
-**OLD** 
-cd ~/Documents/PlatformIO/Projects/Cu2O_runA/
-~/.platformio/penv/bin/pio run
-```
 
 ### Terminal 1 — dual logger (start FIRST, pump-down takes time)
 - bash
@@ -58,11 +51,11 @@ Benchmarking IGC100 optimized read speed...
   Baseline — A: <ambient>   B: <ambient>   P: ~7e+02 Torr
 ```
 
-### Terminal 2 — upload firmware to Uno
+### Terminal 2 — upload firmware to Uno (in one separate terminal)
 
 - bash
 ```
-cd ~/Documents/PlatformIO/Projects/Cu2O_runA/ && \
+cd ~/Documents/PlatformIO/Projects/Cu_Cu2O_CuO_phase_selectivity/ && \
 cp ~/Desktop/Cu2O/Cu2O_CuO_stack_selective_phase.ino src/main.cpp && \
 ~/.platformio/penv/bin/pio run -t upload --upload-port /dev/cu.usbmodem11101
 ```
@@ -87,7 +80,7 @@ NO TMA. D3/D9 carry AIR. Dynamic mode (no pump isolation).
 --- COMMANDS (all valve toggles IDLE-only, safety-checked) ---
   RUN CONTROL:
     s = START stack run   e = E-STOP   r = RESET -> IDLE
-  MANUAL VALVE TOGGLES (single valves; active-LOW):
+  MANUAL VALVE TOGGLES (K8 auto-managed for D3/D4/D8/D9):
     3/# = D3 (AIR ALD)     ON/OFF
     4/$ = D4 (H2O ALD3)    ON/OFF
     5/% = D5 (N2 purge)    ON/OFF
@@ -105,7 +98,9 @@ NO TMA. D3/D9 carry AIR. Dynamic mode (no pump isolation).
 --------------------------------------------------------------
 ```
 
-## Code full cycle 
+**append a datestamp to the .ino filename each session (Cu2O_CuO_stack_selective_phase_20260709.ino) and never overwrite old ones.**
+
+## Code full cycle (most recent is in platformio/visual studio code)
 
 ```
 #include <Arduino.h>

@@ -1,5 +1,39 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
+## 7/10/26
+## Firmware changes
+
+**Replace:**
+```
+IGC100 log-P convention (verify at MENU -> Setup -> Analog Output -> Ch1):
+  +10V = 1e0  Torr    (top of scale)
+   0V  = 1e-10 Torr   (bottom of scale)
+  V_igc -> P = 10^(V_igc - 10) Torr
+```
+
+**with:**
+```
+IGC100 AN1 configured as DAC output, source = PG2 (Pirani/Convectron).
+Per SRS IGC100 manual p. 2-24:
+  P (Torr) = 10^(V - 5)   for 1e-4 Torr <= P <= 1e+4 Torr
+  0 V = gauge off, 12 V = gauge fault
+Per SRS manual p. 2-7: AN1-4 DAC hardware update rate = 2 Hz.
+Migration improved pressure sample rate from ~1 Hz (GDAT? polling) to
+2 Hz (IGC100 DAC ceiling). Does NOT eliminate staircase entirely.
+True continuous pressure requires a capacitance manometer (MKS Baratron).
+```
+
+**Also replace:**
+```
+Firmware conversion: V_shield = (ADC×10/65535) − 5 → V_igc = V_shield / 0.3197 → P_torr = 10^(V_igc − 10)
+````
+
+**with:**
+```
+Firmware conversion: V_shield = (ADC×10/65535) − 5 → V_igc = V_shield / 0.3197 → P_torr = 10^(V_igc − 5)
+```
+
+
 ## 7/9/26
 ## Hardware changes 
 Arduino Mega 2560 R3 + Digilent Analog Shield (16-bit ADS8343 ADC, wespo/analogShield library), IGC100 rear BNC #1 → 10 kΩ/4.7 kΩ divider → shield A0. (Arduino Uno, IGC100 via RS-232 GDAT? polling at 20 Hz)

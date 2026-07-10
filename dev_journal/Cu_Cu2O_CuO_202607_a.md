@@ -1,7 +1,86 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
-
 ## 7/9/26
+## Hardware changes 
+Arduino Mega 2560 R3 + Digilent Analog Shield (16-bit ADS8343 ADC, wespo/analogShield library), IGC100 rear BNC #1 → 10 kΩ/4.7 kΩ divider → shield A0. (Arduino Uno, IGC100 via RS-232 GDAT? polling at 20 Hz)
+  - Eliminate the pressure staircase artifact in GDAT?-polled IGC100 data by moving pressure acquisition from serial-polled software readout to hardware-synchronous ADC readout on the same microcontroller running the valve state machine.
+  - The IGC100's digital GDAT? interface refreshes at 0.67–1.0 Hz internally, independent of the polling rate (SRS IGC100 manual, "Data Commands"). The dual logger polled at 20 Hz. Consecutive samples returned identical values until the instrument's internal refresh advanced, producing visible flat-then-jump quantization in P(t) — the staircase. This is a display-rate quantization, not an ADC quantization, and cannot be removed by faster serial polling (Granville-Phillips 375 Convectron App Note on log-linear analog outputs — same behavior in the SRS analog-output family: the analog rear-panel BNC is refreshed at the ADC's native rate, not the display rate).
+The fix is well-known in the vacuum/ALD instrumentation community: acquire pressure via the ion gauge's rear-panel analog output (0–10 V log-P, 1 V/decade) instead of the digital display command (SRS IGC100 rear panel, "Analog I/O"; Aisenberg & Chabot 1971, J. Appl. Phys. — foundational analog log-P readout method). This gives continuous voltage at the sensor's true response rate (>>1 kHz for ion gauge electrometer). 
+
+| Function                    | Uno pin (old) | Mega pin (new)                   |
+| --------------------------- | ------------- | -------------------------------- |
+| E-STOP sense                | D2            | D48                              |
+| START button                | D7            | D46                              |
+| K1 = AIR ALD (was TMA line) | D3            | D24                              |
+| K2 = H2O ALD3               | D4            | D26                              |
+| K3 = N2 purge               | D5            | D28                              |
+| K8 = House main             | D6            | D30                              |
+| K4 = H2O Schlenk safety     | D8            | D34                              |
+| K5 = AIR pilot safety       | D9            | D36                              |
+| Pressure sense (NEW)        | —             | Shield A0 (via 10kohm/4.7kohm divider) and GND (x2) on ADC block (via 4.7kohm/braid divider) - cable connects back to analog i/o #1 on the IGC100SRS |
+
+- Reserved on Mega, do not use for user I/O: D50–D53 (hardware SPI, driven by Analog Shield via ICSP header).
+- Analog Shield configuration
+    - I/O Voltage Select jumper: IOREF (= 5V on Mega Rev 3)
+    - Divider ratio: 4.7 / (10 + 4.7) = 0.3197
+    - Firmware conversion: V_shield = (ADC×10/65535) − 5 → V_igc = V_shield / 0.3197 → P_torr = 10^(V_igc − 10) (IGC100 convention: 1 V/decade, −10 V ≡ 1×10⁻¹⁰ Torr)
+
+### Shield configuration
+- I/O Voltage Select jumper: IOREF (= 5 V on Mega Rev 3).
+- ADC used: A0 on the shield silkscreen (routes internally to ADS8343 CH0 via the LM837/OPA4322 buffer with SDM40E20LS input clamping diodes).
+- SPI: driven via the ICSP header (MISO/MOSI/SCK). This mirrors Mega D50/D51/D52 electrically, and the hardware SS is D53. Do not repurpose D50–D53 for user I/O.
+
+### Voltage divider — 10 kΩ / 4.7 kΩ
+- IGC100 rear-panel analog output is 0 to 10 V. Analog Shield input is ±5 V. Passive divider scales the range.
+
+IGC BNC center ──┬── 10 kΩ ──┬── (junction → Shield A0)
+                             │
+                            4.7 kΩ
+                             │
+IGC BNC shield ──── GND ─────┴── (→ Shield AGND, outer row of ADC header)
+
+### IGC100 rear panel setup
+- Configure BNC #1 (ANALOG I/O) for log-pressure output, 1 V/decade, -10 V = 1E-10 Torr convention. Verify with DMM before wiring permanently: at 1E-4 Torr you should read ~6.0 V at the BNC center.
+
+### Firmware conversion
+```
+const float DIVIDER_RATIO = 0.3197f;
+const float ADC_VREF_SPAN = 10.0f;   // ±5 V = 10 V span
+const uint8_t IGC_CHANNEL = 0;       // Shield A0
+
+float readPressureTorr() {
+  unsigned int adc = analog.read(IGC_CHANNEL);
+  float v_shield = (adc * ADC_VREF_SPAN / 65535.0f) - 5.0f;
+  float v_igc    = v_shield / DIVIDER_RATIO;
+  return powf(10.0f, v_igc - 10.0f);
+}
+
+```
+**Requires #include <SPI.h> before #include <analogShield.h>.**
+
+### Grounding
+- Single-point tie from Mega GND to Shield AGND on the ADC header. Verify with DMM (< 1 Ω): IGC chassis → BNC shell → coax braid → divider GND → Shield AGND → Mega GND → LRS-5-5 GND.
+
+### Library
+- Firmware uses wespo/analogShield (not Digilent — Digilent's docs redirect to Wespo's fork). Install into the PlatformIO project's lib/analogShield/ directory:
+
+```
+curl -L -o /tmp/analogShield.zip \
+  https://github.com/wespo/analogShield/archive/refs/heads/master.zip
+unzip -o /tmp/analogShield.zip -d lib/
+mv lib/analogShield-master lib/analogShield
+```
+### platformio.ini
+```
+[env:megaatmega2560]
+platform = atmelavr
+board = megaatmega2560
+framework = arduino
+monitor_speed = 115200
+upload_port = /dev/cu.usbmodem11101
+monitor_port = /dev/cu.usbmodem11101
+```
+---
 
 - bash: (for future upload commands (cd into the project)):
 ```

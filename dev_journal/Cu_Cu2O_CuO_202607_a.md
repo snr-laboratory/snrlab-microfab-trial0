@@ -1,5 +1,9 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
+## 7/11/26
+
+- [Analog shield data sheet](https://digilent.com/reference/_media/analogshield_sch_rev_d.pdf?srsltid=AfmBOoqGyRi2vAjJFjwZOXJqOoeTSQ1-g8MHFRtzzqVikf8NlzFbdNmw) 
+
 ## 7/10/26
 
 ## Running a cycle recipe 

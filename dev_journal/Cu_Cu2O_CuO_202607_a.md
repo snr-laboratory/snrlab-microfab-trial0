@@ -27,6 +27,32 @@ In monitor: send `?p` to verify pressure reads real.
 When system is at temp / base pressure / gas ready: send `s` to start run.
 `e` = E-STOP. `r` = reset to IDLE.
 
+
+OMMANDS (all valve toggles IDLE-only, safety-checked) ---
+  RUN CONTROL:
+    s = START stack run   e = E-STOP   r = RESET -> IDLE
+  MANUAL VALVE TOGGLES (single valves; active-LOW):
+    3/# = D24 (AIR ALD)     ON/OFF
+    4/$ = D26 (H2O ALD3)    ON/OFF
+    5/% = D28 (N2 purge)    ON/OFF
+    6/^ = D30 (K8 house)    ON/OFF
+    8/* = D34 (H2O Schlenk) ON/OFF
+    9/( = D36 (AIR safety)  ON/OFF
+  PAIRED TOGGLES:
+    a/A = AIR pair D24+D36  ON/OFF
+    w/W = H2O pair D26+D34  ON/OFF
+    n/o = N2 sweep (D28 + K8) ON/OFF  [legacy Run J behavior]
+  PRESSURE READOUT:
+    P   = stream pressure @20 Hz ON  (default)
+    O   = stream pressure OFF
+    ?p  = one-shot pressure sample
+  SAFETY:
+    x = PANIC ALL OFF (safeAll)
+    ? = reprint this menu
+  INTERLOCKS: p0/p1 = PRESSURE_OK,  t0/t1 = TEMP_OK
+
+
+
 ```
 
 

@@ -1,6 +1,31 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
 ## 7/10/26
+
+## Running a cycle recipe 
+- Terminal 1 (dual logger — Lakeshore + IGC digital):
+
+```
+  cd ~/Desktop/Cu2O
+  python3 dual_logger_v5_ald.py \
+      --ls-port /dev/cu.usbserial-AX59M1OT \
+      --igc-port /dev/cu.usbserial-FTG4OTA2 \
+      --setpoint 250 --interval 0.05 \
+      --output Cu2O_CuO_stack_$(date +%Y%m%d_%H%M%S)
+
+Terminal 2 (Mega — valve control + analog pressure):
+    cd ~/Documents/PlatformIO/Projects/Cu_Cu2O_CuO_phase_selectivity/
+    cp ~/Desktop/Cu2O/Cu2O_stack_20260710_pg2fix.ino src/main.cpp
+    pio run -t upload
+    pio device monitor -b 115200
+
+In monitor: send `?p` to verify pressure reads real.
+When system is at temp / base pressure / gas ready: send `s` to start run.
+`e` = E-STOP. `r` = reset to IDLE.
+
+```
+
+
 ## Firmware changes
 
 **Replace:**
@@ -37,7 +62,7 @@ Firmware conversion: V_shield = (ADC×10/65535) − 5 → V_igc = V_shield / 0.3
 ## 7/9/26
 ## Hardware changes 
 Arduino Mega 2560 R3 + Digilent Analog Shield (16-bit ADS8343 ADC, wespo/analogShield library), IGC100 rear BNC #1 → 10 kΩ/4.7 kΩ divider → shield A0. (Arduino Uno, IGC100 via RS-232 GDAT? polling at 20 Hz)
-  - Eliminate the pressure staircase artifact in GDAT?-polled IGC100 data by moving pressure acquisition from serial-polled software readout to hardware-synchronous ADC readout on the same microcontroller running the valve state machine.
+  - Reduce the pressure staircase artifact from ~1 Hz (GDAT? digital polling) to 2 Hz (IGC100 rear-panel DAC hardware ceiling per SRS manual p. 2-7). Timestamps pressure on the same millis() clock as valves. True elimination of the staircase requires a gauge with continuous analog output (e.g., MKS Baratron capacitance manometer). to hardware-synchronous ADC readout on the same microcontroller running the valve state machine.
   - The IGC100's digital GDAT? interface refreshes at 0.67–1.0 Hz internally, independent of the polling rate (SRS IGC100 manual, "Data Commands"). The dual logger polled at 20 Hz. Consecutive samples returned identical values until the instrument's internal refresh advanced, producing visible flat-then-jump quantization in P(t) — the staircase. This is a display-rate quantization, not an ADC quantization, and cannot be removed by faster serial polling (Granville-Phillips 375 Convectron App Note on log-linear analog outputs — same behavior in the SRS analog-output family: the analog rear-panel BNC is refreshed at the ADC's native rate, not the display rate).
 The fix is well-known in the vacuum/ALD instrumentation community: acquire pressure via the ion gauge's rear-panel analog output (0–10 V log-P, 1 V/decade) instead of the digital display command (SRS IGC100 rear panel, "Analog I/O"; Aisenberg & Chabot 1971, J. Appl. Phys. — foundational analog log-P readout method). This gives continuous voltage at the sensor's true response rate (>>1 kHz for ion gauge electrometer). 
 
@@ -57,7 +82,7 @@ The fix is well-known in the vacuum/ALD instrumentation community: acquire press
 - Analog Shield configuration
     - I/O Voltage Select jumper: IOREF (= 5V on Mega Rev 3)
     - Divider ratio: 4.7 / (10 + 4.7) = 0.3197
-    - Firmware conversion: V_shield = (ADC×10/65535) − 5 → V_igc = V_shield / 0.3197 → P_torr = 10^(V_igc − 10) (IGC100 convention: 1 V/decade, −10 V ≡ 1×10⁻¹⁰ Torr)
+    - Firmware conversion: V_shield = (ADC×10/65535) − 5 → V_igc = V_shield / 0.3197 → P_torr = 10^(V_igc − 5) (IGC100 convention: 1 V/decade, −10 V ≡ 1×10⁻¹⁰ Torr)
 
 ### Shield configuration
 - I/O Voltage Select jumper: IOREF (= 5 V on Mega Rev 3).
@@ -74,7 +99,12 @@ IGC BNC center ──┬── 10 kΩ ──┬── (junction → Shield A0)
 IGC BNC shield ──── GND ─────┴── (→ Shield AGND, outer row of ADC header)
 
 ### IGC100 rear panel setup
-- Configure BNC #1 (ANALOG I/O) for log-pressure output, 1 V/decade, -10 V = 1E-10 Torr convention. Verify with DMM before wiring permanently: at 1E-4 Torr you should read ~6.0 V at the BNC center.
+- Configure BNC #1 (ANALOG I/O) as DAC output, source = PG2. P (Torr) = 10^(V − 5) for 1e-4 to 1e+4 Torr. 0 V = gauge off, 12 V = fault. Update rate ceiling 2 Hz.
+
+[SRS IGC100 Ion Gauge Controlle](https://www.thinksrs.com/downloads/pdfs/manuals/igc100m_1.pdf)
+
+- Commands xxvii
+- Specs - gauges - xxiv
 
 ### Firmware conversion
 ```

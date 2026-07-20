@@ -277,6 +277,549 @@ NO TMA. D3/D9 carry AIR. Dynamic mode (no pump isolation).
 
 **append a datestamp to the .ino filename each session (Cu2O_CuO_stack_selective_phase_20260709.ino) and never overwrite old ones.**
 
+
+
+## Code for 200/200 updated Sun Jul 19
+```
+#include <Arduino.h>
+#include <SPI.h>
+#include <analogShield.h>
+
+
+/* === Cu / Cu2O / CuO SELECTIVE-PHASE STACK — MEGA + ANALOG SHIELD ============
+   REVISION: 20260719 -- 200+200 REPRODUCIBILITY RUN (rev 9).
+             [v9] PRESSURE SERIAL STREAMING REMOVED. Pressure (Shield->AN1->IGC)
+             is now logged ONLY by dual_logger_v6 in its own terminal. This
+             firmware's serial port carries valve/state events + commands ONLY --
+             NO pressure spam. Terminal 1 = dual_logger_v6 (pressure). Terminal 2
+             = this firmware (control + events). PlatformIO = build/upload only.
+
+             Real water+air run: Phase 1 = 200 cycles H2O (D26+D34 dose),
+             Phase 2 = 200 cycles AIR (D24+D36 dose). Identical timing to the
+             canonical Run J/K recipe (500ms pulse / 3s dwell / 5s N2 purge /
+             3s evac). phase1_dry = FALSE so water actually doses. Purpose:
+             reproduce the standard 200/200 recipe on the FIXED gas path
+             (water safety valve stops backstreaming) to test film
+             reproducibility run-to-run -- the ALD prerequisite.
+
+             CABLE (20260719): AN1 readout now uses purchased cable
+             X0033BKF7 (XMSJSIY BNC-male -> DuPont test-lead), extended with
+             jumpers and heat-shrunk at the junctions so bare conductors cannot
+             touch anything. Replaces the hand-made coax pigtail. Divider
+             (10k series / 4.7k shunt, ratio 0.3197) and Shield IN0 tap
+             UNCHANGED -- only the cable body between IGC BNC and the divider
+             changed. See wiring note below.
+
+             (Original migration notes below unchanged.)
+             MIGRATED FROM UNO (D2-D9) TO MEGA 2560 (D22-D36) TO FREE THE SPI/SS
+             PINS FOR THE DIGILENT ANALOG SHIELD. Adds 16-bit direct-read of the
+             SRS IGC100 rear-panel BNC #1 analog output through a 10k/4.7k
+             voltage divider (ratio 0.3197) into Shield ADC channel IN0.
+
+
+   HARDWARE STACK:
+     Arduino Mega 2560  +  Digilent Analog Shield (AD7193/AD7245 via SPI)
+     Shield occupies:  D2 (ADCCS), D3 (ADC BUSY), D5 (DACCS), D6 (DACLD),
+                       D10-D13 (SPI via ICSP header on Mega),
+                       A0-A3 (ADC inputs, ±5V, 2x4 header near VADJ pot on lower-right of shield),
+     D0-D3 (DAC outputs, 2x4 header on upper-left of shield).
+     Shield COVERS but does NOT electrically use: D4, D7, D8, D9.
+
+
+   IGC100 -> DIVIDER -> SHIELD ADC:
+     Divider ratio = 4.7 / (10 + 4.7) = 0.31972789...
+     At +10V IGC output -> +3.20V at IN0 (well inside ±5V rail).
+     CABLE X0033BKF7 (20260719): BNC-male mates IGC rear AN1; DuPont-side leads
+     carry center -> 10k series -> junction (red jumper to Shield A0) and
+     shield/braid -> Shield GND (black jumper) with the 4.7k shunt across A0->GND.
+     Extra jumpers add reach; heat-shrink over every splice = no exposed metal.
+
+
+   PIN MAP -- MEGA (REV 4, 20260709):
+     D48 -> PIN_ESTOP_SENSE     (INPUT_PULLUP; NO switch -> GND, active LOW)
+     D46 -> PIN_START_BTN       (INPUT_PULLUP; NO -> GND)
+     D24 -> VALVE_AIR_DOSE      IN1 / K1 = AIR ALD ("TMA line", carries AIR)
+     D26 -> VALVE_H2O_ALD       IN2 / K2 = H2O ALD3 (6LVV-ALD3MR4-P-CV)
+     D28 -> VALVE_N2_PURGE      IN3 / K3 = N2 PURGE
+     D30 -> PIN_HOUSE_MAIN      IN8 / K8 = house main 24V (gates ALD3 heads)
+     D34 -> VALVE_H2O_SAFETY    IN4 / K4 = H2O safety valve (SS-3J-24VDC)
+     D36 -> VALVE_AIR_SAFETY    IN5 / K5 = AIR(TMA-line) safety (NVZ110 pilot)
+
+   VALVE PAIRING (enforced -- the two halves ALWAYS fire and clear together):
+     H2O pair = D26 (H2O ALD3 dose) + D34 (H2O safety)   -- Phase 1 only
+     AIR pair = D24 (AIR ALD dose)  + D36 (AIR safety)    -- Phase 2 only
+   Each precursor's dose valve and its safety valve are one logical unit; the
+   safety valve catches any vapor the dose valve leaves behind on close. They
+   are never opened or closed independently during a run.
+
+   Active-LOW relays: LOW=ON, HIGH=OFF. All defaults at boot / IDLE / E-stop /
+   between cycles / run end: valves = HIGH (closed), K8 = HIGH (OFF).
+============================================================================= */
+
+
+// ---- MEGA PIN MAP (REV 4 -- pushbuttons moved off SPI pins D52/D53) ------
+#define PIN_ESTOP_SENSE   48   // plain GPIO, no SPI/timer conflict
+#define PIN_START_BTN     46   // plain GPIO, no SPI/timer conflict
+#define VALVE_AIR_DOSE    24   // K1 -- "TMA line" carrying AIR - 6lvv
+#define VALVE_H2O_ALD     26   // K2 
+#define VALVE_N2_PURGE    28   // K3 
+#define PIN_HOUSE_MAIN    30   // K8
+#define VALVE_H2O_SAFETY  34   // K4 -- SS-3J-24VDC water safety valve
+#define VALVE_AIR_SAFETY  36   // K5 -- NVZ110 pilot -> 6LVV-DPFR4 air-line safety
+
+
+// ---- ANALOG SHIELD -- IGC100 PRESSURE READOUT (boot sanity ping only) -----
+const float    DIVIDER_RATIO  = 0.3197f;   // 4.7k / (10k + 4.7k), measured/derived
+const float    ADC_VREF_SPAN  = 10.0f;     // ±5V total span = 10V
+const float    ADC_VREF_ZERO  = 5.0f;      // offset so code 0 -> -5V
+const uint32_t ADC_FULLSCALE  = 65535UL;   // 16-bit unsigned
+const uint8_t  IGC_CHANNEL    = 0;         // Shield ADC pin A0 (2x4 header)
+const float    P_MIN_TORR     = 1.0e-11f;  // clamp floor (below noise)
+const float    P_MAX_TORR     = 1.0e+3f;   // clamp ceiling
+
+
+// Return pressure in Torr, or NAN if sensor obviously unpowered/disconnected.
+// [v9] Used ONLY by the one-time boot ADC sanity ping. NOT streamed during runs.
+float readPressureTorr(){
+  unsigned int adc = analog.read(IGC_CHANNEL);
+  float v_shield = ((float)adc * ADC_VREF_SPAN / (float)ADC_FULLSCALE) - ADC_VREF_ZERO;
+  float v_igc    = v_shield / DIVIDER_RATIO;
+  if (v_igc < -0.5f) return NAN;                       // IGC unpowered / cable open
+  if (v_igc > 11.0f) v_igc = 11.0f;                    // clamp above 10V rail
+  float p = powf(10.0f, v_igc - 5.0f);   // PG2 Pirani formula, SRS p. 2-24
+  if (p < P_MIN_TORR) p = P_MIN_TORR;
+  if (p > P_MAX_TORR) p = P_MAX_TORR;
+  return p;
+}
+
+
+// [v9] pressure serial STREAMING REMOVED. Pressure (Shield -> AN1 -> IGC) is now
+// owned entirely by dual_logger_v6 in its own terminal. The firmware NEVER prints
+// pressure during a run -- this serial port carries ONLY valve/state events and
+// your commands. readPressureTorr() is kept solely for the one-time boot ADC
+// sanity ping so a dead cable still shows up in the boot log.
+
+
+// ---- Relay helpers --------------------------------------------------------
+inline void relayOn (uint8_t p){ digitalWrite(p, LOW);  }
+inline void relayOff(uint8_t p){ digitalWrite(p, HIGH); }
+
+
+// Paired helpers -- both halves fire and clear together, always.
+// H2O pair = dose (D26) + water safety (D34). Always together.
+inline void h2oPairOn (){ relayOn (VALVE_H2O_ALD); relayOn (VALVE_H2O_SAFETY); }
+inline void h2oPairOff(){ relayOff(VALVE_H2O_ALD); relayOff(VALVE_H2O_SAFETY); }
+// AIR pair = dose (D24) + air safety (D36). Always together.
+inline void airPairOn (){ relayOn (VALVE_AIR_DOSE); relayOn (VALVE_AIR_SAFETY); }
+inline void airPairOff(){ relayOff(VALVE_AIR_DOSE); relayOff(VALVE_AIR_SAFETY); }
+
+
+// ---- Recipe ---------------------------------------------------------------
+typedef struct {
+  uint32_t h2o_pulse_ms;
+  uint32_t h2o_dwell_ms;
+  uint32_t h2o_purge_ms;
+  uint32_t h2o_evac_ms;
+  uint16_t cu2o_cycles;
+
+
+  uint32_t air_pulse_ms;
+  uint32_t air_dwell_ms;
+  uint32_t air_purge_ms;
+  uint32_t air_evac_ms;
+  uint16_t cuo_cycles;
+} StackRecipe;
+
+
+//                    ---- PHASE 1: Cu2O (H2O) ----   ---- PHASE 2: CuO (AIR) ----
+//                    pulse dwell purge evac  cyc      pulse dwell purge evac  cyc
+// *** 200 water + 200 air, canonical Run J/K timing (500/3000/5000/3000).
+StackRecipe R = {       500, 3000, 5000, 3000, 200,    500, 3000, 5000, 3000, 200 };
+
+
+const uint16_t main_lead_ms = 100;
+const uint16_t main_lag_ms  = 100;
+
+
+// [v9] Pressure streaming state REMOVED entirely. dual_logger_v6 owns pressure.
+
+
+// ---- Debounce -------------------------------------------------------------
+struct Debounced { uint8_t pin; bool last, stable; unsigned long t; };
+const unsigned long DEBOUNCE_MS = 20;
+Debounced startBtn{PIN_START_BTN, HIGH, HIGH, 0};
+bool updateDebounce(Debounced &b){
+  bool r = digitalRead(b.pin);
+  if (r != b.last){ b.last = r; b.t = millis(); }
+  if ((millis() - b.t) > DEBOUNCE_MS && r != b.stable){ b.stable = r; return true; }
+  return false;
+}
+
+
+// ---- Group OFF helpers ----------------------------------------------------
+inline void allValvesOff(){
+  airPairOff();                // D24 + D36 OFF (air line safe)
+  h2oPairOff();                // D26 + D34 OFF (water line safe)
+  relayOff(VALVE_N2_PURGE);    // D28 OFF
+}
+inline void safeAll(){ allValvesOff(); relayOff(PIN_HOUSE_MAIN); }
+
+
+bool pressure_ok = true, temp_ok = true;
+
+
+// ---- Phase / state machine ------------------------------------------------
+enum Phase_t { PH_CU2O, PH_CUO };
+Phase_t phase = PH_CU2O;
+
+
+enum S_t { IDLE, MAIN_LEAD,
+           PULSE_ON, PULSE_OFF_DWELL,
+           PURGE_ON, PURGE_OFF_EVAC,
+           MAIN_LAG, DONE,
+           ESTOPPED, WAIT_RESET };
+S_t S = IDLE;
+
+
+unsigned long t0 = 0, runStartMs = 0;
+uint16_t cyclesLeft = 0;
+uint16_t cycleNum   = 0;
+bool estopPrev = HIGH;
+bool manualN2 = false;
+
+// DRY-MOCK flag. TRUE = Phase 1 runs full timing + N2 but H2O valves (D26+D34)
+// never open. *** FALSE for today's REAL 200/200 water+air run -- water doses. ***
+bool phase1_dry = false;
+
+
+// Active-phase timing accessors
+inline uint32_t curPulse(){ return phase==PH_CU2O ? R.h2o_pulse_ms : R.air_pulse_ms; }
+inline uint32_t curDwell(){ return phase==PH_CU2O ? R.h2o_dwell_ms : R.air_dwell_ms; }
+inline uint32_t curPurge(){ return phase==PH_CU2O ? R.h2o_purge_ms : R.air_purge_ms; }
+inline uint32_t curEvac (){ return phase==PH_CU2O ? R.h2o_evac_ms  : R.air_evac_ms;  }
+
+
+void logEvent(const __FlashStringHelper* msg){
+  unsigned long now = millis();
+  Serial.print(F("t=")); Serial.print(now - runStartMs);
+  Serial.print(F("ms ph=")); Serial.print(phase==PH_CU2O ? F("Cu2O") : F("CuO"));
+  Serial.print(F(" cyc=")); Serial.print(cycleNum);
+  Serial.print(F(" : ")); Serial.println(msg);
+}
+
+
+extern uint8_t k8_manual_refs;
+
+
+void handleEstop(){
+  safeAll(); manualN2 = false; S = ESTOPPED; cyclesLeft = 0;
+  k8_manual_refs = 0;
+  Serial.println(F("*** E-STOP *** All valves CLOSED (H2O pair D26+D34, AIR pair D24+D36, N2 D28), K8 OFF."));
+}
+
+
+void startPhase(Phase_t p){
+  phase = p;
+  cycleNum = 1;
+  if (p == PH_CU2O){
+    cyclesLeft = R.cu2o_cycles;
+    if (phase1_dry){
+      Serial.print(F("=== PHASE 1: DRY MOCK (NO water dose) full timing, cycles=")); Serial.println(R.cu2o_cycles);
+      Serial.println(F("Phase 1 DRY: D26 + D34 stay CLOSED entire phase. N2 purge still pulses each cycle."));
+    } else {
+      Serial.print(F("=== PHASE 1: Cu2O on Cu (H2O pulsing), cycles=")); Serial.println(R.cu2o_cycles);
+    }
+  } else {
+    cyclesLeft = R.cuo_cycles;
+    Serial.print(F("=== PHASE 2: CuO on Cu2O (AIR pulsing), cycles=")); Serial.println(R.cuo_cycles);
+    Serial.println(F("AIR phase: AIR pair D24+D36 doses together. N2 purges each cycle."));
+  }
+  if (cyclesLeft == 0){
+    Serial.println(F("(phase cycle count = 0 -> phase skipped)"));
+    S = DONE;
+  } else {
+    S = MAIN_LEAD;
+  }
+}
+
+
+void handleStartRun(){
+  manualN2 = false;
+  runStartMs = millis(); t0 = runStartMs;
+  Serial.println(F("=== Cu/Cu2O/CuO SELECTIVE-PHASE STACK RUN ==="));
+  Serial.println(F("[v9] Pressure is logged separately by dual_logger_v6 (AN1). This"));
+  Serial.println(F("     terminal shows valve/state events only -- no pressure spam."));
+  Serial.print(F("Phase1 Cu2O cycles: ")); Serial.println(R.cu2o_cycles);
+  if (phase1_dry) Serial.println(F(">>> PHASE 1 = DRY MOCK: full timing + N2, NO water dose (D26/D34 stay closed) <<<"));
+  Serial.print(F("Phase2 CuO  cycles: ")); Serial.println(R.cuo_cycles);
+  Serial.println(F("NO TMA. D24/D36 = AIR line. Dynamic mode (no pump isolation)."));
+  Serial.println(F("Pressure via Analog Shield IN0 (10k/4.7k divider, ratio 0.3197)."));
+  startPhase(PH_CU2O);
+  logEvent(F("K8 lead begin"));
+}
+
+
+// ---- Print manual command menu -------------------------------------------
+void printMenu(){
+  Serial.println(F("--- COMMANDS (all valve toggles IDLE-only, safety-checked) ---"));
+  Serial.println(F("  RUN CONTROL:"));
+  Serial.println(F("    s = START stack run   e = E-STOP   r = RESET -> IDLE"));
+  Serial.println(F("  MANUAL VALVE TOGGLES (single valves; active-LOW):"));
+  Serial.println(F("    3/# = D24 (AIR ALD)      ON/OFF"));
+  Serial.println(F("    4/$ = D26 (H2O ALD3)     ON/OFF"));
+  Serial.println(F("    5/% = D28 (N2 purge)     ON/OFF"));
+  Serial.println(F("    6/^ = D30 (K8 house)     ON/OFF"));
+  Serial.println(F("    8/* = D34 (H2O safety)   ON/OFF"));
+  Serial.println(F("    9/( = D36 (AIR safety)   ON/OFF"));
+  Serial.println(F("  PAIRED TOGGLES:"));
+  Serial.println(F("    a/A = AIR pair D24+D36  ON/OFF"));
+  Serial.println(F("    w/W = H2O pair D26+D34  ON/OFF"));
+  Serial.println(F("    n/o = N2 sweep (D28 + K8) ON/OFF  [legacy Run J behavior]"));
+  Serial.println(F("  PRESSURE READOUT: handled by dual_logger_v6 (AN1) -- NOT here."));
+  Serial.println(F("  SAFETY:"));
+  Serial.println(F("    x = PANIC ALL OFF (safeAll)"));
+  Serial.println(F("    ? = reprint this menu"));
+  Serial.println(F("  INTERLOCKS: p0/p1 = PRESSURE_OK,  t0/t1 = TEMP_OK"));
+  Serial.println(F("--------------------------------------------------------------"));
+}
+
+
+void setup(){
+  // *** D53 (hardware SS) MUST be set OUTPUT HIGH before SPI init to keep the
+  // ATmega in master mode. We don't use D53 for anything, so just pin it high.
+  pinMode(53, OUTPUT);
+  digitalWrite(53, HIGH);
+
+
+  pinMode(PIN_ESTOP_SENSE,   INPUT_PULLUP);   // D48
+  pinMode(PIN_START_BTN,     INPUT_PULLUP);   // D46
+  pinMode(VALVE_AIR_DOSE,    OUTPUT);
+  pinMode(VALVE_H2O_ALD,     OUTPUT);
+  pinMode(VALVE_H2O_SAFETY,  OUTPUT);
+  pinMode(VALVE_AIR_SAFETY,  OUTPUT);
+  pinMode(VALVE_N2_PURGE,    OUTPUT);
+  pinMode(PIN_HOUSE_MAIN,    OUTPUT);
+  safeAll();
+  estopPrev = digitalRead(PIN_ESTOP_SENSE);
+
+
+  Serial.begin(115200);
+  Serial.println(F("=== Cu/Cu2O/CuO STACK -- MEGA + ANALOG SHIELD -- READY ==="));
+  Serial.println(F("Firmware: Cu2O_stack_20260719_200x200_repro (rev 9, REAL water+air, NO pressure spam, cable X0033BKF7)"));
+  Serial.println(F("Valve pairs: H2O = D26+D34 (dose+safety), AIR = D24+D36 (dose+safety)."));
+  Serial.println(F("Pin map: E-STOP=D48, START=D46, valves D24-D36. D50-D53=SPI."));
+  Serial.println(F("Pressure: PG2 -> IGC AN1 DAC -> 10k/4.7k -> Shield IN0. P=10^(V-5) Torr."));
+  if (phase1_dry) Serial.println(F("*** phase1_dry = TRUE : Phase 1 runs full timing + N2, NO water dose ***"));
+  else            Serial.println(F("Phase1 = Cu2O (H2O, D26+D34, Run J timing). Phase2 = CuO (AIR, D24+D36)."));
+  printMenu();
+
+
+  // Sanity ping of the shield ADC so any wiring goof shows up in the boot log.
+  Serial.print(F("Boot ADC IN0 raw = "));
+  Serial.print(analog.read(IGC_CHANNEL));
+  Serial.print(F("  P = "));
+  float p_boot = readPressureTorr();
+  if (isnan(p_boot)) Serial.println(F("NaN (IGC unpowered or cable open)"));
+  else { Serial.print(p_boot, 6); Serial.println(F(" Torr")); }
+
+
+  if (estopPrev == LOW){
+    S = ESTOPPED;
+    Serial.println(F("Boot: E-STOP pressed -> ESTOPPED."));
+  }
+}
+
+
+// Helper: only allow manual valve toggles in IDLE with no E-stop.
+inline bool manualAllowed(){
+  if (S != IDLE){ Serial.println(F("Ignored: not in IDLE.")); return false; }
+  if (digitalRead(PIN_ESTOP_SENSE) == LOW){ Serial.println(F("Ignored: E-stop down.")); return false; }
+  return true;
+}
+
+
+// K8 refcount for manual ALD-valve ops (unchanged from prior firmware).
+uint8_t k8_manual_refs = 0;
+inline void k8AcquireForValve(){
+  if (k8_manual_refs == 0){
+    relayOn(PIN_HOUSE_MAIN);
+    Serial.println(F("(auto) K8 house main ON -- powering ALD3 valve heads"));
+  }
+  k8_manual_refs++;
+}
+inline void k8ReleaseForValve(){
+  if (k8_manual_refs > 0) k8_manual_refs--;
+  if (k8_manual_refs == 0){
+    relayOff(PIN_HOUSE_MAIN);
+    Serial.println(F("(auto) K8 house main OFF -- no ALD3 valves demanding power"));
+  }
+}
+
+
+void checkInputs(){
+  bool estop = digitalRead(PIN_ESTOP_SENSE);
+  if (estop == LOW && estopPrev == HIGH) handleEstop();
+  if (S == ESTOPPED && estop == HIGH && estopPrev == LOW){
+    safeAll(); manualN2 = false; S = WAIT_RESET;
+    Serial.println(F("E-stop released. START to RESET -> IDLE."));
+  }
+  estopPrev = estop;
+
+
+  if (updateDebounce(startBtn) && startBtn.stable == LOW){
+    if (digitalRead(PIN_ESTOP_SENSE) == LOW) Serial.println(F("START ignored: E-stop down."));
+    else if (S == IDLE && pressure_ok && temp_ok){ Serial.println(F("START -> STACK RUN")); handleStartRun(); }
+    else if (S == WAIT_RESET){ Serial.println(F("RESET -> IDLE")); safeAll(); manualN2 = false; S = IDLE; }
+  }
+
+
+  if (Serial.available()){
+    char c = Serial.read();
+
+
+    // --- Run control ---
+    if      (c == 's' && S == IDLE && digitalRead(PIN_ESTOP_SENSE) == HIGH
+                      && pressure_ok && temp_ok) handleStartRun();
+    else if (c == 'e') handleEstop();
+    else if (c == 'r'){
+      if (digitalRead(PIN_ESTOP_SENSE) == HIGH){ safeAll(); manualN2 = false; k8_manual_refs = 0; S = IDLE; Serial.println(F("RESET -> IDLE")); }
+      else Serial.println(F("RESET ignored: E-stop down."));
+    }
+    else if (c == '?'){ printMenu(); }
+    else if (c == 'x'){ safeAll(); manualN2 = false; k8_manual_refs = 0; Serial.println(F("PANIC: all outputs OFF")); }
+
+
+    // --- N2 sweep (legacy Run J behavior: K8 + D28 together) ---
+    else if (c == 'n'){ if (manualAllowed()){
+        relayOn(PIN_HOUSE_MAIN); relayOn(VALVE_N2_PURGE); manualN2 = true;
+        Serial.println(F("MANUAL N2 sweep ON (K8 + D28).")); } }
+    else if (c == 'o'){ if (manualAllowed()){
+        relayOff(VALVE_N2_PURGE); relayOff(PIN_HOUSE_MAIN); manualN2 = false;
+        Serial.println(F("MANUAL N2 sweep OFF.")); } }
+
+
+    // --- Individual single-valve toggles (K8 auto-managed for ALD3 valves) ---
+    else if (c == '3'){ if (manualAllowed()){ k8AcquireForValve(); relayOn (VALVE_AIR_DOSE);    Serial.println(F("D24 (AIR ALD) ON")); } }
+    else if (c == '#'){ if (manualAllowed()){ relayOff(VALVE_AIR_DOSE);    k8ReleaseForValve(); Serial.println(F("D24 (AIR ALD) OFF")); } }
+    else if (c == '4'){ if (manualAllowed()){ k8AcquireForValve(); relayOn (VALVE_H2O_ALD);     Serial.println(F("D26 (H2O ALD3) ON")); } }
+    else if (c == '$'){ if (manualAllowed()){ relayOff(VALVE_H2O_ALD);     k8ReleaseForValve(); Serial.println(F("D26 (H2O ALD3) OFF")); } }
+    else if (c == '5'){ if (manualAllowed()){ relayOn (VALVE_N2_PURGE);    Serial.println(F("D28 (N2 purge) ON  [K8 NOT needed]")); } }
+    else if (c == '%'){ if (manualAllowed()){ relayOff(VALVE_N2_PURGE);    Serial.println(F("D28 (N2 purge) OFF")); } }
+    else if (c == '6'){ if (manualAllowed()){ relayOn (PIN_HOUSE_MAIN);    Serial.println(F("D30 (K8 house) ON  [manual override]")); } }
+    else if (c == '^'){ if (manualAllowed()){ relayOff(PIN_HOUSE_MAIN);    Serial.println(F("D30 (K8 house) OFF [manual override]")); } }
+    else if (c == '8'){ if (manualAllowed()){ k8AcquireForValve(); relayOn (VALVE_H2O_SAFETY); Serial.println(F("D34 (H2O safety) ON")); } }
+    else if (c == '*'){ if (manualAllowed()){ relayOff(VALVE_H2O_SAFETY); k8ReleaseForValve(); Serial.println(F("D34 (H2O safety) OFF")); } }
+    else if (c == '9'){ if (manualAllowed()){ k8AcquireForValve(); relayOn (VALVE_AIR_SAFETY);  Serial.println(F("D36 (AIR safety) ON")); } }
+    else if (c == '('){ if (manualAllowed()){ relayOff(VALVE_AIR_SAFETY);  k8ReleaseForValve(); Serial.println(F("D36 (AIR safety) OFF")); } }
+
+
+    // --- Paired toggles ---
+    else if (c == 'a'){ if (manualAllowed()){ k8AcquireForValve(); airPairOn();  Serial.println(F("AIR pair D24+D36 ON")); } }
+    else if (c == 'A'){ if (manualAllowed()){ airPairOff(); k8ReleaseForValve(); Serial.println(F("AIR pair D24+D36 OFF")); } }
+    else if (c == 'w'){ if (manualAllowed()){ k8AcquireForValve(); h2oPairOn();  Serial.println(F("H2O pair D26+D34 ON")); } }
+    else if (c == 'W'){ if (manualAllowed()){ h2oPairOff(); k8ReleaseForValve(); Serial.println(F("H2O pair D26+D34 OFF")); } }
+
+
+    // --- Interlock inputs ---
+    else if (c == 'p'){ while(!Serial.available()){} pressure_ok = (Serial.read() == '1');
+                        Serial.print(F("PRESSURE_OK=")); Serial.println(pressure_ok); }
+    else if (c == 't'){ while(!Serial.available()){} temp_ok = (Serial.read() == '1');
+                        Serial.print(F("TEMP_OK=")); Serial.println(temp_ok); }
+  }
+}
+
+
+void loop(){
+  checkInputs();
+  unsigned long now = millis();
+
+
+  // [v9] No pressure streaming. dual_logger_v6 samples AN1 independently.
+
+
+  switch (S){
+    case IDLE: case ESTOPPED: case WAIT_RESET: break;
+
+
+    case MAIN_LEAD:
+      relayOn(PIN_HOUSE_MAIN);
+      logEvent(F("K8 ON (cycle lead)"));
+      t0 = now; S = PULSE_ON;
+      break;
+
+
+    case PULSE_ON:
+      if (now - t0 >= main_lead_ms){
+        if (phase == PH_CU2O){
+          if (phase1_dry){ logEvent(F("DRY MOCK: H2O valves stay CLOSED (no dose)")); }
+          else           { h2oPairOn(); logEvent(F("H2O pair D26 + D34 ON")); }
+        } else {
+          airPairOn(); logEvent(F("AIR pair D24 + D36 ON"));
+        }
+        t0 = now; S = PULSE_OFF_DWELL;
+      } break;
+
+
+    case PULSE_OFF_DWELL:
+      if (now - t0 >= curPulse()){
+        if (phase == PH_CU2O){
+          if (!phase1_dry) h2oPairOff();
+          logEvent(F("-> DWELL (precursor residence)"));
+        } else {
+          airPairOff(); logEvent(F("AIR D24 + D36 OFF -> DWELL (precursor residence)"));
+        }
+        t0 = now; S = PURGE_ON;
+      } break;
+
+
+    case PURGE_ON:
+      if (now - t0 >= curDwell()){
+        relayOn(VALVE_N2_PURGE);
+        logEvent(F("N2 PURGE ON (all dose pairs CLOSED)"));
+        t0 = now; S = PURGE_OFF_EVAC;
+      } break;
+
+
+    case PURGE_OFF_EVAC:
+      if (now - t0 >= curPurge()){
+        relayOff(VALVE_N2_PURGE);
+        logEvent(F("N2 PURGE OFF -> EVAC (clear floor for next dose)"));
+        t0 = now; S = MAIN_LAG;
+      } break;
+
+
+    case MAIN_LAG:
+      if (now - t0 >= curEvac() + main_lag_ms){
+        relayOff(PIN_HOUSE_MAIN);
+        logEvent(F("K8 OFF (cycle end)"));
+        t0 = now; S = DONE;
+      } break;
+
+
+    case DONE:
+      if (cyclesLeft > 0 && --cyclesLeft > 0){
+        cycleNum++;
+        if (cycleNum % 50 == 1){
+          Serial.print(F("Remaining in phase: ")); Serial.println(cyclesLeft);
+        }
+        t0 = now; S = MAIN_LEAD;
+      } else {
+        if (phase == PH_CU2O){
+          Serial.println(F("--- PHASE 1 complete -> switching to PHASE 2 (CuO/AIR) ---"));
+          safeAll();
+          startPhase(PH_CUO);
+          if (S == MAIN_LEAD){ t0 = millis(); logEvent(F("K8 lead begin (Phase 2)")); }
+        } else {
+          logEvent(F("STACK complete -> IDLE"));
+          safeAll();
+          S = IDLE;
+        }
+      }
+      break;
+  }
+}
+```
+
 ## Code for mock + air
 ```
 #include <Arduino.h>

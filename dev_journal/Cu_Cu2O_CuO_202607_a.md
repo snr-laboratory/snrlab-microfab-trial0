@@ -1,5 +1,6 @@
 # Cu/Cu2O/CuO phase selectivity trial 
-
+## MEGA + wiring
+![caption](../doc/assets/Cu2O_validation_202606_a/MEGA_wiring.drawio.svg)
 ## Cable for AN1
 ![caption](../doc/assets/Cu2O_validation_202606_a/IGC_MEGA_cable.drawio.svg)
 

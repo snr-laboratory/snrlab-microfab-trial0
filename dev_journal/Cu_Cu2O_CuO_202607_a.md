@@ -1,4 +1,7 @@
 # Cu/Cu2O/CuO phase selectivity trial 
+
+## Gas flow + air line
+![caption](../doc/assets/Cu2O_validation_202606_a/Cu2O_CuO_gas_flow_v1.drawio.svg)
 ## MEGA + wiring
 ![caption](../doc/assets/Cu2O_validation_202606_a/MEGA_wiring.drawio.svg)
 ## Cable for AN1

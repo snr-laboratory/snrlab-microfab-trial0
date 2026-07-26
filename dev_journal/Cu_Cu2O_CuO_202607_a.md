@@ -1,5 +1,11 @@
 # Cu/Cu2O/CuO phase selectivity trial 
 
+## Updated electrical digagram
+![caption](../doc/assets/Cu2O_validation_202606_a/Electrical_Relay_Mega_SMPS_ESB__24Valves_JUL25_2026.drawio.svg)
+
+## Updated Mega wiring
+![caption](../doc/assets/Cu2O_validation_202606_a/MEGA_wiring.drawio_2.svg)
+
 ## Gas flow + air line
 ![caption](../doc/assets/Cu2O_validation_202606_a/Cu2O_CuO_gas_flow_v1.drawio.svg)
 ## MEGA + wiring

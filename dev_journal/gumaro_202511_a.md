@@ -1,6 +1,6 @@
 
 ## Corrections 
-<img width="829" height="714" alt="image" src="https://github.com/user-attachments/assets/41757e42-c75a-4e57-bffb-aea49062f528" />
+<img width="829" height="714" alt="image" src="assets/41757e42-c75a-4e57-bffb-aea49062f528" />
 
 - revisedTSv2 - MATLAB folder with code
 
@@ -217,21 +217,21 @@ void loop(){
 - Install and verify E-stop and start buttons
 - Update onshape and drawio 
 ### Timing sequence diagram with K8 pulsing
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/84eb1c0b-bc81-441b-9e9f-01ceea3b6f29" />
+<img width="500" height="500" alt="image" src="assets/84eb1c0b-bc81-441b-9e9f-01ceea3b6f29" />
 
 - We pulse K8 so valves can only physically receive 24 V during the exact windows we schedule. That means a single software or wiring fault can’t quietly hold a valve open between steps, and if a branch failed closed we’d only see leakage in brief K8 windows instead of continuously. It’s a second, independent permission layer—defense-in-depth. The trade-off is extra K8 cycling., 
 
 ### Scope K8 pulsing 
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/7c4042fe-eab7-48e3-85d3-11e2afcc4144" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f08838b0-f6e4-4cc5-8c61-aac33c75597c" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/d34b5fd3-72b0-4e19-97c9-7d522676605f" />
+<img width="200" height="200" alt="image" src="assets/7c4042fe-eab7-48e3-85d3-11e2afcc4144" />
+<img width="200" height="200" alt="image" src="assets/f08838b0-f6e4-4cc5-8c61-aac33c75597c" />
+<img width="200" height="200" alt="image" src="assets/d34b5fd3-72b0-4e19-97c9-7d522676605f" />
 
 
 ### Check valves
 [Stainless Steel Poppet Check Valve, Fixed Pressure, 1/4 in. Swagelok Tube Fitting, 1/3 psig (0.03 bar)](https://products.swagelok.com/en/c/fixed-pressure/p/SS-4C-1%252F3?utm_source=chatgpt.com)
 
 ### Gas flow revised 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/74971176-2726-4d8d-aed3-406ca319f6c4" />
+<img width="500" height="500" alt="image" src="assets/74971176-2726-4d8d-aed3-406ca319f6c4" />
 
 ### Code revised (K8 pulsed + Estop & start physical buttons + restart function)
 ```
@@ -555,20 +555,20 @@ void loop(){
 ## Task for 20251111
 - Finish wiring safe state scheme (physical and diagram)
 - Update code and check with scope  
-<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/d494ef04-8dca-445b-9096-5965aacbb9ea" />
+<img width="200" height="300" alt="image" src="assets/d494ef04-8dca-445b-9096-5965aacbb9ea" />
 
-<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/cc321029-2ece-4b9b-9255-516a35604aeb" />
+<img width="500" height="700" alt="image" src="assets/cc321029-2ece-4b9b-9255-516a35604aeb" />
 
 ### Timing sequence diagram + K8 house main 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8bb8d002-58d1-4419-ba2f-de0fb1ea77d4" />
+<img width="500" height="500" alt="image" src="assets/8bb8d002-58d1-4419-ba2f-de0fb1ea77d4" />
 
 ### Scope measurements 
 -IN1 & IN2: TMA and H2O ALD valves (PIN 3 & 4)
 
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/1bfad42b-adfc-429c-ba75-615f7ed17f0c" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/1a6c8ae8-fedb-438d-a840-7224740facb9" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6b7a07b4-f519-41e8-88fc-a05e84949135" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/729d3530-ee59-4cbb-ae34-174d6a19e85f" />
+<img width="200" height="200" alt="image" src="assets/1bfad42b-adfc-429c-ba75-615f7ed17f0c" />
+<img width="200" height="200" alt="image" src="assets/1a6c8ae8-fedb-438d-a840-7224740facb9" />
+<img width="200" height="200" alt="image" src="assets/6b7a07b4-f519-41e8-88fc-a05e84949135" />
+<img width="200" height="200" alt="image" src="assets/729d3530-ee59-4cbb-ae34-174d6a19e85f" />
 
 - TMA ALD: 48.0 ms
 - H2O ALD: 24.0 ms
@@ -576,8 +576,8 @@ void loop(){
 
 -IN3 and IN8: N2 purge and house main (PIN 5 and 6)
 
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/cd3db9c0-6ec4-4942-9ea8-59523c3f0647" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/a6a903eb-b772-4d11-8774-fe7867a9f677" />
+<img width="200" height="200" alt="image" src="assets/cd3db9c0-6ec4-4942-9ea8-59523c3f0647" />
+<img width="200" height="200" alt="image" src="assets/a6a903eb-b772-4d11-8774-fe7867a9f677" />
 
 - N2 purge: 200 ms 
 - Gap: 208 ms
@@ -585,8 +585,8 @@ void loop(){
 
 -IN3 and IN8: CH2 on +24V bus terminal
 
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/60865b2d-7484-4c51-82cd-e4047e736486" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/0a5d4782-6be3-464d-b763-84a2b414186a" />
+<img width="200" height="200" alt="image" src="assets/60865b2d-7484-4c51-82cd-e4047e736486" />
+<img width="200" height="200" alt="image" src="assets/0a5d4782-6be3-464d-b763-84a2b414186a" />
 
 ### Code + K8 house main 
 ```
@@ -921,7 +921,7 @@ void loop() {
         - Arduino needs to be programmed to supply +24V to the three modules from the house main switch     
 - Refine timing sequence valves; follow example that was provided!
 
-<img width="793" height="697" alt="image" src="https://github.com/user-attachments/assets/acbe6aed-4e69-4bb7-a814-c1e72521c485" />
+<img width="793" height="697" alt="image" src="assets/acbe6aed-4e69-4bb7-a814-c1e72521c485" />
 
 
 ```
@@ -949,14 +949,14 @@ void loop() {
 - When all the valves are in the NC and instead of the NO relay side, if the power is switched on, then all the SVs immediately power on but the relay LEDs do not come on, but the SVs can clearly be felt and heard opening up. When the 5V is removed the relay LEDs come on as well as the SVs. 
 
 ### Wiring scheme
-<img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/50d6b17f-9a15-4439-9c30-c50ece8f6cd9" />
+<img width="400" height="600" alt="image" src="assets/50d6b17f-9a15-4439-9c30-c50ece8f6cd9" />
 
 ### Time sequence diagrams
-<img width="700" height="346" alt="image" src="https://github.com/user-attachments/assets/bf671fd6-b5fd-48bd-a6ae-9c8e3ec00f34" />
-<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/e3958dba-36e6-466a-b894-6c540273d9fa" />
+<img width="700" height="346" alt="image" src="assets/bf671fd6-b5fd-48bd-a6ae-9c8e3ec00f34" />
+<img width="700" height="500" alt="image" src="assets/e3958dba-36e6-466a-b894-6c540273d9fa" />
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/6fb0b2ba-ea7a-4b43-a012-c5c93118a063" />
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/cdf4e40f-243e-44cb-bd2d-a3367b2b18c8" />
+<img width="600" height="500" alt="image" src="assets/6fb0b2ba-ea7a-4b43-a012-c5c93118a063" />
+<img width="600" height="500" alt="image" src="assets/cdf4e40f-243e-44cb-bd2d-a3367b2b18c8" />
 
 
 
@@ -1379,7 +1379,7 @@ void loop() {
 
 ## Task for 20251105
 #### IGC100 and miniterm
-<img width="586" height="249" alt="image" src="https://github.com/user-attachments/assets/601c0ed5-0659-4c76-90b3-f22e429b0466" />
+<img width="586" height="249" alt="image" src="assets/601c0ed5-0659-4c76-90b3-f22e429b0466" />
 
 - connection is established, command GDTX? 4 (for PG2) is working and reading pressure from the Mac.
 - python3 -m serial.tools.miniterm /dev/cu.usbserial-FTG4OTA2 115200
@@ -1390,9 +1390,9 @@ void loop() {
     - p = port; p = 4 = PG2  
 
 ### Cycles included into typedef struct
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/06d16a79-acce-4578-bb5c-ef0e95f41248" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/35a38f45-bf9f-4d61-8ba0-6217ba673211" />
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/ebebe690-6ba2-48f4-993a-dc315ff4f919" />
+<img width="200" height="200" alt="image" src="assets/06d16a79-acce-4578-bb5c-ef0e95f41248" />
+<img width="200" height="200" alt="image" src="assets/35a38f45-bf9f-4d61-8ba0-6217ba673211" />
+<img width="200" height="200" alt="image" src="assets/ebebe690-6ba2-48f4-993a-dc315ff4f919" />
 
 The ALD timing recipe firmware was extended with an additional parameter, cycles_to_run, which specifies how many identical ALD cycles are executed in response to a single start command. Internally, the controller maintains a counter cyclesCompleted that is incremented each time the finite-state machine reaches the “cycle complete” state at the end of the second N₂ purge. If cyclesCompleted < cycles_to_run, the state machine automatically re-enters the TMA half-cycle, defines a new time origin t0 for that cycle, and repeats the same valve sequence without any change to the underlying logic or timing parameters. Only when the requested number of cycles has been executed does the controller return to the safe idle state (all valves off, SYS_IDLE). The emergency stop and reset behaviour are unchanged: an E-stop at any point in any cycle immediately calls allValvesOff(), aborts the remaining cycles in the run, and latches the system in SYS_ESTOPPED until a manual reset is issued.
 
@@ -1425,12 +1425,12 @@ valve_times_t vt = { .ms1 = 10,
 
 - after:
 
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/a31d112d-ac3d-4f44-9139-d9c388acef03" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/1f5c2579-99ed-409d-9555-e4e4e4192bd4" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/7f3b5006-e2a1-4cfc-960e-c31ce1ad78fb" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/b58c88c1-c034-417d-a384-acbbff9c0739" />
+<img width="300" height="500" alt="image" src="assets/a31d112d-ac3d-4f44-9139-d9c388acef03" />
+<img width="300" height="500" alt="image" src="assets/1f5c2579-99ed-409d-9555-e4e4e4192bd4" />
+<img width="300" height="500" alt="image" src="assets/7f3b5006-e2a1-4cfc-960e-c31ce1ad78fb" />
+<img width="300" height="500" alt="image" src="assets/b58c88c1-c034-417d-a384-acbbff9c0739" />
 
-<img width="300" height="291" alt="image" src="https://github.com/user-attachments/assets/6f39baf9-2968-4472-9b20-46482dbbccb8" />
+<img width="300" height="291" alt="image" src="assets/6f39baf9-2968-4472-9b20-46482dbbccb8" />
 
   
   - 202 ms N₂ purge
@@ -1438,27 +1438,27 @@ valve_times_t vt = { .ms1 = 10,
 
 - before:
   
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/814ef0ff-9b62-49b2-a4e0-8c4224b08c45" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/3eb4e976-cf1f-44ba-8a85-863a27b7a584" />
+<img width="300" height="500" alt="image" src="assets/814ef0ff-9b62-49b2-a4e0-8c4224b08c45" />
+<img width="300" height="500" alt="image" src="assets/3eb4e976-cf1f-44ba-8a85-863a27b7a584" />
 
   - 2.0 s N₂ purge
   - 540 ms h2o_sv_settle_ms
 
 - Trial 4: E-stop; IN2 & IN3
 
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/dd934902-3631-42a4-92b1-5e5cf4564800" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/64f9724d-f5ce-4f6e-83e8-2ee0066b9e7a" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/a0afec51-fb50-491f-ae4b-faa5d940ceec" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/291eff8f-7c5d-43b2-9923-bf3213c03d05" />
+<img width="300" height="500" alt="image" src="assets/dd934902-3631-42a4-92b1-5e5cf4564800" />
+<img width="300" height="500" alt="image" src="assets/64f9724d-f5ce-4f6e-83e8-2ee0066b9e7a" />
+<img width="300" height="500" alt="image" src="assets/a0afec51-fb50-491f-ae4b-faa5d940ceec" />
+<img width="300" height="500" alt="image" src="assets/291eff8f-7c5d-43b2-9923-bf3213c03d05" />
 
   - instead of 2.00s the time reported after pressing 'e' is 1.38s
 
 - Trial 3: IN2 & IN5
 
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/67b70ea6-0e26-456a-91f8-e72ac94fb5ff" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/b78ea529-ce20-417f-8cc4-97067f5de724" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/8aebd37a-10eb-491d-86f5-ec8620d1338f" />
-<img width="300" height="293" alt="image" src="https://github.com/user-attachments/assets/5e370568-ccd8-41a7-97b5-6c440edfd895" />
+<img width="300" height="500" alt="image" src="assets/67b70ea6-0e26-456a-91f8-e72ac94fb5ff" />
+<img width="300" height="500" alt="image" src="assets/b78ea529-ce20-417f-8cc4-97067f5de724" />
+<img width="300" height="500" alt="image" src="assets/8aebd37a-10eb-491d-86f5-ec8620d1338f" />
+<img width="300" height="293" alt="image" src="assets/5e370568-ccd8-41a7-97b5-6c440edfd895" />
 
   - H₂O SV ON duration
     - Expected ON time: 4129 − 3604 = 525 ms; measured ≈ 528 ms.
@@ -1469,9 +1469,9 @@ valve_times_t vt = { .ms1 = 10,
 
 - Trial 3: IN3 & IN4
 
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/93f3f889-52fa-472b-8142-f3c88b65c0a3" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/d32c3820-0bd7-43e8-afe5-5724999e52e5" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/0a905f18-5b4a-4321-bd2e-854e9cb72bcc" />
+<img width="300" height="500" alt="image" src="assets/93f3f889-52fa-472b-8142-f3c88b65c0a3" />
+<img width="300" height="500" alt="image" src="assets/d32c3820-0bd7-43e8-afe5-5724999e52e5" />
+<img width="300" height="500" alt="image" src="assets/0a905f18-5b4a-4321-bd2e-854e9cb72bcc" />
 
   - N₂ purge ON time (IN3)
     - 2.01 s, code says 2.00 s → that’s perfect agreement for the purge duration.
@@ -1480,9 +1480,9 @@ valve_times_t vt = { .ms1 = 10,
 
 - Trial 2: IN1 & IN4
   
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/ff07f3f6-a4bc-4502-a80b-3b6ea157d1f5" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/9ba623be-31b3-43ed-b853-8ffbd8d4db28" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/330bb7eb-63fa-4c4f-8221-bd6f4d4a8c00" />
+<img width="300" height="500" alt="image" src="assets/ff07f3f6-a4bc-4502-a80b-3b6ea157d1f5" />
+<img width="300" height="500" alt="image" src="assets/9ba623be-31b3-43ed-b853-8ffbd8d4db28" />
+<img width="300" height="500" alt="image" src="assets/330bb7eb-63fa-4c4f-8221-bd6f4d4a8c00" />
 
   - TMA half-cycle, with probes on IN1 (TMA SV) and IN4 (TMA ALD):
     - TMA SV ON duration:
@@ -1497,9 +1497,9 @@ valve_times_t vt = { .ms1 = 10,
 
 - Trial 1: Test 
   
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/b98cef63-129e-481d-b8c3-8c4899a864bc" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/3d45604b-4ad6-4f30-af70-0eea757e32a7" />
-<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/6ad787b4-b344-4013-b31b-fbb165b84bdf" />
+<img width="300" height="500" alt="image" src="assets/b98cef63-129e-481d-b8c3-8c4899a864bc" />
+<img width="300" height="500" alt="image" src="assets/3d45604b-4ad6-4f30-af70-0eea757e32a7" />
+<img width="300" height="500" alt="image" src="assets/6ad787b4-b344-4013-b31b-fbb165b84bdf" />
 
     - TMA SV working exactly as commanded (expected ON-time is 554 − 4 ≈ 550 ms).
 
@@ -2255,7 +2255,7 @@ Connect the IGC100 to PC
     - *IDN? "blind-type" the command *IDN? and press Enter.
       - to disconnect from screen, type Control-A and then type Control-D.
 
-<img width="584" height="436" alt="image" src="https://github.com/user-attachments/assets/900ab08c-bf5d-4ade-9afc-2cc8438930a8" />
+<img width="584" height="436" alt="image" src="assets/900ab08c-bf5d-4ade-9afc-2cc8438930a8" />
 
 
     - Stanford_Research_Systems,IGC100,s/n115500,ver100 is the response from the gauge. Connection is working.
@@ -2271,7 +2271,7 @@ Connect the IGC100 to PC
 
     - finished, type Control-A and then Control-D to detach from the screen session.
 
-<img width="589" height="451" alt="image" src="https://github.com/user-attachments/assets/c0901f84-3db6-4acb-af32-dc86f57cd718" />
+<img width="589" height="451" alt="image" src="assets/c0901f84-3db6-4acb-af32-dc86f57cd718" />
 issues... reading pressure is not working
 
 
@@ -2282,16 +2282,16 @@ issues... reading pressure is not working
 ---
 ## Task for 20251031
 
-<img width="747" height="760" alt="image" src="https://github.com/user-attachments/assets/ac1e24b0-5e2b-4728-bec8-0d474223bdb3" />
+<img width="747" height="760" alt="image" src="assets/ac1e24b0-5e2b-4728-bec8-0d474223bdb3" />
 
 ### New diagram for probing TMA safety vs. TMA pulse test 1
 - a dedicated GND wire has now been added from the Arduino to the relay board
 
-<img width="1077" height="751" alt="image" src="https://github.com/user-attachments/assets/90238545-2332-445e-aa4f-3cebd38c7f69" />
+<img width="1077" height="751" alt="image" src="assets/90238545-2332-445e-aa4f-3cebd38c7f69" />
 
 Issues with the new code. Previous probing setup to test commands and relay actuation:
 
-<img width="794" height="590" alt="image" src="https://github.com/user-attachments/assets/2fa255e6-0d64-4e5e-ac13-5e71337add87" />
+<img width="794" height="590" alt="image" src="assets/2fa255e6-0d64-4e5e-ac13-5e71337add87" />
 
 
 ---
@@ -2423,33 +2423,33 @@ void loop() {
 
 ### SV data collection
 
-<img width="730" height="277" alt="avg sv runs" src="https://github.com/user-attachments/assets/05516fb4-84e4-4ced-b408-f5677a4a1a98" />
+<img width="730" height="277" alt="avg sv runs" src="assets/05516fb4-84e4-4ced-b408-f5677a4a1a98" />
 
-<img width="730" height="536" alt="SV run 1" src="https://github.com/user-attachments/assets/9101c5fc-bb2f-4262-867a-7953becb5bff" />
+<img width="730" height="536" alt="SV run 1" src="assets/9101c5fc-bb2f-4262-867a-7953becb5bff" />
 
-<img width="730" height="250" alt="sv run 2" src="https://github.com/user-attachments/assets/d959428a-b179-4dac-93fe-1657fe7b4a78" />
+<img width="730" height="250" alt="sv run 2" src="assets/d959428a-b179-4dac-93fe-1657fe7b4a78" />
 
-<img width="730" height="275" alt="sv run 3" src="https://github.com/user-attachments/assets/e33ac04f-6ca5-41f0-9957-083b4e4c3309" />
+<img width="730" height="275" alt="sv run 3" src="assets/e33ac04f-6ca5-41f0-9957-083b4e4c3309" />
 
 ---
 ## Task for 20251028
 ### spike time 400us
-<img width="500" height="671" alt="spike total time 400us" src="https://github.com/user-attachments/assets/555e7f21-6c83-4ec7-a4fa-3608612bbd95" />
+<img width="500" height="671" alt="spike total time 400us" src="assets/555e7f21-6c83-4ec7-a4fa-3608612bbd95" />
 
 ### new SV ywf 10.1ms or 99.2Hz
-<img width="500" height="781" alt="new SV ywf 10 1ms or 99 2Hz" src="https://github.com/user-attachments/assets/02ce9431-2394-453d-a326-18ecbcc2e681" />
+<img width="500" height="781" alt="new SV ywf 10 1ms or 99 2Hz" src="assets/02ce9431-2394-453d-a326-18ecbcc2e681" />
 
 ### new SV delay 4.40ms or 227Hz
-<img width="500" height="747" alt="new SV delay 4 40ms or 227Hz" src="https://github.com/user-attachments/assets/d98df009-0a1b-4a38-861f-31425bc5f9ed" />
+<img width="500" height="747" alt="new SV delay 4 40ms or 227Hz" src="assets/d98df009-0a1b-4a38-861f-31425bc5f9ed" />
 
 ### new SV bwf 10.9ms or 91.9Hz
-<img width="500" height="726" alt="new SV bwf 10 9ms or 91 9Hz" src="https://github.com/user-attachments/assets/fe1ddee7-e005-4a61-95f2-10074276c350" />
+<img width="500" height="726" alt="new SV bwf 10 9ms or 91 9Hz" src="assets/fe1ddee7-e005-4a61-95f2-10074276c350" />
 
 ### new SV bwf spikes 112us or 8.93kHz
-<img width="500" height="723" alt="new SV bwf spikes 112us or 8 93kHz" src="https://github.com/user-attachments/assets/ab76104f-795b-4d52-8cb2-ca57eebc997a" />
+<img width="500" height="723" alt="new SV bwf spikes 112us or 8 93kHz" src="assets/ab76104f-795b-4d52-8cb2-ca57eebc997a" />
 
 ### ### new SV bwf spikes 120us or 8.33kHz
-<img width="500" height="643" alt="### new SV bwf spikes 120us or 8 33kHz" src="https://github.com/user-attachments/assets/71b299ce-40fe-4d0f-9532-1bca0f3af649" />
+<img width="500" height="643" alt="### new SV bwf spikes 120us or 8 33kHz" src="assets/71b299ce-40fe-4d0f-9532-1bca0f3af649" />
 
 
 ### More on relay and commands
@@ -2467,51 +2467,51 @@ void loop() {
 Relay is built to be Active-LOW (optocoupler to protect Arduino --> requires activating an LED - Active low). It will only turn ON when it receives a LOW signal.
 
 ### New script ywf 10.0ms or 100Hz
-<img width="500" height="690" alt="new script" src="https://github.com/user-attachments/assets/e8e4aae0-2546-4187-8ca2-12ae68b0ea13" />
+<img width="500" height="690" alt="new script" src="assets/e8e4aae0-2546-4187-8ca2-12ae68b0ea13" />
 
 ### delay of ywf to bwf 4.32ms or 231Hz
-<img width="500" height="665" alt="ns delay of ywf to bwf" src="https://github.com/user-attachments/assets/b1c0ed18-9dca-4f0a-be57-6a1851167891" />
+<img width="500" height="665" alt="ns delay of ywf to bwf" src="assets/b1c0ed18-9dca-4f0a-be57-6a1851167891" />
 
 ### New script bwf 10.0ms or 100Hz
-<img width="500" height="676" alt="bwf 10 9ms or 91 9Hz" src="https://github.com/user-attachments/assets/3d754e37-66c8-454a-bb9d-e3e18ee07cd7" />
+<img width="500" height="676" alt="bwf 10 9ms or 91 9Hz" src="assets/3d754e37-66c8-454a-bb9d-e3e18ee07cd7" />
 
 ### Zoom in of bwf 120us or 8.33kHz
-<img width="500" height="698" alt="120us ns" src="https://github.com/user-attachments/assets/e393194d-c8b5-47df-8fa1-4817b8651865" />
+<img width="500" height="698" alt="120us ns" src="assets/e393194d-c8b5-47df-8fa1-4817b8651865" />
 
 ### Zoom in of bwf 120us or 8.33kHz (#2)
-<img width="500" height="720" alt="120us ns bwf 2" src="https://github.com/user-attachments/assets/da56cbba-7d27-4350-9db8-e8a88ea3866c" />
+<img width="500" height="720" alt="120us ns bwf 2" src="assets/da56cbba-7d27-4350-9db8-e8a88ea3866c" />
 
 Blue wave form measurments attempt 2: same setup as before. The black end of the diode (white strip on physical packaging) is labeled as anode and is connected to the GND wire (-). The silver or white strip of the diode (red strip on physical packaging) is connected to the NO wire (+).
 
 The wave form has noticeable changes, but the odd thing is that the solenoid valve stops actuating. You can hear it when you first turn on the power supply but then it goes away and you can also feel it is getting warm (the body of the SV).
 
 ### Inductive kickback: 120us
-<img width="500" height="766" alt="blue wave form measurments attempt 2" src="https://github.com/user-attachments/assets/07dd85af-773b-415d-909e-9a5594fdb220" />
+<img width="500" height="766" alt="blue wave form measurments attempt 2" src="assets/07dd85af-773b-415d-909e-9a5594fdb220" />
 
 ### bwf 9.00ms
-<img width="500" height="637" alt="bwf 9ms" src="https://github.com/user-attachments/assets/ad997db8-ec8e-4663-841b-063526120d4f" />
+<img width="500" height="637" alt="bwf 9ms" src="assets/ad997db8-ec8e-4663-841b-063526120d4f" />
 
 ### ywf 10.0ms
-<img width="500" height="770" alt="Screenshot 2025-10-27 at 10 13 40 AM" src="https://github.com/user-attachments/assets/dfe44723-d622-4076-851b-b007c9452890" />
+<img width="500" height="770" alt="Screenshot 2025-10-27 at 10 13 40 AM" src="assets/dfe44723-d622-4076-851b-b007c9452890" />
 
 ### delay ywf to bwf 5 04ms
-<img width="500" height="674" alt="delay in ywf to bwf 5 04ms" src="https://github.com/user-attachments/assets/cc0b405d-3812-43b5-b069-e0492fcd5606" />
+<img width="500" height="674" alt="delay in ywf to bwf 5 04ms" src="assets/cc0b405d-3812-43b5-b069-e0492fcd5606" />
 
 
 ### No flyback diode (attempt 1)
-<img width="500" height="546" alt="no flyback" src="https://github.com/user-attachments/assets/81f98eca-eaff-4b4c-94fb-e5350c6a4d7b" />
+<img width="500" height="546" alt="no flyback" src="assets/81f98eca-eaff-4b4c-94fb-e5350c6a4d7b" />
 
 ### Flyback diode installed yellow wave form measeurment at 10.1ms
-<img width="500" height="566" alt="Fdiode installed" src="https://github.com/user-attachments/assets/98efef5d-a1ce-45ea-b5f1-f7034848aa08" />
+<img width="500" height="566" alt="Fdiode installed" src="assets/98efef5d-a1ce-45ea-b5f1-f7034848aa08" />
 
 ### Flyback diode installed blue wave form measeurment at 9.12ms
-<img width="500" height="580" alt="Fdiode installed blue wf" src="https://github.com/user-attachments/assets/3fb2032f-6156-4d31-9305-ecfb405f772d" />
+<img width="500" height="580" alt="Fdiode installed blue wf" src="assets/3fb2032f-6156-4d31-9305-ecfb405f772d" />
 
 ### Flyback diode installed blue wave form measeurment zoomed in: 120us delta X
-<img width="500" height="567" alt="zoom in bwf delta x" src="https://github.com/user-attachments/assets/1a053e81-da85-4bc5-90ef-90d74ce7470d" />
+<img width="500" height="567" alt="zoom in bwf delta x" src="assets/1a053e81-da85-4bc5-90ef-90d74ce7470d" />
 
 ### Flyback diode installed blue wave form measeurment zoomed in: 112us delta X
-<img width="867" height="650" alt="bwf delta x 2" src="https://github.com/user-attachments/assets/b8d2d580-1cf3-4f06-9dd1-13eaf5428aa4" />
+<img width="867" height="650" alt="bwf delta x 2" src="assets/b8d2d580-1cf3-4f06-9dd1-13eaf5428aa4" />
 
 
 ---
@@ -2631,9 +2631,9 @@ void loop() {
 - Second Event (Kickback) - Occurs after the dose is complete. Degrades relay contacts and causes unpredictable timing shifts over time.
 
 ---
-<img width="500" height="699" alt="Screenshot 2025-10-16 at 4 39 06 PM" src="https://github.com/user-attachments/assets/5d622718-d907-470a-ae38-b4c346e84eb9" />
+<img width="500" height="699" alt="Screenshot 2025-10-16 at 4 39 06 PM" src="assets/5d622718-d907-470a-ae38-b4c346e84eb9" />
 
-<img width="500" height="726" alt="Screenshot 2025-10-16 at 4 35 18 PM" src="https://github.com/user-attachments/assets/928af4ae-b534-4a90-88a3-5fb8e7a22475" />
+<img width="500" height="726" alt="Screenshot 2025-10-16 at 4 35 18 PM" src="assets/928af4ae-b534-4a90-88a3-5fb8e7a22475" />
 
 ---
 
@@ -2666,21 +2666,21 @@ void loop() {
 
 #### The rise time is 5.84ms or 171Hz.
 
-<img width="500" height="644" alt="Screenshot 2025-10-15 at 8 53 09 PM" src="https://github.com/user-attachments/assets/c287c4e6-f5e9-42ef-9773-303bd36ee6f1" />
+<img width="500" height="644" alt="Screenshot 2025-10-15 at 8 53 09 PM" src="assets/c287c4e6-f5e9-42ef-9773-303bd36ee6f1" />
 
 #### From logic edge to acutation edge the difference is 4.48ms or 223Hz.
 
-<img width="500" height="709" alt="Screenshot 2025-10-15 at 8 53 17 PM" src="https://github.com/user-attachments/assets/9379d091-7296-4b2c-baa3-5754b8a2f97d" />
+<img width="500" height="709" alt="Screenshot 2025-10-15 at 8 53 17 PM" src="assets/9379d091-7296-4b2c-baa3-5754b8a2f97d" />
 
 #### 50ms
 
 #### The rise time is 6.80ms or 147Hz.
 
-<img width="500" height="606" alt="Screenshot 2025-10-15 at 8 58 28 PM" src="https://github.com/user-attachments/assets/ac8f426f-c1a7-4226-a095-44d4e472c30d" />
+<img width="500" height="606" alt="Screenshot 2025-10-15 at 8 58 28 PM" src="assets/ac8f426f-c1a7-4226-a095-44d4e472c30d" />
 
 #### From logic edge to acutation edge the difference is 4.40ms or 227Hz.
 
-<img width="500" height="695" alt="Screenshot 2025-10-15 at 8 58 24 PM" src="https://github.com/user-attachments/assets/22bdd8bd-aa2a-4bae-bfe7-242d7d9d2384" />
+<img width="500" height="695" alt="Screenshot 2025-10-15 at 8 58 24 PM" src="assets/22bdd8bd-aa2a-4bae-bfe7-242d7d9d2384" />
 
 ```
 #include <Arduino.h>
@@ -2718,22 +2718,22 @@ void loop() {
 #### 10ms
 #### The  rise time is 6.08ms or 164Hz.
 
-<img width="500" height="658" alt="Screenshot 2025-10-15 at 8 42 33 PM" src="https://github.com/user-attachments/assets/2cb9b3a7-02dd-48cd-820c-0cc16943bcc2" />
+<img width="500" height="658" alt="Screenshot 2025-10-15 at 8 42 33 PM" src="assets/2cb9b3a7-02dd-48cd-820c-0cc16943bcc2" />
 
 #### From logic edge to acutation edge the difference is 4.56ms or 219Hz.
 
-<img width="500" height="657" alt="Screenshot 2025-10-15 at 8 42 27 PM" src="https://github.com/user-attachments/assets/a4a0e5fb-fb66-45bc-9421-f8ef651e085d" />
+<img width="500" height="657" alt="Screenshot 2025-10-15 at 8 42 27 PM" src="assets/a4a0e5fb-fb66-45bc-9421-f8ef651e085d" />
 
 
 #### 50ms
 
 #### The rise time is 6.80ms or 147Hz.
 
-<img width="500" height="696" alt="Screenshot 2025-10-15 at 8 37 54 PM" src="https://github.com/user-attachments/assets/776b6dc0-abce-4d2b-a3e7-17a9cf6dd20e" />
+<img width="500" height="696" alt="Screenshot 2025-10-15 at 8 37 54 PM" src="assets/776b6dc0-abce-4d2b-a3e7-17a9cf6dd20e" />
 
 #### From logic edge to acutation edge the difference is 4.40ms or 227Hz.
 
-<img width="500" height="708" alt="Screenshot 2025-10-15 at 8 38 00 PM" src="https://github.com/user-attachments/assets/9f5fa488-974a-4371-94ad-c0ac8dd9b7a9" />
+<img width="500" height="708" alt="Screenshot 2025-10-15 at 8 38 00 PM" src="assets/9f5fa488-974a-4371-94ad-c0ac8dd9b7a9" />
 
 ```
 #include <Arduino.h>
@@ -2771,20 +2771,20 @@ void loop() {
 #### 10ms
 #### The rise time is 5.76ms or 174Hz.
 
-<img width="500" height="637" alt="actual delay" src="https://github.com/user-attachments/assets/3fbee96d-fe86-4273-bdd2-91a06b6a6857" />
+<img width="500" height="637" alt="actual delay" src="assets/3fbee96d-fe86-4273-bdd2-91a06b6a6857" />
 
 #### From logic edge to acutation edge the difference is 4.88ms or 205Hz.
 
-<img width="500" height="704" alt="Screenshot 2025-10-15 at 8 07 31 PM" src="https://github.com/user-attachments/assets/c0efd7c5-9a88-41fc-b3d2-602fae336bc1" />
+<img width="500" height="704" alt="Screenshot 2025-10-15 at 8 07 31 PM" src="assets/c0efd7c5-9a88-41fc-b3d2-602fae336bc1" />
 
 #### 50ms
 #### The rise time is 6.40ms or 156Hz.
 
-<img width="500" height="702" alt="Screenshot 2025-10-15 at 8 13 18 PM" src="https://github.com/user-attachments/assets/1e57edb2-64c6-45f7-ba3a-ca544634e655" />
+<img width="500" height="702" alt="Screenshot 2025-10-15 at 8 13 18 PM" src="assets/1e57edb2-64c6-45f7-ba3a-ca544634e655" />
 
 #### From logic edge to acutation edge the difference is 4.80ms or 208Hz.
 
-<img width="500" height="575" alt="Screenshot 2025-10-15 at 8 13 13 PM" src="https://github.com/user-attachments/assets/32b5b67c-ed79-434c-b02a-26816ef6debc" />
+<img width="500" height="575" alt="Screenshot 2025-10-15 at 8 13 13 PM" src="assets/32b5b67c-ed79-434c-b02a-26816ef6debc" />
 
 ```
 #include <Arduino.h>
@@ -2823,36 +2823,36 @@ The slow rise time once the actuation has been triggered is what we need to take
 #### 10ms
 #### The rise time is 5.60ms or 179Hz.
 
-<img width="500" height="706" alt="10ms TMA actual" src="https://github.com/user-attachments/assets/e4f49fd1-13f1-4795-8182-97fb908e223c" />
+<img width="500" height="706" alt="10ms TMA actual" src="assets/e4f49fd1-13f1-4795-8182-97fb908e223c" />
 
 #### From logic edge to acutation edge the difference is 4.40ms or 227Hz.
 
-<img width="500" height="646" alt="Screenshot 2025-10-15 at 7 43 05 PM" src="https://github.com/user-attachments/assets/0ee1d2db-1128-4b44-950a-146d73623c3b" />
+<img width="500" height="646" alt="Screenshot 2025-10-15 at 7 43 05 PM" src="assets/0ee1d2db-1128-4b44-950a-146d73623c3b" />
 
 #### 50ms
 #### The slow rise time is 6.40ms or 156Hz.
 
-<img width="500" height="703" alt="50ms TMA repeat actual delay " src="https://github.com/user-attachments/assets/b029d97d-1f57-4157-ab84-b8ba7416b6f4" />
+<img width="500" height="703" alt="50ms TMA repeat actual delay " src="assets/b029d97d-1f57-4157-ab84-b8ba7416b6f4" />
 
 #### From logic edge to acutation edge the difference is 4.80ms or 208Hz.
 
-<img width="500" height="620" alt="50ms repeat TMA delay" src="https://github.com/user-attachments/assets/e9ad4c85-7cdd-4b4a-b189-f0d1e8c6cf87" />
+<img width="500" height="620" alt="50ms repeat TMA delay" src="assets/e9ad4c85-7cdd-4b4a-b189-f0d1e8c6cf87" />
 
 
 ### H2O ALD scope
 #### 10ms
 #### delay between logic command and relay actuation is 5.12ms or 195Hz
-<img width="500" height="866" alt="H2O ALD scope 10ms" src="https://github.com/user-attachments/assets/09bfdd22-fcf3-4eb1-a45f-2ee20ffeeda2" />
+<img width="500" height="866" alt="H2O ALD scope 10ms" src="assets/09bfdd22-fcf3-4eb1-a45f-2ee20ffeeda2" />
 
 
 #### 25ms
 #### delay between logic command and relay actuation is 5.00ms or 200Hz
-<img width="500" height="968" alt="H2O ALD scope 25ms" src="https://github.com/user-attachments/assets/1739c16a-3c1a-4125-8ad4-75d71ed4a597" />
+<img width="500" height="968" alt="H2O ALD scope 25ms" src="assets/1739c16a-3c1a-4125-8ad4-75d71ed4a597" />
 
 
 #### 50ms
 #### delay between logic command and relay actuation is 4.80ms or 208Hz
-<img width="500" height="796" alt="H2O delay test 50ms " src="https://github.com/user-attachments/assets/e7b599de-d7ba-4718-80f8-6bb829b3cb3c" />
+<img width="500" height="796" alt="H2O delay test 50ms " src="assets/e7b599de-d7ba-4718-80f8-6bb829b3cb3c" />
 
 
 
@@ -2909,16 +2909,16 @@ The first dip we see is the electrical signature of the solenoid's mechanical ac
 
 Second dip must be discharging (verify how much time it took for the ramp up and discharge)
 
-<img width="500" height="724" alt="Screenshot 2025-10-15 at 1 02 05 PM" src="https://github.com/user-attachments/assets/2ad8c063-15e2-431c-9cea-c39481438e1d" />
+<img width="500" height="724" alt="Screenshot 2025-10-15 at 1 02 05 PM" src="assets/2ad8c063-15e2-431c-9cea-c39481438e1d" />
 
 
 Delay between logic and actuation is 4.40ms with a frequency of 227Hz
-<img width="500" height="452" alt="4 40ms delay 24V load" src="https://github.com/user-attachments/assets/cfa57967-2ea4-4040-9857-78e2c8b3168f" />
+<img width="500" height="452" alt="4 40ms delay 24V load" src="assets/cfa57967-2ea4-4040-9857-78e2c8b3168f" />
 
 Correct wiring schematic for complete Arduino isolation. The configuration removes the minor load from the Arduino's onboard voltage regulator entirely. This places the entire operational load of the relay module onto the external power supply, ensuring the Arduino's power rail is stable.
 - External PSU +5V → Relay Module VCC pin → Internal Resistor & Optocoupler LED → Relay Module INx pin → Arduino Digital Pin → Arduino Internal Ground
 
-<img width="500" height="884" alt="Screenshot 2025-10-15 at 2 12 56 PM" src="https://github.com/user-attachments/assets/9ab113a4-cbb9-432e-bf53-5c55a64c9727" />
+<img width="500" height="884" alt="Screenshot 2025-10-15 at 2 12 56 PM" src="assets/9ab113a4-cbb9-432e-bf53-5c55a64c9727" />
 
 Yesterday, after connecting a 24 V solenoid skinner valve I was able to observe a different behavior. The oscillations are gone but still some unstable behavior in the blue wave form (probe 2) presists at the inital triggering of the valve.
 ![image](https://github.com/user-attachments/assets/9bd05114-ced8-43ce-bbd6-0edf10a31638)
@@ -2939,50 +2939,50 @@ The fundamental reason for this dual-power architecture is the electrical incomp
 ## Task for 20251014
 Fixing ground connections
 
-<img width="500" height="637" alt="gnd to 5VPS" src="https://github.com/user-attachments/assets/fdd74577-b7b6-4e07-b228-c01e758b5161" />
+<img width="500" height="637" alt="gnd to 5VPS" src="assets/fdd74577-b7b6-4e07-b228-c01e758b5161" />
 
 ## Task for 20251013
 ### Measure settling time (bounce duration) - 5ms
 For any short pulse duration, the relay's physical limitations (its latency and bounce) prevent it from ever providing a clean, stable output.
 
-<img width="500" height="600" alt="settling time 5ms" src="https://github.com/user-attachments/assets/415ec8bc-9724-4bdd-8bd3-9ef51d363886" />
+<img width="500" height="600" alt="settling time 5ms" src="assets/415ec8bc-9724-4bdd-8bd3-9ef51d363886" />
 - Consistent bounce frequency
 
 ### Measure settling time (bounce duration) - 25ms
-<img width="500" height="626" alt="settling time 25ms" src="https://github.com/user-attachments/assets/3b4542c6-b173-4b16-9a2d-e1ccdbea22a1" />
+<img width="500" height="626" alt="settling time 25ms" src="assets/3b4542c6-b173-4b16-9a2d-e1ccdbea22a1" />
 - Same behavior regarding the 2.0ms consistent bounce frequency
 
 ### Measure settling time (bounce duration) - 10ms
-<img width="500" height="638" alt="settling time 10ms" src="https://github.com/user-attachments/assets/ce9a9bf8-1454-4d1a-bf69-0cca05f38748" />
+<img width="500" height="638" alt="settling time 10ms" src="assets/ce9a9bf8-1454-4d1a-bf69-0cca05f38748" />
 At 10ms the wave form is also the same for 50ms (500Hz) - 2.0ms
 - The relay never reaches a stable, closed state during the entire 10 ms pulse.
 
 ### Measure settling time (bounce duration) - 50ms
-<img width="500" height="795" alt="Settling bounce measurement" src="https://github.com/user-attachments/assets/abb80acc-fabc-4f81-ad37-ec3a0fa0680f" />
+<img width="500" height="795" alt="Settling bounce measurement" src="assets/abb80acc-fabc-4f81-ad37-ec3a0fa0680f" />
 Time elapsed between the start of the bounce and the end of the bounce is 49.4 ms?!
 - 2.0ms wave form -> 500Hz frequency
 
 ## Task for 20251012
 ### Latency loaded isolated TMA code test - auto/+width measurment
 Probing NO (The Action) - How long after the command is given does the valve actually get power?
-<img width="500" height="620" alt="Probing NO (The Action)" src="https://github.com/user-attachments/assets/a40385bc-3c30-42b2-947f-72dc2bae5bbe" />
+<img width="500" height="620" alt="Probing NO (The Action)" src="assets/a40385bc-3c30-42b2-947f-72dc2bae5bbe" />
 Cursor measurement difference (4.60ms):
-<img width="500" height="610" alt="Latency Probing NO " src="https://github.com/user-attachments/assets/62c7e680-1bbc-4ade-a527-2ee81679fb3c" />
+<img width="500" height="610" alt="Latency Probing NO " src="assets/62c7e680-1bbc-4ade-a527-2ee81679fb3c" />
 Measured the time delay between the Arduino sending the command (the rising edge of the yellow CH1 signal) and the relay's contact first making a physical connection (the start of the blue CH2 signal). This 4.60ms delay is the relay's actuation time or latency.
 
 ### Loaded isolated TMA code test - auto/+width measurment
 Probing IN4 (The Command) - Is the command from the Arduino getting to the relay with the correct timing?
-<img width="500" height="638" alt="Probing IN4 Command" src="https://github.com/user-attachments/assets/27afa9e2-43ac-42bb-9413-ec40c66bef70" />
+<img width="500" height="638" alt="Probing IN4 Command" src="assets/27afa9e2-43ac-42bb-9413-ec40c66bef70" />
 
 ## Task for 20251011
 ### Isolated TMA code test - auto/+width measurment
 - The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
-<img width="500" height="420" alt="Auto TMA Isolated +W" src="https://github.com/user-attachments/assets/aa83d7ee-bac4-4f87-af0e-f9ede09d6d50" />
+<img width="500" height="420" alt="Auto TMA Isolated +W" src="assets/aa83d7ee-bac4-4f87-af0e-f9ede09d6d50" />
 
 ## Task for 20251010
 ### Isolated TMA code test - manual measurment
 - The scope cursor measurement |ΔX|: 50.0ms exactly matches the delay(50) command
-<img width="500" height="623" alt="Isolated TMA code" src="https://github.com/user-attachments/assets/4be209df-13ee-40ae-bdd4-f24090c16f8c" />
+<img width="500" height="623" alt="Isolated TMA code" src="assets/4be209df-13ee-40ae-bdd4-f24090c16f8c" />
 
 ### Simplified code for TMA to isolate this signal
 
@@ -3021,17 +3021,17 @@ void loop() {
 ### Faster test code TMA
 ### Auto 200us TMA
 
-<img width="500" height="623" alt="Auto 200us TMA 2" src="https://github.com/user-attachments/assets/d390e440-5309-4edc-be2a-58cfaa60e6b8" />
+<img width="500" height="623" alt="Auto 200us TMA 2" src="assets/d390e440-5309-4edc-be2a-58cfaa60e6b8" />
 
-<img width="500" height="576" alt="Auto 200us TMA 1" src="https://github.com/user-attachments/assets/fe272c7d-ffb6-488b-82c8-d4fc93239b4c" />
+<img width="500" height="576" alt="Auto 200us TMA 1" src="assets/fe272c7d-ffb6-488b-82c8-d4fc93239b4c" />
 
 ### 200us TMA manual
-<img width="500" height="498" alt="200us_TMA_manual " src="https://github.com/user-attachments/assets/d0a99284-baa7-4a12-86de-938099d857a7" />
+<img width="500" height="498" alt="200us_TMA_manual " src="assets/d0a99284-baa7-4a12-86de-938099d857a7" />
 
 ### 10ms TMA manual
 - Manual time cursor selection gives a delta time value of 0.8ms!
   - revist code, but first try automatic measurement to verify
-<img width="500" height="676" alt="test_faster code_TMA" src="https://github.com/user-attachments/assets/36ba2bae-9afd-4198-9a50-f5ae958ed43f" />
+<img width="500" height="676" alt="test_faster code_TMA" src="assets/36ba2bae-9afd-4198-9a50-f5ae958ed43f" />
 
 ### Original code
 
@@ -3298,19 +3298,19 @@ void loop() {
 ## Task for 20251009
 ### 10X calibration
 
-<img width="546" height="311" alt="calibration_10X" src="https://github.com/user-attachments/assets/5a110715-99ee-435e-85ce-cc3a35e41a20" />
+<img width="546" height="311" alt="calibration_10X" src="assets/5a110715-99ee-435e-85ce-cc3a35e41a20" />
 
 ### Initial reading
 
-<img width="500" height="584" alt="Initial reading" src="https://github.com/user-attachments/assets/0f8161e8-54a5-431c-a445-d9c8834b9ac5" />
+<img width="500" height="584" alt="Initial reading" src="assets/0f8161e8-54a5-431c-a445-d9c8834b9ac5" />
 
 ### Trigger setting: edge --> falling --> normal
 
-<img width="500" height="619" alt="Trigger_edge_falling_normal" src="https://github.com/user-attachments/assets/c5b9fef2-af0d-435e-aae0-0dade15c2b19" />
+<img width="500" height="619" alt="Trigger_edge_falling_normal" src="assets/c5b9fef2-af0d-435e-aae0-0dade15c2b19" />
 
 ### Manual --> cursor --> incomplete
 
-<img width="500" height="421" alt="Manual_cursor_incomplete" src="https://github.com/user-attachments/assets/a9c03e1c-fb71-42d0-b0df-5bb2fa4383bd" />
+<img width="500" height="421" alt="Manual_cursor_incomplete" src="assets/a9c03e1c-fb71-42d0-b0df-5bb2fa4383bd" />
 
 ---
 # Alicat BB9-232
@@ -3319,12 +3319,12 @@ void loop() {
 Open Terminal and run:
  * system_profiler SPUSBDataType | grep -i ftdi
 
-<img width="455" height="46" alt="image" src="https://github.com/user-attachments/assets/769f0226-e566-41ce-a9ec-d1b902dfbd7f" />
+<img width="455" height="46" alt="image" src="assets/769f0226-e566-41ce-a9ec-d1b902dfbd7f" />
 
 ## Step 2: Check Serial Port Creation
   * ls /dev/cu.usb*
 
-<img width="251" height="42" alt="image" src="https://github.com/user-attachments/assets/bfe6a7eb-2b41-4168-9eed-de9b99cd0008" />
+<img width="251" height="42" alt="image" src="assets/bfe6a7eb-2b41-4168-9eed-de9b99cd0008" />
 
 ## Step 3: Test Communication Path
   * screen /dev/cu.usbserial-A908AU7G 19200
@@ -3332,19 +3332,19 @@ Open Terminal and run:
 ## Analysis of Test
 The device seems to be communicating witout errors. Step 3 resulted in a blank screen due to a lack of MFCs and having no devices to connect to. Overall, communication pathway is working and connected.
 
-<img width="581" height="888" alt="image" src="https://github.com/user-attachments/assets/9766714a-f8b8-4b06-93aa-2384a4acba05" />
+<img width="581" height="888" alt="image" src="assets/9766714a-f8b8-4b06-93aa-2384a4acba05" />
 
 ---
 # Pressure guage test
 
 ## Starting Up
-<img width="500" height="473" alt="image" src="https://github.com/user-attachments/assets/99afde89-09c6-4d22-a89b-b737169c8de9" />
+<img width="500" height="473" alt="image" src="assets/99afde89-09c6-4d22-a89b-b737169c8de9" />
 
 ## Switching to PG2 - Pump off
-<img width="500" height="409" alt="image" src="https://github.com/user-attachments/assets/b943e280-82fb-454d-bcfa-289c03e74a99" />
+<img width="500" height="409" alt="image" src="assets/b943e280-82fb-454d-bcfa-289c03e74a99" />
 
 ## PG2 - Pump on
-<img width="500" height="512" alt="image" src="https://github.com/user-attachments/assets/6be80b1c-936b-46b7-8610-d195d652822f" />
+<img width="500" height="512" alt="image" src="assets/6be80b1c-936b-46b7-8610-d195d652822f" />
 
 ## Rise Time Test
 It took roughly a minute and thirty seconds to get back to atmospheric pressure indicating that the system has leaks but it is working.

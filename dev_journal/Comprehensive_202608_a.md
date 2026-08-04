@@ -2,11 +2,11 @@
 
 ## An In-House ALD Platform for Al2O3 and the Demonstration of Skipper CCD-Like Charge Sensing in LAr: A Quest for New and Viable Sensing Mechanisms
 
-Student: Gumaro Garcia Gonzalez
-Advisor: Dr. Yuan Mei
-Program: Materials Science and Engineering, University of Texas at Arlington
+- Student: Gumaro Garcia Gonzalez
+- Advisor: Dr. Yuan Mei
+- Program: Materials Science and Engineering, University of Texas at Arlington
 
-Key words: ALD, dielectrics, MOS, charge sensor, skipper CCDs, LAr, cryogenic interfaces
+- Key words: ALD, dielectrics, MOS, charge sensor, skipper CCDs, LAr, cryogenic interfaces
 
 ---
 
@@ -91,15 +91,19 @@ Phase I → Phase II → Phase III → Phase IV. Current state of progress: Phas
 
 (5.1) Phase II produces two datasets as seen in Figure 1. The first establishes that growth is self-limiting: growth per cycle is measured against precursor exposure and film thickness against cycle number, with saturation expected as a dose-independent plateau. Reported growth per cycle for thermal TMA/H2O within the ALD window is approximately 1.0-1.2 A per cycle, placing the 50 nm target near 450-500 cycles. This thickness is chosen because it lies well beyond the nucleation regime and within the range in which ALD reliably produces conformal, uniform films, which is the regime this class of tool is expected to serve.
 
-![Figure 1. Expected growth qualification: growth per cycle versus precursor exposure and film thickness versus cycle number.](../doc/assets/Comprehensive_2026_08_A/figure1_ald_validation.png)
+![Figure 1. Expected growth qualification: growth per cycle versus precursor exposure and film thickness versus cycle number.](../doc/assets/Comprehensive_202608_a/figure1_ald_validation.png)
 
 The second dataset is electrical: capacitance-voltage sweeps on MOS capacitors give the interface trap density and the hysteresis width. Reported interface trap densities for ALD Al2O3 on silicon commonly fall between 10^11 and 10^12 cm^-2 eV^-1, which provides a reference scale for the values measured here. The objective of Phase II is not to reach a particular value. It is met when the interface trap density and hysteresis width can be measured reproducibly on films grown in this reactor, and when they are shown to respond systematically to a controlled growth parameter. Establishing that the defect population responds to the process is what qualifies the reactor as a research tool, independent of where the absolute values fall. Post-deposition thermal treatment is one additional parameter that may be used to alter the defect population, and would appear in this measurement as a shift of the same kind as seen in Figure 2(b).
 
-![Figure 2. Expected capacitance-voltage response of MOS capacitors, showing (a) the qualification sweep and (b) the shift produced by a controlled change in growth condition.](../doc/assets/Comprehensive_2026_08_A/figure2_cv_response.png)
+![Figure 2. Expected capacitance-voltage response of MOS capacitors, showing (a) the qualification sweep and (b) the shift produced by a controlled change in growth condition.](../doc/assets/Comprehensive_202608_a/figure2_cv_response.png)
 
 (5.2) No contact-angle measurement has been reported for liquid argon on ALD-grown Al2O3, which is the gap Phase III addresses. Liquid argon has a surface tension near 12.5 mN/m at 87 K, roughly five times lower than water and far below the surface energy of a clean oxide, so the interface is expected to wet and the measured angle is expected to be small. A small angle is the outcome the device wants, because it corresponds to a continuous liquid boundary with no vapor at the dielectric surface. The measurement establishes the value, whether it depends on growth condition, and whether the boundary remains continuous when the film is cold and under bias. Interface trap density and hysteresis width measured at 87 K are expected to fall near their room-temperature values. The leakage measurement provides the electrical criterion: a film that holds off the bias required to form a potential well while covered by liquid argon meets the requirement the device places on the dielectric \[\].
 
-(5.3) In silicon, a single-sample readout noise of 3.55 e- rms was reduced to 0.068 e- rms by averaging 4000 non-destructive samples, following sigma_N = sigma_1 / sqrt(N). The proposed device is expected to begin at a considerably higher single-sample noise. The result that establishes the mechanism is not the value of that noise but its dependence on sample count: noise falling as N^(-1/2) demonstrates that the same charge packet is being measured repeatedly without being destroyed, which is the behavior the device is built to test. The size of the signal makes this a tractable first measurement. Ionization in liquid argon requires 23.6 eV per electron-ion pair, so a deposit of one MeV liberates roughly 4.2 x 10^4 electrons, of which approximately 70% survive recombination for a minimum-ionizing track at a 500 V/cm drift field. A packet of this size is detectable at a readout noise far above the state of the art, so the first demonstration of the mechanism does not require a low noise floor (i.e. a charge-sensitive preamplifier with an equivalent noise charge of a few hundred electrons is commercially available).
+(5.3) In silicon, a single-sample readout noise of 3.55 e- rms was reduced to 0.068 e- rms by averaging 4000 non-destructive samples, following sigma_N = sigma_1 / sqrt(N). The proposed device is expected to begin at a considerably higher single-sample noise. 
+
+![Figure 3. Expected slope vs noise performance.](../doc/assets/Comprehensive_202608_a/F4_slope_noise.png)
+
+The result that establishes the mechanism is not the value of that noise but its dependence on sample count: noise falling as N^(-1/2) demonstrates that the same charge packet is being measured repeatedly without being destroyed, which is the behavior the device is built to test. The size of the signal makes this a tractable first measurement. Ionization in liquid argon requires 23.6 eV per electron-ion pair, so a deposit of one MeV liberates roughly 4.2 x 10^4 electrons, of which approximately 70% survive recombination for a minimum-ionizing track at a 500 V/cm drift field. A packet of this size is detectable at a readout noise far above the state of the art, so the first demonstration of the mechanism does not require a low noise floor (i.e. a charge-sensitive preamplifier with an equivalent noise charge of a few hundred electrons is commercially available).
 
 ---
 
@@ -156,10 +160,13 @@ Phases overlap where cryostat integration proceeds in parallel with film growth/
 
 The proposed detector layered architecture consists of a silicon substrate base, metal gate electrodes, a 50 nm aluminum oxide (Al2O3) layer deposited via atomic layer deposition (ALD), and liquid argon as the detection medium. There is an external electric field being applied to this detector so if ionization in LAr creates free electrons they will drift towards the Al2O3 surface/interface. CCD readout parallel shift register with three phase device with parallel gate electrodes to move charge packets simultaneously along defined channels.
 
-![Proposed inverted device geometry: silicon substrate, patterned metal gate electrodes, 50 nm ALD Al2O3, and liquid argon as the active medium above the dielectric.](../doc/assets/Comprehensive_2026_08_A/device_geometry.png)
+![Proposed inverted device geometry: silicon substrate, patterned metal gate electrodes, 50 nm ALD Al2O3, and liquid argon as the active medium above the dielectric.](../doc/assets/Comprehensive_202608_a/Proposed_inverted_device.png)
+
+![Rough skipper readout architecture: parallel shift register with gate electrodes feeding a floating-gate sense node - not an actual three phase](../doc/assets/Comprehensive_202608_a/Rough_skipper_readout.png)
+
 
 Close up of the LAr/Al2O3 interface with two different possible cases for interface behavior. Although ALD is considered the gold standard for producing high quality thin films, especially in thickness control and uniformity, we can expect there to be some surface roughness resulting in void spaces.
 
-![Close-up of the LAr/Al2O3 boundary showing the two candidate contact conditions: continuous liquid contact, and a partially non-wetting boundary with trapped vapor in surface roughness.](../doc/assets/Comprehensive_2026_08_A/interface_closeup.png)
+![Close-up of the LAr/Al2O3 boundary showing the two candidate contact conditions: continuous liquid contact, and a partially non-wetting boundary with trapped vapor in surface roughness.](../doc/assets/Comprehensive_202608_a/LAr_Al2O3_boundary.png)
 
-![Rough skipper readout architecture: parallel shift register with three-phase gate electrodes feeding a floating-gate sense node.](../doc/assets/Comprehensive_2026_08_A/skipper_architecture.png)
+

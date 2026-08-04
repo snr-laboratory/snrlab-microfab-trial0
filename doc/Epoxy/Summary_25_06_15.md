@@ -7,7 +7,7 @@ All measurments were set to source voltage and measure current. The measurement 
 
 ## Resistivity vs Voltage for Script Method 
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/d061df28-5008-4023-bfe4-f260c30f5d31" />
+<img width="600" alt="image" src="assets/d061df28-5008-4023-bfe4-f260c30f5d31" />
 
 - EPO-TEK 301: Highest measured resistivity: 9.4E+15 Ω·cm and lowest measured current across all voltages (best insulator).
 - JB Weld: Very low resistivity: 9.2E+11 Ω·cm (poorest insulator)
@@ -20,20 +20,20 @@ All measurments were set to source voltage and measure current. The measurement 
 
 ## Resistivity Data Table
 
-<img width="1200" alt="image" src="https://github.com/user-attachments/assets/d8ba4330-fdba-46d8-8ef5-1b4853788f19" />
+<img width="1200" alt="image" src="assets/d8ba4330-fdba-46d8-8ef5-1b4853788f19" />
 
 ---
 
 ### IV Curves 
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/129ced2b-e4f3-47f4-ab28-f1f395c66dca" />
+<img width="600" alt="image" src="assets/129ced2b-e4f3-47f4-ab28-f1f395c66dca" />
 
 ---
 
 ## Resistivity vs Voltage for Manual Method 
 Plot showing the resistivity for possible candidates using manual data collection as well as mostly no degassing and different time intervals (ie wait time for stable measurement). The TotalBoat latest products were degassed. 
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/bc7d4c2f-f95f-4b15-b260-94b8c5364ded" />
+<img width="600" alt="image" src="assets/bc7d4c2f-f95f-4b15-b260-94b8c5364ded" />
 
 - MPTB: Highest measured resistivity: 4.6E+14 Ω·cm (lower than script, but still highest in this set)
 - MG Chemicals 832HD and EPO-TEK 353ND show the best resistivity matching with TDS
@@ -45,11 +45,11 @@ Plot showing the resistivity for possible candidates using manual data collectio
 
 ## Resistivity Data Table
 
-<img width="1200" alt="image" src="https://github.com/user-attachments/assets/aa8ed832-3886-4f96-8a1d-69fe773713cd" />
+<img width="1200" alt="image" src="assets/aa8ed832-3886-4f96-8a1d-69fe773713cd" />
 
 ---
 
 ### IV Curves 
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/5a094d92-70d9-415e-90f0-d2a057158e43" />
+<img width="600" alt="image" src="assets/5a094d92-70d9-415e-90f0-d2a057158e43" />
 

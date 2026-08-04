@@ -2,11 +2,11 @@
 
 The proposed detector layered architecture consists of a silicon substrate base, metal gate electrodes, a 50 nm aluminum oxide (Al₂O₃) layer deposited via atomic layer deposition (ALD), and liquid argon as the detection medium. There is an external electric field being applied to this detector so if ionization in LAr creates free electrons they will drift towards the Al₂O₃ surface/interface. This device is inspired and mimics the charge coupled device operation.
 
-<img width="576" alt="image" src="https://github.com/user-attachments/assets/18399874-a637-46dd-b09c-d9c7c1116cf0" />
+<img width="576" alt="image" src="assets/18399874-a637-46dd-b09c-d9c7c1116cf0" />
 
 Figure 1. Architecture of the proposed detector inspired by the operation and design of the charge coupled device (CCD). In this configuration, LAr is acting as the semiconductor resembling a standard CCD but with an inverted design as can be seen by the positioning of the oxide layer.
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/3092b04a-0a29-4dab-bf99-92ff81f00a73" />
+<img width="1000" alt="image" src="assets/3092b04a-0a29-4dab-bf99-92ff81f00a73" />
 
 Figure 2. Close up of the LAr/Al₂O₃ interface with two different possible cases for interface behavior. Case 2 shows an exaggerated situation in which the LAr is extremely hydrophobic to the Al₂O₃ surface. 
 
@@ -14,7 +14,7 @@ Although ALD is considered the gold standard for producing high quality thin fil
 
 Research on CCD gate oxides confirms that there exists an optimal thickness range for maintaining both electrical performance and reliability, with 50 nm falling within this optimized range for cryogenic liquid applications. The mechanical stress from thermal contraction is manageable at this thickness, avoiding cracking or delamination issues that could occur with thicker films. The 50 nm Al₂O₃ thickness thus represents a carefully optimized choice that balances electrical performance, reliability, manufacturability, and providing the necessary capacitive coupling while maintaining robust breakdown characteristics under cryogenic operating conditions.
 
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/df1f7508-97a5-4eba-819c-c9552a318de0" />
+<img width="900" alt="image" src="assets/df1f7508-97a5-4eba-819c-c9552a318de0" />
 
 Figure 3. CCD readout parallel shift register with three phase device with parallel gate electrodes to move charge packets simultaneously along defined channels.
 
@@ -105,13 +105,13 @@ Use frequency sweeps from 10 kHz to 1 MHz at cryogenic temperatures (87K). This 
 - Compare calculated vs. measured capacitance across frequency range; iteratively adjusting Nbt until the best fit is achieved
 - Use the distributive border trap model to extract border trap density (equation 1):
 
-<img width="245" alt="image" src="https://github.com/user-attachments/assets/974646af-5ed5-43df-b353-e9cf87337d73" />
+<img width="245" alt="image" src="assets/974646af-5ed5-43df-b353-e9cf87337d73" />
 
 First Term (γ²/jωE_ox): Represents the pure oxide capacitance contribution - how the electric field propagates through the dielectric without trapping effects.
 
 Second Term (q²N_bt ln(1+jωτ)/τ): Represents the border trap contribution - how trapped charges affect the total admittance. The logarithmic term captures the frequency-dependent response of traps at different depths.
 
-<img width="626" alt="image" src="https://github.com/user-attachments/assets/0b781030-ee42-4a6d-b9dc-d16e422e2753" />
+<img width="626" alt="image" src="assets/0b781030-ee42-4a6d-b9dc-d16e422e2753" />
 
 [A Distributed Model for Border Traps in Al2O3 − InGaAs MOS Devices](https://web.ece.ucsb.edu/Faculty/rodwell/publications_and_presentations/publications/2011_4_april_yuan_EDL.pdf)
 
@@ -121,7 +121,7 @@ Quantify net trapped charge density (Nit) via flat-band voltage shifts (ΔVFB) d
 - Apply voltage sweeps from accumulation to depletion and reverse
 - Calculate trapped charge density from hysteresis magnitude (equation 2):
 
-<img width="141" alt="image" src="https://github.com/user-attachments/assets/cf563aa0-7177-4636-9c91-b4e263a315be" />
+<img width="141" alt="image" src="assets/cf563aa0-7177-4636-9c91-b4e263a315be" />
 
 - Nit = Trapped charge density (cm−2)
 - Cox = Oxide capacitance per unit area (F/cm2)
@@ -167,11 +167,11 @@ Post-annealing (300–500°C) can improve θ by 5–10° via hydroxyl group remo
 
 Table 1. Summary of the measurement techniques being considered
 
-<img width="630" alt="image" src="https://github.com/user-attachments/assets/dd462607-baf6-4932-9a51-8ec2376b3567" />
+<img width="630" alt="image" src="assets/dd462607-baf6-4932-9a51-8ec2376b3567" />
 
 Table 2. Summary of measurement relevance
 
-<img width="589" alt="image" src="https://github.com/user-attachments/assets/301bea29-9971-4585-8c53-cc14e0343c8c" />
+<img width="589" alt="image" src="assets/301bea29-9971-4585-8c53-cc14e0343c8c" />
 
 ---
 
@@ -240,13 +240,13 @@ Border traps
 
 The band diagram for Vg = 0
 
-<img width="436" alt="image" src="https://github.com/user-attachments/assets/be5d30f0-9924-4f50-9b14-2e9d99e5771e" />
+<img width="436" alt="image" src="assets/be5d30f0-9924-4f50-9b14-2e9d99e5771e" />
 
 (a) Polysilicon-gate/oxide/semiconductor capacitor and (b) its energy band
 diagram with no applied voltage.
 
 -**Flat-band condition** 
-<img width="451" alt="image" src="https://github.com/user-attachments/assets/641f6272-409b-48f8-a39d-4ed9157d5c65" />
+<img width="451" alt="image" src="assets/641f6272-409b-48f8-a39d-4ed9157d5c65" />
 
 This condition is achieved by applying a negative voltage to the gate which  raises the band diagram on the left-hand side. 
     - surface electric field in the substrate is zero.
@@ -254,13 +254,13 @@ This condition is achieved by applying a negative voltage to the gate which  rai
 
 - **Accumulation**: $V_g < 0$ (holes accumulate at interface).
   
-<img width="485" alt="image" src="https://github.com/user-attachments/assets/9d2c1092-3ee1-4aa3-a9cc-02a5d7c7ca8d" />
+<img width="485" alt="image" src="assets/9d2c1092-3ee1-4aa3-a9cc-02a5d7c7ca8d" />
 
 This MOS capacitor is biased into surface accumulation (ps > p0= Na).
 (a) Types of charge present. ⊕ represents holes and – represents negative charge. (b) Energy
 band diagram.
 
-<img width="132" alt="image" src="https://github.com/user-attachments/assets/ad99ed58-9739-46df-a995-59c6c45a42c2" />
+<img width="132" alt="image" src="assets/ad99ed58-9739-46df-a995-59c6c45a42c2" />
 
 - Observed when negative voltages are applied to the gate.
 - The negative polarity causes majority carriers (holes) to be attracted toward the gate.
@@ -269,7 +269,7 @@ band diagram.
 
 - **Depletion**: $V_g > 0$ (holes repelled, depletion region forms)
   
-<img width="486" alt="image" src="https://github.com/user-attachments/assets/f14f969b-ea8c-4dca-ae96-b28809646c31" />
+<img width="486" alt="image" src="assets/f14f969b-ea8c-4dca-ae96-b28809646c31" />
 
 This MOS capacitor is biased into surface depletion. (a) Types of charge
 present; (b) energy band diagram.
@@ -277,14 +277,14 @@ present; (b) energy band diagram.
 - There is now a depletion region at the surface because EF is far from both Ec and Ev
 - Electron and hole densities are both small
 
-<img width="375" alt="image" src="https://github.com/user-attachments/assets/bdfee0f8-7e25-4663-b6de-00d3bdf7bf47" />
+<img width="375" alt="image" src="assets/bdfee0f8-7e25-4663-b6de-00d3bdf7bf47" />
 
 This equation can be solved to yield Wdep as a function of Vg. With Wdep
 determined, Vox and φ s become known.
 
 - **Inversion**: $V_g \gg 0$ (electrons form inversion layer).
 
-<img width="394" alt="image" src="https://github.com/user-attachments/assets/13b205e2-7b2f-41c3-9011-a4336cb237c8" />
+<img width="394" alt="image" src="assets/13b205e2-7b2f-41c3-9011-a4336cb237c8" />
 
 - At some Vg, EF will be close enough to Ec at the Si–SiO2 interface
 that the surface is no longer in depletion but at the threshold of inversion

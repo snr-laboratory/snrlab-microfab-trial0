@@ -28,16 +28,16 @@ This is where things can go bad
 [Conformality in atomic layer deposition: Current status overview of analysis and modelling ](https://pubs.aip.org/aip/apr/article/6/2/021302/570185/Conformality-in-atomic-layer-deposition-Current)
 
 
-<img width="2032" height="653" alt="image" src="https://github.com/user-attachments/assets/bc7251b7-6253-4809-baca-1b70926f851b" />
+<img width="2032" height="653" alt="image" src="assets/bc7251b7-6253-4809-baca-1b70926f851b" />
 
 
-<img width="2001" height="726" alt="image" src="https://github.com/user-attachments/assets/930521e5-9773-448d-844d-2247544adfce" />
+<img width="2001" height="726" alt="image" src="assets/930521e5-9773-448d-844d-2247544adfce" />
 
-<img width="1782" height="684" alt="image" src="https://github.com/user-attachments/assets/f92b0b16-1c07-40f2-912a-4429ff469dec" />
+<img width="1782" height="684" alt="image" src="assets/f92b0b16-1c07-40f2-912a-4429ff469dec" />
 
-<img width="1706" height="656" alt="image" src="https://github.com/user-attachments/assets/374166db-635b-45d0-8914-b09e88e5a443" />
+<img width="1706" height="656" alt="image" src="assets/374166db-635b-45d0-8914-b09e88e5a443" />
 
-<img width="1310" height="820" alt="image" src="https://github.com/user-attachments/assets/8da00a6e-e80b-4592-ad7c-f83e29291cd7" />
+<img width="1310" height="820" alt="image" src="assets/8da00a6e-e80b-4592-ad7c-f83e29291cd7" />
 
 
 ## 4-Way Cross
@@ -182,7 +182,7 @@ deposition of Al2O3 using trimethylaluminum and water](https://pdf.sciencedirect
 ## Reaction Chamber
   - 21100 Tube Furnace by Barnstead Thermolyne
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/a2504053-541a-4f34-aba9-59b5884fd618" />
+<img width="200" alt="image" src="assets/a2504053-541a-4f34-aba9-59b5884fd618" />
 
 [Type F21100 Tube Furnace OPERATION MANUAL](https://www.nist.gov/system/files/documents/ncnr/E133tubefurnace.pdf)
 [Thermolyne F21100 Tube Furnace](https://www.nist.gov/laboratories/tools-instruments/thermolyne-f21100-tube-furnace)
@@ -190,14 +190,14 @@ deposition of Al2O3 using trimethylaluminum and water](https://pdf.sciencedirect
 ## Precursor Chamber
    - 1300 Furnace by Barnstead Thermolyne
      
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/3cfdc69b-89c2-40f0-955c-ded2dbba9771" />
+<img width="200" alt="image" src="assets/3cfdc69b-89c2-40f0-955c-ded2dbba9771" />
 
 ## Regulating Gas Flow Rates 
    - Ion gauge controller Model IGC100 by Stanford Research Systems
       - IGC100 features four analog input/output ports (AN1–AN4)
         - voltage in the range of ±12 VDC
        
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/b58488e7-c097-4541-9982-d3a0f5b98689" />
+<img width="200" alt="image" src="assets/b58488e7-c097-4541-9982-d3a0f5b98689" />
 
 - ### Wiring
   - Connect the IGC100’s analog output to the Alicat controller’s analog input (pin 4 of the 8-pin barrel connector, or equivalent).
@@ -455,7 +455,7 @@ Sealing Requirements:
   - Pressure monitor - Hastings dual sensor vacuum gauge model 2002 $1,200, capable of monitoring pressures between 2 Torr and 1 X 10-4 Torr.
   - To protect the vacuum pump, a liquid nitrogen trap from A&N Corp. $685
   
-<img width="784" alt="image" src="https://github.com/user-attachments/assets/d8bc2839-9378-4985-8f51-45ef8371d1f5" />
+<img width="784" alt="image" src="assets/d8bc2839-9378-4985-8f51-45ef8371d1f5" />
 
 
 --- 
@@ -546,11 +546,11 @@ CF/KF Adapter for 4 Way Cross
 # 07/07-07/11 
  - Remove Bellow (unwanted turbulence)
    - The bellows must be vacuum-tight and rated for at least 10⁻³ Torr, which all standard 4-inch KF40 bellows meet.
-<img width="1000" height="540" alt="image" src="https://github.com/user-attachments/assets/2ae6380a-fd3a-4a94-bdf0-5d7db2c5c0f3" />
+<img width="1000" height="540" alt="image" src="assets/2ae6380a-fd3a-4a94-bdf0-5d7db2c5c0f3" />
 
  - Include Emergency Shutoff
 
-<img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/767746e8-3f11-4ec3-99bf-1968010a3956" />
+<img width="800" height="700" alt="image" src="assets/767746e8-3f11-4ec3-99bf-1968010a3956" />
 
 
  - Aluminum Support
@@ -561,7 +561,7 @@ CF/KF Adapter for 4 Way Cross
   - 46 OD Quartz tube (contacting company to see how much it will cost to have the 50OD custom ends made)
       - https://almathcrucibles.com/product/qua4642/
 
-<img width="1000" height="578" alt="image" src="https://github.com/user-attachments/assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
+<img width="1000" height="578" alt="image" src="assets/d7d0f0b4-3b83-4d09-abe4-0ce148c12b88" />
 
 # 07/07-07/11
 - Milestone 1: Present progress and if approved (ask about emergency shutoff), revise gas flow to match electrical schematic.
@@ -577,7 +577,7 @@ CF/KF Adapter for 4 Way Cross
 # Recap from Previous Week and New Deadlines (pending)
 - Electrical schematic now includes liquid bubbler for the prevention of blackflow gases. The temperature range and pressure range of the tube furnace have been identified. Need verification on how the HVC150 electrical connections were represented. **HVC electrical feedthrough with boat is not necessary at this time - maybe later down the road we can revisit for the deposition of SiO2**
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/37d197aa-a793-4a92-8dcd-ec7f7a03ae7f" />
+<img width="700" alt="image" src="assets/37d197aa-a793-4a92-8dcd-ec7f7a03ae7f" />
 
 # 06/30-07/03
 - Milestone 1: Finish gas flow design along with description by Jun 24th
@@ -593,7 +593,7 @@ CF/KF Adapter for 4 Way Cross
       - high-quality MFCs
       - quartz tube with custom stainless steel ends for attaching the gas lines
 
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/1e538b04-5110-443d-ae96-7a2ad3bd4349" />
+<img width="900" alt="image" src="assets/1e538b04-5110-443d-ae96-7a2ad3bd4349" />
 
       - mechanical fitting issue and a potential gas flow/sealing problem
 
@@ -601,7 +601,7 @@ CF/KF Adapter for 4 Way Cross
 ## Modified
 ### General layout is outlined below:
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/77bb7023-7185-47d0-b0bc-a84bdd4a2a53" />
+<img width="1000" alt="image" src="assets/77bb7023-7185-47d0-b0bc-a84bdd4a2a53" />
 
 - Nitrogen carrier gas is distributed via three mass flow controllers (MFCs) for TMA, H₂O, and purge.
 - Solenoid valves immediately after each MFC enable sharp, programmable pulsing.
@@ -611,7 +611,7 @@ CF/KF Adapter for 4 Way Cross
 ## Gas Flow 
 The key innovation of ALD is in its ability to carefully control the introduction of the desired precursor and coreactants; and more importantly, the purging of these gases based on the sequence chemistry of growing a particular material. The sequence is based on a self-limiting surface reaction growth mechanism (i.e saturated surface-controlled reactions). The design outlined shows the unidirectional flow of gases. The gas flow shown below follows a single direction from the carrier/purging source all the way to the vacuum pump: 
 
-<img width="1600" alt="image" src="https://github.com/user-attachments/assets/38c9e26a-c805-41da-98e2-ddaecbf9a2c3" />
+<img width="1600" alt="image" src="assets/38c9e26a-c805-41da-98e2-ddaecbf9a2c3" />
 
 
 N2 is used as the carrier and purging gas starting from the mass flow controllers (MC) to the deposition chamber and finally to the vacuum pump which will have an exhaust pipe leading into a fume hood or overhead ventillation. The purge line is redirected for faster purge times and to avoid contamination through the sharing lines. For the trimethylaluminum precursor (TMA) and water coreactants, N2 will pass through the 1300 furnace and enter the injection valves carrying along with it the desired vapors ready to be introduced into the reaction chamber. In the case of water, a 50mL Schlenk flask (or similar) outside the furnace, will be heated in a sand bath to control the evaporation, then it will proceed as usual through the 1300 furnace. 
@@ -634,11 +634,11 @@ The block diagrams provide an overview of the control and power infrastructure a
 - Microcontroller (Arduino) and Ion Gauge Controller (IGC100) for automation and feedback
 
 ### Components Requiring Electrical Control or Connection
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/dc3a087c-e022-42e9-b54e-204697789d07" />
+<img width="500" alt="image" src="assets/dc3a087c-e022-42e9-b54e-204697789d07" />
 
 ### Block Diagram
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
+<img width="500" alt="image" src="assets/6aeec247-d932-4730-a84f-2f59a9551f14" />
 
 This diagram organizes these components into logical power and control “buses”:
 - 120V AC Bus: Supplies high-power devices (furnaces, vacuum pump, heat source)
@@ -649,7 +649,7 @@ The diagram visually clarifies how each device connects to its respective power 
 
 ### Essential Symbols for Electrical Schematic 
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
+<img width="300" alt="image" src="assets/bc4eea9b-17a9-45f1-a6b2-793bdabcb26f" />
 
 
 

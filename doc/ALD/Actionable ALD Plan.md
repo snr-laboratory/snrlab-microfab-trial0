@@ -12,19 +12,19 @@ The purpose of this document is to propose how to construct a flow-type hot-wall
 
 Figure 1. Onshape 3D model
 
-<img width="3620" height="1760" alt="image" src="https://github.com/user-attachments/assets/37a92c77-40ea-4825-baa3-349001ca6a09" />
+<img width="3620" height="1760" alt="image" src="assets/37a92c77-40ea-4825-baa3-349001ca6a09" />
 
-<img width="2770" height="1756" alt="image" src="https://github.com/user-attachments/assets/ab091995-7395-4883-84e5-9c133e60d2ef" />
+<img width="2770" height="1756" alt="image" src="assets/ab091995-7395-4883-84e5-9c133e60d2ef" />
 
 Diagram 1. Gas Flow Schematic
 
-<img width="3566" height="850" alt="image" src="https://github.com/user-attachments/assets/f9319415-df90-4a0e-bbad-8fe01b1fdd15" />
+<img width="3566" height="850" alt="image" src="assets/f9319415-df90-4a0e-bbad-8fe01b1fdd15" />
 
 Diagram 2. Electrical schematic for testing command and relay response
 
-<img width="705" height="556" alt="image" src="https://github.com/user-attachments/assets/399dc8c2-c4e3-4650-ac06-39d3fd932aa3" />
+<img width="705" height="556" alt="image" src="assets/399dc8c2-c4e3-4650-ac06-39d3fd932aa3" />
 
-<img width="709" height="518" alt="image" src="https://github.com/user-attachments/assets/4864368b-6740-47e6-b870-59ee172304c6" />
+<img width="709" height="518" alt="image" src="assets/4864368b-6740-47e6-b870-59ee172304c6" />
 
 
 ## Tool Operation  
@@ -156,7 +156,7 @@ USB Multi-Drop Box](https://www.alphacontrols.com/Multimedia/www.alphacontrols.c
     * Vendor: [Ultrahigh-Purity Valves
 for Atomic Layer Processing](https://www.swagelok.com/downloads/webcatalogs/en/ms-02-301.pdf)  
 
-<img width="469" height="941" alt="image" src="https://github.com/user-attachments/assets/418ae34c-4118-46b3-8a0d-4e27e4624e56" />
+<img width="469" height="941" alt="image" src="assets/418ae34c-4118-46b3-8a0d-4e27e4624e56" />
 
 ### Solenoid Valves (x3)  
 * SKU: SS-3J-24VDC
@@ -296,7 +296,7 @@ Solenoid valves fittings:
 
 * Operating safety consideration: Most systems designed for <10 Torr operation
 
-<img width="558" height="154" alt="image" src="https://github.com/user-attachments/assets/365f650d-fa93-4bb7-9a67-698c88858553" />
+<img width="558" height="154" alt="image" src="assets/365f650d-fa93-4bb7-9a67-698c88858553" />
 
 [Development of a powder atomic layer deposition reactor for research purposes Simon Andsten](https://aaltodoc.aalto.fi/server/api/core/bitstreams/9ca59ceb-2f97-4f79-a86c-5f00aeb70a85/content) 
 
@@ -314,7 +314,7 @@ Solenoid valves fittings:
   * TMA/H₂O ALD window: 269-384°C (optimal range)  
   * Oregon State system: 25-350°C capability
     
-<img width="470" height="232" alt="image" src="https://github.com/user-attachments/assets/0f54e40f-0960-4485-92d5-ab9bba8956aa" />
+<img width="470" height="232" alt="image" src="assets/0f54e40f-0960-4485-92d5-ab9bba8956aa" />
 
 Figure 2. ALD processing window and how growth per cycle can be influenced by temperature.
 

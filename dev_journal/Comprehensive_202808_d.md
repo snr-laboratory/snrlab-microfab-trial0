@@ -2,9 +2,14 @@
 
 ## Timeline (v2) 
 
+![Gantt Timeline_color](../dev_journal/assets/comprehensive_figures/Gantt_color_mapping.png)
 
-![Gantt Timeline](../dev_journal/assets/comprehensive_figures/Timeline_Gantt.png)
+![Gantt Timeline_simple](../dev_journal/assets/comprehensive_figures/simplified_Gantt_timeline.png)
 
+  Older version:
+  
+  ![Gantt Timeline](../dev_journal/assets/comprehensive_figures/Timeline_Gantt.png)
+  
 ## LAr dielectric interphase physics 
 
 ### 12. Liquid-argon/dielectric interface physics and testable model

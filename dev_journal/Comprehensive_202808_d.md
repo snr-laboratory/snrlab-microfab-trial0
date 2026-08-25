@@ -12,6 +12,25 @@
   
 ## LAr dielectric interphase physics 
 
+### BBCD
+![BCCD_Diagrams](../dev_journal/assets/comprehensive_figures/Diagrams-of-surface-channel-a-and-buried-channel-MOSFETs-The-bias-condition-was-set-at.png)
+
+![BCCD](../dev_journal/assets/comprehensive_figures/BuriedChannel_ChargeCoupled_Devices.png)
+
+![History_BBCD](../dev_journal/assets/comprehensive_figures/history_CCD_band_diagram.png)
+
+The buried-channel innovation did exactly two things (Walden et al., BSTJ 1972; NASA/Caltech): it moved the potential minimum off the trap-rich boundary into a clean depleted medium, and it kept a hard wall (3.1 eV) between the stored charge and the trap region. 
+
+| Function in the BCCD               | BCCD implementation                                  | LAr-stack counterpart                                                           | Status                                           |
+| ---------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Carrier-free transport medium      | Depleted n-Si (engineered by reverse bias)           | The liquid itself — LAr has no free carriers at 87 K                            | given by nature                                  |
+| Hard wall against the trap region  | 3.1 eV Si/SiO₂ offset                                | Entry barrier ΔE_C at the LAr/oxide surface                                     | must be engineered; current estimate unfavorable |
+| Curvature that creates the minimum | Donor space charge (Poisson term)                    | Image attraction + barrier — Laplace forbids a space-charge route in the liquid | the speculative core                             |
+| Standoff from interface states     | x_max ≈ 0.5 µm below the interface                   | z₀ ~ 1 nm above the oxide (image-bound state)                                   | speculative; roughness-sensitive                 |
+| Signal-dependent well              | Minimum moves toward the interface as the well fills | Stored sheet screens the holding field; well shallows as it fills               | quantitative prediction                          |
+| Full-well capacity                 | ~10⁵–10⁶ e⁻                                          | N_max ≈ ε₀εr·E/e ≈ 4×10⁸ cm⁻² → ~2×10⁴ e⁻ per 20×200 µm gate                    | prediction                                       |
+| Clocking                           | Gate phases translate the minimum                    | Gate phases translate the surface pocket (your panel c)                         | modeled                                          |
+
 ### 12. Liquid-argon/dielectric interface physics and testable model
 
 The central unresolved physics is the fate of an excess electron after bulk transport brings it into the near-interface region of liquid argon adjacent to a dielectric. Established LAr transport measurements constrain drift, diffusion, recombination, and impurity attachment in the bulk [12–25,53], but they do not determine whether an electron approaching a real oxide surface is reflected, reversibly localized, trapped, injected into the solid, collected by a conductor, or returned to the liquid. The interface must therefore be represented by a model that separates established bulk transport from electrostatic inputs, microscopic interface unknowns, state-transition rates, and measured charge observables.

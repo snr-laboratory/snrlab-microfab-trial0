@@ -21,7 +21,9 @@
 
 ![History_BBCD](../dev_journal/assets/comprehensive_figures/history_CCD_band_diagram.png)
 
-The buried-channel innovation did exactly two things (Walden et al., BSTJ 1972; NASA/Caltech): it moved the potential minimum off the trap-rich boundary into a clean depleted medium, and it kept a hard wall (3.1 eV) between the stored charge and the trap region. 
+#### The buried-channel innovation did exactly two things (Walden et al., BSTJ 1972; NASA/Caltech): it moved the potential minimum off the trap-rich boundary into a clean depleted medium, and it kept a hard wall (3.1 eV) between the stored charge and the trap region. 
+
+A true liquid-phase buried channel cannot be produced by buried static gates alone. Something in addition to the gate electrostatics must provide vertical confinement:
 
 | Function in the BCCD               | BCCD implementation                                  | LAr-stack counterpart                                                           | Status                                           |
 | ---------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------ |
@@ -32,6 +34,77 @@ The buried-channel innovation did exactly two things (Walden et al., BSTJ 1972; 
 | Signal-dependent well              | Minimum moves toward the interface as the well fills | Stored sheet screens the holding field; well shallows as it fills               | quantitative prediction                          |
 | Full-well capacity                 | ~10⁵–10⁶ e⁻                                          | N_max ≈ ε₀εr·E/e ≈ 4×10⁸ cm⁻² → ~2×10⁴ e⁻ per 20×200 µm gate                    | prediction                                       |
 | Clocking                           | Gate phases translate the minimum                    | Gate phases translate the surface pocket (your panel c)                         | modeled                                          |
+
+After an ionizing event, LAr produces electrons and Ar ions. Some recombine. The surviving electrons thermalize and enter the quasi-free electron transport state of the liquid. The energy of the quasi-free conduction state of excess electrons in LAr has been experimentally studied; Tauchert and Schmidt reported roughly
+
+V0 ≈−0.21 eV
+
+relative to vacuum near 87.5 K. Modern treatments describe transport as an electron moving through a dense, disordered medium with coherent scattering, polarization screening and liquid-structure effects rather than ordinary Bloch transport in a crystal.
+
+| Interfacial outcome                                                          | Physics                             | CCD value                         |
+| ---------------------------------------------------------------------------- | ----------------------------------- | --------------------------------- |
+| Electron enters deep Al₂O₃ trap                                              | localized oxide charge              | **bad** — irreversible trapping   |
+| Electron remains liquid-side but immobilized by a surface defect             | shallow/localized interfacial state | possibly useful if reversible     |
+| Electron occupies a liquid-side bound/quasi-free state with lateral mobility | separated electron channel          | **ideal buried-channel analogue** |
+
+The third case is the one trying to make
+∣ψ(z=0)∣ 2
+ 
+or, more classically, the near-surface carrier probability density as small as practical while maintaining strong electrostatic coupling to the gates.
+That suppresses interaction with surface traps just as moving the electron packet away from Si/SiO₂ did in the silicon BCCD.
+
+Right now, the ∼0.52 kV/cm external field is doing two things simultaneously:
+it transports electrons through the LAr, and then continues pressing them against the Al₂O₃.
+
+Those do not necessarily have to be the same operating condition.
+A more sophisticated sequence would be:
+
+generate → drift → capture → reduce pressing field → clock laterally
+​	
+During bulk transport you want a substantial drift field. After the electron enters a verified interfacial bound state, you may want to reduce the vertical pressing field dramatically so that the wavefunction/carrier distribution moves farther from the oxide and oxide-injection probability falls. That's analogous in spirit to what the buried-channel CCD does continuously: electrostatics should control the packet without unnecessarily forcing it into the defective interface.
+
+Two critical things needed: 
+1. a high-quality gate dielectric, and
+2. the ideal electron-facing LAr interface.
+Those are completely different materials requirements. Al₂O₃ could remain the 50 nm gate insulator, while an ultrathin surface cap could ultimately be selected specifically for large electron entry barrier + low trap density + stable cryogenic termination.
+In other words:
+
+metal/Al2O3/electron-blocking surface layer/LAr.
+
+That would be very analogous to semiconductor heterostructure engineering: use one layer for electrostatics and another layer for electronic confinement.
+
+- keep the carrier density out of the defect-rich solid while retaining gate control.
+  
+- **Can interface electronic structure provide the missing vertical confinement required to form a liquid-side electron channel, spatially separated from an oxide surface, while buried electrodes provide the lateral potential modulation required for CCD-like storage and transfer?**
+
+(buried-channel analogy substantially more rigorous: Poisson equation in the silicon BCCD → Laplace limitation in LAr → microscopic interface barrier as the missing confinement mechanism → liquid-side carrier-density centroid → lateral three-phase clocking.)
+
+In a solid-state BCCD, a static potential maximum is established in the semiconductor bulk by creating a metallurgical p-n junction (e.g., doping the silicon to create a space-charge region). Because LAr cannot be doped with fixed ionic charge to create a static depletion zone, we cannot artificially push the potential minimum away from the interface using bulk dopants.
+
+Because the relative permittivity of the ALD Al2O3 (≈8.0) is higher than that of LAr (ε r ≈1.50), the image charge is attractive. Both the external drift field (ELAr) and the image potential force the quasi-free electrons directly against the LAr/Al2O3 interface (z→0). They are not suspended in the bulk liquid.
+
+Hypothesis 1: Interfacial State and the unique capabilities of upcoming TMA/H2O ALD campaigns. While the electrons are at the surface, the chemical and structural engineering of that surface prevents irreversible trapping.
+
+Electron Arrival & The Conduction Band Barrier: Ionization in the LAr yields quasi-free electrons that thermalize and drift under the applied field (ELAr≈0.520 kV/cm). When they arrive at the 50 nm Al2O3 barrier, they encounter a material with a high bandgap and an electron affinity that likely presents a physical barrier to entry, preventing them from immediately discharging into the metal electrodes.  
+
+Overcoming the Helium Precedent: You must proactively distinguish this from the electrons-on-helium precedent. In helium devices, the image charge is repulsive, keeping electrons hovering in a vacuum. In your LAr system, the electrons are in a dense liquid, driven aggressively into the solid by both applied and image fields. You are testing whether a dense liquid can support lateral mobility immediately adjacent to a solid—a genuine physics gap.  
+
+The Role of the Engineered Surface: Because this is a surface-channel regime, surface states (Dit) will dictate success or failure. Native oxides or trap-rich surfaces will capture the electrons irreversibly. Your defense is that a highly controlled, tightly packed ALD Al2O3 film—potentially modified by specific dehydration, hydroxylation, or passivation steps—can minimize these deep traps.  
+
+Gate-Controlled Transfer: If the ALD surface allows the electrons to enter a "reversibly localized" state (where they stick but can be recovered), the 40 µm-pitch electrodes provide a massive 3.70 eV peak-to-trough lateral energy modulation. This lateral fringing field is more than enough to strip the electrons from shallow interface states and sweep them to the next gate, enabling directional two-region transfer.  
+
+In short, your working mechanism replaces the electrostatic bulk protection of a Buried Channel CCD with the chemical surface protection of a highly engineered ALD interface.
+
+LAr arrives already in the condition the CCD must engineer — permanently depleted, carrier-free, band-like electron transport — but it lacks the donor layer's curvature source. The material boundary may provide vertical residence or reversible localization, while the patterned gates provide lateral addressing and transfer of whatever recoverable population the boundary supports.
+
+Generation and delivery: Ionization produces excess electrons in bulk LAr. These electrons remain quasi-free and undergo field-directed transport through the liquid rather than behaving as semiconductor minority carriers (NIST liquid-argon review).
+
+Interface access: The external normal field brings electrons into the region adjacent to the flat LAr/Al₂O₃ boundary. This field provides drift and establishes the arrival condition. It does not, by itself, provide stable vertical levitation.
+
+The buried-channel analogy is therefore a comparison of required functions. The CCD uses donor space charge to create a true subsurface minimum and spatially suppress trap interaction. The proposed LAr device tests whether interface electronic structure and surface processing can instead create a recoverable residence window in which irreversible capture is slow enough for gate-controlled manipulation. Patterned gates then perform the lateral addressing function shared with CCD and electron-on-helium devices, while the LAr/solid boundary determines whether the required vertical storage function exists.
+
+Liquid Argon: The quasi-free ionization electrons in LAr reside at a conduction band minimum energy (V0≈−0.21 eV) relative to the vacuum level. Aluminum Oxide: ALD Al2O3 is a wide-bandgap insulator (Eg≈8 eV) with a completely different electron affinity.
+The Physical Barrier: The conduction band edge of the Al2O3 sits at a much higher energy state than the quasi-free electron energy in the LAr. When an electron hits this interface, it faces a massive potential wall. Because your film is 50 nm thick, it is far too wide for quantum tunneling, and the cryogenic temperature (87 K) eliminates any chance of thermal emission over the barrier. The electron has nowhere to go; it is halted at the surface.
 
 ### 12. Liquid-argon/dielectric interface physics and testable model
 

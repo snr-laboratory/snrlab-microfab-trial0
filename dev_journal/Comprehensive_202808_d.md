@@ -12,6 +12,8 @@
   
 ## LAr dielectric interphase physics 
 
+![LAr_Detector](../dev_journal/assets/comprehensive_figures/LAr_detector.drawio.svg)
+
 ### BBCD
 ![BCCD_Diagrams](../dev_journal/assets/comprehensive_figures/Diagrams-of-surface-channel-a-and-buried-channel-MOSFETs-The-bias-condition-was-set-at.png)
 

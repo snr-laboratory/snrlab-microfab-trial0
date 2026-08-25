@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="845" viewBox="0 0 1680 845" font-family="DejaVu Sans, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#1d5a7a"/></marker>
+    <marker id="arrDark" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#333"/></marker>
+    <marker id="arrGray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#888"/></marker>
+    <marker id="arrRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#c0392b"/></marker>
+    <marker id="arrGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#1e8449"/></marker>
+  </defs>
+
+  <rect width="1680" height="845" fill="#ffffff"/>
+  <text x="840" y="30" font-size="19" font-weight="bold" fill="#1a1a1a" text-anchor="middle">Speculated buried-channel analogue at the LAr/Al&#8322;O&#8323; interface</text>
+  <text x="840" y="52" font-size="12" fill="#555" text-anchor="middle">interface electronic structure must supply the vertical residence &#183; buried gates supply the lateral control &#183; bottom: correspondence + key numbers</text>
+
+  <!-- ============ PANEL (a) DEVICE ============ -->
+  <rect x="25" y="68" width="545" height="565" fill="#fbfbfb" stroke="#cccccc" rx="8"/>
+  <text x="40" y="92" font-size="14" font-weight="bold" fill="#1a1a1a">(a) Device cross-section &#8212; what we build</text>
+
+  <!-- layers -->
+  <rect x="140" y="110" width="415" height="360" fill="#f6eefb"/>
+  <rect x="140" y="470" width="415" height="16" fill="#63bcc9"/>
+  <rect x="140" y="486" width="415" height="74" fill="#e6e6e6"/>
+  <rect x="165" y="486" width="80" height="32" fill="#e67e22"/>
+  <rect x="290" y="486" width="80" height="32" fill="#e67e22"/>
+  <rect x="415" y="486" width="80" height="32" fill="#e67e22"/>
+  <rect x="140" y="560" width="415" height="34" fill="#b3b3b3"/>
+  <rect x="140" y="110" width="415" height="484" fill="none" stroke="#999" stroke-width="0.8"/>
+
+  <text x="205" y="507" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">G1</text>
+  <text x="330" y="507" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">G2</text>
+  <text x="455" y="507" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">G3</text>
+  <text x="347" y="581" font-size="11" fill="#ffffff" text-anchor="middle">Si substrate &#8212; mechanical support only</text>
+
+  <!-- left layer labels -->
+  <text x="36" y="286" font-size="11" fill="#7d3c98" font-weight="bold">liquid argon</text>
+  <text x="36" y="300" font-size="10.5" fill="#7d3c98">87 K, carrier-free</text>
+
+  <text x="36" y="452" font-size="10.5" fill="#136570" font-weight="bold">ALD Al&#8322;O&#8323;</text>
+  <text x="36" y="466" font-size="10.5" fill="#136570">50 nm, planar &#8212;</text>
+  <text x="36" y="480" font-size="10.5" fill="#136570">the only solid</text>
+  <text x="36" y="494" font-size="10.5" fill="#136570">the liquid touches</text>
+
+  <text x="36" y="536" font-size="10.5" fill="#666" font-weight="bold">SiO&#8322;, planarized</text>
+  <text x="36" y="550" font-size="10.5" fill="#666">flush with gate tops</text>
+
+  <!-- LAr annotations -->
+  <text x="255" y="134" font-size="11.5" fill="#1d5a7a" text-anchor="middle">ionization e&#8315; drift toward the interface</text>
+  <line x1="185" y1="150" x2="185" y2="240" stroke="#1d5a7a" stroke-dasharray="5 4" stroke-width="1.6" marker-end="url(#arrBlue)"/>
+  <line x1="255" y1="150" x2="255" y2="240" stroke="#1d5a7a" stroke-dasharray="5 4" stroke-width="1.6" marker-end="url(#arrBlue)"/>
+  <line x1="325" y1="150" x2="325" y2="240" stroke="#1d5a7a" stroke-dasharray="5 4" stroke-width="1.6" marker-end="url(#arrBlue)"/>
+
+  <!-- GOAL box: transparent fill so the LAr region stays visible -->
+  <rect x="385" y="122" width="162" height="128" fill="none" stroke="#7d3c98" rx="6"/>
+  <text x="466" y="142" font-size="12" font-weight="bold" fill="#7d3c98" text-anchor="middle">GOAL</text>
+  <text x="466" y="160" font-size="10.5" fill="#4a235a" text-anchor="middle">hold drifted electrons on</text>
+  <text x="466" y="175" font-size="10.5" fill="#4a235a" text-anchor="middle">the liquid side of the</text>
+  <text x="466" y="190" font-size="10.5" fill="#4a235a" text-anchor="middle">interface &#8212; off the oxide,</text>
+  <text x="466" y="205" font-size="10.5" fill="#4a235a" text-anchor="middle">still coupled to the gates</text>
+  <text x="466" y="223" font-size="10.5" font-style="italic" fill="#7d3c98" text-anchor="middle">(BCCD standoff,</text>
+  <text x="466" y="237" font-size="10.5" font-style="italic" fill="#7d3c98" text-anchor="middle">transplanted)</text>
+
+  <!-- stored sheet -->
+  <text x="330" y="416" font-size="11.5" fill="#16657f" text-anchor="middle">speculated stored e&#8315; sheet, z&#8320; &gt; 0 (unknown, ~nm)</text>
+  <g fill="#16657f">
+    <circle cx="200" cy="452" r="3.2"/><circle cx="228" cy="452" r="3.2"/><circle cx="256" cy="452" r="3.2"/>
+    <circle cx="284" cy="452" r="3.2"/><circle cx="312" cy="452" r="3.2"/><circle cx="340" cy="452" r="3.2"/>
+    <circle cx="368" cy="452" r="3.2"/><circle cx="396" cy="452" r="3.2"/><circle cx="424" cy="452" r="3.2"/>
+  </g>
+  <line x1="440" y1="452" x2="500" y2="452" stroke="#333" stroke-width="1.3" marker-end="url(#arrDark)"/>
+  <text x="468" y="438" font-size="10.5" fill="#333" text-anchor="middle">gate-clocked lateral transfer</text>
+
+  <!-- z0 bracket -->
+  <line x1="176" y1="454" x2="176" y2="468" stroke="#333" stroke-width="1"/>
+  <line x1="171" y1="454" x2="181" y2="454" stroke="#333" stroke-width="1"/>
+  <line x1="171" y1="468" x2="181" y2="468" stroke="#333" stroke-width="1"/>
+  <text x="168" y="464" font-size="10.5" fill="#333" text-anchor="end">z&#8320;</text>
+
+  <text x="347" y="618" font-size="10.5" font-style="italic" fill="#888" text-anchor="middle">not to scale: z&#8320; ~ nm (schematic), oxide 50 nm, gates 20 &#181;m wide on 40 &#181;m pitch</text>
+
+  <!-- ============ PANEL (b) ENERGY LANDSCAPE ============ -->
+  <rect x="590" y="68" width="545" height="565" fill="#fbfbfb" stroke="#cccccc" rx="8"/>
+  <text x="605" y="92" font-size="14" font-weight="bold" fill="#1a1a1a">(b) Energy landscape U&#8869;(z) &#8212; what must be true</text>
+
+  <!-- region bands -->
+  <rect x="612" y="112" width="158" height="358" fill="#e8f6f7"/>
+  <rect x="770" y="112" width="345" height="358" fill="#f6eefb" opacity="0.55"/>
+  <text x="691" y="128" font-size="10.5" fill="#136570" text-anchor="middle">Al&#8322;O&#8323; (solid)</text>
+  <text x="940" y="128" font-size="10.5" fill="#7d3c98" text-anchor="middle">liquid argon</text>
+
+  <!-- axes -->
+  <line x1="612" y1="470" x2="1120" y2="470" stroke="#333" stroke-width="1.2" marker-end="url(#arrDark)"/>
+  <text x="1118" y="486" font-size="10.5" fill="#333" text-anchor="end">z &#8594; into the liquid</text>
+  <text x="770" y="486" font-size="10" fill="#333" text-anchor="middle">0</text>
+  <text x="602" y="290" font-size="11" fill="#333" text-anchor="middle" transform="rotate(-90 602 290)">electron potential energy U&#8869;(z)</text>
+
+  <!-- V0 reference -->
+  <line x1="770" y1="300" x2="1115" y2="300" stroke="#888" stroke-width="1" stroke-dasharray="2 4"/>
+  <text x="1112" y="286" font-size="10.5" fill="#666" text-anchor="end">V&#8320;(LAr) &#8776; &#8722;0.2 eV: liquid transport level</text>
+
+  <!-- success level in oxide -->
+  <line x1="622" y1="170" x2="770" y2="170" stroke="#1e8449" stroke-width="3"/>
+  <text x="691" y="144" font-size="11" font-weight="bold" fill="#1e8449" text-anchor="middle">success level</text>
+  <text x="691" y="159" font-size="11" font-weight="bold" fill="#1e8449" text-anchor="middle">&#934;_B &gt; 0</text>
+
+  <!-- failure level in oxide -->
+  <line x1="622" y1="390" x2="770" y2="390" stroke="#c0392b" stroke-width="2.4" stroke-dasharray="7 4"/>
+  <text x="691" y="411" font-size="10.5" fill="#c0392b" text-anchor="middle">failure level</text>
+  <text x="691" y="425" font-size="10.5" fill="#c0392b" text-anchor="middle">&#934;_B &#8804; 0</text>
+  <line x1="794" y1="394" x2="726" y2="393" stroke="#c0392b" stroke-width="1.3" marker-end="url(#arrRed)"/>
+  <rect x="638" y="436" width="7" height="7" fill="#c0392b" opacity="0.75"/>
+  <rect x="666" y="443" width="7" height="7" fill="#c0392b" opacity="0.75"/>
+  <rect x="694" y="434" width="7" height="7" fill="#c0392b" opacity="0.75"/>
+
+  <!-- Phi_B arrow -->
+  <line x1="790" y1="174" x2="790" y2="296" stroke="#1a1a1a" stroke-width="1.4" marker-start="url(#arrDark)" marker-end="url(#arrDark)"/>
+  <text x="802" y="232" font-size="11.5" font-weight="bold" fill="#1a1a1a">&#934;_B = U_solid,accessible &#8722; U_LAr,transport:</text>
+  <text x="802" y="248" font-size="11.5" fill="#1a1a1a">the decisive measurable &#8212; unknown today</text>
+
+  <!-- legend -->
+  <rect x="895" y="132" width="233" height="86" fill="#ffffff" stroke="#cccccc" rx="5"/>
+  <line x1="905" y1="150" x2="938" y2="150" stroke="#1d5a7a" stroke-width="2.4"/>
+  <text x="946" y="154" font-size="10.5" fill="#16657f">target: with exclusion barrier</text>
+  <text x="946" y="169" font-size="10.5" fill="#16657f">(liquid-side bound state)</text>
+  <line x1="905" y1="188" x2="938" y2="188" stroke="#c0392b" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="946" y="192" font-size="10.5" fill="#c0392b">baseline: field + image only</text>
+  <text x="946" y="207" font-size="10.5" fill="#c0392b">(no minimum &#8594; into the solid)</text>
+
+  <!-- target curve: exclusion wall + image => liquid-side well -->
+  <path d="M774,180 C782,290 788,368 810,386 C830,400 852,352 884,322 C920,306 1000,301 1105,300" fill="none" stroke="#1d5a7a" stroke-width="2.4"/>
+
+  <!-- E0 bound level -->
+  <line x1="792" y1="322" x2="826" y2="322" stroke="#16657f" stroke-width="1.6"/>
+  <text x="832" y="326" font-size="10" font-weight="bold" fill="#16657f">E&#8320;</text>
+  <text x="900" y="356" font-size="10.5" fill="#16657f">E&#8320;: tens of meV below V&#8320;</text>
+  <text x="900" y="371" font-size="10.5" fill="#16657f">(&#8811; k_BT = 7.5 meV at 87 K)</text>
+
+  <!-- baseline curve: field + image only, no minimum -->
+  <path d="M1110,294 C1010,296 915,301 862,326 C824,356 792,420 780,468" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="7 4"/>
+
+  <!-- z0 marker under the well minimum -->
+  <line x1="818" y1="398" x2="818" y2="464" stroke="#888" stroke-width="1" stroke-dasharray="3 4"/>
+  <text x="818" y="486" font-size="10" fill="#16657f" text-anchor="middle">z&#8320;</text>
+
+  <!-- success / failure boxes -->
+  <rect x="600" y="500" width="258" height="96" fill="#f0f8f1" stroke="#1e8449" rx="6"/>
+  <text x="729" y="521" font-size="11.5" font-weight="bold" fill="#1e8449" text-anchor="middle">success case: &#934;_B &gt; 0</text>
+  <text x="729" y="541" font-size="10.5" fill="#1a5632" text-anchor="middle">exclusion barrier + image attraction</text>
+  <text x="729" y="556" font-size="10.5" fill="#1a5632" text-anchor="middle">&#8594; liquid-side bound state at z&#8320; &gt; 0;</text>
+  <text x="729" y="571" font-size="10.5" fill="#1a5632" text-anchor="middle">storage &amp; transfer become testable</text>
+
+  <rect x="872" y="500" width="258" height="96" fill="#fdf0ee" stroke="#c0392b" rx="6"/>
+  <text x="1001" y="521" font-size="11.5" font-weight="bold" fill="#c0392b" text-anchor="middle">failure case: &#934;_B &#8804; 0</text>
+  <text x="1001" y="541" font-size="10.5" fill="#7b241c" text-anchor="middle">electron enters the oxide or occupies</text>
+  <text x="1001" y="556" font-size="10.5" fill="#7b241c" text-anchor="middle">deep traps (eV-scale) &#8594; irreversible</text>
+  <text x="1001" y="571" font-size="10.5" fill="#7b241c" text-anchor="middle">loss &#8212; today&#8217;s null-baseline estimate</text>
+
+  <text x="862" y="620" font-size="10.5" font-style="italic" fill="#777" text-anchor="middle">the 8 eV oxide bandgap is NOT the barrier &#8212; only the accessible-state offset &#934;_B counts</text>
+
+  <!-- ============ PANEL (c) CARRIER DENSITY ============ -->
+  <rect x="1155" y="68" width="500" height="565" fill="#fbfbfb" stroke="#cccccc" rx="8"/>
+  <text x="1170" y="92" font-size="14" font-weight="bold" fill="#1a1a1a">(c) Carrier density |&#968;(z)|&#178; &#8212; where the electron lives</text>
+
+  <!-- criterion box -->
+  <rect x="1330" y="108" width="312" height="86" fill="#f0f8f1" stroke="#1e8449" rx="6"/>
+  <text x="1486" y="128" font-size="11.5" font-weight="bold" fill="#1e8449" text-anchor="middle">buried-channel criterion</text>
+  <text x="1486" y="146" font-size="10.5" fill="#1a5632" text-anchor="middle">minimize |&#968;(0)|&#178; at the solid while keeping</text>
+  <text x="1486" y="161" font-size="10.5" fill="#1a5632" text-anchor="middle">strong electrostatic coupling to the gates</text>
+  <text x="1486" y="180" font-size="9.5" font-style="italic" fill="#1a5632" text-anchor="middle">(an occupation criterion &#8212; holds even without a coherent &#968;)</text>
+
+  <!-- oxide + trap strip -->
+  <rect x="1230" y="545" width="380" height="15" fill="#efd9f5"/>
+  <rect x="1230" y="560" width="380" height="16" fill="#63bcc9"/>
+  <text x="1237" y="572" font-size="10" fill="#0d4a52">Al&#8322;O&#8323;</text>
+  <text x="1605" y="556" font-size="9.5" fill="#7d3c98" text-anchor="end">trap-rich interfacial zone</text>
+
+  <!-- axes: z vertical, |psi|^2 horizontal -->
+  <line x1="1230" y1="560" x2="1230" y2="120" stroke="#333" stroke-width="1.2" marker-end="url(#arrDark)"/>
+  <text x="1222" y="136" font-size="10.5" fill="#333" text-anchor="end">z</text>
+  <line x1="1230" y1="545" x2="1615" y2="545" stroke="#333" stroke-width="1"/>
+  <text x="1216" y="549" font-size="10" fill="#333" text-anchor="end">0</text>
+  <text x="1422" y="596" font-size="11" fill="#333" text-anchor="middle">carrier probability density |&#968;(z)|&#178;</text>
+
+  <!-- |psi|^2 lobe: zero at z=0, low peak at z0, long tail upward -->
+  <path d="M1233,543 C1245,538 1290,528 1350,505 C1450,466 1528,452 1528,432 C1528,408 1436,386 1372,342 C1306,296 1244,224 1238,160 L1233,160 Z" fill="#dce9f5" stroke="#16657f" stroke-width="2"/>
+
+  <!-- z0 line -->
+  <line x1="1230" y1="432" x2="1560" y2="432" stroke="#16657f" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="1640" y="427" font-size="10.5" fill="#16657f" text-anchor="end">z&#8320; &#8212; centroid (schematic)</text>
+
+  <!-- annotations -->
+  <text x="1256" y="212" font-size="10.5" font-style="italic" fill="#666">exists only if &#934;_B &gt; 0 (panel b) &#8212; otherwise no channel</text>
+
+  <text x="1400" y="290" font-size="10.5" fill="#333">long tail into the liquid &#8212; strong</text>
+  <text x="1400" y="305" font-size="10.5" fill="#333">coupling to the gate fields retained</text>
+  <line x1="1395" y1="295" x2="1330" y2="305" stroke="#888" stroke-width="1" marker-end="url(#arrGray)"/>
+
+  <text x="1440" y="505" font-size="10.5" fill="#16657f">|&#968;(0)|&#178; &#8776; 0 at the solid &#8212;</text>
+  <text x="1440" y="520" font-size="10.5" fill="#16657f">negligible overlap with surface traps</text>
+  <line x1="1435" y1="512" x2="1290" y2="545" stroke="#888" stroke-width="1" marker-end="url(#arrGray)"/>
+
+  <text x="1420" y="618" font-size="10.5" font-style="italic" fill="#777" text-anchor="middle">carrier probability density &#8212; not a density of states; z not to scale</text>
+
+  <!-- ============ CORRESPONDENCE STRIP ============ -->
+  <rect x="25" y="655" width="520" height="62" fill="#eef3f8" stroke="#9db3cc" rx="6"/>
+  <text x="285" y="679" font-size="13" font-weight="bold" fill="#1a1a1a" text-anchor="middle">HARD WALL</text>
+  <text x="285" y="699" font-size="10.5" fill="#333" text-anchor="middle">3.1 eV Si/SiO&#8322; offset &#8596; &#934;_B at LAr/oxide &#8212; engineer &amp; measure &gt; 0</text>
+
+  <rect x="565" y="655" width="545" height="62" fill="#eef3f8" stroke="#9db3cc" rx="6"/>
+  <text x="837" y="679" font-size="13" font-weight="bold" fill="#1a1a1a" text-anchor="middle">CURVATURE SOURCE</text>
+  <text x="837" y="699" font-size="10.5" fill="#333" text-anchor="middle">donor space charge &#8596; image attraction &#8722;A/z (liquid is charge-free: Laplace)</text>
+
+  <rect x="1130" y="655" width="525" height="62" fill="#eef3f8" stroke="#9db3cc" rx="6"/>
+  <text x="1392" y="679" font-size="13" font-weight="bold" fill="#1a1a1a" text-anchor="middle">STANDOFF</text>
+  <text x="1392" y="699" font-size="10.5" fill="#333" text-anchor="middle">x_max &#8776; 0.5 &#181;m off the traps &#8596; z&#8320; &gt; 0 (schematic nm), |&#968;(0)|&#178; &#8776; 0</text>
+
+  <!-- ============ KEY NUMBERS STRIP ============ -->
+  <rect x="25" y="729" width="310" height="76" fill="#fbf6e9" stroke="#cbb87f" rx="6"/>
+  <text x="180" y="751" font-size="12" font-weight="bold" fill="#6d5410" text-anchor="middle">IMAGE ATTRACTION</text>
+  <text x="180" y="771" font-size="10.5" fill="#333" text-anchor="middle">U_im(z) &#8776; &#8722;0.163 / z[nm] eV</text>
+  <text x="180" y="787" font-size="10.5" fill="#333" text-anchor="middle">continuum value, outside microscopic cutoff</text>
+
+  <rect x="351" y="729" width="310" height="76" fill="#fbf6e9" stroke="#cbb87f" rx="6"/>
+  <text x="506" y="751" font-size="12" font-weight="bold" fill="#6d5410" text-anchor="middle">APPROACH FIELD</text>
+  <text x="506" y="771" font-size="10.5" fill="#333" text-anchor="middle">E_LAr &#8776; 0.520 kV/cm at the surface</text>
+  <text x="506" y="787" font-size="10.5" fill="#333" text-anchor="middle">delivers charge &#8212; does not store it</text>
+
+  <rect x="677" y="729" width="310" height="76" fill="#fbf6e9" stroke="#cbb87f" rx="6"/>
+  <text x="832" y="751" font-size="12" font-weight="bold" fill="#6d5410" text-anchor="middle">GATE COUPLING</text>
+  <text x="832" y="771" font-size="10.5" fill="#333" text-anchor="middle">A(z) = exp(&#8722;2&#960;z/p), p = 40 &#181;m:</text>
+  <text x="832" y="787" font-size="10.5" fill="#333" text-anchor="middle">98.4% at z = 0.10 &#181;m, 92.4% at 0.50 &#181;m</text>
+
+  <rect x="1003" y="729" width="310" height="76" fill="#fbf6e9" stroke="#cbb87f" rx="6"/>
+  <text x="1158" y="751" font-size="12" font-weight="bold" fill="#6d5410" text-anchor="middle">FIXED-CHARGE BUDGET</text>
+  <text x="1158" y="771" font-size="10.5" fill="#333" text-anchor="middle">0.10 V potential-error allocation &#8594;</text>
+  <text x="1158" y="787" font-size="10.5" fill="#333" text-anchor="middle">&#948;N_f &lt; 8.8&#215;10&#185;&#8304; cm&#8315;&#178;</text>
+
+  <rect x="1329" y="729" width="310" height="76" fill="#fbf6e9" stroke="#cbb87f" rx="6"/>
+  <text x="1484" y="751" font-size="12" font-weight="bold" fill="#6d5410" text-anchor="middle">OPERATING SEQUENCE</text>
+  <text x="1484" y="771" font-size="10.5" fill="#333" text-anchor="middle">generate &#8594; drift &#8594; interface access &#8594;</text>
+  <text x="1484" y="787" font-size="10.5" fill="#333" text-anchor="middle">reduce pressing field &#8594; clock laterally</text>
+
+  <text x="840" y="830" font-size="10.5" font-style="italic" fill="#777" text-anchor="middle">the model fixes fields, coupling, and sensitivities &#8212; Stage 1 experiments decide whether a recoverable liquid-side population exists</text>
+</svg>

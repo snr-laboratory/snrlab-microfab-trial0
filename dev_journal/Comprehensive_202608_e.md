@@ -189,7 +189,7 @@ The working hypothesis is stated narrowly: **microscopic interface electronic st
 
 (13) The Stage 0 optical source will follow the implementation demonstrated by Li et al. [18]:
 
-![Stage 0 optical (UV photoemission) source](../dev_journal/assets/comprehensive_figures/Figure_Electron_Source_Design_final.png)
+![Stage 0 optical (UV photoemission) source](../dev_journal/assets/comprehensive_figures/Stage0_Calibration.svg)
 
 
 a frequency-quadrupled Nd:YAG laser with photon energy 4.66 eV, corresponding to approximately 266 nm, a 60 ps pulse width, and a 10 Hz repetition rate. The source illuminates a 22 nm semitransparent Au photocathode deposited on a 1 mm-thick, 10 mm-diameter sapphire disk through a 600 µm-diameter UV-grade fused-silica fiber. The delivered pulse energy will be measured for this apparatus rather than inferred from the laser setting. Li et al. reported approximately $10^{5}$ emitted electrons for an approximately 1 µJ pulse and an order-of-magnitude LAr quantum efficiency of approximately $10^{-7}$; these values are used only to select the initial attenuation range and are not treated as a calibration of the present source. The direct-reference configuration measures $Q_{\mathrm{ref}}$ at the reference collector after emission, drift, and geometric losses. The interface-injected charge is defined as $Q_{\mathrm{inj}} = f_{\mathrm{del}}\,Q_{\mathrm{ref}}$, where $f_{\mathrm{del}}$ is a measured or bounded delivery factor for the matched geometry. Electrical injection through the calibration capacitor independently calibrates the readout gain and is not used as a substitute for measuring optical charge delivery. At 266 nm, the photon energy is

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" style="background-color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Uniform Blue Arrow Marker -->
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0275d8" />
+    </marker>
+  </defs>
+
+  <!-- Hard white background for PNG export -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="600" y="45" font-size="24" font-weight="bold" text-anchor="middle" fill="#222">Stage 0 Electron Source and Calibrated Charge Delivery</text>
+
+  <!-- ================= PANEL A ================= -->
+  <rect x="40" y="80" width="700" height="560" fill="#fff" stroke="#ccc" stroke-width="1.5" rx="6"/>
+  <text x="60" y="110" font-size="16" font-weight="bold" fill="#222">(a) Optical Source Chain &amp; Direct-Collection Reference</text>
+
+  <!-- Box 1 -->
+  <rect x="50" y="140" width="135" height="100" fill="#fcfcfc" stroke="#333" stroke-width="1.5" rx="4"/>
+  <text x="117.5" y="165" font-size="12" font-weight="bold" fill="#222" text-anchor="middle">Nd:YAG UV Pulse</text>
+  <text x="117.5" y="190" font-size="11" fill="#222" text-anchor="middle">4.66 eV (266 nm)</text>
+  <text x="117.5" y="210" font-size="11" fill="#222" text-anchor="middle">60 ps, 10 Hz</text>
+  <text x="117.5" y="230" font-size="11" fill="#222" text-anchor="middle">≈1 μJ base energy</text>
+
+  <line x1="185" y1="190" x2="215" y2="190" stroke="#0275d8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Box 2 -->
+  <rect x="225" y="140" width="135" height="100" fill="#fcfcfc" stroke="#333" stroke-width="1.5" rx="4"/>
+  <text x="292.5" y="165" font-size="12" font-weight="bold" fill="#222" text-anchor="middle">UV Attenuation</text>
+  <text x="292.5" y="190" font-size="11" fill="#222" text-anchor="middle">Calibrated variable stage</text>
+  <text x="292.5" y="210" font-size="11" fill="#222" text-anchor="middle">Pulse energy recorded</text>
+  <text x="292.5" y="230" font-size="11" fill="#222" text-anchor="middle">Photodiode timing</text>
+
+  <line x1="360" y1="190" x2="390" y2="190" stroke="#0275d8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Box 3 -->
+  <rect x="400" y="140" width="135" height="100" fill="#fcfcfc" stroke="#333" stroke-width="1.5" rx="4"/>
+  <text x="467.5" y="165" font-size="12" font-weight="bold" fill="#222" text-anchor="middle">Fiber Delivery</text>
+  <text x="467.5" y="190" font-size="11" fill="#222" text-anchor="middle">600 μm fused-silica</text>
+  <text x="467.5" y="210" font-size="11" fill="#222" text-anchor="middle">≈1 mm spot delivered</text>
+
+  <line x1="535" y1="190" x2="565" y2="190" stroke="#0275d8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Box 4 -->
+  <rect x="575" y="140" width="135" height="100" fill="#fcfcfc" stroke="#333" stroke-width="1.5" rx="4"/>
+  <text x="642.5" y="165" font-size="12" font-weight="bold" fill="#222" text-anchor="middle">Au Photocathode</text>
+  <text x="642.5" y="190" font-size="11" fill="#222" text-anchor="middle">22 nm semitransparent</text>
+  <text x="642.5" y="210" font-size="11" fill="#222" text-anchor="middle">Au on 1mm Sapphire</text>
+
+  <!-- Vertical Arrow to Drift Cell -->
+  <line x1="642.5" y1="250" x2="642.5" y2="280" stroke="#0275d8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Drift Cell -->
+  <rect x="360" y="290" width="350" height="230" fill="#f4ebff" stroke="#333" stroke-width="1.5"/>
+  <text x="380" y="315" font-size="14" font-weight="bold" fill="#222">LAr Drift Cell</text>
+
+  <!-- Cell Internals -->
+  <rect x="460" y="340" width="190" height="15" fill="#d4af37" stroke="#333"/>
+  <text x="555" y="335" font-size="11" fill="#222" text-anchor="middle">Back-illuminated Au Photocathode</text>
+
+  <line x1="460" y1="380" x2="650" y2="380" stroke="#333" stroke-width="2"/>
+  <text x="555" y="375" font-size="11" fill="#222" text-anchor="middle">Field Grid</text>
+
+  <ellipse cx="555" cy="420" rx="30" ry="10" fill="#fff" stroke="#005b7f" stroke-width="1.5"/>
+  <text x="555" y="424" font-size="14" font-weight="bold" fill="#005b7f" text-anchor="middle">- - -</text>
+  
+  <line x1="555" y1="435" x2="555" y2="455" stroke="#0275d8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <line x1="460" y1="465" x2="650" y2="465" stroke="#333" stroke-width="3"/>
+  <text x="555" y="485" font-size="11" font-weight="bold" fill="#222" text-anchor="middle">Direct-Reference Collector</text>
+
+  <!-- Correctly Placed Packet Text -->
+  <text x="375" y="423" font-size="11" fill="#005b7f" text-anchor="start">drifting charge packet</text>
+
+  <!-- Explanation Text -->
+  <text x="60" y="380" font-size="13" font-weight="bold" fill="#222">Direct-Collection Reference:</text>
+  <text x="60" y="405" font-size="12" fill="#222">Reference collection measures Q<tspan baseline-shift="sub" font-size="0.75em">ref</tspan> at the</text>
+  <text x="60" y="425" font-size="12" fill="#222">collector after emission, drift, and geometric</text>
+  <text x="60" y="445" font-size="12" fill="#222">losses. The same cell later receives electrical</text>
+  <text x="60" y="465" font-size="12" fill="#222">injection through the calibration capacitor, so</text>
+  <text x="60" y="485" font-size="12" fill="#222">readout gain and delivered charge stay separated.</text>
+
+  <!-- ================= CITATION FOOTER (Inside Panel A) ================= -->
+  <text x="390" y="620" font-size="12" fill="#555" text-anchor="middle">Li et al., Nucl. Instrum. Methods A 816, 160–170 (2016), doi:10.1016/j.nima.2016.01.094</text>
+
+  <!-- ================= PANEL B ================= -->
+  <rect x="760" y="80" width="400" height="560" fill="#fff" stroke="#ccc" stroke-width="1.5" rx="6"/>
+  <text x="780" y="110" font-size="16" font-weight="bold" fill="#222">(b) Charge Estimate &amp; Calibration Hierarchy</text>
+
+  <!-- Math Box -->
+  <rect x="780" y="130" width="360" height="135" fill="#fcfcfc" stroke="#333" stroke-width="1.5" rx="4"/>
+  <text x="960" y="155" font-size="12" font-weight="bold" fill="#222" text-anchor="middle">Photon and Charge Arithmetic (at 1 μJ, QE = 10<tspan baseline-shift="super" font-size="0.75em">-7</tspan>)</text>
+  
+  <text x="795" y="190" font-size="12" fill="#222">E<tspan baseline-shift="sub" font-size="0.75em">γ</tspan> = hc/λ = 7.47 × 10<tspan baseline-shift="super" font-size="0.75em">-19</tspan> J = 4.66 eV</text>
+  
+  <text x="795" y="215" font-size="12" fill="#222">N<tspan baseline-shift="sub" font-size="0.75em">γ</tspan> = (1.0 × 10<tspan baseline-shift="super" font-size="0.75em">-6</tspan> J) / E<tspan baseline-shift="sub" font-size="0.75em">γ</tspan> ≈ 1.34 × 10<tspan baseline-shift="super" font-size="0.75em">12</tspan> photons</text>
+  
+  <text x="795" y="240" font-size="12" fill="#222">N<tspan baseline-shift="sub" font-size="0.75em">emit</tspan> ≈ N<tspan baseline-shift="sub" font-size="0.75em">γ</tspan> × QE ≈ 1.34 × 10<tspan baseline-shift="super" font-size="0.75em">5</tspan> e⁻</text>
+
+  <!-- Calibration Hierarchy Nodes -->
+  <text x="780" y="305" font-size="14" font-weight="bold" fill="#222">Three-Step Calibration Hierarchy</text>
+
+  <circle cx="800" cy="340" r="15" fill="#005b7f"/>
+  <text x="800" y="345" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+  <text x="830" y="335" font-size="12" font-weight="bold" fill="#222">Literature Estimate (Prior)</text>
+  <text x="830" y="350" font-size="11" fill="#444">Sets the initial UV attenuation range.</text>
+  
+  <line x1="800" y1="365" x2="800" y2="395" stroke="#0275d8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <circle cx="800" cy="420" r="15" fill="#005b7f"/>
+  <text x="800" y="425" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+  <text x="830" y="415" font-size="12" font-weight="bold" fill="#222">Direct Collection</text>
+  <text x="830" y="430" font-size="11" fill="#444">Measures Q<tspan baseline-shift="sub" font-size="0.75em">ref</tspan> physically.</text>
+
+  <line x1="800" y1="445" x2="800" y2="475" stroke="#0275d8" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <circle cx="800" cy="500" r="15" fill="#005b7f"/>
+  <text x="800" y="505" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+  <text x="830" y="495" font-size="12" font-weight="bold" fill="#222">Electrical Injection</text>
+  <text x="830" y="510" font-size="11" fill="#444">Calibrates actual readout gain with the test capacitor.</text>
+
+  <!-- Final Delivery Box -->
+  <rect x="780" y="540" width="360" height="85" fill="#f4ebff" stroke="#333" stroke-width="1.5" rx="4"/>
+  <text x="960" y="560" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Q<tspan baseline-shift="sub" font-size="0.75em">inj</tspan> = f<tspan baseline-shift="sub" font-size="0.75em">del</tspan> × Q<tspan baseline-shift="sub" font-size="0.75em">ref</tspan></text>
+  
+  <text x="960" y="582" font-size="11" fill="#222" text-anchor="middle">The delivery factor f<tspan baseline-shift="sub" font-size="0.75em">del</tspan> is measured or bounded</text>
+  <text x="960" y="597" font-size="11" fill="#222" text-anchor="middle">for the matched geometry.</text>
+  <text x="960" y="612" font-size="11" font-weight="bold" fill="#222" text-anchor="middle">Quoted QE is a literature-order estimate, not a measured value.</text>
+
+</svg>

@@ -170,7 +170,7 @@ Before cryogenic interface data exist, the model can establish the approach fiel
 
 The working hypothesis is stated narrowly: **microscopic interface electronic structure may provide a recoverable liquid-side residence condition that replaces the dopant-generated vertical confinement of the silicon BCCD, while patterned buried gates provide the lateral potential modulation required for CCD-like storage and directional transfer.** Whether that residence condition exists at LAr/Al₂O₃ is the experiment to be performed, not an assumption of the model.
 
-![Speculated buried-channel analogue at the LAr/Al₂O₃ interface](../dev_journal/assets/comprehensive_figures/LAr_BCCD_final_model_v2.svg)
+![Speculated buried-channel analogue at the LAr/Al₂O₃ interface](../dev_journal/assets/comprehensive_figures/LAr_BCCD_model_revised.png)
 
 *Figure 12.1. Testable buried-channel analogy at the LAr/Al₂O₃ interface. (a) Planarized three-gate stack beneath a continuous 50 nm ALD Al₂O₃ film, the only solid surface the liquid touches. (b) Electron potential energy normal to the interface: the dashed baseline (applied field plus continuum image attraction) contains no finite-height minimum and drives the electron into the solid, while the solid target curve shows the liquid-side well that exists only if the effective entry barrier $\Phi_B > 0$; the in-band levels mark the success ($\Phi_B > 0$) and failure ($\Phi_B \leq 0$) cases, and the 8 eV oxide band gap is not the relevant barrier. (c) Schematic position-space probability density $|\psi(z)|^2$ for the hypothesized liquid-side state — a probability density, not a density of states, read as a classical occupation profile $P(z)$ if a single bound-state description is not justified; neither $z_0$ nor the state's existence is assumed or measured. Bottom strips: the BCCD functional correspondence and the model's benchmark quantities.*
 
@@ -244,7 +244,7 @@ where $Q_{B,\mathrm{net}}$ is the template-subtracted, independently calibrated 
 
 (20) The first concrete readout baseline uses an OPA657 FET-input operational amplifier in a charge-sensitive configuration with feedback capacitance $C_f = 0.50\,\mathrm{pF}$, total pre-driver input capacitance $C_{\mathrm{in}} = 10\,\mathrm{pF}$, a 10 µs shaping interval, and an ADS9110 18-bit, 2 MS/s SAR digitizer [34,35,51,52,61]. The ADC input will include a settling-capable driver and the datasheet-required fly-wheel RC network [52]. The driver, RC network, their added capacitance, settling behavior, and input-referred noise will be included in the equivalent circuit and assembled-chain ENC qualification [52]. The amplifier is initially operated at room temperature near the cryostat feedthrough; cryogenic operation is not assumed without separate qualification. Readout baseline and measured noise qualification [34,35,51,52,61]:
 
-![Readout electronics baseline and ENC qualification chain](../dev_journal/assets/comprehensive_figures/Figure_Equivalent_Circuit_Noise_final.png)
+![Readout electronics baseline and ENC qualification chain](../dev_journal/assets/comprehensive_figures/Readout_Equivalent_Circuit_Final_v3.png)
 
 A $10^{4}$-electron packet corresponds to 1.602 fC and produces a nominal charge-sensitive amplifier step of
 
